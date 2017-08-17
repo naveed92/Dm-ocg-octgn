@@ -423,7 +423,7 @@
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Fire Bird/Hunter" />
-			<property name="Rules" value="When you put this creature into the battle zone, choose one of the following.:► Put up to 2 Fire Bird psychic creatures that have total cost 3 or less from your hyperspatial zone into the battle zone.:► Put a Fire psychic creature that costs 6 or less from your hyperspatial zone into the battle zone," />
+			<property name="Rules" value="When you put this creature into the battle zone, choose one of the following.:► Put up to 2 Fire Bird psychic creatures that have cost 3 or less from your hyperspatial zone into the battle zone.:► Put a Fire psychic creature that costs 6 or less from your hyperspatial zone into the battle zone," />
 			<property name="Power" value="1000" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="26" />
