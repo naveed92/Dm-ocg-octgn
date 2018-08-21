@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-02 Episode 1: Dark Side" id="86563bbb-1ff5-4f9d-aa74-4fa346b8b91a" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="9eefa7cd-478e-4275-abc6-0ac86377e961">
+			<options>
+				<option probability="0.100">
+					<pick qty="1" key="Rarity" value="Victory Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.100">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.200">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.600">
+					<pick qty="3" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="1" key="Rarity" value="Uncommon" />
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Volg Thunder" id="4dba9fe3-4775-4320-845e-e514a8b65aee">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Demon Command/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose a player. That player puts cards from the top of his deck into his graveyard until 2 creatures have been put into his graveyard in this way.&#xd;&#xa; Double breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Victory Rare" />
+			<property name="Number" value="V1a" />
+			<property name="Format" value="OCG" />
+
+		    <alternate name="Volg Tiger, Thunder Beast" type="awakening">
+			    <property name="Civilization" value="Darkness" />
+			    <property name="Cost" value="12" />
+			    <property name="Type" value="Psychic Super Creature" />
+			    <property name="Race" value="Demon Command/Hunter" />
+			    <property name="Rules" value="Whenever this creature attacks, your opponent discards a card at random from his hand. Then, choose a creature that costs less than the discarded card in your graveyard and put it into the battle zone.&#xd;&#xa;Double breaker&#xd;&#xa;Link Release" />
+			    <property name="Power" value="11000" />
+			    <property name="Rarity" value="Victory Rare" />
+			    <property name="Number" value="V1b" />
+				<property name="Format" value="OCG" />
+			</alternate>
+			</card>
+		<card name="Gaga Last Mysterica, Lord of Spirits" id="8266b29a-f708-4bd5-b385-b45f8dccc146">
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Evolution Creature " />
+			<property name="Race" value="Angel Command/Alien" />
+			<property name="Rules" value="Evolution - Put on one of your light creatures.&#xd;&#xa;Triple breaker&#xd;&#xa; When you untap this creature, draw your entire deck except for the last 2 cards. Then, you may cast any spells that have 'Shield Trigger' and summon any creatures that have 'Shield Trigger' from your hand for no cost." />
+			<property name="Power" value="13000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S1" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Thunder Blade, Wolf Tiger" id="213140c5-f3f8-4adc-b27c-3c4c84656790">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, destroy one of your opponent's creatures.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S2" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Ryusei Kaiser, the Eternal" id="bc2b5a9b-e57d-4331-8926-e2d7de7f4ce0">
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Red Command Dragon/Hunter" />
+			<property name="Rules" value="Each of your creatures in the battle zone gets 'Speed Attacker'.&#xd;&#xa; Double breaker&#xd;&#xa; Your opponent's creatures are put into the battle zone tapped.&#xd;&#xa; When this creature would be discarded by the ability of one of your opponent's creatures or spells, you may put it into the battle zone instead." />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S3" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Geo Aldebaran, the Okami Breaker" id="ee9f0e7b-b3c7-4800-b8c5-e75720c0a54c">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Gaia Command/Alien" />
+			<property name="Rules" value="Evolution - Put on one of your nature creatures.&#xd;&#xa;Triple breaker&#xd;&#xa;Space Charge- Nature: Your opponent chooses one of his creatures and puts it into his mana zone." />
+			<property name="Power" value="15000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S4" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Optimus, the Invincible" id="c5112e52-30ca-48a2-b9c4-f6ce6cab26c3">
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Multi Space Charge Light: Return a spell from your graveyard to your hand.: Water: Return a shield from your shield zone to your hand. However, you can't use the 'Shield trigger' of that shield. Then, add a card in your hand to your shields face down.&#xd;&#xa; Double breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S5" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Insight Indigo Kaiser" id="dea38e15-59f2-497c-93bd-0e826cf40c57">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Blue Command Dragon/Hunter" />
+			<property name="Rules" value="Whenever your opponent summons a creature or casts a spell, this turn, your opponent's creatures can't attack or block.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="1" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Gil Fuji, Yokozuna" id="157b0753-00e4-42a3-bd08-15c4b4cc7458">
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Flame Command/Alien" />
+			<property name="Rules" value="Whenever this creature wins a battle, you may untap it.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="2a" />
+			<property name="Format" value="OCG" />
+
+		    <alternate name="Unryu Deis Izu, Great Yokozuna" type="awakening">
+			    <property name="Civilization" value="Darkness/Fire/Nature" />
+			    <property name="Cost" value="20" />
+			    <property name="Type" value="Psychic Super Creature" />
+			    <property name="Race" value="Sumo Wrestler Command Dragon/Alien" />
+			    <property name="Rules" value="Your opponent's creatures must block if able.&#xd;&#xa; Whenever this creature wins a battle, untap it.&#xd;&#xa; Each of your other Aliens in the battle zone gets +5000 power.&#xd;&#xa;Quattro breaker&#xd;&#xa; Link Release  (When this creature would leave the battle zone, return a psychic cell to your hyperspatial zone and flip the other cards instead.) " />
+			    <property name="Power" value="20000" />
+			    <property name="Rarity" value="Very Rare" />
+			    <property name="Number" value="" />
+				<property name="Format" value="OCG" />
+			</alternate>
+			</card>
+		<card name="Jin, the Ogre Blade ~Young Leader~" id="79396530-b39c-45b4-8c63-5fd6540e5352">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gaia Command/Beast Folk/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may put any number of nature Hunters from your mana zone into the battle zone tapped.&#xd;&#xa;Triple breaker" />
+			<property name="Power" value="17000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="3" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Mother Alien" id="f072d340-f43c-40f1-9691-f851a9ec45bf">
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Your Hunters can't be blocked.&#xd;&#xa; Whenever your Hunters lose a battle, they stay in the battle zone instead.&#xd;&#xa; When this creature would be discarded from your hand by the ability of your opponent's creature or spell, you may put it into your mana zone instead." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="4" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Alien Father" id="74437080-7ba7-43e5-a867-085ad4c7ca7d">
+			<property name="Civilization" value="Darkness/Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Each of your other Aliens in the battle zone gets 'Speed Attacker' and 'Slayer'.&#xd;&#xa; When this creature would be discarded from your hand by the ability of one of your opponent's creatures or spells, you may put it into your mana zone instead." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="5" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="DNA Spark" id="a8c0bea0-0c44-4b3c-a88c-85d95da9d309">
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Tap all your opponent's creatures in the battle zone. &#xd;&#xa; If you have 2 or less shields, add the top card of your deck to your shields face down." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="6" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Aqua Jet (Charging Brotherhood!)" id="0be53013-b7eb-4127-a73b-293ee2d2927d">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, look at the top 5 cards of your deck. From among them, you may put Aqua Attack or Aqua Cascade, either one by one, or both, into the battle zone. Then put the rest on the bottom of your deck in any order." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="7" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Aqua Jet (Charging Brotherhood!)" id="f041b53a-765f-42f5-90ee-8f3dae7e4b37">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, look at the top 5 cards of your deck. From among them, you may put Aqua Attack or Aqua Cascade, either one by one, or both, into the battle zone. Then put the rest on the bottom of your deck in any order." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="7" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Switch Reincarnation" id="c9443fd4-3db3-47b5-ba43-a00277275e2d">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose a creature in the battle zone and return it to its owner's hand. Then that player chooses a creature in his hand that costs less than the chosen creature. That player may put that creature into the battle zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="8" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Death Phantom, Pandora Fortress" id="9cb8ce32-ed97-4495-9431-7242445c9ea3">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Fortress" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Fortress&#xd;&#xa; Whenever one of your Aliens leaves the battle zone, you may put an Alien psychic creature that costs less than that Alien from your hyperspatial zone into the battle zone.&#xd;&#xa; If the fortified shield isn't fortified by any other Fortresses, whenever the fortified shield would be broken by your opponent's creatures, you may return one of your other shields to your hand instead." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="9" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Death Gate, Gate of Hell" id="0c94f974-46a3-4bbe-b77a-f446587a8e23">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Destroy one of your opponent's untapped creatures. You may put a non-evolution creature that costs less than the destroyed creature from your graveyard into the battle zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="10" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Bolshack Superhero" id="a08277b2-5bf5-4e84-a335-62e2ecc4d33c">
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, destroy all non-psychic creatures that have power 3000 or less. Then, destroy all psychic creatures that have power 5000 or less.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="11" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Galaxy Falcon, Counterattack Fortress" id="fbf1d191-7001-4d72-90f3-ac97c311db93">
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Fortress" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Fortress(Choose one of your shields and attach this card to fortify that shield. When the fortified shield leaves the shield zone, put this card into your graveyard.)&#xd;&#xa; Each of your hunters in the battle zone gets 'Speed Attacker'." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="12" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Galaxy Falcon, Counterattack Fortress" id="1b073963-c2fb-4c75-8ebb-c17cf9bcef7b">
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Fortress" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Fortress(Choose one of your shields and attach this card to fortify that shield. When the fortified shield leaves the shield zone, put this card into your graveyard.)&#xd;&#xa; Each of your hunters in the battle zone gets 'Speed Attacker'." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="12" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hunting Gaia Egg" id="85d48c60-1f06-4342-9d09-5cfb402a9bf6">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Egg" />
+			<property name="Rules" value="At the start of your turn, put the top card of your deck into your graveyard. If that card is a non-evolution Hunter, you may destroy this creature. If you do, put that Hunter into the battle zone.&#xd;&#xa; This creature can't attack. " />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="13" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Dancing Fever" id="774e9bf1-057f-498b-9cf2-23ab2454a4ab">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Look at the top 6 cards of your deck. From among them, you may put up to 3 cards into your mana zone tapped, and put the rest on the bottom of your deck in any order." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="14" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Jealousy Bell" id="b75492ae-0e2f-401f-8880-370eed393a14">
+			<property name="Civilization" value="Light/Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa;Discard a card. Then, your opponent discards 2 cards from his hand." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="15" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Heratrix, Spirit Knight" id="6c9bf82d-cd39-4c9f-acc1-db66c1fed196">
+			<property name="Civilization" value="Light/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Multi Space Charge Light: Choose one of your opponent's creatures in the battle zone and tap it.: Nature: One of your creatures in the battle zone gets +2000 power until the end of the turn." />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="16" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Fuuma Zaulak Deis" id="96362b02-4760-4b22-a80b-d13566429f95">
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Multi Space Charge Water: Draw a card.: Darkness: Your opponent discards a card from his hand." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="17" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Fuld Dragoon" id="1b473c5b-c8d6-4b42-9284-e037657bf533">
+			<property name="Civilization" value="Darkness/Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Multi Space Charge Darkness: Choose one of your opponent's creatures in the battle zone. That creature gets -1000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) : Fire: Destroy one of your opponent's creatures that has power 2000 or less." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="18" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Kamakiras" id="eecbb59d-c916-45cf-a441-4e1346624264">
+			<property name="Civilization" value="Fire/Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Vehicle Bee/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Multi Space Charge Fire: This turn, one of your creatures in the battle zone gets 'Power attacker +3000'.: Nature: This turn, one of your creatures in the battle zone breaks an additional shield." />
+			<property name="Power" value="3000+" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="19" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial Gotsusan Hole" id="521fee1b-6fc5-4c7b-8ca6-556851a0cfa1">
+			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Put a Darkness, Fire, or Nature psychic creature that costs 8 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; When one of your opponent's creatures attacks, if you have a Gil Fuji, Yokozuna in the battle zone, you may discard this card. If you do, stop the attack, that turn your Gil Fuji, Yokozuna gets +3000 power, and it battles with the attacking creature." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="20" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial Gotsusan Hole" id="4eed0fb4-714b-4939-b7ac-eec377aa05d5">
+			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Put a Darkness, Fire, or Nature psychic creature that costs 8 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; When one of your opponent's creatures attacks, if you have a Gil Fuji, Yokozuna in the battle zone, you may discard this card. If you do, stop the attack, that turn your Gil Fuji, Yokozuna gets +3000 power, and it battles with the attacking creature." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="20" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Shan Bell, Light Weapon" id="62d487ea-8348-4aa5-a9d7-cef45740ee98">
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha Del Sol/Hunter" />
+			<property name="Rules" value="Double breaker&#xd;&#xa; When this creature would be destroyed, you may discard a light creature instead." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="21" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Shan Bell, Light Weapon" id="5ee94738-2528-4592-99bd-76956a289232">
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha Del Sol/Hunter" />
+			<property name="Rules" value="Double breaker&#xd;&#xa; When this creature would be destroyed, you may discard a light creature instead." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="21" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Gaga Tulken, the Oracle" id="4e8fc25a-737b-4882-a185-dcac09fe451c">
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer/Alien" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; If you don’t have a psychic creature in the battle zone, this creature can`t attack players. " />
+			<property name="Power" value="2500" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="22" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Sinutchi" id="bb2b8de3-e779-4113-b574-502914a8767b">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Lord/Hunter" />
+			<property name="Rules" value="Whenever this creature attacks, for each of your tapped creatures in the battle zone, you may draw a card." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="23" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Thunder Tiger" id="09326944-fc08-4dfb-b9e7-2fc43cd25247">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Psychic Creature " />
+			<property name="Race" value="Demon Command/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose one of your opponent's creatures in the battle zone. That creature gets -2000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) &#xd;&#xa; Psychic Link - At the start of your turn, if you have Volg Thunder in the battle zone, link that creature to this creature and flip this creature to its higher cost side." />
+			<property name="Power" value="3000 " />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="24a" />
+			<property name="Format" value="OCG" />
+
+		    <alternate name="Volg Tiger, Thunder Beast" type="awakening">
+			    <property name="Civilization" value="Darkness" />
+			    <property name="Cost" value="12" />
+			    <property name="Type" value="Psychic Super Creature" />
+			    <property name="Race" value="Demon Command/Hunter" />
+			    <property name="Power" value="11000" />
+			    <property name="Rarity" value="Uncommon" />
+			    <property name="Number" value="24b" />
+				<property name="Format" value="OCG" />
+			</alternate>
+			</card>
+		<card name="Zabi Komusubi Flower" id="41159961-b078-45fa-a6af-ab13021ef219">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Living Dead/Alien" />
+			<property name="Rules" value="Your opponent's creatures must block if able.&#xd;&#xa;(At the start of your game, separate your psychic creatures from your deck and put them into your hyperspatial zone. If a psychic creature would be put into a zone other than the battle zone, return it to your hyperspatial zone.)" />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="25a" />
+			<property name="Format" value="OCG" />
+
+		    <alternate name="Unryu Deis Izu, Great Yokozuna" type="awakening">
+			    <property name="Civilization" value="Darkness/Fire/Nature" />
+			    <property name="Cost" value="20" />
+			    <property name="Type" value="Psychic Super Creature" />
+			    <property name="Race" value="Sumo Wrestler Command Dragon/Alien" />
+			    <property name="Rules" value="Your opponent's creatures must block if able.&#xd;&#xa; Whenever this creature wins a battle, untap it.&#xd;&#xa; Each of your other Aliens in the battle zone gets +5000 power.&#xd;&#xa;Quattro breaker&#xd;&#xa; Link Release  (When this creature would leave the battle zone, return a psychic cell to your hyperspatial zone and flip the other cards instead.) " />
+			    <property name="Power" value="20000" />
+			    <property name="Rarity" value="Uncommon" />
+			    <property name="Number" value="" />
+				<property name="Format" value="OCG" />
+			</alternate>
+			</card>
+		<card name="Flowing Lava Hand" id="076670ca-5c58-422d-a2e7-7ded10fc64b8">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose one of your opponent's creatures in the battle zone. If you have a water or fire creature in the battle zone, that creature gets -4000 power until the end of the turn. Otherwise, it gets -2000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="26" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Splitting Ryoudan, Avenging Soldier" id="9855a305-1344-49ce-b586-46d91d9659e8">
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armorloid/Hunter" />
+			<property name="Rules" value="Whenever this creature attacks, for each of your tapped creatures in the battle zone, choose one of your opponent's shields. Put the chosen shields into your opponent's hand." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="27" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Geo Ohzeki Hamlet" id="f74485ab-5db2-4c2d-90eb-f7d973c7b14b">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Wild Veggies /Alien" />
+			<property name="Rules" value="Each of your other Aliens in the battle zone gets +2000 power.&#xd;&#xa; Psychic Link - At the start of your turn, if you have Gil Fuji, Yokozuna and Zabi Komusubi Flower in the battle zone, link them to this creature and flip this creature to its higher cost side." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="28a" />
+			<property name="Format" value="OCG" />
+
+		    <alternate name="Unryu Deis Izu, Great Yokozuna" type="awakening">
+			    <property name="Civilization" value="Darkness/Fire/Nature" />
+			    <property name="Cost" value="20" />
+			    <property name="Type" value="Psychic Super Creature" />
+			    <property name="Race" value="Sumo Wrestler Command Dragon/Alien" />
+			    <property name="Rules" value="Your opponent's creatures must block if able.&#xd;&#xa; Whenever this creature wins a battle, untap it.&#xd;&#xa; Each of your other Aliens in the battle zone gets +5000 power.&#xd;&#xa;Quattro breaker&#xd;&#xa; Link Release  (When this creature would leave the battle zone, return a psychic cell to your hyperspatial zone and flip the other cards instead.) " />
+			    <property name="Power" value="20000" />
+			    <property name="Rarity" value="Uncommon" />
+			    <property name="Number" value="" />
+				<property name="Format" value="OCG" />
+			</alternate>
+			</card>
+		<card name="Duel Me!" id="b0c1c761-1ba8-4227-a999-d8f14802e595">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose a creature in the battle zone. That creature gets +5000 power and can't attack players until the end of the turn." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="29" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial White Blue Hole" id="4829ebb5-03ea-42b1-ac00-ed0c8885fe0c">
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Put a psychic creature that costs 5 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; If you put a Light psychic creature into the battle zone in this way, you may add a card in your hand to your shields face down. &#xd;&#xa; If you put a Water psychic creature into the battle zone in this way, this turn, your creatures can't be blocked." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="30" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial Green White Hole" id="8824fd9a-010e-4af0-9c13-583679032433">
+			<property name="Civilization" value="Light/Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Put a psychic creature that costs 5 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; If you put a Light psychic creature into the battle zone in this way, you may add a card from your hand to your shields face down.&#xd;&#xa; If you put a Nature psychic creature into the battle zone in this way, you may return a card from your mana zone to your hand. " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="31" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial Blue Black Hole" id="ec4dfb95-9de6-45f6-be90-108e7db02af2">
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Put a psychic creature that costs 5 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; If you put a Water psychic creature into the battle zone in this way, this turn, your creatures can't be blocked.&#xd;&#xa; If you put a Darkness psychic creature into the battle zone in this way, choose one of your opponent's creatures in the battle zone. During your opponent's next turn, that creature must attack if able." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="32" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial Black Red Hole" id="48d8a2d1-21f5-432a-88fb-623811cd1a5a">
+			<property name="Civilization" value="Darkness/Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Put a psychic creature that costs  5 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; If you put a Darkness psychic creature into the battle zone in this way, choose one of your opponent's creatures in the battle zone. On your opponent's next turn, that creature must attack if able.&#xd;&#xa; If you put a Fire psychic creature into the battle zone in this way, one of your creatures in the battle zone can attack untapped creatures this turn. " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="33" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial Red Green Hole" id="654a8743-f400-40d2-9a3b-c8cf5c0de381">
+			<property name="Civilization" value="Fire/Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Put a psychic creature that costs 5 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; If you put a Fire psychic creature into the battle zone in this way, one of your creatures in the battle zone can attack untapped creatures this turn. &#xd;&#xa; If you put a Nature psychic creature into the battle zone in this way, you may return a card from your mana zone to your hand. " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="34" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Amanes, Avenging Spirit" id="736a0ef5-1420-4fae-a289-023faf03690c">
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command/Hunter" />
+			<property name="Rules" value="Whenever this creature attacks, for each of your tapped creatures in the battle zone, you may choose one of your opponent's creatures in the battle zone and tap it." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="35" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Burei, Apostle of Dual Swords" id="2dec8d93-3429-4fc4-ae1c-0ee4c1cd123a">
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate/Hunter" />
+			<property name="Rules" value="{BLOCKER} This creature can't attack players.&#xd;&#xa;Hunting" />
+			<property name="Power" value="2500+" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="36" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Formation in the Springs" id="81f640b8-333e-483c-a92d-2ee842958df2">
+			<property name="Civilization" value="Light " />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;If you have a water or nature creature in the battle zone, you may put a creature that costs 5 or less from your graveyard into the battle zone . Otherwise, put a creature that costs 3 or less from your graveyard into the battle zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="37" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Energy Pirates" id="0c61c4a2-3c81-4593-acc4-8db33b01af27">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Merfolk" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature can't attack.&#xd;&#xa; Whenever this creature blocks, you may draw a card." />
+			<property name="Power" value="4000 " />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="38" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Aqua Slash" id="94b1db0e-144e-47fc-87b7-4df6c048cbfe">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="When you put this creature into the battle zone, each player chooses a card in his hand and puts it on the top of his deck." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="39" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Shadowflash Revival Spiral" id="4b3fb90f-2eb7-4bb4-b169-23a43a701596">
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose one of your opponent's creatures in the battle zone. If you have a light or darkness creature in the battle zone, put that creature on the top of its owner's deck. If not, return it to its owner's hand." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="40" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Rose Worm, Avenging Insect" id="7aa2da9c-c428-47c2-9700-940874fca24c">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Parasite Worm/Hunter" />
+			<property name="Rules" value="Whenever this creature attacks, choose one of your opponent's creatures in the battle zone . That creature gets -1000 power for each of your tapped creatures in the battle zone until the end of the turn.  (A creature that has power 0 or less is destroyed.) " />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="41" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Nagleen, Inmate Enigma" id="64375020-d0a9-4665-a102-158916715eed">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Devil Mask/Hunter" />
+			<property name="Rules" value="{BLOCKER} This creature can't attack.&#xd;&#xa;Hunting" />
+			<property name="Power" value="1000+" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="42" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial Raiden Hole" id="a7e2e28b-5791-4e1e-a9bc-d8e4ce9596df">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Put a Darkness psychic creature that costs 6 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; You may destroy one of your non-psychic creature creatures. If you do, put a Darkness psychic creature that costs 5 or less from your hyperspatial zone into the battle zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="43" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Hyperspatial Raiden Hole" id="675efc56-60ff-415c-99e5-7feda4055138">
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell " />
+			<property name="Race" value="" />
+			<property name="Rules" value="Put a Darkness psychic creature that costs 6 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; You may destroy one of your non-psychic creature creatures. If you do, put a Darkness psychic creature that costs 5 or less from your hyperspatial zone into the battle zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="43" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Melken Arrow, Fist Guy" id="b7a6c1a0-d280-45fb-a9c3-ba23c5e187e5">
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human/Hunter" />
+			<property name="Rules" value="" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="44" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Fire Pillar of the Spiritual Forest" id="22b4a36e-b522-4435-b0ce-39d02a747909">
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;If you have a darkness or nature creature in the battle zone, destroy one of your opponent's creatures that has power 7000 or less. If not, destroy one of your opponent's creatures that has power 4000 or less." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="45" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Iron Arm Tribe" id="fa7a8eea-f285-4260-ba71-56678d4b5793">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, put the top card of your deck into your mana zone.&#xd;&#xa; When this creature would be destroyed, put it into your mana zone instead." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="46" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Iron Arm Tribe" id="9d03131d-c529-4cfa-82b0-4b0aaf8a48e2">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk/Hunter" />
+			<property name="Rules" value="When you put this creature into the battle zone, put the top card of your deck into your mana zone.&#xd;&#xa; When this creature would be destroyed, put it into your mana zone instead." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="46" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Snowma Elder, Avenging Faerie" id="35635c12-7591-4308-bdb7-8d46df52f249">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Snow Faerie/Hunter" />
+			<property name="Rules" value="Whenever this creature attacks, choose one of your opponent's  creatures that costs less than the number of tapped creatures in the battle zone and put it into the mana zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="47" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Torch Buster Trap" id="d069d645-1ca4-4e57-88d7-62ace6d17e57">
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;If you have a light or fire creature in the battle zone, choose one of your opponent's creatures in the battle zone and put it into his mana zone. Otherwise, choose one of your opponent's tapped creatures in the battle zone and put it into his mana zone. " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="48" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Bulldozer" id="f25e209c-3c92-4a9a-bd5a-b33010075e85">
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Machine Hero/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;{BLOCKER}" />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="49" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Warning Spike" id="7feb774b-c26d-4fd6-9954-931dc30e41f1">
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa;Choose any number of your opponent's creatures in the battle zone. This turn, those creatures can't attack or block." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="50" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Alunilam, Protection Spirit" id="6201e65e-1120-4784-9c51-9c1503c1a1b3">
+			<property name="Civilization" value="Light/Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Saint Head/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When this creature would be destroyed, put it into your mana zone instead." />
+			<property name="Power" value="2500" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="51" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Melnia, the Aqua Shadow" id="39aad037-9315-4fdd-8fa5-a0bc1550bccf">
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People/Ghost/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; {BLOCKER}&#xd;&#xa; This creature can't be blocked.&#xd;&#xa;Slayer" />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="52" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Melnia, the Aqua Shadow" id="30f1e7f4-f897-4d1f-bbf3-9ff7c1035761">
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People/Ghost/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; {BLOCKER}&#xd;&#xa; This creature can't be blocked.&#xd;&#xa;Slayer" />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="52" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Deis Chicken Racer, Evil Battler" id="18dbeef3-c956-4edc-a858-deffe8d9cbcb">
+			<property name="Civilization" value="Darkness/Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Brave Spirit/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Tap Ability Destroy this creature. Your opponent chooses one of his creatures and destroys it." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="53" />
+			<property name="Format" value="OCG" />
+			</card>
+		<card name="Tsukkomi Panda Deis" id="47d81d64-1c18-46fe-a696-9846eaa99040">
+			<property name="Civilization" value="Fire/Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate/Alien" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) " />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="54" />
+			<property name="Format" value="OCG" />
+			</card>
+	    <card name="Volg Tiger, Thunder Beast" id="ad40f315-54b2-4d00-92a3-a28c803e8c2f">
+		    <property name="Civilization" value="Darkness" />
+		    <property name="Cost" value="12" />
+		    <property name="Type" value="Psychic Super Creature" />
+		    <property name="Race" value="Demon Command/Hunter" />
+		    <property name="Rules" value="Whenever this creature attacks, your opponent discards a card at random from his hand. Then, choose a creature that costs less than the discarded card in your graveyard and put it into the battle zone.&#xd;&#xa;Double breaker&#xd;&#xa;Link Release" />
+		    <property name="Power" value="11000" />
+		    <property name="Rarity" value="Victory Rare" />
+		    <property name="Number" value="V1b" />
+			<property name="Format" value="OCG" />
+		</card>
+	    <card name="Unryu Deis Izu, Great Yokozuna" id="4e26f628-fbe2-4f7d-ae51-a70d238cd80f">
+		    <property name="Civilization" value="Darkness/Fire/Nature" />
+		    <property name="Cost" value="20" />
+		    <property name="Type" value="Psychic Super Creature" />
+		    <property name="Race" value="Sumo Wrestler Command Dragon/Alien" />
+		    <property name="Rules" value="Your opponent's creatures must block if able.&#xd;&#xa; Whenever this creature wins a battle, untap it.&#xd;&#xa; Each of your other Aliens in the battle zone gets +5000 power.&#xd;&#xa;Quattro breaker&#xd;&#xa; Link Release  (When this creature would leave the battle zone, return a psychic cell to your hyperspatial zone and flip the other cards instead.) " />
+		    <property name="Power" value="20000" />
+		    <property name="Rarity" value="Uncommon" />
+		    <property name="Number" value="" />
+			<property name="Format" value="OCG" />
+		</card>
+	</cards>
+</set>

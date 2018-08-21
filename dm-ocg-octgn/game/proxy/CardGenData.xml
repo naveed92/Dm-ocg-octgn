@@ -15,6 +15,9 @@
 		</block>
 		<block type="overlay" id="natureC" src="proxy\frames\natureC.png">
 			<location x="0" y="0" />
+		</block>			
+        <block type="overlay" id="zeroC" src="proxy\frames\zeroC.png">
+			<location x="0" y="0" />
 		</block>	
 		
 		<block type="overlay" id="lightS" src="proxy\frames\lightS.png">
@@ -29,7 +32,13 @@
 		<block type="overlay" id="fireS" src="proxy\frames\fireS.png">
 			<location x="0" y="0" />
 		</block>
+        <block type="overlay" id="fireS_HSP" src="proxy\frames\fireS_HSP.png">
+			<location x="0" y="0" />
+		</block>
 		<block type="overlay" id="natureS" src="proxy\frames\natureS.png">
+			<location x="0" y="0" />
+		</block>
+        <block type="overlay" id="zeroS" src="proxy\frames\zeroS.png">
 			<location x="0" y="0" />
 		</block>
     
@@ -102,12 +111,43 @@
 		<block type="overlay" id="evo" src="proxy/evo.png">
 			<location x="0" y="0" />
 		</block>
-
-	<block type="text" id="title">
-			<location x="70" y="21" />
+        
+        <block type="overlay" id="sTrig" src="proxy/shTrigger.png">
+			<location x="0" y="0" />
+		</block>
+        <block type="overlay" id="blocker" src="proxy/blocker.png">
+			<location x="0" y="0" />
+		</block>
+        
+        <block type="overlay" id="vicLight" src="proxy\vicLight.png">
+			<location x="0" y="0" />
+		</block>
+		<block type="overlay" id="vicWater" src="proxy\vicWater.png">
+			<location x="0" y="0" />
+		</block>
+		<block type="overlay" id="vicDark" src="proxy\vicDark.png">
+			<location x="0" y="0" />
+		</block>
+		<block type="overlay" id="vicFire" src="proxy\vicFire.png">
+			<location x="0" y="0" />
+		</block>
+		<block type="overlay" id="vicNature" src="proxy\vicNature.png">
+			<location x="0" y="0" />
+		</block>			
+        <block type="overlay" id="vicZero" src="proxy\vicZero.png">
+			<location x="0" y="0" />
+		</block>	
+        <block type="text" id="title">
+			<location x="70" y="20" />
 			<text color="#000000" size="32" font="./fonts/perceval.ttf"/>
 			<border color="#FFFFFF" size="2" />
-			<wordwrap height="48" width="300" align="center" shrinktofit="True" valign="center" />
+			<wordwrap height="48" width="310" align="center" shrinktofit="True" valign="center" />
+		</block>
+        <block type="text" id="zerotitle">
+			<location x="70" y="20" />
+			<text color="#FFFFFF" size="32" font="./fonts/perceval.ttf"/>
+			<border color="#000000" size="2" />
+			<wordwrap height="48" width="310" align="center" shrinktofit="True" valign="center" />
 		</block>
 		<block type="text" id="cost">
 			<location x="4" y="25" />
@@ -115,11 +155,23 @@
 			<border color="#000000" size="2" />
 			<wordwrap height="38" width="70" align="center" shrinktofit="False" valign="center" />
 		</block>
+        <block type="text" id="zerocost">
+			<location x="4" y="25" />
+			<text color="#000000" size="38" font="./fonts/armadaCondensed.ttf"/>
+			<border color="#FFFFFF" size="2" />
+			<wordwrap height="38" width="70" align="center" shrinktofit="False" valign="center" />
+		</block>
 		<block type="text" id="race">
-			<location x="68" y="59" />
+			<location x="68" y="58" />
 			<text color="#000000" size="12" font="./fonts/armada.ttf"/>
 			<border color="#FFFFFF" size="1" />
-			<wordwrap height="18" width="300" align="center" shrinktofit="False" valign="center"/>
+			<wordwrap height="18" width="320" align="center" shrinktofit="False" valign="center"/>
+		</block>
+        <block type="text" id="zerorace">
+			<location x="68" y="58" />
+			<text color="#FFFFFF" size="12" font="./fonts/armada.ttf"/>
+			<border color="#000000" size="1" />
+			<wordwrap height="18" width="320" align="center" shrinktofit="False" valign="center"/>
 		</block>
 		<block type="text" id="power">
 			<location x="16" y="501" />
@@ -154,7 +206,122 @@
 		</block>
 	</blocks>
 	
+	<!-- /////////// Gotta make a whole copy for victory creature/victory evolution creature CUZ YOU CAN'T F*CKING NEST CONDITIONS //// -->
+    <template src="proxy\blank.png">
+        <matches>
+			<match name="Type" value="Creature"/>
+            <match name="Rarity" value="Victory Rare"/>
+		</matches>
+		
+		<overlayblocks>
+			<artoverlay>
+				<location x="0" y="0" />
+				<size height="560" width="400" />
+			</artoverlay>
+
+			<conditional>
+				<switch property="Civilization">
+					<case value="Light"> <link block="lightC" /> <link block="vicLight"/></case>
+					<case value="Fire"> <link block="fireC" /> <link block="vicFire"/></case>
+					<case value="Water"> <link block="waterC" /> <link block="vicWater"/></case>
+					<case value="Nature"> <link block="natureC" /> <link block="vicNature"/></case>
+					<case value="Darkness"> <link block="darkC" /> <link block="vicDark"/></case>
+					<case value="Zero"> <link block="zeroC" /> <link block="vicZero"/></case>
+					<!-- Not putting multiciv cases here for now -->
+                    
+					<default> <link block="ZeroC" /> </default>
+				</switch>
+			</conditional>
 	
+			<conditional>
+				<if property="Type" contains="Evolution">
+					<link block="evo" />
+  				</if>
+			</conditional>  
+            
+             <conditional>
+				<if property="Rules" contains="{SHIELD TRIGGER}">
+					<link block="sTrig" />
+  				</if>
+			</conditional>
+            
+            <conditional>
+				<if property="Rules" contains="{BLOCKER}">
+					<link block="blocker" />
+  				</if>
+			</conditional>
+		</overlayblocks>
+        
+		<textblocks>
+			<conditional>
+                <if property="Civilization" value="Zero">	
+                    <link block="zerotitle"><property name="Name" /></link>
+                    <link block="zerorace"><property name="Race" /></link>
+                    <link block="zerocost"><property name="Cost" /></link>
+                </if>
+                <else>
+                    <link block="title"><property name="Name" /></link>
+                    <link block="race"><property name="Race" /></link>
+                    <link block="cost"><property name="Cost" /></link>
+                </else>
+            </conditional>
+			<link block="typeC"><property name="Type" /></link>
+			<link block="rules"><property name="Rules" /></link>
+			<link block="power"><property name="Power" /></link>
+		</textblocks>
+	</template>
+    <!-- Evo victory creature -->
+    <template src="proxy\blank.png">
+        <matches>
+			<match name="Type" value="Evolution Creature"/>
+            <match name="Rarity" value="Victory Rare"/>
+		</matches>
+		
+		<overlayblocks>
+			<artoverlay>
+				<location x="0" y="0" />
+				<size height="560" width="400" />
+			</artoverlay>
+
+			<conditional>
+				<switch property="Civilization">
+					<case value="Light"> <link block="lightC" /> <link block="vicLight"/></case>
+					<case value="Fire"> <link block="fireC" /> <link block="vicFire"/></case>
+					<case value="Water"> <link block="waterC" /> <link block="vicWater"/></case>
+					<case value="Nature"> <link block="natureC" /> <link block="vicNature"/></case>
+					<case value="Darkness"> <link block="darkC" /> <link block="vicDark"/></case>
+					<case value="Zero"> <link block="zeroC" /> <link block="vicZero"/></case>
+					<!-- Not putting multiciv cases here for now -->
+					<default> <link block="ZeroC" /> </default>
+				</switch>
+			</conditional>
+				<link block="evo" />		
+        
+            <conditional>
+                    <if property="Rules" contains="{BLOCKER}">
+                        <link block="blocker" />
+                    </if>
+            </conditional>
+        </overlayblocks>
+		<textblocks>
+			<conditional>
+                <if property="Civilization" value="Zero">	
+                    <link block="zerotitle"><property name="Name" /></link>
+                    <link block="zerorace"><property name="Race" /></link>
+                    <link block="zerocost"><property name="Cost" /></link>
+                </if>
+                <else>
+                    <link block="title"><property name="Name" /></link>
+                    <link block="race"><property name="Race" /></link>
+                    <link block="cost"><property name="Cost" /></link>
+                </else>
+            </conditional>
+			<link block="typeC"><property name="Type" /></link>
+			<link block="rules"><property name="Rules" /></link>
+			<link block="power"><property name="Power" /></link>
+		</textblocks>
+	</template>
+    <!-- ////////////////////////////creature/////////////////////////////////////// -->
 	<template src="proxy\blank.png" default="True" >
 		<matches>
 			<match name="Type" value="Creature"/>
@@ -173,6 +340,7 @@
 					<case value="Water"> <link block="waterC" /> </case>
 					<case value="Nature"> <link block="natureC" /> </case>
 					<case value="Darkness"> <link block="darkC" /> </case>
+					<case value="Zero"> <link block="zeroC" /> </case>
 					
 					<case value="Darkness/Fire"> <link block="fireDarkC" /> </case>
 					<case value="Fire/Darkness"> <link block="fireDarkC" /> </case>
@@ -214,20 +382,42 @@
 					<link block="evo" />
   				</if>
 			</conditional>
+            
+            <conditional>
+				<if property="Rules" contains="{SHIELD TRIGGER}">
+					<link block="sTrig" />
+  				</if>
+			</conditional>
+            
+            <conditional>
+				<if property="Rules" contains="{BLOCKER}">
+					<link block="blocker" />
+  				</if>
+			</conditional>
 		</overlayblocks>
 		
 		<textblocks>
-						
-			<link block="title"><property name="Name" /></link>
-			<link block="race"><property name="Race" /></link>
+			<conditional>
+                <if property="Civilization" value="Zero">	
+                    <link block="zerotitle"><property name="Name" /></link>
+                    <link block="zerorace"><property name="Race" /></link>
+                    <link block="zerocost"><property name="Cost" /></link>
+
+                </if>
+                <else>
+                    <link block="title"><property name="Name" /></link>
+                    <link block="race"><property name="Race" /></link>
+                    <link block="cost"><property name="Cost" /></link>
+
+                </else>
+            </conditional>
 			<link block="typeC"><property name="Type" /></link>
 			<link block="rules"><property name="Rules" /></link>
-			<link block="cost"><property name="Cost" /></link>
 			<link block="power"><property name="Power" /></link>
 		</textblocks>
 	</template>
 	
-		<template src="proxy\blank.png">
+	<template src="proxy\blank.png">
 		<matches>
 			<match name="Type" value="Spell"/>
 		</matches>
@@ -245,6 +435,8 @@
 					<case value="Water"> <link block="waterS" /> </case>
 					<case value="Nature"> <link block="natureS" /> </case>
 					<case value="Darkness"> <link block="darkS" /> </case>
+                    <case value="Zero"> <link block="zeroS" /> </case>
+
 					
 					<case value="Darkness/Fire"> <link block="fireDarkS" /> </case>
 					<case value="Fire/Darkness"> <link block="fireDarkS" /> </case>
@@ -280,16 +472,34 @@
 					<default> <link block="lightS" /> </default>
 				</switch>
 			</conditional>	
+            
+            <conditional>
+				<if property="Rules" contains="{SHIELD TRIGGER}">
+					<link block="sTrig" />
+  				</if>
+			</conditional>
 			
 		</overlayblocks>
 		
 		<textblocks>
-						
-			<link block="title"><property name="Name" /></link>
-			<link block="race"><property name="Race" /></link>
+			<conditional>
+                <if property="Civilization" value="Zero">	
+                    <link block="zerotitle"><property name="Name" /></link>
+                    <link block="zerorace"><property name="Race" /></link>
+                    <link block="zerocost"><property name="Cost" /></link>
+
+                </if>
+                <else>
+                    <link block="title"><property name="Name" /></link>
+                    <link block="race"><property name="Race" /></link>
+                    <link block="cost"><property name="Cost" /></link>
+
+                </else>
+            </conditional>			
 			<link block="typeS"><property name="Type" /></link>
 			<link block="rules"><property name="Rules" /></link>
-			<link block="cost"><property name="Cost" /></link>
 		</textblocks>
 	</template>
+    
+	
 </templates>

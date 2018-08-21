@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DM-32 Evolution Saga" id="d290963c-5598-46d3-81c9-6389b62426b6" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="872a0cba-57c6-4103-a6e4-57881d8eec9a">
+			<options>
+				<option probability="0.083">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.250">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="3" key="Rarity" value="Uncommon"/>
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Thunder Moon, the Enlightened" id="4a1858a8-98b9-46ac-913c-e7e9bb821c25">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Angel Command" />
+			<property name="Rules" value="Ultimate Evolution: Put on 1 of your Evolution creatures.&#xd;&#xa;When you put this creature into the battle zone, you may cast 1 spell from your mana zone without cost.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="17500" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S1" />
+		</card>
+		<card name="Aldora, White Knight Spirit" id="175d994e-b86c-4541-ae7a-f5af1b356336">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="12" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;If you didn't put a creature with &quot;Blocker&quot; into the battle zone this turn, this creature can't attack.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="15500" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S2" />
+		</card>
+		<card name="Emperor Chirico" id="239b128e-22fe-41f8-99e7-83fd42143094">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Lord/Origin" />
+			<property name="Rules" value="Evolution: Put one 1 of your creatures with &quot;Cyber&quot; in its race or Origins.&#xd;&#xa;When you put this creature into the battle zone, put all of your other creatures in the battle zone on the bottom of your deck in any order. Then, reveal cards from the top of your
+
+deck until you reveal 3 non-evolution creatures. Put those creatures into the battle zone, then shuffle your deck including the other revealed cards.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="13000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S3" />
+		</card>
+		<card name="Blizzard Moon, the Enlightened" id="cfa8c8d4-42a7-4bbb-b63b-cb1fafed3d0f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Cyber Command" />
+			<property name="Rules" value="Ultimate Evolution: Put on 1 of your Evolution creatures.&#xd;&#xa;When this creature attacks, you may draw up to 3 cards.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S4" />
+		</card>
+		<card name="Skull Moon, the Enlightened" id="3f73a5e5-7469-46a0-a890-ae2f2267f25e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Dark Lord" />
+			<property name="Rules" value="Ultimate Evolution: Put on 1 of your Evolution creatures.&#xd;&#xa;Whenever this creature would be destroyed, you may destroy 1 of your opponent's creatures instead.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="12000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S5" />
+		</card>
+		<card name="Bell Hell De Gaul, Footprint of the Reaper" id="213090db-1f59-4b95-9fee-26105de150b2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Rules" value="Whenever 1 of your opponent's creatures are destroyed, shuffle your deck. Then, reveal the top card of your deck. If that card is a non-evolution Demon Command, put it into the battle zone. If not, put it into your hand.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S6" />
+		</card>
+		<card name="Drag Moon, the Enlightened" id="50659e23-c9ab-4e14-b965-2e70b06d4234">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Armored Dragon" />
+			<property name="Rules" value="Ultimate Evolution: Put on 1 of your Evolution creatures.&#xd;&#xa;When this creature attacks, destroy up to 2 of your opponent's creatures with 6000 power or less.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="15000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S7" />
+		</card>
+		<card name="Bolshack NEX" id="8d0d154b-d53f-4bc4-9c8a-4d7c09074850">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="When you put this creature into the battle zone, search your deck. You may choose 1 card with &quot;Lupia&quot; in its name and put it into the battle zone. Then, shuffle your deck.&#xd;&#xa;This creature gets &quot;Power Attacker +1000&quot; for each Fire Bird in your graveyard.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S8" />
+		</card>
+		<card name="Tornado Moon, the Enlightened" id="c44a4f33-c25a-49c8-b421-faa3e1b5b83d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Giant" />
+			<property name="Rules" value="Ultimate Evolution: Put on 1 of your Evolution creatures.&#xd;&#xa;Quatro Breaker&#xd;&#xa;Whenever 1 of your Giants are blocked, that Giant breaks 2 of your opponent's shields." />
+			<property name="Power" value="22000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S9" />
+		</card>
+		<card name="Auravine, Earth's Grasp" id="ed7c70ff-90e7-4741-9429-d24822ac24a1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gaia Command" />
+			<property name="Rules" value="When you put this creature into the battle zone, put up to 2 of your opponent's non-evolution creatures with a cost of 3 or less into their owner's mana zone.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S10" />
+		</card>
+		<card name="Ikazuchi, Lord of Spirits" id="4951c0cd-550e-47c3-a7c0-082634e7cdb8">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="Evolution: Put on 1 of your Angel Commands or Origins&#xd;&#xa;Whenever a creature is put into the battle zone you may untap any number of creatures in your battle zone. Those creatures get &quot;Blocker&quot; until the end of that turn.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="1" />
+		</card>
+		<card name="Victoria, the Pure Princess" id="14dfb216-0c98-4b23-a3bf-6dee0cd9cb83">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha del Sol" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Evolution: Put on 1 of your creatures with &quot;Blocker&quot;&#xd;&#xa;When you put this creature into the battle zone, for each Blocker in your battle zone you may tap 1 of your opponent's creatures.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="2" />
+		</card>
+		<card name="Crystal Axe" id="82a3af17-0e55-4874-b1c7-ccaafeee9127">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="Hand Evolution: Choose 1 water creature in your hand and put this creature into your battle zone on top of the chosen card.&#xd;&#xa;This creature can't be blocked.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="3" />
+		</card>
+		<card name="Emperor Gyulum" id="a4ed6c2e-1700-4449-9ab4-d7b417cbe8d2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Lord" />
+			<property name="Rules" value="Evolution: Put on 1 of your creatures with &quot;Cyber&quot; in its race.&#xd;&#xa;Double Breaker&#xd;&#xa;When this creature leaves the battle zone, reveal cards from the top of your deck until you reveal a creature. Put that creature into the battle zone and the rest of the cards on
+
+the bottom of your deck in any order. (If you can't put that creature into the battle zone it stays on the top of your deck. Put the other revealed cards on the bottom of your deck in any order.)
+
+" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="4" />
+		</card>
+		<card name="Hades, Emperor of Death" id="5770a0da-65bb-4266-b0d8-1af18ed8ddf2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dark Lord" />
+			<property name="Rules" value="Grave Evolution: Choose 1 darkness creature in your graveyard and put this card into your battle zone on top of the chosen card.&#xd;&#xa;You may summon 1 creature from your graveyard during your turn. (You must still pay the mana cost of this creature.)&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="5" />
+		</card>
+		<card name="Adge, Emperor of the Gods" id="f23e873f-fdef-4d9c-a02d-d9b457be005f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God/Origin" />
+			<property name="Rules" value="Double Breaker&#xd;&#xa;God Link - Ana, Emperor of the Gods or Suva, Emperor of the Gods (Left Side) or Moora, Emperor of the Gods (Top Side) (If the specified god is in the battle zone, you may
+
+link this to it. The linked god gains each god's characteristics (power and abilities) and becomes one creature. When the linked creature leaves the battle zone, select 1 side instead.)&#xd;&#xa;When this creature is linked with 3 other Gods, whenever this creature attacks or blocks you may untap it." />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="6" />
+		</card>
+		<card name="Uberdragon Bash Mikazuchi" id="7a69074e-a105-4b31-8312-430d9922597d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Armored Dragon/Origin" />
+			<property name="Rules" value="Evolution: Put on 1 of your Armored Dragons.&#xd;&#xa;Whenever 1 of your opponent's creatures attacks, your opponent chooses 1 of their creatures with 7000 power or less and destroys it.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="7" />
+		</card>
+		<card name="Nine Edge &quot;Yasha&quot; Dragon" id="4a211d66-5903-462d-846e-4dad38c71bf6">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon/Samurai" />
+			<property name="Rules" value="When you put this creature into the battle zone, search your deck. For each Dragon in your battle zone you may take a non-evolution cross gear with a cost of 3 or
+
+less, put it into the battle zone, and cross it with that Dragon. Then, shuffle your deck.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="8" />
+		</card>
+		<card name="Xenon Da Vinci, Master of Space" id="436caac6-042e-4918-9984-afa079370296">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="11" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Giant/Dreammate/Origin" />
+			<property name="Rules" value="Evolution: Put on 1 of your Giants, Dreammates, or Origins&#xd;&#xa;Soulshift (When you summon this creature, this creature's cost is reduced by the base creature's cost. However, it can't cost less than 1.)&#xd;&#xa;Whenever your evolution creatures are destroyed, you may put 1 non-evolution Giant, Dreammate, or Origin into the battle zone from your mana zone.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="9" />
+		</card>
+		<card name="God Saga" id="909aee21-11b8-4aa1-8ee2-7a2cafeae9a9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="13" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Put up to two Gods into the battle zone from the mana zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="10" />
+		</card>
+		<card name="Yes Yazalis, Super Divine Dragon" id="63da8e11-9768-484b-9f9a-f6fd27a53106">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Apollonia Dragon" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Evolution Creature: Put on 1 of your creatures with &quot;Blocker&quot;.&#xd;&#xa;When you put this creature into the battle zone, the power of all the non-evolution creatures in your opponent's battle zone becomes 500 until the end of this turn." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="11" />
+		</card>
+		<card name="Phal Ken, Spirit of Binding Light" id="49894729-af55-4101-b428-d72da531d232">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="When you put this creature into the battle zone, all of your opponent's tapped creatures don't untap at the start of their next turn." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="12" />
+		</card>
+		<card name="Gran Zemechis, Holy Dragon Sage" id="aba79bd4-c595-457f-943f-8f03fc2c5c3e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Apollonia Dragon/Gladiator" />
+			<property name="Rules" value="When you put this creature into the battle zone, put all cross gears in the battle zone into their owner's graveyard." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="13" />
+		</card>
+		<card name="Gravitius, White Knight Spirit" id="0eb30b60-e267-46f4-a30b-0f17d4e7812c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose 1 creature with the lowest power in your opponent's battle zone. If there are 2 or more creatures tied for the
+
+lowest power you may choose any of them. That creature doesn't untap the start of your opponent's next turn." />
+			<property name="Power" value="4500" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="14" />
+		</card>
+		<card name="Positron Sign" id="9fbcde11-9015-4c82-a891-4719007299fb">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Reveal the top 4 cards of your deck. You may choose 1 spell with &quot;Shield Trigger&quot; from among these cards. Put the rest of the cards on the bottom of your deck in any order.
+
+Then, cast the chosen spell without cost." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="15" />
+		</card>
+		<card name="Evolution Burst - Laser Net" id="c849f182-7e2d-4843-be94-9f9eb66f9564">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose and activate 1 of the following effects:
+-Choose up to 2 creatures in your battle zone. Those creatures can't be blocked this turn.
+-At the end of this turn, untap up to 2 creatures in your battle zone.&#xd;&#xa;Double Evolution Burst (If you have an evolution creature in the battle zone, you may use both effects.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="16" />
+		</card>
+		<card name="Maxwell Z, the Super-Electric" id="a4620177-7f84-4afc-855c-eab758cde11a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Command" />
+			<property name="Rules" value="Evolution: Put on 1 of your creatures with &quot;Cyber&quot; in its race.&#xd;&#xa;Soulshift (When you summon this creature, this creature's cost is reduced by the base creature's cost. However, it can't cost less than 1.)&#xd;&#xa;Players can't cast spells that share a civilization with a spell in their graveyard.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="17" />
+		</card>
+		<card name="Emperor Neuron" id="9a64adcd-ca45-4fda-86b1-2ba485ce9aa1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Lord" />
+			<property name="Rules" value="Hand Evolution: Choose 1 water creature in your hand and put this creature into your battle zone on top of the chosen card.&#xd;&#xa;When you put this creature into the battle zone, reveal cards from the top of your deck until you reveal 2 cards with the same name. Put those 2 cards into your hand, then
+
+shuffle your deck including the other revealed cards." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="18" />
+		</card>
+		<card name="Cyber X Xanadu" id="f60f1a27-d9b1-4a39-9480-d58483a6a09f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Command" />
+			<property name="Rules" value="When you put this creature into the battle zone, put 1 of your opponent's non-evolution creatures on the bottom of their deck.&#xd;&#xa;Double Breaker&#xd;&#xa;When this creature leaves the battle zone, your opponent reveals the bottom card of their deck. If that card is a non-evolution creature they may put it into the battle
+
+zone." />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="19" />
+		</card>
+		<card name="Ana, Emperor of the Gods" id="31eeea28-0fed-4a96-b83a-478c3edf1071">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God/Origin" />
+			<property name="Rules" value="God Link - Adge, Emperor of the Gods (Right Side) or Mani, Emperor of the Gods or Vishu, Emperor of the Gods (Top Side) (If the specified god is in the battle
+
+zone, you may link this to it. The linked god gains each god's characteristics (power and abilities) and becomes one creature. When the linked creature leaves the battle zone, select 1 side
+
+instead.)&#xd;&#xa;When this creature links with another God, you may have your opponent choose 1 of their creatures and return it to their hand." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="20" />
+		</card>
+		<card name="Veil Babylonia, Blue Divine Dragon" id="4d673cdd-64e4-47fd-bcb8-a27456c97da2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Poseidia Dragon/Origin" />
+			<property name="Rules" value="Whenever you draw 1 card, you may draw 2 cards instead. If you do, discard 1 card from your hand. &#xd;&#xa;When you put this creature into the battle zone, look at your opponent's hand and choose 1 card from it. Your opponent puts the chosen card on the bottom of their deck and
+
+draws 1 card." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="21" />
+		</card>
+		<card name="Evolution Burst - Energy Spiral" id="ef8ffe04-50ed-4bf3-91a3-e3b7627071c9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose and activate 1 of the following effects:
+-Draw 2 cards.
+-Choose 1 creature in the battle zone and return it to its owner's hand.&#xd;&#xa;Double Evolution Burst (If you have an evolution creature in the battle zone, you may use both effects.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="22" />
+		</card>
+		<card name="Doggmag, Parasite of Decay" id="355e8371-599a-482c-9686-0ba7694bcf1a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Parasite Worm/Ghost" />
+			<property name="Rules" value="Evolution: Put on 1 of your Parasite Worms or Ghosts.&#xd;&#xa;All of your creatures gain &quot;Slayer&quot;&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="23" />
+		</card>
+		<card name="Ghoul Ginus, the All-Destroying Fear Lord" id="bd151192-0c16-44a6-9083-206321a38699">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Lord/Zombie Dragon" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may destroy 1 of your other creatures. If you do, your opponent chooses 1 of their shields. This creature breaks
+
+that shield.&#xd;&#xa;When you put this creature into the battle zone, you may return 1 of your shields to your hand. However, you can't use the &quot;Shield Trigger&quot; of the returned shield. If you do,
+
+destroy 1 of your opponent's creatures.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="24" />
+		</card>
+		<card name="Dark Zekia, Reaper of Death" id="07fce31c-1be1-43b6-b588-2e33679a6c04">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Monster" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;When you put this creature into the battle zone, show any number of evolution creatures in your hand to your opponent. For each evolution creature shown, choose 1 of your
+
+opponent's creatures. The chosen creature gets -2000 power until the end of the turn. A creature may be chosen 2 or more times in this way." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="25" />
+		</card>
+		<card name="Gylus, Larval Lord" id="660229d4-e339-4c8e-804b-7449706fb265">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Parasite Worm/Dark Lord" />
+			<property name="Rules" value="When you put this creature into the battle zone, discard 1 card from your opponent's hand at random.&#xd;&#xa;When this creature leaves the battle zone, your opponent may return 1 card from their graveyard to their hand." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="26" />
+		</card>
+		<card name="Gigajoker" id="14be71d3-53f4-47f3-8e08-98fc11327b5d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Chimera" />
+			<property name="Rules" value="At the start of your opponent's turn, you may choose 1 of your opponent's creatures. During this turn, the chosen creature must attack your evolution creatures if
+
+possible.&#xd;&#xa;All of your evolution creatures gain &quot;Slayer&quot;." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="27" />
+		</card>
+		<card name="Evolution Burst - Gabra Hand" id="60826f7e-53f9-44e7-82f1-143015125356">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose and activate 1 of the following effects:
+-Your opponent chooses 1 of their creatures and destroys it.
+-Your opponent chooses 1 card in their hand and discards it.&#xd;&#xa;Double Evolution Burst (If you have an evolution creature in the battle zone, you may use both effects.)" />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="28" />
+		</card>
+		<card name="Uberdragon Valt" id="311a2686-78fa-43cc-8a45-fa9ee9c520ea">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="Deck Evolution: Reveal the top card of your deck. If that card is a creature, put this creature into the battle zone on top of the revealed creature. If the revealed card
+
+isn't a creature return this creature to your hand.&#xd;&#xa;This creature gets +3000 power if there is another Armored Dragon in your battle zone.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="29" />
+		</card>
+		<card name="Peryuton, Bird of Fire" id="192bd561-ec25-49ed-9f62-362b6f68e314">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Deck Evolution: Reveal the top card of your deck. If that card is a creature, put this creature into the battle zone on top of the revealed creature. If the revealed card
+
+isn't a creature return this creature to your hand.&#xd;&#xa;When this creature is destroyed, you may return 1 of the base cards this creature evolved from to the battle zone from your graveyard." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="30" />
+		</card>
+		<card name="Boleas, Bird of Fire" id="50a73de2-1c62-4352-94e2-a4d909e02c33">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Evolution: Put on 1 of your Fire Birds.&#xd;&#xa;When you put this creature into the battle zone, destroy 1 of your opponent's creatures with &quot;Blocker&quot;." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="31" />
+		</card>
+		<card name="Leonzard Dragon" id="f0088845-bb06-45e1-8e1a-f76d8821d2e3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="When this creature attacks, choose 1 card in your opponent's mana zone and put it in its owner's graveyard." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="32" />
+		</card>
+		<card name="Izanomi Heat, Piercing Light Soldier" id="1d0c9222-e984-48dd-b1aa-1ab950667fec">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human/Origin" />
+			<property name="Rules" value="When you put this creature into the battle zone, your opponent chooses 1 of their shields. This creature breaks that shield.&#xd;&#xa;When this creature leaves the battle zone, your opponent may put 1 card in their hand into their shields face down." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="33" />
+		</card>
+		<card name="Evolution Burst - Mega Burst" id="2c1342b8-3733-4266-872c-cbe9783ac787">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose and activate 1 of the following effects:
+-Destroy 1 of your opponent's creatures with 6000 power or less.
+-Destroy up to 3 of your opponent's creatures with 2000 power or less.&#xd;&#xa;Double Evolution Burst (If you have an evolution creature in the battle zone, you may use both effects.)" />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="34" />
+		</card>
+		<card name="Rose Sorcerer" id="d3f10c8e-766a-4666-b6c3-4d22456ff28f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk/Origin" />
+			<property name="Rules" value="When you put this creature into the battle zone, put the top 2 cards of your deck into your mana zone.&#xd;&#xa;When this creature leaves the battle zone, put 2 cards from your mana zone on top of your deck in any order." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="35" />
+		</card>
+		<card name="Takasuki Giant" id="4132bf41-e518-4957-b965-06b81048a21c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant/Samurai" />
+			<property name="Rules" value="When you put this creature into the battle zone, search your deck. you may choose up to 2 evolution creatures from it, show them to your opponent and put them
+
+into your hand. Then, shuffle your deck." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="36" />
+		</card>
+		<card name="Wolf Nature, Forest Beast" id="af4a4534-ec08-47a4-91e0-f4976c11685c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Emerald Monster/Samurai" />
+			<property name="Rules" value="If there is a Knight in your opponent's battle zone, this creature gets +6000 power and &quot;Double Breaker.&#xd;&#xa;If there is a Knight in your opponent's battle zone, whenever this creature would be removed from the battle zone it remains in the battle zone instead. " />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="37" />
+		</card>
+		<card name="Coon, Golden Lion of the Dawn" id="829b7bbd-eae8-4816-ace9-ed66b4e382b7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="This creature gets +1000 power for each evolution card in your mana zone.&#xd;&#xa;When this creature has 6000 power or more, it gains &quot;Double Breaker&quot;." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="38" />
+		</card>
+		<card name="Evolution Burst - Into the Wild" id="d9aaabd2-0abc-42bf-9fc6-368576c54ba6">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose and activate 1 of the following effects:
+-Put the top 3 cards of your deck into your mana zone.
+-Choose 1 of your opponent's non-evolution creatures and put it into their mana zone.&#xd;&#xa;Double Evolution Burst (If you have an evolution creature in the battle zone, you may use both effects.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="39" />
+		</card>
+		<card name="Solomonias, the Wise" id="09447ef8-a47d-4efc-a6ef-75ecf151cdf2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Evolution: Put on 1 of your Light Bringers.&#xd;&#xa;This creature can't attack players.&#xd;&#xa;At the end of your turn, you may untap this creature." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="41" />
+		</card>
+		<card name="Kushinada, Light Weapon" id="e1963d2e-182d-4618-9a6e-0f575d0e955d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha del Sol" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;This creature can't attack players.&#xd;&#xa;Whenever your opponent would choose 1 of your creatures, your evolution creatures can't be chosen. (However, they can still be attacked or blocked.)&#xd;&#xa;When your opponent chooses this creature, you may put the top card of your deck into your shields face down." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="42" />
+		</card>
+		<card name="Phal Reeze, Apocalyptic Sage" id="741cf460-6d59-4dfe-87e3-dd22892ba2d2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer/Guardian/Origin" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may return 1 spell from your graveyard to your hand." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="43" />
+		</card>
+		<card name="Caladorius, Apocalyptic Beast" id="4f08329a-b9c5-4005-b06b-70488ed4dccc">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer/Shine Monster/Origin" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;This creature can't attack players.&#xd;&#xa;When you put this creature into the battle zone, put the top card of your deck into your shields face down.&#xd;&#xa;When this creature leaves the battle zone, put 1 of your shields into your graveyard." />
+			<property name="Power" value="2500" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="44" />
+		</card>
+		<card name="La Jeanne, White Knight" id="8c393854-b5dd-417a-a28d-f0fc945d6155">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="You may have your light evolution creatures cost 1 less to summon. They can't cost less than 1." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="45" />
+		</card>
+		<card name="Latius, Vizier of Mystery" id="9d281b8f-9738-4925-94ad-e4f5d40e288d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate/Origin" />
+			<property name="Rules" value="Whenever you summon an evolution creature, look at 1 of your shields. Then, you may put the top card of your deck into your shields face down. If you do, put the
+
+shield you looked at on top of your deck." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="46" />
+		</card>
+		<card name="Spiral Moon, the Enlightened" id="acecd2f1-b987-4e7e-ae07-72c34d5286cb">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Cyber Command" />
+			<property name="Rules" value="Ultimate Evolution: Put on 1 of your Evolution creatures.&#xd;&#xa;When this creature attacks, you may return 1 creature in the battle zone to its owner's hand.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="47" />
+		</card>
+		<card name="Legendary Desperado" id="5b5449fb-3bd5-4b1f-be6b-fdc179c3f4ce">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Leviathan" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Hand Evolution: Choose 1 water creature in your hand and put this creature into your battle zone on top of the chosen card.&#xd;&#xa;Double Breaker&#xd;&#xa;When this creature is destroyed. only the top card of this creature is put into the graveyard. The base card(s) are returned to your hand." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="48" />
+		</card>
+		<card name="Emperor Himiko" id="5c222e10-f92a-4ed7-9480-ed7adafef66c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Lord/Origin" />
+			<property name="Rules" value="Evolution: Put on 1 of your creatures with &quot;Cyber&quot; in its race or Origins&#xd;&#xa;When you put this creature into the battle zone, you may draw 1 card." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="49" />
+		</card>
+		<card name="Mani, Emperor of the Gods" id="c5ff0086-d642-44ff-be5d-1288b81f52ff">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God/Origin" />
+			<property name="Rules" value="God Link - Moora, Emperor of the Gods (Right Side) or Ana, Emperor of the Gods or Suva, Emperor of the Gods (Bottom Side) (If the specified god is in the
+
+battle zone, you may link this to it. The linked god gains each god's characteristics (power and abilities) and becomes one creature. When the linked creature leaves the battle zone, select 1 side
+
+instead.)&#xd;&#xa;When this creature links with another God, you may draw 1 card." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="50" />
+		</card>
+		<card name="Tsukumo Spark" id="1deae1f8-7314-40f7-92df-da97a614c5f6">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Virus/Origin" />
+			<property name="Rules" value="When you put this creature into the battle zone, return 1 of your opponent's creatures to their hand.&#xd;&#xa;When this creature leaves the battle zone, your opponent may put 1 creature from their hand into the battle zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="51" />
+		</card>
+		<card name="Aqua Evoluter" id="24522b76-7d75-4d84-97c1-f568459c044a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="You may have your water evolution creatures cost 1 less. However, they can't cost less than 1." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="52" />
+		</card>
+		<card name="Crisis Worm, Evil Insect" id="64f7f18b-9f34-4f00-afbd-a37fbb9439ae">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Parasite Worm/Origin" />
+			<property name="Rules" value="Evolution: Put on 1 of your Parasite Worms or Origins.&#xd;&#xa;When you put this creature into the battle zone, your opponent chooses 1 card in their hand and discards it." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="53" />
+		</card>
+		<card name="Death March, Reaper of Death" id="7b58e4ef-c2ae-41ff-b4d1-81c6ad1e7b12">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Death Puppet" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Grave Evolution: Choose 1 darkness creature in your graveyard and put this card into your battle zone on top of the chosen card.&#xd;&#xa;Whenever this creature battles, the opponent's creature that this creature is battling with gets -4000 power until the end of that battle." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="54" />
+		</card>
+		<card name="Yata Izuna, Eight-Headed Parasite" id="40524def-2b86-4e2e-a245-887d2c7ae029">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Parasite Worm/Dark Lord/Origin" />
+			<property name="Rules" value="At the start of your turn, you may put 1 evolution creature into the battle zone from your graveyard without cost. (This creature must have a correct base creature to
+
+evolve from.)" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="55" />
+		</card>
+		<card name="God Gut" id="df2547ad-eb86-428b-9fb6-010d7a05f3d5">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;When you put this creature into the battle zone, you may discard 1 card from your hand. If you do, search your deck. You may take a God from it, show it to your opponent, then
+
+put it into your hand. Then, shuffle your deck." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="56" />
+		</card>
+		<card name="Fuuma Ravaal, the Reaper" id="7ed1b3b9-61ef-493d-87c0-fe26839f9e32">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="You may have your darkness evolution creatures cost 1 less to summon. They can't cost less than 1." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="57" />
+		</card>
+		<card name="Phantom Bites" id="d4c0ee5f-905d-4349-ae14-05c4cb3e57d2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose 1 of your opponent's creatures. That creature gets -2000 power until the end of the turn." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="58" />
+		</card>
+		<card name="Magma Moon, the Enlightened" id="137afe83-19bd-4899-a9bd-bd0e9ee8e934">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Armored Dragon" />
+			<property name="Rules" value="Ultimate Evolution: Put on 1 of your Evolution creatures&#xd;&#xa;When this creature attacks, choose a number. Reveal the top card of your deck. If that card is a creature with the same cost as the chosen number you may put that creature
+
+into the battle zone without cost. (If that card doesn't have the same cost put it back on top of your deck.)&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="59" />
+		</card>
+		<card name="Wan Ken, Crimson Lord ~Moonlight Howl~ " id="bc44e4e7-5a07-49c2-9428-d8b0ef99aca8">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Flame Monster" />
+			<property name="Rules" value="Evolution: Put on 1 of your creatures with [Ken, Crimson Lord] in its name.&#xd;&#xa;Instead of having this creature attack, you may tap it to use its [Tap] ability:&#xd;&#xa;[Tap]: Search your deck. You may choose a card with [Ken Gou, Crimson Lord] in its name and put it on top of this creature. Then, shuffle your deck." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="60" />
+		</card>
+		<card name="Valdrill, Armor of Fury" id="fe623f71-f549-43ac-b9a2-06ac93d243e9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Human/Origin" />
+			<property name="Rules" value="Deck Evolution: Reveal the top card of your deck. If that card is a creature, put this creature into the battle zone on top of the revealed creature. If the revealed card
+
+isn't a creature return this creature to your hand.&#xd;&#xa;This creature can attack untapped creatures until the end of the turn this creature is put into the battle zone." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="61" />
+		</card>
+		<card name="Spear Lupia" id="ef541901-7cd1-487a-9864-8d861e550355">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="This creature can attack untapped creatures.&#xd;&#xa;When this creature is destroyed, choose and activate one of the following effects:
+-Search your deck. Choose a Dragon from it, show it to your opponent and put it into your hand.  Then shuffle your deck.
+-During this turn, 1 of your creatures in the battle zone gets +2000 power and can attack untapped creatures." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="62" />
+		</card>
+		<card name="Inaba Summoner" id="2473f562-be12-4f8e-91d9-697633599907">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk/Origin" />
+			<property name="Rules" value="Whenever you summon an evolution creature, you may put a creature with a cost of 3 or less into the battle zone from your hand without cost." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="67" />
+		</card>
+		<card name="Shiba, Amazing Artiste" id="74ecd4c0-dc86-45b2-8c6a-a0f4e6d83640">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="Evolution: Put on 1 of your Dreammate&#xd;&#xa;Double Breaker&#xd;&#xa;When this creature is destroyed, you may return 1 of the base cards this creature evolved from to the battle zone from your graveyard." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="65" />
+		</card>
+		<card name="Kishima Giant" id="d428e303-edac-4259-a090-67752bd83a40">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant/Samurai" />
+			<property name="Rules" value="When this creature attacks, choose and activate 1 of the following effects:
+-Put 1 of your opponent's non-evolution creatures with a cost of 4 or less into their mana zone.
+-Put 1 card in your opponent's hand into their mana zone at random." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="66" />
+		</card>
+		<card name="B-Boy, the Explosive" id="79a58edf-b75d-43fb-9abf-edcd25e8951a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human" />
+			<property name="Rules" value="You may have your fire evolution creatures cost 1 less. However, they can't cost less than 1." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="63" />
+		</card>
+		<card name="Chain Deathmatch" id="3cdfa206-c8a4-4d8c-8138-36156bf5b3d0">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose the creature with the largest power in the battle zone. Then, choose the creature with the largest power among the other creatures in the battle zone. If two or more
+
+creatures are tied for largest power, choose 1 of them. The chosen creatures battle." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="64" />
+		</card>
+		<card name="Cemetarian, the Invoked" id="4978801c-7e3e-4ea6-9e48-a87452b18cae">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wonder Trick" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose 1 of your opponent's non-evolution creatures with a cost of 4 or less and put it in their mana zone.&#xd;&#xa;When this creature leaves the battle zone, your opponent may put a creature with a cost of 4 or less into the battle zone from their mana zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="68" />
+		</card>
+		<card name="Duel Tulip" id="4e95d326-9d96-4ae3-8194-7f3b002e3376">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies" />
+			<property name="Rules" value="You may have your nature evolution creatures cost 1 less. However, they can't cost less than 1." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="69" />
+		</card>
+		<card name="Evolute Power" id="3dec1cbd-7ef2-4c8e-bd7a-70214636b5bc">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This turn, 1 of your creatures in the battle zone gets +3000 power and breaks an additional shield. If that creature is an evolution creature you may draw 1
+
+card." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="70" />
+		</card>
+		<card name="White Knight Ulphas, Lord of Spirits" id="5484a856-30ac-4b4e-a46a-800b2957c55e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="11" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Put on 1 of your creatures with &quot;Blocker&quot;.&#xd;&#xa;Soulshift (When you summon this creature, this creature's cost is reduced by the base creature's cost. However, it can't cost less than 1.)&#xd;&#xa;At the end of your turn, untap this creature.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="71" />
+		</card>
+		<card name="Ail Magnus, Holy Emperor" id="6ef26345-d1b7-4b40-b7d7-da6caa28cf1a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Gladiator" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Evolution: Put on 1 of your creatures with &quot;Blocker&quot;." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="72" />
+		</card>
+		<card name="Dabidul, the Wise" id="72fbb83d-5874-43b3-a7db-60d323d80ab5">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Light Bringer/Origin" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Evolution: Put on 1 of your Light Bringers or Origins.&#xd;&#xa;This creature can't attack players." />
+			<property name="Power" value="6500" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="73" />
+		</card>
+		<card name="Sepa, White Knight Monk" id="af166d7c-810f-4120-a3d8-77dd555a7903">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer/Initiate" />
+			<property name="Rules" value="Saver: Evolution Creatures (If 1 of your evolution creatures would be destroyed, you may destroy this creature instead.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="74" />
+		</card>
+		<card name="Sol Habaki, Apocalyptic Sage" id="15a64021-9a9a-4fb9-ad5f-84208095e4da">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer/Gladiator/Origin" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may return 1 card from your mana zone to your hand. If you do, put 1 card from your hand into your mana
+
+zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="75" />
+		</card>
+		<card name="Shuu, the Oracle" id="4dea50c1-3e8d-4063-83ca-715e62c4aac3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer/Origin" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;This creature can't attack players." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="76" />
+		</card>
+		<card name="Evolute Clock" id="da42a2ce-0ff3-4a90-a632-54d8614ec558">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Untap 1 of your creatures in the battle zone at the end of your turn. If that creature is an evolution creature you may draw 1 card." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="78" />
+		</card>
+		<card name="Astral Rush" id="c73264f8-31ca-48b4-81b5-b1b862630cb0">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Virus" />
+			<property name="Rules" value="Evolution: Put on 1 of your creatures with &quot;Cyber&quot; in its race.&#xd;&#xa;When you put this creature into the battle zone, if you have no shields draw 3 cards. If you have only 1 shield, draw 2 cards. If you have exactly 2 shields, draw 1 card. Then,
+
+you may choose a creature in the battle zone and return it to its owner's hand." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="79" />
+		</card>
+		<card name="Emperor Tina" id="5007fc00-96e4-4d4e-b7a7-8dad53be0e62">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Lord/Origin" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Evolution: Put on 1 of your creatures with &quot;Cyber&quot; in its race or Origins." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="80" />
+		</card>
+		<card name="Porcupine Fish" id="35939940-9a70-41af-8a5a-91bd858b7d26">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gel Fish/Origin" />
+			<property name="Rules" value="If you have an evolution creature in your battle zone, this creature gains &quot;Blocker&quot;." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="81" />
+		</card>
+		<card name="Commander Innocent" id="49708339-05ed-4423-8f6a-8facd93fe3ca">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Machine Hero" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;You can put an evolution creature of any race on this creature." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="82" />
+		</card>
+		<card name="King Bullfang" id="b6676983-0a16-4c42-8813-5459f2e59973">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Leviathan" />
+			<property name="Rules" value="Whenever you summon an evolution creature, you may draw 1 card. If you do, put 1 card from your hand on the bottom of your deck." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="83" />
+		</card>
+		<card name="Roxio, Electro-Fuuma" id="d19cc92d-887d-4db0-b94d-160d81a89952">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Lord/Grand Devil/Origin" />
+			<property name="Rules" value="When you put this creature into the battle zone, look at the top 2 cards of your deck. Then, put them back on top of your deck in any order." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="84" />
+		</card>
+		<card name="Piccoli Coilinger, Electro-Machine King" id="78ea18a6-9720-422b-a8d5-3d9154bf367e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Lord/Great Mecha King/Origin" />
+			<property name="Rules" value="When this creature attacks, you may draw 1 card. If you do, discard 1 card from your hand." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="85" />
+		</card>
+		<card name="Apollyon Worm, the Parasite" id="c4f7d886-8324-484f-8778-3a5090ed0f7a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Parasite Worm/Origin" />
+			<property name="Rules" value="Evolution: Put on 1 of your Parasite Worms or Origins&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="87" />
+		</card>
+		<card name="Worm Gowarski, Masked Insect" id="0c9a1dc5-bb6e-4176-9f49-04e6c4f82b4a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Parasite Worm/Devil Mask" />
+			<property name="Rules" value="Grave Evolution: Choose 1 darkness creature in your graveyard and put this card into your battle zone on top of the chosen card.&#xd;&#xa;When this creature is destroyed, discard 1 card from your opponent's hand at random." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="88" />
+		</card>
+		<card name="Bell Hell De Bran, Battle Reaper" id="6a554082-3ef7-43ca-8c4c-8ae26ac64539">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Rules" value="This creature can attack untapped Knights, Samurai, and Shinobis.&#xd;&#xa;If this creature is able to attack, you may destroy 1 of your other creatures. If you do, this creature can attack untapped non-evolution creatures.&#xd;&#xa;This creature can't attack players." />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="89" />
+		</card>
+		<card name="Jinrou Drake" id="f32d05a6-7091-4151-ad84-54d8814a328c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Blocker]  Blocker&#xd;&#xa;This creature can't attack." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="90" />
+		</card>
+		<card name="Venom Dragoon, Insectoid Battle Dragon" id="a5bfb48e-79e9-4693-b300-0c6e63cc3eef">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Parasite Worm/Tyranno Drake" />
+			<property name="Rules" value="When this creature is destroyed, put 1 of your shields in your graveyard." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="91" />
+		</card>
+		<card name="Moora, Emperor of the Gods" id="fa945b05-2a4d-43a5-a8ad-3751a55ec4d7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God/Origin" />
+			<property name="Rules" value="God Link - Mani, Emperor of the Gods or Vishu, Emperor of the Gods (Left Side) or Adge, Emperor of the Gods (Bottom Side) (If the specified god is in the battle
+
+zone, you may link this to it. The linked god gains each god's characteristics (power and abilities) and becomes one creature. When the linked creature leaves the battle zone, select 1 side
+
+instead.)&#xd;&#xa;When this creature links with another God, you may discard 1 card from your hand. If you do, return 1 God from your graveyard to your hand. " />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="92" />
+		</card>
+		<card name="Fuuma Trinomancer" id="9e724dc1-dbbb-464c-9a36-b7403ebb02fa">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil/Origin" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;Whenever you summon an evolution creature, you may return 1 creature from your graveyard to your hand." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="93" />
+		</card>
+		<card name="Janeer, Parasite of Decay" id="879bb3cd-5bee-4bc0-890a-bbf445f6707e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Parasite Worm/Ghost" />
+			<property name="Rules" value="" />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="94" />
+		</card>
+		<card name="Guldan, Bird of Fire" id="31e79196-ea1c-4f2e-b7a4-2f694c357a40">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Evolution: Put on 1 of your Fire Birds&#xd;&#xa;Power Attacker +4000&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="95" />
+		</card>
+		<card name="Pildol, Bird of Fire" id="7adb7cf9-18ad-4636-92ad-33cb509486b2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Evolution: Put on 1 of your Fire Birds." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="96" />
+		</card>
+		<card name="Parabola Bolappi" id="83344cd9-4af9-45e2-a2c4-6fd98b859b76">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird/Origin" />
+			<property name="Rules" value="Whenever you summon an evolution creature, choose 1 card from your opponent's shields and turn it face up. If that card has &quot;Shield Trigger&quot; put it in your
+
+opponent's graveyard." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="97" />
+		</card>
+		<card name="Izana Keeza" id="b228b4ef-b990-4e3c-95d2-8ff7f18769f3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="When you put this creature into the battle zone, destroy 1 of your opponent's creatures with 2000 power or less." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="98" />
+		</card>
+		<card name="Fire Smoke Drake" id="c8560389-aa15-44ee-9b1c-17a1319fda0c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="If you have an evolution creature in your battle zone, your creatures with 3000 power or less can't be attacked." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="99" />
+		</card>
+		<card name="Ken, Crimson Lord ~Journey's Beginning~" id="0dbfdb7d-0379-42b9-a3d0-d574731d83ed">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Flame Monster" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its [Tap] ability:&#xd;&#xa;[Tap]: Search your deck. You may choose a card with [Wan Ken, Crimson Lord] in its name and put it on top of this creature. Then, shuffle your deck." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="101" />
+		</card>
+		<card name="Homelos, Amazing Artiste" id="61707d5a-14f1-4da4-9c4a-8180999f1a8a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dreammate/Origin" />
+			<property name="Rules" value="Evolution: Put on 1 of your Dreammates or Origins.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="103" />
+		</card>
+		<card name="Diamond Cascade" id="0c92bb66-a8bd-45a6-a168-04d8ed13a1ba">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Snow Faerie" />
+			<property name="Rules" value="Mana Evolution: Choose a nature creature in your mana zone and put this creature into the battle zone on top of that creature.&#xd;&#xa;When you put this creature into the battle zone, you may return all of your Snow Faeries from your mana zone to your hand. If you do, put all of your Snow Faeries in your
+
+graveyard into your mana zone." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="104" />
+		</card>
+		<card name="Victor Unigorn, Amazing Artiste" id="02110ddd-6fd5-4d62-a3a3-991483e35a4f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="Mana Evolution: Choose a nature creature in your mana zone and put this creature into the battle zone on top of that creature.&#xd;&#xa;When this creature would be destroyed, put it into your mana zone instead." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="105" />
+		</card>
+		<card name="Chictac Kyun, Spirit Beast" id="f07920d8-4a06-43e4-aefc-691a43eb9ed4">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate/Arc Seraphim" />
+			<property name="Rules" value="" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="106" />
+		</card>
+		<card name="Mad Sakuran, Cursed Ice Fairy" id="9725cdcf-beae-49f0-a4e5-875a002edeff">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Snow Faerie/Origin" />
+			<property name="Rules" value="If you have an evolution creature in the battle zone, this creature gets +4000 power." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="107" />
+		</card>
+		<card name="Yattar Wan, Adventuring Fox" id="b6c3f819-6fc1-4c41-ace4-49ad693b06a6">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may put 1 card from your hand into your mana zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="108" />
+		</card>
+		<card name="Mega Innocent Sword" id="eb45c2a3-ce32-4c3e-a84d-1a303880024b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Cross Gear: Put this card into the battle zone when cast. To cross this card with a creature, pay this card's cost again. When that creature leaves the battle zone,
+
+this card remains in the battle zone.&#xd;&#xa;The crossed creature gets +3000 power.&#xd;&#xa;You may put an evolution creature of any race on the crossed creature." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="110" />
+		</card>
+
+	</cards>
+</set>

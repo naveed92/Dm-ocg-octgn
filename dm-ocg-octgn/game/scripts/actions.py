@@ -26,9 +26,9 @@ cardScripts = {
                 'Armored Decimator Valkaizer': { 'onPlay': {  'kill': ['4000'] }},
                 'Artisan Picora': { 'onPlay': { 'fromMana': ['1','"ALL"','"ALL"','"ALL"','False','True'] }}, 
                 'Astral Warper': { 'onPlay': { 'draw': ['me.Deck', 'True', '3'] }},
-        	'Baban Ban Ban, Earth\'s Blessing': { 'onPlay': { 'massMana': ['me.Deck', 'True'] }},
-		'Ballom, Master of Death': { 'onPlay': { 'banishAll': ['table', 'True', '"ALL"', '"Darkness"', 'True'] }},
-        	'Bega, Vizier of Shadow': { 'onPlay': { 'shields': ['me.Deck'] , 'targetDiscard': ['True'] }},
+                'Baban Ban Ban, Earth\'s Blessing': { 'onPlay': { 'massMana': ['me.Deck', 'True'] }},
+                'Ballom, Master of Death': { 'onPlay': { 'banishAll': ['table', 'True', '"ALL"', '"Darkness"', 'True'] }},
+                'Bega, Vizier of Shadow': { 'onPlay': { 'shields': ['me.Deck'] , 'targetDiscard': ['True'] }},
                 'Belix, the Explorer': { 'onPlay': { 'fromMana': ['1','"Spell"'] }},
                 'Bronze-Arm Tribe': { 'onPlay': { 'mana': ['me.Deck'] }},
                 'Bronze Chain Sickle': { 'onPlay': { 'mana': ['me.Deck'] }},
@@ -36,7 +36,7 @@ cardScripts = {
                 'Chief De Baula, Machine King of Mystic Light': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Spell"'] }},
                 'Craze Valkyrie, the Drastic': { 'onPlay': { 'tapCreature': ['2'] }},
                 'Crimson Maru, the Untamed Flame': { 'onPlay': {  'kill': ['4000'] }},
-	        'Cyber N World': { 'onPlay': {  'semiReset': [] }},
+                'Cyber N World': { 'onPlay': {  'semiReset': [] }},
                 'Dacity Dragoon, Explosive Beast': { 'onPlay': {  'kill': ['3000'] }},
                 'Dandy Eggplant': { 'onPlay': { 'fromDeck': [] }},
                 'Dark Hydra, Evil Planet Lord': { 'onPlay': { 'fromGrave': [] }},
@@ -63,6 +63,7 @@ cardScripts = {
                 'Gylus, Larval Lord': { 'onPlay': { 'targetDiscard': ['True'] }},
                 'Gyulcas, Sage of the East Wind': { 'onPlay': {  'search': ['me.Deck', '1', '"Cross Gear"'] }},
                 'Hawkeye Lunatron': { 'onPlay': { 'search': ['me.Deck', '1', '"ALL"', '"ALL"', '"ALL"', 'False'] }},
+                'Hot Spring Crimson Meow': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
                 'Hulk Crawler': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
                 'Hurlosaur': { 'onPlay': {  'kill': ['1000'] }},
                 'Izana Keeza': { 'onPlay': {  'kill': ['2000'] }},
@@ -106,7 +107,7 @@ cardScripts = {
                 'Self-Destructing Gil Poser': { 'onPlay': { 'suicide': ['"Self-Destructing Gil Poser"', 'kill', '2000'] }},
                 'Sir Navaal, Thunder Mecha Knight': { 'onPlay': { 'fromMana': ['1','"Spell"'] }},
                 'Sir Virginia, Mystic Light Insect': { 'onPlay': {  'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
-        		'Skysword, the Savage Vizier': { 'onPlay': {  'mana': ['me.Deck'], 'shields': ['me.Deck'] }},
+        	'Skysword, the Savage Vizier': { 'onPlay': {  'skysword': ['me.Deck'] }},
                 'Solidskin Fish': { 'onPlay': { 'fromMana': [] }},
                 'Spiritual Star Dragon': { 'onPlay': { 'fromDeck': [] }},
                 'Splash Zebrafish': { 'onPlay': { 'fromMana': [] }},
@@ -145,7 +146,7 @@ cardScripts = {
                 'Darkflame Drive': { 'onPlay': { 'kill': ['"ALL"','"Untap"'] }},
                 'Dark Reversal': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
                 'Death Chaser': { 'onPlay': { 'kill': ['"ALL"','"Untap"'] }},
-	        'Death Gate, Gate of Hell': { 'onPlay': { 'kill': ['"ALL"','"Untap"'], 'fromGrave': [] }},
+                'Death Gate, Gate of Hell': { 'onPlay': { 'kill': ['"ALL"','"Untap"'], 'fromGrave': [] }},
                 'Death Smoke': { 'onPlay': { 'kill': ['"ALL"','"Untap"'] }},
                 'Decopin Crash': { 'onPlay': { 'kill': ['4000'] }},
                 'Devil Smoke': { 'onPlay': { 'kill': ['"ALL"','"Untap"'] }},
@@ -155,6 +156,7 @@ cardScripts = {
                 'Enchanted Soil': { 'onPlay': { 'fromGrave': [] }},
                 'Energy Stream': { 'onPlay': { 'draw': ['me.Deck', 'False', '2'] }},
                 'Eureka Charger': { 'onPlay': { 'draw': ['me.Deck'] }},
+		'Faerie Crystal': { 'onPlay': { 'mana': ['me.Deck'] }},
                 'Faerie Life': { 'onPlay': { 'mana': ['me.Deck'] }},
                 'Faerie Miracle': { 'onPlay': { 'mana': ['me.Deck'] }},
                 'Gardening Drive': { 'onPlay': { 'mana': ['me.Deck'] }},
@@ -183,6 +185,7 @@ cardScripts = {
                 'Invincible Abyss': { 'onPlay': { 'banishAll': ['[card for card in table if card.owner != me]', 'True'] }},
                 'Invincible Aura': { 'onPlay': { 'shields': ['me.Deck', '3', 'True'] }},
                 'Invincible Technology': { 'onPlay': { 'search': ['me.Deck','len(me.Deck)'] }},
+			'Lifeplan Charger': { 'onPlay': { 'lookAtTopCards': ['5', '"Creature"'] }},
                 'Lightning Charger': { 'onPlay': { 'tapCreature': [] }},
                 'Lionic Phantom Dragon\'s Flame': { 'onPlay': {  'kill': ['2000'] }},
                 'Living Lithograph': { 'onPlay': { 'mana': ['me.Deck'] }},
@@ -197,7 +200,7 @@ cardScripts = {
                 'Magic Shot - Panda Full Life': { 'onPlay': { 'mana': ['me.Deck'] }},
                 'Magic Shot - Soul Catcher': { 'onPlay': {  'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
                 'Magic Shot - Sword Launcher': { 'onPlay': {  'kill': ['3000'] }},
-		'Mana Bonanza': { 'onPlay': { 'massMana': ['me.Deck', 'False'] }},
+                'Mana Bonanza': { 'onPlay': { 'massMana': ['me.Deck', 'False'] }},
                 'Miraculous Rebirth': { 'onPlay': { 'kill': ['5000'], 'fromDeck': [] }},
                 'Miraculous Snare': { 'onPlay': { 'sendToShields': [] }},
                 'Moonlight Flash': { 'onPlay': { 'tapCreature': ['2'] }},
@@ -209,6 +212,7 @@ cardScripts = {
                 'Phantom Dragon\'s Flame': { 'onPlay': {  'kill': ['2000'] }},
                 'Phantasm Clutch': { 'onPlay': { 'kill': ['"ALL"','"Tap"'] }},
                 'Pixie Cocoon': { 'onPlay': { 'fromMana': ['1', '"Creature"'], 'toMana': ['card'] }},
+				'Pixie Life': { 'onPlay': { 'mana': ['me.Deck'] }},
                 'Punish Hold': { 'onPlay': { 'tapCreature': ['2'] }},
                 'Purgatory Force': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '2', '"Creature"'] }},
                 'Reap and Sow': { 'onPlay': { 'mana': ['me.Deck'], 'destroyMana': [] }},       
@@ -314,17 +318,26 @@ def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter =
 		if type(choice) is not Card: break
 		toPlay(choice)
 
-def lookAtTopCards(num, targetZone='hand'):
-    mute()
-    notify("{} looks at the top {} cards of their deck".format(me,num))
-    cardList = [card for card in me.Deck.top(num)]
-    choice = askCard(cardList, 'Choose a card to take')
-    toHand(choice, show = True)
-    for counter in range(num-1, 0, -1):
-        cardList = [card for card in me.Deck.top(counter)]
-        choice = askCard(cardList, 'Choose card to put to bottom','To Bottom')
-        choice.moveToBottom(me.Deck)
-        notify("{} moves card #{} to the bottom of their deck.".format(me, num-counter))
+def lookAtTopCards(num, cardType='All', targetZone='hand'):
+	mute()
+	notify("{} looks at the top {} cards of their deck".format(me,num))
+	cardList = [card for card in me.Deck.top(num)]
+	choice = askCard(cardList, 'Choose a card to take')
+	if type(choice) is Card:
+		if cardType == 'All' or re.search(cardType, choice.Type):
+			toHand(choice, show = True)
+		else:
+			notify("Please select a {}! Action cancelled.".format(cardType))
+			return
+	for counter in range(num-1, 0, -1):
+		cardList = [card for card in me.Deck.top(counter)]
+		choice = askCard(cardList, 'Choose card to put to bottom','To Bottom')
+		if type(choice) is Card:
+			choice.moveToBottom(me.Deck)
+			notify("{} moves card #{} to the bottom of their deck.".format(me, num-counter))
+		else:
+			notify("Action cancelled.")
+			break
 
 def targetDiscard(randomDiscard = False, targetZone = 'grave'):
     mute()
@@ -421,6 +434,33 @@ def loopThroughDeck(card, play = False):
 		remoteCall(newCard.owner,'toDiscard',newCard)
 		remoteCall(newCard.owner,'loopThroughDeck',[card, play])
 
+""""def volgMill(askChoice = True):
+    mute()
+    if(askChoice)
+        currentPlayers = getPlayers()
+        playerList = []
+        for player in currentPlayers:
+            playerList.append(player.name)
+        choicePlayer = askChoice("Pick a player:", playerList)
+        if choicePlayer < 1: return
+        targetPlayer = currentPlayers[choicePlayer-1]
+	group = targetPlayer.Deck
+	if len(group) == 0: return
+	newCard = group[0]
+	newCard.isFaceUp = True
+	notify("{} reveals {}".format(card.owner,newCard.name))
+	rnd(1,1000)
+	if re.search("Creature", newCard.Type) and not re.search("Evolution Creature", newCard.Type):
+		if play == True:
+			remoteCall(newCard.owner,'toPlay',newCard)
+			return
+		else:
+			remoteCall(newCard.owner,'moveTo',newCard.owner.hand)
+			return
+	else:
+		remoteCall(newCard.owner,'toDiscard',newCard)
+		remoteCall(newCard.owner,'loopThroughDeck',[card, play])
+"""
 def search(group, count = 1, TypeFilter = "ALL" , CivFilter = "ALL", RaceFilter = "ALL", show = True, x = 0, y = 0):
 	mute()
 	if len(group) == 0: return
@@ -681,6 +721,7 @@ def semiReset():
             remoteCall(player,'shuffle', player.deck)
             remoteCall(player,'draw', [player.deck, False, 5])
 
+
 def suicide(name, action, arg):
 	mute()
 	choiceList = ['Yes', 'No']
@@ -837,7 +878,7 @@ def align():
     cardorder = [[],[],[]]
     evolveDict = eval(me.getGlobalVariable("evolution"))
     for card in table:
-        if card.controller == me and not isFortress(card) and not card._id in list(itertools.chain.from_iterable(evolveDict.values())):
+        if card.controller == me and not isFortress(card) and not card.anchor and not card._id in list(itertools.chain.from_iterable(evolveDict.values())):
             if isShield(card):
                 cardorder[1].append(card)
             elif isMana(card):
@@ -1055,7 +1096,19 @@ def mana(group, count = 1, x = 0, y = 0):
 		card = group[0]
 		toMana(card, notifymute = True)
 		notify("{} charges top card of {} as mana.".format(me, group.name))
-		
+        
+def skysword(group, count = 1, x = 0, y = 0):
+	mute()
+	for i in range(0,count):
+		if len(group) == 0: return
+		card = group[0]
+		toMana(card, notifymute = True)
+		notify("{} charges top card of {} as mana.".format(me, group.name))
+	for i in range(0,count):
+		card = group[0]
+		toShields(card, notifymute = True)
+		notify("{} places top card of {} as shield.".format(me, group.name))
+
 def massMana(group, conditional = False, x=0, y=0):
     	mute()
     	cardList = [card for card in table if isMana(card) and card.owner== me]
@@ -1252,10 +1305,10 @@ def toHand(card, show = True, x = 0, y = 0, alignCheck = True, ignoreEvo = False
                 toHand(Card(evolvedCard), alignCheck = False, ignoreEvo = True)
         del evolveDict[card._id]
         me.setGlobalVariable('evolution', str(evolveDict))
-    if show == True: 
-        notify("{} moves {} to hand from {}.".format(me, card.name, src.name))
+    if show: 
+        notify("{} moved {} to hand from {}.".format(me, card.name, src.name))
     else:
-        whisper("Moved {} to hand from {}.".format(card, src.name))
+        whisper("Moving {} to hand from {}.".format(card, src.name))
     if alignCheck:
         align()
 

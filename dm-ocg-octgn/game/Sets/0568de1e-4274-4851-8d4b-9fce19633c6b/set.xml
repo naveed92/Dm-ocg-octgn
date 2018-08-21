@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-06 Episode 2: Victory Rush" id="0568de1e-4274-4851-8d4b-9fce19633c6b" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="04ed9f86-cc3d-4761-afa6-52a521aa9aaa">
+			<options>
+				<option probability="0.030">
+					<pick qty="1" key="Rarity" value="Secret Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.070">
+					<pick qty="1" key="Rarity" value="Victory Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.100">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.200">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.600">
+					<pick qty="3" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="1" key="Rarity" value="Uncommon" />
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Zenith Symphony, Secret Zenith" id="0bfd6101-a718-4f9b-bc14-9aaba00f2ea8">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Zero" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Attack Chance- Unknown(Whenever one of your Unknowns attack, you may cast this for no cost.)&#xd;&#xa;You may summon a creature that has both Zenith and Unknown races for no cost. At the end of the turn, return that creature to your hand." />
+			<property name="Rarity" value="Secret Rare" />
+			<property name="Number" value="㊙1" />
+		</card>
+
+		<card name="Onimaru 'Head', Victory Rush" id="8b5a6b52-25c8-4672-b7c7-ee44c5568964">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human /Red Command Dragon/Hunter /Alien" />
+			<property name="Power" value="9000+" />
+			<property name="Rules" value="Speed attacker&#xd;&#xa;Power attacker +5000&#xd;&#xa;Whenever this creature attacks, you and your opponent play Gachinko Judge. If you win, take an Extra Turn extra turn after this one&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Victory Rare" />
+			<property name="Number" value="V1" />
+		</card>
+
+		<card name="Suspense, Zenith of 'Curse'" id="b136d5e3-b12f-4ca4-a4c1-cc8ad1d8510b">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Zero" />
+			<property name="Cost" value="12" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Unknown/Zenith" />
+			<property name="Power" value="16000" />
+			<property name="Rules" value="When you summon this creature into the battle zone, you may choose 2 cards from your opponent's hand or shields at random. Your opponent reveals those cards. You may cast any spells from the revealed cards for no cost, and put it in it's owner's graveyard. Then put the rest into his graveyard. &#xd;&#xa;Triple breaker&#xd;&#xa;Eternal Omega(When this creature would leave the battle zone, return it to your hand instead.)" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S1" />
+		</card>
+
+		<card name="Wedding, Zenith of 'Celebration'" id="32aec7c7-fef5-4107-8570-9a122db2a535">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Zero" />
+			<property name="Cost" value="11" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Unknown/Zenith" />
+			<property name="Power" value="13000" />
+			<property name="Rules" value="When you summon this creature into the battle zone, your opponent chooses a total of 4 cards from his hand and/or creatures in the battle zone, and adds them to his shields face down.&#xd;&#xa;Whenever this creature breaks a shield, your opponent puts that shield into his graveyard instead.&#xd;&#xa;Triple breaker&#xd;&#xa;Eternal Omega(When this creature would leave the battle zone, return it to your hand instead.)" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S2" />
+		</card>
+
+		<card name="Truename Lalala Lionel" id="b5fcf70b-ab30-4383-8db7-1e84462b0d8c">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command/Unknown" />
+			<property name="Power" value="9000" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;When you put this creature into the battle zone, you and your opponent play Gachinko Judge. If you win, search your deck. You may take a spell that has Heaven's in its name, show that spell to your opponent, and add it to your shields face down. Then shuffle your deck.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S3" />
+		</card>
+
+		<card name="Necrodragon Danchigai Fankigai" id="c926ee56-1aa5-4d10-bd81-257a6d4fdabb">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon/Hunter" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="Whenever this creature attacks, you and your opponent play Gachinko Judge. If you win, you may put a non-evolution Zombie Dragon from your graveyard into the battle zone&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S4" />
+		</card>
+
+		<card name="Oninaguri, Last Attack" id="2d56711d-addc-4f1e-8df3-f6d716a06c47">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Human/Hunter/Alien" />
+			<property name="Power" value="7000" />
+			<property name="Rules" value="Evolution—Put on one of your Humans.&#xd;&#xa;Whenever this creature attacks, choose any number of your opponent's creatures that have total cost 6 or less and destroy them.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S5" />
+		</card>
+
+		<card name="Codefight Misdirection" id="6cb98f7e-4aee-4cad-b92d-e43798d941f4">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command/Unknown" />
+			<property name="Power" value="9000" />
+			<property name="Rules" value="Whenever one of your commands attack your opponent and isn't blocked, you may add the top card of your deck to your shields face down. &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="1" />
+		</card>
+
+		<card name="Excavator MS, Fused Giant Soldier" id="5a79f97a-1dcd-47c0-b2ef-efd98ef47816">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Power" value="7000" />
+			<property name="Rules" value="Evolution—Put on one of your Great Mecha King.&#xd;&#xa;Whenever this creature attacks, you and your opponent play Gachinko Judge. If you win, you may choose a creature in the battle zone and return it to its owner's hand. Then, you may add the bottom card of your deck to your hand Double breaker" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="2" />
+		</card>
+
+		<card name="Codeking Wolfgang" id="df9e716d-6699-41a8-8b2d-c9961b953999">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="King Command Dragon/Unknown" />
+			<property name="Power" value="8000" />
+			<property name="Rules" value="Whenever this creature attacks, destroy up to 3 of your opponent's creatures that have power 6000 or less. &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="3" />
+		</card>
+
+		<card name="Truename Giant Mac" id="1490f910-1e59-491b-830f-a4d3b9a850c2">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant/Unknown" />
+			<property name="Power" value="11000" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose one of your opponent's creatures in the battle zone that has power less than it and put it into his mana zone. Then, you may put a non-evolution Giant creature that has less power than the chosen creature from your mana zone into the battle zone. &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="4" />
+		</card>
+
+		<card name="Don Grill, Flavor Chief" id="7e68e034-6105-4096-98fa-2d1db8f9ff40">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Wild Veggies" />
+			<property name="Power" value="9000" />
+			<property name="Rules" value="Gravity Zero―If you have 4 or more Wild Veggies in the battle zone, you may summon this creature for no cost.&#xd;&#xa;Evolution—Put on one of your Wild Veggies.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="5" />
+		</card>
+
+		<card name="Codefight Alibi Trick" id="19720ca4-167a-468b-b403-3e9e0e3badff">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command/Unknown" />
+			<property name="Power" value="8000" />
+			<property name="Rules" value="Whenever one of your opponent's creatures is tapped, you may untap one of your creatures in the battle zone. &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="6" />
+		</card>
+
+		<card name="Lisbeth Lavigne, Light Weapon" id="4f769620-bb9d-429a-a1d0-04d4e316a800">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha Del Sol" />
+			<property name="Power" value="5000" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;When you put this creature into the battle zone, you and your opponent play Gachinko Judge. If you win, choose 2 of your opponent's creatures and tap them. Those creatures don't untap at the start of your opponent's next turn. (Gachinko Judge: Each player reveals the top card of his deck and then puts it on the bottom of his deck. If your revealed card costs the same as or greater than your opponent's revealed card, you win.)&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="7" />
+		</card>
+
+		<card name="True Heaven's" id="b6d436f1-5956-4e56-8ea6-93d537548e73">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose one of your opponent's non-evolution creatures in the battle zone. If you have 5 or more Angel Commands in the battle zone, choose up to 3 of your opponent's non-evolution creatures instead of 1. Put these creatures into your opponent's shield zone face down." />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="8" />
+		</card>
+
+		<card name="Cyber D Geza" id="eea52bea-05f7-49ca-8e37-ef4ab3697934">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Command/Hunter" />
+			<property name="Power" value="8000" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may draw a card for each of your creatures that have Cyber in its race. Then, you may draw a card for each of your creatures that have Command in its race.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="9" />
+		</card>
+
+		<card name="Codename iFormulaX" id="3dcab1df-0a3b-4919-b103-360f43c2c217">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Unknown" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="At the end of each of your turns, if this creature is tapped and you have 10 or more cards in your hand, you win the game.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="10" />
+		</card>
+
+		<card name="Delete Tank, Destruction Machine" id="08464ce6-86b5-4d73-b3b0-6f7bf933a33e">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Unnoise" />
+			<property name="Power" value="2000+" />
+			<property name="Rules" value="If you have more cards in your hand than your opponent, this creature gets +6000 power and 'double breaker'.  (A creature that has 'double breaker' breaks 2 shields.) " />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="11" />
+		</card>
+
+		<card name="Codenight Rice Shower" id="3426b54d-bd7d-40d2-8417-a0cddeb9deb0">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command/Unknown" />
+			<property name="Power" value="11000" />
+			<property name="Rules" value="Whenever one of your non-light Angel Commands attack, you may put one of your shields into your graveyard. If you do, destroy one of your opponent's creatures and all of your opponent's creatures that have the same name.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="12" />
+		</card>
+
+		<card name="Dragon Bone, Secret Wicked Dragon" id="c29ba2ba-237f-4cf9-9824-00eb09b1ddb4">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Attack Chance- Zombie Dragon(Whenever one of your Zombie Dragons attack, you may cast this for no cost.)&#xd;&#xa;Put a non-evolution Zombie Dragon from your graveyard into the battle zone." />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="13" />
+		</card>
+
+		<card name="Wedding Gate" id="8ee80873-49c3-4408-a627-f0a93858eed3">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="{SHIELD TRIGGER} &#xd;&#xa;Put up to 2 non-evolution, non-Light Angel Command creatures from your hand into the battle zone." />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="14" />
+		</card>
+
+		<card name="Codename Shiden Ragon" id="2b39ae4f-a26f-4ae2-a054-ca1e29c3dc04">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon/Unknown" />
+			<property name="Power" value="7000" />
+			<property name="Rules" value="When this creature is tapped for the first time each turn, reveal the top card of your deck. If it's an Unknown, put it into your hand, and you may untap this creature.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="15" />
+		</card>
+
+		<card name="Scrapper Dragon" id="2f5cc0a7-2044-489f-9dda-f9cbb48a5d64">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="When you put this creature into the battle zone, you and your opponent play Gachinko Judge. If you win, destroy any number of your opponent's creatures that have total power 5000 or less. (Gachinko Judge: Each player reveals the top card of his deck and then puts it on the bottom of his deck. If your revealed card costs the same as or greater than your opponent's revealed card, you win.)&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="16" />
+		</card>
+
+		<card name="Princess Prin, the Curious" id="9e972428-ecd2-4eb2-b5e6-8ab78f072e55">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Hunter/Alien" />
+			<property name="Power" value="5000+" />
+			<property name="Rules" value="Each of your creatures in the battle zone gets the Alien and Hunter races. &#xd;&#xa;Hunting" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="17" />
+		</card>
+
+		<card name="Bambi, Avenger Beater" id="d194abec-af6e-409d-8c22-af35c3cdffec">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate/Hunter" />
+			<property name="Power" value="3000+" />
+			<property name="Rules" value="Hunting&#xd;&#xa;Whenever this creature wins a battle, your opponent chooses one of his shields and adds it to his hand.  (He can use the 'shield trigger' ability.). " />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="18" />
+		</card>
+
+		<card name="Eco Farmer" id="dd9891bc-f3bf-4e00-8346-08d686396587">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Reveal any number of cards in your hand that cost 7 or more to your opponent. For each card revealed this way, put the top card of your deck into your mana zone tapped." />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="19" />
+		</card>
+
+		<card name="Yara Se Nice, Dedication Guardian" id="fad59a9c-4ae4-4cb9-876c-bd30d8093410">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian/Hunter" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="Whenever one of your other non-evolution Guardians would be destroyed, add it into your shields face down instead.  &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="20" />
+		</card>
+
+		<card name="Evinbee, Intercept Guardian" id="45071546-cd12-4ca1-9ff9-39c503b63992">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian/Alien" />
+			<property name="Power" value="1500" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature or a creature that costs 7 or more into the battle zone, choose one of your opponent's creatures and tap it." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="21" />
+		</card>
+
+		<card name="Saint Flash, Secret Ore Flow" id="e862f62c-51d0-4ef7-ba70-05458b7349de">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Attack Chance- Angel Command(Whenever one of your Angel Commands attack, you may cast this for no cost.)&#xd;&#xa;Choose a non-evolution creature that costs 6 or less in the battle zone and add it as a new shield face down in its owner's shield zone." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="22" />
+		</card>
+
+		<card name="Kobolun" id="1ccbf7f5-d2e2-4f72-816e-5e27118d9713">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Lord/Hunter" />
+			<property name="Power" value="5000" />
+			<property name="Rules" value="When you put this creature into the battle zone, you and your opponent play Gachinko Judge, If you win, choose up to 2 creatures in the battle zone and return them to their owner's hands. (Gachinko Judge: Each player reveals the top card of his deck and then puts it on the bottom of his deck. If your revealed card costs the same as or greater than your opponent's revealed card, you win.)" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="23" />
+		</card>
+
+		<card name="Escape Fiat, Shock Machine Equipment" id="3df292e0-a293-4383-b5b1-679cac3be8e7">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Power" value="1000" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature or a creature that costs 7 or more into the battle zone, you may draw a card." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="24" />
+		</card>
+
+		<card name="Necrodragon Anyaku Anyato" id="9dc82e7c-df3a-4587-a379-63bab9dc35ea">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon/Unnoise" />
+			<property name="Power" value="5000" />
+			<property name="Rules" value="Whenever this creature attacks, you may choose a spell from a players graveyard and put it on the top or bottom of its owner's deck." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="25" />
+		</card>
+
+		<card name="Onizou Ambush" id="b5047090-b57f-44dd-8e37-09ec41be7313">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human/Hunter/Alien" />
+			<property name="Power" value="1000" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature or a creature that costs 7 or more into the battle zone, choose one of your opponent's creatures in the battle zone. That creature gets -2000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) " />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="26" />
+		</card>
+
+		<card name="Noten Drill, Shadow of Perforation" id="30dc80e4-7fc4-4b6b-b2c1-f690cabd16f3">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Ghost" />
+			<property name="Power" value="4000" />
+			<property name="Rules" value="When you put this creature into the battle zone, you and your opponent play Gachinko Judge, If you win, choose up to 2 creatures from your graveyard and return them to your hand. (Gachinko Judge: Each player reveals the top card of his deck and then puts it on the bottom of his deck. If your revealed card costs the same as or greater than your opponent's revealed card, you win.)" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="27" />
+		</card>
+
+		<card name="Volcanic Zaurus" id="598571da-4a38-4e6e-a213-f94ed39620d6">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Rock Beast" />
+			<property name="Power" value="4000+" />
+			<property name="Rules" value="Power Attacker +4000&#xd;&#xa;Double breaker&#xd;&#xa;This creature can't attack creatures that cost 6 or less." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="28" />
+		</card>
+
+		<card name="Moel, Love Sniper" id="767e4ca4-b7bb-4b67-9444-35cdf3f54453">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human/Hunter/Alien" />
+			<property name="Power" value="1000" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature or a creature that costs 7 or more into the battle zone, destroy one of your opponent's creatures that has power 4000 or less." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="29" />
+		</card>
+
+		<card name="Kaiser Flame, Secret Flame Dragon" id="db8aa1d6-a8bf-43a5-98cb-1c7434dc312c">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Attack Chance- Red Command Dragon(Whenever one of your Red Command Dragons attack, you may cast this for no cost.) &#xd;&#xa;Destroy all your opponent's creatures that have 'blocker'.&#xd;&#xa;If you have a  Victory Red Command Dragon in the battle zone, after casting this spell, you may put it on the top of your deck instead of putting it into your graveyard." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="30" />
+		</card>
+
+		<card name="Shirauo Giant" id="d128fdfb-151c-4fcf-8217-be1a2fd6a1e9">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant/Hunter" />
+			<property name="Power" value="3000" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature or a creature that costs 7 or more into the battle zone, you may put the top card of your deck into your  mana zone." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="31" />
+		</card>
+
+		<card name="Manner Giant" id="4b0b88db-c9cf-4ceb-aa96-eb0dbdc98168">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant/Alien" />
+			<property name="Power" value="3000" />
+			<property name="Rules" value="When you put this creature into the battle zone, you and your opponent play Gachinko Judge. If you win, choose one of your opponent's creatures in the battle zone and put it into its owner's mana zone. &#xd;&#xa;(Gachinko Judge: Each player reveals the top card of his deck and then puts it on the bottom of his deck. If your revealed card costs the same as or greater than your opponent's revealed card, you win.)" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="32" />
+		</card>
+
+		<card name="Wild Vegetable, Secret Thousand Cut" id="9cd7038e-8897-4f16-b755-d6308a1e2a06">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Attack Chance- Wild Veggies(Whenever one of your Wild Veggiess attack, you may cast this for no cost.)&#xd;&#xa;One of your creatures in the battle zone gets +6000 power and breaks an additional shield until the end of the turn.." />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="33" />
+		</card>
+
+		<card name="Darkness Kabachi, Psycho Mettler" id="6179a327-e8cb-4c07-befa-c48d223057f2">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command/Unnoise" />
+			<property name="Power" value="5000" />
+			<property name="Rules" value="During your opponent's turn, if your opponent draws a card, and it's not the first card drawn that turn, you may draw a card." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="34" />
+		</card>
+
+		<card name="Nyattaramon, Spirit of Salvation" id="0d73f56e-37ae-4775-be2c-966f520c51c3">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command/Unnoise" />
+			<property name="Power" value="3000" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;This creature can't attack players.&#xd;&#xa;Saver- Unknown" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="35" />
+		</card>
+
+		<card name="Kamenbi, Guardian of Concealed Blessing" id="298220df-76d1-4811-9996-8ea04e5db542">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian" />
+			<property name="Power" value="1500" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;This creature can't attack players.&#xd;&#xa;When this creature loses a battle, you may choose one of your opponent's creatures in the battle zone and tap it. Then, you may draw a card." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="36" />
+		</card>
+
+		<card name="Heaven's Charger" id="44b18d69-8084-4658-b566-68f397fa1ac1">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Choose one of your opponent's creatures in the battle zone and tap it.&#xd;&#xa;Charger" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="37" />
+		</card>
+
+		<card name="Control Fire, Fire-Fighting Machine" id="a883613b-5d9b-45bf-bf63-c456fb357cf4">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Alien" />
+			<property name="Power" value="4000" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;This creature can't attack." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="38" />
+		</card>
+
+		<card name="Enter the Shovel, Excavator Device" id="95e03501-e9c6-4d27-9b12-6af4b1b92a5d">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Power" value="2000" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;This creature can't attack.&#xd;&#xa;When you put this creature into the battle zone, you may choose a card from a player's graveyard. That player shuffles that card into his deck." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="39" />
+		</card>
+
+		<card name="Mouse Sittrain, Express Machine" id="94cf6342-03f9-4bf9-8ecc-9c254d57115d">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Unnoise" />
+			<property name="Power" value="1000" />
+			<property name="Rules" value="Whenever you put an Unknown into the battle zone, you may draw a card." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="40" />
+		</card>
+
+		<card name="Surfer Charger" id="b2bcd8ce-736f-43bb-b9d9-1cfb6591b72a">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Choose a creature in the battle zone and return it to its owner's hand. &#xd;&#xa;Charger" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="41" />
+		</card>
+
+		<card name="Mecha Machine, Secret Fusion" id="bc871faf-899d-46c3-bb3a-c6fff2db5cd3">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Attack Chance- Great Mecha King(Whenever one of your Great Mecha Kings attack, you may cast this for no cost.)&#xd;&#xa;Draw 2 cards." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="42" />
+		</card>
+
+		<card name="Candle Service, Heaven Descent to Goodness" id="07f47b65-8a66-4028-8f7a-31548b25efee">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Power" value="7000" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;When this creature blocks, destroy it after it battles.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="43" />
+		</card>
+
+		<card name="Thumbtack Man" id="3a87bf2a-dcae-48f6-b41f-c30c277fef90">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Hedrian/Unnoise" />
+			<property name="Power" value="2000" />
+			<property name="Rules" value="When you put an Unknown into the battle zone, you may destroy this creature. If you do, destroy one of your opponent's tapped creatures." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="44" />
+		</card>
+
+		<card name="Jooni Moririya" id="161d7766-0f73-4d0a-afd2-1a95588d215b">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human/Hunter/Alien" />
+			<property name="Power" value="3000" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;This creature can't attack." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="45" />
+		</card>
+
+		<card name="Guillotine Charger" id="3d520249-f9b3-44b8-8cc0-adcfd880e1bc">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Destroy one of your opponent's creatures that costs 6 or less. &#xd;&#xa;Charger" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="46" />
+		</card>
+
+		<card name="Onimanemaru, Victory Cosplay" id="c89c9f94-a7f1-4d81-a830-76a397039362">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Flame Monster/Machine Eater" />
+			<property name="Power" value="7000" />
+			<property name="Rules" value="Double breaker" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="47" />
+		</card>
+
+		<card name="Ogre Nobushi, Punishment Fist" id="1599a434-9259-431c-ba1e-85927453a436">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human/Hunter/Alien" />
+			<property name="Power" value="2000" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may destroy one of your opponent's creature's that has power less than it." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="48" />
+		</card>
+
+		<card name="Shibake Lupia" id="63c6b7ef-1609-4308-8bea-91eb27e6a522">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird/Unnoise" />
+			<property name="Power" value="1000" />
+			<property name="Rules" value="Whenever you put an Unknown into the battle zone, destroy one of your opponent's creatures that has power 4000 or less." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="49" />
+		</card>
+
+		<card name="Onimane, Cosplayer" id="e66901b3-6440-4081-812a-506068275aef">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Machine Eater" />
+			<property name="Power" value="2000" />
+			<property name="Rules" value="" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="50" />
+		</card>
+
+		<card name="Dash Charger" id="65206627-14aa-40e9-8b2e-17c1eb53661e">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Each of your creatures in the battle zone gets 'speed attacker' until the end of the turn.  (A creature that has 'speed attacker' doesn't get summoning sickness.) &#xd;&#xa;Charger" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="51" />
+		</card>
+
+		<card name="Bruiser Kunugi" id="2bb6fdf7-558e-42e9-9122-cc25a2cd1835">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies " />
+			<property name="Power" value="7000" />
+			<property name="Rules" value="This creature can't be blocked by creatures that have less power than this creature. &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="52" />
+		</card>
+
+		<card name="Katchikachi Itchikatchizu" id="9d9e0799-8e20-4bfb-89ff-1862ed60dfdf">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies/Unnoise" />
+			<property name="Power" value="1000" />
+			<property name="Rules" value="Whenever you put an Unknown into the battle zone, you may add a creature from your mana zone as a new shield into the shield zone face down." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="53" />
+		</card>
+
+		<card name="Shenometh, Gambling Society" id="8985b241-988b-4bbf-ac64-35489abd54a9">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies/Alien" />
+			<property name="Power" value="2000" />
+			<property name="Rules" value="" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="54" />
+		</card>
+
+		<card name="Lifeplan Charger" id="579dbde2-15fe-40c1-b620-606c17387e1f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Look at the top 5 cards of your deck. You may take a creature from among them, show that creature to your opponent, and put it into your hand. Then put the rest on the bottom of your deck in any order. &#xd;&#xa;Charger" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="55" />
+		</card>
+        <card name="Lifeplan Charger" id="579dbde2-15fe-40c1-b620-606c17387e2f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Look at the top 5 cards of your deck. You may take a creature from among them, show that creature to your opponent, and put it into your hand. Then put the rest on the bottom of your deck in any order. &#xd;&#xa;Charger" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="55" />
+		</card>
+	</cards>
+</set>
