@@ -32,6 +32,7 @@ cardScripts = {
                 'Belix, the Explorer': { 'onPlay': { 'fromMana': ['1','"Spell"'] }},
                 'Bronze-Arm Tribe': { 'onPlay': { 'mana': ['me.Deck'] }},
                 'Bronze Chain Sickle': { 'onPlay': { 'mana': ['me.Deck'] }},
+                'Buinbe, Airspace Guardian': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
                 'Chaos Worm': { 'onPlay': {  'kill': [] }},
                 'Chief De Baula, Machine King of Mystic Light': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Spell"'] }},
                 'Craze Valkyrie, the Drastic': { 'onPlay': { 'tapCreature': ['2'] }},
@@ -66,6 +67,7 @@ cardScripts = {
                 'Hot Spring Crimson Meow': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
                 'Hulk Crawler': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
                 'Hurlosaur': { 'onPlay': {  'kill': ['1000'] }},
+                'Iron Arm Tribe': { 'onPlay': { 'mana': ['me.Deck'] }},
                 'Izana Keeza': { 'onPlay': {  'kill': ['2000'] }},
                 'Intense Vacuuming Twist': { 'onPlay': { 'lookAtTopCards': ['5'] }},
                 'Jasmine, Mist Faerie': { 'onPlay': { 'suicide': ['"Jasmine, Mist Faerie"', 'mana', 'me.Deck'] }},
@@ -235,6 +237,7 @@ cardScripts = {
                 'Spiral Lance': { 'onPlay': { 'gear': ['"bounce"'] }},
                 'Stronghold of Lightning and Flame': { 'onPlay': { 'kill': ['3000'], 'tapCreature': [] }},
                 'Super Burst Shot': { 'onPlay': {  'banishAll': ['[card for card in table if card.owner != me]', 'True', '2000'] }},
+                'Super Infernal Gate Smash': { 'onPlay': { 'kill': [] }},
                 'Super Spark': { 'onPlay': { 'tapCreature': ['1','True'] }},
                 'Teleportation': { 'onPlay': { 'bounce': ['2'] }},
                 'Ten-Ton Crunch': { 'onPlay': { 'kill': ['3000'] }},
@@ -721,7 +724,6 @@ def semiReset():
             remoteCall(player,'shuffle', player.deck)
             remoteCall(player,'draw', [player.deck, False, 5])
 
-
 def suicide(name, action, arg):
 	mute()
 	choiceList = ['Yes', 'No']
@@ -995,10 +997,10 @@ def banish(card, dest = False, x = 0, y = 0):
         rnd(1,10)
         if re.search("{SHIELD TRIGGER}", card.Rules):
             if confirm("Activate Shield Trigger for {}?\n\n{}".format(card.Name, card.Rules)):
+                rnd(1,10)
+                notify("{} uses {}'s Shield Trigger.".format(me, card.Name))
                 card.isFaceUp = True
                 toPlay(card, notifymute = True)
-                rnd(1,10)
-                notify("{} uses {}'s Shield Trigger.".format(me, card))
                 return
         shieldCard = card
         cardsInHandWithStrikeBackAbility = [card for card in me.hand if re.search("Strike Back", card.rules)]
