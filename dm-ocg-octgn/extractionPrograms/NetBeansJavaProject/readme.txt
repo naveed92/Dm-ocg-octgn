@@ -20,6 +20,8 @@ SinnanSetExtractorV2 - Use this if you want only the "New Cards" section mention
 It's 90% possible that some conditional error will pop during usage in which case you'll have to dive deep into the code to fix it.
 I've commented a lot wherever possible but the code is still messy as hell. Good luck with it.
 
+In most places you'll have to put file paths manually, especially in the the image processing programs.
+
 -------------------------------------------------------------------------------------------------------------------
 For doubts you can contact me. At the time of writing this document, 
 the best way to do that would be to join the discord channel mentioned in the chat page of http://dmoctgn.proboards.com/
