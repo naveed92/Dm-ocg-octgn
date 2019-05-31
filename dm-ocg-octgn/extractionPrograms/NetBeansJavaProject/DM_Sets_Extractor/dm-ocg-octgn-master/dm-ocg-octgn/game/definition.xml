@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	id="bb784fc6-fe21-4603-90d7-82c049908a74" version="1.0.3.0" octgnVersion="3.1.30.0" scriptVersion="3.1.0.1"
+	name="Duel Masters OCG" tags="Duel Masters, Kaijudo" description="The original format of the game with additional Sets. Currently at DM-39 (Awakening Saga) with most of the commonly used cards automated."
+	setsurl="http://octgn.gamersjudgement.com/wordpress/dmocg/images/" gameurl="http://octgn.gamersjudgement.com/wordpress/dmocg/" authors="naveed92(Light)&#xD;&#xA;Zerovash&#xD;&#xA;vokes&#xD;&#xA;nitrox"
+	markersize="18" iconurl="https://raw.githubusercontent.com/naveed92/dm-ocg-octgn/master/game/cards/logo.jpg" >
+
+	<scripts>
+		<script src="scripts/actions.py" />
+	</scripts>
+	<events>
+		<event name="OnGameStart" action="resetGame" />
+		<event name="OnMoveCards" action="moveCards" />
+	</events>
+	<proxygen definitionsrc="proxy/CardGenData.xml">
+	</proxygen>
+	<documents>
+
+		<document name="Banlist" icon="documents/rules.png" src="documents/banlist.txt" />
+
+	</documents>
+	<card back="cards/back.jpg" front="cards/front.jpg" width="63" height="88" cornerRadius="0">
+		<property name="Cost" type="Integer" hidden="False" />
+		<property name="Civilization" type="String" textKind="Enum" ignoreText="False" />
+		<property name="Type" type="String" textKind="Enum" ignoreText="False" />
+		<property name="Race" type="String" textKind="Enum" ignoreText="False" />
+		<property name="Rarity" type="String" textKind="Enum" ignoreText="False" />
+		<property name="Rules" type="String" ignoreText="False" />
+		<property name="Power" type="String" textKind="Enum" ignoreText="False" />
+		<property name="Number" type="String" ignoreText="False" />
+	</card>
+	<table name="Battle Zone" visibility="undefined" ordered="False" width="800" height="600" background="background/background.jpg" backgroundStyle="uniformToFill">
+		<groupaction menu="Untap All" shortcut="F1" execute="untapAll" />
+		<groupaction menu="Roll Die" shortcut="ctrl+R" execute="rollDie" />
+		<groupaction menu="Set Up Battlezone" execute="setup" />
+		<groupaction menu="End Turn" shortcut="ctrl+E" execute="endTurn" />
+		<cardaction menu="Tap / Untap" default="True" shortcut="ctrl+G" execute="tap" />
+		<cardaction menu="Play Card" execute="toPlay" />
+		<cardaction menu="Destroy Card / Break Shield" shortcut="del" execute="banish" />
+		<cardaction menu="Set as Shield" shortcut="ctrl+H" execute="toShields" />
+		<cardaction menu="Awaken / Release" shortcut="ctrl+A" execute="awaken" />
+		<cardaction menu="Charge as Mana" shortcut="ctrl+C" execute="toMana" />
+		<cardaction menu="Move to Hand" shortcut="ctrl+B" execute="toHand" />
+		<cardaction menu="Move to Top of Deck" execute="toDeckTop" />
+		<cardaction menu="Move to Bottom of Deck" shortcut="ctrl+shift+E" execute="toDeckBottom" />
+		<cardaction menu="Clear Targets/Arrows" shortcut="esc" execute="clear" />
+	</table>
+	<player summary="{#Hand}">
+		<globalvariable name="shieldCount" value="0" />
+		<globalvariable name="evolution" value="{}" />
+		<hand name="Hand" visibility="me" ordered="False" width="63" height="88" shortcut="ctrl+H" icon="groups/hand.png">
+			<cardaction menu="Play Card" default="True" execute="toPlay" />
+			<cardaction menu="Set as Shield" shortcut="ctrl+H" execute="toShields" />
+			<cardaction menu="Discard Card" shortcut="del" execute="toDiscard" />
+			<cardaction menu="Charge as Mana" shortcut="ctrl+C" execute="toMana" />
+			<groupaction menu="Random Discard" shortcut="ctrl+X" execute="randomDiscard" />
+		</hand>
+		<group name="Deck" visibility="none" ordered="False" width="63" height="88" shortcut="ctrl+Y" icon="groups/deck.png" collapsed="False">
+			<groupaction menu="Draw Card" shortcut="ctrl+D" execute="draw" />
+			<groupaction menu="Draw X Cards" shortcut="ctrl+shift+D" execute="drawX" />
+			<groupaction menu="Set Top Card as Shield" execute="shields" />
+			<groupaction menu="Shuffle" shortcut="ctrl+S" execute="shuffle" />
+			<groupaction menu="Discard Top Card" execute="mill" />
+			<groupaction menu="Discard Top X Cards" execute="millX" />
+			<groupaction menu="Charge Top Card as Mana" shortcut="ctrl+M" execute="mana" />
+		</group>
+		<group name="Graveyard" visibility="all" ordered="False" width="63" height="88" shortcut="del" icon="groups/graveyard.png" collapsed="False" />
+
+		<group name="Hyperspatial Zone" visibility="all" ordered="False" width="63" height="88" shortcut="" icon="groups/hyperspatial.png" collapsed="False" /> 
+
+	</player>
+	<deck>
+		<section name="Main" group="Deck" />
+
+		<section name="Hyperspatial Deck" group="Hyperspatial Zone" />
+
+	</deck>
+</game>

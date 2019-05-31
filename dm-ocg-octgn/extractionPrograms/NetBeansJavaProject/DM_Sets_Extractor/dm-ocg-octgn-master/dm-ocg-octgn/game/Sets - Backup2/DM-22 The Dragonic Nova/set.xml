@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DM-22 The Dragonic Nova" id="6d88cea1-3a1e-41c7-a5a3-3687a1c5fa7a" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="a4e17605-0564-418e-b601-7e93fcf71c11">
+			<options>
+				<option probability="0.083">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.250">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="3" key="Rarity" value="Uncommon" />
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Supernova Ultimate Galaxy" id="b4a4fce4-cbbe-4047-b235-d15f7468d105">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Evolution - Phoenix.&#xd;&#xa;Meteorburn - When this creature attacks, you may send a card under this creature to the Graveyard. If the last card put into the Graveyard is a Phoenix, you win the game.&#xd;&#xa;[Triple Breaker]" />
+			<property name="Power" value="17000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S1" />
+		</card>
+		<card name="Supernova Betelgeuse Final Cannon" id="0e09b4a9-19d2-4c72-90e4-7ed0dcf26250">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Evolution GV - Great Mecha King, Grand Devil, and/or Poseidia Dragon.&#xd;&#xa;[Triple Breaker] When a creature you control is destroyed, you may put that card under this creature instead of sending it to the Graveyard.&#xd;&#xa;Meteorburn 6 - When this creature attacks, you may put 6 cards under this creature into the Graveyard. If so, return all creatures in your opponent's Battle Zone and all cards in their Mana Zone to their hand." />
+			<property name="Power" value="15000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S2" />
+		</card>
+		<card name="Necrodragon Guljeneraid" id="f5276c8a-3ebf-4a12-861b-836b993d3f89">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon" />
+			<property name="Rules" value="When one of your Dragons is destroyed other than &quot;Necrodragon Guljeneraid&quot;, if this creature is in your graveyard, you may return this creature to the battle zone.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S3" />
+		</card>
+		<card name="Supernova Apollonus Dragerion" id="a16028e0-c74c-410b-a01a-6784550aee99">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix/Tyranno Drake" />
+			<property name="Rules" value="Evolution GV - Dragon.&#xd;&#xa;Meteorburn - When this creature attacks, you may send a card under this creature to the Graveyard. If so, this creature gains &quot;Power Attacker +15000&quot; and &quot;World Breaker&quot; &#xd;&#xa;When an opponent chooses this creature, they put all of their cards in the Mana Zone into the Graveyard.&#xd;&#xa;[Triple Breaker]" />
+			<property name="Power" value="15000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S4" />
+		</card>
+		<card name="Supernova Uranus Ninetails" id="a3fc8f61-9b75-469d-9e94-333d850482c0">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix/Dynamo" />
+			<property name="Rules" value="Evolution GV - Dynamo.&#xd;&#xa;[Triple Breaker] [Dynamo]&#xd;&#xa;Meteorburn - When this creature attacks, you may send a card under this creature to the  Graveyard. If so, choose an opponent's creature in the Battle Zone and put it into its owner's Mana Zone." />
+			<property name="Power" value="12000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S5" />
+		</card>
+		<card name="Spell Del Fin, Light Divine Dragon" id="cfcd4201-ea9a-4b6b-9793-70ab4b4a48de">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Apollonia Dragon" />
+			<property name="Rules" value="Your opponent plays with their hand face-up.&#xd;&#xa;This creature gains Power +2000 for each Spell in your opponent's hand.&#xd;&#xa;Your opponent cannot play Spells.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="1" />
+		</card>
+		<card name="Spell Great Blue, Blue Divine Dragon" id="4131f7aa-b303-484a-82a3-83692f1e00c9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Poseidia Dragon" />
+			<property name="Rules" value="When this creature attacks, reveal the top card of your deck. If it's a Spell with cost of 7 or less, you may play it without paying its cost. Otherwise, put it into the Graveyard.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="2" />
+		</card>
+		<card name="Babelginus, Demonic Dragon" id="a003c319-0a68-4b5a-a1fb-b504f5d5d408">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon/Grand Devil" />
+			<property name="Rules" value="When this creature is put into the Battle Zone, choose a player. You may destroy one of their creatures. If so, choose a non-Evolution creature other than &quot;Magical Dragon Babelginus&quot; in that player's Graveyard, and put it into the Battle Zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="3" />
+		</card>
+		<card name="Bolgalshack, Super Divine Dragoon" id="35d88c96-a36e-4dce-a3e1-a99ebfb2e5d1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Armored Dragon/Tyranno Drake" />
+			<property name="Rules" value="Evolution - Dragon or Tyranno Drake.&#xd;&#xa;[Double Breaker] When this creature is put into the Battle Zone, if put on top of a Tyranno Drake, destroy an opponent's creature with Power 4000 or less.&#xd;&#xa;When this creature attacks, if a card under this creature is a Dragon, you may destroy 1 of your opponent's creatures with less power than this creature that isn't an Armored Dragon or Tyranno Drake." />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="4" />
+		</card>
+		<card name="Legendary Sante Gat De Paco" id="6746712e-24f7-4f85-bc91-d3f108c395df">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dreammate/Arc Seraphim" />
+			<property name="Rules" value="Evolution - Put on one of your Dreammate.&#xd;&#xa;The cost to summon Dreammate is reduced by 1, however the cost cannot be less than 1.&#xd;&#xa;When a Dreammate you control is put into the Battle Zone, draw a card.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="5" />
+		</card>
+		<card name="Muse Rubul, Spirit Knight" id="7bbd5595-6a24-4409-8259-6eca3a05d5e7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="{SHIELD TRIGGER} &#xd;&#xa;When this creature is put into the Battle Zone, tap all creatures with Power 3000 or less." />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="6" />
+		</card>
+		<card name="Poppi Lucky" id="7a11dc87-394b-471f-ae86-7a67c36bbada">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="When opponent chooses creatures in the Battle Zone, he/she can't choose any Dragons you control. (However, your Dragons can still be attacked or blocked.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="7" />
+		</card>
+		<card name="Reverse Tone" id="4021d831-e4c0-41a9-9216-4fd6caed03cf">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose an Evolution Creature in the Battle Zone and return a card under that creature to its owner's hand." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="8" />
+		</card>
+		<card name="Melrosgalb, Blue Divine Dragon" id="49e64c1b-3e34-4349-b877-d1bc6e2e315a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Poseidia Dragon" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;When this creature attacks or blocks, return a card from your Mana Zone to your hand.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="9" />
+		</card>
+		<card name="Time Changer, Space-Time Engineer" id="c51962d8-4f64-4a59-98da-7f120592096d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="When this creature is put into the Battle Zone, choose an Evolution Creature in your Battle Zone. Search your deck for 2 creatures, reveal them, and put them under the chosen Evolution Creature. Shuffle your deck." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="10" />
+		</card>
+		<card name="Collapse Wave" id="dee0e8da-ca8e-43d4-8f27-24701ec706aa">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose a card from any Mana Zone, and put that card on top of its owner's deck." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="11" />
+		</card>
+		<card name="Necrodragon Daft Head" id="52afe073-d1ef-4489-86e8-268bf90769e1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon" />
+			<property name="Rules" value="At the beginning of your opponent's turn, your opponent draws an extra card.&#xd;&#xa;When this creature attacks, you may look at your opponent's hand and choose a card from there and discard it.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="12" />
+		</card>
+		<card name="Purgatory Release" id="dffce2e5-5a89-4f66-ace9-189eb413e58e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="All creatures in all Graveyards are returned to their owner's hand." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="13" />
+		</card>
+		<card name="Connected Dragonic Poison" id="671bfc15-6e2c-40bf-ba33-7cf724e4fc29">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Destroy an opponent's creature. For each Dragon and Phoenix you control, you may destroy an additional creature your opponent controls." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="14" />
+		</card>
+		<card name="Infinity Dragon" id="e899449a-7969-4e48-bae2-067ae443427f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="When a Dragon you control would leave the Battle Zone, put the top card of your deck into your Graveyard. If that card is a Dragon or Fire Bird, your Dragon stays in the Battle Zone.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="15" />
+		</card>
+		<card name="Hot-Head Brave, Maducas" id="102b5c32-2d0a-42d1-9071-db03cb1cd994">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dragonoid" />
+			<property name="Rules" value="All creatures you control gain &quot;Power Attacker +4000&quot;.&#xd;&#xa;Creature you control must attack each turn if able." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="16" />
+		</card>
+		<card name="The Universe Gate" id="39ea2161-ea49-4ff1-9575-fb09a07eedc9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Reveal the top 3 cards from your deck. For each Phoenix revealed, you get an extra turn after this one." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="17" />
+		</card>
+		<card name="Terradragon Geographanis" id="01e75687-1c24-415e-a9ad-3dd21637b281">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Earth Dragon" />
+			<property name="Rules" value="When attacking, this creature gains power equal to the total power of all other tapped creatures in your Battle Zone.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="18" />
+		</card>
+		<card name="Inos, Pure Grand Swordsman" id="261da84d-c3ca-4222-bd31-dca96b44c221">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="You may put any type of Evolution Creature on top of this creature." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="19" />
+		</card>
+		<card name="Blossom Shower" id="f007aaca-8102-456c-8e26-1b23546ff583">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Put the top card of your deck into your Mana Zone. For each Dragon and Phoenix you control, you may return a card from your Mana Zone to your hand." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="20" />
+		</card>
+		<card name="Asteroid Mine, Optic Comet" id="ae41e805-9d95-40f0-a81b-7b3e1b246475">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Evolution V - Put on top of 2 Arc Seraphim, Saint Head, and/or Apollonia Dragon you control.&#xd;&#xa;When an opponent chooses creatures in the Battle Zone, your opponent can't choose this creature.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="21" />
+		</card>
+		<card name="Seventh, Light Divine Dragon" id="0f454bf9-e2fe-47ee-a894-9c7a14361541">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Apollonia Dragon" />
+			<property name="Rules" value="All Dragons you control in the Battle Zone gain &quot;Blocker&quot;." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="22" />
+		</card>
+		<card name="Flash Armor" id="93a5c2b1-e23d-47b2-af3a-d7d1c8ffb8ab">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;During this turn, when a creature you control is destroyed, they creature stays in the Battle Zone instead of going to the Graveyard." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="23" />
+		</card>
+		<card name="Asteroid Raiser, Ice Comet" id="9e3faa94-ded6-4747-b034-c97157221e7c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Evolution V - Put on top of 2 Great Mecha King, Machine Hero, and/or Poseidia Dragon you control.&#xd;&#xa;When this creature is destroyed, return this card to your hand.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="24" />
+		</card>
+		<card name="Fuuma Gorgonshack" id="21f0f2d8-8ec4-4c23-acfd-20ed8ab74c44">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="All Spells cost an additional 2 to cast." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="25" />
+		</card>
+		<card name="Dragon Lab" id="81892092-ebb0-4f4f-900b-cf030150cb9b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Reveal the top 3 cards from your deck. From the revealed cards, choose a Dragon and put it into your hand.  Put the reston the bottom of your deck in any order. If all 3 revealed cards are Dragon, return this card to your hand instead of sending it to the Graveyard." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="26" />
+		</card>
+		<card name="Asteroid Gellum, Dark Comet" id="f0926ba9-b8df-4ae7-9569-adb09f4b9eff">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Evolution V - Put on top of 2 of your Grand Devil, Deep Marine, and/or Zombie Dragon.&#xd;&#xa;When this creature is put into the Battle Zone, destroy an opponent's creature.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="27" />
+		</card>
+		<card name="Fuuma Aogrun" id="2e19671d-08ce-4c6e-859d-cd431b7e59a3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;[Thrilling Three: Phoenix] Destroy an opponent's creature.&#xd;&#xa;This creature can't attack." />			
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="28" />
+		</card>
+		<card name="Hell Hand" id="3c5068ac-ffb7-474e-8d8e-75748de0176f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Turn all Shields you control face-down, and shuffle them." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="29" />
+		</card>
+		<card name="Asteroid Gauss, Flame Comet" id="0626fa8d-7a1e-4d69-aa56-9ceb2cd47883">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Evolution V - Put on top of 2 of your Tyranno Drake, Brave Spirit, and/or Armored Dragon.&#xd;&#xa;[Double Breaker]" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="30" />
+		</card>
+		<card name="Meowpatta, Dragon's Steward" id="1501f91e-9a52-4924-86b8-d888a90ec009">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="Speed Attacker&#xd;&#xa;This creature must attack each turn if able.&#xd;&#xa;At the beginning of your turn, you may destroy this creature. If so, you may put a non-Evolution Dragon from your hand into the Battle Zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="31" />
+		</card>
+		<card name="Bomber Doll" id="c788e651-c786-4634-9dcb-c8d01d35126c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER} (When this spell is put into your hand from your shield zone, you may cast it immediately for no cost.)&#xd;&#xa;Destroy an opponent's creature with power 2000 or less, or, destroy a tapped opponent's creature with power 5000 or less." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="32" />
+		</card>
+		<card name="Asteroid Gaia, Ground Comet" id="b0f54ec4-8979-4476-8fd4-4c7b6785827c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Evolution V - Put on top of 2 of your Dreammate, Vehicle Bee, and/or Earth Dragon.&#xd;&#xa;When this creature is blocked, this creature breaks an opponent's Shield.&#xd;&#xa;Double Breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="33" />
+		</card>
+		<card name="Hameln Dalia, Spirit Knight" id="83bcbbb3-995f-45be-9f60-90bad99a16c8">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="When this creature is put into the Battle Zone, you may return a Dragon from your Mana Zone to your hand." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="34" />
+		</card>
+		<card name="Evolution Egg" id="5e35c082-ab54-413f-9bca-26ccd9c1551c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER} (When this spell is put into your hand from your shield zone, you may cast it immediately for no cost.)&#xd;&#xa;Look at your deck. Choose an Evolution creature, reveal it, and add it to your hand. Shuffle yourdeck." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="35" />
+		</card>
+		<card name="Soul Denan, Spirit Knight" id="247a7502-d1c0-435e-977a-26d28f5667ba">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="When you cast a Light Spell, you may draw a card." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="36" />
+		</card>
+		<card name="Dumar, Spirit Knight" id="bc2c35bd-c9de-47ab-95a5-03f18b4f773b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;This creature cannot attack players.&#xd;&#xa;When you control a Dragon in the Battle Zone, this creature gains Power +2000." />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="37" />
+		</card>
+		<card name="Revitalize Electric Soldier, Energion" id="697699c6-c020-4c48-b808-0ff5921f8605">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;This creature cannot attack players.&#xd;&#xa;When this creature is destroyed, untap all creatures you control in the Battle Zone." />			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="38" />
+		</card>
+		<card name="Celestial Arc" id="129a2c79-dcb5-4434-b6fd-c0a26944969e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose a Dragon or Phoenix in the Battle Zone, and put it face-down into its owner's Shield Zone." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="39" />
+		</card>
+		<card name="Fuuma Demigorun" id="61dde1c1-c83c-489a-9841-33dce82557cf">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="Fort Energy: Dragon (When this creature is put into the Battle Zone, if a Dragon is tapped to Summon this creature, this creature gain the following [Fort Energy]  ability.)&#xd;&#xa;[Fort Energy] : Search  your deck for any card, reveal it, and add it to your hand. Shuffle your deck." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="40" />
+		</card>
+		<card name="Lip Woppe" id="fdc1e695-aced-4b56-993a-b709410b15e0">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="When a Dragon is put into the Battle Zone, you may draw a card." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="41" />
+		</card>
+		<card name="Armored Machine Sarbolt" id="12846a96-28b6-4ce6-aef1-4fa9487e34bc">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;This creature cannot attack.&#xd;&#xa;This creature cannot block Evolution Creatures or Dragons." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="42" />
+		</card>
+		<card name="Future Capsule" id="cf15c5d9-be13-4c96-8b3c-a9729db22edf">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Look at the top 5 cards of your deck. Put any number of those cards on top of your deck in any order on top of your deck, the rest on the bottom of your deck in any order." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="43" />
+		</card>
+		<card name="Necrodragon Halberd" id="8d24825f-a9ae-4ff3-a5a1-4f7c51ab9e4d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon" />
+			<property name="Rules" value="Slayer (When this creature loses a battle, destroy the other creature.)&#xd;&#xa;Double Breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="44" />
+		</card>
+		<card name="Sensing Dragoon" id="b56b2384-47ab-41c8-881f-e90722a859b2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="When this creature is put into the Battle Zone, reveal the top 2 cards from your deck. Put one card on top of your deck and the other into your Graveyard." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="45" />
+		</card>
+		<card name="Fuuma Vines" id="bad66e34-cb0c-4a55-9997-f565b17d6990">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="When this creature is put into the Battle Zone, your opponent chooses one of his/her own creature with &quot;Blocker&quot; and destroys it." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="46" />
+		</card>
+		<card name="Serial Dragon Formation" id="179cec0c-b9f1-43b7-a946-a7c544365b2b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Return a creature from your Graveyard to your hand. If that creature is a Dragon, you may return another creature from your Graveyard to your hand." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="47" />
+		</card>
+		<card name="Flaming Jet Dragon" id="518370bc-fccb-40c8-abea-09114ae12497">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="[Speed Attacker]&#xd;&#xa;[Thrilling Three: Dragon] During this turn, this creature breaks an additional Shield." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="48" />
+		</card>
+		<card name="Loppo Loppo" id="df679de7-251a-46b2-a96e-4f26fa5b7785">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Saver: Phoenix or Dragon (When one of your Phoenix or Dragon is destroyed, this creature is destroyed instead.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="49" />
+		</card>
+		<card name="Pop Rubin" id="32eb0249-9fd8-420c-bb6e-cfca3f416b6d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its [Tap] ability.&#xd;&#xa;[Tap]: Untap a Dragon you control in the Battle Zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="50" />
+		</card>
+		<card name="Decopin Crash" id="d94e2ed8-1a9e-4991-8164-6ed64f27612d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Destroy a creature with power 4000 or less." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="51" />
+		</card>
+		<card name="Terradragon Geobreed" id="9b78739e-50ab-43c1-8a13-347fd2879e74">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Earth Dragon" />
+			<property name="Rules" value="When this creature is put into the Battle Zone, you may return the creature in the Battle Zone with the least power to its owner's hand." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="52" />
+		</card>
+		<card name="One-Eye Lu Pine" id="1a6c658a-3e03-4f4c-95c7-439838ae3ce2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies" />
+			<property name="Rules" value="The cost to summon Dragons is reduced by 1. However, the cost can't be less than 1.&#xd;&#xa;All Dragons you control gain Power +1000." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="53" />
+		</card>
+		<card name="Ribbidynanz, Forest Singer" id="406412fa-4291-4420-a68b-617954d33c67">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="When this card is put into the Battle Zone, untap all Phoenixes you control in the Mana Zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="54" />
+		</card>
+		<card name="Little Eyes Growth" id="84399a67-366a-4318-a788-1afb2588aeea">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Reveal the top 2 cards from your deck. Put all creatures into your Mana Zone, and the rest into your Graveyard." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="55" />
+		</card>
+
+	</cards>
+</set>

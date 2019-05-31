@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DM-07 Invincible Charge" id="eb2fbf1a-27bc-4ef7-a113-fcd64002b6fc" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="3ef36305-ec21-4761-9214-ed54f9e0fbbc">
+			<options>
+				<option probability="0.083">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.250">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="3" key="Rarity" value="Uncommon" />
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Siri, Glory Elemental" id="d45c3c6a-da43-42c8-bf9f-e72aa8c59a36">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="Double breaker (This creature breaks 2 shields.) &#xd;&#xa;While you have no shields, this creature has &quot;blocker&quot; and &quot;At the end of each of your turns, you may untap this creature.&quot;" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S1" />
+		</card>
+		<card name="Cosmic Nebula" id="a7179172-1a44-46af-abf9-59daf43e67d9">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Virus" />
+			<property name="Rules" value="Evolution-Put on one of your Cyber Viruses. &#xd;&#xa;Whenever you draw the card at the start of your turn, you may draw an extra card." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S2" />
+		</card>
+		<card name="Crath Lade, Merciless King" id="504c57d4-d27a-42ce-bfff-36708b814c21">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Lord" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Your opponent discards 2 cards at random from his hand." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S3" />
+		</card>
+		<card name="Sky Crusher, the Agitator" id="19bc25dc-2b35-4676-ab72-a8b13b1828e0">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dragonoid" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Each player puts a card from his mana zone into his graveyard." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S4" />
+		</card>
+		<card name="Headlong Giant" id="d9be6090-077b-4f34-95cc-d33b2266e45c">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant" />
+			<property name="Rules" value="This creature can't attack if you have no cards in your hand. &#xd;&#xa;Whenever this creature attacks, discard a card from your hand. &#xd;&#xa;This creature can't be blocked by any creature that has power 4000 or less. &#xd;&#xa;Triple breaker (This creature breaks 3 shields.)" />
+			<property name="Power" value="14000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S5" />
+		</card>
+		<card name="Gandar, Seeker of Explosions" id="d1fe4c40-637e-4e5c-a769-0d2fc8aa11ca">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha Thunder" />
+			<property name="Rules" value="Double breaker (This creature breaks 2 shields.) &#xd;&#xa;Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} At the end of the turn, untap all your light creatures." />
+			<property name="Power" value="6500" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="1" />
+		</card>
+		<card name="King Benthos" id="c3c7ac05-c847-4842-9504-22e29fa24a2f">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Leviathan" />
+			<property name="Rules" value="Double breaker (This creature breaks 2 shields.) &#xd;&#xa;Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Each of your water creatures gets &quot;This creature can't be blocked&quot; until the end of the turn." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="2" />
+		</card>
+		<card name="Battleship Mutant" id="b6863540-2985-4349-aa82-05f9dbe36993">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Hedrian" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Until the end of the turn, each of your darkness creatures in the battle zone gets +4000 power and &quot;double breaker.&quot; Whenever any of those creatures battles this turn, destroy it after the battle." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="3" />
+		</card>
+		<card name="Armored Transport Galiacruse" id="44293c09-875b-4582-99cd-450b544c875d">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armorloid" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Each of your fire creatures gets &quot;This creature can attack untapped creatures&quot; until the end of the turn." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="4" />
+		</card>
+		<card name="Spinning Totem" id="38504a0f-da4a-4855-9d93-08866f8b955d">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mystery Totem" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} This turn, whenever any of your nature creatures is attacking your opponent and becomes blocked, it breaks one of his shields. (If a creature has &quot;double breaker&quot; or &quot;triple breaker,&quot; it still breaks only one shield.)" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="5" />
+		</card>
+		<card name="Bex, the Oracle" id="7e664555-207b-47d6-8078-f40c5885021d">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer" />
+			<property name="Rules" value="While you have no shields, this creature has &quot;Blocker (Whenever an opponent's creature attacks, you may tap this creature to stop the attack. Then the 2 creatures battle).&quot;" />
+			<property name="Power" value="2500" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="6" />
+		</card>
+		<card name="Geoshine, Spectral Knight" id="f603d464-3492-40ba-990d-85dc02814966">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Rainbow Phantom" />
+			<property name="Rules" value="Whenever this creature attacks, you may choose a darkness or fire creature in the battle zone and tap it. (First choose what this creature is attacking. Then choose a creature to tap.)" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="7" />
+		</card>
+		<card name="Justice Jamming" id="8501c2f8-7dd2-4c2f-aa80-8025c8998371">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Tap all darkness creatures in the battle zone, or tap all fire creatures in the battle zone." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="8" />
+		</card>
+		<card name="Kizar Basiku, the Outrageous" id="3fc5db56-616c-49c4-8ddc-2d922e9c4a54">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Initiate" />
+			<property name="Rules" value="{BLOCKER} (Whenever an opponent's creature attacks, you may tap this creature to stop the attack. Then the 2 creatures battle.) &#xd;&#xa;Evolution-Put on one of your Initiates. &#xd;&#xa;Fire stealth (This creature can't be blocked while your opponent has any fire cards in his mana zone.) &#xd;&#xa;Double breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="8500" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="9" />
+		</card>
+		<card name="Lightning Charger" id="a3569344-7a9a-476a-9afc-35e9c28ad209">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose one of your opponent's creatures in the battle zone and tap it. &#xd;&#xa;Charger (After you cast this spell, put it into your mana zone instead of your graveyard.)" />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="10" />
+		</card>
+		<card name="Miracle Portal" id="119afa07-1a17-4197-8df9-3ee4254f0a58">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose one of your creatures in the battle zone. This turn, it can't be blocked and you ignore any effects that would prevent that creature from attacking your opponent. (For example, ignore summoning sickness and card effects that say &quot;This creature can't attack&quot; or &quot;This creature can't attack players.&quot; Your creatures can't attack creatures this way.)" />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="11" />
+		</card>
+		<card name="Pulsar Tree" id="4507bcbd-17f6-4035-9da5-1a6d0b41601e">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="StarLight Tree" />
+			<property name="Rules" value="When one of your shields would be broken, you may destroy this creature instead." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="12" />
+		</card>
+		<card name="Rodi Gale, Night Guardian" id="ae65d4d1-78aa-4711-ba49-eafd98b358e9">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian" />
+			<property name="Rules" value="Darkness stealth (This creature can't be blocked while your opponent has any darkness cards in his mana zone.)" />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="13" />
+		</card>
+		<card name="Rom, Vizier of Tendrils" id="7148214f-dc9c-4fb4-835c-cd6064e247df">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may choose one of your opponent's creatures in the battle zone and tap it." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="14" />
+		</card>
+		<card name="Rondobil, the Explorer" id="e5bb03ac-0f09-44de-8fbe-b0c7f2748e84">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gladiator" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Add one of your creatures from the battle zone to your shields face down." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="15" />
+		</card>
+		<card name="Aqua Agent" id="0d273a22-1cf9-4f99-8321-e2282e855b57">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="Water stealth (This creature can't be blocked while your opponent has any water cards in his mana zone.) &#xd;&#xa;When this creature would be destroyed, you may return it to your hand instead." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="16" />
+		</card>
+		<card name="Aqua Fencer" id="7e4cdeee-0b47-4260-8ba8-3f1cf0b9ab36">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Choose a card in your opponent's mana zone and return it to his hand." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="17" />
+		</card>
+		<card name="Biancus" id="0735c257-6554-4aeb-9aca-f3bed4022752">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Sea Hacker" />
+			<property name="Rules" value="{BLOCKER} (Whenever an opponent's creature attacks, you may tap this creature to stop the attack. Then the 2 creatures battle.) &#xd;&#xa;Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Choose one of your creatures in the battle zone. It can't be blocked this turn." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="18" />
+		</card>
+		<card name="Cetibols" id="5ce98713-900d-4291-8dc4-889de1d68461">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Sea Hacker" />
+			<property name="Rules" value="When this creature is destroyed, you may draw a card." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="19" />
+		</card>
+		<card name="Curious Eye" id="44c6f9ec-1832-4d62-a73e-3dab72818591">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Virus" />
+			<property name="Rules" value="Whenever this creature attacks, you may look at one of your opponent's shields. Then put it back where it was." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="20" />
+		</card>
+		<card name="Garatyano" id="10048aab-7f26-4c3f-862b-199f41f132aa">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Sea Hacker" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Look at the top 3 cards of your deck. Then put them back in any order." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="21" />
+		</card>
+		<card name="Riptide Charger" id="a1ed67a1-2143-461e-b2ee-7d74ec6773e5">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose a creature in the battle zone and return it to its owner's hand. &#xd;&#xa;Charger (After you cast this spell, put it into your mana zone instead of your graveyard.)" />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="22" />
+		</card>
+		<card name="Splash Zebrafish" id="cf6ee28e-ab9b-4313-9ea9-048767476308">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gel Fish" />
+			<property name="Rules" value="When you put this creature into the battle zone, return a card from your mana zone to your hand. &#xd;&#xa;This creature can't be blocked." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="23" />
+		</card>
+		<card name="Titanium Cluster" id="0106b420-f033-4f9e-b5a9-237f1d6ded0e">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Cluster" />
+			<property name="Rules" value="{BLOCKER} (Whenever an opponent's creature attacks, you may tap this creature to stop the attack. Then the 2 creatures battle.) &#xd;&#xa;This creature can't be attacked. &#xd;&#xa;This creature can't attack." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="24" />
+		</card>
+		<card name="Trenchdive Shark" id="395bac96-1ce7-4681-99fe-59ed2f6dd156">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gel Fish" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may add up to 2 cards from your hand to your shields face down. If you do, choose the same number of your shields and put them into your hand. You can't use the &quot;shield trigger&quot; ability of those shields." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="25" />
+		</card>
+		<card name="Dream Pirate, Shadow of Theft" id="b79da1ed-4d54-4396-bc8b-38594979cab2">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Ghost" />
+			<property name="Rules" value="When this creature would be destroyed, you may return it to your hand instead. If you do, put a card from your hand into your graveyard." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="26" />
+		</card>
+		<card name="Gezary, Undercover Doll" id="2a5fe0d2-134c-4a4d-bf90-cfafaa795a84">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Death Puppet" />
+			<property name="Rules" value="Nature stealth (This creature can't be blocked while your opponent has any nature cards in his mana zone.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="27" />
+		</card>
+		<card name="Gigabuster" id="1532f8ae-1dc7-4609-a518-063f8de9c751">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Chimera" />
+			<property name="Rules" value="{BLOCKER} (Whenever an opponent's creature attacks, you may tap this creature to stop the attack. Then the 2 creatures battle.) &#xd;&#xa;When you put this creature into the battle zone, choose one of your shields and put it into your hand. You can't use the &quot;shield trigger&quot; ability of that shield. &#xd;&#xa;This creature can't attack." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="28" />
+		</card>
+		<card name="Hopeless Vortex" id="350d2dde-2abf-48c0-a1da-63dff2d00bfa">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Destroy one of your opponent's creatures." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="29" />
+		</card>
+		<card name="Phantasmal Horror Gigazabal" id="dbf22912-afdd-49cf-ac0a-6417886d8407">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Chimera" />
+			<property name="Rules" value="Evolution-Put on one of your Chimeras. &#xd;&#xa;Light stealth (This creature can't be blocked while your opponent has any light cards in his mana zone.) &#xd;&#xa;Double breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="30" />
+		</card>
+		<card name="Propeller Mutant" id="36a25a40-d952-4c07-9625-ee88745d6df7">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Hedrian" />
+			<property name="Rules" value="When this creature is destroyed, your opponent discards a card at random from his hand." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="31" />
+		</card>
+		<card name="Scalpel Spider" id="50cf8db2-11e6-44e2-ad50-89b8041ee670">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Brain Jacker" />
+			<property name="Rules" value="Whenever this creature is attacked, it gets &quot;slayer&quot; until the end of the turn. (Whenever a creature that has &quot;slayer&quot; battles, destroy the other creature after the battle.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="32" />
+		</card>
+		<card name="Three-Faced Ashura Fang" id="b8303223-d073-42b9-8338-cc3b72e5ae69">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Devil Mask" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose one of your shields and put it into your hand. You can't use the &quot;shield trigger&quot; ability of that shield." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="33" />
+		</card>
+		<card name="Vacuum Gel" id="dca76df6-bd90-46d2-b032-30560f71de4d">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER} (When this spell is put into your hand from your shield zone, you may cast it immediately for no cost.) &#xd;&#xa;Destroy one of your opponent's untapped light or untapped nature creatures." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="34" />
+		</card>
+		<card name="Venom Charger" id="25d36779-1263-4777-aaa1-6c2949addbbf">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="One of your creatures in the battle zone gets &quot;slayer&quot; until the end of the turn. (Whenever a creature that has &quot;slayer&quot; battles, destroy the other creature after the battle.) &#xd;&#xa;Charger (After you cast this spell, put it into your mana zone instead of your graveyard.)" />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="35" />
+		</card>
+		<card name="Apocalypse Vise" id="e0558aef-d2d3-4111-aa79-965cdc604f57">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Destroy any number of your opponent's creatures that have total power 8000 or less." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="36" />
+		</card>
+		<card name="Astronaut Skyterror" id="d8248eef-8cc6-498b-83c3-8fd4dd377893">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Wyvern" />
+			<property name="Rules" value="While you have no other creatures in the battle zone, this creature has &quot;Power attacker +4000 (While attacking, this creature gets +4000 power)&quot; and &quot;Double breaker (This creature breaks 2 shields).&quot;" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="37" />
+		</card>
+		<card name="Cratersaur" id="66763699-8e81-458c-a298-20cd843ddd8d">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Rock Beast" />
+			<property name="Rules" value="While you have no shields, this creature can attack untapped creatures and has &quot;Power attacker +3000 (While attacking, this creature gets +3000 power).&quot;" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="38" />
+		</card>
+		<card name="Energy Charger" id="507077aa-7b0b-42c8-a38e-7ff28846c159">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="One of your creatures gets +2000 power until the end of the turn. &#xd;&#xa;Charger (After you cast this spell, put it into your mana zone instead of your graveyard.)" />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="39" />
+		</card>
+		<card name="Gazarias Dragon" id="fa4fc042-7238-495d-9706-2d7b733bcff7">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="While you have no shields, this creature gets +4000 power and has &quot;Double breaker (This creature breaks 2 shields).&quot;" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="40" />
+		</card>
+		<card name="Kipo's Contraption" id="aadea88f-bf0c-48ac-9ee7-ac6bdfcb819c">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="XenoParts" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Destroy one of your opponent's creatures that has power 2000 or less." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="41" />
+		</card>
+		<card name="Kooc Pollon" id="f63d041c-e752-4f5c-a3ab-80f45241b249">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="This creature can't be attacked." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="42" />
+		</card>
+		<card name="Otherworldly Warrior Naglu" id="fcb63428-e684-486b-9c34-04d24adc8221">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armorloid" />
+			<property name="Rules" value="This creature can't be attacked. &#xd;&#xa;Power attacker +3000 (While attacking, this creature gets +3000 power.) &#xd;&#xa;Double breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="43" />
+		</card>
+		<card name="Valkrowzer, Ultra Rock Beast" id="1640acce-f082-4814-be15-b7851f65d21a">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Rock Beast" />
+			<property name="Rules" value="Evolution-Put on one of your Rock Beasts. &#xd;&#xa;Water stealth (This creature can't be blocked while your opponent has any water cards in his mana zone.) &#xd;&#xa;Double breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="44" />
+		</card>
+		<card name="Wild Racer Chief Garan" id="190cdfdd-c077-4521-91ed-7bc5d6853b75">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human" />
+			<property name="Rules" value="Power attacker +1000 (While attacking, this creature gets +1000 power.) &#xd;&#xa;Light stealth (This creature can't be blocked while your opponent has any light cards in his mana zone.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="45" />
+		</card>
+		<card name="Brood Shell" id="fedcde11-394c-4af5-aa48-df0dc9d02647">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Colony Beetle" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Return a creature from your mana zone to your hand." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="46" />
+		</card>
+		<card name="Cursed Totem" id="9f3f83fa-ed3e-48f7-9396-bbe1d79ed544">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mystery Totem" />
+			<property name="Rules" value="Double breaker (This creature breaks 2 shields.) &#xd;&#xa;Your opponent cannot use the &quot;shield trigger&quot; ability of their shields." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="47" />
+		</card>
+		<card name="Freezing Icehammer" id="dd842b81-e187-44e3-92f2-a36826718849">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Choose one of your opponent's water or darkness creatures in the battle zone. Your opponent puts that creature into his mana zone." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="48" />
+		</card>
+		<card name="Fruit of Eternity" id="30272397-4b70-4b40-b7ee-8399ebe099d6">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER} (When this spell is put into your hand from your shield zone, you may cast it immediately for no cost.) &#xd;&#xa;Whenever any of your creatures would be destroyed this turn, put it into your mana zone instead." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="49" />
+		</card>
+		<card name="Launch Locust" id="e6c53caf-9923-4496-a817-2727ea17bead">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant Insect" />
+			<property name="Rules" value="While attacking, this creature gets +1000 power for each other creature you have in the battle zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="50" />
+		</card>
+		<card name="Mulch Charger" id="8de000dc-4cd9-4a6b-bccc-acfae89211ef">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Put one of your creatures from the battle zone into your mana zone. &#xd;&#xa;Charger (After you cast this spell, put it into your mana zone instead of your graveyard.)" />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Uncommon" />
+			<property name="Number" value="51" />
+		</card>
+		<card name="Popple, Flowerpetal Dancer" id="bb3a50dd-049d-488d-b89c-779dcf29b82e">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Snow Faerie" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Put the top card of your deck into your mana zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="52" />
+		</card>
+		<card name="Stinger Horn, the Delver" id="3e3b883e-721c-42b9-8181-52e514695c7f">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Horned Beast" />
+			<property name="Rules" value="Power attacker +1000 (While attacking, this creature gets +1000 power.) &#xd;&#xa;Water stealth (This creature can't be blocked while your opponent has any water cards in his mana zone.)" />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="53" />
+		</card>
+		<card name="Tangle Fist, the Weaver" id="a5cba5aa-271f-43b0-8350-ca94c5cdfe9a">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa;{TAP} Put up to 3 cards from your hand into your mana zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="54" />
+		</card>
+		<card name="World Tree, Root of Life" id="ced03efd-90c8-4303-83b4-16d2d1198aaf">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Tree Folk" />
+			<property name="Rules" value="Evolution-Put on one of your Tree Folk. &#xd;&#xa;Power attacker +2000 (While attacking, this creature gets +2000 power.) &#xd;&#xa;Darkness stealth (This creature can't be blocked while your opponent has any darkness cards in his mana zone.) &#xd;&#xa;Double breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="55" />
+		</card>
+	</cards>
+</set>

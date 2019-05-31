@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DM-26 Dragonic Wars" id="6daf98ba-36ca-4282-95f7-b90c0d09297c" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="67b354d3-ed5f-423d-9194-ae50268db44b">
+			<options>
+				<option probability="0.083">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.250">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="3" key="Rarity" value="Uncommon"/>
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Ballom Emperor, Lord of Demons" id="836e40e5-9b07-49c5-b3e1-c986c31ac1d7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Rules" value="Evolution - Put on one of your Demon Command&#xd;&#xa;When you put this creature into the battle zone, destroy all creatures except darkness creatures.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S1" />
+		</card>
+		<card name="Bolshack Yamato Dragon" id="8c374db2-7b97-4205-a669-cda740d21176">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="Speed Attacker&#xd;&#xa;When this creature attacks, it gets +1000 power for each fire card in your graveyard.&#xd;&#xa;Double Breaker&#xd;&#xa;When you would destroy 1 of your opponent's creatures with 6000 power or less by the effect of &quot;Bolmeteus Samurai Dragon&quot;, instead destroy one of your opponent's 
+
+creatures with 12000 power or less." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S2" />
+		</card>
+		<card name="King Alcadeias, Holy Gaia" id="7dbe96e2-2ca6-4eff-baaa-546580db7c42">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Angel Command /Lost Crusader" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Evolution - Put on one of your multicolored creatures.&#xd;&#xa;Double Breaker&#xd;&#xa;When your opponent would put a non-multicolored creature into the battle zone, instead of the battle zone it is put into the graveyard." />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S3" />
+		</card>
+		<card name="Aku, Ultimate God" id="66187890-a25d-4cc7-8801-0894d230f57e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Double Breaker&#xd;&#xa;When a God in your battle zone is destroyed, you may return it to your hand.&#xd;&#xa;God Link - Zen, Transcendent God (Left Side)&#xd;&#xa;When this creature attacks while linked, you may destroy one of your opponent's creatures." />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S4" />
+		</card>
+		<card name="Kirin Legacy, the Twin Meteor" id="95532e89-7b06-49fd-96c1-9bb71e74413e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Fire/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Vortex Evolution - Put on two of your multi-colored creatures.&#xd;&#xa;This card is put into the mana zone tapped.&#xd;&#xa;Meteor Burn - When you summon a non-evolution multicolored creature you may put one of the cards under this creature into your graveyard. If you do, you may search your 
+
+deck and put a creature of the same name as the creature you put into your graveyard from your deck into the battle zone.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="12000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S5" />
+		</card>
+		<card name="Aqua Wavester" id="75901696-2807-4167-bcae-ac11a0938daf">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="When this creature is put into the battle zone, return all other creatures to their owner's hands except for multicolored creatures." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="1" />
+		</card>
+		<card name="Variable Amon Dragon" id="7721269a-69b4-4e0c-bb84-f862fd1f2418">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="Double Breaker&#xd;&#xa;Your multicolored creatures break an additional shield." />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="2" />
+		</card>
+		<card name="Zen, Transcendent God" id="566ac39d-d9a0-49cb-96c4-8998662c34b6">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;[Blocker] Blocker&#xd;&#xa;Double Breaker&#xd;&#xa;God Link - Aku, Ultimate God (Right Side) (If the specified god is in the battle zone, you may link this to it. The linked god gains each god's characteristics (power and 
+
+abilities) and becomes one creature. When the linked creature leaves the battle zone, select 1 side instead.)&#xd;&#xa;While this creature is linked it gets &quot;Quad Breaker&quot; and untaps at the end of your turn." />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="3" />
+		</card>
+		<card name="Crimson Mega Dragoon" id="44daa31d-4585-4ad8-8e0b-98864063461c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness/Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone, destroy all creatures with &quot;Blocker&quot;." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="4" />
+		</card>
+		<card name="Paradox, Gaia's Abyss" id="b65d9c25-8be2-4049-8568-d64347a1e3f9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Darkness/Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Lost Crusader" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone you may discard 2 cards from your hand. If you don't, return this creature to your hand.&#xd;&#xa;When this creature is destroyed, draw 4 cards.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="5" />
+		</card>
+		<card name="Diamond Sword" id="8c0dcb65-62e4-4ec5-9320-a23f8dd040bc">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This turn, ignore any effects that would prevent your creatures from attacking your opponent. (For example, ignore summoning sickness and card effects that say 
+
+&quot;This creature can't attack&quot; or &quot;This creature can't attack players.&quot; Your creatures can't attack creatures this way.)" />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="6" />
+		</card>
+		<card name="Surf Totem" id="42182fea-9955-4145-812b-a77de94f6412">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mystery Totem" />
+			<property name="Rules" value="Your nature creatures can't be blocked by creatures with less power.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="7" />
+		</card>
+		<card name="Protege, Finest God" id="14afb413-2cc7-450e-861e-492bfc439a05">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;[Blocker] Blocker&#xd;&#xa;At the end of your turn, you may untap all of your creatures with &quot;Blocker&quot;.&#xd;&#xa;God Link - Orbital, the Supreme God or Chemical, God of Sublimity (Right Side)&#xd;&#xa;While this creature is linked, when your creatures with &quot;Blocker&quot; are destroyed, instead of putting them in your graveyard you may return them to your hand." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="8" />
+		</card>
+		<card name="Icaros, Holy Gaia" id="ba063c42-8923-46c4-9a8d-32e9a21e115b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Mecha del Sol/Lost Crusader" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Evolution - Put on one of your multicolored creatures.&#xd;&#xa;Crew Breaker - Multicolored creatures (This creature breaks 1 shield for each of your multicolored creatures.)&#xd;&#xa;This creature gets &quot;Power Attacker +5000&quot; for each of your multicolored creatures." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="9" />
+		</card>
+		<card name="Chemical, Sublimity God" id="e5b3742a-12f0-475f-aec4-5e07c930945c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone you may draw 2 cards. If you do, discard 1 card.&#xd;&#xa;God Link - Underworld, the Greatest God or Prodigy, The Finest God (Left Side) (If the specified god is in the battle zone, you may link this to it. The linked god gains each 
+
+god's characteristics (power and abilities) and becomes one creature. When the linked creature leaves the battle zone, select 1 side instead.)&#xd;&#xa;While this creature is linked, it gains &quot;Double Breaker&quot;." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="10" />
+		</card>
+		<card name="Great Reversal of Reality and Death" id="56e36e72-b682-4411-bd76-8c99d80bdd5c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa;Destroy 1 of your opponent's creatures. Then, choose 1 creature in your opponent's graveyard. Your opponent puts that creature into the battle zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="11" />
+		</card>
+		<card name="Reward of Punching and Slapping" id="d3ac1b5e-621f-44e3-9ce5-18285ee2d869">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa;At the end of this turn, draw 1 card for each tapped creature in the battle zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="12" />
+		</card>
+		<card name="Jack Valdy, the Everlasting" id="a9db3b00-780c-4420-8944-a4cec0a6145c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire/Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Spirit Quartz" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Evolution - Put on one of your multicolored creatures.&#xd;&#xa;When this creature is put into the battle zone, destroy one of your opponent's creatures with a cost of 5 or less, or put one of your opponent's cross gears of cost 5 or less into 
+
+your opponent's graveyard. However, a multi-colored card may not be chosen by this effect.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="13" />
+		</card>
+		<card name="Orbital, Supreme God" id="c3de1041-7c7b-4e92-9b73-94365fc289fc">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire/Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Double Breaker&#xd;&#xa;When this creature attacks, your opponent chooses one card in his hand and discards it.&#xd;&#xa;God Link - Underworld, the Greatest God or Protege, the Finest God (Left Side) (If the specified god is in the battle zone, you may link this to it. The linked god gains each 
+
+god's characteristics (power and abilities) and becomes one creature. When the linked creature leaves the battle zone, select 1 side instead.)&#xd;&#xa;While this creature is linked, it gains &quot;Triple Breaker&quot;." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="14" />
+		</card>
+		<card name="Underworld, Greatest God" id="7a40adc6-bd67-44a5-843f-1d55c5a86d20">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire/Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone, you may return 1 God from your mana zone to your hand.&#xd;&#xa;God Link - Orbital, the Supreme God or Chemical, God of Sublimity (Right Side)&#xd;&#xa;When this creature is linked and wins a battle, you may untap it." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="15" />
+		</card>
+		<card name="Mist Gias, Gaia's Swordcerer" id="6a47d2c0-847d-45bb-8315-b3a3bde19677">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Water/Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Lost Crusader" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When a multicolored spell is cast or a multicolored creature is summoned, you may draw 1 card." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="16" />
+		</card>
+		<card name="Hundred Eyes, Secret Spirit Treasure" id="25bcaccd-f584-4d88-8275-16ce1bd7ede7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Darkness/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim/Pandora Box" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa;When this creature is put into the battle zone, discard your hand. If you didn't discard at least 1 card in this way destroy this creature.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="17" />
+		</card>
+		<card name="Daikazan, Brave King Totem" id="4ada02da-c8fc-4c4d-8b88-a7aafdee5e08">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Fire/Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Human/Mystery Totem" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;At the start of your turn you may tap 3 cards in your mana zone. If all the cards tapped are light cards, untap this creature at the end of your turn. If all the cards tapped are fire cards, this creature can attack untapped creatures this turn. If all the cards tapped are nature cards, this creature gets +4000 power this turn." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="18" />
+		</card>
+		<card name="Rocaperissors, Gaia's Magician" id="41b4e17f-5a51-4e68-8078-ba6cf0f975dc">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Fire/Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Lost Crusader" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When you put this creature into the battle zone, play rock-paper-scissors with your opponent. If you win, you may draw 3 cards. If you lose, discard 1 card from your 
+
+hand." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="19" />
+		</card>
+		<card name="Albatross, Spirit Wing Treasure" id="c432a5a0-63d9-4f11-bf60-6f1c6ca26cf5">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Pandora Box/Xeno Parts/Beast Folk" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is destroyed, you may select up to 2 creatures with a combined cost of 5 or less from your graveyard at put them in the battle zone. Those creatures gain 
+
+&quot;Speed Attacker&quot; during this turn." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="20" />
+		</card>
+		<card name="Murmur, Vizier of Formation" id="71747845-55ec-4f5e-bef7-df3a9f56bbcf">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate" />
+			<property name="Rules" value="[Blocker] Blocker&#xd;&#xa;This creature can't attack players.&#xd;&#xa;All of your other creatures with &quot;Blocker&quot; get +3000 power." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="21" />
+		</card>
+		<card name="Concentric Battler, the Great Conductor" id="b411cae2-2f02-4456-9604-1c917f207c09">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Overdrive Light x1 and Water x1 (When this creature is summoned, you may tap an additional 1 Light and 1 Water card in your mana zone. If you do, this creature gains the 
+
+following [OD] ability).&#xd;&#xa;[OD]: All of your light and water creatures get +1000 power for each tapped card in your opponent's mana zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="22" />
+		</card>
+		<card name="Kelbirem, the Deathknight Puppet" id="1eabd9ca-69b9-48f8-8ad7-97b942463ab2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim/Death Puppet" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone, all tapped creatures get -3000 power during this turn. (A creature with 0 or less power is destroyed.)&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="23" />
+		</card>
+		<card name="Drill Rex, Soul Weapon Knight" id="27dffaa3-fcee-4ccc-9631-eaf7cc14faf8">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Xeno Parts/Arc Seraphim" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Speed Attacker&#xd;&#xa;Power Attacker +3000&#xd;&#xa;At the end of your turn, you may untap this creature." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="24" />
+		</card>
+		<card name="Toby Gongon, the Guardian Spirit Fairy" id="bf6d8fe3-dd9d-46f3-8ec4-80ab2c9f2025">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian/Snow Faerie" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;[Blocker] Blocker&#xd;&#xa;This creature can't attack players.&#xd;&#xa;Whenever a card is put in your mana zone, you may choose 1 of your opponent's creatures and tap it." />
+			<property name="Power" value="2500" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="25" />
+		</card>
+		<card name="Shallot, Knight of Valor" id="5f8a1ea1-f6e2-4f9f-a58c-94b155b6bf3e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim/Wild Veggies" />
+			<property name="Rules" value="This card is put into the battle zone tapped.&#xd;&#xa;Overdrive Light x1 and Nature x1 (When this creature is summoned, you may tap an additional 1 Light and 1 Nature card in your mana zone. If you do, this creature gains the 
+
+following [OD] ability).&#xd;&#xa;[OD]: When cards are put into your graveyard from your hand or battle zone this turn, you may put them into your mana zone instead." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="26" />
+		</card>
+		<card name="Beautician, Viral Lord of Fear" id="f8edfbcb-32ec-401f-afa7-81e254a3aa21">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Virus/Dark Lord" />
+			<property name="Rules" value="This card is put into the battle zone tapped.&#xd;&#xa;[Blocker] Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;Overdrive Water x1 and Darkness x1 (When this creature is summoned, you may tap an additional 1 Water and 1 Darkness card in your mana zone. If you do, this creature 
+
+gains the following [OD] ability).&#xd;&#xa;[OD]: Your opponent discards 1 card and you may draw 1 card." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="27" />
+		</card>
+		<card name="Soul Dorji, Supreme Lord of the Sea" id="9a8c6283-3f67-4cea-b2f3-0f03650f505d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Nature" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Poseidia Dragon/Earth Dragon" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Evolution - Put on one of your multicolored creatures.&#xd;&#xa;You may summon this creature from your mana zone. (This card may not be used in paying its own summon cost.)&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="12000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="28" />
+		</card>
+		<card name="Elder's Flaming Earthquakes" id="a83509c1-6834-44f2-8453-99b8bee466ff">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire/Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Your opponent may put 2 cards from his mana zone into his graveyard.  If they don't, choose 1 of your opponent's creatures in the battle zone and destroy it.&#xd;&#xa;Overdrive Fire x1 and Darkness x1 (When this spell is cast, you may tap an additional 1 Fire and 1 Darkness card in your mana zone. If you do, this spell gains the following 
+
+[OD] ability).&#xd;&#xa;[OD]: Your opponent chooses 1 of his shields for each card put into the graveyard by this spell's effect and puts them in their graveyard." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="29" />
+		</card>
+		<card name="Amdul, the Powerful Lightning Flame" id="0be4b91a-a122-48e0-b364-7dec5a59d614">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire/Nature" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Wyvern/Giant" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="13000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="30" />
+		</card>
+		<card name="Lion Arms, Mobile Cyber-Beast" id="514e367e-6066-44b0-93f1-8976e4f60826">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire/Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armorloid/Horned Beast" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Double Breaker&#xd;&#xa;Overdrive Fire x1 and Nature x1 (When this creature is summoned, you may tap an additional 1 Fire and 1 Nature card in your mana zone. If you do, this creature gains the 
+
+following [OD] ability).&#xd;&#xa;[OD]: When this creature is put into the battle zone, all your creatures gain +2000 power and &quot;Double Breaker&quot; during this turn." />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="31" />
+		</card>
+		<card name="Turquoise Kraken, Holy Machine" id="5434afb8-90ce-40fe-b6be-c7837c178286">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Water/Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian/Merfolk/Tyranno Drake" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;[Blocker] Blocker&#xd;&#xa;This creature can't attack players.&#xd;&#xa;At the end of your turn you may untap this creature." />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="32" />
+		</card>
+		<card name="Nyokitaris, Viral Tree Spirit" id="e77a6cb5-f3f0-43bc-b1b4-ea2208153562">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Water/Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Cyber Virus/Mystery Totem" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is destroyed you may choose and activate one of the following effects: Choose up to two of your opponents creatures and tap them OR return two of your opponent's creatures to their owner's hand OR search your deck for up to two creatures with a cost of 3 or less, show them to your opponent, and add them to your hand. Then, shuffle your 
+
+deck." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="33" />
+		</card>
+		<card name="Persistent Prison of Gaia" id="f7c1dc2b-45bd-4283-b3ea-dbb2614c4374">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Darkness/Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Choose one of your opponent's creatures and return it to their hand. Then, discard 1 card from your opponent's hand at random. If the discarded creature has the same name as the returned creature, choose one of your opponent's shields and put it in its owner's graveyard." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="34" />
+		</card>
+		<card name="Torierre, Armament Fairy" id="a2272baa-3ad6-418a-9743-f80184fd07d7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake/Xeno Parts/Snow Faerie" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature attacks, you may tap 1 darkness, 1 fire, and 1 nature civilization card in your mana zone. If you do, both players choose one of their shields and put it in their mana zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="35" />
+		</card>
+		<card name="Remember, Evil Fortress Treasure" id="56f5511a-601d-4305-81f2-6910d92ccb69">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Pandora Box" />
+			<property name="Rules" value="All of your darkness creatures gain &quot;Slayer&quot;." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="36" />
+		</card>
+		<card name="Peru Pere, Viral Guardian" id="d03798af-ba74-42ff-bab0-729a4f93e5ae">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian/Cyber Virus" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa;[Blocker] Blocker&#xd;&#xa;This creature can't attack players.&#xd;&#xa;When this creature is destroyed, you may return it to your hand instead." />
+			<property name="Power" value="2500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="37" />
+		</card>
+		<card name="El Kaiou, Spirit Mecha King" id="dde9d2a1-5b89-4046-b65b-e463d258e7ca">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim/Great Mecha King" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;[Blocker] Blocker&#xd;&#xa;This creature can't attack players." />
+			<property name="Power" value="4500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="38" />
+		</card>
+		<card name="Happy-go-lucky Strike" id="2ff6fb91-c388-4b0d-8b6d-b0298c745008">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Look at one of your shields. You may add it your hand. If you do, add the top card of your deck to your shields face down. (The &quot;Shield Trigger&quot; ability of this shield isn't used.) 
+
+If you don't add the shield to your hand, draw a card." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="39" />
+		</card>
+		<card name="Bega, Vizier of Shadow" id="2419df7e-24c2-49b3-95b1-97c5ea197241">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate/Ghost" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone, add the top card of your deck to your shields face down. Then, discard 1 card from your opponent's hand at random." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="40" />
+		</card>
+		<card name="Eagle Cargo, Guardian Treasure" id="edcc4f02-1fbf-45fe-9909-f3f3dc46221a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian/Pandora Box" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is destroyed, choose 1 of your opponent's creatures and tap it, or return 1 of your other creatures from your graveyard to your hand." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="41" />
+		</card>
+		<card name="Jet R.E, Brave Vizier" id="3b5191fb-572b-4f9b-951b-cc2785cc8886">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate/Human" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone, add the top card for your deck to your shields face down. Then, choose on of your opponent's creatures with &quot;Blocker' and destroy it." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="42" />
+		</card>
+		<card name="Beetleda, Armored Insect Mecha King" id="ec7c0a34-c9c6-4033-8824-02ace716c3b1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light/Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Vehicle Bee" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is destroyed, you may choose 1 of your opponent's creatures and tap it, or discard your hand and draw the same number of cards you discarded." />
+			<property name="Power" value="2500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="43" />
+		</card>
+		<card name="Fuuma Harisenmon" id="46035462-c952-4044-9e3d-456f18931bd7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;This creature can't be blocked." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="44" />
+		</card>
+		<card name="Magnas, Electro-Knight" id="bcada611-eb13-4d6d-833f-8094e83dee0b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People/Human" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone, look at 1 of your opponent's shields. Then, choose 1 of your opponent's creatures with &quot;Blocker&quot; and destroy it." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="45" />
+		</card>
+		<card name="Antionette, Beautiful Battle Dragon Princess" id="b1fa464d-04fb-413f-ab2e-de1d4414e1d7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Splash Queen/Tyranno Drake" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is destroyed, return 1 of your opponent's creatures to their hand, or discard your hand and draw the same number of cards your discarded." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="46" />
+		</card>
+		<card name="Splash Axe, the Aqua Savage" id="cac388c9-dbda-4ca5-8b6e-48793eb15e9c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People/Beast Folk" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When is creature is put into the battle zone, look at 1 of your opponent's shields. Then, add the top card of your deck to your mana zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="47" />
+		</card>
+		<card name="Fuuma Bariel, Armored Insect" id="1bf6aec2-a673-44cf-9222-945504883f99">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil/Giant Insect" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When is creature is destroyed, return 1 of your opponent's creatures to their hand, or search your deck for a creature with a cost of 3 or less, show it your opponent, and add it 
+
+to your hand. Then, shuffle your deck." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="48" />
+		</card>
+		<card name="The Door of Miracle and Mystery" id="e1bd908a-e2d8-4979-a3d1-2ed39007028d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa;Reveal the top 4 cards of your deck. Your opponent chooses a non-evolution creature from these and puts it in your battle zone. Put the remaining cards on the bottom of your 
+
+deck in any order." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="49" />
+		</card>
+		<card name="Present of Curses and Horror" id="18b6497f-ada3-4661-98a1-d69a64b1f44d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness/Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa;Destroy 1 of your creatures with 5000 power or less. If you do, destroy 1 of your opponent's creatures with 5000 power or less." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="50" />
+		</card>
+		<card name="Triple Mouth, Decaying Savage" id="e6ba07cc-4127-4537-b66d-64b614e14efd">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Ghost/Beast Folk" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone, put the top card of your deck into your mana zone. Then, discard 1 card from your opponent's hand at random." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="51" />
+		</card>
+		<card name="Angler Grape, Deep Currant Brave" id="a68c8f9b-f800-456b-ae34-d908bc7aa888">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness/Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Deep Marine/Wild Veggies" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is destroyed, return 1 other creature from your graveyard to your hand, or search your deck for a creature with a cost of 3 or less, show it your opponent, and add it to your hand. Then, shuffle your deck." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="52" />
+		</card>
+		<card name="Bisecting Skullcedony" id="8650c4c4-e032-403c-986e-84e659529cbe">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness/Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Spirit Quartz" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;Slayer&#xd;&#xa;When this creature would be destroyed, put it into your mana zone instead." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="53" />
+		</card>
+		<card name="Animabelgis, Fuuma Savage" id="530e8382-8093-421e-84a0-ff40a1c1b9fd">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness/Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil/Beast Folk" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature is put into the battle zone, choose one of your creatures. That creature breaks an additional shield this turn." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="54" />
+		</card>
+		<card name="Last Momotaro, Mobile Brave" id="680a570d-9214-4cb6-bf85-aff5fc54cd49">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire/Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armorloid/Wild Veggies" />
+			<property name="Rules" value="This card is put into the mana zone tapped.&#xd;&#xa;When this creature attacks, it may gain &quot;Double Breaker&quot; until the end of the attack. If it does, destroy this creature after the attack." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="55" />
+		</card>
+
+	</cards>
+</set>

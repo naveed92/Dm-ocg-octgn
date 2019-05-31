@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DM-20 The Ultimate Nova" id="0958ad73-c7e8-4436-a861-9a410472132f" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="67163899-66a2-4352-8f2f-115a44ab9dca">
+			<options>
+				<option probability="0.083">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.250">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="3" key="Rarity" value="Uncommon"/>
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Elsar Baltis, Emperor of Spirits" id="b7e9a70c-023c-4f82-9781-18a2ae14596f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;Evolution - Arc Seraphim.&#xd;&#xa;Double Breaker&#xd;&#xa;When your opponent uses the &quot;Shield Trigger&quot; ability, search your deck for a Spell card with &quot;Shield Trigger&quot;.  Shuffle your deck.  Then, you may cast that spell without paying its cost. " />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S1" />
+		</card>
+		<card name="Omegablack Z, Invincible Giant" id="171881ed-89cc-438e-a5fb-370bfb24a028">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="Evolution - Put on one of your Great Mecha King.&#xd;&#xa;When this creature attacks, you may reveal the top 4 cards from your deck.  You may add a Great Mecha King or a Machine Hero to your hand, and put the rest on the bottom of the deck in any order.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S2" />
+		</card>
+		<card name="Dolzabard, Superior Dragonic Phoenix" id="aa265030-3f6f-4ecf-beeb-a689aea0ad8d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="Evolution - Tyranno Drake.&#xd;&#xa;[Fort Energy: Brave Spirit] During this turn, your opponent can't use the &quot;Shield Trigger&quot; ability on Shields broken by this creature.&#xd;&#xa;[Fort Energy: Tyranno Drake] This creature breaks an opponent's shield.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S3" />
+		</card>
+		<card name="Supernova Lyra Bolstorm" id="79061bc1-aaec-4073-9e54-ab0801175e4d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Evolution GV - Zombie Dragon, Armored Dragon, and/or Earth Dragon.&#xd;&#xa;Meteorburn - When this creature attacks, you may send a creature under this card to the Graveyard. If so, put a non-Evolution 'Dragon' from your hand into play, destroy an opponent's creature with power 5000 or less, and send a card from your opponent's Mana Zone into the Graveyard.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="18000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S4" />
+		</card>
+		<card name="Draghurricane Energy" id="bec51e93-0cca-4dd5-ae78-d9d13dc0679e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Launcher E: Dragon] Search your deck, for each 'Dragon' creature in the battlezone tapped when this spell is cast, choose a creature with the same name and put it into the Battle Zone. Shuffle your deck." />			<property name="Power" value="" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S5" />
+		</card>
+		<card name="Strongarm Mecha, Kunckle Fist" id="c2d243e7-3ad2-4c41-b380-d46241d12112">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="When a Machine Hero or Great Mecha King you control is destroyed, untap all of your creatures in the Battle Zone.&#xd;&#xa;Double Breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="1" />
+		</card>
+		<card name="Commander Technobuster" id="4e0995a1-c21d-4cf0-b03c-6ce6f4be233f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Machine Hero" />
+			<property name="Rules" value="When an opponent draws a card, you may draw the same amount of cards.&#xd;&#xa;Double Breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="2" />
+		</card>
+		<card name="Rabiol, Forgetting Doll" id="e82e5102-658d-4392-9600-7b8919b9a36b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Death Puppet" />
+			<property name="Rules" value="Fort Energy: Death Puppet (When this creature is put into the Battle Zone, if a Death Puppet is tapped to Summon this creature, this creature gain the following [Fort Energy]  ability.)&#xd;&#xa;[Fort Energy] : Each player discards their hand." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="3" />
+		</card>
+		<card name="Comet Musashi" id="5d3a83c8-fc24-4f58-a84c-391d8893a8d8">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="When this creature is tapped, your opponent's creature must attack if able.&#xd;&#xa;When your opponent's creature attacks, destroy any creature with power of 3000 or less." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="4" />
+		</card>
+		<card name="Victory Apple" id="1393f896-44c3-4a8e-b9b6-5e5f6a1c1b93">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies" />
+			<property name="Rules" value="[Fort Energy: Wild Veggies] You may choose a creature from your Graveyard and put it into your Mana Zone.&#xd;&#xa;[Fort Energy: Dragon] You can return a creature from your Mana Zone to your hand." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="5" />
+		</card>
+		<card name="Invincible Mecha Gomach V" id="ca582078-465a-46ec-bf5d-e6466f30e310">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="Evolution - Great Mecha King.&#xd;&#xa;[Fort Energy: Machine Hero] Tap an opponent's creature in the Battle Zone with power 3000 or less.&#xd;&#xa;[Fort Energy: Great Mecha King] Tap an opponent's creature in the Battle Zone with power 4000 or more." />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="6" />
+		</card>
+		<card name="Balmagan, Machine Gun Shooter" id="96af2371-4739-47a2-a868-f6cbf43ffec3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Dynamo" />
+			<property name="Rules" value="[Dynamo]&#xd;&#xa;When this creature attacks, choose an opponent's creature in the Battle Zone and tap it. (First you choose which creature to attack, and then you choose which creature to tap.)" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="7" />
+		</card>
+		<card name="Slowly Chain" id="a583f10c-5cd0-437d-a2e5-46450b335650">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;During this turn, creatures cannot attack.&#xd;&#xa;Add this spell face-down to your Shields.  Choose one of your Shields and send it to the Graveyard." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="8" />
+		</card>
+		<card name="Astimart, King of Devils" id="1bbf8052-a548-4d4a-9b05-132f4d82573d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="Evolution - Grand Devil.&#xd;&#xa;[Fort Energy: Deep Marine] Choose a creature in the Battle Zone and return it to owner's hand.&#xd;&#xa;[Fort Energy: Grand Devil] Choose a player.  That player shuffles his/her hand into their deck, and draws the same number of cards." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="9" />
+		</card>
+		<card name="Osmosis Bullet Soul, Skull Hunter" id="32b94d00-c8db-471a-a9b3-bf2edf12a0eb">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="This creature cannot be attacked.&#xd;&#xa;This creature cannot be blocked.&#xd;&#xa;This creature cannot attack creatures." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="10" />
+		</card>
+		<card name="Greatmarch Energy" id="be1715d7-d07a-4052-8b6d-9c6df15477fe">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Launcher E: Great Mecha King] Reveal double the amount of tapped Great Mecha King cards from your deck when casting this spell.  From there add all Great Mecha King to your hand, and put the rest on the bottom of your deck in any order." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="11" />
+		</card>
+		<card name="Necrodragon Vaisas" id="f1c6462b-31d7-48c9-8fd7-bb972cae407e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon" />
+			<property name="Rules" value="When this creature attacks, choose one of your Shields and add it to your hand. However, any &quot;Shield Trigger&quot; abilities on that card cannot be used.&#xd;&#xa;Double Breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="12" />
+		</card>
+		<card name="Magnum, Allshot Puppet" id="a2432731-ea82-429d-940b-7eb045a613d0">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Death Puppet" />
+			<property name="Rules" value="When any creature or Cross Gear is put into the Battle Zone, or Spell is played, and cards in the Mana Zone are not tapped, the controller of that card chooses and destroys a creature in his/her Battle Zone." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="13" />
+		</card>
+		<card name="Devilcast Energy" id="114c19a7-94e6-4c76-95fd-eabbe8bfecd8">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Launcher E: Grand Devil] For each Grand Devil tapped when this spell is played, choose an opponent's Shield and add it to his/her hand.  (Your opponent may use &quot;Shield Trigger&quot; abilities from the returned cards)." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="14" />
+		</card>
+		<card name="Dragon Fighting Hero, Naoya" id="c7b56327-a721-4f88-b38a-86dfe4ca4ff1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human" />
+			<property name="Rules" value="[Fort Energy: Dragon] Until the end of turn, all creatures in your Battle Zone gain power +3000.&#xd;&#xa;[Fort Energy: Human] Destroy a creature with power 2000 or less." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="15" />
+		</card>
+		<card name="Wind User, Cheyenne" id="3f29e561-b394-4f5d-835c-f3894937316e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate/Dynamo" />
+			<property name="Rules" value="Dynamo (When another Dynamo attacks or is attacked, you may tap this creature. If you do, add this creature's power and abilities to that creature until the end of turn).&#xd;&#xa;When this creature attacks a player and is not blocked, destroy an opponent's creature with power 3000 or less." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="16" />
+		</card>
+		<card name="Roubanrei of Impact" id="82e0a177-0558-47c7-a545-d576309ba6d3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Brave Spirit" />
+			<property name="Rules" value="Speed Attacker (This creature doesn't get summoning sickness.)&#xd;&#xa;This creature must attack each turn if able.&#xd;&#xa;When a Tyranno Drake or Brave Spirit you control attacks, destroy an opponent's creature with &quot;Blocker&quot;." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="17" />
+		</card>
+		<card name="Great Writer, Chudersen" id="b75cb177-710b-40cd-ad8e-5628f14f8ffd">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="Evolution - Dreammate.&#xd;&#xa;When an opponent casts a Spell, look at your deck.  Select a Dreammate, reveal it and put it in your hand.  Shuffle the deck.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="18" />
+		</card>
+		<card name="Terradragon Mildgarmus" id="4ce5e6b2-6c39-4f97-afe8-4d0f23e2d9a4">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Earth Dragon" />
+			<property name="Rules" value="When this creatures is put into the Battle Zone, choose a card in an opponent's Mana Zone, and put it in its owner's Graveyard.  Afterward, put the top card from your deck into your Mana Zone." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="19" />
+		</card>
+		<card name="Great Blessing" id="88045682-7503-4c03-b833-aea79effcfb9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Put up to three creatures from your Graveyard into your Mana Zone." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="20" />
+		</card>
+		<card name="Search Armor Garongar" id="5953223c-77f8-41be-95a7-93bb6b72604e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="[Blocker] &#xd;&#xa;[Fort Energy: Great Mecha King] Choose two Shields and reveal them. (The chosen shields  stay revealed in the Shield Zone.)&#xd;&#xa;This creature cannot attack players." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="21" />
+		</card>
+		<card name="Captain Gyro" id="17f12146-0b32-4f10-a9f5-4b2ed1700a70">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Machine Hero" />
+			<property name="Rules" value="When a Great Mecha King you control wins a battle, you may tap this creature.  If so, untap the winning Great Mecha King." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="22" />
+		</card>
+		<card name="Arclogic Energy" id="5e1bd7e0-11ba-44e8-aec7-e295b8f0c0c3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Launcher E: Arc Seraphim] Search your deck for the same number of Spells as Arc Seraphim you tapped when this Spell was cast.  Reveal them to your opponent, and put them in your hand.  Shuffle your deck." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="23" />
+		</card>
+		<card name="Aqua Farecollector" id="f4358285-c74d-4316-8081-71dd62d87128">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="Fort Energy: Liquid People (When this creature is put into the Battle Zone, if a Liquid People is tapped to Summon this creature, this creature gain the following [Fort Energy]  ability.)&#xd;&#xa;[Fort Energy] : Each player draw cards equal to the number of creatures in their Battle Zone." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="24" />
+		</card>
+		<card name="Fuuma Boltis" id="2a5bbb84-2dee-4a8f-a5ae-78d341e6218d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;This creature cannot attack.&#xd;&#xa;All creatures that would destroyed by this creature in battle are not destroyed." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="25" />
+		</card>
+		<card name="Deepsea Mecha, Ocean" id="780c9185-178f-4a51-b2cc-23582cf3661b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;This creature cannot attack.&#xd;&#xa;When an opponent's creature blocks your attack, you may untap this creature." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="26" />
+		</card>
+		<card name="Fuuma Foras" id="a051baa2-90d9-44f3-851f-040cf81f7e66">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="When another creature is put into your Battle Zone, destroy this creature.&#xd;&#xa;When a card is put into a Mana Zone, send it to the Graveyard instead.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="27" />
+		</card>
+		<card name="Endbringer Dragoon" id="7795b265-2ab5-416c-8811-33a150b1a517">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="When this creature attacks a creature, destroy that creature.&#xd;&#xa;When this creature is attacked, destroy this creature." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="28" />
+		</card>
+		<card name="Grudge Gathering" id="94780750-9ef0-40e8-b2a5-eb9aed5f60eb">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Destroy an opponent's creature with cost equal to or less than the number of cards in your Graveyard." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="29" />
+		</card>
+		<card name="Skychief Hatin" id="7b046e27-3223-430b-8f64-18b8847f3abc">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Vehicle Bee" />
+			<property name="Rules" value="When your Dreammate wins a battle, one of your creatures in the Battle Zone gains &quot;Speed Attacker&quot; and &quot;Double Breaker&quot; until the end of turn." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="30" />
+		</card>
+		<card name="Disturbing Chuusa" id="3fdce6a1-2d89-4819-998e-9dc2c1cea4d1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="This creature must attack each turn if able.&#xd;&#xa;When this creature is tapped, Spells cannot be played." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="31" />
+		</card>
+		<card name="Tyranno-Drive Energy" id="57a1a3c1-a714-4556-b2a6-5fd627266026">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Launcher E: Tyranno Drake] Destroy a creature with power equal to or less than the total power of the Tyranno Drakes tapped while casting this Spell." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="32" />
+		</card>
+		<card name="Zapping Beans" id="87a38eaf-30f2-41f8-aebb-a5af679ca750">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies" />
+			<property name="Rules" value="When this creature is put into the Battle Zone, your opponent chooses one of their creatures in the Battle Zone and moves it to their Mana Zone.&#xd;&#xa;When this creature is destroyed, your opponent chooses one of their non-Evolution creatures in their Mana Zone and moves it to their Battle Zone." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="33" />
+		</card>
+		<card name="Surprise Illusion" id="ddc1afdf-1dd3-46ad-be54-40666ef40a74">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Choose a creature Type.  Until the end of this turn, all creatures in the Battle Zone you control have that creature Type." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="35" />
+		</card>
+		<card name="Hopstep Grasshopper" id="efb43177-3b38-4cd4-ad63-c02c07a3701b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Vehicle Bee" />
+			<property name="Rules" value="When a Great Mecha King or Vehicle Bee is put into your Battle Zone, destroy this creature at the end of that turn.&#xd;&#xa;Double Breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="34" />
+		</card>
+		<card name="Punishion, Spirit Knight" id="f8633e93-5e2c-453b-9df6-9fe74131da0b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="When this creature is put into the Battle Zone, tap an opponent's creature in the Battle Zone." />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="36" />
+		</card>
+		<card name="Rebellious Steelfist, Barnian" id="76eb5909-629f-4a3c-a9c8-8cbeeae3476e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="This creature gains Power +2000 for each creature Type an opponent controls." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="37" />
+		</card>
+		<card name="Captain Super-Rescue" id="d92e4e09-5f1e-4ef0-adf1-37fb9b87ba29">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Machine Hero" />
+			<property name="Rules" value="Saver: Great Mecha King (When one of your Great Mecha King is destroyed, this creature is destroyed instead.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="38" />
+		</card>
+		<card name="Ra Bool, Guardian of White Gold" id="f4145928-7128-405c-83e9-2e2b95127dec">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian" />
+			<property name="Rules" value="[Blocker] (When an opponent's creature attacks, you may tap this creature to stop the attack. Then the two creatures battle.)&#xd;&#xa;This creature cannot block creatures with power 2000 or less.&#xd;&#xa;This creature cannot attack players." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="39" />
+		</card>
+		<card name="Aqua Hulk" id="4c2c1808-b5e8-42f8-88cc-64223be41095">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When this creature is put into the Battle Zone, you may draw a card." />			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="40" />
+		</card>
+		<card name="Waving Argors" id="08c4fb7c-f05b-4152-a2a2-b135aa8de0bf">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Deep Marine" />
+			<property name="Rules" value="Whenever a Grand Devil you control wins a battle, you may draw a card." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="41" />
+		</card>
+		<card name="Aqua Escort" id="d4cfa13f-b9da-4b0d-a580-9dbb7c7e7797">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;This creature cannot attack.&#xd;&#xa;When this creature is put into the Battle Zone, choose one of your creatures in the Battle Zone and return it to your hand." />						<property name="Power" value="6000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="42" />
+		</card>
+		<card name="Secret Clocktower" id="d6a209b3-cc5c-4575-ad36-e15680527721">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Look at the top 3 cards of your deck.  Add one card to your hand, put one on the bottom of your deck, and put the last one on the top of your deck." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="43" />
+		</card>
+		<card name="Silent Dragoon" id="47ed35f1-ca03-4e2c-9a4f-3b9e300bd26f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="{SHIELD TRIGGER}" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="44" />
+		</card>
+		<card name="Fuuma Valfork" id="482a0105-de7b-4337-be11-f60145769994">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="[Blocker] (When an opponent's creature attacks, you may tap this creature to stop the attack. Then the two creatures battle.)&#xd;&#xa;This creature can't attack.&#xd;&#xa;When this creature blocks, your opponent chooses a card in his/her hand and discards it." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="45" />
+		</card>
+		<card name="Kemprar of Poisoned Fog" id="d7f3dc10-6135-4c03-ad1e-39bdd1a08865">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Brave Spirit" />
+			<property name="Rules" value="When a Tyranno Drake you control wins a battle, you may return a creature from your Graveyard to your hand." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="46" />
+		</card>
+		<card name="Fuuma Jaws Jacks" id="610c9980-d179-494f-a4af-3e6ff2a9a2d7">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="Slayer (When this creature loses a battle, destroy the other creature.)&#xd;&#xa;When this creature is destroyed, discard a card from your hand." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="47" />
+		</card>
+		<card name="Iron Command Dragoon" id="7a04c1b7-43e7-4808-9bba-5bb27861b188">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="[Fort Energy: Brave Spirit] Until the end of this turn, all Tyranno Drake you control in the Battle Zone gain &quot;Speed Attacker&quot; and &quot;This creature must attack if able&quot;." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="48" />
+		</card>
+		<card name="Smashblow Dragoon" id="9931a93e-c0ac-402a-b749-048ee24bd201">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="When this creature battles a creature with &quot;Blocker&quot;, this creature gains Power +4000." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="49" />
+		</card>
+		<card name="Pursuiting Raizen" id="faf8fcbc-de15-4b6d-974f-ddde8b6e9dae">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Brave Spirit" />
+			<property name="Rules" value="This creature may only attack if a Tyranno Drake you control has attacked this turn." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="50" />
+		</card>
+		<card name="Flame-Absorbing Palm" id="61bf2e1f-00d1-4379-9fa9-ce917784f92e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Destroy an opponent's creature with power 2000 or less.&#xd;&#xa;One of your creatures in the Battle Zone gains &quot;Power Attacker +2000&quot; until the end of turn." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="51" />
+		</card>
+		<card name="Zafal Banikis, Spirit Knight" id="838e8821-d6cb-4e04-a53a-22b68a5a678b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="Fort Energy: Arc Seraphim (When this creature is put into the Battle Zone, if a Arc Seraphim is tapped to Summon this creature, this creature gain the following [Fort Energy]  ability.)&#xd;&#xa;[Fort Energy] : Put a &quot;Spirit Rider Zafal Banikis&quot; from your Mana Zone into the Battle Zone." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="52" />
+		</card>
+		<card name="Manitus, Protection Spirit" id="7f52a4c7-67a7-4aaa-85c3-7c62672aee47">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Saint Head" />
+			<property name="Rules" value="When a Arc Seraphim you control wins a Battle, put up to 2 cards from the top of your deck into your Mana Zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="53" />
+		</card>
+		<card name="Vandam Orange" id="8009adcf-075f-48ae-807a-0d4e1b4c3e40">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies" />
+			<property name="Rules" value="When a Wild Veggies you control is put into the Mana Zone, this creature gains Power +2000 until end of turn." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="54" />
+		</card>
+		<card name="Dreamfest Energy" id="4ee9a965-41b3-46b2-9d7f-267a4fe0f48c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Launcher E: Dreammate] For each Dreammate tapped when this Spell is cast, put the top card from your deck into your Mana Zone." />
+			<property name="Power" value="" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="55" />
+		</card>
+
+	</cards>
+</set>

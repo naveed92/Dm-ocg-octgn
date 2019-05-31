@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DM-28 Battle Galaxy" id="fcb06fe7-e5fc-4357-82d6-44e68839a065" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="d82f0b71-3231-48a9-b228-106bbdbe31d7">
+			<options>
+				<option probability="0.083">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.250">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="3" key="Rarity" value="Uncommon"/>
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Ladio Yaesar, Super Divine Dragon" id="26e96c6b-c38d-4779-9ecc-62124bf757ae">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Apollonia Dragon" />
+			<property name="Rules" value="Mana Vortex: Choose 2 light creatures in your mana zone and put this creature into the battle zone on top of those creatures.&#xd;&#xa;Super Shield Plus: When you put this creature into the battle zone, you may put the top card of your deck face down under each of your shields. (Each card stack is still considered to be 1 shield.)&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S1" />
+		</card>
+		<card name="Lorenzo the 4th, Divine Dragon of Thunder" id="7290f3bf-9cb5-4ae3-9ebf-e6a7130b521f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Apollonia Dragon/Knight" />
+			<property name="Rules" value="Whenever your opponent would choose one of your other creatures, they can't choose Knight creatures. (However, they may still be attacked or blocked.)&#xd;&#xa;All of your other Knight creatures get &quot;Blocker&quot;.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S2" />
+		</card>
+		<card name="Sanmaider, Special Dispense Unit" id="3f60adf0-8418-4689-ace5-be71f8bd1ddf">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="At the end of your turn, if you have 2 or less cards in your hand, draw until you have 3 cards in your hand.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S3" />
+		</card>
+		<card name="Titan Crash Crawler" id="e9aaed1b-2528-42ba-b80b-82a945abe9b9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Earth Eater" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;Each turn, you may untap this creature the first time it is tapped." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S4" />
+		</card>
+		<card name="Super Necrodragon Sky Garuda" id="db437923-dc73-4b0a-b381-fc5462b7b984">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Zombie Dragon" />
+			<property name="Rules" value="Mana Vortex: Choose 2 darkness creatures in your mana zone and put this creature into the battle zone on top of those creatures.&#xd;&#xa;At the start of each of your turns, your opponent must choose a card in either their battle zone or mana zone and put it in their graveyard.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="12000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S5" />
+		</card>
+		<card name="Romanoff the 1st, Lord of the Demonic Eye" id="b5327cec-d0ee-4243-9313-db4309b37e38">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Lord/Zombie Dragon/Knight" />
+			<property name="Rules" value="When you put this creature into the battle zone, search your deck. Choose 1 darkness card from it and put it into your graveyard. Then, shuffle your deck,&#xd;&#xa;When this creature attacks, you may choose 1 darkness spell with a cost of 6 or less from your graveyard and cast it without paying its cost. Then, put that spell on the bottom of your deck.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S6" />
+		</card>
+		<card name="Ares Varmingam, Ultra Heavenly Body" id="a465528c-30d5-4db1-b284-6dc1b7e9601d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Phoenix" />
+			<property name="Rules" value="Mana Vortex: Choose 2 fire creatures in your mana zone and put this creature into the battle zone on top of those creatures.&#xd;&#xa;Meteor Burn: When this creature attacks, you may put 1 card under this creature into the graveyard. If you do, destroy all of your opponent's creatures with &quot;Blocker&quot; that have a cost of 3 or less.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S7" />
+		</card>
+		<card name="Bolbalzak &quot;Sword Flash&quot; Dragon" id="2d1aa2c3-02ea-445b-8f19-57377e05a7b3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon/Samurai" />
+			<property name="Rules" value="Samurai Generation (When you put this creature into the battle zone, you may generate a cross gear from your hand without paying its cost)&#xd;&#xa;Each turn, you may untap this creature the first time it is tapped.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S8" />
+		</card>
+		<card name="Super Terradragon Variant Vades" id="fdf04e83-78d4-43cb-ba88-cb69fe2d27df">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Earth Dragon" />
+			<property name="Rules" value="Mana Galaxy Vortex: Choose up to 3 nature creatures in your mana zone and put this creature into the battle zone on top of those creatures.&#xd;&#xa;This creature's power is equal to the total power of the creatures under it.&#xd;&#xa;If this creature has over 6000 power, it has &quot;Double Breaker&quot;.&#xd;&#xa;If this creature has over 12000 power, it has &quot;Triple Breaker&quot;.&#xd;&#xa;If this creature has over 18000 power, it has &quot;Quad Breaker&quot;." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S9" />
+		</card>
+		<card name="Pulse Giant" id="0a6b2f56-64e4-4c56-920c-c893705c314d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant" />
+			<property name="Rules" value="Double Breaker&#xd;&#xa;If at least 1 card leaves your mana zone during a turn, this creature gets +7000 power and &quot;Triple Breaker&quot; until the end of that turn." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S10" />
+		</card>
+		<card name="Lion Third, Holy Emperor" id="4f558ac0-afe1-4016-9e64-f1e0e1797c69">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="Mana Evolution: Choose a light creature in your mana zone and put this creature into the battle zone on top of that creature.&#xd;&#xa;When one of your creatures other than [Lion Third, Holy Emperor] attacks your opponent, you may untap this creature." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="1" />
+		</card>
+		<card name="Perfect Galaxy, Spirit of Immortality" id="82cb4895-cb47-4471-8bb8-e58f9b4faffd">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : This creature gains &quot;Blocker&quot;.&#xd;&#xa;[Sheild Force] : When this creature would leave the battle zone, it stays in the battle zone instead.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="2" />
+		</card>
+		<card name="Deepsea Searcher" id="af114553-f892-4a87-bc85-99e3a33bb545">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Blue Monster" />
+			<property name="Rules" value="When you put this creature into the battle zone, search your deck. Choose 1 card from it and add it to your hand. Then shuffle your deck." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="3" />
+		</card>
+		<card name="King Maximillian, the Ice Fang" id="9e77457b-cc8a-4eea-8944-ce66f9f11bcd">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil/Knight" />
+			<property name="Rules" value="You may use the Knight Magic ability of your Knight spells an additional time." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="4" />
+		</card>
+		<card name="Fernando the 7th, Emperor of Mystic Light" id="8002970e-b70a-432a-9c50-503f4120b18b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="11" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command/Knight" />
+			<property name="Rules" value="You may have this creature cost 1 less for each spell in your graveyard. It can't cost less than 1.&#xd;&#xa;When this creature attacks, choose one of your opponent's creatures. For each spell in your graveyard, the chosen creature gets -1000 power until the end of the turn. (A creature with 0 or less power is destroyed.)&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="5" />
+		</card>
+		<card name="Necrodragon Amadeus" id="95877352-e90c-4d1e-a4d6-647294c84a56">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon" />
+			<property name="Rules" value="If you have cards with the same name in your mana zone or your graveyard, destroy this creature.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="15000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="6" />
+		</card>
+		<card name="Max, Crimson Blade Lord" id="f40cb65f-439d-4348-8dfb-09f7e7376875">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Flame Monster" />
+			<property name="Rules" value="Mana Evolution: Choose a fire creature in your mana zone and put this creature into the battle zone on top of that creature.&#xd;&#xa;When this creatures attacks your opponent and isn't blocked, destroy 1 of your opponent's tapped creatures with 3000 power or less." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="7" />
+		</card>
+		<card name="Dragon Gear - Samurai Legend" id="0b614a3e-7112-47cd-a5fd-98859a86786a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="Samurai" />
+			<property name="Rules" value="Cross Gear&#xd;&#xa;The crossed creature becomes an Armored Dragon and a Samurai in addition to its other races, gets +2000 power, and has the name [Bolmeteus Samurai Dragon] in addition to its current name.&#xd;&#xa;When the crossed creature attacks, you may put one of your shields into your graveyard. If you do, choose one of your opponent's creatures with 6000 power or less and destroy it." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="8" />
+		</card>
+		<card name="Terradragon Gamus Kenshin" id="717391d5-cf89-4b1d-b6ab-a558c42ef5c0">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Earth Dragon/Samurai" />
+			<property name="Rules" value="Samurai Generation (When you put this creature into the battle zone, you may generate a cross gear from your hand without paying its cost.)&#xd;&#xa;When this creature is destroyed, you may put 1 cross gear from your graveyard into the battle zone.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="9" />
+		</card>
+		<card name="Weaponized Sound - Jamming Beat" id="3cbf62ca-b6fa-4e19-a656-26530bfd228e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="Samurai" />
+			<property name="Rules" value="Cross Gear&#xd;&#xa;When this card isn't crossed with a creature, your opponent's spells cost 1 more to cast.&#xd;&#xa;When the opponent would choose a creature for the effect of a spell, the creature this card is crossed with can't be chosen." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="10" />
+		</card>
+		<card name="Za Yes, Light Divine Dragon" id="c746658f-b2d4-4842-8be2-78a95b8aefb4">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Apollonia Dragon" />
+			<property name="Rules" value="Shield Plus: When this creature attacks, you may put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="11" />
+		</card>
+		<card name="Pure Unicorn" id="0aa05072-1c55-408c-83e3-2df5cddc18be">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Shine Monster" />
+			<property name="Rules" value="When this creature would be destroyed, instead of putting this creature into your graveyard you may choose 1 of your shields and put it into your hand. You can't use the shield trigger ability of that shield." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="12" />
+		</card>
+		<card name="Chief De Baula, Machine King of Mystic Light" id="db6f40de-0d23-4a20-9a22-19c9aaa4cb04">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Knight" />
+			<property name="Rules" value="[Blocker]  Blocker&#xd;&#xa;This creature can't attack players.&#xd;&#xa;When you put this creature into the battle zone, you may return 1 spell from your graveyard to your hand." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="13" />
+		</card>
+		<card name="Lag Martas, Tectonic Guardian" id="9db67137-1c77-4022-882f-fd1a3f040299">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian" />
+			<property name="Rules" value="Whenever a card leaves your mana zone, this creature gets +4000 power until the end of the turn." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="14" />
+		</card>
+		<card name="Athers, Guerilla Robot" id="94253a20-2b09-4c4c-8df5-5dadc3ab623a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose one of your opponent's tapped creatures. That creature doesn't untap at the start of your opponent's next turn." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="15" />
+		</card>
+		<card name="Magic Shot - Plus One" id="c8657439-bdbe-40a3-9d37-f3e93be2fd9c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="Knight" />
+			<property name="Rules" value="[Knight Magic] : Shield Plus: Put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)&#xd;&#xa;Knight Magic (If there is a Knight in your battle zone, you may use this spell's [Knight Magic]  ability once more.)" />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="16" />
+		</card>
+		<card name="Sir Matthias, Ice Fang Admiral" id="61e51c06-aca9-4307-ae67-956c1e1af6cd">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil/Knight" />
+			<property name="Rules" value="When you put this creature into the battle zone, reveal the top 3 cards of your deck. Put all Knight cards revealed in this way into your hand and the rest on the bottom of your deck in any order.&#xd;&#xa;When this creature would be discarded from your hand during your opponent's turn, you may put it into the battle zone instead." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="17" />
+		</card>
+		<card name="Lanerva Stratus, Poseidon's Admiral" id="8cb1e3b0-e193-445e-a405-3fe68c04ef9c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Poseidia Dragon/Samurai" />
+			<property name="Rules" value="When you put this creature into the battle zone, reveal the top 3 cards of your deck. Put all Samurai cards revealed in this way into your hand and the rest on the bottom of your deck in any order.&#xd;&#xa;When this creature would be discarded from your hand during your opponent's turn, you may put it into the battle zone instead." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="18" />
+		</card>
+		<card name="Sir Aqua Malgaretti, the Ice Fang" id="400d79cd-3510-4c2e-9024-2b59e3a5cab5">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People/Knight" />
+			<property name="Rules" value="Whenever you cast a spell, you may return 1 non-evolution card in the battle zone to its owner's hand." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="19" />
+		</card>
+		<card name="Vacuum Crawler" id="f61ab365-ded9-4048-ae4d-9d5cee568635">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Earth Eater" />
+			<property name="Rules" value="[Blocker]&#xd;&#xa;This creature can't attack.&#xd;&#xa;At the start of your turn, return 1 of your creatures to your hand. Then, you may draw a card." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="20" />
+		</card>
+		<card name="Force Operation" id="0ada32c7-ff2d-46d4-b31d-e9b505ba5e4a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;For each creature in your battle zone with a &quot;Shield Force&quot; ability, draw a card." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="21" />
+		</card>
+		<card name="Belfegius, Emperor of Death" id="e1fb56c7-d8de-4e10-9b4e-d4ee23d532a3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dark Lord" />
+			<property name="Rules" value="Mana Evolution: Choose a darkness creature in your mana zone and put this creature into the battle zone on top of that creature.&#xd;&#xa;Players can choose not to untap their creatures.&#xd;&#xa;Whenever another creature in the battle zone is untapped, destroy it." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="22" />
+		</card>
+		<card name="Bell Hell De Dios, Death Castle Beast Lord" id="021a6238-d7e3-400a-bac9-3b2d60e255aa">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Rules" value="When this creature attacks, you may destroy 1 of your creatures. If you do, draw 2 cards.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="23" />
+		</card>
+		<card name="Angry Charge Dragoon" id="40de0842-f147-47d9-8be7-25dd34c31316">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="When you have 3 or fewer shields, this creature get +3000 power and &quot;Double Breaker&quot;" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="24" />
+		</card>
+		<card name="Darkness Limit" id="53f70cd9-1cc2-4d74-9ff7-555f354f5284">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Monster" />
+			<property name="Rules" value="When your opponent has 4 or more shields, they can't use &quot;Shield Trigger&quot;." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="25" />
+		</card>
+		<card name="Carnage, Lord of the Dark Path" id="88d91e0e-0280-42e5-9c57-e82d3d06b1e4">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Lord" />
+			<property name="Rules" value="[Blocker] Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : When this creature blocks, you may return 1 creature from your graveyard to your hand." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="26" />
+		</card>
+		<card name="Soul Advantage" id="21090c14-f218-48bd-b83b-52e184e1295c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="For each shield you have, discard 1 of your opponent's cards in their hand at random." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="27" />
+		</card>
+		<card name="Bolberg Shingen, Dragon General" id="9e7a67f4-65c1-4cc0-98fc-874f20744442">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon/Human/Samurai" />
+			<property name="Rules" value="Samurai Generation (When you put this creature into the battle zone, you may generate a cross gear from your hand without paying its cost.)&#xd;&#xa;When you put this creature into the battle zone, you may cross 1 of your Samurai cross gear with this creature without cost.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="28" />
+		</card>
+		<card name="Garyou, Suzaku God" id="5fd53649-e017-477b-9218-fc8fad1dabc2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God/Samurai" />
+			<property name="Rules" value="When this creature is attacked or chosen by your opponent, destroy 1 of your opponent's creatures with less power than this creature.&#xd;&#xa;God Link - Tensei, Byakko God (If the specified god is in the battle zone, you may link this to it. The linked god gains each god's characteristics (power and abilities) and becomes one creature. When the linked creature leaves the battle zone, select 1 side instead.)&#xd;&#xa;While this creature is linked, it has &quot;Double Breaker&quot;." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="29" />
+		</card>
+		<card name="Wasshoi Express, Straight Shooting Soldier" id="3bf32df8-8d0d-479c-baf1-f4409c16d2aa">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armorloid" />
+			<property name="Rules" value="Creatures with &quot;Speed Attacker&quot; get +2000 power and break an additional shield." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="30" />
+		</card>
+		<card name="Power Force Dragoon" id="f3eb86aa-6062-423e-93a5-a49ee80fc000">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : This creature gets &quot;Power Attacker +6000&quot; and &quot;Double Breaker&quot;." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="31" />
+		</card>
+		<card name="Burning Crimson Lord" id="0a8576df-ba53-4136-9817-372615f37026">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Flame Monster" />
+			<property name="Rules" value="Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : This creature gets +11000 power and &quot;Double Breaker&quot;." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="32" />
+		</card>
+		<card name="Dragon Gear - Zangeki Mach Armor" id="1839afd5-9ba2-4eb3-9472-bd8010e471d2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="Samurai" />
+			<property name="Rules" value="Cross Gear&#xd;&#xa;When this card isn't crossed with a creature, you may have your Dragon and Samurai creatures cost 1 less to summon. They can't cost less than 1.&#xd;&#xa;When this card is crossed with a Dragon or Samurai creature, all of your Dragon and Samurai creatures get +2000 power and gain &quot;Speed attacker&quot;&#xd;&#xa;This card may be crossed with [Bolmeteus Samurai Dragon] without paying its cost." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="33" />
+		</card>
+		<card name="Shinra, the Great Expanse" id="2feb13bb-75c5-4f48-ba63-27590b2788d1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Giant" />
+			<property name="Rules" value="Evolution: Put on 1 of your Giants&#xd;&#xa;When you put this creature into the battle zone, choose 1 creature in your battle zone and put all other creatures in your battle zone into your mana zone. Then, your opponent chooses 1 creature and puts all other creatures in their battle zone into their mana zone.&#xd;&#xa;Triple Breaker" />
+			<property name="Power" value="15000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="34" />
+		</card>
+		<card name="Tensei, Byakko God" id="7aec77a4-9e36-4b84-bc6f-784e802a77b2">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God/Samurai" />
+			<property name="Rules" value="Accelerator (While this creature is crossed with a cross gear, this creature gains the following [Accelerator]  ability.)&#xd;&#xa;[Accelerator] : This creature breaks an additional shield.&#xd;&#xa;God Link [Garyou, Suzaku God]&#xd;&#xa;While this creature is linked, you may cross your cross gears with this creature for no cost." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="35" />
+		</card>
+		<card name="Awakening Giant" id="e24ae89e-cfba-47f6-ac56-130f4f135864">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant" />
+			<property name="Rules" value="At the start of your turn, you may put the top card of your deck into your mana zone." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="36" />
+		</card>
+		<card name="Paol Nature" id="4df14d8d-78cf-4185-9b0e-acd2494f547f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Emerald Monster" />
+			<property name="Rules" value="Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : This creature gets +3000 power and &quot;Double Breaker&quot;." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="37" />
+		</card>
+		<card name="Kaolun, Fairy of Warming Ice" id="e9d87af1-3c85-4fb9-8b60-d15a8b136130">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Snow Faerie" />
+			<property name="Rules" value="If at least 1 card leaves your mana zone during a turn, at the end of that turn, put the top card of your deck into your mana zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="38" />
+		</card>
+		<card name="Ogre Gear - Ogre Fist" id="0933da32-1630-4ca4-ac70-932a088d9afa">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="Samurai" />
+			<property name="Rules" value="Cross Gear&#xd;&#xa;The crossed creature gets +1000 power for each mana in its cost and can't be blocked by creatures with less power." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="39" />
+		</card>
+		<card name="Leopold the 2nd, God of Mystic Light" id="a6a9eba6-94ac-4349-9cb5-cb10a65a2a4b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God/Knight" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may search your deck. Choose 1 Knight from it, show it to your opponent, and add it to your hand. Then, shuffle your deck.&#xd;&#xa;God Link - Ludvica the 2nd, God of Mystic Light&#xd;&#xa;While this creature is linked, when the opponent would choose one of your creatures, this creature can't be chosen. (However, this creature may be attacked or blocked.)" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="40" />
+		</card>
+		<card name="Lightning Kid, Spirit of Divine Armaments" id="ce639e66-90c5-4fbd-9c6b-662f1b56b2d4">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="Shield Plus: When you put this creature into the battle zone, put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)&#xd;&#xa;Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : This creature gets +5500 power and &quot;Double Breaker&quot;." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="41" />
+		</card>
+		<card name="Rodomia, Vizier of Thunder" id="f9b2d0e5-a781-4c7a-b3c8-501cec8b7bad">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate/Knight" />
+			<property name="Rules" value="When this creature battles with a Samurai, search your deck. You may choose a spell from it, show it your opponent, and add it to your hand. Then, shuffle your deck." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="42" />
+		</card>
+		<card name="Prince Avaraldo, Cavalier of Thunder" id="f2a9ef76-f4cf-442a-ae55-7bfbbfad7d01">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim/Knight" />
+			<property name="Rules" value="When you put this creature into the battle zone, reveal the top 3 cards of your deck. You may put any spells revealed in this way into your hand, and the rest on the bottom of your deck in any order." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="43" />
+		</card>
+		<card name="Tios, Guardian of Fate" id="802ac2f6-9e3e-4698-8623-b08804c006c4">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian" />
+			<property name="Rules" value="This creature gets +1000 power for each card in your shield zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="44" />
+		</card>
+		<card name="Power Puzzle" id="f6cfb909-c48f-407c-8f3b-bb6d443afa3b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Tap 1 creature in your battle zone. Then, tap any number of your opponent's creatures with a total power equal to or less than the creature you tapped." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="45" />
+		</card>
+		<card name="Shield Pierce, Blue Divine Dragon" id="e639c262-7d53-4da4-bced-74a80cc69265">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Poseidia Dragon" />
+			<property name="Rules" value="Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : This creature can't be blocked.&#xd;&#xa;Double Breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="46" />
+		</card>
+		<card name="Roid Goemon, Song and Dance Machine" id="9c47e473-b6cb-44af-bd85-079380a85f9f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King/Samurai" />
+			<property name="Rules" value="[Blocker] Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;When you put this creature into the battle zone, draw 1 card for each other Samurai in your battle zone.&#xd;&#xa;Samurai Generation (When you put this creature into the battle zone, you may generate a cross gear from your hand without paying its cost.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="47" />
+		</card>
+		<card name="Cutie Heart" id="18b5be43-da79-4785-a061-6b4f2aa4fd31">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Virus" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature into the battle zone, if you have 2 or fewer shields, choose 1 creature in the battle zone and return it to your opponent's hand.&#xd;&#xa;When you have 2 or fewer shields, this creature gets +4000 power and can't be blocked." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="48" />
+		</card>
+		<card name="Pirolon" id="056db0da-663a-4a2d-b5df-8e648c483010">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Lord" />
+			<property name="Rules" value="Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : Whenever you draw cards, you may draw twice that amount. If you do, for every 2 cards drawn put 1 card from your hand on the bottom of your deck in any order." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="49" />
+		</card>
+		<card name="Magic Shot - Stream Circle" id="f997de2e-9296-48a7-ab7e-9e4bc8fd8ea0">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="Knight" />
+			<property name="Rules" value="[Knight Magic] : Return 1 creature or cross gear in the battle zone to its owner's hand.&#xd;&#xa;Knight Magic (If there is a Knight in your battle zone, you may use this spell's [Knight Magic]  ability once more.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="50" />
+		</card>
+		<card name="Water Weapon - Shark Bunker" id="3abf8e52-3422-41cf-a318-71df5c3604fe">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="Samurai" />
+			<property name="Rules" value="Cross Gear&#xd;&#xa;The crossed creature gets +2000 power.&#xd;&#xa;Whenever the crossed creature battles, you may draw 1 card." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="51" />
+		</card>
+		<card name="Ludvica the 2nd, God of Mystic Light" id="c8a46cca-ffd5-42de-8c15-0a82ac2aeb89">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="God/Knight" />
+			<property name="Rules" value="This creature breaks an additional shield for each spell cast during your turn.&#xd;&#xa;God Link - Leopold the 2nd, God of Mystic Light&#xd;&#xa;While this creature is linked, it has &quot;Double Breaker&quot;" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="52" />
+		</card>
+		<card name="Lord Eudocia, the Demonic Eyed Viper" id="90eddf50-54e5-4f4f-9f21-4db49db14d35">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command/Knight" />
+			<property name="Rules" value="Whenever you cast a spell, this creature gets +3000 power and &quot;Double Breaker&quot; until the end of that turn." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="53" />
+		</card>
+		<card name="750 Man" id="ed664a65-7756-4393-8621-4bf50c4a5002">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Hedrian" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may choose 1 of your shields and put it into your hand. You can't use the shield trigger ability of that shield." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="54" />
+		</card>
+		<card name="Gardis Dragoon" id="56a9bf66-cd82-4f5a-a80a-28dcc793080e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="When you put this creature into the battle zone, put 1 of your shields into your graveyard.&#xd;&#xa;Shield Plus: When you put this creature into the battle zone, put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="55" />
+		</card>
+		<card name="Bokko Rock, JK Doll" id="7a4dda61-0548-42fd-afad-e2799f762890">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Death Puppet" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its [Tap] ability.&#xd;&#xa;[Tap]: Play rock-paper-scissors with your opponent. If you win, choose 1 of your opponent's creatures. The chosen creature gets -3000 power during this turn. (A creature with 0 or less power is destroyed.)&#xd;&#xa;If the opponent reveals &quot;paper&quot; when you play rock-paper-scissors, your opponent chooses a card in their hand and discards it." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="56" />
+		</card>
+		<card name="Magic Shot - Soul Catcher" id="adb8e278-0ce8-4641-8458-40795feb6145">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="Knight" />
+			<property name="Rules" value="[Knight Magic] : Return 1 creature from your graveyard to your hand.&#xd;&#xa;Knight Magic (If there is a Knight in your battle zone, you may use this spell's [Knight Magic]  ability once more.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="57" />
+		</card>
+		<card name="Benkei, the Wandering Cloud" id="bfdb5341-3e53-4dd7-8761-4472db277676">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate/Samurai" />
+			<property name="Rules" value="Samurai Generation (When you put this creature into the battle zone, you may generate a cross gear from your hand without paying its cost.)" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="58" />
+		</card>
+		<card name="Edge Arm &quot;Raikou&quot; Dragoon" id="5e88de8c-52f9-415d-a077-22224b5aaf1a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake/Samurai" />
+			<property name="Rules" value="When this creature battles a Knight, search your deck. You may take a cross gear from it, show it to your opponent, and put it into your hand. Then, shuffle your deck." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="59" />
+		</card>
+		<card name="Scissors, JK Guy" id="24d387bd-8049-4abe-8224-7580726beee9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human" />
+			<property name="Rules" value="When this creature battles, play rock-paper-scissors with your opponent. If you win, this creature gets +5000 power until the end of that turn.&#xd;&#xa;If your opponent reveals &quot;rock&quot; when you play rock-paper-scissors, your opponent chooses 1 card in their mana zone and puts it in their graveyard." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="60" />
+		</card>
+		<card name="Trance Dragoon" id="2972b5c0-86a4-44a7-8694-d697824e2a8d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose 1 card in your mana zone and put it into your graveyard.&#xd;&#xa;Shield Plus: When you put this creature into the battle zone, put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="61" />
+		</card>
+		<card name="Todoroki, Ushiwaka Swordsman" id="541bfe22-d574-481f-a5bd-a4d7e41f817c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human/Samurai" />
+			<property name="Rules" value="When you put this creature into the battle zone, reveal the top 3 cards of your deck. Put all cross gears revealed in this way into your hand, and put the rest on the bottom of your deck in any order." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="62" />
+		</card>
+		<card name="Raijin Dragoon" id="c3a0c3bf-4495-4213-9238-75d960fa667c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="When this creature attacks creatures, this creature gets +4000 power until the end of the turn." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="63" />
+		</card>
+		<card name="Huckle Kirin Sawyer, Jungle Governor" id="7cf5024d-98aa-4c7f-9e7a-23ed4ff30183">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="Mana Evolution: Choose a nature creature in your mana zone and put this creature into the battle zone on top of that creature.&#xd;&#xa;Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : Your creatures can't be blocked by creatures with less power." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="64" />
+		</card>
+		<card name="Aug Totem" id="f4da9806-a98c-48ac-86f1-9fe51a4db19a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mystery Totem/Samurai" />
+			<property name="Rules" value="Samurai Generation (When you put this creature into the battle zone, you may generate a cross gear from your hand without paying its cost.)&#xd;&#xa;Accelerator (While this creature is crossed with a cross gear, this creature gains the following [Accelerator]  ability.)&#xd;&#xa;[Accelerator] : This creature gets +4000 power and &quot;Double Breaker&quot;." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="65" />
+		</card>
+		<card name="Kiyomasa Komusou, Spirit Knight" id="c5cbe79d-ca0b-4910-91a0-6c80cd24605a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim/Samurai" />
+			<property name="Rules" value="When you put this creature into the battle zone, for each spell in your opponent's graveyard you may put the top card of your deck into your mana zone." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="66" />
+		</card>
+		<card name="Bronze Chain Sickle" id="8a39cfb1-2a5a-41c7-a2fc-75b197e12f44">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk" />
+			<property name="Rules" value="When you put this creature into the battle zone, put the top card of your deck into your mana zone.&#xd;&#xa;Shield Plus: When this creature is destroyed, put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="67" />
+		</card>
+		<card name="Donna Dona, Remnant of the Jungle" id="5372fb3c-b7f6-4acb-a819-e82ecb7a56ad">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="Whenever you put another creature into the battle zone, this creature gets +3000 power." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="68" />
+		</card>
+		<card name="Lunatic Energy" id="3c34fa7e-d34b-4dad-a8cb-ca57d761cf1a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;All of your creatures get +4000 power until the end of the turn." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="69" />
+		</card>
+		<card name="Miruth, Spirit Barrier Vizier" id="aa9951db-c89c-45bd-bbb5-a2212c329e2a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may choose 1 of your opponent's creatures and tap it.&#xd;&#xa;When your opponent attacks your creatures, this creature gains &quot;Blocker&quot; until the end of that attack." />
+			<property name="Power" value="4500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="70" />
+		</card>
+		<card name="Riku, the Oracle" id="407d5198-6be1-4951-ae53-a84c61c81480">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;If you have 2 shields or less when you put this creature into the battle zone, add the top card of your deck to your shields face down." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="71" />
+		</card>
+		<card name="Hyou, the Oracle" id="3c47e2c8-1a79-4812-902f-2c896571bd1d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer" />
+			<property name="Rules" value="[Blocker] Blocker&#xd;&#xa;This creature can't attack players.&#xd;&#xa;Shield Plus: When this creature is destroyed, put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="72" />
+		</card>
+		<card name="Lazerion, Light Attack Soldier" id="e3d94e77-a04a-450a-8695-cea4603d75eb">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="" />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="73" />
+		</card>
+		<card name="Pure Landers" id="658f1358-b5bb-4130-8172-80d7067fea0e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Shine Monster" />
+			<property name="Rules" value="Shield Plus: When you put this creature into the battle zone, put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="74" />
+		</card>
+		<card name="Bagris, Vizier of Turbulence" id="a0fa72aa-6c71-4969-9742-4c885edb2121">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Initiate" />
+			<property name="Rules" value="Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : You may untap 1 of your creatures at the end of each turn." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="75" />
+		</card>
+		<card name="Magic Shot - Chain Spark" id="0961815a-ba0d-48b6-8a94-90f275d88f57">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="Knight" />
+			<property name="Rules" value="[Knight Magic] : Choose 1 of your opponent's creatures and tap it.&#xd;&#xa;Knight Magic (If there is a Knight in your battle zone, you may use this spell's [Knight Magic]  ability once more.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="77" />
+		</card>
+		<card name="Hoihoizer, the Sudden Moonlight" id="5ae79724-cb82-4b1d-bbb8-eaa7119c65a1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Blocker] Blocker&#xd;&#xa;This creature can't attack." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="78" />
+		</card>
+		<card name="Hulk Crawler" id="f29f0fb6-dcd2-46f0-9c4f-edf95eb4e55b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Earth Eater" />
+			<property name="Rules" value="[Blocker] Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;When you put this creature into the battle zone, you may draw a card." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="79" />
+		</card>
+		<card name="Sir Leopol Deenay, the Ice Fang" id="bad41885-ec6f-4bec-8e4c-83f9904b6be8">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Virus/Knight" />
+			<property name="Rules" value="Whenever you cast a spell, you may draw a card." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="80" />
+		</card>
+		<card name="Pinaco Lada" id="241a3b99-6303-4a14-b3b6-6dd539ff1fd0">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Splash Queen" />
+			<property name="Rules" value="[Blocker] Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;This creature can't be attacked." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="81" />
+		</card>
+		<card name="Franz the 1st, the Ice Fang" id="a87b99f6-24a2-4da5-b7c0-f3061a24c60a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Lord/Knight" />
+			<property name="Rules" value="You may have your spells cost 1 less to cast. However, they can't cost less than 1." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="82" />
+		</card>
+		<card name="Deepsea Douzan" id="07e2b0e6-60e2-4980-85b5-df439f940a7d">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Blue Monster" />
+			<property name="Rules" value="Accelerator (While this creature is crossed with a cross gear, this creature gains the following [Accelerator]  ability.)&#xd;&#xa;[Accelerator] : When this creature attacks your opponent and isn't blocked, you may return 1 creature in the battle zone with less power than this creature to its owner's hand." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="83" />
+		</card>
+		<card name="Aqua Belala" id="0d9e7ee6-0694-442d-8d9f-eadb52dea802">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="Whenever you put another creature into the battle zone, you may look at the top card of either player's deck.  Then, you may put that card on the bottom of that player's deck." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="84" />
+		</card>
+		<card name="Magic Shot - Open Brain" id="54ce7b70-11f0-4de4-bc45-1e4c095d6c1f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="Knight" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;[Knight Magic] : Draw 2 cards.&#xd;&#xa;Knight Magic (If there is a Knight in your battle zone, you may use this spell's [Knight Magic]  ability once more.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="85" />
+		</card>
+		<card name="Saving Sword - Memory Accela" id="5f95f465-477e-4ad0-aa63-e2cb413cc226">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="Samurai" />
+			<property name="Rules" value="Cross Gear&#xd;&#xa;When the crossed creature attacks, you may draw a card." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="86" />
+		</card>
+		<card name="Fuuma Zurmel" id="b5487a5c-68dc-4174-9bfe-a6fa730e25dc">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="Shield Plus: When you put this creature into the battle zone, put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="87" />
+		</card>
+		<card name="Darkness Southern" id="6de82fd6-d901-472e-ab66-0ab2b230174a">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Monster" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature into the battle zone, until the end of the turn all of your opponent's creatures get -1000 power." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="88" />
+		</card>
+		<card name="Marquis Alexey, Demonic Eye Gunman" id="d7b96677-fd21-42e2-b15d-0993c7f03c2b">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Lord/Knight" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature into the battle zone, return 1 Samurai or cross gear in the battle zone to the bottom of its owner's deck." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="89" />
+		</card>
+		<card name="Trappy Trap Man" id="43b58419-2b22-4430-a7c1-056cc1d58c6f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Hedrian" />
+			<property name="Rules" value="When this creature is attacked, it gains &quot;Slayer&quot; until the end of the turn." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="90" />
+		</card>
+		<card name="Fuuma Albaram" id="2b0b4012-0fb0-4cd2-867a-f58d9ef67121">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="[Blocker] Blocker&#xd;&#xa;This creature can't attack.&#xd;&#xa;Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : This creature gets +4000 power." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="91" />
+		</card>
+		<card name="Bombra 1, Exploding Whale Doll" id="95f8e5ff-c615-45ef-83a1-91610232ebe6">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Death Puppet" />
+			<property name="Rules" value="Slayer" />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="92" />
+		</card>
+		<card name="Magic Shot - Dual Zanzibar" id="0f23cd60-076d-43de-ba86-76f5c2c5657e">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="Knight" />
+			<property name="Rules" value="[Knight Magic] : Choose one of your opponent's creatures in the battle zone. Until the end of the turn, that creature gets -2000 power.&#xd;&#xa;Knight Magic (If there is a Knight in your battle zone, you may use this spell's [Knight Magic]  ability once more.) " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="93" />
+		</card>
+		<card name="Bubble Trap" id="434cf09b-688d-4d6d-8594-60a4538a5674">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Return 1 of your shields to your hand. You can't use the shield trigger ability of that shield.&#xd;&#xa;Destroy 1 of your opponent's non-evolution creatures." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="94" />
+		</card>
+		<card name="Crimson Ash Lord" id="f336b178-a758-4b77-8cb7-104131df8ae4">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Flame Monster" />
+			<property name="Rules" value="Speed Attacker&#xd;&#xa;Return this creature to your hand at the end of your turn." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="95" />
+		</card>
+		<card name="Concone, Master of Hiding" id="a456535e-234e-4564-99a7-fe43c787fc37">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="Shield Force (When you put this creature into the battle zone, you may choose one of your shields. While the chosen shield remains in the shield zone, this creature gains the following [Sheild Force]  abilities.)&#xd;&#xa;[Sheild Force] : This creature can't be attacked." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="96" />
+		</card>
+		<card name="Dual Matasa, Rashin Soldier" id="2273f92d-ff84-4d87-a49e-7363ccb7454c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armorloid/Samurai" />
+			<property name="Rules" value="Accelerator (While this creature is crossed with a cross gear, this creature gains the following [Accelerator]  ability.)&#xd;&#xa;[Accelerator] : This creature gets +3000 power and &quot;Speed Attacker&quot;." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="97" />
+		</card>
+		<card name="Carbine, Explosive Fighter" id="9fa1c7f2-fdbb-452a-8317-7782d49bb09f">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Human" />
+			<property name="Rules" value="Power Attacker +3000" />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="98" />
+		</card>
+		<card name="Lyla Litta" id="72ccb5de-a2f3-4556-b810-1da74dac97de">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="When this creature is attacked, return 1 of your shields to your hand. You can't use the shield trigger ability of that shield." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="99" />
+		</card>
+		<card name="Poppo &quot;Yatarou&quot; Pappi" id="7d1c5cf7-fe7f-48c8-84e6-994b475964d3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird/Samurai" />
+			<property name="Rules" value="Saver: Dragon or Samurai creatures (When 1 of your Dragon or Samurai creatures are destroyed, you may destroy this creature instead.)" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="100" />
+		</card>
+		<card name="Phantom Lion's Flame" id="b3fffd89-158c-4f17-93f6-989ddd6c27b6">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Destroy 1 of your opponent's creatures with 2000 power or less OR choose 1 of your opponent's cross gears and put it in its owner's graveyard." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="101" />
+		</card>
+		<card name="Flame Sword - Pierce Accela" id="3773a553-3716-4b1e-90e3-e04992805dff">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="Samurai" />
+			<property name="Rules" value="Cross Gear&#xd;&#xa;The crossed creature gets &quot;Power Attacker +3000&quot;." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="102" />
+		</card>
+		<card name="JK Paper Nature" id="d2de409b-6aac-4539-ae78-7e6fe9e34d1c">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Emerald Monster" />
+			<property name="Rules" value="When this creature attacks, you may play rock-paper-scissors with your opponent. If you win, put 1 of your opponent's creatures with 5000 power or less into its owner's mana zone.&#xd;&#xa;If your opponent reveals &quot;scissors&quot; when you play rock-paper-scissors, you may put the top card of your deck into your mana zone." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="103" />
+		</card>
+		<card name="Boomerang Totem" id="4027b417-b086-429e-a985-7417c5549041">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mystery Totem" />
+			<property name="Rules" value="Shield Plus: When you put this creature into the battle zone, put the top card of your deck face down under 1 of your shields. (Each card stack is still considered to be 1 shield.)" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="104" />
+		</card>
+		<card name="Loquat Retainers, the Wandering Travelers" id="479319d8-b68f-4536-9dda-8d9913ec4574">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies/Samurai" />
+			<property name="Rules" value="Accelerator (While this creature is crossed with a cross gear, this creature gains the following [Accelerator]  ability.)&#xd;&#xa;[Accelerator] : When this creature attacks, search your deck. You may choose a Samurai from it, show it to your opponent, and put it into your hand. Then, shuffle your deck." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="105" />
+		</card>
+		<card name="Dunas, Spirit Knight" id="7e3de293-0f14-4fcb-a691-592874d5faee">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Arc Seraphim" />
+			<property name="Rules" value="" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="106" />
+		</card>
+		<card name="Kabra Katabra" id="c2c4c246-8eae-46d3-b447-2dcc251bcec6">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Wild Veggies" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;When you put this creature into the battle zone, you may return 1 card from your mana zone to your hand. " />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="107" />
+		</card>
+		<card name="Shaman Melissa, Melting Snow Fairy" id="20a35f36-5cab-4b1f-a353-ab7c8b42f1f5">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Snow Faerie" />
+			<property name="Rules" value="When this creature would be destroyed, put it into your mana zone instead." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="108" />
+		</card>
+		<card name="Living Lithograph" id="bc3d7dde-805c-41e4-9f5c-1514ad6ea7a3">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Put the top card of your deck into your mana zone. If that card is a creature, all your creatures get +2000 power until the end of this turn. " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="109" />
+		</card>
+		<card name="Ascendant Wing - Faerie Accela" id="de691dfa-bdab-4661-9341-e17602539bb1">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Cross Gear" />
+			<property name="Race" value="Samurai" />
+			<property name="Rules" value="Cross Gear&#xd;&#xa;When the crossed creature attacks, you may put the top card of your deck into your mana zone." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="110" />
+		</card>
+
+	</cards>
+</set>

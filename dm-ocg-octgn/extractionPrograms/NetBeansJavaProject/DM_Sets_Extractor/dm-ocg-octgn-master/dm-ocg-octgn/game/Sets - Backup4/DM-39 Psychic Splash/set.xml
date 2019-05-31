@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DM-39 Psychic Splash" id="9451f2e3-6405-472c-b201-104b21a53c9c" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="b03ef2be-650c-4b4d-9a60-6b0258232324">
+			<options>
+				<option probability="0.083">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.250">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="3" key="Rarity" value="Uncommon" />
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Amaterasu Seraphina, Light Weapon" id="5a6fd086-162d-436f-9352-d4fde426e93a">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha Del Sol" />
+			<property name="Rules" value="When you put this creature into the battle zone, search your deck. You may choose any number of light and/or darkness spells that have total cost 4 or less and put them into your graveyard. Then shuffle your deck. Cast all of the chosen spells for no cost.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S1" />
+		</card>
+		<card name="Grateful Dead, Lord of Demons" id="0807850f-9c52-406c-9752-ac85d133bc70">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Rules" value="Evolution - Put on one of your creatures that has Command in its race. &#xd;&#xa; When you put this creature into the battle zone, return any number of creatures from your graveyard to your hand.&#xd;&#xa; Double breaker&#xd;&#xa; When this creature leaves the battle zone, you may put a psychic creature that costs 7 or less from your hyperspatial zone into the battle zone." />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S2" />
+		</card>
+		<card name="Storm Genji Double Cross, the Super Temporal" id="e09a74b4-6834-4448-be29-70f87d9339fe">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire " />
+			<property name="Cost" value="20" />
+			<property name="Type" value="Psychic Evolution Creature" />
+			<property name="Race" value="Armored Dragon/Flame Command/Samurai" />
+			<property name="Rules" value="Super Infinite evolution - Put this creature on any number of psychic creature(s) that have total cost 20 or more.&#xd;&#xa; Whenever you put psychic creatures into the battle zone or awaken them, you may put this creature from your hyperspatial zone into the battle zone. &#xd;&#xa; Meteorburn Awaken - At the start of your turn, put all cards under this creature into your graveyard and flip this creature to its higher cost side.&#xd;&#xa;Quattro breaker" />
+			<property name="Power" value="24000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S3a" />
+
+			<alternate name="Last Storm Double Cross, the Super Awakened" type="awakening">
+			<property name="Format" value="OCG" />
+				<property name="Civilization" value="Fire" />
+				<property name="Cost" value="40" />
+				<property name="Type" value="Psychic Creature" />
+				<property name="Race" value="Armored Dragon /Flame Command/Samurai" />
+				<property name="Rules" value="Whenever your opponent would choose a creature in the battle zone, he can&quot;t choose this one.  (It can still be attacked and blocked.) &#xd;&#xa; Whenever this creature attacks, you may put any number of psychic creatures that cost 10 or less from your hyperspatial zone into the battle zone.&#xd;&#xa;World breaker" />
+				<property name="Power" value="35000" />
+				<property name="Rarity" value="S" />
+				<property name="Number" value="S3b" />
+        	</alternate>
+		</card>
+
+		<card name="Grateful Life, the Earth Breaker" id="b4655b63-17fa-4fcb-bc57-48c14c11a87f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Gaia Command" />
+			<property name="Rules" value="Evolution - Put on one of your creatures that has Command in its race. &#xd;&#xa; When you put this creature into the battle zone, you may put one of your psychic creatures that costs 7 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; When this creature leaves the battle zone, you may put any number of cards from your graveyard into your mana zone.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="11000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S4" />
+		</card>
+		<card name="Diabolos Zeta, Temporal Ruler" id="958f72e9-4635-4a77-914a-f29804064c16">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light/Water/Fire/Darkness/Nature" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="World Command" />
+			<property name="Rules" value="Blocker &#xd;&#xa; This creature can&quot;t attack.&#xd;&#xa; Whenever your opponent would choose a creature due to the ability of a creature, this creature can&quot;t be chosen.&#xd;&#xa; Awaken - At the start of your turn, you may choose 3 of your cards from the battle zone and/or your mana zone , return them to your deck, and then shuffle it.  If you do, flip this creature. &#xd;&#xa;:Evil Soul" />
+			<property name="Power" value="9000" />
+			<property name="Rarity" value="S" />
+			<property name="Number" value="S5a" />
+
+			<alternate name="Devil Diabolos Zeta, Evil Awakened" type="awakening">
+			<property name="Format" value="OCG" />
+				<property name="Civilization" value="Light/Water/Fire/Darkness/Nature" />
+				<property name="Cost" value="20" />
+				<property name="Type" value="Psychic Creature" />
+				<property name="Race" value="World Command" />
+				<property name="Rules" value="Whenever this creature attacks, destroy one of your opponent&quot;s Light creatures, Water creatures, Darkness creatures, Fire creatures, and Nature creatures.&#xd;&#xa;Release&#xd;&#xa; Quattro breaker  (This creature breaks 4 shields.) &#xd;&#xa;:Evil Soul" />
+				<property name="Power" value="23000" />
+				<property name="Rarity" value="S" />
+				<property name="Number" value="S5b" />
+        	</alternate>
+		</card>
+
+		<card name="Five Star, Temporal Luck" id="949bf229-5261-4c94-b69e-40a7ccb4b831">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="Awaken - At the start of your turn, if you have 3 or more creatures that have &quot;500&quot; as the last 3 digits of their power in the battle zone, flip this creature. &#xd;&#xa; This creature can&quot;t be attacked by fire creatures.&#xd;&#xa;:Holy Soul" />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="1a" />
+
+			<alternate name="Lightning Five Star, Heavenly Luck Awakened" type="awakening">
+			<property name="Format" value="OCG" />
+				<property name="Civilization" value="Light" />
+				<property name="Cost" value="9" />
+				<property name="Type" value="Psychic Creature" />
+				<property name="Race" value="Angel Command" />
+				<property name="Rules" value="All your other creatures win all battles.&#xd;&#xa;Double breaker&#xd;&#xa;:Holy Soul" />
+				<property name="Power" value="10500" />
+				<property name="Rarity" value="V" />
+				<property name="Number" value="1b" />
+        	</alternate>
+		</card>
+
+		<card name="K Atlantis, Ocean Peak of Taiga" id="740b60e5-d235-4660-81e5-0bbadfab97af">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Command/Leviathan" />
+			<property name="Rules" value="This creature can&quot;t be blocked.&#xd;&#xa;Double breaker&#xd;&#xa; When this creature is destroyed, return all of your opponent&quot;s creatures in the battle zone to their owner&quot;s hands." />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="2" />
+		</card>
+		<card name="Million Death, Lord of a Hundred Beasts" id="f5ad598e-526d-4e9e-bad0-2e9706416902">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Dark Monster" />
+			<property name="Rules" value="Evolution - Put on one of your creatures that has &quot;Monster&quot; in its race.&#xd;&#xa; When you put this creature into the battle zone, you may put any number of creatures that has &quot;Monster&quot; in its race from your mana zone into your graveyard. For each creature put into your graveyard in this way, your opponent chooses one of his creatures and destroys it.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="3" />
+		</card>
+		<card name="GENJI Double Cross, Temporal Swordsman" id="0cfef460-5925-4cd7-b698-d21dbb4dc8a7">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Armored Dragon /Flame Command/Samurai" />
+			<property name="Rules" value="Awaken - At the end of your turn, if all of your creatures in the battle zone are tapped, flip this creature.&#xd;&#xa;Double breaker&#xd;&#xa;Hyperspatial Psychic" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="4a" />
+
+			<alternate name="Crimson GENJI Double Cross, the Swordmaster Awakened" type="awakening">
+			<property name="Format" value="OCG" />
+				<property name="Civilization" value="Fire" />
+				<property name="Cost" value="14" />
+				<property name="Type" value="Psychic Creature" />
+				<property name="Race" value="Armored Dragon/Flame Command/Samurai" />
+				<property name="Rules" value="Whenever this creature attacks, destroy all your opponent&quot;s creatures that have &quot;Blocker&quot;.&#xd;&#xa; Double breaker&#xd;&#xa; When this creature would leave the battle zone, put the top card of your deck into your graveyard. If that card is a Fire Bird this creature stays in the battle zone and you may put a fire psychic creature that costs 7 or less from your hyperspatial zone into the battle zone." />
+				<property name="Power" value="11000" />
+				<property name="Rarity" value="V" />
+				<property name="Number" value="4b" />
+        	</alternate>
+		</card>
+
+		<card name="Final Doppel" id="3f1c1001-8f6e-416e-88af-e524faf49ef0">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water/Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Soul Command" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Evolution - Put on one of your creatures that has the same soul as this creature.&#xd;&#xa; Whenever this creature attacks, you may discard 2 creatures that share a soul with this creature from your hand. If you do, untap this creature. &#xd;&#xa;Double breaker&#xd;&#xa;:Holy Soul:Magic Soul:Evil Soul:Kung Fu Soul:Wild Soul:Bloody Soul" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="V" />
+			<property name="Number" value="5" />
+		</card>
+		<card name="VY, the Patroller" id="7483336b-d368-4511-bc57-43efcebb45e1">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cosmo Walker/Alien" />
+			<property name="Rules" value="At the end of your turn, if you have 3 or fewer shields, you may discard a creature from your hand. If you do, add the top card of your deck to your shields face down." />
+			<property name="Power" value="5500" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="6" />
+		</card>
+		<card name="Pure Gazelle Star" id="7ef76179-bd16-4a0c-966d-2f7b3844044f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Shine Monster" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; When you put this creature into the battle zone, all cards of the next shield you return to your hand get &quot;Shield Trigger&quot; this turn.  " />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="7" />
+		</card>
+		<card name="G Hogan, Temporal Star" id="f1787e24-65ea-4a8f-9268-18e02799bb5b">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Cyber Command" />
+			<property name="Rules" value="Your water creatures may each cost 1 less to summon. They can&quot;t cost less than 1.&#xd;&#xa; Awaken - At the end of your turn, if you summoned 3 or more creatures that turn, flip this creature.&#xd;&#xa; Double breaker&#xd;&#xa;Hyperspatial Psychic:Magic Soul" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="8a" />
+
+			<alternate name="Ocean G Hogan, the Best Awakened" type="awakening">
+			<property name="Format" value="OCG" />
+				<property name="Civilization" value="Water" />
+				<property name="Cost" value="15" />
+				<property name="Type" value="Psychic Creature" />
+				<property name="Race" value="Cyber Command" />
+				<property name="Rules" value="Whenever you summon a creature, look at the top card of your deck. If that card is a creature, you may put it into the battle zone.&#xd;&#xa;Double breaker:Magic Soul" />
+				<property name="Power" value="11000" />
+				<property name="Rarity" value="R" />
+				<property name="Number" value="8b" />
+        	</alternate>
+		</card>
+
+		<card name="Canopus, Blue Divine Dragon" id="e4850d2a-ef88-4b41-b397-fc1f28cbbd2e">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Poseidia Dragon/Alien" />
+			<property name="Rules" value="At the end of your turn, you may discard a creature from your hand. If you do, look at the top 3 cards of your deck. Put one of these into your hand, one on the bottom of your deck and one on the top of your deck.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="9" />
+		</card>
+		<card name="Words from Beyond" id="730171b3-9e5d-4610-b0b4-7ecfdfb0d49f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="You may draw a card for each of your psychic creatures in the battle zone.&#xd;&#xa; Whenever one of your creatures that has &quot;Awakened&quot; in its name attacks this turn, you may return one of your opponent&quot;s creatures in the battle zone to its owner&quot;s hand. " />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="10" />
+		</card>
+		<card name="Black Ganveet, Temporal Soldier" id="7768acb6-b297-42ed-a749-3ccb474c2d6e">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Rules" value="When you put this creature into the battle zone, destroy one of your opponent&quot;s tapped creatures.&#xd;&#xa; Awaken - At the end of your opponent&quot;s turn, if your opponent has no cards in his hand, flip this creature.&#xd;&#xa;:Bloody Soul" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="11a" />
+
+			<alternate name="Darkness Ganveet, the Assassin Awakened" type="awakening">
+			<property name="Format" value="OCG" />
+				<property name="Civilization" value="Darkness" />
+				<property name="Cost" value="13" />
+				<property name="Type" value="Psychic Creature" />
+				<property name="Race" value="Demon Command" />
+				<property name="Rules" value="Whenever this creature attacks, your opponent chooses a card in his hand and discards it, then chooses one of his creatures and destroys it.&#xd;&#xa;Double breaker&#xd;&#xa;:Bloody Soul" />
+				<property name="Power" value="9000" />
+				<property name="Rarity" value="R" />
+				<property name="Number" value="11b" />
+        	</alternate>
+		</card>
+
+		<card name="Antares, the Sting Assassin" id="b8e27107-121d-4be0-8c8b-71a9f7bac34e">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command/Alien" />
+			<property name="Rules" value="At the end of your turn, you may discard a creature from your hand. If you do, destroy one of your opponent&quot;s creatures that costs less than the creature you discarded." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="12" />
+		</card>
+		<card name="Bird Stew Party Time!" id="67cef9ae-aace-457d-95cc-8273bf31478f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Destroy all your opponent&quot;s Fire Birds." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="13" />
+		</card>
+		<card name="Bernard Tyson, Blastdragon" id="d3e98ee8-92f5-4364-bbad-ead4782ec2c0">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon/Flame Command" />
+			<property name="Rules" value="Speed attacker&#xd;&#xa; Whenever this creature wins a battle, break 3 of your opponent&quot;s shields.&#xd;&#xa;Double breaker&#xd;&#xa;:Kung Fu Soul" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="14" />
+		</card>
+		<card name="Jet Drill, Advanced Soldier" id="1dfbcd19-f458-455d-ad4b-ec67777a1c95">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armorloid" />
+			<property name="Rules" value="Whenever your opponent puts a card from his deck or graveyard into his mana zone, your opponent chooses a card in his mana zone and puts it on the bottom of his deck." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="15" />
+		</card>
+		<card name="Genji Aini" id="af3bd36c-5da2-43eb-be34-efee2c1026ad">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Tap Ability Destroy one of your Fire Birds or Dragons. You may put a Dragon or Fire Bird that costs the same as or 1 more than the destroyed creature from your hand into the battle zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="16" />
+		</card>
+		<card name="Kankuro, Temporal Actor" id="0abebab4-e4b7-465e-a51b-056cb88ec327">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Psychic Creature" />
+			<property name="Race" value="Earth Dragon/Giant/Samurai" />
+			<property name="Rules" value="Awaken - At the end of your turn, if you put a creature that has power 7000 or more into the battle zone this turn, flip this creature.&#xd;&#xa; Double breaker&#xd;&#xa;Hyperspatial Psychic&#xd;&#xa;:Wild Soul" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="17a" />
+
+			<alternate name="Jungle Kankuro, the Awakened Dramatic" type="awakening">
+			<property name="Format" value="OCG" />
+				<property name="Civilization" value="Nature" />
+				<property name="Cost" value="11" />
+				<property name="Type" value="Psychic Creature" />
+				<property name="Race" value="Earth Dragon/Giant/Samurai" />
+				<property name="Rules" value="Each of your other creatures in the battle zone gets +2000 power and can&quot;t be blocked by creatures that have less power than it.&#xd;&#xa;Triple breaker&#xd;&#xa;:Wild Soul" />
+				<property name="Power" value="17000" />
+				<property name="Rarity" value="R" />
+				<property name="Number" value="17b" />
+        	</alternate>
+		</card>
+
+		<card name="Gagamaru, Phantom Earth Beast" id="4199fe2f-1b8d-44d7-9d99-54cb962a04fe">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gaia Command/Dreammate" />
+			<property name="Rules" value="Your creatures that have &quot;Mana Reburst&quot; in your mana zone may cost up to 2 less to summon. They can&quot;t cost less than 1. &#xd;&#xa;Double breaker&#xd;&#xa;: Wild Soul" />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="18" />
+		</card>
+		<card name="Lion Knuckle" id="69b6a718-5e0a-4356-9c5d-757455de017f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; When you put this creature into the battle zone, put 2 cards in your mana zone on top of your deck in any order.&#xd;&#xa;Double breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="19" />
+		</card>
+		<card name="Hyperspatial Guard Hole" id="811afce8-0825-45b7-9c29-ba3fdd42c2a3">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light/Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Choose a non-evolution creature in the battle zone and add it to its owner&quot;s shields face down.&#xd;&#xa; Put a Light or Darkness psychic creature that costs 10 or less that has Command in its race from your hyperspatial zone into the battle zone.&#xd;&#xa;Hyperspatial Psychic" />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="R" />
+			<property name="Number" value="20" />
+		</card>
+		<card name="Tulk SP" id="9abd893d-554a-4ae0-b948-e5a18032166c">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Instead of having this creature attack, you may tap this creature and 4 untapped cards in your mana zone to use its  ability.: If you don&quot;t have a psychic creature that has &quot;Five Star&quot; in its name in the battle zone, put a &quot;Five Star, Temporal Luck&quot; from your hyperspatial zone into the battle zone.&#xd;&#xa;:Holy Soul" />
+			<property name="Power" value="3500" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="21" />
+		</card>
+		<card name="Irohas, Spirit of Extinguishing" id="4ed4bf21-3203-480a-adce-14eb2942c780">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; This creature can&quot;t be attacked by fire creatures.&#xd;&#xa; Whenever your opponent would choose a creature by the effect of a fire spell, he can&quot;t choose this one. " />
+			<property name="Power" value="2500" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="22" />
+		</card>
+		<card name="Five Star Blaster" id="a796f4ac-824d-49f7-a1bc-90a25278449a">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER} &#xd;&#xa; Each of your creatures that have &quot;500&quot; as the last three digits of it&quot;s power gets &quot;This creature wins all battles&quot; until the end of the turn." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="23" />
+		</card>
+		<card name="Deepsea Doppel" id="ca2af3b2-9662-4a75-bf16-c53caf881a06">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Blue Monster" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may reveal the top 3 cards of your deck. Put any creatures that share a &quot;Soul&quot; ability with this creature into your hand and put the rest into your graveyard. :Holy Soul:Magic Soul:Evil Soul:Kung Fu Soul:Wild Soul:Bloody Soul" />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="24" />
+		</card>
+		<card name="Scramble Typhoon" id="da0057cc-e2eb-43bf-a746-8c1613f41c5e">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Draw 5 cards, then discard 3 cards from your hand." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="25" />
+		</card>
+		<card name="Hogan Blaster" id="a5ec6840-0e22-4eb9-9866-3cb5fbf23e3f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER} &#xd;&#xa; Shuffle your deck, then reveal the top card of your deck. If that card is a creature, you may put it into the battle zone. If that card is a spell, you may cast it for no cost." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="26" />
+		</card>
+		<card name="Marcelino, Steel Ball Baron" id="c5fb7c37-d60a-4a90-b5e6-587751c38a71">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="5 " />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Lord " />
+			<property name="Rules" value="When this creature is destroyed, break one of your opponent&quot;s shields.&#xd;&#xa;:Bloody Soul" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="27" />
+		</card>
+		<card name="Belbel, Reaper Doll" id="d20a1b3e-c36c-421a-8b13-0a167d23fece">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Death Puppet" />
+			<property name="Rules" value="When this creature is destroyed, you may put it from your graveyard on the bottom of your deck. If you do, put a non-evolution creature that has &quot;Reaper&quot; in its name from your graveyard into the battle zone." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="28" />
+		</card>
+		<card name="Ganveet Blaster" id="e41b47cb-c548-421f-a35f-ca5e4d900b96">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Destroy one of your opponent&quot;s creatures.&#xd;&#xa; Your opponent discards 2 cards from his hand." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="29" />
+		</card>
+		<card name="Reppi SP Aini" id="e6181d55-0feb-4bb2-bec7-e79243e578d0">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap this creature and 4 untapped cards in your mana zone to use its  ability: If you don&quot;t have a psychic creature that has &quot;GENJI Double Cross&quot; in its name in the battle zone, put a GENJI Double Cross, Temporal Swordsman from your hyperspatial zone into the battle zone.&#xd;&#xa; When this creature would be destroyed, you may put it on the top of your deck instead." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="30" />
+		</card>
+		<card name="Lyla Aini" id="5df2d853-3737-48a1-9844-a14565e0fb02">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Speed attacker&#xd;&#xa; Whenever this creature battles, return one of your shields to your hand. You can&quot;t use the &quot;Shield trigger&quot; ability of that shield.:Kung Fu Soul" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="31" />
+		</card>
+		<card name="GENJI Blaster" id="fcdaaded-ad13-450a-8912-52ee632225af">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER} &#xd;&#xa; Search your deck. You may take up to 2 non-evolution creatures that have Aini in their names that have total cost 7 or less from your deck and put them into the battle zone tapped. Then shuffle your deck." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="32" />
+		</card>
+		<card name="Yokozuna Giant" id="03af4f6b-60cd-4ec6-8cbc-297e3e6e8723">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant/Samurai" />
+			<property name="Rules" value="During your turn, whenever another creature enters the battle zone, this creature gets &quot;Power Attacker +6000&quot; and breaks an additional shield until the end of the turn.&#xd;&#xa;:Wild Soul" />
+			<property name="Power" value="4000+" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="33" />
+		</card>
+		<card name="Mystery Hippo" id="942b49f8-719d-4666-87f8-1c9f66c1bd54">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk" />
+			<property name="Rules" value="Mana Reburst 0  (You may summon this creature from your mana zone for no cost.) &#xd;&#xa; When you put this creature into the battle zone, if you summoned it from your mana zone, put a nature card from your mana zone into your graveyard. If you can&quot;t, destroy this creature.&#xd;&#xa;:Wild Soul" />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="34" />
+		</card>
+		<card name="Kankuro Blaster" id="3dff29c0-a937-46bc-b260-b06033abe084">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Each of your creatures in the battle zone gets +4000 power and breaks an additional shield until the end of the turn.&#xd;&#xa; Until the end of the turn, whenever one of your creatures is attacking your opponent and becomes blocked, it breaks one of your opponent&quot;s shields.&#xd;&#xa; Until the end of the turn, if your opponent would choose a creature in the battle zone for the effect of a spell, he can&quot;t choose one of your creatures." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="U" />
+			<property name="Number" value="35" />
+		</card>
+		<card name="Paduma, Salvation Guardian" id="1fdcb0db-874d-40ec-9973-1db0549b26d7">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Guardian" />
+			<property name="Rules" value="When this creature is attacked, it gets +4000 power.&#xd;&#xa;:Holy Soul" />
+			<property name="Power" value="2500+" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="36" />
+		</card>
+		<card name="Miele Thunder, the Gemwing" id="7fdb8d27-dc0a-4ab5-8fbe-c6f5f0c21342">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Great Mecha King" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may choose one of your opponent&quot;s creatures in the battle zone and tap it.:Holy Soul" />
+			<property name="Power" value="1500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="37" />
+		</card>
+		<card name="Fista, the Oracle" id="8cc6cce2-6ff7-4fc4-8115-a8b2b8446ad2">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Light Bringer" />
+			<property name="Rules" value="Blocker&#xd;&#xa; This creature can&quot;t attack players.&#xd;&#xa; When this creature would be destroyed, put it on the bottom of your deck instead.:Holy Soul" />
+			<property name="Power" value="1500" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="38" />
+		</card>
+		<card name="Miele Spark" id="f8609b38-844f-4553-bd7a-e4cea341b707">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="1" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER} &#xd;&#xa; Choose one of your opponent&quot;s creatures in the battle zone that has power 3000 or less and tap it." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="39" />
+		</card>
+		<card name="Ribbity SP" id="0cf34c0b-7a26-42b1-9b6f-69cfcc929de8">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gel Fish" />
+			<property name="Rules" value="When this creature would be destroyed, return it to your hand instead. &#xd;&#xa; Instead of having this creature attack, you may tap this creature and 5 untapped cards in your mana zone to use its  ability.: If you don&quot;t have a psychic creature that has &quot;G Hogan&quot; in its name in the battle zone, put a &quot;G Hogan, Temporal Star&quot; from your hyperspatial zone into the battle zone.&#xd;&#xa;:Magic Soul" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="40" />
+		</card>
+		<card name="Aqua Jack" id="322da896-6959-47d9-a787-a147918ac190">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="Sympathy:  (Magic Soul) creatures  (This creature costs 1 less to summon for each of your  (Magic Soul) creatures in the battle zone. It can&quot;t cost less than 1.) &#xd;&#xa;Chain&#xd;&#xa;:Magic Soul" />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="41" />
+		</card>
+		<card name="Deepsea Resist" id="e1ec7a1a-f48a-4652-bbb1-a2abaac6acb3">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Blue Monster " />
+			<property name="Rules" value="Blocker&#xd;&#xa; This creature can&quot;t attack." />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="42" />
+		</card>
+		<card name="Cute Whisper" id="ac0434cd-f961-4da4-95b7-bdfec35c2cbf">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Virus" />
+			<property name="Rules" value="Magic Soul" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="43" />
+		</card>
+		<card name="Fuuma Jacks Piccolo" id="68ed7480-c99a-4989-9c4c-f1dcde6d0c55">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Grand Devil" />
+			<property name="Rules" value="When this creature is destroyed, choose one of your opponent&quot;s creatures in the battle zone. That creature gets -4000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) &#xd;&#xa;:Bloody Soul" />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="44" />
+		</card>
+		<card name="Dark Strike SP" id="e5744d27-1f4d-4f62-9ab3-5076462f3a3e">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Monster" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose one of your opponent&quot;s creatures in the battle zone. During your opponent&quot;s next turn, that creature attacks if able.&#xd;&#xa; Instead of having this creature attack, you may tap this creature and 4 untapped cards in your mana zone to use its  ability.: If you don&quot;t have a psychic creature that has &quot;Ganveet&quot; in its name in the battle zone, put a &quot;Black Ganveet, Temporal Soldier&quot; from your hyperspatial zone into the battle zone.&#xd;&#xa;:Bloody Soul" />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="45" />
+		</card>
+		<card name="Dark Kilmajiro" id="6cb16dd1-5c16-4bff-8f6b-17f768acb593">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dark Monster" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent&quot;s creatures in the battle zone. That chosen creature gets -1000 power until the end of the turn. For each of your psychic creatures in the battle zone, that creature gets -1000 power again.  (A creature that has power 0 or less is destroyed.) " />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="46" />
+		</card>
+		<card name="Ring Ring Man" id="b3d68122-eb77-40f6-9427-181eba6535d5">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Hedrian" />
+			<property name="Rules" value="Blocker &#xd;&#xa; This creature can&quot;t attack.&#xd;&#xa;No Choice This creature gets &quot;Slayer&quot;.  (Whenever a creature that has &quot;Slayer&quot; battles, destroy the other creature after the battle.) " />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="47" />
+		</card>
+		<card name="Pythonman Dragoon" id="fb696fad-817b-4f2d-b762-da3d1752480b">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tyranno Drake" />
+			<property name="Rules" value="Marshall Touch One of your other creatures in the battle zone can attack untapped creatures until the end of the turn.&#xd;&#xa;:Kung Fu Soul" />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="48" />
+		</card>
+		<card name="Kooc, Crimson Lord" id="499ff6b3-22fb-4b7f-9baf-71d09975b2ca">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Flame Monster" />
+			<property name="Rules" value="This creature can&quot;t be attacked.&#xd;&#xa;:Kung Fu Soul" />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="49" />
+		</card>
+		<card name="Rekuta Aini" id="1c5d5a80-534b-4722-b89e-66e383ba35e0">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Fire Bird" />
+			<property name="Rules" value="Gravity Zero" />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="50" />
+		</card>
+		<card name="Mobius Tornado" id="8c844a78-36be-4e94-9114-7877ba6058c0">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Destroy one of your opponent&quot;s creatures that has power 5000 or less. If you have a psychic creature in the battle zone, destroy another of your opponent&quot;s creatures that has power 5000 or less." />
+			<property name="Power" value="0" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="51" />
+		</card>
+		<card name="Mimosa, the Strong" id="ec38f331-70d6-441a-8178-b11076dfc695">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6 " />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Tree Folk " />
+			<property name="Rules" value="Double breaker" />
+			<property name="Power" value="6000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="52" />
+		</card>
+		<card name="Princess Cub SP" id="23352269-7ffc-4e5c-81f9-25fbe618e1ac">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Dreammate" />
+			<property name="Rules" value="Whenever your opponent would choose a creature in the battle zone due to the effect of a spell, he can&quot;t choose your creatures in the battle zone that has power 6000 or more.&#xd;&#xa; Instead of having this creature attack, you may tap this creature and 5 untapped cards in your mana zone to use its  ability: If you don&quot;t have a psychic creature that has &quot;Kankuro&quot; in its name in the battle zone, put a &quot;Kankuro, Temporal Actor&quot; from your hyperspatial zone into the battle zone.&#xd;&#xa;:Wild Soul" />
+			<property name="Power" value="4000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="53" />
+		</card>
+		<card name="Sickle Nature" id="d4cc83ee-efe6-491d-baf3-8f431cf4cf39">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Emerald Monster" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; When this creature would be destroyed, put it into your mana zone instead." />
+			<property name="Power" value="2000" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="54" />
+		</card>
+		<card name="Sanji, Lionic Faerie" id="3891f288-7521-4380-b314-a911eb559c36">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="2" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Snow Faerie" />
+			<property name="Rules" value=" While battling, this creature gets +3000 power.: Wild Soul" />
+			<property name="Power" value="1000+" />
+			<property name="Rarity" value="C" />
+			<property name="Number" value="55" />
+		</card>
+
+	</cards>
+</set>
