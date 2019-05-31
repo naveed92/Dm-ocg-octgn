@@ -1211,8 +1211,10 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = ''):
     mute()
     if card.Type == "Spell":
         if re.search("Charger", card.name):
+            rnd(1,100)
             toMana(card)
         else:
+            rnd(1,100)
             card.moveTo(card.owner.piles['Graveyard'])
     else:
         if re.search("Evolution", card.Type):
