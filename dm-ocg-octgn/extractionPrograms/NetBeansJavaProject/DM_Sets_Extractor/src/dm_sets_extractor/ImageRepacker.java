@@ -22,7 +22,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  *
  * @author Pranjal This is for getting wikia TCG images and then renaming them
- * to the card IDs
+ * to the card IDs, AND changing resolution
  */
 public class ImageRepacker {
 
