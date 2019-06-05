@@ -18,14 +18,16 @@ import javax.swing.JFileChooser;
 // GOTTA FIX FOR PSYCHICS -  MANA COST IS NOW "PSYCHIC COST"
 //For extracting images make folder F:\Duel\ImageExtraction\<setname>_ to put images into
 //please change http to https in the other files
+
 public class SinnanSetExtractor {
 
     /**
      * Asks for a set url to extract data of every card in the set
      */
     private String formatToAdd = "TCG, Set17, Set35, OCG";  // the format to add for the set
+
     void extractSet(String setName, boolean extractImages) throws Exception {
-        
+
         if (setName == "") //no setName specified
         {
             setName = JOptionPane.showInputDialog("Enter set name, exactly as it appears in the wikia page url for the set: (Eg. DMR-03_Episode_1:_Gaial_Victory)");
@@ -34,8 +36,7 @@ public class SinnanSetExtractor {
         String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + setName;
         //this query gets all the names of the cards in the set by querying the wikia 
         System.out.println(setLink);
-      
-        
+
         String setFileName = setName.substring(0, 6);
         String filename = setFileName + "Data.xml";
         // String filename = "TestData.txt";
@@ -72,19 +73,17 @@ public class SinnanSetExtractor {
 
             URL page = new URL(setLink);
             in = new BufferedReader(new InputStreamReader(page.openStream()));
-            
-            
-            //in = new BufferedReader(new FileReader("F:/Duel/api.php"));
 
+            //in = new BufferedReader(new FileReader("F:/Duel/api.php"));
             filewr = new PrintWriter(filename, "UTF-8");
 
             filewr.println(xmlText);
             System.out.println(xmlText);
             String line;
             String rarity = "";
-            
+
             while ((line = in.readLine()) != null) {
-               
+
                 if (line.contains("==Contents==") || line.contains("== Contents ==")) {
                     System.out.println("Contents FOUND");
                     break;
@@ -268,14 +267,21 @@ public class SinnanSetExtractor {
                     break;
                 case "Gravity Zero":
                     System.out.println("HERHERHEHR");
-                    int st2=content.lastIndexOf('|');
-                    String cond=removeBraces(content.substring(st2+1));
-                    String type=content.substring(st+1, st2);
-                    content="Gravity Zero-"+cond+", ";
-                    switch(type){
-                        case "creature": case "Creature": content+="you may summon this creature for no cost."; break;
-                        case "spell": case "Spell":   content+="you may cast this spell for no cost."; break;
-                        default: content+="you may play this card for no cost.";
+                    int st2 = content.lastIndexOf('|');
+                    String cond = removeBraces(content.substring(st2 + 1));
+                    String type = content.substring(st + 1, st2);
+                    content = "Gravity Zero-" + cond + ", ";
+                    switch (type) {
+                        case "creature":
+                        case "Creature":
+                            content += "you may summon this creature for no cost.";
+                            break;
+                        case "spell":
+                        case "Spell":
+                            content += "you may cast this spell for no cost.";
+                            break;
+                        default:
+                            content += "you may play this card for no cost.";
                     }
                     break;
                 default:
@@ -288,7 +294,7 @@ public class SinnanSetExtractor {
             content = content.replace("Gachinko Judge", "(Gachinko Judge: Each player reveals the top card of his deck and then puts it on the bottom of his deck. If your revealed card costs the same as or greater than your opponent's revealed card, you win.)");
         } else if (content.contains("Eternal Omega")) {
             content += "(When this creature would leave the battle zone, return it to your hand instead.)";
-        }else if(content.trim().equalsIgnoreCase("Blocker")){
+        } else if (content.trim().equalsIgnoreCase("Blocker")) {
             content = "{BLOCKER}";
         }
         return content;
@@ -321,6 +327,8 @@ public class SinnanSetExtractor {
      */
     String extract(String cardName, String setName, boolean extractImage) throws Exception {
         URL page = new URL("https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + cardName);
+        System.out.println("URL Check GO");
+
         BufferedReader in = new BufferedReader(new InputStreamReader(page.openStream()));
         String line, details = "\t\t<card ", alltxt = "";
         int i;
@@ -336,26 +344,35 @@ public class SinnanSetExtractor {
         //because double quotes cause problems with json later.
         UUID id = UUID.randomUUID();
 
-////////////////////////// Image Processing and saving ////////////////////////
-if(extractImage)
-{
-        String card = alltxt.substring(i + 8, alltxt.indexOf("\n", i));        //get the wikia image filename!!
+        
 
-        String image = "http://duelmasters.wikia.com/wiki/File:" + card;
-        //the wikia address of the image, not the actual one. Gotta convert it to the actual url.
-        String imgUrl = new ImageExtractor().extractImageUrl(image); //converted
-        System.out.println("Real image url is:" + imgUrl);
-        Image pic = ImageIO.read(new URL(imgUrl));
-        System.out.println("Saving image in " + "F:\\Duel\\ImageExtraction\\" + setName + "\\");
-        ImageIO.write((RenderedImage) pic, "jpg", new File("F:\\Duel\\ImageExtraction\\" + setName + "\\" + id + ".jpg"));
-}      
+////////////////////////// Image Processing and saving ////////////////////////
+        if (extractImage) {
+             System.out.println("Image processing started...");
+            String card = alltxt.substring(i + 8, alltxt.indexOf("\n", i));        //get the wikia image filename!!
+
+            String image = "http://duelmasters.wikia.com/wiki/File:" + card;
+            //the wikia address of the image, not the actual one. Gotta convert it to the actual url.
+            String imgUrl = new ImageExtractor().extractImageUrl(image); //converted
+            System.out.println("Real image url is:" + imgUrl);
+            Image pic = ImageIO.read(new URL(imgUrl));
+            System.out.println("Saving image in " + "F:\\Duel\\ImageExtraction\\" + setName + "\\");
+            ImageIO.write((RenderedImage) pic, "jpg", new File("F:\\Duel\\ImageExtraction\\" + setName + "\\" + id + ".jpg"));
+        }
 ////////////////////////////////// Details processing ////////////////////////////
+        System.out.println("Details processing started...");
+        
         details += "name=\"" + cardName.replace("_", " ") + "\" id=\"" + id + "\">\n"; //add name  and id
         details += makeXmlLine("Format", formatToAdd);      //add format 
         //details += makeJsonLine("civilization", alltxt);          //add civ - old version - adds just 1 civ 
         i = alltxt.indexOf("civilization = ");
-        line = alltxt.substring(i, alltxt.indexOf("\n", i));
-        String temp = line.substring(line.indexOf("=") + 2).trim();
+        String temp;
+        if (i == -1) {
+            System.out.println("ERROR! Civilization not found!! Assuming card is colorless. Please do a manual check.");
+            temp = "Zero";
+        } else {
+            line = alltxt.substring(i, alltxt.indexOf("\n", i));
+            temp = line.substring(line.indexOf("=") + 2).trim();
 
         while (true) {
             i = alltxt.indexOf("| civilization", i + 1);
@@ -365,6 +382,8 @@ if(extractImage)
             line = alltxt.substring(i, alltxt.indexOf("\n", i));
             temp += "/" + line.substring(line.indexOf("=") + 2).trim();             //add all civs
         }
+        }
+        
         details += makeXmlLine("Civilization", temp);                            //finish adding civs, already gone to next line          
         details += makeXmlLine("Cost", getAttr("cost", alltxt));   //add cost
         details += makeXmlLine("Type", getAttr("type", alltxt));                //add type

@@ -12,6 +12,7 @@ public class MainClass {
     public static void main(String args[]) {
         try {
            SinnanSetExtractor extractor = new SinnanSetExtractor();
+            //System.out.println(extractor.extract("Yomi,_Humanity_God", "lol", false));
            extractor.extractSet("", false); //optional to put the set name here. Exactly the address as it shows in the wikia url of the page.
      
         } catch (Exception e) {
