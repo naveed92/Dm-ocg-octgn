@@ -16,7 +16,7 @@ import java.util.UUID;
 import javax.imageio.ImageIO;
 import javax.swing.JFileChooser;
 // GOTTA FIX FOR PSYCHICS -  MANA COST IS NOW "PSYCHIC COST"
-//For extracting images make folder F:\Duel\ImageExtraction\<setname>_ to put images into
+//For extracting images make folder F:\Duel\ImageExtraction\<setname> to put images into
 //please change http to https in the other files
 
 public class SinnanSetExtractor {
@@ -24,7 +24,8 @@ public class SinnanSetExtractor {
     /**
      * Asks for a set url to extract data of every card in the set
      */
-    private String formatToAdd = "TCG, Set17, Set35, OCG";  // the format to add for the set
+    private String formatToAdd = "OCG";  // the format to add for the set
+    private String imagePath = "";
 
     void extractSet(String setName, boolean extractImages) throws Exception {
 
@@ -36,6 +37,31 @@ public class SinnanSetExtractor {
         String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + setName;
         //this query gets all the names of the cards in the set by querying the wikia 
         System.out.println(setLink);
+
+        if (extractImages) {
+            JFileChooser chooser = new JFileChooser();
+            chooser.setCurrentDirectory(new java.io.File("."));
+            chooser.setDialogTitle("Select folder to put extracted images in");
+            chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+            chooser.setAcceptAllFileFilterUsed(false);
+                
+            if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+                imagePath = chooser.getSelectedFile().toString();
+                System.out.println("Trying to create folder " + imagePath + "\\" + setName.substring(0,6));
+
+                if (new File(imagePath + "\\" + setName.substring(0,6)).mkdirs()) {
+                    System.out.println("Folder made");
+                } else {
+                    System.out.println("Failed to make folder!");
+                }
+
+            } else {
+                System.out.println("Cancelled!");
+                Exception e = new Exception("Operation cancelled by user!");
+                throw e;
+
+            }
+        }
 
         String setFileName = setName.substring(0, 6);
         String filename = setFileName + "Data.xml";
@@ -89,7 +115,7 @@ public class SinnanSetExtractor {
                     break;
                 }
             }
-            System.out.println("OK2");
+            //System.out.println("OK2");
             //one line will be skipped, though no probs
             while (!((line = in.readLine()) == null || line.contains("==Cycles==") || line.contains("==Gallery==") || line.contains("[[Category:") || line.contains("==Contents sorted by Civilizations=="))) {
                 if (line.contains("[[") && line.contains("]]")) {
@@ -344,11 +370,9 @@ public class SinnanSetExtractor {
         //because double quotes cause problems with json later.
         UUID id = UUID.randomUUID();
 
-        
-
 ////////////////////////// Image Processing and saving ////////////////////////
         if (extractImage) {
-             System.out.println("Image processing started...");
+            System.out.println("Image processing started...");
             String card = alltxt.substring(i + 8, alltxt.indexOf("\n", i));        //get the wikia image filename!!
 
             String image = "http://duelmasters.wikia.com/wiki/File:" + card;
@@ -356,12 +380,12 @@ public class SinnanSetExtractor {
             String imgUrl = new ImageExtractor().extractImageUrl(image); //converted
             System.out.println("Real image url is:" + imgUrl);
             Image pic = ImageIO.read(new URL(imgUrl));
-            System.out.println("Saving image in " + "F:\\Duel\\ImageExtraction\\" + setName + "\\");
-            ImageIO.write((RenderedImage) pic, "jpg", new File("F:\\Duel\\ImageExtraction\\" + setName + "\\" + id + ".jpg"));
+            System.out.println("Saving image in " + imagePath + "\\" + setName + "\\");
+            ImageIO.write((RenderedImage) pic, "jpg", new File(imagePath + "\\" + setName + "\\" + id + ".jpg"));
         }
 ////////////////////////////////// Details processing ////////////////////////////
         System.out.println("Details processing started...");
-        
+
         details += "name=\"" + cardName.replace("_", " ") + "\" id=\"" + id + "\">\n"; //add name  and id
         details += makeXmlLine("Format", formatToAdd);      //add format 
         //details += makeJsonLine("civilization", alltxt);          //add civ - old version - adds just 1 civ 
@@ -374,16 +398,16 @@ public class SinnanSetExtractor {
             line = alltxt.substring(i, alltxt.indexOf("\n", i));
             temp = line.substring(line.indexOf("=") + 2).trim();
 
-        while (true) {
-            i = alltxt.indexOf("| civilization", i + 1);
-            if (i == -1) {
-                break;
+            while (true) {
+                i = alltxt.indexOf("| civilization", i + 1);
+                if (i == -1) {
+                    break;
+                }
+                line = alltxt.substring(i, alltxt.indexOf("\n", i));
+                temp += "/" + line.substring(line.indexOf("=") + 2).trim();             //add all civs
             }
-            line = alltxt.substring(i, alltxt.indexOf("\n", i));
-            temp += "/" + line.substring(line.indexOf("=") + 2).trim();             //add all civs
         }
-        }
-        
+
         details += makeXmlLine("Civilization", temp);                            //finish adding civs, already gone to next line          
         details += makeXmlLine("Cost", getAttr("cost", alltxt));   //add cost
         details += makeXmlLine("Type", getAttr("type", alltxt));                //add type
