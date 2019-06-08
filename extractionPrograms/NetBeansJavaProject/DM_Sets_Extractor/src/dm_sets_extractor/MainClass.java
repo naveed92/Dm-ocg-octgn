@@ -26,7 +26,6 @@ public class MainClass {
                     System.out.println("Extraction cancelled.");
                     break;
             }
-            //extractor.extractSet("", false); //optional to put the set name here. Exactly the address as it shows in the wikia url of the page.
 
         } catch (Exception e) {
             e.printStackTrace();
