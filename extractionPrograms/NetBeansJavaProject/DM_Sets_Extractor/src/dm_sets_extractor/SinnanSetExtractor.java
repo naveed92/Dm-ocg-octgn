@@ -45,12 +45,12 @@ public class SinnanSetExtractor {
             chooser.setDialogTitle("Select folder to put extracted images in");
             chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
             chooser.setAcceptAllFileFilterUsed(false);
-                
+
             if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
                 imagePath = chooser.getSelectedFile().toString();
-                System.out.println("Trying to create folder " + imagePath + "\\" + setName.substring(0,6));
+                System.out.println("Trying to create folder " + imagePath + "\\" + setName.substring(0, 6));
 
-                if (new File(imagePath + "\\" + setName.substring(0,6)).mkdirs()) {
+                if (new File(imagePath + "\\" + setName.substring(0, 6)).mkdirs()) {
                     System.out.println("Folder made");
                 } else {
                     System.out.println("Failed to make folder!");
@@ -353,8 +353,21 @@ public class SinnanSetExtractor {
      * @return
      */
     String extract(String cardName, String setName, boolean extractImage) throws Exception {
-        URL page = new URL("https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + cardName);
-        System.out.println("URL Check GO");
+        //NEED TO ENCODE URL
+        String url = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=";
+        //url += java.net.URLEncoder.encode(cardName, "UTF-8");
+
+        for (int i = 0; i < cardName.length(); i++) {
+            char ch=cardName.charAt(i);
+            if (ch > 256) {  //check if it's not ASCII, needs to be URL encoded in that case
+                url += java.net.URLEncoder.encode(""+ch, "UTF-8");
+            }
+            else url +=ch;
+        }
+
+        URL page = new URL(url);
+
+        System.out.println("URL Check GO\n" + page.toString());
 
         BufferedReader in = new BufferedReader(new InputStreamReader(page.openStream()));
         String line, details = "\t\t<card ", alltxt = "";
@@ -363,11 +376,11 @@ public class SinnanSetExtractor {
         while ((line = in.readLine()) != null) {
             alltxt += line + "\n";          //put all the card details in alltxt
         }
-        i = alltxt.indexOf("image = "); //careful!!! Might not be there on page
-        if(i==-1){
+        i = alltxt.indexOf("image = "); //careful!!! Might not be there on page if page is bad/erronous
+        if (i == -1) {
             System.out.println("ERROR! Bad card page!");
             throw new Exception("Bad card page!!!");
-            
+
         }
         cardName = cardName.replace("\"", "\'");
         //all double quotes in teh card name will be changed to single quotes
@@ -379,15 +392,15 @@ public class SinnanSetExtractor {
         if (extractImage) {
             System.out.println("Image processing started...");
             String card = alltxt.substring(i + 8, alltxt.indexOf("\n", i));        //get the wikia image filename!!
-            try{
-            String image = "http://duelmasters.wikia.com/wiki/File:" + card;
-            //the wikia address of the image, not the actual one. Gotta convert it to the actual url.
-            String imgUrl = new ImageExtractor().extractImageUrl(image); //converted
-            System.out.println("Real image url is:" + imgUrl);
-            Image pic = ImageIO.read(new URL(imgUrl));
-            System.out.println("Saving image in " + imagePath + "\\" + setName + "\\");
-            ImageIO.write((RenderedImage) pic, "jpg", new File(imagePath + "\\" + setName + "\\" + id + ".jpg"));
-            }catch(Exception e){
+            try {
+                String image = "http://duelmasters.wikia.com/wiki/File:" + card;
+                //the wikia address of the image, not the actual one. Gotta convert it to the actual url.
+                String imgUrl = new ImageExtractor().extractImageUrl(image); //converted
+                System.out.println("Real image url is:" + imgUrl);
+                Image pic = ImageIO.read(new URL(imgUrl));
+                System.out.println("Saving image in " + imagePath + "\\" + setName + "\\");
+                ImageIO.write((RenderedImage) pic, "jpg", new File(imagePath + "\\" + setName + "\\" + id + ".jpg"));
+            } catch (Exception e) {
                 System.out.println("ERROR! during image extraction for the card! You may need to get the image manually!");
             }
         }
