@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 import java.util.UUID;
 import javax.imageio.ImageIO;
 import javax.swing.JFileChooser;
-// GOTTA FIX FOR PSYCHICS -  MANA COST IS NOW "PSYCHIC COST"
+// GOTTA FIX FOR PSYCHICS -  MANA COST IS NOW "PSYCHIC COST"(wait in wikia or data?)
 //For extracting images make folder F:\Duel\ImageExtraction\<setname> to put images into
 //please change http to https in the other files
 
@@ -25,8 +25,9 @@ public class SinnanSetExtractor {
      * Asks for a set url to extract data of every card in the set
      */
     private String formatToAdd = "OCG";  // the format to add for the set
-    private String imagePath = "C:\\Users\\user\\Desktop\\Test";  //default path. This folder MUST exist when testing individual card image extaction.
+    private String dataPath = "C:\\Users\\user\\Desktop\\Test";  //default path. This folder MUST exist when testing individual card image extaction.
     // During set extration the program will ask you for that path and make a folder.
+    // private String imagePath = "C:\\Users\\user\\Desktop\\Test\\images";
 
     void extractSet(String setName, boolean extractImages) throws Exception {
 
@@ -38,34 +39,37 @@ public class SinnanSetExtractor {
         String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + setName;
         //this query gets all the names of the cards in the set by querying the wikia 
         System.out.println(setLink);
+/////////////////////make folder to put data and, optionally, images
 
-        if (extractImages) {
-            JFileChooser chooser = new JFileChooser();
-            chooser.setCurrentDirectory(new java.io.File("."));
-            chooser.setDialogTitle("Select folder to put extracted images in");
-            chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-            chooser.setAcceptAllFileFilterUsed(false);
+        JFileChooser chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new java.io.File("."));
+        chooser.setDialogTitle("Select folder to put extracted data and images in");
+        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        chooser.setAcceptAllFileFilterUsed(false);
 
-            if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-                imagePath = chooser.getSelectedFile().toString();
-                System.out.println("Trying to create folder " + imagePath + "\\" + setName.substring(0, 6));
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+            dataPath = chooser.getSelectedFile().toString();
+            System.out.println("Trying to create folder " + dataPath + "\\" + setName.substring(0, 6));
 
-                if (new File(imagePath + "\\" + setName.substring(0, 6)).mkdirs()) {
-                    System.out.println("Folder made");
-                } else {
-                    System.out.println("Failed to make folder!");
+            if (new File(dataPath + "\\" + setName.substring(0, 6)).mkdirs()) {
+                System.out.println("Folder made");
+                if (extractImages) {
+                    new File(dataPath + "\\" + setName.substring(0, 6) + "\\Images").mkdirs();
                 }
-
             } else {
-                System.out.println("Cancelled!");
-                Exception e = new Exception("Operation cancelled by user!");
-                throw e;
-
+                System.out.println("Failed to make folder!");
             }
+
+        } else {
+            System.out.println("Cancelled!");
+            Exception e = new Exception("Operation cancelled by user!");
+            throw e;
+
         }
 
         String setFileName = setName.substring(0, 6);
-        String filename = setFileName + "Data.xml";
+
+        String filename = dataPath + "\\" + setFileName + "\\" + setFileName + "Data.xml";
         // String filename = "TestData.txt";
         String details;
         UUID setId = UUID.randomUUID();
@@ -103,6 +107,7 @@ public class SinnanSetExtractor {
 
             //in = new BufferedReader(new FileReader("F:/Duel/api.php"));
             filewr = new PrintWriter(filename, "UTF-8");
+            System.out.println("File is " + filename);
 
             filewr.println(xmlText);
             System.out.println(xmlText);
@@ -116,7 +121,6 @@ public class SinnanSetExtractor {
                     break;
                 }
             }
-            //System.out.println("OK2");
             //one line will be skipped, though no probs
             while (!((line = in.readLine()) == null || line.contains("==Cycles==") || line.contains("==Gallery==") || line.contains("[[Category:") || line.contains("==Contents sorted by Civilizations=="))) {
                 if (line.contains("[[") && line.contains("]]")) {
@@ -207,6 +211,7 @@ public class SinnanSetExtractor {
             try {
                 in.close();
                 filewr.close();
+                System.out.println("Set data save to file " + filename);
 
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -358,15 +363,15 @@ public class SinnanSetExtractor {
         //url += java.net.URLEncoder.encode(cardName, "UTF-8");
 
         for (int i = 0; i < cardName.length(); i++) {
-            char ch=cardName.charAt(i);
+            char ch = cardName.charAt(i);
             if (ch > 256) {  //check if it's not ASCII, needs to be URL encoded in that case
-                url += java.net.URLEncoder.encode(""+ch, "UTF-8");
+                url += java.net.URLEncoder.encode("" + ch, "UTF-8");
+            } else {
+                url += ch;
             }
-            else url +=ch;
         }
 
         URL page = new URL(url);
-
         System.out.println("URL Check GO\n" + page.toString());
 
         BufferedReader in = new BufferedReader(new InputStreamReader(page.openStream()));
@@ -398,8 +403,8 @@ public class SinnanSetExtractor {
                 String imgUrl = new ImageExtractor().extractImageUrl(image); //converted
                 System.out.println("Real image url is:" + imgUrl);
                 Image pic = ImageIO.read(new URL(imgUrl));
-                System.out.println("Saving image in " + imagePath + "\\" + setName + "\\");
-                ImageIO.write((RenderedImage) pic, "jpg", new File(imagePath + "\\" + setName + "\\" + id + ".jpg"));
+                System.out.println("Saving image in " + dataPath + "\\" + setName + "\\images\\");
+                ImageIO.write((RenderedImage) pic, "jpg", new File(dataPath + "\\" + setName + "\\images\\" + id + ".jpg"));
             } catch (Exception e) {
                 System.out.println("ERROR! during image extraction for the card! You may need to get the image manually!");
             }
