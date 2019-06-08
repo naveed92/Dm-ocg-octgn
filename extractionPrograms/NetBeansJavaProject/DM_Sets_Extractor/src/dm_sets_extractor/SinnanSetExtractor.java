@@ -25,7 +25,8 @@ public class SinnanSetExtractor {
      * Asks for a set url to extract data of every card in the set
      */
     private String formatToAdd = "OCG";  // the format to add for the set
-    private String imagePath = "";
+    private String imagePath = "C:\\Users\\user\\Desktop\\Test";  //default path. This folder MUST exist when testing individual card image extaction.
+    // During set extration the program will ask you for that path and make a folder.
 
     void extractSet(String setName, boolean extractImages) throws Exception {
 
@@ -362,8 +363,12 @@ public class SinnanSetExtractor {
         while ((line = in.readLine()) != null) {
             alltxt += line + "\n";          //put all the card details in alltxt
         }
-        i = alltxt.indexOf("image = ");
-
+        i = alltxt.indexOf("image = "); //careful!!! Might not be there on page
+        if(i==-1){
+            System.out.println("ERROR! Bad card page!");
+            throw new Exception("Bad card page!!!");
+            
+        }
         cardName = cardName.replace("\"", "\'");
         //all double quotes in teh card name will be changed to single quotes
         //for example Lionel,_Zenith_of_"Ore" ---> Lionel,_Zenith_of_'Ore'
@@ -374,7 +379,7 @@ public class SinnanSetExtractor {
         if (extractImage) {
             System.out.println("Image processing started...");
             String card = alltxt.substring(i + 8, alltxt.indexOf("\n", i));        //get the wikia image filename!!
-
+            try{
             String image = "http://duelmasters.wikia.com/wiki/File:" + card;
             //the wikia address of the image, not the actual one. Gotta convert it to the actual url.
             String imgUrl = new ImageExtractor().extractImageUrl(image); //converted
@@ -382,6 +387,9 @@ public class SinnanSetExtractor {
             Image pic = ImageIO.read(new URL(imgUrl));
             System.out.println("Saving image in " + imagePath + "\\" + setName + "\\");
             ImageIO.write((RenderedImage) pic, "jpg", new File(imagePath + "\\" + setName + "\\" + id + ".jpg"));
+            }catch(Exception e){
+                System.out.println("ERROR! during image extraction for the card! You may need to get the image manually!");
+            }
         }
 ////////////////////////////////// Details processing ////////////////////////////
         System.out.println("Details processing started...");
@@ -392,7 +400,7 @@ public class SinnanSetExtractor {
         i = alltxt.indexOf("civilization = ");
         String temp;
         if (i == -1) {
-            System.out.println("ERROR! Civilization not found!! Assuming card is colorless. Please do a manual check.");
+            System.out.println("Civilization not found!! Assuming card is colorless. Someting might be wron with the card page, please do a manual check.");
             temp = "Zero";
         } else {
             line = alltxt.substring(i, alltxt.indexOf("\n", i));
