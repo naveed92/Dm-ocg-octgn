@@ -298,7 +298,7 @@ public class SinnanSetExtractor {
                     content += "(Whenever one of your " + atkType + "s attack, you may cast this for no cost.)";
                     break;
                 case "Gravity Zero":
-                    System.out.println("HERHERHEHR");
+                    System.out.println("WARNING: GravityZero encountered! Please check if the effect was donre correctly!");
                     int st2 = content.lastIndexOf('|');
                     String cond = removeBraces(content.substring(st2 + 1));
                     String type = content.substring(st + 1, st2);
@@ -316,6 +316,13 @@ public class SinnanSetExtractor {
                             content += "you may play this card for no cost.";
                     }
                     break;
+                    case "Doron Go":
+                    System.out.println("WARNING: Doron GO encountered! Please check if the effect was donre correctly!");
+                    content = content.replace("|", "- ");
+                    String doronName = content.substring(content.indexOf("- ") + 2);
+                    content += "(When this creature is destroyed, you may put an exile creature that has '"+doronName+"' in its name from your hand into the battle zone)";
+                    break;
+                    
                 default:
                     content = effect;
             }

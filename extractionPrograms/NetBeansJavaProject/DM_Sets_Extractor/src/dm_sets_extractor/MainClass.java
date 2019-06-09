@@ -1,11 +1,5 @@
 package dm_sets_extractor;
 
-import java.awt.Image;
-import java.awt.image.RenderedImage;
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 
 public class MainClass {
