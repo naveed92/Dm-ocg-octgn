@@ -316,13 +316,13 @@ public class SinnanSetExtractor {
                             content += "you may play this card for no cost.";
                     }
                     break;
-                    case "Doron Go":
+                case "Doron Go":
                     System.out.println("WARNING: Doron GO encountered! Please check if the effect was donre correctly!");
                     content = content.replace("|", "- ");
                     String doronName = content.substring(content.indexOf("- ") + 2);
-                    content += "(When this creature is destroyed, you may put an exile creature that has '"+doronName+"' in its name from your hand into the battle zone)";
+                    content += "(When this creature is destroyed, you may put an exile creature that has '" + doronName + "' in its name from your hand into the battle zone)";
                     break;
-                    
+
                 default:
                     content = effect;
             }
@@ -517,4 +517,71 @@ public class SinnanSetExtractor {
         return details.replace("''", " ");
     }
 
+    void setDataPath(String setName, boolean extractImages) throws Exception {
+
+        JFileChooser chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new java.io.File("."));
+        chooser.setDialogTitle("Select folder to put extracted data and images in");
+        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        chooser.setAcceptAllFileFilterUsed(false);
+
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+            dataPath = chooser.getSelectedFile().toString();
+            System.out.println("Trying to create folder " + dataPath + "\\" + setName.substring(0, 6));
+
+            if (new File(dataPath + "\\" + setName.substring(0, 6)).mkdirs()) {
+                System.out.println("Folder made");
+                if (extractImages) {
+                    new File(dataPath + "\\" + setName.substring(0, 6) + "\\Images").mkdirs();
+                }
+            } else {
+                System.out.println("Failed to make folder!");
+            }
+
+        } else {
+            System.out.println("Cancelled!");
+            Exception e = new Exception("Operation cancelled by user!");
+            throw e;
+
+        }
+
+    }
+
+    void writeDataToFile(String setName, String data) throws Exception {
+
+        String setFileName = setName + "_";
+        String filename = dataPath+"\\"+setFileName.substring(0, 6)+"\\"+setFileName.substring(0, 6)+"_Data.xml";
+
+        UUID setId = UUID.randomUUID();
+
+        String xmlText = "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n"
+                + "<set xmlns:noNamespaceSchemaLocation=\"CardSet.xsd\" name=\"" + setName.replace("_", " ")
+                + "\" id=\"" + setId + "\" gameId=\"bb784fc6-fe21-4603-90d7-82c049908a74\" gameVersion=\"3.0.0.0\" version=\"2.0.0.0\">\n"
+                + "	<packaging>\n"
+                + "		<pack name=\"Booster\" id=\"" + UUID.randomUUID() + "\">\n"
+                + "			<options>\n"
+                + "				<option probability=\"0.083\">\n"
+                + "					<pick qty=\"1\" key=\"Rarity\" value=\"Super Rare\" />\n"
+                + "					<pick qty=\"5\" key=\"Rarity\" value=\"Common\" />\n"
+                + "				</option>\n"
+                + "				<option probability=\"0.250\">\n"
+                + "					<pick qty=\"1\" key=\"Rarity\" value=\"Very Rare\" />\n"
+                + "					<pick qty=\"5\" key=\"Rarity\" value=\"Common\" />\n"
+                + "				</option>\n"
+                + "				<option probability=\"0.667\">\n"
+                + "					<pick qty=\"6\" key=\"Rarity\" value=\"Common\" />\n"
+                + "				</option>\n"
+                + "			</options>\n"
+                + "			<pick qty=\"1\" key=\"Rarity\" value=\"Rare\" />\n"
+                + "			<pick qty=\"3\" key=\"Rarity\" value=\"Uncommon\"/>\n"
+                + "		</pack>\n"
+                + "	</packaging>\n"
+                + "	<cards>";
+        PrintWriter filewr = new PrintWriter(filename, "UTF-8");
+        System.out.println("File is " + filename);
+
+        filewr.println(xmlText+"\n"+data);
+        
+        filewr.close();
+    }
 }
