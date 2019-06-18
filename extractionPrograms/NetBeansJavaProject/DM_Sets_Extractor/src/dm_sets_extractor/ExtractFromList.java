@@ -30,7 +30,10 @@ public class ExtractFromList {
                     System.out.println(cardName);
                     String cardData = extractor.extract(cardName, setName, extractImages);
 
-                    data += cardData + "\t\t</card>\n";
+                    data += cardData
+                            + "\t\t<property name=\"Rarity\" value=\"Promotional\" />\n"
+                            + "\t\t<property name=\"Number\" value=\"None\" />"
+                            + "\t\t</card>\n";
                     System.out.println(cardData);
 
                     cardName = br.readLine(); //next card or null if file end reached
@@ -41,7 +44,7 @@ public class ExtractFromList {
                 extractor.writeDataToFile(setName, data);
 
                 br.close();
-                
+
             } else {
                 System.out.println("Cancelled!");
             }
