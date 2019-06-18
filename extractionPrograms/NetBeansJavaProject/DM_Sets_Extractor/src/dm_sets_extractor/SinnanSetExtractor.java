@@ -520,7 +520,7 @@ public class SinnanSetExtractor {
     void setDataPath(String setName, boolean extractImages) throws Exception {
 
         JFileChooser chooser = new JFileChooser();
-        chooser.setCurrentDirectory(new java.io.File("."));
+        //chooser.setCurrentDirectory(new java.io.File("."));
         chooser.setDialogTitle("Select folder to put extracted data and images in");
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         chooser.setAcceptAllFileFilterUsed(false);
