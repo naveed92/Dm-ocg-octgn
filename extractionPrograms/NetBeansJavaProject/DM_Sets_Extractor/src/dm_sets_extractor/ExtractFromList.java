@@ -8,7 +8,9 @@ public class ExtractFromList {
     public static void main(String args[]) {
 
         String setName = "E3_Promos";
-        boolean extractImages = false;
+        boolean extractImages = true;
+        
+        setName = setName.substring(0,6);
         try {
             SinnanSetExtractor extractor = new SinnanSetExtractor();
             System.out.println("Selecting file...");
