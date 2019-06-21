@@ -43,7 +43,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="11000+" />
-			<property name="Rules" value="Speed attacker Double breaker&#xd;&#xa; When you put this creature into the battle zone, this creature can attack untapped creatures until the end of the turn.&#xd;&#xa; Whenever this creature wins a battle, break a shield. &#xd;&#xa; Infinity Power Attacker  (While attacking, this creature has infinite power.) &#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Kung Fu' in their name into the battle zone." />
+			<property name="Rules" value="Speed attacker    Double breaker&#xd;&#xa; When you put this creature into the battle zone, it can attack untapped creatures until the end of the turn.&#xd;&#xa;Whenever this creature wins a battle, break a shield.&#xd;&#xa;Infinity Power Attacker(While attacking, this creature has infinite power.)&#xd;&#xa;Doron Go - 'Kung Fu' &#xd;&#xa;You can't put other exile creatures that have 'Kung Fu' in their name into the battle zone." />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V2" />
 		</card>
@@ -103,7 +103,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value="When you put this creature into the battle zone, your opponent discards a card at random from his hand. &#xd;&#xa; Whenever your opponent puts a card from his hand or battle zone into his graveyard, you may draw a card. &#xd;&#xa;Double breaker &#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Blues' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature into the battle zone, your opponent discards a card at random from his hand. &#xd;&#xa;Whenever your opponent puts a card from his hand or battle zone into his graveyard, you may draw a card.&#xd;&#xa;Doron Go - 'Blues'&#xd;&#xa;You can't put other exile creatures that have 'Blues' in their name into the battle zone.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S5" />
 		</card>
@@ -127,7 +127,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Red Command Dragon/Hunter" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value="Whenever one of your Dragons attack, choose one of your opponent's shields and put it into its owner's graveyard. &#xd;&#xa;Double breaker&#xd;&#xa; When you would lose the game, or your opponent would win the game, destroy this creature instead.&#xd;&#xa; When this creature is destroyed, this turn, you can't lose the game and your opponent can't win." />
+			<property name="Rules" value="Whenever one of your Dragons attack, put one of your opponent's shields into its owner's graveyard.&#xd;&#xa;When you would lose the game, or your opponent would win the game, destroy this creature instead.&#xd;&#xa;When this creature is destroyed, this turn, you can't lose the game and your opponent can't win.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S7" />
 		</card>
@@ -151,7 +151,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value="When you put this creature into the battle zone, reveal the top 5 cards of your deck. Put any number of Outrage from them into your hand, and put the rest on the bottom of your deck in any order. &#xd;&#xa; Double breaker&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Horn' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature into the battle zone, reveal the top 5 cards of your deck. Put any number of Outrage from them into your hand, and put the rest on the bottom of your deck in any order. &#xd;&#xa;Doron Go - 'Horn'&#xd;&#xa; You can't put other exile creatures that have 'Horn' in their name into the battle zone.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S9" />
 		</card>
@@ -163,7 +163,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="14000" />
-			<property name="Rules" value="Guardman&#xd;&#xa; Whenever one of your other creatures that has 'Guardman' battles your opponent's creatures, you may have them battle this creature instead. &#xd;&#xa;Triple breaker" />
+			<property name="Rules" value="Guardman(When one of your other creatures is attacked, you may tap this creature. If you do, the attacking creature will attack this creature instead.)&#xd;&#xa; Whenever one of your other creatures that has 'Guardman' battles your opponent's creatures, you may have them battle this creature instead. &#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S10" />
 		</card>
@@ -175,7 +175,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova/Demon Command" />
 			<property name="Power" value="8000+" />
-			<property name="Rules" value="When you put this creature into the battle zone, you may put a colorless creature that costs 6 or less from your graveyard into the battle zone. &#xd;&#xa;Double breaker&#xd;&#xa;Right God Link" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may put a colorless creature that costs 6 or less from your graveyard into the battle zone.&#xd;&#xa;Right God Link(When you put this creature into the battle zone, you may may link this creature to a God that has Center or Left God Link. When the linked creature would leave the battle zone, choose one side instead.)&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="1" />
 		</card>
@@ -199,7 +199,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="11000" />
-			<property name="Rules" value="When you put this creature into the battle zone, look at the top 3 cards of your deck. Add one of them to your shields face down and put the rest into your hand.&#xd;&#xa; Double breaker&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Cosmo' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature into the battle zone, look at the top 3 cards of your deck. Add one of them to your shields face down and put the rest into your hand.&#xd;&#xa;Doron Go - 'Cosmo' &#xd;&#xa; You can't put other exile creatures that have 'Cosmo' in their name into the battle zone.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="3" />
 		</card>
@@ -223,7 +223,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="When you put this creature into the battle zone or whenever this creature attacks, you may draw a card or choose a creature in the battle zone and return it to its owner's hand.&#xd;&#xa;Double breaker&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Alchemy' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature into the battle zone or whenever this creature attacks, you may draw a card or choose a creature in the battle zone and return it to its owner's hand.&#xd;&#xa;Doron Go - 'Alchemy'&#xd;&#xa; You can't put other exile creatures that have 'Alchemy' in their name into the battle zone.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="5" />
 		</card>
@@ -259,7 +259,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Whenever this creature attacks for the first time each turn, untap this creature.&#xd;&#xa;Shield Go&#xd;&#xa; While this creature is face up in your shield zone, each of your creatures in the battle zone gets 'speed attacker'." />
+			<property name="Rules" value="Whenever this creature attacks for the first time each turn, untap this creature.&#xd;&#xa;Shield Go(When this creature is destroyed, put it face up into your shield zone. When this creature is face up and would leave your shield zone, put it into your graveyard instead.)&#xd;&#xa; While this creature is face up in your shield zone, each of your creatures in the battle zone gets 'speed attacker'." />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="8" />
 		</card>
@@ -451,7 +451,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="Double breaker &#xd;&#xa;&#xd;&#xa;Shield Go&#xd;&#xa; While this creature is face up in your shield zone, whenever your creatures attack, each of your opponent's creatures in the battle zone gets -1000 power until the end of the turn." />
+			<property name="Rules" value="Double breaker&#xd;&#xa;Shield Go(When this creature is destroyed, put it face up into your shield zone. When this is face up and would leave your shield zone, put it into your graveyard instead.)&#xd;&#xa; While this creature is face up in your shield zone, whenever your creatures attack, each of your opponent's creatures in the battle zone gets -1000 power until the end of the turn." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="24" />
 		</card>
@@ -535,7 +535,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Flame Command" />
 			<property name="Power" value="4000+" />
-			<property name="Rules" value="Guardman&#xd;&#xa; During your opponent's turn, this creature gets +4000 power while battling." />
+			<property name="Rules" value="Guardman(When one of your other creatures is attacked, you may tap this creature. If you do, the attacking creature will attack this creature instead.)&#xd;&#xa; During your opponent's turn, this creature gets +4000 power while battling." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="31" />
 		</card>
@@ -655,7 +655,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova/Earth Eater" />
 			<property name="Power" value="6000+" />
-			<property name="Rules" value="When you put this creature into the battle zone, or when this creature is linked with a God, you may draw a card. &#xd;&#xa;Double breaker&#xd;&#xa;Right God Link" />
+			<property name="Rules" value="When you put this creature into the battle zone, or when this creature is linked with a God, you may draw a card. &#xd;&#xa;Double breaker&#xd;&#xa;Right God Link(When you put this creature into the battle zone, you may may link this creature to a God that has Center or Left God Link. When the linked creature would leave the battle zone, choose one side instead.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="41" />
 		</card>
@@ -691,7 +691,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova/ Oracle" />
 			<property name="Power" value="5000+" />
-			<property name="Rules" value="Center God Link" />
+			<property name="Rules" value="Center God Link(When you put this creature or another God into the battle zone, you may unlink any number of your Gods. Then you may link this creature to a God that has 'Right God Link' and/or 'Left God Link'.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="44" />
 		</card>
@@ -703,7 +703,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Kourin" />
+			<property name="Rules" value="Kourin - At the end of each of your turns, if this creature is tapped, search your deck. You may put one of your Gods that costs 7 or less from among it into the battle zone. Then shuffle your deck." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="45" />
 		</card>
@@ -715,7 +715,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Double breaker&#xd;&#xa;Shield Saver&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Cosmo' in their name into the battle zone." />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Double breaker&#xd;&#xa;Shield Saver&#xd;&#xa;Doron Go - 'Cosmo'&#xd;&#xa; You can't put other exile creatures that have 'Cosmo' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="46" />
 		</card>
@@ -727,7 +727,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle/Arc Seraphim" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Kourin" />
+			<property name="Rules" value="Kourin - At the end of each of your turns, if this creature is tapped, search your deck. You may put one of your Arc Seraphims that costs 6 or less from among it into the battle zone. Then shuffle your deck." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="47" />
 		</card>
@@ -751,7 +751,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="500" />
-			<property name="Rules" value="When you put this creature into the battle zone, you may choose one of your opponent's creatures in the battle zone and tap it. &#xd;&#xa;Shield Go" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may choose one of your opponent's creatures in the battle zone and tap it. &#xd;&#xa;Shield Go(When this creature is destroyed, put it face up into your shield zone. When this creature is face up and would leave your shield zone, put it into your graveyard instead.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="49" />
 		</card>
@@ -760,7 +760,7 @@
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="4" />
-			<property name="Type" value=" Spell" />
+			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
 			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; This turn, your creatures win all battles." />
