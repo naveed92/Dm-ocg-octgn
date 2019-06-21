@@ -790,7 +790,7 @@
 			<property name="Rules" value="Kourin" />
 		<property name="Rarity" value="Promotional" />
 		<property name="Number" value="None" />		</card>
-		<card name="Oratulk, Familia%27s Prophecy" id="da2ab906-71b8-497a-a7eb-fc4eed70f682">
+		<card name="Oratulk, Familia's Prophecy" id="da2ab906-71b8-497a-a7eb-fc4eed70f682">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="1" />
@@ -1130,7 +1130,7 @@
 			<property name="Rules" value="Evolution—Put on one of your colorless creatures.&#xd;&#xa;Triple breaker&#xd;&#xa; Whenever one of your creatures would be destroyed, destroy one of your opponent's creatures.&#xd;&#xa; Whenever one of your shields would be broken, choose one of your opponent's shields. This creature breaks that shield.&#xd;&#xa;" />
 		<property name="Rarity" value="Promotional" />
 		<property name="Number" value="None" />		</card>
-		<card name="Sun Tzu, Satori%27s Art of War" id="323ac411-36ba-45c5-8cbf-9a1ccd0a3a6b">
+		<card name="Sun Tzu, Satori's Art of War" id="323ac411-36ba-45c5-8cbf-9a1ccd0a3a6b">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Zero" />
 			<property name="Cost" value="5" />
