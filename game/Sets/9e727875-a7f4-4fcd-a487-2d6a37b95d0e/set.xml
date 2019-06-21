@@ -3,20 +3,24 @@
 	<packaging>
 		<pack name="Booster" id="2eccf1ff-fcdf-46b3-a7ba-0426acde8ce6">
 			<options>
-				<option probability="0.083">
+				<option probability="0.100">
+					<pick qty="1" key="Rarity" value="Victory Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.100">
 					<pick qty="1" key="Rarity" value="Super Rare" />
-					<pick qty="5" key="Rarity" value="Common" />
+					<pick qty="2" key="Rarity" value="Common" />
 				</option>
-				<option probability="0.250">
+				<option probability="0.200">
 					<pick qty="1" key="Rarity" value="Very Rare" />
-					<pick qty="5" key="Rarity" value="Common" />
+					<pick qty="2" key="Rarity" value="Common" />
 				</option>
-				<option probability="0.667">
-					<pick qty="6" key="Rarity" value="Common" />
+				<option probability="0.600">
+					<pick qty="3" key="Rarity" value="Common" />
 				</option>
 			</options>
 			<pick qty="1" key="Rarity" value="Rare" />
-			<pick qty="3" key="Rarity" value="Uncommon"/>
+			<pick qty="1" key="Rarity" value="Uncommon" />
 		</pack>
 	</packaging>
 	<cards>

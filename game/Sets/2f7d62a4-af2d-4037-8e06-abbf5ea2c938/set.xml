@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-10 Episode 3: Dead & Beat " id="2f7d62a4-af2d-4037-8e06-abbf5ea2c938" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-10 Episode 3: Dead &amp; Beat" id="2f7d62a4-af2d-4037-8e06-abbf5ea2c938" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
 	<packaging>
 		<pack name="Booster" id="bb1c7de5-81ca-4805-9617-a07834c1496c">
 			<options>
-				<option probability="0.083">
+				<option probability="0.100">
+					<pick qty="1" key="Rarity" value="Victory Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.100">
 					<pick qty="1" key="Rarity" value="Super Rare" />
-					<pick qty="5" key="Rarity" value="Common" />
+					<pick qty="2" key="Rarity" value="Common" />
 				</option>
-				<option probability="0.250">
+				<option probability="0.200">
 					<pick qty="1" key="Rarity" value="Very Rare" />
-					<pick qty="5" key="Rarity" value="Common" />
+					<pick qty="2" key="Rarity" value="Common" />
 				</option>
-				<option probability="0.667">
-					<pick qty="6" key="Rarity" value="Common" />
+				<option probability="0.600">
+					<pick qty="3" key="Rarity" value="Common" />
 				</option>
 			</options>
 			<pick qty="1" key="Rarity" value="Rare" />
-			<pick qty="3" key="Rarity" value="Uncommon"/>
+			<pick qty="1" key="Rarity" value="Uncommon" />
 		</pack>
 	</packaging>
 	<cards>
