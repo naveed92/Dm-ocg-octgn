@@ -3,24 +3,20 @@
 	<packaging>
 		<pack name="Booster" id="2eccf1ff-fcdf-46b3-a7ba-0426acde8ce6">
 			<options>
-				<option probability="0.100">
-					<pick qty="1" key="Rarity" value="Victory Rare" />
-					<pick qty="2" key="Rarity" value="Common" />
-				</option>
-				<option probability="0.100">
+				<option probability="0.083">
 					<pick qty="1" key="Rarity" value="Super Rare" />
-					<pick qty="2" key="Rarity" value="Common" />
+					<pick qty="5" key="Rarity" value="Common" />
 				</option>
-				<option probability="0.200">
+				<option probability="0.250">
 					<pick qty="1" key="Rarity" value="Very Rare" />
-					<pick qty="2" key="Rarity" value="Common" />
+					<pick qty="5" key="Rarity" value="Common" />
 				</option>
-				<option probability="0.600">
-					<pick qty="3" key="Rarity" value="Common" />
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
 				</option>
 			</options>
 			<pick qty="1" key="Rarity" value="Rare" />
-			<pick qty="1" key="Rarity" value="Uncommon" />
+			<pick qty="3" key="Rarity" value="Uncommon"/>
 		</pack>
 	</packaging>
 	<cards>
@@ -43,7 +39,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage OMG" />
 			<property name="Power" value="13000+" />
-			<property name="Rules" value="Climax Doron Go: When one of your fire exile creatures that costs 7 or more is destroyed, you may put this exile creature from your hand into the battle zone.&#xd;&#xa; You can't put other exile creatures that have   Katsumugen, Climax   in their name into the battle zone.&#xd;&#xa; When a card leaves or is put into your opponent's shield zone, choose one of your opponent's creatures in the battle zone. That creature and this creature battle.&#xd;&#xa; While battling with Gods, this creature gets infinite power.&#xd;&#xa;Triple breaker" />
+			<property name="Rules" value="Climax Doron Go: When one of your fire exile creatures that costs 7 or more is destroyed, you may put this  creature from your hand in battle zone.&#xd;&#xa; You can't put other exile creatures that have   Katsumugen, Climax   in their name in  battle zone.&#xd;&#xa; When a card leaves or is put in  opponent's shield zone, choose one of your opponent's creatures in the battle zone. That creature and this creature battle.&#xd;&#xa; While battling with Gods, this creature gets infinite power.&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V2" />
 		</card>
@@ -79,7 +75,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value="Whenever this creature attacks, choose one of your opponent's creatures in the battle zone. That creature loses infinite power until the end of the turn.  (A creature that has power 0 or less is destroyed.) .&#xd;&#xa;Double breaker&#xd;&#xa; Ultra Doron Go: When this creature leaves the battle zone, you may put an exile creature that has 'Dance' in its name from your hand into the battle zone. &#xd;&#xa; You can't put other exile creatures that have 'Dance' in their name into the battle zone." />
+			<property name="Rules" value="Whenever this creature attacks, choose one of your opponent's creatures. That creature loses infinite power until the end of the turn.&#xd;&#xa; Ultra Doron Go:When this creature leaves the battle zone, you may put an exile creature that has 'Dance' in its name from your hand into the battle zone.. &#xd;&#xa; You can't put other exile creatures that have 'Dance' in their name into the battle zone.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S3" />
 		</card>
@@ -163,7 +159,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="11000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, you may draw a card for each of your exile creatures in the battle zone.&#xd;&#xa; Double breaker&#xd;&#xa; Trio Doron Go: When this creature is destroyed, you may put any number of exile creatures that have a different name that has 'Friends' in its name from your hand into the battle zone. &#xd;&#xa; You can't put other exile creatures that have 'Robin Mikeran Global, Friends Power' in their name into the battle zone." />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature in battle zone,you may draw a card for each of your exile creatures in battle zone.&#xd;&#xa; Trio Doron Go: When this creature is destroyed,you may put any number of exile creatures that have a different name but has 'Friends' in  name from your hand in battle zone. &#xd;&#xa; You can't put other exile creatures that have 'Robin Mikeran Global, Friends Power' in their name into the battle zone.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="5" />
 		</card>
@@ -415,7 +411,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="1000" />
-			<property name="Rules" value="Whenever this creature attacks, choose one of your opponent's creatures in the battle zone. That creature gets -3000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) &#xd;&#xa; Ultra Doron Go: When this creature leaves the battle zone, you may put an exile creature that has 'Dance' in its name from your hand into the battle zone. &#xd;&#xa; You can't put other exile creatures that have 'Dance' in their name into the battle zone." />
+			<property name="Rules" value="When this creature attacks, choose one of your opponent's creatures in battle zone.It gets -3000 power until the end of the turn.&#xd;&#xa; Ultra Doron Go:When this creature leaves the battle zone, you may put an exile creature that has 'Dance' in  name from your hand in battle zone. &#xd;&#xa; You can't put other exile creatures that have 'Dance' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="26" />
 		</card>
@@ -439,7 +435,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="Climax Doron Go: When one of your exile creatures is destroyed, you may put this creature from your hand into the battle zone.&#xd;&#xa; You can't put other exile creatures that have  'Katsudon DASH, God Eater ' in their name into the battle zone.&#xd;&#xa;Speed attacker&#xd;&#xa; When this creature is destroyed, unlink all Gods." />
+			<property name="Rules" value="Climax Doron Go: When one of your exile creatures is destroyed, you may put this creature from your hand into the battle zone.&#xd;&#xa; You can't put other exile creatures that have  'Katsudon DASH, God Eater ' in their name into the battle zone.&#xd;&#xa; When this creature is destroyed, unlink all Gods.&#xd;&#xa;Speed attacker" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="28" />
 		</card>
@@ -631,7 +627,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value="Choose one of the following. If you have an exile creature in the battle zone, you may choose both.:► Choose one of your opponent's creatures in the battle zone. That creature gets -3000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) :► Each of your opponent's creatures in the battle zone gets -1000 power until the end of the turn." />
+			<property name="Rules" value="Choose one of the following. If you have an exile creature in the battle zone, you may choose both.:► Choose one of your opponent's creatures in the battle zone. That creature gets -3000 power until the end of the turn. :► Each of your opponent's creatures in the battle zone gets -1000 power until the end of the turn." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="44" />
 		</card>
