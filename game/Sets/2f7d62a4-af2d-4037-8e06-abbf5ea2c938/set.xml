@@ -43,7 +43,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Speed attacker&#xd;&#xa; Whenever this creature attacks, you may put the top card of your deck into your graveyard. If that card is a non-evolution Outrage, put it into the battle zone.&#xd;&#xa;Double breaker&#xd;&#xa; Your opponent's spells cost infinite mana to cast." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa;Speed attacker&#xd;&#xa; Whenever this creature attacks, you may put the top card of your deck into your graveyard. If that card is a non-evolution Outrage, put it into the battle zone.&#xd;&#xa;Double breaker&#xd;&#xa; Your opponent's spells cost infinite mana to cast." />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V2" />
 		</card>
@@ -79,7 +79,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle/King Command Dragon/Unknown" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value="When you put this creature into the battle zone, or whenever this creature attacks, your opponent reveals the top card of his deck. If it's a spell, cast it for no cost and put it into his graveyard. Then, reveal the top card of your deck. If its a spell, you may cast it for no cost. Then, for each non-spell revealed this way, you may draw a card. &#xd;&#xa;Triple breaker" />
+			<property name="Rules" value="When you put this creature into the battle zone, or when it attacks, both players reveal the top card of their decks. If the opponent's card is a spell, cast it for no cost and put it into his graveyard. Then, if your card is a spell, you may cast it for no cost. For each non-spell revealed this way, you may draw a card. &#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S3" />
 		</card>
@@ -151,7 +151,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever this creature attacks, your Outrage can't be blocked this turn and your opponent discards 2 cards at random from his hand. &#xd;&#xa;Double breaker&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Majikkuma Taki' in their name into the battle zone." />
+			<property name="Rules" value="Whenever this creature attacks, your Outrage can't be blocked this turn and your opponent discards 2 cards at random from his hand.&#xd;&#xa; Double breaker&#xd;&#xa; Doron Go - 'Byte' or 'Hell'&#xd;&#xa;You can't put other exile creatures that have 'Majikkuma Taki' in their name into the battle zone." />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4" />
 		</card>
@@ -199,7 +199,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="{BLOCKER} Double breaker &#xd;&#xa;&#xd;&#xa;Shield Go&#xd;&#xa; While this card is face up in your shield zone, each of your creatures in the battle zone gets 'Shield Saver'.  (When one of your shields would break, you may destroy one of your creatures that has 'Shield Saver' instead.) " />
+			<property name="Rules" value="{BLOCKER}     Double breaker&#xd;&#xa;Shield Go&#xd;&#xa; While this card is face up in your shield zone, each of your creatures in the battle zone gets 'Shield Saver'." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="8" />
 		</card>
@@ -283,7 +283,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="35000" />
-			<property name="Rules" value="Infinity breaker" />
+			<property name="Rules" value="Infinity breaker(This creature can break any number of your opponent's shields.)" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="15" />
 		</card>
@@ -295,7 +295,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Guardman Double breaker &#xd;&#xa;&#xd;&#xa;Shield Go&#xd;&#xa; While this creature is face up in your shield zone, each of your opponent's creatures that have power 6000 or less attacks creatures if able." />
+			<property name="Rules" value="Guardman &#xd;&#xa;Double breaker &#xd;&#xa;Shield Go&#xd;&#xa; While this creature is face up in your shield zone, each of your opponent's creatures that have power 6000 or less attacks creatures if able." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="16" />
 		</card>
@@ -331,7 +331,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever this creature attacks, look at the top 2 cards of your deck. From among them, add one to your shields face down and put the other into your mana zone. &#xd;&#xa; Double breaker&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Shining Kinji' in their name into the battle zone." />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever this creature attacks, look at the top 2 cards of your deck. From among them, add one to your shields face down and put the other into your mana zone.&#xd;&#xa; Doron Go - 'Gonbuto' or 'Treasure'&#xd;&#xa;You can't put other exile creatures that have 'Shining Kinji' in their name into the battle zone.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="19" />
 		</card>
@@ -343,7 +343,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value="Gravity Zero-If you have a God in the battle zone, you may cast this spell for no cost.&#xd;&#xa; Choose one of your creatures in the battle zone. If it's a God, until the start of your next turn, when that creature would leave the battle zone, it stays in the battle zone instead. If it's not a God, until the start of your next turn, when that creature would be destroyed, it stays in the battle zone instead." />
+			<property name="Rules" value="Gravity Zero: If you have a God in the battle zone, you may cast this spell for no cost.&#xd;&#xa; Choose one of your creatures in the battle zone. If it's a God, until the start of your next turn, when leaving the battle zone, it stays in the battle zone instead. If it's not a God, until the start of your next turn, if it is destroyed, it stays in the battle zone instead." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="20" />
 		</card>
@@ -355,7 +355,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="3500" />
-			<property name="Rules" value="Whenever this creature attacks, you may add the top card of your deck to your shields face down. &#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Sunsun' in their name into the battle zone." />
+			<property name="Rules" value="Whenever this creature attacks, you may add the top card of your deck to your shields face down.&#xd;&#xa; Doron Go - 'Treasure'(When this creature is destroyed, you may put an exile creature that has 'Treasure' in its name from your hand into the battle zone)&#xd;&#xa; You can't put other exile creatures that have 'Sunsun' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="21" />
 		</card>
@@ -379,7 +379,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="3000" />
-			<property name="Rules" value="This creature can't be blocked. &#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Shizuku' in their name into the battle zone." />
+			<property name="Rules" value="This creature can't be blocked. &#xd;&#xa;Doron Go - 'Byte'(When this creature is destroyed, you may put an exile creature that has 'Byte' in its name from your hand into the battle zone)&#xd;&#xa; You can't put other exile creatures that have 'Shizuku' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="23" />
 		</card>
@@ -403,7 +403,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Whenever this creature attacks, your opponent discards a card from his hand.&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Kooman' in their name into the battle zone." />
+			<property name="Rules" value="Whenever this creature attacks, your opponent discards a card from his hand.&#xd;&#xa;Doron Go - 'Hell'(When this creature is destroyed, you may put an exile creature that has 'Hell' in its name from your hand into the battle zone)&#xd;&#xa; You can't put other exile creatures that have 'Kooman' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="25" />
 		</card>
@@ -451,7 +451,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Whenever this creature attacks, you may put the top card of your deck into your mana zone. &#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Kinjiro' in their name into the battle zone." />
+			<property name="Rules" value="Whenever this creature attacks, you may put the top card of your deck into your mana zone. &#xd;&#xa;Doron Go - 'Gonbuto'(When this creature is destroyed, you may put an exile creature that has 'Gonbuto' in its name from your hand into the battle zone)&#xd;&#xa; You can't put other exile creatures that have 'Kinjiro' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="29" />
 		</card>
@@ -475,7 +475,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle/Great Mecha King/Mecha Del Sol" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Double breaker &#xd;&#xa;Kourin" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Double breaker &#xd;&#xa;Kourin - At the end of each of your turns, if this creature is tapped, search your deck. You may put one of your Mecha Del Sol or Great Mecha Kings that costs 7 or less from among it into the battle zone. Then shuffle your deck." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="31" />
 		</card>
@@ -648,14 +648,14 @@
 			<property name="Number" value="45" />
 		</card>
 		
-		<card name="Katsudon I'll do it!" id="b41310cd-e0ff-4e1c-8fb9-a5297109920d">
+		<card name="Katsudon 「I'll do it!」" id="b41310cd-e0ff-4e1c-8fb9-a5297109920d">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value="4" />
-			<property name="Type" value="spell" />
+			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value=";{SHIELD TRIGGER}&#xd;&#xa;One of your creatures in the battle zone gets +1000 power until the end of the turn. Choose one of your opponent's creatures, those 2 creatures battle." />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;One of your creatures in the battle zone gets +1000 power until the end of the turn. Choose one of your opponent's creatures, those 2 creatures battle." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="46" />
 		</card>
@@ -679,7 +679,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Beast Folk" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Guardman&#xd;&#xa; When this creature would be destroyed, put it into your mana zone instead." />
+			<property name="Rules" value="Guardman(When one of your other creatures is attacked, you may tap this creature. If you do, the attacking creature will attack this creature instead.)&#xd;&#xa; When this creature would be destroyed, put it into your mana zone instead." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="48" />
 		</card>
@@ -763,7 +763,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human/Snow Faerie" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Guardman" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Guardman(When one of your other creatures is attacked, you may tap this creature. If you do, the attacking creature will attack this creature instead.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="55" />
 		</card>
