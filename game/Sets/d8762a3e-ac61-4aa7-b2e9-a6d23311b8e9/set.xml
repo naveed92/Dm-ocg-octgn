@@ -3,7 +3,11 @@
 	<packaging>
 		<pack name="Booster" id="06bc8aa6-5af1-4cb5-959f-a3f9dfc89382">
 			<options>
-				<option probability="0.100">
+				<option probability="0.030">
+					<pick qty="1" key="Rarity" value="Secret Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.070">
 					<pick qty="1" key="Rarity" value="Victory Rare" />
 					<pick qty="2" key="Rarity" value="Common" />
 				</option>
@@ -31,7 +35,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX/Oraclion" />
 			<property name="Power" value="14000" />
-			<property name="Rules" value="When you summon this creature into the battle zone or you put it into the battle zone by Doron Go, put all Oracles, Death Puppets and Outrages that cost 7 or less from your graveyard into the battle zone.&#xd;&#xa;Doron Go&#xd;&#xa;Triple breaker&#xd;&#xa; You can't put other exile creatures that have Shen in their name into the battle zone." />
+			<property name="Rules" value="When you summon this creature into the battle zone or you put it into the battle zone by Doron Go, put all Oracles, Death Puppets and Outrages that cost 7 or less from your graveyard into the battle zone.&#xd;&#xa; You can't put other exile creatures that have Shen in their name into the battle zone.&#xd;&#xa;Doron Go&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1" />
 		</card>
@@ -43,7 +47,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="15000" />
-			<property name="Rules" value="Speed attacker Triple breaker&#xd;&#xa; Whenever this creature attacks, you may put the top 3 cards of your deck into your graveyard. If you do, destroy any number of your opponent's creatures that has total cost the same as or less than those 3 cards. &#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Outrage Victory' in their name into the battle zone." />
+			<property name="Rules" value=" When this creature attacks,you may put the top 3 cards of your deck in your graveyard.Then,destroy any number of your opponent's creatures that has total cost the same as or less than those 3 cards. &#xd;&#xa; You can't put other exile creatures with 'Outrage Victory' in their name into the battle zone.&#xd;&#xa;Speed attacker&#xd;&#xa; Triple breaker&#xd;&#xa;Doron Go" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V2" />
 		</card>
@@ -103,7 +107,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Double breaker&#xd;&#xa; Burning Doron Go: When one of your creatures that has 'Testa Rossa' in its name is destroyed, you may put this creature from your hand into the battle zone. If you do, put the top 5 cards of your deck into your graveyard. Then put all non-exile creatures that have 'Testa Rossa' in its name from among them into the battle zone. Each of those creatures gets 'speed attacker'. At the end of each of your turns, put those creatures on the bottom of your deck in any order.&#xd;&#xa; You can't put other exile creatures that have 'Testa Rossa' in their name into the battle zone." />
+			<property name="Rules" value="&#xd;&#xa; Burning Doron Go: When one of your creatures that has 'Testa Rossa' in its name is destroyed, you may put this creature from your hand into the battle zone.Then, put the top 5 cards of your deck into your graveyard. Then put all non-exile creatures that have 'Testa Rossa' in its name from among them in battle zone.Those creatures get 'speed attacker'. At the end of each of your turns, put those creatures on the bottom of your deck in any order.&#xd;&#xa; You can't put other exile creatures with 'Testa Rossa' in their name in battle zone.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S5" />
 		</card>
@@ -139,7 +143,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova OMG/Angel Command" />
 			<property name="Power" value="7000+" />
-			<property name="Rules" value="Whenever this creature attacks, you may choose a spell in your opponent's graveyard and cast it for no cost. If you do, put that spell on the bottom of your opponent's deck.&#xd;&#xa;Double breaker&#xd;&#xa; Left God Link&#xd;&#xa; When this creature links with another God, you may put the top 2 cards of your opponent's deck into his graveyard." />
+			<property name="Rules" value="Whenever this creature attacks, you may choose a spell in your opponent's graveyard and cast it for no cost. If you do, put that spell on the bottom of your opponent's deck.&#xd;&#xa; When this creature links with another God, you may put the top 2 cards of your opponent's deck into his graveyard.&#xd;&#xa;Double breaker&#xd;&#xa; Left God Link" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="3" />
 		</card>
@@ -151,7 +155,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova OMG/Demon Command" />
 			<property name="Power" value="7000+" />
-			<property name="Rules" value="Whenever one of your opponent's creatures is destroyed, you may return a creature from your graveyard to your hand.&#xd;&#xa;Double breaker&#xd;&#xa; Right God Link&#xd;&#xa; When this creature is linked with a God, you may put the top 2 cards of your deck into your graveyard." />
+			<property name="Rules" value="Whenever one of your opponent's creatures is destroyed, you may return a creature from your graveyard to your hand.&#xd;&#xa; When this creature is linked with a God, you may put the top 2 cards of your deck into your graveyard.&#xd;&#xa;Double breaker&#xd;&#xa; Right God Link" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4" />
 		</card>
@@ -175,7 +179,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX/Oracle" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Whenever this creature attacks, you may put the top card of your deck into your graveyard. Then destroy one of your opponent's creatures that costs less than the number of cards in your graveyard.&#xd;&#xa; Double breaker&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have Shen in their name into the battle zone." />
+			<property name="Rules" value="Whenever this creature attacks, you may put the top card of your deck into your graveyard. Then destroy one of your opponent's creatures that costs less than the number of cards in your graveyard.&#xd;&#xa; You can't put other exile creatures that have Shen in their name into the battle zone.&#xd;&#xa; Double breaker&#xd;&#xa;Doron Go" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="6" />
 		</card>
@@ -187,7 +191,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value="Attack Chance—Creature that has Shen in its name  (When one your creatures that has Shen in its name attacks, you may cast this spell for no cost.) &#xd;&#xa; Choose one of your opponent's cards from the battle zone, his mana zone or his shields. If you have Ultra Knight Punk, Shentury in the battle zone, choose a card from each zone. Your opponent puts the chosen card(s) on the bottom of his deck in any order." />
+			<property name="Rules" value="Attack Chance—Creature that has Shen in its name &#xd;&#xa; Choose one of your opponent's cards from the battle zone, his mana zone or his shields. If you have Ultra Knight Punk, Shentury in the battle zone, choose a card from each zone. Your opponent puts the chosen card(s) on the bottom of his deck in any order." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="7" />
 		</card>
@@ -199,7 +203,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a card from your shields into your hand. Then add the top card of your deck to your shields face down.  (You can use the 'Shield Trigger' ability of that shield added to your hand in this way.)  &#xd;&#xa;Double breaker&#xd;&#xa; You can't put other exile creatures that have 'Miss Universe' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature in battle zone, put a card from your shields into your hand. Then add the top card of your deck to your shields .(You can use the 'Shield Trigger' ability of that shield added to your hand in this way.)  &#xd;&#xa; You can't put other exile creatures with 'Miss Universe' in their name in battle zone.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="8" />
 		</card>
@@ -259,7 +263,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value="When you put this creature into the battle zone or whenever this creature attacks, destroy one of your opponent's creatures that has power 3000 or less. Then, destroy one of your opponent's creatures that has 'blocker'. &#xd;&#xa; Double breaker&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Victorage' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature into the battle zone or when this creature attacks, destroy one of your opponent's creatures that has power 3000 or less. Then, destroy one of your opponent's creatures that has 'blocker'. &#xd;&#xa;You can't put other exile creatures with 'Victorage' in their name in battle zone.Double breaker&#xd;&#xa;Doron Go" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="13" />
 		</card>
@@ -415,7 +419,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Whenever your opponent puts a creature into the battle zone, if this creature is tapped, this creature and that creature battle.&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Victorage' in their name into the battle zone." />
+			<property name="Rules" value="Whenever your opponent puts a creature into the battle zone, if this creature is tapped, this creature and that creature battle.&#xd;&#xa; You can't put other exile creatures that have 'Victorage' in their name into the battle zone.&#xd;&#xa;Doron Go" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="26" />
 		</card>
@@ -715,7 +719,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle" />
 			<property name="Power" value="5500" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Gravity Zero-creature, you may play this card for no cost.&#xd;&#xa;{BLOCKER}&#xd;&#xa;&#xd;&#xa; This creature can't attack players.&#xd;&#xa; When this creature wins a battle, destroy it." />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) .&#xd;&#xa;{BLOCKER}&#xd;&#xa;Gravity Zero-If you have a God in the battle zone, you may summon this creature for no cost&#xd;&#xa; This creature can't attack players.&#xd;&#xa; When this creature wins a battle, destroy it." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="51" />
 		</card>
