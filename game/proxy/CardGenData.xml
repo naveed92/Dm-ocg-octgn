@@ -424,6 +424,12 @@
 					<link block="blocker" />
   				</if>
 			</conditional>
+			
+			 <conditional>
+				<if property="Rarity" contains="Victory">
+					<link block="vicZero" />
+  				</if>
+			</conditional>
 		</overlayblocks>
 		
 		<textblocks>
