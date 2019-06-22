@@ -387,7 +387,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Each of your creatures in the battle zone that have 'Friends' in their name can't be blocked. &#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Mechanko' in their name into the battle zone." />
+			<property name="Rules" value="Each of your creatures in the battle zone that have 'Friends' in their name can't be blocked. &#xd;&#xa;Doron Go-Robin&#xd;&#xa; You can't put other exile creatures that have 'Mechanko' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="24" />
 		</card>
@@ -507,7 +507,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="Each of your creatures in the battle zone that have 'Friends' in their name gets 'blocker'.&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Lovely' in their name into the battle zone." />
+			<property name="Rules" value="Each of your creatures in the battle zone that have 'Friends' in their name gets 'blocker'.&#xd;&#xa;Doron Go-Michaelan&#xd;&#xa; You can't put other exile creatures that have 'Lovely' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="34" />
 		</card>
@@ -675,7 +675,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="5000+" />
-			<property name="Rules" value="Each of your creatures in the battle zone that have 'Friends' in their name gets 'power attacker +5000' and break an additional shield.&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Baribari' in their name into the battle zone." />
+			<property name="Rules" value="Each of your creatures in the battle zone that have 'Friends' in their name gets 'power attacker +5000' and break an additional shield.&#xd;&#xa;Doron Go-Global&#xd;&#xa; You can't put other exile creatures that have 'Baribari' in their name into the battle zone." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="48" />
 		</card>
