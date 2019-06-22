@@ -775,7 +775,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Whenever this creature attacks, you may draw 3 cards. If you do, discard 2 cards from your hand.&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Alchemy' in their name into the battle zone." />
+			<property name="Rules" value="Whenever this creature attacks, you may draw 3 cards. If you do, discard 2 cards from your hand.&#xd;&#xa;Doron Go - 'Alchemy'&#xd;&#xa; You can't put other exile creatures that have 'Alchemy' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="51" />
 		</card>
@@ -811,7 +811,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="1000" />
-			<property name="Rules" value="This creature can't be blocked.&#xd;&#xa;Shield Go" />
+			<property name="Rules" value="This creature can't be blocked.&#xd;&#xa;Shield Go(When this creature is destroyed, put it face up into your shield zone. When this creature is face up and would leave your shield zone, put it into your graveyard instead.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="54" />
 		</card>
@@ -835,7 +835,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Double breaker&#xd;&#xa; When this creature wins a battle, destroy it.&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Blues' in their name into the battle zone." />
+			<property name="Rules" value="Double breaker&#xd;&#xa; When this creature wins a battle, destroy it.&#xd;&#xa;Doron Go - 'Blues'(When this creature is destroyed, you may put an exile creature that has 'Blues' in its name from your hand into the battle zone)&#xd;&#xa; You can't put other exile creatures that have 'Blues' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="56" />
 		</card>
@@ -859,7 +859,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle/Grand Devil" />
 			<property name="Power" value="3000" />
-			<property name="Rules" value="Kourin" />
+			<property name="Rules" value="Kourin - At the end of each of your turns, if this creature is tapped, search your deck. You may put one of your Grand Devils that costs 7 or less from among it into the battle zone. Then shuffle your deck." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="58" />
 		</card>
@@ -883,7 +883,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="1000" />
-			<property name="Rules" value="Slayer&#xd;&#xa;Shield Go" />
+			<property name="Rules" value="Slayer&#xd;&#xa;Shield Go(When this creature is destroyed, put it face up into your shield zone. When this creature is face up and would leave your shield zone, put it into your graveyard instead.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="60" />
 		</card>
@@ -895,7 +895,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="2000+" />
-			<property name="Rules" value="Speed attacker&#xd;&#xa; Power attacker +3000&#xd;&#xa; This creature can attack untapped creatures. &#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Kung Fu' in their name into the battle zone." />
+			<property name="Rules" value="Speed attacker&#xd;&#xa; Power attacker +3000&#xd;&#xa; This creature can attack untapped creatures. &#xd;&#xa;Doron Go - 'Kung Fu'&#xd;&#xa; You can't put other exile creatures that have 'Kung Fu' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="61" />
 		</card>
@@ -907,7 +907,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle/Flame Command" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Kourin" />
+			<property name="Rules" value="Kourin—At the end of each of your turns, if this creature is tapped, search your deck. You may put one of your Flame Commands that costs 7 or less from among it into the battle zone. Then shuffle your deck." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="62" />
 		</card>
@@ -931,7 +931,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="1000+" />
-			<property name="Rules" value="Power Attacker +1000&#xd;&#xa;Shield Go" />
+			<property name="Rules" value="Power Attacker +1000&#xd;&#xa;Shield Go (When this creature is destroyed, put it face up into your shield zone. When this creature is face up and would leave your shield zone, put it into your graveyard instead.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="64" />
 		</card>
@@ -955,7 +955,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="Guardman&#xd;&#xa;Doron Go&#xd;&#xa; You can't put other exile creatures that have 'Horn' in their name into the battle zone." />
+			<property name="Rules" value="Guardman&#xd;&#xa;Doron Go - Horn(When this creature is destroyed, you may put an exile creature that has 'Horn' in its name from your hand into the battle zone)&#xd;&#xa; You can't put other exile creatures that have 'Horn' in their name into the battle zone." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="66" />
 		</card>
@@ -979,7 +979,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle/Snow Faerie" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Kourin" />
+			<property name="Rules" value="Kourin - At the end of each of your turns, if this creature is tapped, search your deck. You may put one of your Snow Faeries that costs 6 or less from among it into the battle zone. Then shuffle your deck." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="68" />
 		</card>
@@ -1003,7 +1003,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="1000" />
-			<property name="Rules" value="Guardman&#xd;&#xa;Shield Go" />
+			<property name="Rules" value="Guardman(When one of your other creatures is attacked, you may tap this creature. If you do, the attacking creature will attack this creature instead.)&#xd;&#xa;Shield Go (When this creature is destroyed, put it face up into your shield zone. When this creature is face up and would leave your shield zone, put it into your graveyard instead.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="70" />
 		</card>
@@ -1051,7 +1051,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Great Mecha King" />
 			<property name="Power" value="2500" />
-			<property name="Rules" value="Shield Saver" />
+			<property name="Rules" value="Shield Saver(When one of your shields would be broken, you may destroy this creature instead.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="74" />
 		</card>
@@ -1279,7 +1279,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Choose one of the following..:► Return 2 exile creatures from your graveyard to your hand. :► Return a creature from your graveyard to your hand." />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Choose one of the following:&#xd;&#xa;► Return 2 exile creatures from your graveyard to your hand.&#xd;&#xa;► Return a creature from your graveyard to your hand." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="93" />
 		</card>
@@ -1315,7 +1315,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human/Hunter/Alien" />
 			<property name="Power" value="3000" />
-			<property name="Rules" value="Guardman" />
+			<property name="Rules" value="Guardman(When one of your other creatures is attacked, you may tap this creature. If you do, the attacking creature will attack this creature instead.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="96" />
 		</card>
