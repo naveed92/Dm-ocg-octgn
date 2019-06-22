@@ -227,9 +227,39 @@
 					<case value="Nature"> <link block="natureC" /> <link block="vicNature"/></case>
 					<case value="Darkness"> <link block="darkC" /> <link block="vicDark"/></case>
 					<case value="Zero"> <link block="zeroC" /> <link block="vicZero"/></case>
-					<!-- Not putting multiciv cases here for now -->
+					
+					<case value="Darkness/Fire"> <link block="fireDarkC" /> <link block="vicZero"/> </case>
+					<case value="Fire/Darkness"> <link block="fireDarkC" /> <link block="vicZero"/></case>
+					
+					<case value="Nature/Fire"> <link block="fireNatureC" /> <link block="vicZero"/></case>
+					<case value="Fire/Nature"> <link block="fireNatureC" /> <link block="vicZero"/></case>
+					
+					<case value="Light/Water"> <link block="lightWaterC" /> <link block="vicZero"/></case>
+					<case value="Water/Light"> <link block="lightWaterC" /> <link block="vicZero"/></case>
+					
+					<case value="Light/Nature"> <link block="lightNatureC" /> <link block="vicZero"/></case>
+					<case value="Nature/Light"> <link block="lightNatureC" /> <link block="vicZero"/></case>
+					
+					<case value="Darkness/Water"> <link block="waterDarkC" /> <link block="vicZero"/></case>
+					<case value="Water/Darkness"> <link block="waterDarkC" /> <link block="vicZero"/></case>
+
+					<case value="Darkness/Nature"> <link block="darkNatureC" /> <link block="vicZero"/></case>
+					<case value="Nature/Darkness"> <link block="darkNatureC" /> <link block="vicZero"/></case>
+					
+					<case value="Light/Darkness"> <link block="lightDarkC" /> <link block="vicZero"/></case>
+					<case value="Darkness/Light"> <link block="lightDarkC" /> <link block="vicZero"/></case>
+					
+					<case value="Light/Fire"> <link block="lightFireC" /> <link block="vicZero"/></case>
+					<case value="Fire/Light"> <link block="lightFireC" /> <link block="vicZero"/></case>
+					
+					<case value="Fire/Water"> <link block="waterFireC" /> <link block="vicZero"/></case>
+					<case value="Water/Fire"> <link block="waterFireC" /> <link block="vicZero"/></case>
+					
+					<case value="Water/Nature"> <link block="waterNatureC" /> </case>
+					<case value="Nature/Water"> <link block="waterNatureC" /> </case>
+					<!-- multiciv cases are here for now but using white V-->
                     
-					<default> <link block="ZeroC" /> </default>
+					<default> <link block="zeroC" /> </default>
 				</switch>
 			</conditional>
 	
@@ -291,8 +321,8 @@
 					<case value="Nature"> <link block="natureC" /> <link block="vicNature"/></case>
 					<case value="Darkness"> <link block="darkC" /> <link block="vicDark"/></case>
 					<case value="Zero"> <link block="zeroC" /> <link block="vicZero"/></case>
-					<!-- Not putting multiciv cases here for now -->
-					<default> <link block="ZeroC" /> </default>
+					<!-- Not putting multiciv cases here for now-->
+					<default> <link block="zeroC" /> </default>
 				</switch>
 			</conditional>
 				<link block="evo" />		
@@ -321,7 +351,7 @@
 			<link block="power"><property name="Power" /></link>
 		</textblocks>
 	</template>
-    <!-- ////////////////////////////creature/////////////////////////////////////// -->
+    <!-- ////////////////////////////creature, also the default template to revert to when nothing matches/////////////////////////////////////// -->
 	<template src="proxy\blank.png" default="True" >
 		<matches>
 			<match name="Type" value="Creature"/>
