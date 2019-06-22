@@ -40,7 +40,7 @@
 		<groupaction menu="End Turn" shortcut="ctrl+E" execute="endTurn" />
 		<cardaction menu="Tap / Untap" default="True" shortcut="ctrl+G" execute="tap" />
 		<cardaction menu="Play Card" execute="toPlay" />
-		<cardaction menu="Destroy Card / Break Shield" shortcut="del" execute="banish" />
+		<cardaction menu="Destroy Card / Break Shield" shortcut="del" execute="destroy" />
 		<cardaction menu="Set as Shield" shortcut="ctrl+H" execute="toShields" />
 		<cardaction menu="Awaken / Release" shortcut="ctrl+A" execute="awaken" />
 		<cardaction menu="Charge as Mana" shortcut="ctrl+C" execute="toMana" />

@@ -27,7 +27,7 @@ cardScripts = {
                 'Artisan Picora': { 'onPlay': { 'fromMana': ['1','"ALL"','"ALL"','"ALL"','False','True'] }}, 
                 'Astral Warper': { 'onPlay': { 'draw': ['me.Deck', 'True', '3'] }},
                 'Baban Ban Ban, Earth\'s Blessing': { 'onPlay': { 'massMana': ['me.Deck', 'True'] }},
-                'Ballom, Master of Death': { 'onPlay': { 'banishAll': ['table', 'True', '"ALL"', '"Darkness"', 'True'] }},
+                'Ballom, Master of Death': { 'onPlay': { 'destroyAll': ['table', 'True', '"ALL"', '"Darkness"', 'True'] }},
                 'Bega, Vizier of Shadow': { 'onPlay': { 'shields': ['me.Deck'] , 'targetDiscard': ['True'] }},
                 'Belix, the Explorer': { 'onPlay': { 'fromMana': ['1','"Spell"'] }},
                 'Bronze-Arm Tribe': { 'onPlay': { 'mana': ['me.Deck'] }},
@@ -128,14 +128,14 @@ cardScripts = {
                 'Zemechis, the Explorer': { 'onPlay': {  'gear': ['"kill"'] }},
 		# ON CAST EFFECTS
                 'Abduction Charger': { 'onPlay': {  'bounce': ['2'] }},
-                'Apocalypse Day': { 'onPlay': {  'banishAll': ['table', 'len([card for card in table if isCreature(card)])>5'] }},			
+                'Apocalypse Day': { 'onPlay': {  'destroyAll': ['table', 'len([card for card in table if isCreature(card)])>5'] }},			
                 'Big Beast Cannon': { 'onPlay': { 'kill': ['7000'] }},
-                'Blizzard of Spears': { 'onPlay': {  'banishAll': ['table', 'True', '4000'] }},
+                'Blizzard of Spears': { 'onPlay': {  'destroyAll': ['table', 'True', '4000'] }},
         		'Bomber Doll': { 'onPlay': { 'kill': ['2000'] }},
                 'Boomerang Comet': { 'onPlay': { 'fromMana': [], 'toMana': ['card'] }},
                 'Brain Cyclone': { 'onPlay': { 'draw': ['me.Deck', 'False', '1'] }},
                 'Brain Serum': { 'onPlay': {  'draw': ['me.Deck', 'False', '2'] }},
-                'Burst Shot': { 'onPlay': {  'banishAll': ['table', 'True', '2000'] }},
+                'Burst Shot': { 'onPlay': {  'destroyAll': ['table', 'True', '2000'] }},
                 'Cannonball Sling': { 'onPlay': { 'kill': ['2000'] },
                                       'onMetaMorph': { 'kill': ['6000'] }},
                 'Chains of Sacrifice': { 'onPlay': { 'kill': ['"ALL"','"ALL"','"ALL"','2'], 'sacrifice': [] }},
@@ -184,7 +184,7 @@ cardScripts = {
                 'Holy Awe': { 'onPlay': { 'tapCreature': ['1','True'] }},
                 'Hopeless Vortex': { 'onPlay': { 'kill': [] }},
                 'Infernal Smash': { 'onPlay': { 'kill': [] }},
-                'Invincible Abyss': { 'onPlay': { 'banishAll': ['[card for card in table if card.owner != me]', 'True'] }},
+                'Invincible Abyss': { 'onPlay': { 'destroyAll': ['[card for card in table if card.owner != me]', 'True'] }},
                 'Invincible Aura': { 'onPlay': { 'shields': ['me.Deck', '3', 'True'] }},
                 'Invincible Technology': { 'onPlay': { 'search': ['me.Deck','len(me.Deck)'] }},
 			'Lifeplan Charger': { 'onPlay': { 'lookAtTopCards': ['5', '"Creature"'] }},
@@ -236,7 +236,7 @@ cardScripts = {
                 'Spiral Gate': { 'onPlay': { 'bounce': [] }},
                 'Spiral Lance': { 'onPlay': { 'gear': ['"bounce"'] }},
                 'Stronghold of Lightning and Flame': { 'onPlay': { 'kill': ['3000'], 'tapCreature': [] }},
-                'Super Burst Shot': { 'onPlay': {  'banishAll': ['[card for card in table if card.owner != me]', 'True', '2000'] }},
+                'Super Burst Shot': { 'onPlay': {  'destroyAll': ['[card for card in table if card.owner != me]', 'True', '2000'] }},
                 'Super Infernal Gate Smash': { 'onPlay': { 'kill': [] }},
                 'Super Spark': { 'onPlay': { 'tapCreature': ['1','True'] }},
                 'Teleportation': { 'onPlay': { 'bounce': ['2'] }},
@@ -403,7 +403,7 @@ def fromMana(count = 1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL
             if len(cardsInGroup_CivTypeandRace_Filtered) == 0: return
             choice = askCard(cardsInGroup_CivTypeandRace_Filtered, 'Choose a Card from the Mana Zone','Mana Zone')
             if type(choice) is not Card: break
-            if toGrave == True: remoteCall(player,"banish",choice)
+            if toGrave == True: remoteCall(player,"destroy",choice)
             else: remoteCall(player,"toHand",[choice, show])
 
 def killAndSearch(play = False, singleSearch = False):
@@ -413,7 +413,7 @@ def killAndSearch(play = False, singleSearch = False):
 	choice = askCard(cardList, 'Choose a Creature to destroy')
 	if type(choice) is not Card: return
 	card = choice
-	remoteCall(choice.owner,'banish',choice)
+	remoteCall(choice.owner,'destroy',choice)
 	if singleSearch:
 		return
 	else:
@@ -515,11 +515,11 @@ def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targe
         if type(choice) is not Card:
             return
         if choice.owner == me:
-            banish(choice)
+            destroy(choice)
         else:
-            remoteCall(choice.owner,"banish",choice)
+            remoteCall(choice.owner,"destroy",choice)
 
-def banishAll(group, condition = False, powerFilter = 'ALL', civFilter = "ALL", AllExceptFiltered = False):
+def destroyAll(group, condition = False, powerFilter = 'ALL', civFilter = "ALL", AllExceptFiltered = False):
     mute()
     if powerFilter == 'ALL':
         powerfilter = float('inf')
@@ -540,12 +540,12 @@ def banishAll(group, condition = False, powerFilter = 'ALL', civFilter = "ALL", 
         possibleSavers = [card for card in table if cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",card.rules) and (re.search(cardToBeSaved.properties['Race'],card.rules) or re.search("Saver: All Races",card.rules))]
         if len(possibleSavers) > 0:
             if confirm("Prevent {}'s destruction by using a Saver on your side of the field?\n\n".format(cardToBeSaved.Name)):
-                choice = askCard(possibleSavers, 'Choose Saver to banish')
+                choice = askCard(possibleSavers, 'Choose Saver to destroy')
                 if type(choice) is Card:
                     toDiscard(choice)
                     cardList.remove(choice)
                     cardList = [card for card in cardList]
-                    notify("{} banishes {} to prevent {}'s destruction.".format(me, choice.name, cardToBeSaved.name))
+                    notify("{} destroys {} to prevent {}'s destruction.".format(me, choice.name, cardToBeSaved.name))
                     continue
         if cardToBeSaved.owner == me:   
             toDiscard(cardToBeSaved)
@@ -556,7 +556,7 @@ def banishAll(group, condition = False, powerFilter = 'ALL', civFilter = "ALL", 
                     argList = functionDict.get(function)
                     eval(function)(*[eval(arg) for arg in argList])
         else:
-            remoteCall(cardToBeSaved.owner,"banish",cardToBeSaved)
+            remoteCall(cardToBeSaved.owner,"destroy",cardToBeSaved)
 
 def destroyMana(count = 1):
     mute()
@@ -567,7 +567,7 @@ def destroyMana(count = 1):
         choice = askCard(cardList, 'Choose a Mana Card to destroy')
         if type(choice) is not Card:
             return        
-        remoteCall(choice.owner,"banish",choice)
+        remoteCall(choice.owner,"destroy",choice)
 
 def destroyShield(owner = True):
     mute()
@@ -580,7 +580,7 @@ def destroyShield(owner = True):
     choice = askCard(cardList, 'Choose a shield to send to graveyard')
     if type(choice) is not Card:
             return        
-    remoteCall(choice.owner,"banish",[choice,True])
+    remoteCall(choice.owner,"destroy",[choice,True])
         
 def fromDeck():
     mute()
@@ -609,7 +609,7 @@ def sacrifice(power = float('inf'), count = 1):
 		choice = askCard(cardList, 'Choose a Creature to destroy')
 		if type(choice) is not Card:
 			return
-		banish(choice)
+		destroy(choice)
     
 def bounce(count = 1, opponentOnly = False):
 	mute()
@@ -643,7 +643,7 @@ def gear(str):
         choice = askCard(cardList,'Choose a Cross Gear to send to Graveyard')
         if type(choice) is not Card:
             return
-        remoteCall(choice.owner, 'banish', choice)
+        remoteCall(choice.owner, 'destroy', choice)
     elif str == 'bounce':
         cardList = [card for card in table if isGear(card)]
         if len(cardList) == 0:
@@ -728,7 +728,7 @@ def suicide(name, action, arg):
 	mute()
 	choiceList = ['Yes', 'No']
 	colorsList = ['#FF0000', '#FF0000']
-	choice = askChoice("Banish the card to activate effect?", choiceList, colorsList)
+	choice = askChoice("Destroy the card to activate effect?", choiceList, colorsList)
 	if choice == 0 or choice == 2:
 		return
 	cardList = [card for card in table if isCreature(card) and card.owner==me and re.search("Creature", card.type)]
@@ -987,7 +987,7 @@ def tap(card, x = 0, y = 0):
     else:
         notify('{} untaps {}.'.format(me, card))
 
-def banish(card, dest = False, x = 0, y = 0):
+def destroy(card, dest = False, x = 0, y = 0):
     mute()
     if isShield(card):
         if dest == True:
@@ -1014,7 +1014,7 @@ def banish(card, dest = False, x = 0, y = 0):
                         rnd(1,100)
                         toPlay(choice, notifymute = True)
                         toDiscard(shieldCard)
-                        notify("{} banishes {} to use {}'s Strike Back.".format(me, shieldCard.name, choice.name))
+                        notify("{} destroys {} to use {}'s Strike Back.".format(me, shieldCard.name, choice.name))
                         return
         notify("{}'s shield #{} is broken.".format(me, shieldCard.markers[shieldMarker]))
         shieldCard.moveTo(shieldCard.owner.hand)
@@ -1023,10 +1023,10 @@ def banish(card, dest = False, x = 0, y = 0):
             possibleSavers = [card for card in table if cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",card.rules) and (re.search(cardToBeSaved.properties['Race'],card.rules) or re.search("Saver: All Races",card.rules))]
             if len(possibleSavers) > 0:
                     if confirm("Prevent {}'s destruction by using a Saver on your side of the field?\n\n".format(cardToBeSaved.Name)):
-                            choice = askCard(possibleSavers, 'Choose Saver to banish')
+                            choice = askCard(possibleSavers, 'Choose Saver to destroy')
                             if type(choice) is Card:
                                     toDiscard(choice)
-                                    notify("{} banishes {} to prevent {}'s destruction.".format(me, choice.name, cardToBeSaved.name))
+                                    notify("{} destroys {} to prevent {}'s destruction.".format(me, choice.name, cardToBeSaved.name))
                                     return
             toDiscard(cardToBeSaved)
             if cardScripts.get(card.name,{}).get('onDestroy',{}):
@@ -1269,7 +1269,7 @@ def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, ignoreE
     mute()
     evolveDict = eval(me.getGlobalVariable('evolution'))
     if ignoreEvo == False and isCreature(card) and card._id in list(itertools.chain.from_iterable(evolveDict.values())):
-        if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be banished.\nWould you like to override this?"):
+        if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be destroyed.\nWould you like to override this?"):
             return
     if isPsychic(card):
         toHyperspatial(card)
@@ -1285,7 +1285,7 @@ def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, ignoreE
         me.setGlobalVariable('evolution', str(evolveDict))
     if notifymute == False:
         if src == table:
-            notify("{} banishes {}.".format(me, card))
+            notify("{} destroys {}.".format(me, card))
             if alignCheck:
                 align()
         else:
@@ -1296,7 +1296,7 @@ def toHand(card, show = True, x = 0, y = 0, alignCheck = True, ignoreEvo = False
     src = card.group
     evolveDict = eval(me.getGlobalVariable('evolution'))
     if ignoreEvo == False and isCreature(card) and card._id in list(itertools.chain.from_iterable(evolveDict.values())):
-        if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be banished.\nWould you like to override this?"):
+        if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be destroyed.\nWould you like to override this?"):
             return
     if isPsychic(card):
         toHyperspatial(card)
@@ -1328,7 +1328,7 @@ def toDeck(card, bottom = False):
     mute()
     evolveDict = eval(me.getGlobalVariable('evolution'))
     if isCreature(card) and card._id in list(itertools.chain.from_iterable(evolveDict.values())):
-        if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be banished.\nWould you like to override this?"):
+        if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be destroyed.\nWould you like to override this?"):
             return
     if isPsychic(card):
         toHyperspatial(card)
