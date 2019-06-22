@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-12, DMD and DMX Promos Episode 3" id="c673c1e3-02c8-4899-9651-cad6a27ffa86" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-12 Promos, DMD and DMX Episode 3" id="c673c1e3-02c8-4899-9651-cad6a27ffa86" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
 	<packaging>
 		<pack name="Booster" id="eeb2b67f-4871-4265-8784-2d770911b51f">
-			<pick qty="5" key="Rarity" value="Promo"/>
+			<options>
+				<option probability="0.2">
+					<pick qty="1" key="Rarity" value="Victory Rare" />
+				</option>
+				<option probability="0.8">
+					<pick qty="1" key="Rarity" value="Promotional" />
+				</option>
+			</options>
+			<pick qty="4" key="Rarity" value="Promotional" />
 		</pack>
 	</packaging>
 	<cards>
@@ -28,6 +36,17 @@
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
+		<card name="Maeterl, Beautiful Sunday" id="5cdab374-935b-4b4c-817d-cd22eb1dea87">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water/Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Outrage" />
+			<property name="Power" value="3000" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever you would draw a card, you may draw 2 cards and discard a card from your hand instead." />
+			<property name="Rarity" value="Promotional" />
+			<property name="Number" value="None" />		
+		</card>
 		<card name="Katsudon, Kung Fu Panyao" id="3b84fba2-409b-4e8a-8e66-548ec4dc5ed2">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
@@ -36,28 +55,6 @@
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="2000+" />
 			<property name="Rules" value="Whenever this creature attacks, put the top 2 cards of your deck into your graveyard. If both 2 cards are Outrage, this creature gets +7777 power and breaks an additional shield.&#xd;&#xa;" />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />		
-		</card>
-		<card name="Geo Eggplant" id="6ec42115-11b6-4ddf-8ba9-c669fc6a6dc2">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value="2" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Wild Veggies/Alien" />
-			<property name="Power" value="1000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put the top card of your deck into your mana zone. Then put a card from your mana zone into your graveyard." />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />		
-		</card>
-		<card name="Ragnarok, the Clock" id="8d51df13-2c5b-4a7b-a357-bca410b66bbc">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value="3" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Outrage MAX" />
-			<property name="Power" value="3000" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; When you put this creature into the battle zone, skip the rest of the turn.  (Immediately start the next player's turn.) " />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -90,7 +87,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Speed attacker&#xd;&#xa; Whenever this creature attacks, put the top card of your deck into your graveyard. If it's a spell, you may cast it for no cost. &#xd;&#xa; While this creature is in your deck, if you have a Cebu Aquman Jr. in the battle zone, this creature gets the light civilization.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value=" Speed attacker   Double breaker&#xd;&#xa; Whenever this creature attacks, put the top card of your deck into your graveyard. If it's a spell, you may cast it for no cost. &#xd;&#xa; While this creature is in your deck, if you have a Cebu Aquman Jr. in the battle zone, this creature gets the light civilization." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -112,7 +109,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Initiate/Shinobi" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Ninja Strike&#xd;&#xa; This creature can't attack players." />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Ninja Strike 7&#xd;&#xa; This creature can't attack players." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -123,7 +120,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, destroy any number of your opponent's creatures that have 'blocker'. Then you may draw a card. &#xd;&#xa; You can't put other exile creatures that have 'Crimson' in their name into the battle zone.&#xd;&#xa;Triple breaker" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.)&#xd;&#xa;When you put this creature into the battle zone, destroy any number of your opponent's creatures that have 'blocker'. Then you may draw a card. &#xd;&#xa; You can't put other exile creatures that have 'Crimson' in their name into the battle zone.&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -134,7 +131,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="Speed attacker&#xd;&#xa;Double breaker&#xd;&#xa;Tap Ability" />
+			<property name="Rules" value="Speed attacker&#xd;&#xa;Double breaker&#xd;&#xa;Tap Ability - Untap one of your Outrage in the battle zone." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -190,28 +187,6 @@
 			<property name="Race" value="Demon Command/Shinobi" />
 			<property name="Power" value="5000" />
 			<property name="Rules" value="Ninja Strike&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's creatures in the battle zone. That creature gets -6000 power until the end of the turn.&#xd;&#xa; When this creature would be destroyed and you have at least one darkness card in your mana zone, you may put one of your shields into your graveyard instead." />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />		
-		</card>
-		<card name="Thrust Sumo, Strongest Yokozuna" id="a1ebfbc8-8733-4153-9eb8-ea8a855f74f5">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="6" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Flame Command/Alien" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="When you put this creature into the battle zone or whenever this creature attacks, you may destroy one of your creatures. If you do, your opponent chooses one of his creatures and destroys it.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />		
-		</card>
-		<card name="Katsuking GANG, Victorage Caliber" id="883d16a6-19fa-4ffd-9c17-f39e84f8ded9">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="8" />
-			<property name="Type" value="Exile Creature" />
-			<property name="Race" value="Outrage MAX" />
-			<property name="Power" value="8000" />
-			<property name="Rules" value="When you put this creature into the battle zone or whenever this creature attacks, destroy one of your opponent's creatures that has power 3000 or less. Then, destroy one of your opponent's creatures that has 'blocker'. &#xd;&#xa;Doron Go- Rage&#xd;&#xa; You can't put other exile creatures that have 'Victorage' in their name into the battle zone.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -377,7 +352,18 @@
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="12000" />
 			<property name="Rules" value="This creature costs 1 less to summon for each creature in your graveyard. It can't cost less than 1.&#xd;&#xa;Speed attacker &#xd;&#xa;Triple breaker&#xd;&#xa; When you put this creature into the battle zone, destroy all psychic creatures. Then destroy all creatures that have power 5000 or less.&#xd;&#xa; Players can't summon creatures that have power 5000 or less or put psychic creatures into the battle zone." />
-			<property name="Rarity" value="Promotional" />
+			<property name="Rarity" value="Victory Rare" />
+			<property name="Number" value="None" />		
+		</card>
+		<card name="5000GT, Riot" id="dd130730-ccb3-472b-aad7-04ff94e1840f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="12" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Outrage" />
+			<property name="Power" value="12000" />
+			<property name="Rules" value="This creature costs 1 less to summon for each creature in your graveyard. It can't cost less than 1.&#xd;&#xa;Speed attacker &#xd;&#xa;Triple breaker&#xd;&#xa; When you put this creature into the battle zone, destroy all psychic creatures. Then destroy all creatures that have power 5000 or less.&#xd;&#xa; Players can't summon creatures that have power 5000 or less or put psychic creatures into the battle zone." />
+			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="None" />		
 		</card>
 		<card name="Miragino, the Face Up" id="14493a93-5306-4f70-8e0e-2775fcd4b139">
@@ -410,7 +396,7 @@
 			<property name="Race" value="Oraclion" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="{BLOCKER}&#xd;&#xa; At the end of each of your turns, you may destroy up to 2 of your tapped creatures. If you do, search your deck. For each creature destroyed, you may take a colorless creature that costs 7 or less from your deck or hand and put into the battle zone. Then shuffle your deck.&#xd;&#xa; During your opponent's turn, whenever your opponent would choose a creature in the battle zone, he can't choose this one.  (It can still be attacked.)  &#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Promotional" />
+			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="None" />		
 		</card>
 		<card name="Aizen, Canon's Divine Abyss" id="cb0e51c1-b881-429d-8f9c-6c0c4018ac72">
@@ -479,26 +465,15 @@
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
-		<card name="Max, Crimson Blade Lord" id="af3eb4d9-b395-43d3-9784-97a4d1bff899">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="3" />
-			<property name="Type" value="Evolution Creature" />
-			<property name="Race" value="Flame Monster" />
-			<property name="Power" value="4000" />
-			<property name="Rules" value="Mana evolution—Choose a fire creature in your mana zone and put this creature into the battle zone on top of that creature.&#xd;&#xa; Whenever this creatures attacks your opponent and isn't blocked, destroy one of your opponent's tapped creatures that has power 3000 or less." />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />		
-		</card>
-			<card name="Progre Sapphire, Divine Blue Brightness" id="b6b1fbeb-9dc4-4e00-bef1-d4a805e34f4e">
+		<card name="Progre Sapphire, Divine Blue Brightness" id="b6b1fbeb-9dc4-4e00-bef1-d4a805e34f4e">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Zero" />
 			<property name="Cost" value="9" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oraclion" />
 			<property name="Power" value="9000+" />
-			<property name="Rules" value="Speed attacker&#xd;&#xa; Power attacker +3000&#xd;&#xa;Triple breaker&#xd;&#xa; Whenever this creature breaks one of your opponent's shields, your opponent reveals that shield instead of adding it to his hand. Among them, your opponent puts all of his cards that have 'shield trigger' into his hand and the rest into his graveyard.  (Your opponent can use the 'shield trigger' ability of those shields.) " />
-			<property name="Rarity" value="Promotional" />
+			<property name="Rules" value="Speed attacker   Power attacker +3000  Triple breaker&#xd;&#xa; Whenever this creature breaks one of your opponent's shields, your opponent reveals that shield instead of adding it to his hand. Among them, your opponent puts all of his cards that have 'shield trigger' into his hand and the rest into his graveyard.  (Your opponent can use the 'shield trigger' ability of those shields.) " />
+			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="None" />		
 		</card>
 		<card name="Gaial, King of Kaiser" id="eb698fd9-1f17-4e07-a7b2-d11b22365b1c">
@@ -508,8 +483,8 @@
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="25000" />
-			<property name="Rules" value="Super Infinite evolution— Outrage.&#xd;&#xa; Infinity Soulshift  (When you summon this creature, this creature's cost is reduced by any number of the base creature's cost(s). It can't cost less than 1.) &#xd;&#xa; Whenever this creature attacks, destroy all your opponent's creatures that have less power than it.&#xd;&#xa;World breaker" />
-			<property name="Rarity" value="Promotional" />
+			<property name="Rules" value="Super Infinite Evolution-put on one or more Outrage.&#xd;&#xa; Infinity Soulshift(When summoning, this creature's cost is reduced by any number of the base creature's cost(s). It can't cost less than 1.) &#xd;&#xa; When this creature attacks, destroy all your opponent's creatures that have less power than it.&#xd;&#xa;World breaker" />
+			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="None" />		
 		</card>
 		<card name="Rave Diabolos, Holy Damned Festival" id="9dd6e202-80c8-4c5a-ac03-8e169eae7194">
@@ -618,7 +593,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova/Oracle" />
 			<property name="Power" value="3000+" />
-			<property name="Rules" value="Center God Link 360" />
+			<property name="Rules" value="Center God Link 360(When you put this creature or another God into the battle zone, choose a creature name. This creature gets the chosen name in addition to its printed name, instead of the name chosen earlier this way. Then unlink a card from one of your Gods. You may then link any number of linkable cards to this card.)" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -684,7 +659,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Speed attacker&#xd;&#xa;Thrilling Three : This turn, this creature breaks an additional shield." />
+			<property name="Rules" value=" Speed attacker&#xd;&#xa;Thrilling Three: Outrage(When you put this creature into the battle zone, reveal the top 3 cards of your deck. For each Outrage revealed, use the following ability once. Then put the revealed cards on the bottom of your deck in any order.) :► This turn, this creature breaks an additional shield." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -904,7 +879,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Saver- Outrage" />
+			<property name="Rules" value="Saver- Outrage (When one of your Outrages would be destroyed, you may destroy this creature instead.)" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1091,7 +1066,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, choose up to 2 of your opponent's creatures in the battle zone and tap them. Those creatures don't untap at the start of your opponent's next turn. &#xd;&#xa;Triple breaker&#xd;&#xa;Doron Go- Cross&#xd;&#xa; You can't put other exile creatures that have 'Cross' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature into the battle zone, choose up to 2 of your opponent's creatures in the battle zone and tap them. Those creatures don't untap at the start of your opponent's next turn.&#xd;&#xa;Doron Go- 'Cross'&#xd;&#xa; You can't put other exile creatures that have 'Cross' in their name into the battle zone.&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1102,7 +1077,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, put the top 3 cards of your deck into your graveyard, then put one of them into your hand. If it's an exile creature, this creature gets 'speed attacker' until the end of the turn.  &#xd;&#xa;Double breaker &#xd;&#xa;Doron Go- Cross&#xd;&#xa; You can't put other exile creatures that have 'Cross' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature into the battle zone, put the top 3 cards of your deck into your graveyard, then put one of them into your hand. If it's an exile creature, this creature gets 'speed attacker' until the end of the turn.  Double breaker&#xd;&#xa; You can't put other exile creatures that have 'Cross' in their name into the battle zone.&#xd;&#xa;Doron Go- 'Cross'" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1135,7 +1110,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Shield Go&#xd;&#xa; While this creature is face up in your shield zone, if your opponent's creatures attack, they must attack this shield if able.&#xd;&#xa;" />
+			<property name="Rules" value="Shield Go(When this creature is destroyed, put it face up into your shield zone. When this creature is face up and would leave your shield zone, put it into your graveyard instead.)&#xd;&#xa; While this creature is face up in your shield zone, if your opponent's creatures attack, they must attack this shield if able.&#xd;&#xa;" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1179,7 +1154,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova" />
 			<property name="Power" value="7000+" />
-			<property name="Rules" value="Whenever this creature attacks, if this creature is linked, choose one of your opponent's creatures in the battle zone. Your opponent puts it on the bottom of its owner's deck. If this creature isn't linked, choose one of your opponent's creatures and destroy it.&#xd;&#xa;Double breaker&#xd;&#xa; Left God Link &#xd;&#xa; While this creature is linked, this creature breaks an additional shield." />
+			<property name="Rules" value="Whenever this creature attacks, if it is linked, choose one of your opponent's creatures in the battle zone and put it on the bottom of its owner's deck. If this creature isn't linked, choose one of your opponent's creatures and destroy it.&#xd;&#xa;Double breaker&#xd;&#xa; Left God Link &#xd;&#xa; While this creature is linked, this creature breaks an additional shield." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1300,7 +1275,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, destroy one of your opponent's creatures that has power 8000 or less.&#xd;&#xa; During your turn, you may summon a creature from your mana zone. &#xd;&#xa; Double breaker&#xd;&#xa;Doron Go- Out &#xd;&#xa; You can't put other exile creatures that have 'Outlaw' in their name into the battle zone." />
+			<property name="Rules" value="When you put this creature into the battle zone, destroy one of your opponent's creatures that has power 8000 or less.&#xd;&#xa;Doron Go- Out   Double breaker&#xd;&#xa; You can't put other exile creatures that have 'Outlaw' in their name into the battle zone.&#xd;&#xa;During your turn, you may summon a creature from your mana zone." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1311,7 +1286,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="2000+" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, or whenever this creature attacks, you may put the top card of your deck into your mana zone. &#xd;&#xa; Power attacker +3000&#xd;&#xa;Doron Go- Outlaw &#xd;&#xa; You can't put other exile creatures that have 'Outlaw' in their name into the battle zone." />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, or whenever this creature attacks, you may put the top card of your deck into your mana zone.&#xd;&#xa;Doron Go- Outlaw &#xd;&#xa; You can't put other exile creatures that have 'Outlaw' in their name into the battle zone.&#xd;&#xa;Power attacker +3000" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
