@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-12 Promos, DMD and DMX Episode 3" id="c673c1e3-02c8-4899-9651-cad6a27ffa86" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-12(Promos), DMD and DMX Episode 3" id="c673c1e3-02c8-4899-9651-cad6a27ffa86" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
 	<packaging>
 		<pack name="Booster" id="eeb2b67f-4871-4265-8784-2d770911b51f">
 			<options>
