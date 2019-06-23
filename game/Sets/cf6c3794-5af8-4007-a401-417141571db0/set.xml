@@ -175,7 +175,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova/Demon Command" />
 			<property name="Power" value="8000+" />
-			<property name="Rules" value="When you put this creature into the battle zone, you may put a colorless creature that costs 6 or less from your graveyard into the battle zone.&#xd;&#xa;Right God Link(When you put this creature into the battle zone, you may may link this creature to a God that has Center or Left God Link. When the linked creature would leave the battle zone, choose one side instead.)&#xd;&#xa; Double breaker" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may put a colorless creature that costs 6 or less from your graveyard into the battle zone.&#xd;&#xa;Right God Link(When you put this creature into the battle zone, you may may link this creature to a God that has Center or 'Left God-Link. When the linked creature would leave the battle zone, choose one side instead.)&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="1" />
 		</card>
@@ -655,7 +655,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova/Earth Eater" />
 			<property name="Power" value="6000+" />
-			<property name="Rules" value="When you put this creature into the battle zone, or when this creature is linked with a God, you may draw a card. &#xd;&#xa;Double breaker&#xd;&#xa;Right God Link(When you put this creature into the battle zone, you may may link this creature to a God that has Center or Left God Link. When the linked creature would leave the battle zone, choose one side instead.)" />
+			<property name="Rules" value="When you put this creature into the battle zone, or when this creature is linked with a God, you may draw a card. &#xd;&#xa;Double breaker&#xd;&#xa;Right God Link(When you put this creature into the battle zone, you may may link this creature to a God that has Center or Left God-Link. When the linked creature would leave the battle zone, choose one side instead.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="41" />
 		</card>
@@ -691,7 +691,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova/ Oracle" />
 			<property name="Power" value="5000+" />
-			<property name="Rules" value="Center God Link(When you put this creature or another God into the battle zone, you may unlink any number of your Gods. Then you may link this creature to a God that has 'Right God Link' and/or 'Left God Link'.)" />
+			<property name="Rules" value="Center God Link(When you put this creature or another God into the battle zone, you may unlink any number of your Gods. Then you may link this creature to a God that has Right God-Link and/or Left God-Link.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="44" />
 		</card>
