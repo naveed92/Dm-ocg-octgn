@@ -1268,6 +1268,17 @@
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
+		<card name="Ultramotion Rage Crystal" id="3bca152f-a860-49c3-b272-cf64465a0041">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water/Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="(This spell is put into your mana zone tapped.) &#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa; Choose one of the following:&#xd;&#xa;► Destroy one of your opponent's creatures that has power 3000 or less.&#xd;&#xa;► Draw up to 2 cards." />
+			<property name="Rarity" value="Promotional" />
+			<property name="Number" value="None" />		
+		</card>
 		<card name="Katsuking MAX, Outlaw Caliber" id="7efc9b51-aae5-44d6-938f-376306b4ac20">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire/Nature" />
