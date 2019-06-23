@@ -311,7 +311,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Gravity Zero-drew]] 6 or more cards and have no  'Crossfire the 2nd, Billionaire ' in the battle zone, you may play this card for no cost.&#xd;&#xa;Speed attacker&#xd;&#xa;Double breaker" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Gravity Zero- If you drew 6 or more cards and have no 'Crossfire the 2nd, Billionaire' in the battle zone, you may play this card for no cost.&#xd;&#xa;Speed attacker&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="17" />
 		</card>
