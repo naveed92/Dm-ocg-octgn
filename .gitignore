@@ -1,1 +1,9 @@
 *.class
+/[Cc]onfig/
+/[Dd]ecks/
+/Garbage/
+/History/
+/ImagePacking/
+/LocalFeed/
+/Plugins/
+/Updates/
