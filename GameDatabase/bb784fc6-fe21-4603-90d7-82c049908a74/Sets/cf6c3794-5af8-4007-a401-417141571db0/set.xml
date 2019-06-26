@@ -1343,6 +1343,18 @@
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="98" />
 		</card>
+        
+		<card name="Nine, Zero Zero" id="270a45cc-69bd-46f6-a1fd-ac0af37e97d4">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Outrage MAX" />
+			<property name="Power" value="1000" />
+			<property name="Rules" value="Gravity Zero-If you have an Outrage in the battle zone, you may summon this creature for no cost." />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="98a" />
+		</card>
 		
 		<card name="Abura-bo, Satori's Passion " id="f0fcdabf-8708-466a-a27e-9d68dbfa86fd">
 			<property name="Format" value="OCG" />
