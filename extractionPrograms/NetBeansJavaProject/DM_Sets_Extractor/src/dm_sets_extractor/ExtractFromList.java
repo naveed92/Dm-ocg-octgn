@@ -3,12 +3,16 @@ package dm_sets_extractor;
 import java.io.*;
 import javax.swing.JFileChooser;
 
+//extract from a txt file containing list of cards(exactly as they appear in wikia URL)
+//BE CAREFUL, the rarity attached to all will be "PROMO". Need to change to correct rarity later, esp. Victory Rare for V cards.
 public class ExtractFromList {
 
     public static void main(String args[]) {
 
         String setName = "E3_Promos";
-        boolean extractImages = false;
+        boolean extractImages = true;
+        
+        setName = setName.substring(0,6);
         try {
             SinnanSetExtractor extractor = new SinnanSetExtractor();
             System.out.println("Selecting file...");
