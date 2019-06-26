@@ -206,7 +206,7 @@
 			<block type="text" id="rules">
 			<location x="48" y="382" />
 			<text color="#000000" size="13" font="./fonts/officina.ttf"/>
-			<border color="#000000" size="0" />
+			<border color="#FFFFFF" size="2" />
 			<wordwrap height="130" width="315" align="near" shrinktofit="True" valign="near"/>
 		</block>
 
