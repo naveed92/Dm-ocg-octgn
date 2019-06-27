@@ -8,3 +8,10 @@
 /Plugins/
 /Updates/
 **/Proxies/
+
+/GameDatabase/*
+!/GameDatabase/bb784fc6-fe21-4603-90d7-82c049908a74
+
+/ImageDatabase/*
+!/ImageDatabase/bb784fc6-fe21-4603-90d7-82c049908a74
+
