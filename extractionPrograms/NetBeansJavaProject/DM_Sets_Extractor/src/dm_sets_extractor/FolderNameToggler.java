@@ -12,6 +12,8 @@ public class FolderNameToggler {
             File current = new File(new File(".").getCanonicalPath());
             String path = current.getParentFile().getParentFile().getParentFile().getCanonicalPath();
             path = path + "\\GameDatabase\\bb784fc6-fe21-4603-90d7-82c049908a74\\Sets\\";
+			
+			//try this FileSystemView.getFileSystemView().getDefaultDirectory().getPath()
 
             File root = new File(path);
             String imagePath = path.replace("GameDatabase", "ImageDatabase");
