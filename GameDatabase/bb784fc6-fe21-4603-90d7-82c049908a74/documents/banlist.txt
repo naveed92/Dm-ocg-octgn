@@ -51,7 +51,17 @@ Aqua Melge
 Come On Pippi
 Hogan Blaster
 Savage Earth
-
+Gachinko Roulette
+Moors, the Dirty Digger Puppet
+Onishura, Golden Twins
+Parlock's Miracle Fever
+Positron Sign
+Ghastly Drain
+Kubrick, Spiral Accelerator
+Kiryu Jilves, Gaia's Roar
+Mystery Hippo
+Onimaru "Head", Victory Rush
+Rolan, the Oracle
 
 Banned:
 Bombazar, Dragon of Destiny
@@ -73,8 +83,9 @@ Cyber Brain
 Crest of Mother
 Emperor Chirico
 Mad Romanoff, the Wicked God
+Hyperspatial Vice Hole
+Door of Miracle and Mystery
 
 Combo Ban:
 [these cannot be in the same deck + hyperspatial zone]
-Hyperspatial Vice Hole >> Diabolos Zeta, Temporal Ruler
 Codename Sorge >> Jin, the Ogre Blade ~Crimson Rage~
