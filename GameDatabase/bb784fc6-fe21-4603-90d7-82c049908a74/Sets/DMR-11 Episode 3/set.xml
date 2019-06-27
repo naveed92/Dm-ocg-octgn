@@ -179,7 +179,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX/Oracle" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Whenever this creature attacks, you may put the top card of your deck into your graveyard. Then destroy one of your opponent's creatures that costs less than the number of cards in your graveyard.&#xd;&#xa; You can't put other exile creatures that have Shen in their name into the battle zone.&#xd;&#xa;Doron Go-Shen&#xd;&#xa; Double breaker" />
+			<property name="Rules" value="Whenever this creature attacks, you may put the top card of your deck into your graveyard. Then destroy one of your opponent's creatures that costs less than the number of cards in your graveyard.&#xd;&#xa; You can't put other exile creatures that have Shen in their name into the battle zone.&#xd;&#xa;Doron Go-'Shen'   Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="6" />
 		</card>

@@ -351,7 +351,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value="This creature costs 1 less to summon for each creature in your graveyard. It can't cost less than 1.&#xd;&#xa;Speed attacker &#xd;&#xa;Triple breaker&#xd;&#xa; When you put this creature into the battle zone, destroy all psychic creatures. Then destroy all creatures that have power 5000 or less.&#xd;&#xa; Players can't summon creatures that have power 5000 or less or put psychic creatures into the battle zone." />
+			<property name="Rules" value="This creature costs 1 less to summon for each creature in your graveyard. It can't cost less than 1.&#xd;&#xa;Speed attacker   Triple breaker&#xd;&#xa; When you put this creature into the battle zone, destroy all psychic creatures. Then destroy all creatures that have power 5000 or less.&#xd;&#xa; Players can't summon creatures that have power 5000 or less or put psychic creatures into the battle zone." />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="None" />		
 		</card>
@@ -362,7 +362,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value="This creature costs 1 less to summon for each creature in your graveyard. It can't cost less than 1.&#xd;&#xa;Speed attacker &#xd;&#xa;Triple breaker&#xd;&#xa; When you put this creature into the battle zone, destroy all psychic creatures. Then destroy all creatures that have power 5000 or less.&#xd;&#xa; Players can't summon creatures that have power 5000 or less or put psychic creatures into the battle zone." />
+			<property name="Rules" value="This creature costs 1 less to summon for each creature in your graveyard. It can't cost less than 1.&#xd;&#xa;Speed attacker   Triple breaker&#xd;&#xa; When you put this creature into the battle zone, destroy all psychic creatures. Then destroy all creatures that have power 5000 or less.&#xd;&#xa; Players can't summon creatures that have power 5000 or less or put psychic creatures into the battle zone." />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="None" />		
 		</card>
@@ -395,7 +395,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oraclion" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa; At the end of each of your turns, you may destroy up to 2 of your tapped creatures. If you do, search your deck. For each creature destroyed, you may take a colorless creature that costs 7 or less from your deck or hand and put into the battle zone. Then shuffle your deck.&#xd;&#xa; During your opponent's turn, whenever your opponent would choose a creature in the battle zone, he can't choose this one.  (It can still be attacked.)  &#xd;&#xa;Double breaker" />
+			<property name="Rules" value="{BLOCKER}  Double breaker&#xd;&#xa;At the end of each of your turns, you may destroy up to 2 of your tapped creatures. If you do, search your deck. For each creature destroyed, you may take a colorless creature that costs 7 or less from your deck or hand and put into the battle zone. Then shuffle your deck.&#xd;&#xa; During your opponent's turn, whenever your opponent would choose a creature in the battle zone, he can't choose this one."/>
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="None" />		
 		</card>
