@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bb784fc6-fe21-4603-90d7-82c049908a74" version="1.0.6.2" octgnVersion="3.3.132.0" scriptVersion="3.1.0.1" name="Duel Masters" tags="Duel Masters, TCG, OCG, Kaijudo" description= "Duel Masters. Currently up to DMR-12: Episode 3 with common card effects automated. English format also supported." setsurl="http://octgngames.com/dmocg/images/" gameurl="http://octgngames.com/dmocg/" authors= "naveed92(Light)&#xD;&#xA;zerovash&#xD;&#xA;vokes&#xD;&#xA;nitrox" markersize="18" iconurl="https://raw.githubusercontent.com/naveed92/dm-ocg-octgn/master/dm-ocg-octgn/game/cards/logo.jpg" >
+<game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bb784fc6-fe21-4603-90d7-82c049908a74" version="1.0.6.3" octgnVersion="3.3.132.0" scriptVersion="3.1.0.1" name="Duel Masters" tags="Duel Masters, TCG, OCG, Kaijudo" description= "Duel Masters. Currently up to DMR-12: Episode 3 with common card effects automated. English format also supported." setsurl="http://octgngames.com/dmocg/images/" gameurl="http://octgngames.com/dmocg/" authors= "naveed92(Light)&#xD;&#xA;zerovash&#xD;&#xA;vokes&#xD;&#xA;nitrox" markersize="18" iconurl="https://raw.githubusercontent.com/naveed92/dm-ocg-octgn/master/dm-ocg-octgn/game/cards/logo.jpg" >
 
 	<scripts>
 		<script src="scripts/actions.py" />
