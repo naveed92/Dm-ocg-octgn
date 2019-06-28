@@ -10,4 +10,11 @@ If you want to help out in adding sets/images:
 
 Note: All images must be 560 px or less in height, and must be in jpg format.
 
-http://octgngames.com/dmocg/
+OCTGNGames page:
+https://octgngames.com/dmocg/
+
+Discord server:
+https://discord.gg/Zr23NH2
+
+Forums:
+https://dmoctgn.proboards.com
