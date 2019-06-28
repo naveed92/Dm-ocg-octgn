@@ -64,6 +64,7 @@ cardScripts = {
 				'Gylus, Larval Lord': { 'onPlay': { 'targetDiscard': ['True'] }},
 				'Gyulcas, Sage of the East Wind': { 'onPlay': {  'search': ['me.Deck', '1', '"Cross Gear"'] }},
 				'Hawkeye Lunatron': { 'onPlay': { 'search': ['me.Deck', '1', '"ALL"', '"ALL"', '"ALL"', 'False'] }},
+				'Honenbe, Skeletal Guardian':  { 'onPlay': { 'mill': ['me.Deck', '3', 'True'], 'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
 				'Hot Spring Crimson Meow': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Hulk Crawler': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Hurlosaur': { 'onPlay': {  'kill': ['1000'] }},
@@ -133,6 +134,7 @@ cardScripts = {
 				'Big Beast Cannon': { 'onPlay': { 'kill': ['7000'] }},
 				'Blizzard of Spears': { 'onPlay': {  'destroyAll': ['table', 'True', '4000'] }},
 				'Bomber Doll': { 'onPlay': { 'kill': ['2000'] }},
+				'Bone Dance Charger':  { 'onPlay': { 'mill': ['me.Deck', '2'] }},
 				'Boomerang Comet': { 'onPlay': { 'fromMana': [], 'toMana': ['card'] }},
 				'Brain Cyclone': { 'onPlay': { 'draw': ['me.Deck', 'False', '1'] }},
 				'Brain Serum': { 'onPlay': {  'draw': ['me.Deck', 'False', '2'] }},
@@ -152,6 +154,7 @@ cardScripts = {
 				'Death Gate, Gate of Hell': { 'onPlay': { 'kill': ['"ALL"','"Untap"'], 'fromGrave': [] }},
 				'Death Smoke': { 'onPlay': { 'kill': ['"ALL"','"Untap"'] }},
 				'Decopin Crash': { 'onPlay': { 'kill': ['4000'] }},
+				'Devil Hand': { 'onPlay': { 'kill': [], 'mill':['me.Deck', '3', 'True'] }},
 				'Devil Smoke': { 'onPlay': { 'kill': ['"ALL"','"Untap"'] }},
 				'Dimension Gate': { 'onPlay': { 'search': ['me.Deck', '1', '"Creature"'] }},
 				'Dracobarrier': { 'onPlay': { 'tapCreature': [] }},
@@ -1070,12 +1073,21 @@ def drawX(group, x = 0, y = 0):
 	for card in group.top(count): card.moveTo(card.owner.hand)
 	notify("{} draws {} cards.".format(me, count))
 	
-def mill(group, x = 0, y = 0):
+def mill(group, count=1, conditional = False, x = 0, y = 0):
 	mute()
-	if len(group) == 0: return
-	card = group[0]
-	toDiscard(card, notifymute = True)
-	notify("{} discards top card of Deck.".format(me))
+	if len(group) == 0:
+		notify("No cards left in Deck!")
+		return
+	if conditional:	
+		choiceList = ['Yes', 'No']
+		colorsList = ['#FF0000', '#FF0000']
+		choice = askChoice("Discard top {} cards?".format(count), choiceList, colorsList)
+		if choice == 0 or choice == 2:
+			return 
+	if len(group) < count: count = len(group)
+	for card in group.top(count):
+		toDiscard(card, notifymute = True)
+		notify("{} discards {} from top of Deck.".format(me, card))
 	
 def millX(group, x = 0, y = 0):
 	mute()
