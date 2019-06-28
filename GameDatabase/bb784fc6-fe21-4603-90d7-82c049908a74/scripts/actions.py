@@ -35,6 +35,7 @@ cardScripts = {
 				'Buinbe, Airspace Guardian': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Chaos Worm': { 'onPlay': {  'kill': [] }},
 				'Chief De Baula, Machine King of Mystic Light': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Spell"'] }},
+				'Cobalt Hulcus, Aqua Savage': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Craze Valkyrie, the Drastic': { 'onPlay': { 'tapCreature': ['2'] }},
 				'Crimson Maru, the Untamed Flame': { 'onPlay': {  'kill': ['4000'] }},
 				'Cyber N World': { 'onPlay': {  'semiReset': [] }},
@@ -65,6 +66,7 @@ cardScripts = {
 				'Gyulcas, Sage of the East Wind': { 'onPlay': {  'search': ['me.Deck', '1', '"Cross Gear"'] }},
 				'Hawkeye Lunatron': { 'onPlay': { 'search': ['me.Deck', '1', '"ALL"', '"ALL"', '"ALL"', 'False'] }},
 				'Honenbe, Skeletal Guardian':  { 'onPlay': { 'mill': ['me.Deck', '3', 'True'], 'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
+				'Hormone, Maxim Bronze': { 'onPlay': { 'mana': ['me.Deck'] }},				
 				'Hot Spring Crimson Meow': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Hulk Crawler': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Hurlosaur': { 'onPlay': {  'kill': ['1000'] }},
@@ -96,6 +98,7 @@ cardScripts = {
 				'Phal Reeze, Apocalyptic Sage': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Spell"'] }},
 				'Piara Heart': { 'onPlay': {  'kill': ['1000'] }},
 				'Pointa, the Aqua Shadow': { 'onPlay': { 'targetDiscard': ['True'] }},
+				'Prometheus, Splash Axe': { 'onPlay': { 'mana': ['me.Deck', '2'], 'fromMana': [] } },
 				'Qurian': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Raiden, Lightfang Ninja': { 'onPlay': { 'tapCreature': [] }},
 				'Rayla, Truth Enforcer': { 'onPlay': { 'search': ['me.Deck', '1', '"Spell"'] }},
@@ -123,6 +126,7 @@ cardScripts = {
 				'Triple Mouth, Decaying Savage': { 'onPlay': { 'mana': ['me.Deck'], 'targetDiscard': ['True'] }},
 				'Unicorn Fish': { 'onPlay': { 'bounce': [] }},
 				'Velyrika Dragon': { 'onPlay': { 'search': ['me.Deck', '1', '"ALL"', '"ALL"', '"Armored Dragon"'] }},
+				'Vibro Blade, Hulcus Range': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},				
 				'Walmiel, Electro-Sage': { 'onPlay': { 'tapCreature': [] }},
 				'Whispering Totem': { 'onPlay': { 'fromDeck': [] }},
 				'Wind Axe, the Warrior Savage': { 'onPlay': {  'mana': ['me.Deck'] }},
@@ -194,6 +198,7 @@ cardScripts = {
 				'Invincible Technology': { 'onPlay': { 'search': ['me.Deck','len(me.Deck)'] }},
                 'Lifeplan Charger': { 'onPlay': { 'lookAtTopCards': ['5', '"Creature"'] }},
 				'Lightning Charger': { 'onPlay': { 'tapCreature': [] }},
+				'Like a Rolling Storm':  { 'onPlay': { 'mill': ['me.Deck', '3', 'True'], 'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
 				'Lionic Phantom Dragon\'s Flame': { 'onPlay': {  'kill': ['2000'] }},
 				'Living Lithograph': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Logic Cube': { 'onPlay': { 'search': ['me.Deck', '1', '"Spell"'] }},
@@ -220,6 +225,7 @@ cardScripts = {
 				'Phantasm Clutch': { 'onPlay': { 'kill': ['"ALL"','"Tap"'] }},
 				'Pixie Cocoon': { 'onPlay': { 'fromMana': ['1', '"Creature"'], 'toMana': ['card'] }},
 				'Pixie Life': { 'onPlay': { 'mana': ['me.Deck'] }},
+				'Primal Scream':  { 'onPlay': { 'mill': ['me.Deck', '4', 'True'], 'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},				
 				'Punish Hold': { 'onPlay': { 'tapCreature': ['2'] }},
 				'Purgatory Force': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '2', '"Creature"'] }},
 				'Reap and Sow': { 'onPlay': { 'mana': ['me.Deck'], 'destroyMana': [] }},		
@@ -303,6 +309,32 @@ cardScripts = {
 				'Red-Eye Scorpion': { 'onDestroy': { 'toMana': ['card'] }},
 				'Worm Gowarski, Masked Insect': { 'onDestroy': { 'targetDiscard': ['True'] }},
 	}
+# Events
+
+def endTurn(table, x=0, y=0):
+	mute()
+	remoteCall(getActivePlayer(),'untapAll',[])
+	notify("{} ends their turn.".format(me))
+	
+def resetGame():
+	mute()
+	me.setGlobalVariable("shieldCount", "0")
+#intermediate automation functions
+
+def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1):  #askCard function was changed. So using the same name but with the new functionality
+	dlg = cardDlg(list)
+	dlg.title= title
+	
+	if numberToTake == 0:
+		dlg.min, dlg.max = 0,0
+		dlg.text = "Card Order(drag to rearrange):"
+		dlg.show()
+		return dlg.list
+	result = dlg.show()
+	
+	if result is None:		
+		return None
+	return result[0]
 
 # Functions used in the Automation dictionaries.
 
@@ -322,7 +354,7 @@ def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter =
 		else:
 			cardsInGroup_CivTypeandRace_Filtered = [card for card in cardsInGroup_CivandType_Filtered]
 		if len(cardsInGroup_CivTypeandRace_Filtered) == 0: return
-		choice = askCard(cardsInGroup_CivTypeandRace_Filtered, 'Choose a Card  to Summon from the Graveyard','Graveyard')
+		choice = askCard2(cardsInGroup_CivTypeandRace_Filtered, 'Choose a Card  to Summon from the Graveyard','Graveyard')
 		if type(choice) is not Card: break
 		toPlay(choice)
 
@@ -330,23 +362,22 @@ def lookAtTopCards(num, cardType='All', targetZone='hand'):
 	mute()
 	notify("{} looks at the top {} cards of their deck".format(me,num))
 	cardList = [card for card in me.Deck.top(num)]
-	choice = askCard(cardList, 'Choose a card to take')
+	choice = askCard2(cardList, 'Choose a card to take')
 	if type(choice) is Card:
 		if cardType == 'All' or re.search(cardType, choice.Type):
 			toHand(choice, show = True)
 		else:
 			notify("Please select a {}! Action cancelled.".format(cardType))
 			return
-	for counter in range(num-1, 0, -1):
-		cardList = [card for card in me.Deck.top(counter)]
-		choice = askCard(cardList, 'Choose card to put to bottom','To Bottom')
-		if type(choice) is Card:
-			choice.moveToBottom(me.Deck)
-			notify("{} moves card #{} to the bottom of their deck.".format(me, num-counter))
-		else:
-			notify("Action cancelled.")
-			break
-
+	else:
+		notify("Nothing selected! Action cancelled.")
+		return
+	cardList = [card for card in me.Deck.top(num-1)]
+	cardList = askCard2(cardList, 'Rearrange the remaining cards to put to bottom','To Bottom', 0)
+	for card in cardList:
+			card.moveToBottom(me.Deck)
+			notify("{} moved a card to the bottom of their deck.".format(me))
+			
 def targetDiscard(randomDiscard = False, targetZone = 'grave'):
 	mute()
 	currentPlayers = getPlayers()
@@ -361,7 +392,10 @@ def targetDiscard(randomDiscard = False, targetZone = 'grave'):
 	if randomDiscard:
 		remoteCall(targetPlayer,'randomDiscard',targetPlayer.hand)
 		return
-	cardChoice = askCard(cardList, 'Choose a Card to discard','Discard')
+	cardChoice = cardDlg(cardList)
+	cardChoice.title= 'Choose a Card to discard'
+	cardChoice.text="{}'s hand".format(targetPlayer)
+	cardChoice  = cardChoice.show()[0]
 	if type(cardChoice) is not Card: 
 		notify("{} - Error".format(type(cardChoice)))
 		return
@@ -406,7 +440,7 @@ def fromMana(count = 1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL
 			else:
 				cardsInGroup_CivTypeandRace_Filtered = [card for card in cardsInGroup_CivandType_Filtered]
 			if len(cardsInGroup_CivTypeandRace_Filtered) == 0: return
-			choice = askCard(cardsInGroup_CivTypeandRace_Filtered, 'Choose a Card from the Mana Zone','Mana Zone')
+			choice = askCard2(cardsInGroup_CivTypeandRace_Filtered, 'Choose a Card from the Mana Zone','Mana Zone')
 			if type(choice) is not Card: break
 			if toGrave == True: remoteCall(player,"destroy",choice)
 			else: remoteCall(player,"toHand",[choice, show])
@@ -415,7 +449,7 @@ def killAndSearch(play = False, singleSearch = False):
 	mute()
 	cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
 	if len(cardList)==0: return	
-	choice = askCard(cardList, 'Choose a Creature to destroy')
+	choice = askCard2(cardList, 'Choose a Creature to destroy')
 	if type(choice) is not Card: return
 	card = choice
 	remoteCall(choice.owner,'destroy',choice)
@@ -487,7 +521,7 @@ def search(group, count = 1, TypeFilter = "ALL" , CivFilter = "ALL", RaceFilter 
 		else:
 			cardsInGroup_CivTypeandRace_Filtered = [card for card in cardsInGroup_CivandType_Filtered]
 		while (True):
-			choice = askCard(cardsInGroup, 'Search card to take to hand (1 at a time)')
+			choice = askCard2(cardsInGroup, 'Search card to take to hand (1 at a time)')
 			if type(choice) is not Card: 
 				group.shuffle()
 				notify("{} finishes searching his/her {}.".format(me, group.name))
@@ -516,7 +550,7 @@ def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targe
 			cardList = [card for card in cardList if re.search(civFilter,card.Civilization)]
 		if len(cardList)==0:
 			return	
-		choice = askCard(cardList, 'Choose a Creature to destroy')
+		choice = askCard2(cardList, 'Choose a Creature to destroy')
 		if type(choice) is not Card:
 			return
 		if choice.owner == me:
@@ -545,7 +579,7 @@ def destroyAll(group, condition = False, powerFilter = 'ALL', civFilter = "ALL",
 		possibleSavers = [card for card in table if cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",card.rules) and (re.search(cardToBeSaved.properties['Race'],card.rules) or re.search("Saver: All Races",card.rules))]
 		if len(possibleSavers) > 0:
 			if confirm("Prevent {}'s destruction by using a Saver on your side of the field?\n\n".format(cardToBeSaved.Name)):
-				choice = askCard(possibleSavers, 'Choose Saver to destroy')
+				choice = askCard2(possibleSavers, 'Choose Saver to destroy')
 				if type(choice) is Card:
 					toDiscard(choice)
 					cardList.remove(choice)
@@ -569,7 +603,7 @@ def destroyMana(count = 1):
 		cardList = [card for card in table if isMana(card) and not card.owner==me]
 		if len(cardList)==0:
 			return
-		choice = askCard(cardList, 'Choose a Mana Card to destroy')
+		choice = askCard2(cardList, 'Choose a Mana Card to destroy')
 		if type(choice) is not Card:
 			return		
 		remoteCall(choice.owner,"destroy",choice)
@@ -582,7 +616,7 @@ def destroyShield(owner = True):
 			cardList = [card for card in table if isShield(card) and card.owner==me]
 	if len(cardList)==0:
 			return
-	choice = askCard(cardList, 'Choose a shield to send to graveyard')
+	choice = askCard2(cardList, 'Choose a shield to send to graveyard')
 	if type(choice) is not Card:
 			return		
 	remoteCall(choice.owner,"destroy",[choice,True])
@@ -611,7 +645,7 @@ def sacrifice(power = float('inf'), count = 1):
 		cardList = [card for card in cardList if int(card.Power) <= power]
 		if len(cardList)==0:
 			return	
-		choice = askCard(cardList, 'Choose a Creature to destroy')
+		choice = askCard2(cardList, 'Choose a Creature to destroy')
 		if type(choice) is not Card:
 			return
 		destroy(choice)
@@ -625,7 +659,7 @@ def bounce(count = 1, opponentOnly = False):
 			cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
 		if len(cardList) < 1:
 			return
-		choice = askCard(cardList,'Choose a Creature to return to Hand')
+		choice = askCard2(cardList,'Choose a Creature to return to Hand')
 		if type(choice) is not Card:
 			return
 		if choice.owner==me:
@@ -645,7 +679,7 @@ def gear(str):
 					and not card.owner == me]
 		if len(cardList) == 0:
 			return
-		choice = askCard(cardList,'Choose a Cross Gear to send to Graveyard')
+		choice = askCard2(cardList,'Choose a Cross Gear to send to Graveyard')
 		if type(choice) is not Card:
 			return
 		remoteCall(choice.owner, 'destroy', choice)
@@ -653,7 +687,7 @@ def gear(str):
 		cardList = [card for card in table if isGear(card)]
 		if len(cardList) == 0:
 			return
-		choice = askCard(cardList, 'Choose a Cross Gear to send to Hand')
+		choice = askCard2(cardList, 'Choose a Cross Gear to send to Hand')
 		if type(choice) is not Card:
 			return
 		if choice.owner == me:
@@ -664,7 +698,7 @@ def gear(str):
 		cardList = [card for card in table if isGear(card)]
 		if len(cardList) == 0:
 			return
-		choice = askCard(cardList, 'Choose a Cross Gear to send to Mana')
+		choice = askCard2(cardList, 'Choose a Cross Gear to send to Mana')
 		if type(choice) is not Card:
 			return
 		if choice.owner == me:
@@ -677,7 +711,7 @@ def sendToShields(count=1):
 	for i in range(0,count):
 			cardList = [card for card in table if isCreature(card) and card.owner != me]
 			if len(cardList)==0: return
-			choice = askCard(cardList,'Choose a Creature to send to shields')
+			choice = askCard2(cardList,'Choose a Creature to send to shields')
 			if type(choice) is not Card: return
 			remoteCall(choice.owner,"toShields",choice)
 
@@ -686,7 +720,7 @@ def sendToMana(count=1):
 	for i in range(0,count):
 			cardList = [card for card in table if isCreature(card) and card.owner != me]
 			if len(cardList)==0: return
-			choice = askCard(cardList,'Choose a Creature to send to mana')
+			choice = askCard2(cardList,'Choose a Creature to send to mana')
 			if type(choice) is not Card: return
 			remoteCall(choice.owner,"toMana",choice)
 
@@ -709,7 +743,7 @@ def tapCreature(count = 1, targetALL = False, includeOwn = False):
 				cardList = [card for card in table if isCreature(card) and card.orientation == Rot0 and not card.owner==me and re.search("Creature", card.Type)]
 			if len(cardList)==0:
 				return
-			choice = askCard(cardList, 'Choose a Creature to tap')
+			choice = askCard2(cardList, 'Choose a Creature to tap')
 			if type(choice) is not Card:
 				return
 			remoteCall(choice.owner,"tap",choice)
@@ -749,12 +783,12 @@ def awaken(card, x = 0, y = 0):
 	if (re.search("Psychic", card.Type)):
 		altName = card.alternateProperty('awakening', 'name')
 		if card.alternate is '':
-			card.switchTo('awakening')
+			card.alternate = 'awakening'
 			notify("{}'s' {} awakens to {}.".format(me, altName, card))
 			align()
 			return
 		else:
-			card.switchTo('')
+			card.alternate = ''
 			notify("{}'s {} reverts to {}.".format(me, altName, card))
 			align()
 			return
@@ -770,16 +804,19 @@ def toHyperspatial(card, x = 0, y = 0, notifymute = False):
 		if notifymute == False:
 			notify("{}'s {} returns to the Hyperspatial Zone.".format(me, card))
 
-def resetGame():
-	mute()
-	me.setGlobalVariable("shieldCount", "0")
-
-def moveCards(player, card, fromGroup, toGroup, oldIndex, index, oldX, oldY, x, y, highlights, markers, faceup):
+def moveCards(args):
 	## This trigger updates the evolution dictionary in the event one of the cards involved in an evolution leaves the battlezone.
 	mute()
+	player = args.player
+	card = args.cards[0]
+	fromGroup = args.fromGroups[0]
+	notify("From {}".format(args.fromGroups[0].name))
+	## Old vars are: player, card, fromGroup, toGroup, oldIndex, index, oldX, oldY, x, y, highlights, markers, faceup
+	
 	if player != me: ##Ignore for cards you don't control
 		return
-	if table not in fromGroup: ## we only want cases where a card is being moved from table to another group
+	if table not in args.fromGroups: ## we only want cases where a card is being moved from table to another group
+		notify("Ignored")
 		return
 	evolveDict = eval(me.getGlobalVariable("evolution"))
 	for evo in evolveDict.keys():
@@ -863,13 +900,13 @@ def align():
 		return "BREAK"
 	if Table.isTwoSided():
 		if playerside == None:  ##script skips this if playerside has already been determined
-			if me.hasInvertedTable():
+			if me.isInverted:
 				playerside = -1  #inverted (negative) side of the table
 			else:
 				playerside = 1
 		if sideflip == None:  ##script skips this if sideflip has already been determined
 			playersort = sorted(getPlayers(), key=lambda player: player._id)  ##makes a sorted players list so its consistent between all players
-			playercount = [p for p in playersort if me.hasInvertedTable() == p.hasInvertedTable()]  ##counts the number of players on your side of the table
+			playercount = [p for p in playersort if me.isInverted == p.isInverted]  ##counts the number of players on your side of the table
 			if len(playercount) > 2:  ##since alignment only works with a maximum of two players on each side
 				whisper("Cannot align: Too many players on your side of the table.")
 				sideflip = 0  ##disables alignment for the rest of the play session
@@ -973,7 +1010,7 @@ def rollDie(group, x = 0, y = 0):
 	n = rnd(1, diesides)
 	notify("{} rolls {} on a {}-sided die.".format(me, n, diesides))
 
-def untapAll(group, x = 0, y = 0):
+def untapAll(group=table, x = 0, y = 0):
 	mute()
 	for card in group:
 		if not card.owner == me:
@@ -1013,7 +1050,7 @@ def destroy(card, dest = False, x = 0, y = 0):
 			cardsInHandWithStrikeBackAbilityThatCanBeUsed = [card for card in cardsInHandWithStrikeBackAbility if re.search(card.Civilization, shieldCard.Civilization)]
 			if len(cardsInHandWithStrikeBackAbilityThatCanBeUsed) > 0:
 				if confirm("Activate Strike Back by sending {} to the graveyard?\n\n{}".format(shieldCard.Name, shieldCard.Rules)):
-					choice = askCard(cardsInHandWithStrikeBackAbilityThatCanBeUsed, 'Choose Strike Back to activate')
+					choice = askCard2(cardsInHandWithStrikeBackAbilityThatCanBeUsed, 'Choose Strike Back to activate')
 					if type(choice) is Card:
 						shieldCard.isFaceUp = True
 						rnd(1,100)
@@ -1024,21 +1061,22 @@ def destroy(card, dest = False, x = 0, y = 0):
 		notify("{}'s shield #{} is broken.".format(me, shieldCard.markers[shieldMarker]))
 		shieldCard.moveTo(shieldCard.owner.hand)
 	else:
-			cardToBeSaved = card
-			possibleSavers = [card for card in table if cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",card.rules) and (re.search(cardToBeSaved.properties['Race'],card.rules) or re.search("Saver: All Races",card.rules))]
-			if len(possibleSavers) > 0:
-					if confirm("Prevent {}'s destruction by using a Saver on your side of the field?\n\n".format(cardToBeSaved.Name)):
-							choice = askCard(possibleSavers, 'Choose Saver to destroy')
-							if type(choice) is Card:
-									toDiscard(choice)
-									notify("{} destroys {} to prevent {}'s destruction.".format(me, choice.name, cardToBeSaved.name))
-									return
-			toDiscard(cardToBeSaved)
-			if cardScripts.get(card.name,{}).get('onDestroy',{}):
-				functionDict = cardScripts.get(card.name).get('onDestroy')
-				for function in functionDict:
-					argList = functionDict.get(function)
-					eval(function)(*[eval(arg) for arg in argList])
+		cardToBeSaved = card
+		possibleSavers = [card for card in table if cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",card.rules) and (re.search(cardToBeSaved.properties['Race'],card.rules) or re.search("Saver: All Races",card.rules))]
+		if len(possibleSavers) > 0:
+				if confirm("Prevent {}'s destruction by using a Saver on your side of the field?\n\n".format(cardToBeSaved.Name)):
+						choice = askCard2(possibleSavers, 'Choose Saver to destroy')
+						if type(choice) is Card:
+								toDiscard(choice)
+								notify("{} destroys {} to prevent {}'s destruction.".format(me, choice.name, cardToBeSaved.name))
+								return
+		toDiscard(cardToBeSaved)
+################# ON  DESTROY BUG HERE  PLS FIX ##############
+		if cardScripts.get(card.name,{}).get('onDestroy',{}):
+			functionDict = cardScripts.get(card.name).get('onDestroy')
+			for function in functionDict:
+				argList = functionDict.get(function)
+				eval(function)(*[eval(arg) for arg in argList])
 
 
 def shuffle(group, x = 0, y = 0):
@@ -1147,10 +1185,6 @@ def massMana(group, conditional = False, x=0, y=0):
 			if card.orientation & Rot90 != Rot90:
 					card.orientation ^= Rot90
 		notify("{} charges top {} cards of {} as mana.".format(me, count, group.name))
-	
-def endTurn(table,x=0,y=0):
-	mute()
-	notify("{} ends their turn.".format(me))
 	
 def shields(group, count = 1, conditional = False, x = 0, y = 0):
 	mute()
