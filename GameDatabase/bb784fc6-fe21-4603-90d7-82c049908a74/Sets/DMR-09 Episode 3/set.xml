@@ -343,7 +343,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="If you have a colorless creature in the battle zone, this creature gets 'Shield trigger'. &#xd;&#xa; When you put this creature into the battle zone, tap all your opponent's creatures in the battle zone." />
+			<property name="Rules" value="If you have a colorless creature in the battle zone, this creature gets {Shield trigger}. &#xd;&#xa; When you put this creature into the battle zone, tap all your opponent's creatures in the battle zone." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="15" />
 		</card>
