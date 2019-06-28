@@ -11,6 +11,11 @@ If you want to help out in adding sets/images:
 
 Note: All images must be 560 px or less in height, and must be in jpg format.
 
+All automations are based on python. OCTGN plugin dev refernce:
+https://github.com/octgn/OCTGN/wiki
+https://github.com/octgn/OCTGN/wiki/OCTGN-Python-3.1.0.2-API-Reference
+
+
 OCTGNGames page:
 https://octgngames.com/dmocg/
 
