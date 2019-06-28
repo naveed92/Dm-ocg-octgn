@@ -1,6 +1,7 @@
 This is the Duel Masters OCG Definition for OCTGN, and images.
 
 If you want to help out in adding sets/images:
+- Fork the repo
 - Add the set folder inside GameDatabase/bb784fc6-fe21-4603-90d7-82c049908a74/Sets/
 - Make a set.xml file inside
 - Fill up the data inside in the same format as other set.xml files
@@ -10,4 +11,11 @@ If you want to help out in adding sets/images:
 
 Note: All images must be 560 px or less in height, and must be in jpg format.
 
-http://octgngames.com/dmocg/
+OCTGNGames page:
+https://octgngames.com/dmocg/
+
+Discord server:
+https://discord.gg/Zr23NH2
+
+Forums:
+https://dmoctgn.proboards.com
