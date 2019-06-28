@@ -1,8 +1,5 @@
 This is the Duel Masters OCG Definition for OCTGN, and images.
 
-I have updated the repo folder structure to be exactly like OCTGN's, so one can put the repository directly inside the OCTGN folder and see the changes reflected in OCTGN quickly.
-The respective gitignore cases have been added.
-
 If you want to help out in adding sets/images:
 - Add the set folder inside GameDatabase/bb784fc6-fe21-4603-90d7-82c049908a74/Sets/
 - Make a set.xml file inside
