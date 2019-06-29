@@ -3,6 +3,7 @@
 #------------------------------------------------------------------------------
 import re
 import itertools
+import time
 
 shields = []
 playerside = None
@@ -72,7 +73,6 @@ cardScripts = {
 				'Hurlosaur': { 'onPlay': {  'kill': ['1000'] }},
 				'Iron Arm Tribe': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Izana Keeza': { 'onPlay': {  'kill': ['2000'] }},
-				'Intense Vacuuming Twist': { 'onPlay': { 'lookAtTopCards': ['5'] }},
 				'Jasmine, Mist Faerie': { 'onPlay': { 'suicide': ['"Jasmine, Mist Faerie"', 'mana', 'me.Deck'] }},
 				'Jelly, Dazzling Electro-Princess': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Jenny, the Dismantling Puppet': { 'onPlay': {  'targetDiscard': [] }},
@@ -98,7 +98,7 @@ cardScripts = {
 				'Phal Reeze, Apocalyptic Sage': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Spell"'] }},
 				'Piara Heart': { 'onPlay': {  'kill': ['1000'] }},
 				'Pointa, the Aqua Shadow': { 'onPlay': { 'targetDiscard': ['True'] }},
-				'Prometheus, Splash Axe': { 'onPlay': { 'mana': ['me.Deck', '2'], 'fromMana': [] } },
+				'Prometheus, Splash Axe': { 'onPlay': { 'mana': ['me.Deck', '2', 'False', 'True'] } },
 				'Qurian': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
 				'Raiden, Lightfang Ninja': { 'onPlay': { 'tapCreature': [] }},
 				'Rayla, Truth Enforcer': { 'onPlay': { 'search': ['me.Deck', '1', '"Spell"'] }},
@@ -126,7 +126,7 @@ cardScripts = {
 				'Triple Mouth, Decaying Savage': { 'onPlay': { 'mana': ['me.Deck'], 'targetDiscard': ['True'] }},
 				'Unicorn Fish': { 'onPlay': { 'bounce': [] }},
 				'Velyrika Dragon': { 'onPlay': { 'search': ['me.Deck', '1', '"ALL"', '"ALL"', '"Armored Dragon"'] }},
-				'Vibro Blade, Hulcus Range': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},				
+				'Viblo Blade, Hulcus Range': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},				
 				'Walmiel, Electro-Sage': { 'onPlay': { 'tapCreature': [] }},
 				'Whispering Totem': { 'onPlay': { 'fromDeck': [] }},
 				'Wind Axe, the Warrior Savage': { 'onPlay': {  'mana': ['me.Deck'] }},
@@ -166,21 +166,26 @@ cardScripts = {
 				'Enchanted Soil': { 'onPlay': { 'fromGrave': [] }},
 				'Energy Stream': { 'onPlay': { 'draw': ['me.Deck', 'False', '2'] }},
 				'Eureka Charger': { 'onPlay': { 'draw': ['me.Deck'] }},
+				'Eureka Program': { 'onPlay': { 'eurekaProgram': ['True'] }},
                 'Faerie Crystal': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Faerie Life': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Faerie Miracle': { 'onPlay': { 'mana': ['me.Deck'] }},
+				'Faerie Shower': { 'onPlay': { 'lookAtTopCards': ['2','"card"','"hand"','"mana"'] }},
+				'Flame-Absorbing Palm': { 'onPlay': { 'kill': ['2000'] }},
+				'Fire Crystal Bomb': { 'onPlay': { 'kill': ['5000'] }},
+				'Flame Lance Trap': { 'onPlay': { 'kill': ['5000'] }},
+				'Flood Valve': { 'onPlay': { 'fromMana': [] }},
 				'Gardening Drive': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Gatling Cyclone': { 'onPlay': {  'kill': ['2000'] }},
 				'Ghost Clutch': { 'onPlay': { 'targetDiscard': ['True'] }},
 				'Ghost Touch': { 'onPlay': { 'targetDiscard': ['True'] }},
 				'Goren Cannon': { 'onPlay': { 'kill': ['3000'] }},
                 'Goromaru Communication': { 'onPlay': { 'search': ['me.Deck', '1', '"Creature"'] }},
-				'Flame-Absorbing Palm': { 'onPlay': { 'kill': ['2000'] }},
-				'Fire Crystal Bomb': { 'onPlay': { 'kill': ['5000'] }},
-				'Flame Lance Trap': { 'onPlay': { 'kill': ['5000'] }},
-				'Flood Valve': { 'onPlay': { 'fromMana': [] }},
 				'Hell Chariot': { 'onPlay': { 'kill': ['"ALL"','"Untap"'] }},
 				'Hide and Seek': { 'onPlay': { 'bounceAndDiscard':[] }},
+				'Hogan Blaster': { 'onPlay': { 'drama': ['True', '"creature or spell"', '"battlezone"', '"top"'] }},				
+				'Holy Awe': { 'onPlay': { 'tapCreature': ['1','True'] }},
+				'Hopeless Vortex': { 'onPlay': { 'kill': [] }},
 				'Hyperspatial Storm Hole': { 'onPlay': { 'kill': ['5000'] }},
 				'Hyperspatial Bolshack Hole': { 'onPlay': { 'kill': ['5000'] }},
 				'Hyperspatial Kutt Hole': { 'onPlay': { 'kill': ['5000'] }},
@@ -190,9 +195,8 @@ cardScripts = {
 				'Hyperspatial Energy Hole': { 'onPlay': { 'draw': ['me.Deck', 'False', '1'] }},
 				'Hyperspatial Faerie Hole': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Hyperspatial Revive Hole': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
-				'Holy Awe': { 'onPlay': { 'tapCreature': ['1','True'] }},
-				'Hopeless Vortex': { 'onPlay': { 'kill': [] }},
 				'Infernal Smash': { 'onPlay': { 'kill': [] }},
+				'Intense Vacuuming Twist': { 'onPlay': { 'lookAtTopCards': ['5'] }},				
 				'Invincible Abyss': { 'onPlay': { 'destroyAll': ['[card for card in table if card.owner != me]', 'True'] }},
 				'Invincible Aura': { 'onPlay': { 'shields': ['me.Deck', '3', 'True'] }},
 				'Invincible Technology': { 'onPlay': { 'search': ['me.Deck','len(me.Deck)'] }},
@@ -217,6 +221,7 @@ cardScripts = {
 				'Miraculous Snare': { 'onPlay': { 'sendToShields': [] }},
 				'Moonlight Flash': { 'onPlay': { 'tapCreature': ['2'] }},
 				'Morbid Medicine': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '2', '"Creature"'] }},
+				'Mystery Cube': { 'onPlay': { 'drama': [] }},				
 				'Mystic Dreamscape': { 'onPlay': { 'fromMana': ['3'] }},
 				'Mystic Inscription': { 'onPlay': { 'shields': ['me.Deck'] }},
 				'Natural Snare': { 'onPlay': { 'sendToMana': [] }},
@@ -309,17 +314,35 @@ cardScripts = {
 				'Red-Eye Scorpion': { 'onDestroy': { 'toMana': ['card'] }},
 				'Worm Gowarski, Masked Insect': { 'onDestroy': { 'targetDiscard': ['True'] }},
 	}
-# Events
+######### Events ##################
 
-def endTurn(table, x=0, y=0):
+def endTurn(args):
 	mute()
-	remoteCall(getActivePlayer(),'untapAll',[])
-	notify("{} ends their turn.".format(me))
+	nextPlayer = args.player
+	if nextPlayer == None:
+		#normally passed without green button
+		currentPlayers = getPlayers()
+		if len(currentPlayers)==2:
+			nextPlayer = currentPlayers[1]
+		else:
+			whisper("Please use the green arrows to pass the turn!")
+			return
+	
+	if turnNumber() == 0 or getActivePlayer() == me:
+		if nextPlayer == me:
+			if turnNumber() != 0:
+				whisper("You can't pass the turn to yourself!")
+				return
+			else:
+				nextTurn(me, True)
+		notify("{} ends their turn.".format(me))
+		remoteCall(nextPlayer, 'untapAll', table)
+		nextTurn(nextPlayer, True)
 	
 def resetGame():
 	mute()
 	me.setGlobalVariable("shieldCount", "0")
-#intermediate automation functions
+#########intermediate automation functions#########
 
 def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1):  #askCard function was changed. So using the same name but with the new functionality
 	dlg = cardDlg(list)
@@ -336,7 +359,7 @@ def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1): 
 		return None
 	return result[0]
 
-# Functions used in the Automation dictionaries.
+################ Functions used in the Automation dictionaries.####################
 
 def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", noEvo = True): #Temporary Fix for not allowing Evolutions
 	mute()
@@ -358,14 +381,54 @@ def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter =
 		if type(choice) is not Card: break
 		toPlay(choice)
 
-def lookAtTopCards(num, cardType='All', targetZone='hand'):
+def drama(shuffle = True, type = 'creature', targetZone = 'battlezone', failZone = 'mana', conditional = True):
+	mute()
+	if shuffle:
+		me.Deck.shuffle()
+		notify("{} shuffles their deck.".format(me))
+	card = me.Deck.top()
+	card.isFaceUp = True
+	notify("Top card is {}".format(card))
+	played = False #Flag for resolving after shuffle, unused rn
+	if type == 'creature':
+		success = re.search("Creature", card.Type)
+	elif type == 'creature or spell':
+		success = re.search("Creature", card.Type) or re.search("Spell", card.Type)
+	if success:
+		if conditional:
+			choiceList = ['Yes', 'No']
+			colorsList = ['#FF0000', '#FF0000']
+			choice = askChoice("Put {} into {}?".format(card, targetZone), choiceList, colorsList)
+			#more conditions for non-bz?
+			if choice == 1:
+				toPlay(card)
+				played = True
+				return
+		else:
+			toPlay(card)
+			played = True
+			return
+	if failZone == 'mana':
+		toMana(card)
+	elif failZone == 'hand':
+		toHand(card)
+	else:
+		notify("{} puts {} back on top of deck".format(me, card))
+		card.isFaceUp = False
+	
+def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bottom'):
 	mute()
 	notify("{} looks at the top {} cards of their deck".format(me,num))
 	cardList = [card for card in me.Deck.top(num)]
-	choice = askCard2(cardList, 'Choose a card to take')
+	choice = askCard2(cardList, 'Choose a card to put into {}'.format(targetZone))
 	if type(choice) is Card:
-		if cardType == 'All' or re.search(cardType, choice.Type):
-			toHand(choice, show = True)
+		if cardType == 'card' or re.search(cardType, choice.Type):
+			#use switch instead, when more zones are added here
+			if targetZone == 'mana':
+				toMana(choice)
+			else:
+				#to hand is default rn
+				toHand(choice, show = True)	
 		else:
 			notify("Please select a {}! Action cancelled.".format(cardType))
 			return
@@ -373,11 +436,16 @@ def lookAtTopCards(num, cardType='All', targetZone='hand'):
 		notify("Nothing selected! Action cancelled.")
 		return
 	cardList = [card for card in me.Deck.top(num-1)]
-	cardList = askCard2(cardList, 'Rearrange the remaining cards to put to bottom','To Bottom', 0)
+	#will it always be 1 card that goes into target zone? Account for more in later upgrades
+	if len(cardList)>1 and remainingZone=='bottom':
+		cardList = askCard2(cardList, 'Rearrange the remaining cards to put to {}'.format(remainingZone),'OK', 0)
 	for card in cardList:
-			card.moveToBottom(me.Deck)
-			notify("{} moved a card to the bottom of their deck.".format(me))
-			
+			if remainingZone == 'mana':
+				toMana(card)
+			else:
+				card.moveToBottom(me.Deck)
+				notify("{} moved a card to the bottom of their deck.".format(me))
+	
 def targetDiscard(randomDiscard = False, targetZone = 'grave'):
 	mute()
 	currentPlayers = getPlayers()
@@ -463,7 +531,7 @@ def loopThroughDeck(card, play = False):
 	if len(group) == 0: return
 	newCard = group[0]
 	newCard.isFaceUp = True
-	notify("{} reveals {}".format(card.owner,newCard.name))
+	notify("{} reveals {}".format(card.owner,newCard.Name))
 	rnd(1,1000)
 	if re.search("Creature", newCard.Type) and not re.search("Evolution Creature", newCard.Type):
 		if play == True:
@@ -475,6 +543,52 @@ def loopThroughDeck(card, play = False):
 	else:
 		remoteCall(newCard.owner,'toDiscard',newCard)
 		remoteCall(newCard.owner,'loopThroughDeck',[card, play])
+
+
+def eurekaProgram(ask = True):
+	mute()
+	cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type) and card.owner == me]
+	cardList = [card for card in cardList if not re.search("Psychic", card.Type)]
+	if len(cardList)==0: return	
+	
+	choice = askCard2(cardList, 'Choose a Creature to destroy')
+	if type(choice) is not Card: return
+	originalCost = int(choice.Cost)
+	found = False
+	notify("Cost is {}".format(originalCost))
+	destroy(choice)
+	for card in me.Deck:
+		card=me.Deck[0]
+		card.isFaceUp = True
+		cost = int(card.Cost)
+		notify("{} reveals {}".format(me,card))
+		rnd(1,10)
+		if (int(card.Cost) - originalCost) == 1:
+			if re.search("Creature", card.Type):
+				if not re.search("Evo", card.Type):
+					found = True
+					toPlay(card, ignoreEffects=True)
+					choice = card
+					##add card to resolve list
+					break			
+				else:
+					found = True
+					toPlay(card, ignoreEffects=True)	
+					choice = card
+					##add card to resolve list					
+					card.moveToTable(0,0)
+					align()
+					break
+		card.moveToBottom(me.Deck)
+	for card in me.Deck:
+		if card.isFaceUp:
+			card.isFaceUp = False
+	me.Deck.shuffle()
+	notify("{} shuffles their deck.".format(me))
+	if found:
+	## Temporary fix without a proper resolve list
+		toPlay(choice, notifymute = True)
+
 
 """"def volgMill(askChoice = True):
 	mute()
@@ -773,7 +887,6 @@ def suicide(name, action, arg):
 	cardList = [card for card in table if isCreature(card) and card.owner==me and re.search("Creature", card.type)]
 	cardList = [card for card in cardList if card.name==name]
 	toDiscard(cardList[-1])
-	notify("{} destroys {}.".format(me, name))
 	action(arg)
 
 #End of Automation Code
@@ -810,10 +923,9 @@ def moveCards(args):
 	player = args.player
 	card = args.cards[0]
 	fromGroup = args.fromGroups[0]
-	notify("From {}".format(args.fromGroups[0].name))
 	## Old vars are: player, card, fromGroup, toGroup, oldIndex, index, oldX, oldY, x, y, highlights, markers, faceup
 	
-	if player != me: ##Ignore for cards you don't control
+	if player is not me: ##Ignore for cards you don't control
 		return
 	if table not in args.fromGroups: ## we only want cases where a card is being moved from table to another group
 		notify("Ignored")
@@ -1143,7 +1255,7 @@ def randomDiscard(group, x = 0, y = 0):
 	rnd(1,10)
 	notify("{} randomly discards {}.".format(me, card))
 
-def mana(group, count = 1, conditional = False,x = 0, y = 0):
+def mana(group, count = 1, conditional = False, tapped = False):
 	mute()
 	if conditional:
 		choiceList = ['Yes', 'No']
@@ -1155,6 +1267,8 @@ def mana(group, count = 1, conditional = False,x = 0, y = 0):
 		if len(group) == 0: return
 		card = group[0]
 		toMana(card, notifymute = True)
+		if tapped and card.orientation & Rot90 != Rot90:
+					card.orientation ^= Rot90
 		notify("{} charges {} from top of {} as mana.".format(me, card.name, group.name))
 		
 def skysword(group, count = 1, x = 0, y = 0):
@@ -1261,7 +1375,7 @@ def toShields(card, x = 0, y = 0, notifymute = False, alignCheck = True, ignoreE
 	if alignCheck:
 		align()
 		
-def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = ''):
+def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffects = False):
 	mute()
 	if re.search("Evolution", card.Type):
 		targets = [c for c in table
@@ -1296,20 +1410,19 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = ''):
 	align()
 	if notifymute == False:
 		notify("{} plays {}{}.".format(me, card, evolveText))
-		
-	if metamorph():
-		if cardScripts.get(card.name,{}).get('onMetamorph',{}):
-			functionDict = cardScripts.get(card.name).get('onMetamorph')
+	
+	if not ignoreEffects:
+		if metamorph() and cardScripts.get(card.name,{}).get('onMetamorph',{}):
+				functionDict = cardScripts.get(card.name).get('onMetamorph')
+				for function in functionDict:
+					argList = functionDict.get(function)
+					eval(function)(*[eval(arg) for arg in argList])
+		elif cardScripts.get(card.name,{}).get('onPlay',{}):
+			functionDict = cardScripts.get(card.name).get('onPlay')
 			for function in functionDict:
 				argList = functionDict.get(function)
 				eval(function)(*[eval(arg) for arg in argList])
-			return
-
-	if cardScripts.get(card.name,{}).get('onPlay',{}):
-		functionDict = cardScripts.get(card.name).get('onPlay')
-		for function in functionDict:
-			argList = functionDict.get(function)
-			eval(function)(*[eval(arg) for arg in argList])
+			
 	if card.Type == "Spell":
 		if re.search("Charger", card.name) and re.search("Charger", card.rules):
 			rnd(1,100)
@@ -1317,6 +1430,8 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = ''):
 		else:
 			rnd(1,100)
 			card.moveTo(card.owner.piles['Graveyard'])
+			
+	####### check some stack here for other play resolving(not implemented yet) #############
 	
 def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, ignoreEvo = False):
 	mute()
