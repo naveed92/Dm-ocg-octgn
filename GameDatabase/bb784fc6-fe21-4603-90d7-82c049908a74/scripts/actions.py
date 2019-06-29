@@ -316,29 +316,28 @@ cardScripts = {
 	}
 ######### Events ##################
 
-def endTurn(args):
+def endTurn(args, x=0, y=0):
 	mute()
 	nextPlayer = args.player
-	if nextPlayer == None:
+	if nextPlayer == None or "":
 		#normally passed without green button
 		currentPlayers = getPlayers()
-		if len(currentPlayers)==2:
+		if len(currentPlayers) > 1:
 			nextPlayer = currentPlayers[1]
 		else:
-			whisper("Please use the green arrows to pass the turn!")
-			return
-	
-	if turnNumber() == 0 or getActivePlayer() == me:
-		if nextPlayer == me:
-			if turnNumber() != 0:
-				whisper("You can't pass the turn to yourself!")
-				return
-			else:
-				nextTurn(me, True)
-		notify("{} ends their turn.".format(me))
-		remoteCall(nextPlayer, 'untapAll', table)
+			nextPlayer = me
+	if turnNumber()>0:
+		if nextPlayer == me and len(getPlayers()) > 1:
+			whisper("You shall not pass the turn to yourself!")
+		elif getActivePlayer() != me:
+			whisper("It's not your turn")
+		else:
+			notify("{} ends their turn.".format(me))
+			remoteCall(nextPlayer, 'untapAll', table)
+			nextTurn(nextPlayer, True)
+	else:
+		#The first turn. Can be passed to anyone.
 		nextTurn(nextPlayer, True)
-	
 def resetGame():
 	mute()
 	me.setGlobalVariable("shieldCount", "0")
@@ -562,8 +561,9 @@ def eurekaProgram(ask = True):
 	if type(choice) is not Card: return
 	originalCost = int(choice.Cost)
 	found = False
-	notify("Cost is {}".format(originalCost))
 	destroy(choice)
+	notify("Looking for a creature with cost {}...".format(originalCost+1))
+
 	for card in me.Deck:
 		card=me.Deck[0]
 		card.isFaceUp = True
@@ -574,8 +574,8 @@ def eurekaProgram(ask = True):
 			if re.search("Creature", card.Type):
 				if not re.search("Evo", card.Type):
 					if ask:
-						yn = askYN("Put {} into {}?\n\n {}".format(card.Name, targetZone, card.Rules))
-						if(yes == 1)
+						yn = askYN("Put {} into the battle zone?\n\n {}".format(card.Name, card.Rules))
+						if yn == 1:
 							found = True
 							toPlay(card, ignoreEffects=True)
 							choice = card
@@ -583,8 +583,8 @@ def eurekaProgram(ask = True):
 					break			
 				else:
 					if ask:
-						yn = askYN("Put {} into {}?\n\n {}".format(card.Name, targetZone, card.Rules))
-						if(yn == 1)
+						yn = askYN("Put {} into the battle zone?\n\n {}".format(card.Name, card.Rules))
+						if yn == 1:
 							found = True
 							toPlay(card, ignoreEffects=True)	
 							choice = card
@@ -601,7 +601,8 @@ def eurekaProgram(ask = True):
 	if found:
 	## Temporary fix without a proper resolve list
 		toPlay(choice, notifymute = True)
-
+	else:
+		notify("No card with cost {} found or action cancelled.".format(originalCost+1))
 
 """"def volgMill(askChoice = True):
 	mute()
