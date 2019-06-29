@@ -359,6 +359,13 @@ def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1): 
 		return None
 	return result[0]
 
+def askYN(text="Proceed?", c1="Yes", c2= "No"):
+	choiceList = [c1, c2]
+	colorsList = ['#FF0000', '#FF0000']
+	choice = askChoice(text, choiceList, colorsList)
+	return choice
+	
+
 ################ Functions used in the Automation dictionaries.####################
 
 def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", noEvo = True): #Temporary Fix for not allowing Evolutions
@@ -398,7 +405,7 @@ def drama(shuffle = True, type = 'creature', targetZone = 'battlezone', failZone
 		if conditional:
 			choiceList = ['Yes', 'No']
 			colorsList = ['#FF0000', '#FF0000']
-			choice = askChoice("Put {} into {}?".format(card, targetZone), choiceList, colorsList)
+			choice = askChoice("Put {} into {}?\n\n {}".format(card.Name, targetZone, card.Rules), choiceList, colorsList)
 			#more conditions for non-bz?
 			if choice == 1:
 				toPlay(card)
@@ -566,18 +573,24 @@ def eurekaProgram(ask = True):
 		if (int(card.Cost) - originalCost) == 1:
 			if re.search("Creature", card.Type):
 				if not re.search("Evo", card.Type):
-					found = True
-					toPlay(card, ignoreEffects=True)
-					choice = card
-					##add card to resolve list
+					if ask:
+						yn = askYN("Put {} into {}?\n\n {}".format(card.Name, targetZone, card.Rules))
+						if(yes == 1)
+							found = True
+							toPlay(card, ignoreEffects=True)
+							choice = card
+						##add card to resolve list
 					break			
 				else:
-					found = True
-					toPlay(card, ignoreEffects=True)	
-					choice = card
-					##add card to resolve list					
-					card.moveToTable(0,0)
-					align()
+					if ask:
+						yn = askYN("Put {} into {}?\n\n {}".format(card.Name, targetZone, card.Rules))
+						if(yn == 1)
+							found = True
+							toPlay(card, ignoreEffects=True)	
+							choice = card
+							##add card to resolve list					
+							card.moveToTable(0,0)
+							align()
 					break
 		card.moveToBottom(me.Deck)
 	for card in me.Deck:
