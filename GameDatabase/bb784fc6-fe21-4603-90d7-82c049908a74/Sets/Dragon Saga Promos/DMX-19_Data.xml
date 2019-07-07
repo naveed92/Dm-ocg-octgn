@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMX-19" id="5590ae63-b96e-4003-8d09-7dd127aebc7d" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+	<packaging>
+		<pack name="Booster" id="7aa0ef8d-2043-481d-b9b4-f5504a9a4ecd">
+			<options>
+				<option probability="0.083">
+					<pick qty="1" key="Rarity" value="Super Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.250">
+					<pick qty="1" key="Rarity" value="Very Rare" />
+					<pick qty="5" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.667">
+					<pick qty="6" key="Rarity" value="Common" />
+				</option>
+			</options>
+			<pick qty="1" key="Rarity" value="Rare" />
+			<pick qty="3" key="Rarity" value="Uncommon"/>
+		</pack>
+	</packaging>
+	<cards>
+		<card name="Codeking Ludwig" id="73c0bb54-5ea0-4b5c-9c5f-7e0154f3016b">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="14" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="King Command Dragon/Unknown" />
+			<property name="Power" value="12000" />
+			<property name="Rules" value="When you are summoning this creature, you may have any number of Dragons in your mana zone change their mana number to become 2 instead of 1. &#xd;&#xa;Speed attacker&#xd;&#xa; Whenever this creature attacks, destroy one of your opponent's creatures that has power 7000 or less. &#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="㊙V1/㊙V3" />
+		</card>
+
+		<card name="5000GT, Riot" id="fecec0d0-0d35-4462-bedb-21cf0b975839">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="12" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Outrage" />
+			<property name="Power" value="12000" />
+			<property name="Rules" value="This creature costs 1 less to summon for each creature in your graveyard. It can't cost less than 1.&#xd;&#xa;Speed attacker &#xd;&#xa;Triple breaker&#xd;&#xa; When you put this creature into the battle zone, destroy all psychic creatures. Then destroy all creatures that have power 5000 or less.&#xd;&#xa; Players can't summon creatures that have power 5000 or less or put psychic creatures into the battle zone." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="㊙V2/㊙V3" />
+		</card>
+
+		<card name="Sword Saint Jigen, Awoken Dragon World" id="e91d64b8-27a5-45e5-a068-2046c2d37c49">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gaial Command Dragon" />
+			<property name="Power" value="14000" />
+			<property name="Rules" value="Speed attacker&#xd;&#xa; Whenever this creature attacks, you may flip any number of draghearts or psychic creatures.&#xd;&#xa; Whenever this creature wins a battle, you may untap it.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="㊙V3/㊙V3" />
+		</card>
+
+		<card name="Radio Roses, Zenith of 'Wisdom'" id="183c4275-b57f-45e6-ab6d-01e7a36c1a31">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Zero" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Unknown/Zenith" />
+			<property name="Power" value="17000" />
+			<property name="Rules" value="When you summon this creature into the battle zone, draw up to 5 cards, then your opponent discards 5 cards from his hand.&#xd;&#xa;Triple breaker&#xd;&#xa;Eternal Omega(When this creature would leave the battle zone, return it to your hand instead.)" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S1/???" />
+		</card>
+
+		<card name="Trueking Viola Sonata" id="3a359109-9e43-4b6a-8971-fb24867259c3">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Zero" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="King Command Dragon/Unknown" />
+			<property name="Power" value="12000" />
+			<property name="Rules" value="When you put this creature into the battle zone, destroy one of your opponent's creatures. Then, you may put a non-evolution dragon from your graveyard into the battle zone.&#xd;&#xa;Triple breaker&#xd;&#xa; Whenever one of your non-evolution dragons would be destroyed, add it to your shields face down instead." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S2/???" />
+		</card>
+
+		<card name="Eternal Moon, the Enlightened White Knight" id="8a685ff4-a887-40aa-b87d-81d498291c7f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Angel Command" />
+			<property name="Power" value="11000" />
+			<property name="Rules" value="Ultimate evolution—Put on one of your light evolution creatures.&#xd;&#xa;Double breaker&#xd;&#xa; While this creature is tapped and you have no shields, your opponent's creatures can't attack you.  (Your creatures may still be attacked.) " />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S3/???" />
+		</card>
+
+		<card name="Aldora, White Knight Spirit" id="93d7e1b5-f5fc-42e5-98e6-391d02d8e39a">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="12" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Power" value="15500" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; If you don't put a creature that has 'Blocker' into the battle zone this turn, this creature can't attack players.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S4/???" />
+		</card>
+
+		<card name="Valhalla Paladin, Sealing Dragon Elemental" id="96a138cf-992d-46a9-ad85-6bf57ded8137">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command Dragon" />
+			<property name="Power" value="11500" />
+			<property name="Rules" value="{BLOCKER} Double breaker&#xd;&#xa; When you put this creature into the battle zone, add the top card of your deck to your shields face down. &#xd;&#xa; Whenever you put a card into your shields, you may choose one of your opponent's creatures in the battle zone and tap it. That creature doesn't untap at the start of your opponent's next turn." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S5/???" />
+		</card>
+
+		<card name="Milzam, Spirit of Miracles" id="bfca6643-ad0b-488a-bbac-f3db004cef46">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Power" value="11000" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; Ultra Shield Plus—When you put this creature into the battle zone, you may put up to 5 cards from the top of your deck under one of your shields.  (Each card stack is still considered to be one shield.) &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S6/???" />
+		</card>
+
+		<card name="Idolmaster Leo" id="1dc8a07d-6f99-40c0-a30e-d15f26f2b5bb">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command/Idol" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; Whenever you put another Angel Command into the battle zone, you may draw a card.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S7/???" />
+		</card>
+
+		<card name="Hanusa, Radiance Elemental" id="c5247c65-ba1e-47f5-977c-01c6c88d4a50">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Power" value="9500" />
+			<property name="Rules" value="Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S8/???" />
+		</card>
+
+		<card name="Premium Madonna, Nobility Dragon Elemental" id="696314c5-6939-49a5-917c-fab6801f9202">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command Dragon" />
+			<property name="Power" value="7500" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Double breaker&#xd;&#xa; When this creature would leave the battle zone during your opponent's turn, if it has more than 0 power, it stays in the battle zone instead." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S9/???" />
+		</card>
+
+		<card name="Joan of Arc, Goddess of Victory" id="77495bca-f07b-4659-9c85-3c938507d030">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha Del Sol/Hunter" />
+			<property name="Power" value="7500" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; When you put this creature into the battle zone, whenever this creature attacks or whenever this creature blocks, you may choose up to 2 of your opponent's creatures in the battle zone and tap them. &#xd;&#xa;Double breaker&#xd;&#xa; Whenever your opponent would choose a creature in the battle zone by the effect of a fire spell or the ability of a fire creature, he can't choose this one." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S10/???" />
+		</card>
+
+		<card name="Ulpheus, Dragonic Spirit" id="f9c36ee2-e20f-4d93-a15f-ab867a6fb37d">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Apollonia Dragon/Angel Command" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="When you put this creature into the battle zone, if you have at least one Dragon or Angel Command in your graveyard you may cast a spell that has 'shield trigger' from your hand for no cost.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S11/???" />
+		</card>
+
+		<card name="Ophanis, Spirit of the Unified Five" id="573106c9-9358-43d6-9064-3609b0a410e5">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Angel Command" />
+			<property name="Power" value="5000" />
+			<property name="Rules" value="Gravity Zero-If there are cards of all 5 civilizations in the battle zone, you may summon this creature for no cost.&#xd;&#xa; Whenever your creatures would be destroyed, if there are cards of all 5 civilizations in the battle zone, return that creature to your hand instead." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S12/???" />
+		</card>
+
+		<card name="Crystal Zweilancer" id="0c781879-d759-43d4-afbb-5f0472ad985a">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Power" value="13000" />
+			<property name="Rules" value="Evolution—Put on one of your Liquid People. This creature can't be blocked.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S13/???" />
+		</card>
+
+		<card name="Fatal Spiral, Infinite Dragon" id="c7e84942-b573-433a-99d3-f42ee1f4e58c">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Poseidia Dragon/Origin" />
+			<property name="Power" value="9000" />
+			<property name="Rules" value="Super Infinite evolution—Put on one or more of your Origins or Dragons.&#xd;&#xa; When you put this creature into the battle zone, for each card under this creature you may choose a creature in the battle zone and return it to its owner's hand.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S14/???" />
+		</card>
+
+		<card name="Trueking Wagner" id="66208f01-4bf4-4cc7-b334-a4e4f58ea8e5">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="King Command Dragon/Unknown" />
+			<property name="Power" value="12000" />
+			<property name="Rules" value="When you put this creature into the battle zone, reveal the top 3 cards of your deck to each player. Put all spells from among them into your hand, and the rest on the top of your deck in any order.&#xd;&#xa; Whenever this creature attacks, you may cast a spell from your hand for no cost.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S15/???" />
+		</card>
+
+		<card name="Aqua Sniper" id="103abfb9-8050-4683-a770-4c1918641440">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Power" value="5000" />
+			<property name="Rules" value="When you put this creature into the battle zone, choose up to 2 creatures in the battle zone and return them to their owners' hands." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S16/???" />
+		</card>
+
+		<card name="Cg Daisharin, Dragment Symbol" id="9c3388d9-dd61-48d9-bd03-c93782077368">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Crystal Command Dragon" />
+			<property name="Power" value="7000" />
+			<property name="Rules" value="Spells you cast get 'charger'.  (After you cast a spell that has 'charger', put it into your mana zone instead of your graveyard.) &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S17/???" />
+		</card>
+
+		<card name="Cyber N World" id="179fb9d7-0f9e-4d14-88fd-b5aa5e0b6224">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Cyber Command" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="When you put this creature into the battle zone, each player shuffles his hand and graveyard into his deck. Then each player draws 5 cards.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S18/???" />
+		</card>
+
+		<card name="Hydro Formation" id="07333499-de67-4e12-9b13-dec96a60a61a">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="12" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="" />
+			<property name="Rules" value="Sympathy&#xd;&#xa; Return all your opponents cards in the battle zone to their owners' hands. Draw a card for each card returned to your opponents hand in this way." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S19/???" />
+		</card>
+
+		<card name="Grateful Dead, Lord of Demons" id="1f4c1f7e-e323-47ac-abef-b8927e81c024">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Power" value="11000" />
+			<property name="Rules" value="Evolution—Put on one of your creatures that has Command in its race. &#xd;&#xa; When you put this creature into the battle zone, return any number of creatures from your graveyard to your hand.&#xd;&#xa;Double breaker&#xd;&#xa; When this creature leaves the battle zone, you may put a psychic creature that costs 7 or less from your hyperspatial zone into the battle zone." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S20/???" />
+		</card>
+
+		<card name="Death Monarch, Lord of Demons" id="95e231ea-c646-4046-bd8d-ac6468ede22f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Power" value="8000" />
+			<property name="Rules" value="Evolution—Put on one of your Demon Commands.&#xd;&#xa;Double breaker&#xd;&#xa; When this creature is destroyed, you may put all non-evolution Demon Commands from your graveyard into the battle zone." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S21/???" />
+		</card>
+
+		<card name="Destrozione, Knowledge Destroyer" id="b0f6fbe5-1a4a-4257-bc95-355c73671057">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Power" value="17000" />
+			<property name="Rules" value="When you draw this card from your deck, if you have no cards in your hand, you may show this card to each player. If you do, destroy one of your opponent's creatures.&#xd;&#xa; When you put this creature into the battle zone, your opponent discards his hand. &#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S22/???" />
+		</card>
+
+		<card name="Necrodragon Belzarogue" id="b14c7820-7690-4f8b-b9b2-a8fd6867b871">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon" />
+			<property name="Power" value="14000" />
+			<property name="Rules" value="Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S23/???" />
+		</card>
+
+		<card name="Deathliger, Lion of Chaos" id="a270b175-5a8b-47cb-bb75-b21ad47aff71">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Power" value="9000" />
+			<property name="Rules" value="Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S24/???" />
+		</card>
+
+		<card name="Death Cruzer, the Annihilator" id="56495a5f-03db-44c3-83bd-fdc5b382eda3">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Power" value="13000" />
+			<property name="Rules" value="When you put this creature into the battle zone, destroy all your other creatures.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S25/???" />
+		</card>
+
+		<card name="Necrodragon Bryzenaga" id="f2b9b4c4-8205-4d26-929d-0d326c292ecb">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Zombie Dragon" />
+			<property name="Power" value="9000" />
+			<property name="Rules" value="When you put this creature into the battle zone, put all your shields into your hand.  (You can use the 'shield trigger' abilities of those shields.) &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S26/???" />
+		</card>
+
+		<card name="Kanashimidomino, Destruction Demon Dragon" id="542fcc3f-463c-4608-ad73-3aabff3a0223">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Demon Command Dragon" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="Each of your opponent's creatures in the battle zone gets -1000 power.  (A creature that has power 0 or less is destroyed.) &#xd;&#xa; When another creature is destroyed, each of your opponent's creatures in the battle zone gets -1000 power until the end of the turn. &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S27/???" />
+		</card>
+
+		<card name="Saturday Knightmare Fever" id="82a30587-f702-4b80-aa5c-3422adc72cc0">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="13" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="" />
+			<property name="Rules" value="Destroy all creatures. Then each player puts all Knightmare, Death Puppets, Devil Masks and Ghosts from his graveyard into the battle zone." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S28/???" />
+		</card>
+
+		<card name="Überdragon Bajula" id="e456bcf7-5529-49a9-8d6a-f910b6d24f32">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Power" value="13000" />
+			<property name="Rules" value="Evolution—Put on one of your creatures that has Dragon in its race. &#xd;&#xa; Whenever this creature attacks, choose up to 2 cards in your opponent's mana zone. Your opponent puts those cards into his graveyard. &#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S29/???" />
+		</card>
+
+		<card name="Oninaguri, Last Attack" id="e85c8f17-5712-480b-8eb1-30d51fa159f9">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Human/Hunter/Alien" />
+			<property name="Power" value="7000" />
+			<property name="Rules" value="Evolution—Put on one of your Humans.&#xd;&#xa; Whenever this creature attacks, choose any number of your opponent's creatures that have total cost 6 or less and destroy them.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S30/???" />
+		</card>
+
+		<card name="Billion-Degree Dragon" id="f269201a-2073-4738-af0d-5bd4dd606748">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Power" value="15000" />
+			<property name="Rules" value="Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S31/???" />
+		</card>
+
+		<card name="Neo Bolshack Dragon" id="d4656e48-609c-45ab-b436-eade0057e2f5">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Power" value="11000+" />
+			<property name="Rules" value="Power Attacker +4000&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S32/???" />
+		</card>
+
+		<card name="Master Seven, Passion Dragon" id="ebaafab8-fb5e-40a6-8824-2f17acf5a3a2">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gaial Command Dragon" />
+			<property name="Power" value="7000+" />
+			<property name="Rules" value="Double breaker&#xd;&#xa; Mana Arms 7: If you have 7 or more fire cards in your mana zone, this creature gets 'speed attacker', 'power attacker +777', 'triple breaker, 'guardman', +70000 power while battling, can't be attacked, and 'whenever this creature attacks, destroy one of your opponent's creatures that has 'blocker'.'." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S33/???" />
+		</card>
+
+		<card name="Crossfire, Millionaire" id="715205c1-59db-4fa9-bcec-dbbfbbf742ff">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Outrage" />
+			<property name="Power" value="7000+" />
+			<property name="Rules" value="Gravity Zero-If you have 6 or more creatures in your graveyard, and you have no  'Crossfire, Millionaire ' in the battle zone, you may summon this creature for no cost.&#xd;&#xa;Speed attacker&#xd;&#xa;Power Attacker +1000000&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S34/???" />
+		</card>
+
+		<card name="Dual Shock Dragon" id="6436a543-7791-4291-aef1-76dbec8f5bc6">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Power" value="8000" />
+			<property name="Rules" value="Strike Back&#xd;&#xa; When you put this creature into the battle zone, choose one of your shields and put it into your graveyard.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S35/???" />
+		</card>
+
+		<card name="Bolshack Yamato Dragon" id="740e3750-2357-4cd2-a19f-22332d2582e5">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Power" value="6000+" />
+			<property name="Rules" value="Speed attacker&#xd;&#xa;Double breaker&#xd;&#xa; While attacking, this creature gets +1000 power for each fire card in your graveyard.&#xd;&#xa; When you would destroy one of your opponent's creatures that has power 6000 or less by the effect of Bolmeteus Musha Dragon, destroy one of your opponent's creatures that has power 12000 or less instead." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S36/???" />
+		</card>
+
+		<card name="Bolmeteus Musha Dragon" id="9ab81dea-ce56-4f62-b088-44e4abe0de21">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="Double breaker&#xd;&#xa; Whenever this creature attacks, you may put one of your shields into your graveyard. If you do, destroy one of your opponent's creatures that has power 6000 or less." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S37/???" />
+		</card>
+
+		<card name="Oni Seven 'Win', Matchless Amazement" id="c60c16b0-22b3-43c5-8cce-b6039e7aab7a">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Red Command Dragon/Hunter/Alien" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="If a shield added to your hand is a creature that costs 7 or more, it gets 'shield trigger'.&#xd;&#xa; Whenever this creature attacks, you may have your opponent choose one of your shields. Add that shield to your hand.  (You can use the 'shield trigger' ability of that shield.) &#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S38/???" />
+		</card>
+
+		<card name="Pangaea Moon, the Enlightened" id="1283582c-ad54-4c75-97d9-0a5ab7a5897c">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="8 " />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Lunatic Emperor/Gaia Command" />
+			<property name="Power" value="14000" />
+			<property name="Rules" value="Ultimate evolution—Put on one of your Evolution creatures.&#xd;&#xa;Triple breaker&#xd;&#xa; Whenever you summon a non-evolution creature during your turn, search your deck. You may choose any number of cards from your deck that have the same name as that creature and put them into the battle zone. Then shuffle your deck." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S39/???" />
+		</card>
+
+		<card name="Grateful Life, the Earth Breaker" id="fc7a25f2-33f6-4c5b-9b2c-c203540d1b81">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Gaia Command" />
+			<property name="Power" value="11000" />
+			<property name="Rules" value="Evolution—Put on one of your creatures that has Command in its race. &#xd;&#xa; When you put this creature into the battle zone, you may put one of your psychic creatures that costs 7 or less from your hyperspatial zone into the battle zone.&#xd;&#xa; When this creature leaves the battle zone, you may put any number of cards from your graveyard into your mana zone.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S40/???" />
+		</card>
+
+		<card name="Quattro Fang, Super Gang Leader" id="db36020a-7e6b-4921-9aa4-c3643a378bff">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Beast Folk/Hunter" />
+			<property name="Power" value="9000" />
+			<property name="Rules" value="Evolution—Put on one of your Beast Folk.&#xd;&#xa; When you put this creature into the battle zone, you may put the top 2 cards of your deck into your mana zone.&#xd;&#xa; Whenever this creature attacks, you may put the top card of your deck into your mana zone.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S41/???" />
+		</card>
+
+		<card name="Heracles, Birther of Gods" id="3ecae459-754a-4770-97cb-1ab8b0f21351">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="12" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gaia Command" />
+			<property name="Power" value="12000" />
+			<property name="Rules" value="When you tap mana to summon this creature, the mana number of Gods in your mana zone becomes 2 instead of 1.  (Tapping a God to summon this creature creates 2 mana instead of 1.) &#xd;&#xa; When you put this creature into the battle zone, you may return any number of Gods from your mana zone to your hand.&#xd;&#xa; Your Gods each cost 3 less to summon. They can't cost less than 1.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S42/???" />
+		</card>
+
+		<card name="Chainrex, Super Chainkind" id="e5b3d32d-7289-4e3b-b66e-b6f180826553">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Jurassic Command Dragon" />
+			<property name="Power" value="13000" />
+			<property name="Rules" value="When you put this creature or one of your nature creatures into the battle zone, you may put a nature creature that costs 2 less than that creature from your mana zone into the battle zone.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S43/???" />
+		</card>
+
+		<card name="Kankuro, Peerless Brute" id="11b4fea1-d026-4d17-9653-5d8045d17054">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Earth Dragon/Giant/Samurai" />
+			<property name="Power" value="19000" />
+			<property name="Rules" value="Revenge Chance&#xd;&#xa;Quattro breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S44/???" />
+		</card>
+
+		<card name="Caligrati, Greed Evil Emperorkind" id="a8b5aaef-da45-47f5-a127-cccd424f2948">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Jurassic Command Dragon" />
+			<property name="Power" value="14000+" />
+			<property name="Rules" value="When you put this creature into the battle zone, you may draw a card for each civilization in your mana zone.&#xd;&#xa; This creature gets +2000 power for each civilization in your mana zone.&#xd;&#xa;Triple breaker&#xd;&#xa; If you have all civilizations in your mana zone, this creature gets 'world breaker'.  (A creature that has 'world breaker' breaks all your opponent's shields.) " />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S45/???" />
+		</card>
+
+		<card name="Auravine, Earth's Grasp" id="b783ba49-c026-46ec-a09c-ffd293b72830">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Gaia Command" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value="When you put this creature into the battle zone, put up to 2 of your opponent's non-evolution creatures in the battle zone that cost 3 or less into their owner's mana zone.&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S46/???" />
+		</card>
+
+		<card name="Deathblade Beetle" id="6c0b286a-7d33-4045-ad45-2cfacc15c269">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Giant Insect" />
+			<property name="Power" value="3000+" />
+			<property name="Rules" value="Power Attacker +4000&#xd;&#xa;Double breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S47/???" />
+		</card>
+
+		<card name="Draghurricane Energy" id="f2f0337c-f68b-4f3b-8d60-8487b2efbf9b">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Power" value="" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Launcher Energy" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S48/???" />
+		</card>
+
+		<card name="Ballcadeias, Overlord of Demons" id="b39cd676-8530-469f-afc5-1bd131a54bcf">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light/Darkness" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Angel Command/Demon Command" />
+			<property name="Power" value="14500" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Evolution—Put on one of your Angel Commands or Demon Commands. &#xd;&#xa; When you put this creature into the battle zone, destroy all other creatures.&#xd;&#xa; Your opponent can't cast spells.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S49/???" />
+		</card>
+
+		<card name="Codename Sherlock" id="1347a946-ec82-488e-8486-9c9f0eae3dbd">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light/Darkness" />
+			<property name="Cost" value="10" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Unknown" />
+			<property name="Power" value="23000" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, destroy all psychic creatures.&#xd;&#xa; Nobody can put psychic creatures into the battle zone.&#xd;&#xa;Quattro breaker&#xd;&#xa; Whenever your opponent would choose a creature in the battle zone, he can't choose this one.  (It can still be attacked or blocked.)" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S50/???" />
+		</card>
+
+		<card name="Shiden Galaxy, Super Champ" id="6069064a-6204-4d38-acb5-5d053ab9b9a2">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light/Fire" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Angel Command/Armored Dragon/Samurai" />
+			<property name="Power" value="15000" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Vortex evolution—Put on top of 2 of your Angel Commands and/or creatures that have Dragon in their race.&#xd;&#xa; Meteorburn—Whenever this creature attacks for the first time this turn, you may put up to 2 cards under this creature into your graveyard. If you put a Dragon into your graveyard this way, untap this creature. If you put an Angel Command into your graveyard this way, whenever this creature would be destroyed this turn, it stays in the battle zone instead.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S51/???" />
+		</card>
+
+		<card name="Greatest Caesar, the Dark Kaiser" id="5a7d098a-56bf-45af-8ad5-a05727c3b942">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness/Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Armored Dragon/Zombie Dragon/Knight" />
+			<property name="Power" value="13000" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Vortex evolution—Put on 2 of your Dragons and/or Knights.&#xd;&#xa; Whenever this creature attacks, you may cast any number of fire or darkness spells from your graveyard that have total cost 7 or less. Then put those spells on the bottom of your deck in any order.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S52/???" />
+		</card>
+
+		<card name="Galzark, Divine Destruction Dragonmech" id="fd7271df-cb6a-481c-9b0f-ab1d13cc728f">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness/Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon/Zombie Dragon" />
+			<property name="Power" value="6000+" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; While you have at least one other Dragon in the battle zone, this creature gets 'Power attacker +6000' and 'Triple breaker'.&#xd;&#xa;Double breaker&#xd;&#xa; This creature can't be attacked." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S53/???" />
+		</card>
+
+		<card name="Codeking Mozart" id="87a99f4d-af89-4626-bac0-cb14d6537890">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Cost" value="11" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="King Command Dragon/Unknown" />
+			<property name="Power" value="17000" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, destroy all non-Dragon creatures. &#xd;&#xa; Your opponent's Dragons can't attack.&#xd;&#xa;Triple breaker" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S54/???" />
+		</card>
+
+		<card name="Codeking Wilhelm" id="449ffb4c-3dae-41ed-90d4-82fcb18b4867">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Cost" value="9" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="King Command Dragon/Unknown" />
+			<property name="Power" value="12000" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Triple breaker&#xd;&#xa; When you put this creature into the battle zone, destroy one of your opponent's creatures. Then, choose a card from your opponent's mana zone and put it into his graveyard.&#xd;&#xa; Whenever your opponent puts a card into his graveyard from anywhere, you may put the top card of your deck into your mana zone." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S55/???" />
+		</card>
+
+		<card name="Perfect Earth, Planetary Dragon" id="6fab445f-89a5-49ec-bc49-4ec557173a25">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Cost" value="5" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="World Dragon" />
+			<property name="Power" value="6000" />
+			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;Double breaker&#xd;&#xa; Each card that is put into your hand from your shield zone gets 'shield trigger'." />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S56/???" />
+		</card>
+
+	</cards>
+</set>
