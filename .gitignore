@@ -14,3 +14,7 @@
 
 /ImageDatabase/*
 !/ImageDatabase/bb784fc6-fe21-4603-90d7-82c049908a74
+extractionPrograms/NetBeansJavaProject/DM_Sets_Extractor/nbproject/private/private.properties
+*.properties
+extractionPrograms/NetBeansJavaProject/DM_Sets_Extractor/nbproject/private/private.xml
+extractionPrograms/NetBeansJavaProject/DM_Sets_Extractor/nbproject/project.properties
