@@ -3,23 +3,30 @@
 	<packaging>
 		<pack name="Booster" id="d356aaa3-f454-45d4-b798-c971ce3011f4">
 			<options>
-				<option probability="0.083">
+				<option probability="0.020">
+					<pick qty="1" key="Rarity" value="Double Victory" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.080">
+					<pick qty="1" key="Rarity" value="Victory Rare" />
+					<pick qty="2" key="Rarity" value="Common" />
+				</option>
+				<option probability="0.100">
 					<pick qty="1" key="Rarity" value="Super Rare" />
-					<pick qty="5" key="Rarity" value="Common" />
+					<pick qty="2" key="Rarity" value="Common" />
 				</option>
-				<option probability="0.250">
+				<option probability="0.200">
 					<pick qty="1" key="Rarity" value="Very Rare" />
-					<pick qty="5" key="Rarity" value="Common" />
+					<pick qty="2" key="Rarity" value="Common" />
 				</option>
-				<option probability="0.667">
-					<pick qty="6" key="Rarity" value="Common" />
+				<option probability="0.600">
+					<pick qty="3" key="Rarity" value="Common" />
 				</option>
 			</options>
 			<pick qty="1" key="Rarity" value="Rare" />
-			<pick qty="3" key="Rarity" value="Uncommon"/>
+			<pick qty="1" key="Rarity" value="Uncommon" />
 		</pack>
 	</packaging>
-	<cards>
 		<card name="Gaiheart, Galaxy Sword" id="2166e1dd-6acc-43cf-8ac7-d24760ba90f6">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
@@ -30,18 +37,18 @@
 			<property name="Rules" value="A creature equipped with this gets 'Speed attacker'.&#xd;&#xa;Dragsolution" />
 			<property name="Rarity" value="Double Victory" />
 			<property name="Number" value="VV1a" />
-		</card>
 
-		<card name="Gaiginga, Passionate Star Dragon" id="80df123c-e4cd-438c-97d1-3160cbad5577">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Gaial Command Dragon" />
-			<property name="Power" value="9000+" />
-			<property name="Rules" value="Speed attacker Double breaker&#xd;&#xa; When this creature is Dragsolutioned, destroy one of your opponent's creatures that has power 7000 or less. &#xd;&#xa; While battling, this creature gets +4000 power.&#xd;&#xa; Whenever your opponent chooses this creature, take an extra turn after this one." />
-			<property name="Rarity" value="Double Victory" />
-			<property name="Number" value="VV1b" />
+			<alternate name="Gaiginga, Passionate Star Dragon" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Fire" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Gaial Command Dragon" />
+				<property name="Power" value="9000+" />
+				<property name="Rules" value="Speed attacker Double breaker&#xd;&#xa; When this creature is Dragsolutioned, destroy one of your opponent's creatures that has power 7000 or less. &#xd;&#xa; While battling, this creature gets +4000 power.&#xd;&#xa; Whenever your opponent chooses this creature, take an extra turn after this one." />
+				<property name="Rarity" value="Double Victory" />
+				<property name="Number" value="VV1b" />
+			</alternate>
 		</card>
 		<card name="Perfect, Immortal Lance" id="1e7f011e-7140-4bab-9b4b-e645d4f54c28">
 			<property name="Format" value="OCG" />
@@ -53,18 +60,18 @@
 			<property name="Rules" value="Whenever a creature equipped with this would leave the battle zone, if it would be put anywhere other than the graveyard, it stays in the battle zone instead.&#xd;&#xa;Dragsolution Hyperspatial Dragheart" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1a" />
-		</card>
 
-		<card name="Everlast, Destiny King" id="04ed8473-7b1b-4265-92a7-64553c54610d">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Angel Command Dragon" />
-			<property name="Power" value="13500" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Triple breaker&#xd;&#xa; Whenever one of your light Dragons would leave the battle zone, if it would be put anywhere other than the graveyard, it stays in the battle zone instead.&#xd;&#xa; Ignore any abilities that would prevent your creatures that have 'blocker' from attacking. ( However, summoning sickness isn't ignored. )" />
-			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="V1b" />
+			<alternate name="Everlast, Destiny King" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Light" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Angel Command Dragon" />
+				<property name="Power" value="13500" />
+				<property name="Rules" value="{BLOCKER}&#xd;&#xa;Triple breaker&#xd;&#xa; Whenever one of your light Dragons would leave the battle zone, if it would be put anywhere other than the graveyard, it stays in the battle zone instead.&#xd;&#xa; Ignore any abilities that would prevent your creatures that have 'blocker' from attacking. ( However, summoning sickness isn't ignored. )" />
+				<property name="Rarity" value="Victory Rare" />
+				<property name="Number" value="V1b" />
+			</alternate>
 		</card>
 		<card name="Evidence, Truth Gun" id="fa03cb8d-3357-41e5-8c49-82ca3ccbb619">
 			<property name="Format" value="OCG" />
@@ -76,18 +83,18 @@
 			<property name="Rules" value="When you put this dragheart into the battle zone, or whenever a creature equipped with this attacks, you may draw a card. &#xd;&#xa;Dragsolution Hyperspatial Dragheart" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V2a" />
-		</card>
 
-		<card name="Q.E.D., Dragon Elemental King" id="6bde5239-dbfd-4b26-869d-86b21b5102aa">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Crystal Command Dragon" />
-			<property name="Power" value="11000" />
-			<property name="Rules" value="Whenever your opponent would choose a creature in the battle zone by the effect of a spell, he can't choose this one.&#xd;&#xa; Each turn, you may summon your first water creature for no cost. &#xd;&#xa; Each turn, you may cast your first water spell for no cost.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="V2b" />
+			<alternate name="Q.E.D., Dragon Elemental King" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Water" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Crystal Command Dragon" />
+				<property name="Power" value="11000" />
+				<property name="Rules" value="Whenever your opponent would choose a creature in the battle zone by the effect of a spell, he can't choose this one.&#xd;&#xa; Each turn, you may summon your first water creature for no cost. &#xd;&#xa; Each turn, you may cast your first water spell for no cost.&#xd;&#xa;Double breaker" />
+				<property name="Rarity" value="Victory Rare" />
+				<property name="Number" value="V2b" />
+			</alternate>
 		</card>
 		<card name="Go To Hell, Annihilator Blade" id="9a7270e8-2f9f-4c36-8a2a-05583678b9a9">
 			<property name="Format" value="OCG" />
@@ -99,18 +106,18 @@
 			<property name="Rules" value="When you put this dragheart into the battle zone, or whenever a creature equipped with this attacks, you may put a Funky Knightmare that costs 5 or less from your graveyard into the battle zone. &#xd;&#xa; Dragsolution: At the end of your turn, you may flip this card to the dragheart creature side and untap it.  If you do, destroy 4 of your creatures. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V3a" />
-		</card>
-
-		<card name="Deathshiraz, Devil Corrupt King" id="46623d05-dab8-414b-999a-278889043acb">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Demon Command Dragon" />
-			<property name="Power" value="12000" />
-			<property name="Rules" value="When this creature is Dragsolutioned, destroy one of your opponent's creatures.&#xd;&#xa; Whenever this creature attacks, you may put a non-evolution darkness creature from your graveyard into the battle zone. &#xd;&#xa;Triple breaker" />
-			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="V3b" />
+		
+			<alternate name="Deathshiraz, Devil Corrupt King" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Darkness" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Demon Command Dragon" />
+				<property name="Power" value="12000" />
+				<property name="Rules" value="When this creature is Dragsolutioned, destroy one of your opponent's creatures.&#xd;&#xa; Whenever this creature attacks, you may put a non-evolution darkness creature from your graveyard into the battle zone. &#xd;&#xa;Triple breaker" />
+				<property name="Rarity" value="Victory Rare" />
+				<property name="Number" value="V3b" />
+			</alternate>
 		</card>
 		<card name="Judaina, Jurassic Hammer" id="fc134e5b-6e18-48c3-9d90-7885cf13f717">
 			<property name="Format" value="OCG" />
@@ -122,18 +129,18 @@
 			<property name="Rules" value="During your turn, you may summon a Dragon from your mana zone.&#xd;&#xa;Dragsolution Hyperspatial Dragheart" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V4a" />
-		</card>
 
-		<card name="Saurupio, Ancient King" id="52abb1c6-4622-46cc-be07-5605ab25981b">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Jurassic Command Dragon" />
-			<property name="Power" value="12000" />
-			<property name="Rules" value="Triple breaker&#xd;&#xa; If you have no shields, your opponent's creatures can't attack you." />
-			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="V4b" />
+			<alternate name="Saurupio, Ancient King" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Nature" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Jurassic Command Dragon" />
+				<property name="Power" value="12000" />
+				<property name="Rules" value="Triple breaker&#xd;&#xa; If you have no shields, your opponent's creatures can't attack you." />
+				<property name="Rarity" value="Victory Rare" />
+				<property name="Number" value="V4b" />
+			<alternate>
 		</card>
 		<card name="Zeek Cavalie, Lord of Dragon Spirits" id="3ded11cd-cbb9-477c-bec4-252e17af9a13">
 			<property name="Format" value="OCG" />
@@ -733,18 +740,18 @@
 			<property name="Rules" value="A creature equipped with this gets 'blocker'.&#xd;&#xa;Dragsolution Hyperspatial Dragheart" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="45a" />
-		</card>
 
-		<card name="Ultimaria, Divine Dragon Elemental" id="87e974aa-5826-4347-87cf-95e6b0d7d726">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 5" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Angel Command Dragon" />
-			<property name="Power" value="7500" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature can't attack players." />
-			<property name="Rarity" value="Uncommon" />
-			<property name="Number" value="45b" />
+			<alternate name="Ultimaria, Divine Dragon Elemental" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Light" />
+				<property name="Cost" value=" 5" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Angel Command Dragon" />
+				<property name="Power" value="7500" />
+				<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature can't attack players." />
+				<property name="Rarity" value="Uncommon" />
+				<property name="Number" value="45b" />
+			</alternate>
 		</card>
 		<card name="Justice Plan" id="e2c302e7-2abb-4cec-bdbf-64650dcbfb09">
 			<property name="Format" value="OCG" />
@@ -816,18 +823,18 @@
 			<property name="Rules" value="A creature equipped with this can't be blocked. &#xd;&#xa;Dragsolution Hyperspatial Dragheart" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="51a" />
-		</card>
 
-		<card name="Nb Leibniz, Dragment Symbol" id="a8ca1a8d-caf6-4e96-af4d-be4ebfda1981">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 5" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Crystal Command Dragon" />
-			<property name="Power" value="5000" />
-			<property name="Rules" value="This creature can't be attacked or blocked." />
-			<property name="Rarity" value="Uncommon" />
-			<property name="Number" value="51b" />
+			<alternate name="Nb Leibniz, Dragment Symbol" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Water" />
+				<property name="Cost" value=" 5" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Crystal Command Dragon" />
+				<property name="Power" value="5000" />
+				<property name="Rules" value="This creature can't be attacked or blocked." />
+				<property name="Rarity" value="Uncommon" />
+				<property name="Number" value="51b" />
+			</alternate>
 		</card>
 		<card name="Energy Formation" id="79a6fd77-bd69-4bfd-81e0-595ff9d8fd61">
 			<property name="Format" value="OCG" />
@@ -899,18 +906,18 @@
 			<property name="Rules" value="Whenever a creature equipped with this attacks, your opponent chooses a card from his hand and discards it.&#xd;&#xa;Dragsolution Hyperspatial Dragheart" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="57a" />
-		</card>
-
-		<card name="Dokurocald, Misfortune Demon Dragon" id="2d3997bb-b6cb-48db-8cf1-d6ba3f66f8dd">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 5" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Demon Command Dragon" />
-			<property name="Power" value="5000" />
-			<property name="Rules" value="Whenever this creature attacks, discard a card from your opponent's hand at random." />
-			<property name="Rarity" value="Uncommon" />
-			<property name="Number" value="57b" />
+			
+			<alternate name="Dokurocald, Misfortune Demon Dragon" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Darkness" />
+				<property name="Cost" value=" 5" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Demon Command Dragon" />
+				<property name="Power" value="5000" />
+				<property name="Rules" value="Whenever this creature attacks, discard a card from your opponent's hand at random." />
+				<property name="Rarity" value="Uncommon" />
+				<property name="Number" value="57b" />
+			</alternate>
 		</card>
 		<card name="Deadly Love" id="f217b674-9f96-471c-a7ef-c1f3dfe28f1e">
 			<property name="Format" value="OCG" />
@@ -982,18 +989,18 @@
 			<property name="Rules" value="The creature equipped with this can attack untapped creatures.&#xd;&#xa;Dragsolution Hyperspatial Dragheart" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="63a" />
-		</card>
 
-		<card name="Little Big Horn, Passion Dragon" id="3e6ffc0d-e378-4d44-a89b-9be814783453">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 5" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Gaial Command Dragon" />
-			<property name="Power" value="5000" />
-			<property name="Rules" value="This creature can attack untapped creatures." />
-			<property name="Rarity" value="Uncommon" />
-			<property name="Number" value="63b" />
+			<alternate name="Little Big Horn, Passion Dragon" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Fire" />
+				<property name="Cost" value=" 5" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Gaial Command Dragon" />
+				<property name="Power" value="5000" />
+				<property name="Rules" value="This creature can attack untapped creatures." />
+				<property name="Rarity" value="Uncommon" />
+				<property name="Number" value="63b" />
+			</alternate>
 		</card>
 		<card name="Passionate Training" id="874dd567-4340-49ed-919d-39b0653892a1">
 			<property name="Format" value="OCG" />
@@ -1065,18 +1072,18 @@
 			<property name="Rules" value="The creature equipped with this gets +1000 power and 'guardman'.  (When one of your other creatures is attacked, you may tap this creature. If you do, the attacking creature will attack this creature instead.) &#xd;&#xa;Dragsolution Hyperspatial Dragheart" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="69a" />
-		</card>
 
-		<card name="Butssubu Tops, Multilateral Impact" id="583523e7-ee80-4d8f-8b32-048d775d7085">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 5" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Jurassic Command Dragon" />
-			<property name="Power" value="6000" />
-			<property name="Rules" value="Guardman&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Uncommon" />
-			<property name="Number" value="69b" />
+			<alternate name="Butssubu Tops, Multilateral Impact" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Nature" />
+				<property name="Cost" value=" 5" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Jurassic Command Dragon" />
+				<property name="Power" value="6000" />
+				<property name="Rules" value="Guardman&#xd;&#xa;Double breaker" />
+				<property name="Rarity" value="Uncommon" />
+				<property name="Number" value="69b" />
+			</alternate>
 		</card>
 		<card name="Ancient Trap" id="cf7372aa-9cbf-4f9a-8e8f-5c906bd3e8a9">
 			<property name="Format" value="OCG" />
