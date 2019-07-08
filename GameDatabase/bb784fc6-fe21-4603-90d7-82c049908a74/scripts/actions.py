@@ -237,7 +237,7 @@ cardScripts = {
 				'Reflecting Ray': { 'onPlay': { 'tapCreature': [] }},
 				'Reverse Cyclone': { 'onPlay': { 'tapCreature': [] }},
 				'Riptide Charger': { 'onPlay': {  'bounce': [] }},
-				'Skeleton Vice': { 'onPlay': { 'targetDiscard': ['True'], 'targetDiscard': ['True'] }},
+				'Skeleton Vice': { 'onPlay': { 'targetDiscard': ['True', '"grave"', '2'] }},
 				'Samurai Decapitation Sword': { 'onPlay': {  'kill': ['5000'] }},
 				'Screw Rocket': { 'onPlay': { 'gear': ['"kill"'] }},
 				'Seventh Tower': { 'onPlay': { 'mana': ['me.Deck'] },
@@ -388,7 +388,14 @@ def removeIfEvo(card):
 	me.setGlobalVariable('evolution', str(evolveDict))
 	return resultList
 	
-	
+def antiDiscard(card, sourcePlayer):
+	return False
+	if card in antiDiscardDict:
+		#do shit
+		notify("Anti-Discard triggered")
+	else:
+		return False
+
 ################ Functions used in the Automation dictionaries.####################
 
 def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", noEvo = True): #Temporary Fix for not allowing Evolutions
@@ -476,7 +483,7 @@ def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bot
 				card.moveToBottom(me.Deck)
 				notify("{} moved a card to the bottom of their deck.".format(me))
 	
-def targetDiscard(randomDiscard = False, targetZone = 'grave'):
+def targetDiscard(randomDiscard = False, targetZone = 'grave', count = 1):
 	mute()
 	currentPlayers = getPlayers()
 	playerList = []
@@ -490,18 +497,25 @@ def targetDiscard(randomDiscard = False, targetZone = 'grave'):
 	if randomDiscard:
 		remoteCall(targetPlayer,'randomDiscard',targetPlayer.hand)
 		return
+	
 	cardChoice = cardDlg(cardList)
 	cardChoice.title= 'Choose a Card to discard'
 	cardChoice.text="{}'s hand".format(targetPlayer)
 	cardChoice  = cardChoice.show()[0]
+	
 	if type(cardChoice) is not Card: 
 		notify("{} - Error".format(type(cardChoice)))
 		return
+	
 	if targetZone == 'shields': 
 		whisper("Setting {} as shield.".format(cardChoice))
 		remoteCall(targetPlayer,'toShields',cardChoice) 
 	elif targetZone == 'grave':
-		remoteCall(targetPlayer,'toDiscard',cardChoice)
+		#do anti-discard check here
+		if not remoteCall(targetPlayer, 'antiDiscard', cardChoice, me):
+			remoteCall(targetPlayer,'toDiscard',cardChoice)
+		else:
+			return
 	
 def discardAll():
 	mute()
@@ -513,6 +527,8 @@ def discardAll():
 	choicePlayer = askChoice("Pick a player:", playerList)
 	if choicePlayer < 1: return
 	targetPlayer = currentPlayers[choicePlayer-1]
+	
+	
 	cardList = [card for card in targetPlayer.hand]
 	for card in cardList:
 		remoteCall(targetPlayer, 'toDiscard', card)
@@ -686,13 +702,19 @@ def search(group, count = 1, TypeFilter = "ALL" , CivFilter = "ALL", RaceFilter 
 
 def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targetOwn = False):
 	mute()
+	targets = [c for c in table if c.target	and c.targetedBy == me]
+	##notify("Targets: {}".format(len(targets)))
+	
+	if len(targets) > 0 and len(targets) != count:
+		whisper("Wrong number of targets!")
+		return
 	if powerFilter == 'ALL':
 		powerFilter = float('inf')
 	for i in range(0, count):
 		if targetOwn:
-			cardList = [card for card in table if isCreature(card) and int(card.Power) <= powerFilter]
+			cardList = [card for card in table if isCreature(card) and int(card.Power.strip(' +')) <= powerFilter]
 		else:
-			cardList = [card for card in table if isCreature(card) and not card.owner==me and int(card.Power) <= powerFilter]
+			cardList = [card for card in table if isCreature(card) and not card.owner==me and int(card.Power.strip(' +')) <= powerFilter]
 		if tapFilter != 'ALL':
 			if tapFilter == 'Untap':
 				cardList = [card for card in cardList if card.orientation == Rot0]
@@ -702,7 +724,18 @@ def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targe
 			cardList = [card for card in cardList if re.search(civFilter,card.Civilization)]
 		if len(cardList)==0:
 			return	
-		choice = askCard2(cardList, 'Choose a Creature to destroy')
+		
+		
+		if len(targets) == 0: # if no card is targetted, do it the old fasioned way of popbox
+			whisper("No card targetted...showing a list of valid targets.")
+			choice = askCard2(cardList, 'Choose a Creature to destroy')
+			notify("Hint: You may select targets(Shift + Click) before using the effect.")
+		else:
+			if(targets[i] in cardList):
+				choice = targets[i]
+			else:
+				whisper("Wrong target(s)!")
+				return
 		if type(choice) is not Card:
 			return
 		if choice.owner == me:
@@ -718,12 +751,12 @@ def destroyAll(group, condition = False, powerFilter = 'ALL', civFilter = "ALL",
 		return
 	cardlist = []
 	if civFilter == "ALL":
-		cardList = [card for card in group if isCreature(card) and int(card.Power) <= powerFilter]
+		cardList = [card for card in group if isCreature(card) and int(card.Power.strip(' +')) <= powerFilter]
 	else:
 		if AllExceptFiltered:
-			cardList = [card for card in group if isCreature(card) and int(card.Power) <= powerFilter and not re.search(civFilter,card.properties['Civilization'])]
+			cardList = [card for card in group if isCreature(card) and int(card.Power.strip(' +')) <= powerFilter and not re.search(civFilter,card.properties['Civilization'])]
 		else:
-			cardList = [card for card in group if isCreature(card) and int(card.Power) <= powerFilter and re.search(civFilter,card.properties['Civilization'])]
+			cardList = [card for card in group if isCreature(card) and int(card.Power.strip(' +')) <= powerFilter and re.search(civFilter,card.properties['Civilization'])]
 	if len(cardList)==0:
 		return
 	for card in cardList:
@@ -795,7 +828,7 @@ def sacrifice(power = float('inf'), count = 1):
 	mute()
 	for i in range(0, count):
 		cardList = [card for card in table if isCreature(card) and card.owner==me and re.search("Creature", card.Type)]
-		cardList = [card for card in cardList if int(card.Power) <= power]
+		cardList = [card for card in cardList if int(card.Power.strip(' +')) <= power]
 		if len(cardList)==0:
 			return	
 		choice = askCard2(cardList, 'Choose a Creature to destroy')
@@ -805,6 +838,10 @@ def sacrifice(power = float('inf'), count = 1):
 	
 def bounce(count = 1, opponentOnly = False):
 	mute()
+	targets = [c for c in table if c.target	and c.targetedBy == me]
+	if len(targets) != count:
+		whisper("Wrong number of targets!")
+		return
 	for i in range(0,count):
 		if opponentOnly:
 			cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type) and card.owner != me]
@@ -812,13 +849,25 @@ def bounce(count = 1, opponentOnly = False):
 			cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
 		if len(cardList) < 1:
 			return
-		choice = askCard2(cardList,'Choose a Creature to return to Hand')
+
+		if len(targets) == 0: # if no card is targetted, do it the old fasioned way of popbox
+			whisper("No card targetted...showing a list of valid targets.")
+			choice = askCard2(cardList, 'Choose a Creature to return')
+			notify("Hint: You may select targets(Shift + Click) before using the effect.")
+		else:
+			if(targets[i] in cardList):
+				choice = targets[i]
+			else:
+				whisper("Wrong target(s)!")
+				return
 		if type(choice) is not Card:
+			whisper("Action cancelled.")
 			return
 		if choice.owner==me:
 			toHand(choice)
 		else:
 			remoteCall(choice.owner,"toHand",choice)
+
 	
 def bounceAndDiscard(bcount = 1, opponentOnly = True, randomDiscard=True):
 	mute()
