@@ -30,9 +30,8 @@
 			<property name="Rules" value="At the start of your turn, you may draw a card. &#xd;&#xa; Dragsolution: When you draw a card, if its the fifth card you drew that turn, you may flip this card to the dragheart creature side and untap it. Hyperspatial Dragheart Fortress" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1a" />
-		</card>
 
-		<card name="Q.E.D. Plus, Final Dragon Logic" id="2c44ffe0-a63c-4e5c-9b38-f009f83b816e">
+		<alternate name="Q.E.D. Plus, Final Dragon Logic" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value=" 7" />
@@ -42,6 +41,7 @@
 			<property name="Rules" value="At the start of your turn, look at the top 5 cards of your deck. Put one of them on top of your deck and put the rest on the bottom of your deck in any order. Then you may draw a card. &#xd;&#xa; Your water Dragons can't be blocked.&#xd;&#xa;Double breaker&#xd;&#xa;Dragon Evade" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1b" />
+		</alternate>
 		</card>
 		<card name="Gaiglen, Violent Dragon Incident" id="da1b2020-5588-4dc3-97ad-c2120914b82a">
 			<property name="Format" value="OCG" />
@@ -161,9 +161,8 @@
 			<property name="Rules" value="Whenever one of your fire creatures battles, that creature gets +2000 power until the end of the turn. &#xd;&#xa;Dragsolution  (At the start of the game, draghearts are put into your hyperspatial zone. If it leaves the battle zone, return it there.) " />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4a" />
-		</card>
 
-		<card name="Gaishukaku, Passion Dragon" id="a1db8b32-0c8a-4571-93b4-a0f3b4458356">
+		<alternate name="Gaishukaku, Passion Dragon" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 6" />
@@ -173,6 +172,7 @@
 			<property name="Rules" value="Whenever one of your creatures battles, that creature gets +2000 power until the end of the turn. &#xd;&#xa; During your turn, whenever one of your creatures is blocked for the first time, untap that creature. &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4b" />
+		</alternate>
 		</card>
 		<card name="Digurupion, Earth Snake" id="a08ccca3-730f-4073-992a-15e0e69d54b2">
 			<property name="Format" value="OCG" />
@@ -220,9 +220,8 @@
 			<property name="Rules" value="Each of your Light creatures in the battle zone gets +1000 power. Dragsolution  (At the start of the game, draghearts are put into your hyperspatial zone. If it leaves the battle zone, return it there.) " />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="8a" />
-		</card>
 
-		<card name="Metal Avenger Solid, Dragon Edge" id="c719ac65-2d3e-4b4d-b03f-bb6b3185f6a3">
+		<alternate name="Metal Avenger Solid, Dragon Edge" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value="6" />
@@ -232,6 +231,7 @@
 			<property name="Rules" value="When you put this creature into the battle zone, put a water dragheart that costs 4 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa; When you put this creature into the battle zone, you may choose one of your opponent's creatures that costs 6 or less in the battle zone and return it to its owner's hand." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="9" />
+		</alternate>
 		</card>
 
 		<card name="Ea Barrenchan, Dragment Symbol" id="1b786ae0-c216-4d86-9304-c563fecca0d2">
@@ -292,9 +292,8 @@
 			<property name="Rules" value="Each of your Darkness creatures in the battle zone gets 'slayer'.  (When a creature that has 'slayer' battles, after the battle, destroy your opponent's creature.)  Dragsolution Hyperspatial Dragheart Fortress" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="14a" />
-		</card>
 
-		<card name="Minagorosseo, Wolf Demon Dragon" id="cca409cf-18da-466e-88f0-6f649e2ac08c">
+		<alternate name="Minagorosseo, Wolf Demon Dragon" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value=" 6" />
@@ -304,6 +303,7 @@
 			<property name="Rules" value="Each of your creatures in the battle zone gets 'slayer'.  (When a creature that has 'slayer' battles, after the battle, destroy your opponent's creature.) &#xd;&#xa; At the start of your opponent's turn, your opponent chooses one of his creatures that can attack. That creature must attack that turn if able." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="14b" />
+		</alternate>
 		</card>
 		<card name="Madaru Bysshe, Passion Dragon" id="f540e6d1-6283-492e-81c7-9d45c3881354">
 			<property name="Format" value="OCG" />
@@ -351,9 +351,8 @@
 			<property name="Rules" value="Your nature creatures may cost 1 less to summon. They can't cost less than 1.&#xd;&#xa;Dragsolution|At the start of your turn, if you have 2 or more Nature creatures in the battle zone Hyperspatial Dragheart Fortress" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="18a" />
-		</card>
 		
-		<card name="Rejiru=Euru=Bucca, Mystery Ruinskind" id="902f4b22-e811-4369-b47d-108795c20775">
+		<alternate name="Rejiru=Euru=Bucca, Mystery Ruinskind" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="" />
@@ -363,6 +362,7 @@
 			<property name="Rules" value="Your creatures may cost up to 2 less to summon. They can't cost less than 1." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="18b" />
+		</alternate>
 		</card>
 
 		<card name="Treasure Map" id="269a0982-8d2a-4fd4-a3fe-59ffdf2f16ae">
