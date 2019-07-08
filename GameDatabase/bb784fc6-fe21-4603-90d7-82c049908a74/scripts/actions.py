@@ -3,7 +3,6 @@
 #------------------------------------------------------------------------------
 import re
 import itertools
-import time
 
 shields = []
 playerside = None
@@ -170,7 +169,7 @@ cardScripts = {
                 'Faerie Crystal': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Faerie Life': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Faerie Miracle': { 'onPlay': { 'mana': ['me.Deck'] }},
-				'Faerie Shower': { 'onPlay': { 'lookAtTopCards': ['2','"card"','"hand"','"mana"'] }},
+				'Faerie Shower': { 'onPlay': { 'lookAtTopCards': ['2','"card"','"hand"','"mana"', 'False'] }},
 				'Flame-Absorbing Palm': { 'onPlay': { 'kill': ['2000'] }},
 				'Fire Crystal Bomb': { 'onPlay': { 'kill': ['5000'] }},
 				'Flame Lance Trap': { 'onPlay': { 'kill': ['5000'] }},
@@ -241,7 +240,6 @@ cardScripts = {
 				'Skeleton Vice': { 'onPlay': { 'targetDiscard': ['True'], 'targetDiscard': ['True'] }},
 				'Samurai Decapitation Sword': { 'onPlay': {  'kill': ['5000'] }},
 				'Screw Rocket': { 'onPlay': { 'gear': ['"kill"'] }},
-				'Searing Wave': { 'onPlay': { 'destroyShield': ['False'] }},
 				'Seventh Tower': { 'onPlay': { 'mana': ['me.Deck'] },
 									'onMetamorph': { 'mana': ['me.Deck','3'] }},
 				'Solar Grace': { 'onPlay': { 'tapCreature': [] }},
@@ -257,7 +255,7 @@ cardScripts = {
 				'Super Spark': { 'onPlay': { 'tapCreature': ['1','True'] }},
 				'Teleportation': { 'onPlay': { 'bounce': ['2'] }},
 				'Ten-Ton Crunch': { 'onPlay': { 'kill': ['3000'] }},
-				'Terror Pit': { 'onPlay': { 'kill': [] }},
+				'Terror Pit': { 'onPlay': { 'kill': ['"All"'] }},
 				'The Strong Spiral': { 'onPlay': { 'bounce': [] }},
 				'The Strong Breath': { 'onPlay': { 'kill': ['"ALL"','"Untap"'] }},
 				'Timeless Garden': { 'onPlay': { 'mana': ['me.Deck'] }},
@@ -287,7 +285,6 @@ cardScripts = {
 				'Asylum, the Dragon Paladin': { 'onDestroy': {  'toShields': ['card'] }},
 				'Bat Doctor, Shadow of Undeath': { 'onDestroy': {  'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
 				'Bone Piercer': { 'onDestroy': { 'fromMana': ['1', '"Creature"'] }},
-				'Bruiser Dragon': { 'onDestroy': { 'destroyShield': ['False'] }},
 				'Cetibols': { 'onDestroy': {  'draw': ['me.Deck', 'True'] }},
 				'Chillias, the Oracle': { 'onDestroy': {  'toHand': ['card'] }},
 				'Coiling Vines': { 'onDestroy': { 'toMana': ['card'] }},
@@ -341,7 +338,9 @@ def endTurn(args, x=0, y=0):
 def resetGame():
 	mute()
 	me.setGlobalVariable("shieldCount", "0")
-#########intermediate automation functions#########
+	
+
+#########intermediate functions#########
 
 def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1):  #askCard function was changed. So using the same name but with the new functionality
 	dlg = cardDlg(list)
@@ -363,8 +362,33 @@ def askYN(text="Proceed?", c1="Yes", c2= "No"):
 	colorsList = ['#FF0000', '#FF0000']
 	choice = askChoice(text, choiceList, colorsList)
 	return choice
-	
 
+def removeIfEvo(card):		
+	"""
+	Will remove passed card from the list of tracked evos/baits
+	returns a list of bait cards if evo was removed
+	return enmpty list if not found or bait was removed
+	"""
+	evolveDict = eval(me.getGlobalVariable('evolution'))
+	#notify("EvolveDict is {}".format(evolveDict))
+	resultList = []
+	for evo in evolveDict.keys():
+			if evo == card._id:
+				for cardID in evolveDict[evo]:
+					resultList.append(Card(cardID))
+				del evolveDict[evo]
+				#notify("Evo removed from evo in dict")
+				break
+			baitList = evolveDict[evo]
+			if card._id in baitList:
+				baitList.remove(card._id)
+				evolveDict[evo] = baitList
+				#notify("Bait removed from evo in dict")
+				break
+	me.setGlobalVariable('evolution', str(evolveDict))
+	return resultList
+	
+	
 ################ Functions used in the Automation dictionaries.####################
 
 def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", noEvo = True): #Temporary Fix for not allowing Evolutions
@@ -422,7 +446,7 @@ def drama(shuffle = True, type = 'creature', targetZone = 'battlezone', failZone
 		notify("{} puts {} back on top of deck".format(me, card))
 		card.isFaceUp = False
 	
-def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bottom'):
+def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bottom', reveal = True):
 	mute()
 	notify("{} looks at the top {} cards of their deck".format(me,num))
 	cardList = [card for card in me.Deck.top(num)]
@@ -434,7 +458,7 @@ def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bot
 				toMana(choice)
 			else:
 				#to hand is default rn
-				toHand(choice, show = True)	
+				toHand(choice, show = reveal)	
 		else:
 			notify("Please select a {}! Action cancelled.".format(cardType))
 			return
@@ -737,6 +761,7 @@ def destroyMana(count = 1):
 		remoteCall(choice.owner,"destroy",choice)
 
 def destroyShield(owner = True):
+	### USe targets here otherwise the shields show face up
 	mute()
 	if owner == True:
 			cardList = [card for card in table if isShield(card) and not card.owner==me]
@@ -905,7 +930,7 @@ def suicide(name, action, arg):
 
 #End of Automation Code
 
-def awaken(card, x = 0, y = 0):
+def flip(card, x = 0, y = 0):
 	mute()
 	if (re.search("Psychic", card.Type)):
 		altName = card.alternateProperty('awakening', 'name')
@@ -919,11 +944,19 @@ def awaken(card, x = 0, y = 0):
 			notify("{}'s {} reverts to {}.".format(me, altName, card))
 			align()
 			return
+	else:
+		if card.isFaceUp:
+			notify("{} flips {} face down.".format(me, card))
+			card.isFaceUp = False
+		else:
+			card.isFaceUp = True
+			notify("{} flips {} face up.".format(me, card))
 
 def toHyperspatial(card, x = 0, y = 0, notifymute = False):
 	mute()
+	removeIfEvo(card)
 	if card.alternate is not '' and re.search("{RELEASE}", card.Rules):
-		awaken(card)
+		flip(card)
 		return
 	else:
 		card.moveTo(me.Hyperspatial)
@@ -932,34 +965,46 @@ def toHyperspatial(card, x = 0, y = 0, notifymute = False):
 			notify("{}'s {} returns to the Hyperspatial Zone.".format(me, card))
 
 def moveCards(args):
-	## This trigger updates the evolution dictionary in the event one of the cards involved in an evolution leaves the battlezone.
 	mute()
 	player = args.player
-	card = args.cards[0]
-	fromGroup = args.fromGroups[0]
-	## Old vars are: player, card, fromGroup, toGroup, oldIndex, index, oldX, oldY, x, y, highlights, markers, faceup
 	
-	if player is not me: ##Ignore for cards you don't control
-		return
-	if table not in args.fromGroups: ## we only want cases where a card is being moved from table to another group
-		notify("Ignored")
-		return
-	evolveDict = eval(me.getGlobalVariable("evolution"))
-	for evo in evolveDict.keys():
-		if Card(evo) not in table:
-			del evolveDict[evo]
-		else:
-			evolvedList = evolveDict[evo]
-			for evolvedCard in evolvedList:
-				if Card(evolvedCard) not in table:
-					evolvedList.remove(evolvedCard)
-			if len(evolvedList) == 0:
+	fromGroup = args.fromGroups[0]
+	toGroup = args.toGroups[0]
+	## Old vars are: player, card, fromGroup, toGroup, oldIndex, index, oldX, oldY, x, y, highlights, markers, faceup
+	for card in args.cards:
+		if player != me: ##Ignore for cards you don't control
+			return
+		##When a player moves top card of deck to bottom of deck
+		if fromGroup == me.Deck and toGroup == me.Deck:
+			if card == me.Deck.bottom():
+				notify("{} moves a card in their deck to bottom".format(me))
+			elif card == me.Deck.top():
+				notify("{} moves a card in their deck to top".format(me))
+			else:	
+				notify("{} moves a card around in their deck".format(me))
+			return
+		
+		## This updates the evolution dictionary in the event one of the cards involved in an evolution leaves the battlezone.
+		if table not in args.fromGroups: ## we only want cases where a card is being moved from table to another group
+			##notify("Ignored")
+			return
+		evolveDict = eval(me.getGlobalVariable("evolution"))
+		for evo in evolveDict.keys():
+			if Card(evo) not in table:
 				del evolveDict[evo]
 			else:
-				evolveDict[evo] = evolvedList
-	if evolveDict != eval(me.getGlobalVariable("evolution")):
-		me.setGlobalVariable("evolution", str(evolveDict))
-
+				evolvedList = evolveDict[evo]
+				for evolvedCard in evolvedList:
+					if Card(evolvedCard) not in table:
+						evolvedList.remove(evolvedCard)
+				if len(evolvedList) == 0:
+					del evolveDict[evo]
+				else:
+					evolveDict[evo] = evolvedList
+		if evolveDict != eval(me.getGlobalVariable("evolution")):
+			me.setGlobalVariable("evolution", str(evolveDict))
+	
+			
 def isCreature(card):
 	mute()
 	if card in table and card.isFaceUp and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type):
@@ -1326,42 +1371,33 @@ def shields(group, count = 1, conditional = False, x = 0, y = 0):
 		toShields(card, notifymute = True)
 		notify("{} sets top card of {} as shield.".format(me, group.name))
 
-def toMana(card, x = 0, y = 0, notifymute = False):
+def toMana(card, x = 0, y = 0, notifymute = False, checkEvo = True, alignCheck = True):
 	mute()
-	evolveDict = eval(me.getGlobalVariable('evolution'))
-	if card._id in list(itertools.chain.from_iterable(evolveDict.values())):
-		if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be placed into your mana zone.\nWould you like to override this?"):
-			return
 	if isMana(card):
 		whisper("This is already mana")
 		return
 	if isPsychic(card):
 		toHyperspatial(card)
 		return
+	##notify("Removing from tracked evos if its bait or an evolved creature")
+	if checkEvo:
+		baitList = removeIfEvo(card)
+		for baitCard in baitList:
+			toMana(baitCard, checkEvo = False, alignCheck = False)
 	card.moveToTable(0,0)
 	card.orientation = Rot180
 	if re.search("/", card.Civilization):
 		card.orientation = Rot270
-	if card._id in evolveDict:
-		evolvedCardList = evolveDict[card._id]
-		for evolvedCard in evolvedCardList:
-			if Card(evolvedCard) in table:
-				Card(evolvedCard).orientation = Rot180
-		del evolveDict[card._id]
-		me.setGlobalVariable('evolution', str(evolveDict))
-	align()
+	if alignCheck:
+		align()
 	if notifymute == False:
 		notify("{} charges {} as mana.".format(me, card))
 
-def toShields(card, x = 0, y = 0, notifymute = False, alignCheck = True, ignoreEvo = False):
+def toShields(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEvo = True):
 	mute()
 	if isShield(card):
 		whisper("This is already a shield.")
 		return
-	evolveDict = eval(me.getGlobalVariable('evolution'))
-	if ignoreEvo == False and card._id in list(itertools.chain.from_iterable(evolveDict.values())):
-		if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be placed into your shield zone.\nWould you like to override this?"):
-			return
 	if isPsychic(card):
 		toHyperspatial(card)
 		return
@@ -1379,13 +1415,10 @@ def toShields(card, x = 0, y = 0, notifymute = False, alignCheck = True, ignoreE
 	if card.orientation != Rot0:
 		card.orientation = Rot0
 	card.markers[shieldMarker] = count
-	if card._id in evolveDict:
-		evolvedCardList = evolveDict[card._id]
-		for evolvedCard in evolvedCardList:
-			if Card(evolvedCard) in table:
-				toShields(Card(evolvedCard), alignCheck = False, ignoreEvo = True)
-		del evolveDict[card._id]
-		me.setGlobalVariable('evolution', str(evolveDict))
+	if checkEvo:
+		baitList = removeIfEvo(card)
+		for baitCard in baitList:
+			toShields(baitCard, checkEvo = False, alignCheck = False)
 	if alignCheck:
 		align()
 		
@@ -1445,26 +1478,21 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 			rnd(1,100)
 			card.moveTo(card.owner.piles['Graveyard'])
 			
-	####### check some stack here for other play resolving(not implemented yet) #############
+	####### check some effect-stack here for other play resolving(not implemented yet) #############
 	
-def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, ignoreEvo = False):
+def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEvo = True):
 	mute()
-	evolveDict = eval(me.getGlobalVariable('evolution'))
-	if ignoreEvo == False and isCreature(card) and card._id in list(itertools.chain.from_iterable(evolveDict.values())):
-		if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be destroyed.\nWould you like to override this?"):
-			return
 	if isPsychic(card):
 		toHyperspatial(card)
 		return	
 	src = card.group
+	
+	if checkEvo:
+		baitList = removeIfEvo(card)
+		for baitCard in baitList:
+			toDiscard(baitCard, checkEvo = False, alignCheck = False)
+	
 	card.moveTo(card.owner.piles['Graveyard'])
-	if card._id in evolveDict:
-		evolvedCardList = evolveDict[card._id]
-		for evolvedCard in evolvedCardList:
-			if Card(evolvedCard) in table:
-				toDiscard(Card(evolvedCard), alignCheck = False, ignoreEvo = True)
-		del evolveDict[card._id]
-		me.setGlobalVariable('evolution', str(evolveDict))
 	if notifymute == False:
 		if src == table:
 			notify("{} destroys {}.".format(me, card))
@@ -1473,28 +1501,31 @@ def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, ignoreE
 		else:
 			notify("{} discards {} from {}.".format(me, card, src.name))
 
-def toHand(card, show = True, x = 0, y = 0, alignCheck = True, ignoreEvo = False):
+def toHand(card, show = True, x = 0, y = 0, alignCheck = True, checkEvo = True):
 	mute()
 	src = card.group
-	evolveDict = eval(me.getGlobalVariable('evolution'))
-	if ignoreEvo == False and isCreature(card) and card._id in list(itertools.chain.from_iterable(evolveDict.values())):
-		if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be destroyed.\nWould you like to override this?"):
-			return
 	if isPsychic(card):
 		toHyperspatial(card)
 		return
-	card.moveTo(card.owner.hand)
-	if card._id in evolveDict:
-		evolvedCardList = evolveDict[card._id]
-		for evolvedCard in evolvedCardList:
-			if Card(evolvedCard) in table:
-				toHand(Card(evolvedCard), alignCheck = False, ignoreEvo = True)
-		del evolveDict[card._id]
-		me.setGlobalVariable('evolution', str(evolveDict))
 	if show: 
+		card.isFaceUp = True
+		#need to use just card instead of card.Name for link to card
+		#but it won't show as card name if card is not visible to a player, so turning it face up first
 		notify("{} moved {} to hand from {}.".format(me, card, src.name))
+		#card.isFaceUp = False
+		card.moveTo(card.owner.hand)
 	else:
-		whisper("Moving {} to hand from {}.".format(card, src.name))
+		#here, move the card to hand first so it will only show card link to only the player who can see the hand
+		#if you show first then move to hand 'card' won't show card name to the owner in the notify message
+		card.moveTo(card.owner.hand)
+		notify("{} moved {} to hand from {}.".format(me, card, src.name))
+	
+	
+	if checkEvo:
+		baitList = removeIfEvo(card)
+		for baitCard in baitList:
+			toHand(baitCard, checkEvo = False, alignCheck = False)
+
 	if alignCheck:
 		align()
 
@@ -1508,21 +1539,13 @@ def toDeckBottom(card, x = 0, y = 0):
 
 def toDeck(card, bottom = False):
 	mute()
-	evolveDict = eval(me.getGlobalVariable('evolution'))
-	if isCreature(card) and card._id in list(itertools.chain.from_iterable(evolveDict.values())):
-		if not confirm("WARNING: There is an evolution creature on top of this card, and can not legally be destroyed.\nWould you like to override this?"):
-			return
+	
 	if isPsychic(card):
 		toHyperspatial(card)
 		return
-	cardList = [card]
-	if card._id in evolveDict:
-		evolvedCardList = evolveDict[card._id]
-		for evolvedCard in evolvedCardList:
-			if Card(evolvedCard) in table:
-				cardList.append(Card(evolvedCard))
-		del evolveDict[card._id]
-		me.setGlobalVariable('evolution', str(evolveDict))
+	cardList = removeIfEvo(card) #baits
+	if len(cardList) == 0:
+		cardList = [card]
 	while len(cardList) > 0:
 		if len(cardList) == 1:
 			choice = 1
