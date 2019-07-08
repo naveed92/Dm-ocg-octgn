@@ -41,7 +41,7 @@
 			<property name="Power" value="11000" />
 			<property name="Rules" value="At the start of your turn, look at the top 5 cards of your deck. Put one of them on top of your deck and put the rest on the bottom of your deck in any order. Then you may draw a card. &#xd;&#xa; Your water Dragons can't be blocked.&#xd;&#xa;Double breaker&#xd;&#xa;Dragon Evade" />
 			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="" />
+			<property name="Number" value="V1b" />
 		</card>
 		<card name="Gaiglen, Violent Dragon Incident" id="da1b2020-5588-4dc3-97ad-c2120914b82a">
 			<property name="Format" value="OCG" />
@@ -172,7 +172,7 @@
 			<property name="Power" value="7000" />
 			<property name="Rules" value="Whenever one of your creatures battles, that creature gets +2000 power until the end of the turn. &#xd;&#xa; During your turn, whenever one of your creatures is blocked for the first time, untap that creature. &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Very Rare" />
-			<property name="Number" value="55 [[Tenshukaku, Dragon King Keep ~Fighting Spirit Mode~]]<br " />
+			<property name="Number" value="4b" />
 		</card>
 		<card name="Digurupion, Earth Snake" id="a08ccca3-730f-4073-992a-15e0e69d54b2">
 			<property name="Format" value="OCG" />
@@ -303,7 +303,7 @@
 			<property name="Power" value="5000" />
 			<property name="Rules" value="Each of your creatures in the battle zone gets 'slayer'.  (When a creature that has 'slayer' battles, after the battle, destroy your opponent's creature.) &#xd;&#xa; At the start of your opponent's turn, your opponent chooses one of his creatures that can attack. That creature must attack that turn if able." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="" />
+			<property name="Number" value="14b" />
 		</card>
 		<card name="Madaru Bysshe, Passion Dragon" id="f540e6d1-6283-492e-81c7-9d45c3881354">
 			<property name="Format" value="OCG" />
@@ -339,6 +339,30 @@
 			<property name="Rules" value="This creature can't be blocked by creatures that have less power than it.&#xd;&#xa;Mana Arms" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="17" />
+		</card>
+		
+		<card name="Euru=Bucca, Mystery Gathering Ruins" id="ac609b7d-7f83-47ac-a4e6-ae7b62d7a736">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="" />
+			<property name="Type" value="Dragheart Fortress" />
+			<property name="Race" value="" />
+			<property name="Power" value="0" />
+			<property name="Rules" value="Your nature creatures may cost 1 less to summon. They can't cost less than 1.&#xd;&#xa;Dragsolution|At the start of your turn, if you have 2 or more Nature creatures in the battle zone Hyperspatial Dragheart Fortress" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="18a" />
+		</card>
+		
+		<card name="Rejiru=Euru=Bucca, Mystery Ruinskind" id="902f4b22-e811-4369-b47d-108795c20775">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="" />
+			<property name="Type" value="Dragheart Creature" />
+			<property name="Race" value="Jurassic Command Dragon" />
+			<property name="Power" value="5000" />
+			<property name="Rules" value="Your creatures may cost up to 2 less to summon. They can't cost less than 1." />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="18b" />
 		</card>
 
 		<card name="Treasure Map" id="269a0982-8d2a-4fd4-a3fe-59ffdf2f16ae">
