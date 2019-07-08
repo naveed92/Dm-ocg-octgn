@@ -263,6 +263,7 @@ public class SinnanSetExtractor {
     String expandEffect(String content) {   //for buggy incomplete effects, these things on the wikia query are not fully mentioned as text 
         //System.out.println("Content: " + content);
         int st = content.indexOf('|');
+		int st2 = content.lastIndexOf('|');
         String effect = "";
         if (st != -1) {
             effect = content.substring(0, st);
@@ -301,7 +302,6 @@ public class SinnanSetExtractor {
                     break;
                 case "Gravity Zero":
                     System.out.println("WARNING: GravityZero encountered! Please check if the effect was donre correctly!");
-                    int st2 = content.lastIndexOf('|');
                     String cond = removeBraces(content.substring(st2 + 1));
                     String type = content.substring(st + 1, st2);
                     content = "Gravity Zero-" + cond + ", ";
@@ -325,8 +325,14 @@ public class SinnanSetExtractor {
                     content += "(When this creature is destroyed, you may put an exile creature that has '" + doronName + "' in its name from your hand into the battle zone)";
                     break;
 
-                default:
-                    content = effect;
+                 default:
+                    //for some things wikia query gives very unformatted results, like mana arms
+                    System.out.println("Content = " + removeBraces(content));
+                    if (st == st2 && content.charAt(st2+1)=='s') {
+                        content = effect;
+                    } else {
+                        content = removeBraces(content);
+                    }
             }
 
             //   System.out.println("New content: "+content);
