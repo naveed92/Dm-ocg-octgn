@@ -4792,6 +4792,114 @@ abilities) and becomes one creature. When the linked creature leaves the battle 
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="27" />
 		</card>
+		
+		<card name="Bazagazeal Dragon" id="d38c09ef-47a8-4c65-9fd8-d51b32840e2b">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="Speed attacker (This creature doesn't get summoning sickness.) &#xd;&#xa;This creature can attack untapped creatures. &#xd;&#xa;Double breaker (This creature breaks 2 shields.) &#xd;&#xa;At the end of your turn, return this creature to your hand." />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="P60/Y8" />
+		</card>
+		
+		<card name="Bolmeteus Steel Dragon" id="dcd23468-765f-4737-b82c-bbf24a1af873">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="Double breaker (This creature breaks 2 shields.) &#xd;&#xa;Whenever this creature would break a shield, your opponent puts that shield into his graveyard instead." />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S4" />		
+        </card>
+		
+		<card name="Ballom, Master of Death" id="333d793d-dc2f-4357-9403-df5f5f71aa49">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Darkness" />
+			<property name="Cost" value="8" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Demon Command" />
+			<property name="Rules" value="Evolution-Put on one of your Demon Commands. &#xd;&#xa;When you put this creature into the battle zone, destroy all creatures except darkness creatures. &#xd;&#xa;Double breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="12000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="P13/Y9" />
+		</card>
+		
+		<card name="Fighter Dual Fang" id="fd922d0d-0539-48eb-9c48-eb697c321d36">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Beast Folk" />
+			<property name="Rules" value="Evolution-Put on one of your Beast Folk. &#xd;&#xa;When you put this creature into the battle zone, put the top 2 cards of your deck into your mana zone. &#xd;&#xa;Double breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="8000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S5" />
+		</card>
+		
+		<card name="Crystal Jouster" id="d98db372-ffc5-4f1b-aa4f-dc6db85ea5fb">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Liquid People" />
+			<property name="Rules" value="Evolution-Put on one of your Liquid People. &#xd;&#xa;Double breaker (This creature breaks 2 shields.) &#xd;&#xa;When this creature would be destroyed, return it to your hand instead." />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S2" />
+		</card>
+		
+		<card name="Astral Warper" id="689c9fa5-1ff4-4b70-9648-347cdf782605">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Water" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Cyber Virus" />
+			<property name="Rules" value="Evolution-Put on one of your Cyber Viruses. &#xd;&#xa;When you put this creature in the battle zone, draw up to 3 cards." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="2" />
+		</card>
 	
+		<card name="Ladia Bale, the Inspirational" id="ce07c335-795a-4e8b-909c-6733b83b5ef5">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Evolution Creature" />
+			<property name="Race" value="Guardian" />
+			<property name="Rules" value="{BLOCKER} (Whenever an opponent's creature attacks, you may tap this creature to stop the attack. Then the 2 creatures battle.) &#xd;&#xa;Evolution-Put on one of your Guardians. &#xd;&#xa;Double breaker (This creature breaks 2 shields.)" />
+			<property name="Power" value="9500" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S1" />
+		</card>
+		
+		<card name="Kachua, Keeper of the Icegate" id="b1f25405-75b3-4b29-bdbf-7ab1d8548288">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Snow Faerie" />
+			<property name="Rules" value="Instead of having this creature attack, you may tap it to use its {TAP} ability. &#xd;&#xa; {TAP} Search your deck. You may take a creature that has Dragon in its race from your deck and put it into the battle zone. Then shuffle your deck. That creature has 'speed attacker.' At the end of the turn, destroy it. " />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Very Rare" />
+			<property name="Number" value="5" />
+		</card>
+		
+		<card name="Bronze-Arm Tribe" id="09e20583-87bc-494c-b0fb-e66df9e248ee">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Nature" />
+			<property name="Cost" value="3" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Beast Folk" />
+			<property name="Rules" value="When you put this creature into the battle zone, put the top card of your deck into your mana zone." />
+			<property name="Power" value="1000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="P90/Y9" />
+		</card>
+		
 	</cards>
 </set>
