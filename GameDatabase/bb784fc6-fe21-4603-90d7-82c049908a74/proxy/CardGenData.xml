@@ -1,160 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <templates>
 	<blocks>
-		<block type="overlay" id="lightC" src="proxy/frames/lightC.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="waterC" src="proxy/frames/waterC.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="darkC" src="proxy/frames/darkC.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="fireC" src="proxy/frames/fireC.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="natureC" src="proxy/frames/natureC.png">
-			<location x="0" y="0" />
-		</block>			
-        <block type="overlay" id="zeroC" src="proxy/frames/zeroC.png">
-			<location x="0" y="0" />
-		</block>	
-		
-		<block type="overlay" id="lightS" src="proxy/frames/lightS.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="waterS" src="proxy/frames/waterS.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="darkS" src="proxy/frames/darkS.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="fireS" src="proxy/frames/fireS.png">
-			<location x="0" y="0" />
-		</block>
-        <block type="overlay" id="fireS_HSP" src="proxy/frames/fireS_HSP.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="natureS" src="proxy/frames/natureS.png">
-			<location x="0" y="0" />
-		</block>
-        <block type="overlay" id="zeroS" src="proxy/frames/zeroS.png">
-			<location x="0" y="0" />
-		</block>
-    
-		<block type="overlay" id="fireDarkS" src="proxy/frames/fireDarkS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="fireDarkC" src="proxy/frames/fireDarkC.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="fireNatureS" src="proxy/frames/fireNatureS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="fireNatureC" src="proxy/frames/fireNatureC.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="lightWaterS" src="proxy/frames/lightWaterS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="lightWaterC" src="proxy/frames/lightWaterC.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="lightNatureS" src="proxy/frames/lightNatureS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="lightNatureC" src="proxy/frames/lightNatureC.png">
-			<location x="0" y="0" />	
-		</block>
-		<block type="overlay" id="waterDarkS" src="proxy/frames/waterDarkS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="waterDarkC" src="proxy/frames/waterDarkC.png">
-			<location x="0" y="0" />	
-		</block>
-		
-		<block type="overlay" id="darkNatureS" src="proxy/frames/darkNatureS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="darkNatureC" src="proxy/frames/darkNatureC.png">
-			<location x="0" y="0" />	
-		</block>
-		
-		<block type="overlay" id="lightDarkS" src="proxy/frames/lightDarkS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="lightDarkC" src="proxy/frames/lightDarkC.png">
-			<location x="0" y="0" />	
-		</block>
+		<block type="overlay" id="lightC" src="proxy/frames/lightC.png">    <location x="0" y="0" />    </block>
+		<block type="overlay" id="waterC" src="proxy/frames/waterC.png">    <location x="0" y="0" />    </block>
+		<block type="overlay" id="darkC" src="proxy/frames/darkC.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="fireC" src="proxy/frames/fireC.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="natureC" src="proxy/frames/natureC.png">  <location x="0" y="0" />    </block>			
+        <block type="overlay" id="zeroC" src="proxy/frames/zeroC.png">      <location x="0" y="0" />    </block>	
 	
-		<block type="overlay" id="lightFireS" src="proxy/frames/lightFireS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="lightFireC" src="proxy/frames/lightFireC.png">
-			<location x="0" y="0" />	
-		</block>
+		<block type="overlay" id="lightS" src="proxy/frames/lightS.png">    <location x="0" y="0" />    </block>
+		<block type="overlay" id="waterS" src="proxy/frames/waterS.png">    <location x="0" y="0" />    </block>
+		<block type="overlay" id="darkS" src="proxy/frames/darkS.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="fireS" src="proxy/frames/fireS.png">      <location x="0" y="0" />	</block>
+        <block type="overlay" id="fireS_HSP" src="proxy/frames/fireS_HSP.png"> <location x="0" y="0" /> </block>
+		<block type="overlay" id="natureS" src="proxy/frames/natureS.png">  <location x="0" y="0" />    </block>
+        <block type="overlay" id="zeroS" src="proxy/frames/zeroS.png">      <location x="0" y="0" />    </block>
+    
+		<block type="overlay" id="fireDarkS" src="proxy/frames/fireDarkS.png">      <location x="0" y="0" />    </block>	
+		<block type="overlay" id="fireDarkC" src="proxy/frames/fireDarkC.png">      <location x="0" y="0" />    </block>
+		<block type="overlay" id="fireNatureS" src="proxy/frames/fireNatureS.png">  <location x="0" y="0" />    </block>	
+		<block type="overlay" id="fireNatureC" src="proxy/frames/fireNatureC.png">  <location x="0" y="0" />    </block>
+		<block type="overlay" id="lightWaterS" src="proxy/frames/lightWaterS.png">  <location x="0" y="0" />    </block>	
+		<block type="overlay" id="lightWaterC" src="proxy/frames/lightWaterC.png">  <location x="0" y="0" />    </block>
+		<block type="overlay" id="lightNatureS" src="proxy/frames/lightNatureS.png"><location x="0" y="0" />    </block>	
+		<block type="overlay" id="lightNatureC" src="proxy/frames/lightNatureC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="waterDarkS" src="proxy/frames/waterDarkS.png">    <location x="0" y="0" />    </block>	
+		<block type="overlay" id="waterDarkC" src="proxy/frames/waterDarkC.png">    <location x="0" y="0" />	</block>
 		
-		<block type="overlay" id="waterFireS" src="proxy/frames/waterFireS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="waterFireC" src="proxy/frames/waterFireC.png">
-			<location x="0" y="0" />	
-		</block>
-		
-		<block type="overlay" id="waterNatureS" src="proxy/frames/waterNatureS.png">
-			<location x="0" y="0" />
-		</block>	
-		<block type="overlay" id="waterNatureC" src="proxy/frames/waterNatureC.png">
-			<location x="0" y="0" />	
-		</block>
-		
-		<block type="overlay" id="evo" src="proxy/evo.png">
-			<location x="0" y="0" />
-		</block>
+		<block type="overlay" id="darkNatureS" src="proxy/frames/darkNatureS.png">  <location x="0" y="0" />    </block>	
+		<block type="overlay" id="darkNatureC" src="proxy/frames/darkNatureC.png">  <location x="0" y="0" />	</block>
+		<block type="overlay" id="lightDarkS" src="proxy/frames/lightDarkS.png">    <location x="0" y="0" />    </block>	
+		<block type="overlay" id="lightDarkC" src="proxy/frames/lightDarkC.png">    <location x="0" y="0" />	</block>
+		<block type="overlay" id="lightFireS" src="proxy/frames/lightFireS.png">    <location x="0" y="0" />    </block>	
+		<block type="overlay" id="lightFireC" src="proxy/frames/lightFireC.png">    <location x="0" y="0" />	</block>		
+		<block type="overlay" id="waterFireS" src="proxy/frames/waterFireS.png">    <location x="0" y="0" />    </block>	
+		<block type="overlay" id="waterFireC" src="proxy/frames/waterFireC.png">    <location x="0" y="0" />	</block>		
+		<block type="overlay" id="waterNatureS" src="proxy/frames/waterNatureS.png"><location x="0" y="0" />    </block>	
+		<block type="overlay" id="waterNatureC" src="proxy/frames/waterNatureC.png"><location x="0" y="0" />	</block>		
+		<block type="overlay" id="evo" src="proxy/evo.png"><location x="0" y="0" /></block>
         
-        <block type="overlay" id="sTrig" src="proxy/shTrigger.png">
-			<location x="0" y="0" />
-		</block>
-        <block type="overlay" id="blocker" src="proxy/blocker.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="exile" src="proxy/exile.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="leftGod" src="proxy/leftGod.png">
-			<location x="0" y="0" />
-		</block>
-        <block type="overlay" id="rightGod" src="proxy/rightGod.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="centerGod" src="proxy/centerGod.png">
-			<location x="0" y="0" />
-		</block>
+        <block type="overlay" id="sTrig" src="proxy/shTrigger.png">     <location x="0" y="0" />    </block>
+        <block type="overlay" id="blocker" src="proxy/blocker.png">     <location x="0" y="0" />    </block>
+		<block type="overlay" id="exile" src="proxy/exile.png">         <location x="0" y="0" />    </block>
+		<block type="overlay" id="leftGod" src="proxy/leftGod.png">     <location x="0" y="0" />    </block>
+        <block type="overlay" id="rightGod" src="proxy/rightGod.png">   <location x="0" y="0" />    </block>
+		<block type="overlay" id="centerGod" src="proxy/centerGod.png"> <location x="0" y="0" />    </block>
 		
-        <block type="overlay" id="vicLight" src="proxy/vicLight.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="vicWater" src="proxy/vicWater.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="vicDark" src="proxy/vicDark.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="vicFire" src="proxy/vicFire.png">
-			<location x="0" y="0" />
-		</block>
-		<block type="overlay" id="vicNature" src="proxy/vicNature.png">
-			<location x="0" y="0" />
-		</block>			
-        <block type="overlay" id="vicZero" src="proxy/vicZero.png">
-			<location x="0" y="0" />
-		</block>	
+        <block type="overlay" id="vicLight" src="proxy/vicLight.png">   <location x="0" y="0" />    </block>
+		<block type="overlay" id="vicWater" src="proxy/vicWater.png">   <location x="0" y="0" />    </block>
+		<block type="overlay" id="vicDark" src="proxy/vicDark.png">     <location x="0" y="0" />    </block>
+		<block type="overlay" id="vicFire" src="proxy/vicFire.png">     <location x="0" y="0" />    </block>
+		<block type="overlay" id="vicNature" src="proxy/vicNature.png"> <location x="0" y="0" />    </block>			
+        <block type="overlay" id="vicZero" src="proxy/vicZero.png">     <location x="0" y="0" />    </block>	
+        
         <block type="text" id="title">
-			<location x="70" y="20" />
+			<location x="70" y="20" />    
 			<text color="#000000" size="32" font="./fonts/perceval.ttf"/>
 			<border color="#FFFFFF" size="2" />
 			<wordwrap height="48" width="310" align="center" shrinktofit="True" valign="center" />
-		</block>
+        </block>
         <block type="text" id="zerotitle">
 			<location x="70" y="20" />
 			<text color="#FFFFFF" size="32" font="./fonts/perceval.ttf"/>
@@ -203,13 +107,12 @@
 			<border color="#FFFFFF" size="2" />
 			<wordwrap height="16" width="128" align="center" shrinktofit="True" valign="center"/>
 		</block>
-			<block type="text" id="rules">
+		<block type="text" id="rules">
 			<location x="48" y="382" />
 			<text color="#000000" size="13" font="./fonts/officina.ttf"/>
 			<border color="#FFFFFF" size="2" />
 			<wordwrap height="130" width="315" align="near" shrinktofit="True" valign="near"/>
 		</block>
-
 		<block type="text" id="rarity">
 			<location x="271" y="336" />
 			<text color="#000000" size="20" />
@@ -218,7 +121,7 @@
 		</block>
 	</blocks>
 	
-	<!-- /////////// Gotta make a whole copy for victory creature/victory evolution creature CUZ YOU CAN'T F*CKING NEST CONDITIONS //// -->
+	<!-- /////////// Gotta make a whole copy for victory creature/victory evolution creature CUZ YOU CAN'T NEST CONDITIONS (WHYYYY)//// -->
     <template src="proxy/blank.png">
         <matches>
 			<match name="Type" value="Creature"/>
@@ -242,7 +145,7 @@
 					
 					<case value="Darkness/Fire"> <link block="fireDarkC" /> <link block="vicZero"/> </case>
 					<case value="Fire/Darkness"> <link block="fireDarkC" /> <link block="vicZero"/></case>
-					
+		
 					<case value="Nature/Fire"> <link block="fireNatureC" /> <link block="vicZero"/></case>
 					<case value="Fire/Nature"> <link block="fireNatureC" /> <link block="vicZero"/></case>
 					
@@ -267,8 +170,8 @@
 					<case value="Fire/Water"> <link block="waterFireC" /> <link block="vicZero"/></case>
 					<case value="Water/Fire"> <link block="waterFireC" /> <link block="vicZero"/></case>
 					
-					<case value="Water/Nature"> <link block="waterNatureC" /> </case>
-					<case value="Nature/Water"> <link block="waterNatureC" /> </case>
+					<case value="Water/Nature"> <link block="waterNatureC" /> <link block="vicZero"/> </case>
+					<case value="Nature/Water"> <link block="waterNatureC" /> <link block="vicZero"/> </case>
 					<!-- multiciv cases are here for now but using white V-->
                     
 					<default> <link block="zeroC" /> </default>
@@ -504,7 +407,8 @@
 			<link block="power"><property name="Power" /></link>
 		</textblocks>
 	</template>
-	
+<!-- //////////////////////////// spells /////////////////////////////////////// -->
+
 	<template src="proxy/blank.png">
 		<matches>
 			<match name="Type" value="Spell"/>
