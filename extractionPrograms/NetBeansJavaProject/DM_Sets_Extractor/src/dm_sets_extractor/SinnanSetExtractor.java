@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.URL;
-import java.net.URLEncoder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.UUID;
@@ -36,14 +35,12 @@ public class SinnanSetExtractor {
         {
             setName = JOptionPane.showInputDialog("Enter set name, exactly as it appears in the wikia page url for the set: (Eg. DMR-03_Episode_1:_Gaial_Victory)");
         }
-        /* 
-         * Encode the set name in UTF-8 format if it contains japanese characters
-         * this query gets all the names of the cards in the set by querying the wikia
-         */
-        String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + URLEncoder.encode(setName, "UTF-8");
-        System.out.println(setLink);
 
-        /////////////////////make folder to put data and, optionally, images
+        String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + setName;
+        //this query gets all the names of the cards in the set by querying the wikia 
+        System.out.println(setLink);
+/////////////////////make folder to put data and, optionally, images
+
         JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory(new java.io.File("."));
         chooser.setDialogTitle("Select folder to put extracted data and images in");
@@ -347,11 +344,13 @@ public class SinnanSetExtractor {
         int i = all.indexOf("| " + attr);
         if (i != -1) {
             line = all.substring(i, all.indexOf("\n", i));
+
             output = line.substring(line.indexOf("=") + 2);
         } else {
             output = "";
         }
         return output;
+
     }
 
     String makeXmlLine(String property, String value) {
@@ -441,14 +440,9 @@ public class SinnanSetExtractor {
                 temp += "/" + line.substring(line.indexOf("=") + 2).trim();             //add all civs
             }
         }
-        
-        // Checking for psychic cost for draghearts
+
         details += makeXmlLine("Civilization", temp);                            //finish adding civs, already gone to next line          
-        if (alltxt.contains("psychiccost")) {
-            details += makeXmlLine("Cost", getAttr("psychiccost", alltxt));
-        } else {
-            details += makeXmlLine("Cost", getAttr("cost", alltxt));   //add cost
-        }
+        details += makeXmlLine("Cost", getAttr("cost", alltxt));   //add cost
         details += makeXmlLine("Type", getAttr("type", alltxt));                //add type
 
         //code to hande and add races
@@ -470,9 +464,11 @@ public class SinnanSetExtractor {
         {
             details += makeXmlLine("Race", "");              //race empty
         }
-        
-        // If the card type isn't creature then power should be emptty string
+
         temp = getAttr("power", alltxt);
+        if (temp.equals("")) {
+            temp = "0";  //power must be zero
+        }
         details += makeXmlLine("Power", temp);
 
         //now adding effect(rules text)
@@ -554,7 +550,7 @@ public class SinnanSetExtractor {
     void writeDataToFile(String setName, String data) throws Exception {
 
         String setFileName = setName + "_";
-        String filename = dataPath + "\\" + setFileName.substring(0, 6) + "\\" + setFileName.substring(0, 6) + "_Data.xml";
+        String filename = dataPath+"\\"+setFileName.substring(0, 6)+"\\"+setFileName.substring(0, 6)+"_Data.xml";
 
         UUID setId = UUID.randomUUID();
 
@@ -584,8 +580,8 @@ public class SinnanSetExtractor {
         PrintWriter filewr = new PrintWriter(filename, "UTF-8");
         System.out.println("File is " + filename);
 
-        filewr.println(xmlText + "\n" + data);
-
+        filewr.println(xmlText+"\n"+data);
+        
         filewr.close();
     }
 }
