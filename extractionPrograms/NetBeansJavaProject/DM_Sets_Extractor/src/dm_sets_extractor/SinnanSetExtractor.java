@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.UUID;
@@ -31,14 +32,17 @@ public class SinnanSetExtractor {
 
     void extractSet(String setName, boolean extractImages) throws Exception {
 
-        if (setName == "") //no setName specified
+         if (setName == "") //no setName specified
         {
             setName = JOptionPane.showInputDialog("Enter set name, exactly as it appears in the wikia page url for the set: (Eg. DMR-03_Episode_1:_Gaial_Victory)");
         }
-
-        String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + setName;
-        //this query gets all the names of the cards in the set by querying the wikia 
+        /* 
+         * Encode the set name in UTF-8 format if it contains japanese characters
+         * this query gets all the names of the cards in the set by querying the wikia
+         */
+        String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + URLEncoder.encode(setName, "UTF-8");
         System.out.println(setLink);
+
 /////////////////////make folder to put data and, optionally, images
 
         JFileChooser chooser = new JFileChooser();
@@ -444,9 +448,14 @@ public class SinnanSetExtractor {
                 temp += "/" + line.substring(line.indexOf("=") + 2).trim();             //add all civs
             }
         }
-
+        
+        // Checking for psychic cost for draghearts
         details += makeXmlLine("Civilization", temp);                            //finish adding civs, already gone to next line          
-        details += makeXmlLine("Cost", getAttr("cost", alltxt));   //add cost
+        if (alltxt.contains("psychiccost")) {
+            details += makeXmlLine("Cost", getAttr("psychiccost", alltxt));
+        } else {
+            details += makeXmlLine("Cost", getAttr("cost", alltxt));   //add cost
+        }
         details += makeXmlLine("Type", getAttr("type", alltxt));                //add type
 
         //code to hande and add races
@@ -470,9 +479,6 @@ public class SinnanSetExtractor {
         }
 
         temp = getAttr("power", alltxt);
-        if (temp.equals("")) {
-            temp = "0";  //power must be zero
-        }
         details += makeXmlLine("Power", temp);
 
         //now adding effect(rules text)
