@@ -50,7 +50,7 @@
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Gaial Command Dragon" />
 				<property name="Power" value="12000" />
-				<property name="Rules" value="Whenever this creature attacks, reveal the top 3 cards of your deck. Put all non-evolution Humans and non-evolution Dragons into the battle zone. If all cards are Dragons, each of your creatures gets 'speed attacker'. Put the rest on the bottom of your deck in any order.&#xd;&#xa;Triple breaker&#xd;&#xa;Dragon Evade" />
+				<property name="Rules" value="Whenever this creature attacks, reveal the top 3 cards of your deck. Put all non-evolution Humans and non-evolution Dragons into the battle zone. If all cards are Dragons, each of your creatures gets 'speed attacker'. Put the rest on the bottom of your deck in any order.&#xd;&#xa;Triple breaker&#xd;&#xa;Dragon Evade (When this would creature leaves the battle zone, flip it to the fortress side instead.)" />
 				<property name="Rarity" value="Super Rare" />
 				<property name="Number" value="1c/50" />
 			</alternate>
@@ -75,7 +75,7 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this would be destroyed, you may add a shield to your hand instead.  (You can't use the 'shield trigger' ability of that shield.) &#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or less shields, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
+			<property name="Rules" value="Whenever a creature equipped with this would be destroyed, you may add a shield to your hand instead.  (You can't use the 'shield trigger' ability of that shield.) &#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or less shields, you may flip this card to the dragheart fortress side. " />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="6a/50" />
 
@@ -123,7 +123,7 @@
 			<property name="Type" value="Dragheart Weapon " />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, choose one of your opponent's creatures. That creature gets -6000 power until the end of the turn.&#xd;&#xa; Dragsolution—At the end of your turn, if one of your opponent's creatures was destroyed, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, choose one of your opponent's creatures. That creature gets -6000 power until the end of the turn.&#xd;&#xa; Dragsolution—At the end of your turn, if one of your opponent's creatures was destroyed, you may flip this card to the dragheart fortress side. " />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="11a/50" />
 
@@ -171,7 +171,7 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="When you put this dragheart into the battle zone or whenever a creature equipped with this attacks, you may put a nature creature that costs 5 or less from your mana zone into the battle zone.&#xd;&#xa; Dragsolution: At the end of your turn, if the total cost of your creatures in the battle zone is 20 or more, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
+			<property name="Rules" value="When you put this dragheart into the battle zone or whenever a creature equipped with this attacks, you may put a nature creature that costs 5 or less from your mana zone into the battle zone.&#xd;&#xa; Dragsolution: At the end of your turn, if the total cost of your creatures in the battle zone is 20 or more, you may flip this card to the dragheart fortress side. " />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="16a/50" />
 
@@ -219,7 +219,7 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, you may put a creature that costs 3 or less from your hand into the battle zone.&#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or more creatures in the battle zone, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, you may put a creature that costs 3 or less from your hand into the battle zone.&#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or more creatures in the battle zone, you may flip this card to the dragheart fortress side. " />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="21a/50" />
 
@@ -267,7 +267,7 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, your opponent puts the top card of his deck into his graveyard. If it's a spell, you may cast it for no cost. If you do, put it into its owner's graveyard after casting it.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has 5 or more cards in his graveyard, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, your opponent puts the top card of his deck into his graveyard. If it's a spell, you may cast it for no cost. If you do, put it into its owner's graveyard after casting it.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has 5 or more cards in his graveyard, you may flip this card to the dragheart fortress side. " />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="26a/50" />
 
@@ -315,7 +315,7 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever the creature equipped with this attacks, you may draw a card. &#xd;&#xa; Dragsolution—At the end of your turn, if the creature equipped with this is tapped, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
+			<property name="Rules" value="Whenever the creature equipped with this attacks, you may draw a card. &#xd;&#xa; Dragsolution—At the end of your turn, if the creature equipped with this is tapped, you may flip this card to the dragheart fortress side. " />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="31a/50" />
 
@@ -363,7 +363,7 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Dragsolution—When a creature equipped with this would be destroyed, flip this to the dragheart fortress side instead. Hyperspatial Dragheart" />
+			<property name="Rules" value="Dragsolution—When a creature equipped with this would be destroyed, flip this to the dragheart fortress side instead. " />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="36a/50" />
 
@@ -374,7 +374,7 @@
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
-				<property name="Rules" value="At the start of your turn, you may put the top 2 cards of your deck into your graveyard.&#xd;&#xa;Dragsolution|When one of your Darkness creatures is destroyed" />
+				<property name="Rules" value="At the start of your turn, you may put the top 2 cards of your deck into your graveyard.&#xd;&#xa;Dragsolution-When one of your Darkness creatures is destroyed, flip this card and untap it." />
 				<property name="Rarity" value="Super Rare" />
 				<property name="Number" value="36b/50" />
 			</alternate>
@@ -411,7 +411,7 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, destroy one of your opponent's creatures that has power 2000 or less.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has less creatures in the battle zone than you do, flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, destroy one of your opponent's creatures that has power 2000 or less.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has less creatures in the battle zone than you do, flip this card to the dragheart fortress side. " />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="41a/50" />
 
@@ -459,7 +459,7 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, put the top card of your deck into your mana zone.&#xd;&#xa; Dragsolution—At the end of your turn, if the equipped creature is tapped, you may flip this card to the dragheart fortress side. &#xd;&#xa;Hyperspatial Dragheart" />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, put the top card of your deck into your mana zone.&#xd;&#xa; Dragsolution—At the end of your turn, if the equipped creature is tapped, you may flip this card to the dragheart fortress side. &#xd;&#xa;" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="46a/50" />
 
