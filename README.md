@@ -3,7 +3,7 @@ This is the Duel Masters OCG Definition for OCTGN, and images.
 You don't need to know how to use git, or program/script to contribute.
 
 For updates/corrections to card text for already exising/work-in-progress sets:
-- Find the set set folder inside GameDatabase/bb784fc6-fe21-4603-90d7-82c049908a74/Sets/
+- Find the set folder inside GameDatabase/bb784fc6-fe21-4603-90d7-82c049908a74/Sets/
 - You can edit the set xml file directly on GitHub
 - Propose file change
 - Someone with write permissions will approve your change, and it'll show.
