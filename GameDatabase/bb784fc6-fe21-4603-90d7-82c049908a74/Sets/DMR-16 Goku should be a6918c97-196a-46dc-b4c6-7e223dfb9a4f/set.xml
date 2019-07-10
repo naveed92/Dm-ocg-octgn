@@ -27,7 +27,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon/Justice Wing/Draguner" />
 			<property name="Power" value="5500" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less or a light dragheart that costs 5 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa;Mana Arms" />
+			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less or a light dragheart that costs 5 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa;Mana Arms 5: If you have 5 or more light cards in your mana zone, each of your Light creatures in the battle zone gets 'shield saver'." />
 			<property name="Rarity" value="Secret Rare" />
 			<property name="Number" value="㊙1d" />
 		</card>
@@ -63,7 +63,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon/Human Baku/Draguner" />
 			<property name="Power" value="9000" />
-			<property name="Rules" value="Mana Arms  (If it's a weapon, equip it to this creature.) &#xd;&#xa; Dragon Mana Arms 5: When this creature attacks for the first time in a turn, if you have 5 or more fire Dragons in your mana zone, untap it after the attack.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When you put this creature into the battle zone, if you have 5 or more fire cards in your mana zone, put a fire dragheart that costs 5 or less from your hyperspatial zone into the battle zone. (If it's a weapon, equip it to this creature.) (If it's a weapon, equip it to this creature.) &#xd;&#xa; Dragon Mana Arms 5: When this creature attacks for the first time in a turn, if you have 5 or more fire Dragons in your mana zone, untap it after the attack.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Double Victory" />
 			<property name="Number" value="VV1" />
 		</card>
@@ -89,7 +89,7 @@
 			<property name="Power" value="13000" />
 			<property name="Rules" value="Triple breaker&#xd;&#xa; When this creature is Dragsolutioned, destroy up to 2 of your opponent's creatures.&#xd;&#xa; Whenever this creature attacks, you may put the top card of your deck into your graveyard. Then put a non-evolution creature from your graveyard into the battle zone. &#xd;&#xa;Dragon Evade" />
 			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="1b" />
+			<property name="Number" value="V1b" />
 		</card>
 		<card name="Kuronopagyara, Sin Hero" id="94036e01-d33a-461d-aae8-222275c9e8dc">
 			<property name="Format" value="OCG" />
@@ -110,7 +110,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="9000" />
-			<property name="Rules" value="Multicolored Mana Arms 5: If you have this card in your hand and 5 or more civilizations and cards in your mana zone, this creature gets 'Super Strike Back'.  (When a card is put into your hand from your shield zone, you may discard that card. If you do, summon this creature for no cost.) &#xd;&#xa; When you put this creature into the battle zone, you may choose one of your opponent's creatures and put it into it's owners mana zone.&#xd;&#xa; Your opponent's draghearts can't dragsolution.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Multicolored Mana Arms 5: If you have this card in your hand and 5 or more civilizations and cards in your mana zone, this creature gets 'Super Strike Back'. (When a card is put into your hand from your shield zone, you may discard that card. If you do, summon this creature for no cost.) &#xd;&#xa; When you put this creature into the battle zone, you may choose one of your opponent's creatures and put it into it's owners mana zone.&#xd;&#xa; Your opponent's draghearts can't dragsolution.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S2" />
 		</card>
@@ -136,7 +136,7 @@
 			<property name="Power" value="11000" />
 			<property name="Rules" value="Whenever your opponent would choose a creature in the battle zone by the effect of a spell, he can't choose this one.&#xd;&#xa; Whenever you cast a spell, you may cast a spell that costs less than that spell from your graveyard. If you do, put that spell on the bottom of your deck.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Very Rare" />
-			<property name="Number" value="b" />
+			<property name="Number" value="1b" />
 		</card>
 		<card name="Vicious Deslar, Dream Knight" id="b4224955-c31e-4d11-af55-51136a33603a">
 			<property name="Format" value="OCG" />
@@ -207,7 +207,7 @@
 			<property name="Power" value="50000" />
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="b" />
+			<property name="Number" value="6b" />
 		</card>
 		<card name="Sg Spagelia, Dragment Symbol" id="b77d8e34-8f78-4018-8591-16583bd41f37">
 			<property name="Format" value="OCG" />
@@ -264,7 +264,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more darkness cards in your mana zone, this creature gets 'shield trigger'.&#xd;&#xa; When you put this creature into the battle zone, each of your opponent's creatures gets -2000 power.  (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more darkness cards in your mana zone, this creature gets 'shield trigger'.&#xd;&#xa; When you put this creature into the battle zone, each of your opponent's creatures gets -2000 power. (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="11" />
 		</card>
@@ -314,7 +314,7 @@
 			<property name="Power" value="50000" />
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="4b" />
+			<property name="Number" value="14b" />
 		</card>
 		<card name="Linkwood's Soul Burning" id="60cbc2fa-e343-4ff1-b87a-dd254c0969c4">
 			<property name="Format" value="OCG" />
@@ -373,7 +373,7 @@
 			<property name="Power" value="50000" />
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="8b" />
+			<property name="Number" value="18b" />
 		</card>
 		<card name="Tsurato Usutora, Leader of Division" id="e7483302-6d07-44d5-8fa4-4d4d3cab0bea">
 			<property name="Format" value="OCG" />
@@ -610,7 +610,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Mana Arms&#xd;&#xa; Choose a non-evolution card in the battle zone and return it to its owner's hand." />
+			<property name="Rules" value="Mana Arms 3: If you have 3 or more water cards in your mana zone, this spell costs 5 less to cast.&#xd;&#xa; Choose a non-evolution card in the battle zone and return it to its owner's hand." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="38" />
 		</card>
@@ -658,7 +658,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Funky Knightmare" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Mana Arms" />
+			<property name="Rules" value="Mana Arms 3: When you put this creature into the battle zone, if you have 3 or more darkness cards in your mana zone, choose one of your opponent's creatures in the battle zone. That creature gets -3000 power until the end of the turn." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="42" />
 		</card>
