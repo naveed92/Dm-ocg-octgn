@@ -4901,5 +4901,16 @@ abilities) and becomes one creature. When the linked creature leaves the battle 
 			<property name="Number" value="P90/Y9" />
 		</card>
 		
+		<card name="Elena, Channeler of Suns" id="b45f7416-d8b8-4121-b2ef-29ab65a231de">
+			<property name="Format" value="Set17, Set35, OCG" />
+			<property name="Civilization" value="Light" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Mecha Del Sol" />
+			<property name="Rules" value="This creature gets +1000 power for each light card in your graveyard." />
+			<property name="Power" value="3000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="S1/S2" />
+		</card>
 	</cards>
 </set>
