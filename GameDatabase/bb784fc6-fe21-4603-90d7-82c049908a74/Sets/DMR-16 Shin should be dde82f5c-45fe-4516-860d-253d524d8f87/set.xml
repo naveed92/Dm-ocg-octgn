@@ -54,9 +54,8 @@
 			<property name="Rules" value="Each of your Dragons in the battle zone gets 'speed attacker'.&#xd;&#xa; Dragsolution—When one of your Dragons untaps, flip this to the Dragheart creature side and untap it." />
 			<property name="Rarity" value="Double Victory" />
 			<property name="Number" value="VV1a" />
-		</card>
 
-		<card name="GuyNEXT, Super Battle Victory Dragon" id="9e118ee2-07ab-437a-9d5d-61ae5a035946">
+		<alternate name="GuyNEXT, Super Battle Victory Dragon" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 10" />
@@ -65,8 +64,10 @@
 			<property name="Power" value="17000" />
 			<property name="Rules" value="Each of your creatures in the battle zone gets 'speed attacker'.&#xd;&#xa;Triple breaker&#xd;&#xa;Dragon Evade" />
 			<property name="Rarity" value="Double Victory" />
-			<property name="Number" value="a" />
+			<property name="Number" value="VV1b" />
+		</alternate>
 		</card>
+		
 		<card name="Endless Heaven, True Holy Church" id="a97bcfbe-274e-4f94-bfa3-3c54d533b179">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
@@ -74,12 +75,11 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your creatures is destroyed, you may add the top card of your deck to your shields face down. Dragsolution" />
+			<property name="Rules" value="Whenever one of your creatures is destroyed, you may add the top card of your deck to your shields face down.&#xd;&#xa;Dragsolution: At the end of your turn, if your number of shields is greater than your opponent, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1a" />
-		</card>
 
-		<card name="Neverend, True Destiny King" id="1f68c62a-d4c7-48cb-ab9a-d5177109389d">
+		<alternate name="Neverend, True Destiny King" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value=" 10" />
@@ -88,8 +88,10 @@
 			<property name="Power" value="14500" />
 			<property name="Rules" value="Whenever your Dragons attack, you may choose one of your opponent's creatures and tap it. That creature doesn't untap at the start of your opponent's next turn.&#xd;&#xa;Triple breaker&#xd;&#xa; True Escape  (When this creature would leave the battle zone, you may add 2 of your shields to your hand instead. You can't use the 'shield trigger' abilities of those shields.) " />
 			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="" />
+			<property name="Number" value="V1b" />
+		</alternate>
 		</card>
+		
 		<card name="Goal do Leiy, Holy Hero" id="8236586d-96d0-489e-a142-92ec4d5df4f4">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
@@ -157,12 +159,11 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Your opponent's creatures that have power 4000 or less can't attack.&#xd;&#xa;Dragsolution" />
+			<property name="Rules" value="Your opponent's creatures that have power 4000 or less can't attack.&#xd;&#xa;Dragsolution: At the start of your turn, if the total cost of your creatures in the battle zone is 25 or more, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4a" />
-		</card>
 
-		<card name="Sauzaurupio, Terror Ancient King" id="c75a78dc-143d-4213-b6de-d3dc2da6176e">
+		<alternate name="Sauzaurupio, Terror Ancient King" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value=" 8" />
@@ -171,8 +172,10 @@
 			<property name="Power" value="18000" />
 			<property name="Rules" value="Quattro breaker&#xd;&#xa; If you have no shields, your opponent's creatures that have less power than this creature can't attack.&#xd;&#xa;" />
 			<property name="Rarity" value="Very Rare" />
-			<property name="Number" value="54 [[Judaiou, Jurassic Jungle]]<br " />
+			<property name="Number" value="4b" />
+		</alternate>
 		</card>
+		
 		<card name="Ribulibarrier, Holy Ball" id="3882e0e0-f07d-48cb-be12-80b4d1d15e77">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
@@ -204,7 +207,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon/Justice Wing/Draguner" />
 			<property name="Power" value="5500" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less or a light dragheart that costs 5 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa;Mana Arms" />
+			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less or a light dragheart that costs 5 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa;Mana Arms 5: If you have 5 or more light cards in your mana zone, each of your Light creatures in the battle zone gets 'shield saver'." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="7" />
 		</card>
@@ -242,8 +245,9 @@
 			<property name="Power" value="50000" />
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="54 [[Bluenika, Dragon Soul Fortress]]<br " />
+			<property name="Number" value="9b" />
 		</card>
+		
 		<card name="Dragment Innovation" id="52d566c5-b39e-48a1-9aaa-1e5125e695e8">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
@@ -289,7 +293,7 @@
 			<property name="Power" value="50000" />
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="" />
+			<property name="Number" value="12b" />
 		</card>
 		<card name="Glenmalt 'Blade', King Dragon Edge" id="1a0a2d3c-4008-4c1b-8138-878f99bcea81">
 			<property name="Format" value="OCG" />
@@ -550,7 +554,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Justice Wing" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Saver: Light creature  (When one of your light creatures would be destroyed, you may destroy this creature instead.) &#xd;&#xa; Mana Arms 3: When this creature is destroyed, if you have 3 or more light cards in your mana zone, put the top card of your deck into your shield zone face down." />
+			<property name="Rules" value="Saver: Light creature (When one of your light creatures would be destroyed, you may destroy this creature instead.) &#xd;&#xa; Mana Arms 3: When this creature is destroyed, if you have 3 or more light cards in your mana zone, put the top card of your deck into your shield zone face down." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="34" />
 		</card>

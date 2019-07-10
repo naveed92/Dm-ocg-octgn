@@ -376,7 +376,6 @@ public class SinnanSetExtractor {
     String extract(String cardName, String setName, boolean extractImage) throws Exception {
         //NEED TO ENCODE URL
         String url = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=";
-//        url += URLEncoder.encode(cardName, "UTF-8");
 
         for (int i = 0; i < cardName.length(); i++) {
             char ch = cardName.charAt(i);

@@ -27,12 +27,11 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="A creature equipped with this gets 'speed attacker' and can't be destroyed while attacking.&#xd;&#xa;Dragsolution" />
+			<property name="Rules" value="A creature equipped with this gets 'speed attacker' and can't be destroyed while attacking.&#xd;&#xa;Dragsolution: When any of your Dragons attacks, if that is the second Dragon that attacked this turn, after the attack, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Double Victory" />
 			<property name="Number" value="VV1a" />
-		</card>
-
-		<card name="Ohginga, Strongest Passion" id="ab7474f1-f74b-4ea8-a0e7-5bc68ffad37f">
+		
+		<alternate name="Ohginga, Strongest Passion" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 11" />
@@ -41,8 +40,10 @@
 			<property name="Power" value="15000" />
 			<property name="Rules" value="Speed attacker &#xd;&#xa; Whenever this creature attacks or whenever your opponent chooses this creature, put a dragheart creature that costs 10 or less from your hyperspatial zone into the battle zone. That creature gets 'speed attacker' until the end of the turn.&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Double Victory" />
-			<property name="Number" value="a" />
+			<property name="Number" value="VV1b" />
+		</alternate>
 		</card>
+		
 		<card name="Heaven's Heaven, Heavenly Justice" id="71295175-6a3d-40f9-8e51-7b70ebc7726a">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
@@ -50,12 +51,11 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="At the end of your turn, you may put a Light creature that has 'blocker' from your hand into the battle zone.&#xd;&#xa; Non-light spells cost 1 more to cast. Dragsolution" />
+			<property name="Rules" value="At the end of your turn, you may put a Light creature that has 'blocker' from your hand into the battle zone.&#xd;&#xa; Non-light spells cost 1 more to cast. &#xd;&#xa;Dragsolution: At the start of your turn, if you have 3 or more creatures that have 'blocker' in the battle zone, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1a" />
-		</card>
-
-		<card name="Neverlast, Destiny Adoration" id="d2d54aa3-947c-42b2-be98-be9e85c3dcb6">
+		
+		<alternate name="Neverlast, Destiny Adoration" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value=" 9" />
@@ -64,8 +64,10 @@
 			<property name="Power" value="14500" />
 			<property name="Rules" value="{BLOCKER}&#xd;&#xa; Your Light creatures win all battles.&#xd;&#xa; Players can't cast non-Light spells that cost 5 or less.&#xd;&#xa;Triple breaker&#xd;&#xa;Escape" />
 			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="" />
+			<property name="Number" value="V1b" />
+		</alternate>
 		</card>
+		
 		<card name="Niga=Abushumu, Invasive Mystery" id="de0c3318-b546-4f7f-9689-be018934ab85">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
@@ -73,12 +75,11 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value=" Cards in your mana zone are considered to be cards of every civilization.&#xd;&#xa; Whenever one of your Dragons would be destroyed, put it into your mana zone instead.&#xd;&#xa;Dragsolution" />
+			<property name="Rules" value=" Cards in your mana zone are considered to be cards of every civilization.&#xd;&#xa; Whenever one of your Dragons would be destroyed, put it into your mana zone instead.&#xd;&#xa;Dragsolution: At the end of your turn, you may return 5 Dragons from your mana zone to your hand. If you do, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V2a" />
-		</card>
-
-		<card name="Niga=Vermut, Evil King" id="0589bc2d-268a-4a83-8473-b146d1a6a39b">
+		
+		<alternate name="Niga=Vermut, Evil King" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value=" 11" />
@@ -87,8 +88,10 @@
 			<property name="Power" value="18000" />
 			<property name="Rules" value=" Cards in your mana zone are considered to be cards of every civilization.&#xd;&#xa; Whenever creatures attack, your opponent chooses one of his untapped creatures and puts it in his mana zone.&#xd;&#xa;Quattro breaker&#xd;&#xa;Dragon Evade" />
 			<property name="Rarity" value="Victory Rare" />
-			<property name="Number" value="" />
+			<property name="Number" value="V2b" />
+		</alternate>
 		</card>
+		
 		<card name="Valhalla Grande, Invincible Hero" id="28717ec1-6c73-445d-a3fd-20e89fa55209">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
@@ -192,7 +195,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon/Human Baku/Draguner" />
 			<property name="Power" value="9000" />
-			<property name="Rules" value="When you put this creature into the battle, put a fire weapon that costs 5 or less from your hyperspatial zone into the battle zone.  (Equip it to this creature.) &#xd;&#xa;Mana Arms  Weapons that have the same name can't be equipped to this creature. &#xd;&#xa;Double breaker" />
+			<property name="Rules" value="When you put this creature into the battle, put a fire weapon that costs 5 or less from your hyperspatial zone into the battle zone. (Equip it to this creature.)&#xd;&#xa;Mana Arms 7: When you put this creature into the battle zone, if you have 7 or more fire cards in your mana zone, put a fire weapon that costs 6 or less from your hyperspatial zone into the battle zone. &#xd;&#xa;Weapons that have the same name can't be equipped to this creature. &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4" />
 		</card>
@@ -276,7 +279,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Choose a creature in the battle zone and return it to it's owner's hand.&#xd;&#xa;Mana Arms" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Choose a creature in the battle zone and return it to it's owner's hand.&#xd;&#xa; Mana Arms 7: If you have 7 or more water cards in your mana zone, return all your opponent's creatures to their owner's hands." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="11" />
 		</card>
@@ -324,12 +327,11 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="The equipped creature gets 'power attacker +2000' and the Gaial Command Dragon race. &#xd;&#xa; Dragsolution: At the end of your turn, if the equipped creature is tapped, flip this dragheart to the creature side. Hyperspatial Dragheart" />
+			<property name="Rules" value="The equipped creature gets 'power attacker +2000' and the Gaial Command Dragon race. &#xd;&#xa; Dragsolution: At the end of your turn, if the equipped creature is tapped, flip this dragheart to the creature side. (At the start of your game, draghearts are put into your hyperspatial zone. If a creature equipped with it or the dragheart leaves the battle zone, return it there.)" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="15a" />
-		</card>
 
-		<card name="Zantetsu Big Horn, Passion Dragon" id="472e548e-6c82-4eb6-b965-3202134b038d">
+		<alternate name="Zantetsu Big Horn, Passion Dragon" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 5" />
@@ -338,8 +340,10 @@
 			<property name="Power" value="4000+" />
 			<property name="Rules" value="Each of your other creatures in the battle zone gets the Gaial Command Dragon race.&#xd;&#xa;Power Attacker +2000&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="" />
+			<property name="Number" value="15b" />
+		</alternate>
 		</card>
+		
 		<card name="Jackpot Entry, Dragon Secret Formation" id="487cf444-c4f7-4fa6-b975-d99da26fb78c">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
@@ -503,7 +507,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human Baku/Draguner" />
 			<property name="Power" value="1000" />
-			<property name="Rules" value="Mana Arms" />
+			<property name="Rules" value="Mana Arms 3: When you put this creature into the battle zone, if you have 3 or more fire cards in your mana zone, put a fire dragheart that costs 2 or less from your hyperspatial zone into the battle zone. (If its a weapon, equip it to this creature.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="29" />
 		</card>
