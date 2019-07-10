@@ -30,30 +30,30 @@
 			<property name="Rules" value="Whenever a creature equipped with this attacks, reveal the top card of your deck. If it's a non-evolution Human or a non-evolution Dragon, put it into the battle zone. &#xd;&#xa; A creature equipped with this can't be attacked.&#xd;&#xa; Dragsolution—At the end of your turn, if you put a dragon in the battle zone this turn, you may flip this card to the dragheart fortress side." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="1a/50" />
-		</card>
 
-		<card name="Batorai Keep, Blazing Castle" id="9f58c237-7a7f-4cbe-bec0-d53c34b81b7f">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 5" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your Humans or fire Dragons attack, you may reveal the top card of your deck. If it's a non-evolution Human or non-evolution Dragon, put it into the battle zone. Otherwise put it on the bottom of your deck.&#xd;&#xa; Dragsolution—When you put a Dragon in the battle zone, if it's not the first Dragon put into the battle zone this turn, you may flip this card to the dragheart creature side and untap it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="1b/50" />
-		</card>
+			<alternate name="Batorai Keep, Blazing Castle" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Fire" />
+				<property name="Cost" value=" 5" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="Whenever one of your Humans or fire Dragons attack, you may reveal the top card of your deck. If it's a non-evolution Human or non-evolution Dragon, put it into the battle zone. Otherwise put it on the bottom of your deck.&#xd;&#xa; Dragsolution—When you put a Dragon in the battle zone, if it's not the first Dragon put into the battle zone this turn, you may flip this card to the dragheart creature side and untap it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="1b/50" />
+			</alternate>
 
-		<card name="Batorai Bushin, Blazing Deluxe" id="9fe784fc-a330-4901-88c0-419c45e70e6e">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 8" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Gaial Command Dragon" />
-			<property name="Power" value="12000" />
-			<property name="Rules" value="Whenever this creature attacks, reveal the top 3 cards of your deck. Put all non-evolution Humans and non-evolution Dragons into the battle zone. If all cards are Dragons, each of your creatures gets 'speed attacker'. Put the rest on the bottom of your deck in any order.&#xd;&#xa;Triple breaker&#xd;&#xa;Dragon Evade" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="1c/50" />
+			<alternate name="Batorai Bushin, Blazing Deluxe" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Fire" />
+				<property name="Cost" value=" 8" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Gaial Command Dragon" />
+				<property name="Power" value="12000" />
+				<property name="Rules" value="Whenever this creature attacks, reveal the top 3 cards of your deck. Put all non-evolution Humans and non-evolution Dragons into the battle zone. If all cards are Dragons, each of your creatures gets 'speed attacker'. Put the rest on the bottom of your deck in any order.&#xd;&#xa;Triple breaker&#xd;&#xa;Dragon Evade" />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="1c/50" />
+			</alternate>
 		</card>
 
 		<card name="Glenmalt 'Explosion', Dragon Edge" id="65b2d749-ebb9-4ce7-8e32-f4c1d2817049">
@@ -78,30 +78,30 @@
 			<property name="Rules" value="Whenever a creature equipped with this would be destroyed, you may add a shield to your hand instead.  (You can't use the 'shield trigger' ability of that shield.) &#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or less shields, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="6a/50" />
-		</card>
 
-		<card name="Leosaiyu, Beast Cathedral" id="db5f0bf4-018c-4799-b637-264593703d6b">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="When a light creature would leave the battle zone, you may put a shield into your hand instead.  (You can't use the 'shield trigger' ability of that shield.) &#xd;&#xa; Dragsolution—At the start of your turn, if you have 1 Shield or less, you may flip this card to the dragheart creature side and untap it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="6b/50" />
-		</card>
+			<alternate name="Leosaiyu, Beast Cathedral" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Light" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="When a light creature would leave the battle zone, you may put a shield into your hand instead.  (You can't use the 'shield trigger' ability of that shield.) &#xd;&#xa; Dragsolution—At the start of your turn, if you have 1 Shield or less, you may flip this card to the dragheart creature side and untap it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="6b/50" />
+			</alternate>
 
-		<card name="Leo the World, Zenith Heavenly Saint" id="941e9c2c-1ac4-4b58-8857-8eb6b89f77dc">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 10" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Angel Command Dragon" />
-			<property name="Power" value="13500" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Triple breaker&#xd;&#xa; When this creature would leave the battle zone, if you have no shields, it stays in the battle zone instead.&#xd;&#xa; When you would lose the game or your opponent would win the game, you may destroy one of your non-dragheart creatures instead." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="6c/50" />
+			<alternate name="Leo the World, Zenith Heavenly Saint" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Light" />
+				<property name="Cost" value=" 10" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Angel Command Dragon" />
+				<property name="Power" value="13500" />
+				<property name="Rules" value="{BLOCKER}&#xd;&#xa;Triple breaker&#xd;&#xa; When this creature would leave the battle zone, if you have no shields, it stays in the battle zone instead.&#xd;&#xa; When you would lose the game or your opponent would win the game, you may destroy one of your non-dragheart creatures instead." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="6c/50" />
+			</alternate>
 		</card>
 
 		<card name="Emeralda, Pitch Dragon Elemental" id="0e26aebf-ad92-4c4b-a3f2-8e039787a213">
@@ -126,30 +126,30 @@
 			<property name="Rules" value="Whenever a creature equipped with this attacks, choose one of your opponent's creatures. That creature gets -6000 power until the end of the turn.&#xd;&#xa; Dragsolution—At the end of your turn, if one of your opponent's creatures was destroyed, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="11a/50" />
-		</card>
 
-		<card name="Hell Crime, Purgatory Palace" id="75e56438-6338-45cf-b7fe-23002261f651">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Fortress " />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your darkness creatures attacks, you may destroy one of your other creatures. If you do, choose one of your opponent's creatures. That creature gets -6000 power until the end of the turn.&#xd;&#xa; Dragsolution—When one of your opponent's creatures is destroyed, you may flip this card to the dragheart creature side and untap it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="11b/50" />
-		</card>
+			<alternate name="Hell Crime, Purgatory Palace" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Darkness" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Fortress " />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="Whenever one of your darkness creatures attacks, you may destroy one of your other creatures. If you do, choose one of your opponent's creatures. That creature gets -6000 power until the end of the turn.&#xd;&#xa; Dragsolution—When one of your opponent's creatures is destroyed, you may flip this card to the dragheart creature side and untap it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="11b/50" />
+			</alternate>
 
-		<card name="Hellsekai, Great Massacre" id="329c2aae-ba5f-4e22-bd5e-11e3b21adaa7">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 10" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Demon Command Dragon" />
-			<property name="Power" value="12000" />
-			<property name="Rules" value="Whenever this creature attacks, you may destroy any number of your creatures. For each creature destroyed, destroy one of your opponent's creatures.&#xd;&#xa;Triple breaker&#xd;&#xa; Dragon Evade—When this creature would leave the battle zone, if this is your only creature in the battle zone, flip it to the dragheart fortress side instead." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="11c/50" />
+			<alternate name="Hellsekai, Great Massacre" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Darkness" />
+				<property name="Cost" value=" 10" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Demon Command Dragon" />
+				<property name="Power" value="12000" />
+				<property name="Rules" value="Whenever this creature attacks, you may destroy any number of your creatures. For each creature destroyed, destroy one of your opponent's creatures.&#xd;&#xa;Triple breaker&#xd;&#xa; Dragon Evade—When this creature would leave the battle zone, if this is your only creature in the battle zone, flip it to the dragheart fortress side instead." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="11c/50" />
+			</alternate>
 		</card>
 
 		<card name="Basoabisu, Abyss Demon Dragon" id="d66ffe0f-7024-4f31-9f5c-20a3670d71bf">
@@ -174,30 +174,30 @@
 			<property name="Rules" value="When you put this dragheart into the battle zone or whenever a creature equipped with this attacks, you may put a nature creature that costs 5 or less from your mana zone into the battle zone.&#xd;&#xa; Dragsolution: At the end of your turn, if the total cost of your creatures in the battle zone is 20 or more, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="16a/50" />
-		</card>
 
-		<card name="Boaropagos, Evil Emperor Ruins" id="96517233-40cd-4308-a5bc-afaca6cdd315">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Whenever you summon a creature from your hand, you may put a Nature creature that costs 5 or less from your mana zone into the battle zone.&#xd;&#xa; Dragsolution: At the start of your turn, if the total cost of your creatures in the battle zone is 30 or more, you may flip this card to the dragheart creature side and untap it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="16b/50" />
-		</card>
+			<alternate name="Boaropagos, Evil Emperor Ruins" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Nature" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="Whenever you summon a creature from your hand, you may put a Nature creature that costs 5 or less from your mana zone into the battle zone.&#xd;&#xa; Dragsolution: At the start of your turn, if the total cost of your creatures in the battle zone is 30 or more, you may flip this card to the dragheart creature side and untap it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="16b/50" />
+			</alternate>
 
-		<card name="Verokiboaros, Ga Ga Ga" id="2392f2c2-ce38-409c-81b3-3b382239df55">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 10" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Jurassic Command Dragon" />
-			<property name="Power" value="15000" />
-			<property name="Rules" value="When you summon a creature from your hand, or whenever this creature attacks, you may put a nature creature from your mana zone into the battle zone.&#xd;&#xa;Triple breaker" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="16c/50" />
+			<alternate name="Verokiboaros, Ga Ga Ga" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Nature" />
+				<property name="Cost" value=" 10" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Jurassic Command Dragon" />
+				<property name="Power" value="15000" />
+				<property name="Rules" value="When you summon a creature from your hand, or whenever this creature attacks, you may put a nature creature from your mana zone into the battle zone.&#xd;&#xa;Triple breaker" />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="16c/50" />
+			</alternate>
 		</card>
 
 		<card name="Imen=Bugo, Dragon Edge" id="570fda51-13a6-40c0-b73c-c5b4c99c31a0">
@@ -222,30 +222,30 @@
 			<property name="Rules" value="Whenever a creature equipped with this attacks, you may put a creature that costs 3 or less from your hand into the battle zone.&#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or more creatures in the battle zone, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="21a/50" />
-		</card>
 
-		<card name="Blanc Noir, White Nights Church" id="ff1fdae1-d52e-475c-9b87-46da0e34c831">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 4" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your light creatures attacks, you may put a creature that costs 3 or less from your hand into the battle zone.&#xd;&#xa; Dragsolution—At the end of your turn, if you have 4 or more creatures in the battle zone, you may flip this card to the dragheart creature side and untap it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="21b/50" />
-		</card>
+			<alternate name="Blanc Noir, White Nights Church" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Light" />
+				<property name="Cost" value=" 4" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="Whenever one of your light creatures attacks, you may put a creature that costs 3 or less from your hand into the battle zone.&#xd;&#xa; Dragsolution—At the end of your turn, if you have 4 or more creatures in the battle zone, you may flip this card to the dragheart creature side and untap it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="21b/50" />
+			</alternate>
 
-		<card name="Soleil Noir, Solar Eclipse Dragon Elemental" id="0e28fc36-046d-454f-9ed0-b431e09da3bd">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Angel Command Dragon" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="Whenever one of your creatures attacks, you may put a creature that costs 3 or less from your hand or graveyard into the battle zone.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="21c/50" />
+			<alternate name="Soleil Noir, Solar Eclipse Dragon Elemental" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Light" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Angel Command Dragon" />
+				<property name="Power" value="7000" />
+				<property name="Rules" value="Whenever one of your creatures attacks, you may put a creature that costs 3 or less from your hand or graveyard into the battle zone.&#xd;&#xa;Double breaker" />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="21c/50" />
+			</alternate>
 		</card>
 
 		<card name="Sasupega, Relief Wings" id="b9e9453d-2c0b-4de0-9780-6e138243ad22">
@@ -270,30 +270,30 @@
 			<property name="Rules" value="Whenever a creature equipped with this attacks, your opponent puts the top card of his deck into his graveyard. If it's a spell, you may cast it for no cost. If you do, put it into its owner's graveyard after casting it.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has 5 or more cards in his graveyard, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="26a/50" />
-		</card>
 
-		<card name="Tonnanshape, Dragon Pulse Sky Ship" id="2c75f595-c82d-4cf5-bfda-f4dea9eb65f3">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 5" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your water creatures attacks, your opponent puts the top card of his deck into his graveyard. If it's a spell, you may cast it for no cost.&#xd;&#xa; Dragsolution—At the start of your turn, if your opponent has 10 or more cards in his graveyard, You may flip this card to the dragheart creature side and untap it. If you do, put it into its owner's graveyard after casting it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="26b/50" />
-		</card>
+			<alternate name="Tonnanshape, Dragon Pulse Sky Ship" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Water" />
+				<property name="Cost" value=" 5" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="Whenever one of your water creatures attacks, your opponent puts the top card of his deck into his graveyard. If it's a spell, you may cast it for no cost.&#xd;&#xa; Dragsolution—At the start of your turn, if your opponent has 10 or more cards in his graveyard, You may flip this card to the dragheart creature side and untap it. If you do, put it into its owner's graveyard after casting it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="26b/50" />
+			</alternate>
 
-		<card name="Daisushidora, Nitrous Sky Ship" id="684056d5-d18f-450c-b8f2-8545520dcb83">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 8" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Crystal Command Dragon" />
-			<property name="Power" value="11000" />
-			<property name="Rules" value="Whenever this creature attacks, you may cast a spell from a players graveyard for no cost. If you do, put that card into its owner's graveyard.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="26c/50" />
+			<alternate name="Daisushidora, Nitrous Sky Ship" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Water" />
+				<property name="Cost" value=" 8" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Crystal Command Dragon" />
+				<property name="Power" value="11000" />
+				<property name="Rules" value="Whenever this creature attacks, you may cast a spell from a players graveyard for no cost. If you do, put that card into its owner's graveyard.&#xd;&#xa;Double breaker" />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="26c/50" />
+			</alternate>
 		</card>
 
 		<card name="Tonpuu, Dragon Edge" id="51b8cb9a-805d-4f49-b85e-82addaf1867f">
@@ -318,30 +318,30 @@
 			<property name="Rules" value="Whenever the creature equipped with this attacks, you may draw a card. &#xd;&#xa; Dragsolution—At the end of your turn, if the creature equipped with this is tapped, you may flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="31a/50" />
-		</card>
 
-		<card name="Eucleidesu, Dragment Fighter" id="100cff01-e112-4a50-bbe2-fd5f7c694746">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 4" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your water creatures attacks, you may draw a card.   Dragsolution—At the start of your turn, if you have 5 or more cards in your hand, you may flip this to the dragheart creature side and untap it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="31b/50" />
-		</card>
+			<alternate name="Eucleidesu, Dragment Fighter" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Water" />
+				<property name="Cost" value=" 4" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="Whenever one of your water creatures attacks, you may draw a card.   Dragsolution—At the start of your turn, if you have 5 or more cards in your hand, you may flip this to the dragheart creature side and untap it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="31b/50" />
+			</alternate>
 
-		<card name="Ad Euclid, Dragment Symbol" id="7bed686d-6882-4156-afe5-183152749e23">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Crystal Command Dragon" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="Whenever your creatures attack, you may draw a card.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="31c/50" />
+			<alternate name="Ad Euclid, Dragment Symbol" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Water" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Crystal Command Dragon" />
+				<property name="Power" value="7000" />
+				<property name="Rules" value="Whenever your creatures attack, you may draw a card.&#xd;&#xa;Double breaker" />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="31c/50" />
+			</alternate>
 		</card>
 
 		<card name="Thunderbolt, Aqua Militant" id="b66e6ae3-ddc1-461d-a7f3-2192129df2a4">
@@ -366,30 +366,30 @@
 			<property name="Rules" value="Dragsolution—When a creature equipped with this would be destroyed, flip this to the dragheart fortress side instead. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="36a/50" />
-		</card>
 
-		<card name="Karakurigaeshi, Ninja Mansion" id="124176e5-f4df-4d42-8af6-37ccac2870dd">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 4" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="At the start of your turn, you may put the top 2 cards of your deck into your graveyard.&#xd;&#xa;Dragsolution|When one of your Darkness creatures is destroyed" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="36b/50" />
-		</card>
+			<alternate name="Karakurigaeshi, Ninja Mansion" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Darkness" />
+				<property name="Cost" value=" 4" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="At the start of your turn, you may put the top 2 cards of your deck into your graveyard.&#xd;&#xa;Dragsolution|When one of your Darkness creatures is destroyed" />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="36b/50" />
+			</alternate>
 
-		<card name="Utsusemihenge, Blame Demon Dragon" id="7abc9cd0-7dd8-4e68-aff9-7c594b634449">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Demon Command Dragon" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="Double breaker&#xd;&#xa; When this creature would be destroyed, you may put 4 cards in your graveyard on the bottom of your deck instead." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="36c/50" />
+			<alternate name="Utsusemihenge, Blame Demon Dragon" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Darkness" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Demon Command Dragon" />
+				<property name="Power" value="7000" />
+				<property name="Rules" value="Double breaker&#xd;&#xa; When this creature would be destroyed, you may put 4 cards in your graveyard on the bottom of your deck instead." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="36c/50" />
+			</alternate>
 		</card>
 
 		<card name="Shibakage Hitoshi" id="7de921a6-7f82-4cf6-a7ee-f82c7165d297">
@@ -414,30 +414,30 @@
 			<property name="Rules" value="Whenever a creature equipped with this attacks, destroy one of your opponent's creatures that has power 2000 or less.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has less creatures in the battle zone than you do, flip this card to the dragheart fortress side. Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="41a/50" />
-		</card>
 
-		<card name="Bulk Arena, Passionate Duel Castle" id="ccbd5dd7-5334-40fb-9c5d-c4afb9449100">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 4" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your fire creatures attacks, you may destroy one of your opponent's creatures that has power 3000 or less.&#xd;&#xa; Dragsolution—At the start of your turn, if you have more creatures in the battle zone than your opponent, you may flip this card to the dragheart creature side and untap it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="41b/50" />
-		</card>
+			<alternate name="Bulk Arena, Passionate Duel Castle" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Fire" />
+				<property name="Cost" value=" 4" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value="Whenever one of your fire creatures attacks, you may destroy one of your opponent's creatures that has power 3000 or less.&#xd;&#xa; Dragsolution—At the start of your turn, if you have more creatures in the battle zone than your opponent, you may flip this card to the dragheart creature side and untap it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="41b/50" />
+			</alternate>
 
-		<card name="Valkyrie Mega Macho, Passionate Dragon" id="8b21f26a-4836-4cbf-8ef9-86d0060cedab">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Gaial Command Dragon" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="Whenever one of your creatures attacks, you may destroy one of your opponent's creatures that has power 4000 or less.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="41c/50" />
+			<alternate name="Valkyrie Mega Macho, Passionate Dragon" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Fire" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Gaial Command Dragon" />
+				<property name="Power" value="7000" />
+				<property name="Rules" value="Whenever one of your creatures attacks, you may destroy one of your opponent's creatures that has power 4000 or less.&#xd;&#xa;Double breaker" />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="41c/50" />
+			</alternate>
 		</card>
 
 		<card name="Linkwood, Explosive Yamabushi" id="f678e1dc-f436-4978-8be2-f58a56b42f29">
@@ -462,30 +462,30 @@
 			<property name="Rules" value="Whenever a creature equipped with this attacks, put the top card of your deck into your mana zone.&#xd;&#xa; Dragsolution—At the end of your turn, if the equipped creature is tapped, you may flip this card to the dragheart fortress side. &#xd;&#xa;Hyperspatial Dragheart" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="46a/50" />
-		</card>
 
-		<card name="Le=Piraju, Birth Mystery" id="166f8464-98ee-4ba2-80c9-7cbdd50fe023">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 4" />
-			<property name="Type" value="Dragheart Fortress" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value=" Whenever one of your nature creatures attacks, put the top card of your deck into your mana zone.&#xd;&#xa; Dragsolution—At the start of your turn, if you have 12 or more cards in your mana zone, you may flip this card to the dragheart creature side and untap it." />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="46b/50" />
-		</card>
+			<alternate name="Le=Piraju, Birth Mystery" type="awakening">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Nature" />
+				<property name="Cost" value=" 4" />
+				<property name="Type" value="Dragheart Fortress" />
+				<property name="Race" value="" />
+				<property name="Power" value="" />
+				<property name="Rules" value=" Whenever one of your nature creatures attacks, put the top card of your deck into your mana zone.&#xd;&#xa; Dragsolution—At the start of your turn, if you have 12 or more cards in your mana zone, you may flip this card to the dragheart creature side and untap it." />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="46b/50" />
+			</alternate>
 
-		<card name="Juran Kuruga, Growthkind" id="0ff865b5-2823-4f5f-ba7a-8214455b669a">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Jurassic Command Dragon" />
-			<property name="Power" value="9000" />
-			<property name="Rules" value="During your turn, you may summon a creature from your mana zone.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="46c/50" />
+			<alternate name="Juran Kuruga, Growthkind" type="awakening2">
+				<property name="Format" value="OCG" />
+				<property name="Civilization" value="Nature" />
+				<property name="Cost" value=" 7" />
+				<property name="Type" value="Dragheart Creature" />
+				<property name="Race" value="Jurassic Command Dragon" />
+				<property name="Power" value="9000" />
+				<property name="Rules" value="During your turn, you may summon a creature from your mana zone.&#xd;&#xa;Double breaker" />
+				<property name="Rarity" value="Super Rare" />
+				<property name="Number" value="46c/50" />
+			</alternate>
 		</card>
 
 		<card name="Dokugeta, Toxic Acid Trap Jaw" id="fa93b415-853f-4b18-908f-5d009607a446">
