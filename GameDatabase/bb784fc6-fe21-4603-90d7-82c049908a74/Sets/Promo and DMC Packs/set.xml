@@ -1350,7 +1350,7 @@
 		</card>
 
 		<card name="Magmadragon Balga Geyser" id="9cee0ac0-97b1-419e-83f2-e8d034f1be10">
-			<property name="Format" value="Set35, OCG" />
+			<property name="Format" value="Set17, Set35, OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
@@ -1362,7 +1362,7 @@
 		</card>
 
 		<card name="Magmadragon Balga Geyser" id="852acd17-4095-455f-b45d-f3933379888f">
-			<property name="Format" value="Set35, OCG" />
+			<property name="Format" value="Set17, Set35, OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />

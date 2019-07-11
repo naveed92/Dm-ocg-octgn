@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.UUID;
@@ -31,14 +32,17 @@ public class SinnanSetExtractor {
 
     void extractSet(String setName, boolean extractImages) throws Exception {
 
-        if (setName == "") //no setName specified
+         if (setName == "") //no setName specified
         {
             setName = JOptionPane.showInputDialog("Enter set name, exactly as it appears in the wikia page url for the set: (Eg. DMR-03_Episode_1:_Gaial_Victory)");
         }
-
-        String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + setName;
-        //this query gets all the names of the cards in the set by querying the wikia 
+        /* 
+         * Encode the set name in UTF-8 format if it contains japanese characters
+         * this query gets all the names of the cards in the set by querying the wikia
+         */
+        String setLink = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=" + URLEncoder.encode(setName, "UTF-8");
         System.out.println(setLink);
+
 /////////////////////make folder to put data and, optionally, images
 
         JFileChooser chooser = new JFileChooser();
@@ -128,7 +132,7 @@ public class SinnanSetExtractor {
                     int i1 = line.indexOf("[[") + 2, i2 = line.indexOf("]]");
                     String link = line.substring(i1, i2);
                     link = link.replace(" ", "_");
-                    System.out.println("\n" + ++count + "Name is " + link);
+                    System.out.println("\n" + ++count + " Name is " + link);
                     try {
                         details = extract(link, setFileName, extractImages);
                         details += makeXmlLine("Rarity", rarity);
@@ -216,7 +220,6 @@ public class SinnanSetExtractor {
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
-
         }
     }
 
@@ -261,6 +264,7 @@ public class SinnanSetExtractor {
     String expandEffect(String content) {   //for buggy incomplete effects, these things on the wikia query are not fully mentioned as text 
         //System.out.println("Content: " + content);
         int st = content.indexOf('|');
+		int st2 = content.lastIndexOf('|');
         String effect = "";
         if (st != -1) {
             effect = content.substring(0, st);
@@ -299,7 +303,6 @@ public class SinnanSetExtractor {
                     break;
                 case "Gravity Zero":
                     System.out.println("WARNING: GravityZero encountered! Please check if the effect was donre correctly!");
-                    int st2 = content.lastIndexOf('|');
                     String cond = removeBraces(content.substring(st2 + 1));
                     String type = content.substring(st + 1, st2);
                     content = "Gravity Zero-" + cond + ", ";
@@ -323,8 +326,14 @@ public class SinnanSetExtractor {
                     content += "(When this creature is destroyed, you may put an exile creature that has '" + doronName + "' in its name from your hand into the battle zone)";
                     break;
 
-                default:
-                    content = effect;
+                 default:
+                    //for some things wikia query gives very unformatted results, like mana arms
+                    System.out.println("Content = " + removeBraces(content));
+                    if (st == st2 && content.charAt(st2+1)=='s') {
+                        content = effect;
+                    } else {
+                        content = removeBraces(content);
+                    }
             }
 
             //   System.out.println("New content: "+content);
@@ -339,7 +348,7 @@ public class SinnanSetExtractor {
         return content;
     }
 
-    String getAttr(String attr, String all) {
+    static String getAttr(String attr, String all) {
         String output, line;
         int i = all.indexOf("| " + attr);
         if (i != -1) {
@@ -367,17 +376,15 @@ public class SinnanSetExtractor {
     String extract(String cardName, String setName, boolean extractImage) throws Exception {
         //NEED TO ENCODE URL
         String url = "https://duelmasters.wikia.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=";
-        //url += java.net.URLEncoder.encode(cardName, "UTF-8");
 
         for (int i = 0; i < cardName.length(); i++) {
             char ch = cardName.charAt(i);
-            if (ch > 256) {  //check if it's not ASCII, needs to be URL encoded in that case
+            if (ch > 127 || ch == '=') {  //check if it's not ASCII, needs to be URL encoded in that case
                 url += java.net.URLEncoder.encode("" + ch, "UTF-8");
             } else {
                 url += ch;
             }
         }
-
         URL page = new URL(url);
         System.out.println("URL Check GO\n" + page.toString());
 
@@ -388,11 +395,11 @@ public class SinnanSetExtractor {
         while ((line = in.readLine()) != null) {
             alltxt += line + "\n";          //put all the card details in alltxt
         }
-        i = alltxt.indexOf("image = "); //careful!!! Might not be there on page if page is bad/erronous
+        i = alltxt.indexOf("image ="); //careful!!! Might not be there on page if page is bad/erronous
+        System.out.println("");
         if (i == -1) {
             System.out.println("ERROR! Bad card page!");
             throw new Exception("Bad card page!!!");
-
         }
         cardName = cardName.replace("\"", "\'");
         //all double quotes in teh card name will be changed to single quotes
@@ -425,7 +432,7 @@ public class SinnanSetExtractor {
         i = alltxt.indexOf("civilization = ");
         String temp;
         if (i == -1) {
-            System.out.println("Civilization not found!! Assuming card is colorless. Someting might be wron with the card page, please do a manual check.");
+            System.out.println("Civilization not found!! Assuming card is colorless. Someting might be wrong with the card page, please do a manual check.");
             temp = "Zero";
         } else {
             line = alltxt.substring(i, alltxt.indexOf("\n", i));
@@ -440,9 +447,14 @@ public class SinnanSetExtractor {
                 temp += "/" + line.substring(line.indexOf("=") + 2).trim();             //add all civs
             }
         }
-
+        
+        // Checking for psychic cost for draghearts
         details += makeXmlLine("Civilization", temp);                            //finish adding civs, already gone to next line          
-        details += makeXmlLine("Cost", getAttr("cost", alltxt));   //add cost
+        if (alltxt.contains("psychiccost")) {
+            details += makeXmlLine("Cost", getAttr("psychiccost", alltxt));
+        } else {
+            details += makeXmlLine("Cost", getAttr("cost", alltxt));   //add cost
+        }
         details += makeXmlLine("Type", getAttr("type", alltxt));                //add type
 
         //code to hande and add races
@@ -466,9 +478,6 @@ public class SinnanSetExtractor {
         }
 
         temp = getAttr("power", alltxt);
-        if (temp.equals("")) {
-            temp = "0";  //power must be zero
-        }
         details += makeXmlLine("Power", temp);
 
         //now adding effect(rules text)

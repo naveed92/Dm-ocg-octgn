@@ -1301,5 +1301,27 @@
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
+		<card name="Dorapon, Little Gunman" id="61dd91c2-5432-4237-a7e5-5db7f7d03a88">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Exile Creature" />
+			<property name="Race" value="Outrage MAX" />
+			<property name="Power" value="4000" />
+			<property name="Rules" value="Whenever this creature attacks, destroy one of your opponent's creatures that has power 2000 or less.&#xd;&#xa;Doron Go:'Gunman' &#xd;&#xa;You can't put other exile creatures that have 'Gunman' in their name into the battle zone." />
+			<property name="Rarity" value="Promotional" />
+			<property name="Number" value="None" />		
+		</card>
+		<card name="Drago Revolver, Gungun Gunman" id="c49dec27-8377-49f8-9d0d-611ba2d5ff9d">
+			<property name="Format" value="OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="7" />
+			<property name="Type" value="Exile Creature" />
+			<property name="Race" value="Outrage MAX" />
+			<property name="Power" value="8000" />
+			<property name="Rules" value="Whenever this creature attacks, destroy one of your opponent's creatures that has power 6000 or less.&#xd;&#xa;Doron Go:'Gunman' &#xd;&#xa;You can't put other exile creatures that have 'Gunman' in their name into the battle zone.&#xd;&#xa; Double breaker" />
+			<property name="Rarity" value="Promotional" />
+			<property name="Number" value="None" />		
+		</card>
 	</cards>
 </set>
