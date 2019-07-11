@@ -425,7 +425,7 @@
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="22" />
 		</card>
-			
+    
 		<card name="Dragon Pulse Technique, Water Spirit Strategy" id="68e43b28-80a8-43a2-a24c-678c1acc52fe">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />

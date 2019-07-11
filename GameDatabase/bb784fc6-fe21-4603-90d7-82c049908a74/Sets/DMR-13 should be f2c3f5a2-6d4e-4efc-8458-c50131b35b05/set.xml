@@ -27,6 +27,7 @@
 			<pick qty="1" key="Rarity" value="Uncommon" />
 		</pack>
 	</packaging>
+	<cards>
 		<card name="Gaiheart, Galaxy Sword" id="2166e1dd-6acc-43cf-8ac7-d24760ba90f6">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
@@ -140,7 +141,7 @@
 				<property name="Rules" value="Triple breaker&#xd;&#xa; If you have no shields, your opponent's creatures can't attack you." />
 				<property name="Rarity" value="Victory Rare" />
 				<property name="Number" value="V4b" />
-			<alternate>
+			</alternate>
 		</card>
 		<card name="Zeek Cavalie, Lord of Dragon Spirits" id="3ded11cd-cbb9-477c-bec4-252e17af9a13">
 			<property name="Format" value="OCG" />
