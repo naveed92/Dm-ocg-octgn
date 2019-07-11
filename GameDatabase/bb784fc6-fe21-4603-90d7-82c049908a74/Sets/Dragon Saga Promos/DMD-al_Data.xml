@@ -27,7 +27,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Armored Dragon/Flame Command" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value="When one of your fire creatures wins a battle, you may put this creature from your hand into the battle zone.&#xd;&#xa; Whenever one of your other fire creatures battle, you may have this creature battle instead.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="When one of your fire creatures wins a battle, you may put this creature from your hand into the battle zone.&#xd;&#xa;Whenever one of your other fire creatures battle, you may have this creature battle instead.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -147,7 +147,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value="Sympathy&#xd;&#xa; When you put this creature into the battle zone, draw up to 3 cards.&#xd;&#xa; This creature can't be blocked.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Sympathy-'Liquid People'&#xd;&#xa; When you put this creature into the battle zone, draw up to 3 cards.&#xd;&#xa; This creature can't be blocked.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -159,7 +159,7 @@
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value="Gravity Zero-no abilities]], you may play this card for no cost.&#xd;&#xa; Galaxy Vortex evolution—Put on top of 3 of your Liquid People.&#xd;&#xa;Triple breaker&#xd;&#xa; When this creature would be destroyed, return it to your hand instead." />
+			<property name="Rules" value="Gravity Zero-'If you have 3 creatures in the battle zone that have no abilities&#xd;&#xa; Galaxy Vortex evolution—Put on top of 3 of your Liquid People.&#xd;&#xa; When this creature would be destroyed, return it to your hand.&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -188,17 +188,7 @@
 			<property name="Number" value="None" />
 		</card>
 
-		<card name="Aqua Sonicwave" id="f6691d94-d5c9-435b-884b-153b1b91ca53">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value="3" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Liquid People" />
-			<property name="Power" value="2000" />
-			<property name="Rules" value="When you put this creature into the battle zone, you may choose another creature in the battle zone that has power 4000 or less and return it to its owner's hand." />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
+		
 
 		<card name="Zolul, Aqua Combatant" id="1c8e44c5-deaf-4cc1-b4a3-86a2d8da2a68">
 			<property name="Format" value="OCG" />
@@ -219,7 +209,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Double breaker&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's creatures in the battle zone. That creature and this creature battle.&#xd;&#xa; When you put this creature into the battle zone during your opponent's turn, put this creature on the bottom of your deck at the end of the turn." />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;Double breaker&#xd;&#xa; When you put this creature in battle zone, choose one of your opponent's creatures. That creature and this creature battle.&#xd;&#xa; When this creature is put in battle zone during your opponent's turn, put it on the bottom of your deck at the end of the turn." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -231,7 +221,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="When this creature would be discarded by the effect of one of your opponent's spells or ability of a creature, you may put it into the battle zone instead.&#xd;&#xa; When you put this creature into the battle zone, reveal the top 3 cards of your deck. Put all Human Baku and Command Dragons from the revealed cards into your hand, and put the rest on the bottom of your deck in any order.&#xd;&#xa; Double breaker" />
+			<property name="Rules" value="If this creature is discarded by your opponent, you may put it in battle zone.&#xd;&#xa; When you put this creature in battle zone, reveal the top 3 cards of your deck.Put all Human Baku and Command Dragons from revealed cards in your hand, and put the rest at bottom of your deck in any order.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -243,7 +233,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="Mana Arms&#xd;&#xa;Double breaker" />
+			<property name="Rules" value=" Mana Arms 7: When you put this creature into the battle zone, if you have 7 or more fire cards in your mana zone, you may put a non-evolution fire creature from your hand other than Gaimusou, Angry Hero into the battle zone. It gets 'speed attacker' and returns to your hand at the end of the turn.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -279,22 +269,24 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="When you put this Dragheart into the battle zone, you may choose one of your opponent's creatures in the battle zone. It battles with the creature equipped with this dragheart.&#xd;&#xa;Dragsolution &#xd;&#xa;Hyperspatial Dragheart" />
+			<property name="Rules" value="When you put this Dragheart in battle zone, you may choose one of your opponent's creatures. It battles with the creature equipped with this dragheart.&#xd;&#xa; Dragsolution: When one of your Gaial Command Dragons or creature that has 'Gaial' in  name attacks." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
+			
+				<alternate name="Gaiburn, Furious Leader Dragon" type="awakening">
+					<property name="Civilization" value="Fire" />
+					<property name="Cost" value="7" />
+					<property name="Type" value="Dragheart Creature" />
+					<property name="Race" value="Gaial Command Dragon" />
+					<property name="Rules" value="Whenever this creature attacks, destroy one of your opponent's creatures that has power less than it. &#xd;&#xa;Double breaker" />
+					<property name="Power" value="9000" />
+					<property name="Rarity" value="Promotional" />
+					<property name="Number" value="none" />
+					<property name="Format" value="OCG" />
+				</alternate>
 		</card>
 
-		<card name="Gaiburn, Furious Leader Dragon" id="819cfd93-4b4a-483e-82d2-68f2c4275eea">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Gaial Command Dragon" />
-			<property name="Power" value="9000" />
-			<property name="Rules" value="Whenever this creature attacks, destroy one of your opponent's creatures that has power less than it. &#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
+		
 
 		<card name="Ganaldonal, Wrath Demon Dragon" id="6ba5a40c-6518-489a-945a-f9f5d0e130cc">
 			<property name="Format" value="OCG" />
@@ -315,7 +307,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="Mana Arms&#xd;&#xa;Double breaker" />
+			<property name="Rules" value=" Mana Arms 7: When you put this creature into the battle zone, if you have 7 or more darkness cards in your mana zone, put a non-evolution darkness creature other than Urami Hades, Curse Hero from your graveyard into the battle zone.s&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -351,22 +343,24 @@
 			<property name="Type" value="Psychic Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="9000" />
-			<property name="Rules" value="{BLOCKER} &#xd;&#xa; This creature can't attack.&#xd;&#xa; Whenever your opponent would choose a creature in the battle zone due to the ability of a creature, he can't choose this one. &#xd;&#xa; Awaken—At the start of your turn, you may choose 3 of your cards in the battle zone and/or your mana zone and put them into your graveyard. If you do, flip this creature. &#xd;&#xa;" />
+			<property name="Rules" value="{BLOCKER} &#xd;&#xa; This creature can't attack.&#xd;&#xa; When your opponent would choose a creature in the battle zone due to the ability of a creature, he can't choose this one. &#xd;&#xa; Awaken—At the start of your turn, you may choose 3 of your cards in the battle zone and/or your mana zone and put them into your graveyard. If you do, flip this creature. &#xd;&#xa;" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
+			
+				<alternate name="Devil Diabolos Double Zeta, Ultimate Awakened" type="awakening">
+					<property name="Civilization" value="Darkness" />
+					<property name="Cost" value="20" />
+					<property name="Type" value="Psychic Creature" />
+					<property name="Race" value="Demon Command Dragon" />
+					<property name="Rules" value="Whenever this creature attacks, destroy one of your opponent's Light creatures, Water creatures, Darkness creatures, Fire creatures, and Nature creatures.&#xd;&#xa;Quattro breaker&#xd;&#xa;Release" />
+					<property name="Power" value="23000" />
+					<property name="Rarity" value="Promotional" />
+					<property name="Number" value="None" />
+					<property name="Format" value="OCG" />
+				</alternate>
 		</card>
 
-		<card name="Devil Diabolos Double Zeta, Ultimate Awakened" id="54d91274-2179-4e9f-952a-792947d0f96c">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 20" />
-			<property name="Type" value="Psychic Creature" />
-			<property name="Race" value="Demon Command Dragon" />
-			<property name="Power" value="23000" />
-			<property name="Rules" value="Whenever this creature attacks, destroy one of your opponent's Light creatures, Water creatures, Darkness creatures, Fire creatures, and Nature creatures.&#xd;&#xa;Quattro breaker&#xd;&#xa;Release" />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
+		
 
 		<card name="Diabolos, Prison Dragon Blade " id="d1a1487e-0c6d-4410-b60a-4546f819fea3">
 			<property name="Format" value="OCG" />
@@ -378,19 +372,21 @@
 			<property name="Rules" value="When you put this Dragheart into the battle zone, you may return a creature from your graveyard to your hand.&#xd;&#xa; Dragsolution—At the start of your turn, you may discard 2 creatures from your hand. If you do, flip this card to the dragheart creature side and untap it. &#xd;&#xa;Hyperspatial Dragheart" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
+			
+			<alternate name="Diajigoku, Annihilation Demon Dragon" type="awakening">
+					<property name="Civilization" value="Darkness" />
+					<property name="Cost" value="7" />
+					<property name="Type" value="Dragheart Creature" />
+					<property name="Race" value="Demon Command Dragon" />
+					<property name="Rules" value="Whenever this creature attacks, choose one of your opponent's creatures. That creature gets -1000 power for each card in your graveyard until the end of your turn. &#xd;&#xa;Double breaker" />
+					<property name="Power" value="8000" />
+					<property name="Rarity" value="Promotional" />
+					<property name="Number" value="None" />
+					<property name="Format" value="OCG" />
+			</alternate>
 		</card>
 
-		<card name="Diajigoku, Annihilation Demon Dragon" id="ebb39320-efbc-4e16-8115-cc733ea4b6b8">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 7" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Demon Command Dragon" />
-			<property name="Power" value="8000" />
-			<property name="Rules" value="Whenever this creature attacks, choose one of your opponent's creatures. That creature gets -1000 power for each card in your graveyard until the end of your turn.  (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
+		
 
 		<card name="Glenmalt 'Head', Dimension Dragon Edge" id="ba27a258-1dd0-493c-a4ef-1c92692ace5c">
 			<property name="Format" value="OCG" />
@@ -399,7 +395,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon/Human Baku/Draguner" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="Speed attacker Double breaker&#xd;&#xa; Mana Arms 7: Whenever this creature attacks, if you have 7 or more fire cards in your mana zone, choose one of the following.:► Put a non-weapon card that costs 6 or less from your hyperspatial zone into the battle zone.:► While this creature is not equipped with a weapon, put a weapon that costs 6 or less from your hyperspatial zone into the battle zone and equip it to this creature." />
+			<property name="Rules" value="Speed attacker Double breaker&#xd;&#xa; Mana Arms 7: When this creature attacks, if you have 7 or more fire cards in your mana zone, choose one:► Put non-weapon card of cost 6 or less from your hyperspatial zone in battle zone.:► If this creature is not equipped with weapon,equip it weapon of cost 6 or less from your hyperspatial zone" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -411,7 +407,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human Baku" />
 			<property name="Power" value="3000+" />
-			<property name="Rules" value="Guardman&#xd;&#xa; When you put this creature into the battle zone, you may choose one of your opponent's creatures in the battle zone. If you do, this creature and that creature battle.&#xd;&#xa; Mana Arms 7: While you have 7 or more fire cards in your mana zone, this creature gets +4000 power and 'double breaker'." />
+			<property name="Rules" value="Guardman&#xd;&#xa; When you put this creature in battle zone, you may choose one of your opponent's creatures.Then, this creature and that creature battle.&#xd;&#xa; Mana Arms 7: While you have 7 or more fire cards in your mana zone, this creature gets +4000 power and 'double breaker'." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -423,7 +419,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human Baku" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Mana Arms" />
+			<property name="Rules" value=" Mana Arms 3: When you put this creature into the battle zone, if you have 3 or more fire cards in your mana zone, you may discard a card from your hand. If you do, draw 2 cards." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -435,22 +431,24 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your fire Dragons attacks, destroy one of your opponent's creatures that has 'blocker'.&#xd;&#xa;Dragsolution  Hyperspatial Dragheart Fortress" />
+			<property name="Rules" value="Whenever one of your fire Dragons attacks, destroy one of your opponent's creatures that has 'blocker'.&#xd;&#xa; Dragsolution: When one of your fire creatures attacks, if it's the second fire creature that attacked this turn, flip this card to the dragheart creature side and untap it. " />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
+			
+				<alternate name="GENJI 'Heaven', Passion Dragon" type="awakening">
+					<property name="Civilization" value="Fire" />
+					<property name="Cost" value="6" />
+					<property name="Type" value="Dragheart Creature" />
+					<property name="Race" value="Gaial Command Dragon" />
+					<property name="Rules" value="Whenever your creatures attack, destroy one of your opponent's creatures that has 'blocker'.&#xd;&#xa;Double breaker" />
+					<property name="Power" value="7000" />
+					<property name="Rarity" value="Promotional" />
+					<property name="Number" value="None" />
+					<property name="Format" value="OCG" />
+				</alternate>
 		</card>
 
-		<card name="GENJI 'Heaven', Passion Dragon" id="f3bed55a-af92-4729-8ada-b8ccff8e9d55">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 6" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Gaial Command Dragon" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="Whenever your creatures attack, destroy one of your opponent's creatures that has 'blocker'.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
+		
 
 		<card name="Gaiohburn, Head General Sword" id="8a433d05-dcfb-46e8-971f-97e7723fde7b">
 			<property name="Format" value="OCG" />
@@ -459,22 +457,24 @@
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="When you put this dragheart into the battle zone, you may choose one of your opponent's creatures in the battle zone. That creature battles with the equipped creature. &#xd;&#xa; While battling, the creature equipped with this gets +3000 power. &#xd;&#xa;Dragsolution &#xd;&#xa;Hyperspatial Dragheart" />
+			<property name="Rules" value="When you equip this dragheart,you may choose one of your opponent's creatures. That creature battles with equipped creature. &#xd;&#xa; While battling,equipped card gets +3000 power. &#xd;&#xa; Dragsolution:When one of your creatures wins battle for second during this turn" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
+			
+			<alternate name="Gairaioh, Victory Head" type="awakening">
+					<property name="Civilization" value="Fire" />
+					<property name="Cost" value="9" />
+					<property name="Type" value="Dragheart Creature" />
+					<property name="Race" value="Gaial Command Dragon" />
+					<property name="Rules" value="Speed attacker&#xd;&#xa;Double breaker&#xd;&#xa;During each turn, when you are attacked for the first time, you may have the attacking creature battle with this creature." />
+					<property name="Power" value="11000" />
+					<property name="Rarity" value="Promotional" />
+					<property name="Number" value="None" />
+					<property name="Format" value="OCG" />
+				</alternate>
 		</card>
 
-		<card name="Gairaioh, Victory Head" id="b65920e6-c7d2-4182-a2ad-a474e402af0f">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 9" />
-			<property name="Type" value="Dragheart Creature" />
-			<property name="Race" value="Gaial Command Dragon" />
-			<property name="Power" value="11000" />
-			<property name="Rules" value="Speed attacker&#xd;&#xa;Double breaker&#xd;&#xa; During each turn, when you are attacked for the first time, you may have the attacking creature battle with this creature." />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
+		
 
 		<card name="Hero Mystery, Burning Galaxy" id="91ffb69c-d4f4-4666-8c77-2d6db3759fc2">
 			<property name="Format" value="OCG" />
@@ -483,7 +483,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Choose one of your opponent's cards in the battle zone that costs 5 or less and put it into its owner's graveyard.&#xd;&#xa;Mana Arms" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Choose one of your opponent's card in battle zone that costs 5 or less and put it in owner's graveyard.&#xd;&#xa;Mana Arms 7: If you have 7 or more fire cards in your mana zone,choose an opponent's cards in  battle zone that costs 12 or less and put it in owner's graveyard." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
