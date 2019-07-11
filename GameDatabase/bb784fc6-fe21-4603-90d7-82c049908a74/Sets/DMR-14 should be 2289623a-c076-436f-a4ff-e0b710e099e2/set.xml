@@ -424,6 +424,7 @@
 			<property name="Rules" value="Whenever you put a dragheart into the battle zone, choose one of your opponent's creatures in the battle zone and tap it. That creature doesn't untap at the start of your opponent's next turn." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="22" />
+		</card>
 			
 		<card name="Dragon Pulse Technique, Water Spirit Strategy" id="68e43b28-80a8-43a2-a24c-678c1acc52fe">
 			<property name="Format" value="OCG" />
