@@ -993,6 +993,21 @@ def flip(card, x = 0, y = 0):
 			notify("{}'s {} reverts to {}.".format(me, altName, card))
 			align()
 			return
+	elif(re.search("Dragheart", card.Type)):
+		altName = card.alternateProperty('awakening', 'name')
+		altName2 = card.alternateProperty('awakening2', 'name')
+		
+		notify("{} {} ".format(altName, altName2))
+		if card.alternate is '':
+			card.alternate = 'awakening'
+			notify("{}'s' {} dragonsolutions to {}.".format(me, altName, card))
+			align()
+			return
+		elif card.alternate is 'awakening':
+			card.alternate = 'awakening2'
+			notify("{}'s {} reverts to {}.".format(me, altName, card))
+			align()
+			return
 	else:
 		if card.isFaceUp:
 			notify("{} flips {} face down.".format(me, card))
