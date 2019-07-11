@@ -235,7 +235,7 @@
 		</alternate>
 		</card>
 		
-		<card name="Metal Avenger Solid, Dragon Edge" id="111359ba-6aed-4380-af0c-4d3047292f3d">
+		<card name="Metal Avenger Solid, Dragon Edge" id="41ec8440-93b5-4fac-98e1-c6dec3cee120">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value="6" />
@@ -425,7 +425,7 @@
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="22" />
 		</card>
-		
+    
 		<card name="Dragon Pulse Technique, Water Spirit Strategy" id="68e43b28-80a8-43a2-a24c-678c1acc52fe">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />

@@ -234,9 +234,8 @@
 			<property name="Rules" value="When you put this fortress into the battle zone, you may draw a card. Hyperspatial Dragheart Fortress" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="9a" />
-		</card>
 
-		<card name="All Over The World, Supreme True Dragon Soul" id="8edc5b07-0a23-4348-8968-2bb082c8d248">
+		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value=" 50" />
@@ -245,7 +244,8 @@
 			<property name="Power" value="50000" />
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="9b" />
+			<property name="Number" value="6b" />
+		</alternate>
 		</card>
 		
 		<card name="Dragment Innovation" id="52d566c5-b39e-48a1-9aaa-1e5125e695e8">
@@ -282,9 +282,8 @@
 			<property name="Rules" value="When you put this fortress into the battle zone, your opponent chooses and discards a card from his hand. Hyperspatial Dragheart Fortress" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="12a" />
-		</card>
 
-		<card name="All Over The World, Supreme True Dragon Soul" id="d854bf07-de26-4b0d-b41a-27b7a90f6d2e">
+		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value=" 50" />
@@ -293,8 +292,10 @@
 			<property name="Power" value="50000" />
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="12b" />
+			<property name="Number" value="6b" />
+		</alternate>
 		</card>
+		
 		<card name="Glenmalt 'Blade', King Dragon Edge" id="1a0a2d3c-4008-4c1b-8138-878f99bcea81">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
