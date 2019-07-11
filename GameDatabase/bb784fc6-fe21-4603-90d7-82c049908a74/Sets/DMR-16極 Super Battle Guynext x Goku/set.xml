@@ -196,9 +196,8 @@
 			<property name="Rules" value="When you put this fortress into the battle zone, you may choose one of your opponent's creatures in the battle zone and tap it. That creature doesn't untap at the start of your opponent's next turn. Hyperspatial Dragheart Fortress" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="6a" />
-		</card>
-
-		<card name="All Over The World, Supreme True Dragon Soul" id="948dd9e9-a778-4b49-a45f-a3a4ec528899">
+		
+		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value=" 50" />
@@ -208,7 +207,9 @@
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="6b" />
+		</alternate>
 		</card>
+		
 		<card name="Sg Spagelia, Dragment Symbol" id="b77d8e34-8f78-4018-8591-16583bd41f37">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
@@ -303,9 +304,8 @@
 			<property name="Rules" value="When you put this fortress into the battle zone, one of your creatures gets 'speed attacker' until the end of the turn.&#xd;&#xa; Super Dragsolution—If you have Whitey, Dragon Soul Church, Bluenika, Dragon Soul Fortress, Blacko, Dragon Soul Palace, Reddull, Dragon Soul Castle and Greene, Dragon Soul Ruins in the battle zone, flip each card one by one to the dragheart creature side untapped." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="14a" />
-		</card>
-
-		<card name="All Over The World, Supreme True Dragon Soul" id="8b7de29b-8198-462e-8d05-7e5aed89c945">
+		
+		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value=" 50" />
@@ -315,7 +315,9 @@
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="14b" />
+		</alternate>
 		</card>
+		
 		<card name="Linkwood's Soul Burning" id="60cbc2fa-e343-4ff1-b87a-dd254c0969c4">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
@@ -362,9 +364,8 @@
 			<property name="Rules" value="When you put this dragheart fortress into the battle zone, you may put the top card of your deck into your mana zone. Hyperspatial Dragheart Fortress" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="18a" />
-		</card>
 
-		<card name="All Over The World, Supreme True Dragon Soul" id="f8b4dbc2-0cd7-4fab-989f-302fa1353e36">
+		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value=" 50" />
@@ -373,8 +374,10 @@
 			<property name="Power" value="50000" />
 			<property name="Rules" value="When this creature is dragsolutioned, each player puts all cards in his hand, battle zone and graveyard other than this creature into their owners decks and shuffles it.&#xd;&#xa;Speed attacker&#xd;&#xa;World breaker&#xd;&#xa; When this creature would leave the battle zone, if it's tapped, it stays in the battle zone instead." />
 			<property name="Rarity" value="Rare" />
-			<property name="Number" value="18b" />
+			<property name="Number" value="6b" />
+		</alternate>
 		</card>
+		
 		<card name="Tsurato Usutora, Leader of Division" id="e7483302-6d07-44d5-8fa4-4d4d3cab0bea">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />

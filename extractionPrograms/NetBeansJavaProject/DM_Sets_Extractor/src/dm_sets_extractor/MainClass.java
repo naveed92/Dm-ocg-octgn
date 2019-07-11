@@ -7,7 +7,7 @@ public class MainClass {
     public static void main(String args[]) {
         try {
             SinnanSetExtractor extractor = new SinnanSetExtractor();
-            System.out.println(extractor.extract("Speyside,_Bombing_Run", "lol", false));
+            System.out.println(extractor.extract("Metal_Avenger_Solid,_Dragon_Edge", "lol", false));
 //            int extractImages = JOptionPane.showConfirmDialog(null, "Extract images?", "Alert", 1);
 //            switch (extractImages) {
 //                case 0:
