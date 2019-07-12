@@ -994,20 +994,29 @@ def flip(card, x = 0, y = 0):
 			align()
 			return
 	elif(re.search("Dragheart", card.Type)):
-		altName = card.alternateProperty('awakening', 'name')
-		altName2 = card.alternateProperty('awakening2', 'name')
-		
-		notify("{} {} ".format(altName, altName2))
-		if card.alternate is '':
-			card.alternate = 'awakening'
-			notify("{}'s' {} dragonsolutions to {}.".format(me, altName, card))
-			align()
-			return
-		elif card.alternate is 'awakening':
-			card.alternate = 'awakening2'
-			notify("{}'s {} reverts to {}.".format(me, altName, card))
-			align()
-			return
+		#draghearts
+		old = card.Name
+		forms = card.alternates
+		if card.alternate is forms[0]:
+			card.alternate = forms[1]
+			notify("{}'s' {} dragonsolutions to {}.".format(me, old, card))
+		elif card.alternate is forms[1]:
+		#Is in 2nd form
+			if len(forms) == 2:
+			#Not 3 sided 
+				card.alternate = forms[0]
+				notify("{}'s {} reverts to {}.".format(me, old, card))
+			else:
+			# 3 sided card
+				card.alternate = forms[2]
+				notify("{}'s {} 3D dragonsolutions to {}.".format(me, old, card))
+		elif card.alternate is forms[2]:
+			card.alternate = forms[0]
+			notify("{}'s {} reverts to {}.".format(me, old, card))
+		#align()
+		#no align for now as these cards have diff. sizes
+		return		
+			
 	else:
 		if card.isFaceUp:
 			notify("{} flips {} face down.".format(me, card))
@@ -1113,7 +1122,7 @@ def isShield(card):
 
 def isPsychic(card):
 	mute()
-	if re.search("Psychic", card.Type):
+	if re.search("Psychic", card.Type) or re.search("Dragheart", card.Type):
 		return True
 	else:
 		return False

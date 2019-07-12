@@ -43,6 +43,10 @@
 		<property name="Rules" type="String" ignoreText="False" />
 		<property name="Power" type="String" textKind="Enum" ignoreText="False" />
 		<property name="Number" type="String" ignoreText="False" />
+		<size name = "normal" back="cards/back.jpg" front="cards/front.jpg" width="63" height="88" cornerRadius="3"/>
+		<size name = "wide" back="cards/back.jpg" front="cards/front.jpg" width="88" height="63" cornerRadius="3"/>
+		<size name = "tall" back="cards/back.jpg" front="cards/front.jpg" width="88" height="189" cornerRadius="9"/>
+
 	</card>
 
 	<table name="Battle Zone" visibility="undefined" ordered="False" width="800" height="600" background="background/background.jpg" backgroundStyle="uniformToFill">
