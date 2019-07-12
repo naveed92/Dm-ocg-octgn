@@ -480,7 +480,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="1a/50" />
 
-			<alternate name="Batorai Keep, Blazing Castle" type="awakening">
+			<alternate name="Batorai Keep, Blazing Castle" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Fire" />
 				<property name="Cost" value=" 5" />
@@ -492,7 +492,7 @@
 				<property name="Number" value="1b/50" />
 			</alternate>
 
-			<alternate name="Batorai Bushin, Blazing Deluxe" type="awakening2">
+			<alternate name="Batorai Bushin, Blazing Deluxe" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Fire" />
 				<property name="Cost" value=" 8" />
@@ -528,7 +528,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="6a/50" />
 
-			<alternate name="Leosaiyu, Beast Cathedral" type="awakening">
+			<alternate name="Leosaiyu, Beast Cathedral" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
 				<property name="Cost" value=" 7" />
@@ -540,7 +540,7 @@
 				<property name="Number" value="6b/50" />
 			</alternate>
 
-			<alternate name="Leo the World, Zenith Heavenly Saint" type="awakening2">
+			<alternate name="Leo the World, Zenith Heavenly Saint" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
 				<property name="Cost" value=" 10" />
@@ -576,7 +576,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="11a/50" />
 
-			<alternate name="Hell Crime, Purgatory Palace" type="awakening">
+			<alternate name="Hell Crime, Purgatory Palace" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Darkness" />
 				<property name="Cost" value=" 7" />
@@ -588,7 +588,7 @@
 				<property name="Number" value="11b/50" />
 			</alternate>
 
-			<alternate name="Hellsekai, Great Massacre" type="awakening2">
+			<alternate name="Hellsekai, Great Massacre" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Darkness" />
 				<property name="Cost" value=" 10" />
@@ -624,7 +624,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="16a/50" />
 
-			<alternate name="Boaropagos, Evil Emperor Ruins" type="awakening">
+			<alternate name="Boaropagos, Evil Emperor Ruins" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Nature" />
 				<property name="Cost" value=" 7" />
@@ -636,7 +636,7 @@
 				<property name="Number" value="16b/50" />
 			</alternate>
 
-			<alternate name="Verokiboaros, Ga Ga Ga" type="awakening2">
+			<alternate name="Verokiboaros, Ga Ga Ga" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Nature" />
 				<property name="Cost" value=" 10" />
@@ -672,7 +672,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="21a/50" />
 
-			<alternate name="Blanc Noir, White Nights Church" type="awakening">
+			<alternate name="Blanc Noir, White Nights Church" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
 				<property name="Cost" value=" 4" />
@@ -684,7 +684,7 @@
 				<property name="Number" value="21b/50" />
 			</alternate>
 
-			<alternate name="Soleil Noir, Solar Eclipse Dragon Elemental" type="awakening2">
+			<alternate name="Soleil Noir, Solar Eclipse Dragon Elemental" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
 				<property name="Cost" value=" 7" />
@@ -720,7 +720,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="26a/50" />
 
-			<alternate name="Tonnanshape, Dragon Pulse Sky Ship" type="awakening">
+			<alternate name="Tonnanshape, Dragon Pulse Sky Ship" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Water" />
 				<property name="Cost" value=" 5" />
@@ -732,7 +732,7 @@
 				<property name="Number" value="26b/50" />
 			</alternate>
 
-			<alternate name="Daisushidora, Nitrous Sky Ship" type="awakening2">
+			<alternate name="Daisushidora, Nitrous Sky Ship" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Water" />
 				<property name="Cost" value=" 8" />
@@ -768,7 +768,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="31a/50" />
 
-			<alternate name="Eucleidesu, Dragment Fighter" type="awakening">
+			<alternate name="Eucleidesu, Dragment Fighter" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Water" />
 				<property name="Cost" value=" 4" />
@@ -780,7 +780,7 @@
 				<property name="Number" value="31b/50" />
 			</alternate>
 
-			<alternate name="Ad Euclid, Dragment Symbol" type="awakening2">
+			<alternate name="Ad Euclid, Dragment Symbol" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Water" />
 				<property name="Cost" value=" 7" />
@@ -816,7 +816,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="36a/50" />
 
-			<alternate name="Karakurigaeshi, Ninja Mansion" type="awakening">
+			<alternate name="Karakurigaeshi, Ninja Mansion" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Darkness" />
 				<property name="Cost" value=" 4" />
@@ -828,7 +828,7 @@
 				<property name="Number" value="36b/50" />
 			</alternate>
 
-			<alternate name="Utsusemihenge, Blame Demon Dragon" type="awakening2">
+			<alternate name="Utsusemihenge, Blame Demon Dragon" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Darkness" />
 				<property name="Cost" value=" 7" />
@@ -864,7 +864,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="41a/50" />
 
-			<alternate name="Bulk Arena, Passionate Duel Castle" type="awakening">
+			<alternate name="Bulk Arena, Passionate Duel Castle" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Fire" />
 				<property name="Cost" value=" 4" />
@@ -876,7 +876,7 @@
 				<property name="Number" value="41b/50" />
 			</alternate>
 
-			<alternate name="Valkyrie Mega Macho, Passionate Dragon" type="awakening2">
+			<alternate name="Valkyrie Mega Macho, Passionate Dragon" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Fire" />
 				<property name="Cost" value=" 7" />
@@ -912,7 +912,7 @@
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="46a/50" />
 
-			<alternate name="Le=Piraju, Birth Mystery" type="awakening">
+			<alternate name="Le=Piraju, Birth Mystery" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Nature" />
 				<property name="Cost" value=" 4" />
@@ -924,7 +924,7 @@
 				<property name="Number" value="46b/50" />
 			</alternate>
 
-			<alternate name="Juran Kuruga, Growthkind" type="awakening2">
+			<alternate name="Juran Kuruga, Growthkind" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Nature" />
 				<property name="Cost" value=" 7" />
@@ -1467,7 +1467,7 @@
 			<property name="Number" value="None" />
 		</card>
 
-		<card name="Forefront Double Cross Shogunate" id="b68aa7d9-650c-41fc-99f5-3e881aa2678e">
+		<card name="Forefront Double Cross Shogunate" id="b68aa7d9-650c-41fc-99f5-3e881aa2678e" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 3" />
@@ -1478,7 +1478,7 @@
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 			
-				<alternate name="GENJI 'Heaven', Passion Dragon" type="awakening">
+				<alternate name="GENJI 'Heaven', Passion Dragon" type="awakening" size="normal">
 					<property name="Civilization" value="Fire" />
 					<property name="Cost" value="6" />
 					<property name="Type" value="Dragheart Creature" />
@@ -1673,7 +1673,7 @@
 			<property name="Number" value="None" />
 		</card>
 
-		<card name="Great Galaxy, Giant Castle" id="2aa9006a-8e32-4358-9daf-57872d87cf05">
+		<card name="Great Galaxy, Giant Castle" id="2aa9006a-8e32-4358-9daf-57872d87cf05" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 4" />
@@ -1684,7 +1684,7 @@
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 			
-			<alternate name="Daiginga, Dragsolution Star Castle" type="awakening">
+			<alternate name="Daiginga, Dragsolution Star Castle" type="awakening" size="normal">
 					<property name="Civilization" value="Fire" />
 					<property name="Cost" value="7" />
 					<property name="Type" value="Dragheart Creature" />
@@ -1757,7 +1757,7 @@
 			<property name="Number" value="None" />
 		</card>
 
-		<card name="Bolshack, Shobu Castle" id="5c6f3039-0972-4bea-80b4-b3fc19f014c3">
+		<card name="Bolshack, Shobu Castle" id="5c6f3039-0972-4bea-80b4-b3fc19f014c3" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 6" />
@@ -1768,7 +1768,7 @@
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 			
-			<alternate name="Bolshack Masters, Trump Dragon" type="awakening">
+			<alternate name="Bolshack Masters, Trump Dragon" type="awakening" size="normal">
 					<property name="Civilization" value="Fire" />
 					<property name="Cost" value="12" />
 					<property name="Type" value="Dragheart Creature" />
@@ -1854,3 +1854,4 @@
 
 	</cards>
 </set>
+
