@@ -1101,7 +1101,7 @@ def isGear(card):
 
 def isFortress(card):
 	mute()
-	if card in table and card.isFaceUp and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Fortress", card.Type):
+	if card in table and card.isFaceUp and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Fortress", card.Type) and not re.search("Dragheart", card.Type):
 		return True
 	else:
 		return False
@@ -1163,8 +1163,10 @@ def align():
 		whisper("Cannot align: Two-sided table is required for card alignment.")
 		sideflip = 0  ##disables alignment for the rest of the play session
 		return "BREAK"
+	
 	cardorder = [[],[],[]]
 	evolveDict = eval(me.getGlobalVariable("evolution"))
+	
 	for card in table:
 		if card.controller == me and not isFortress(card) and not card.anchor and not card._id in list(itertools.chain.from_iterable(evolveDict.values())):
 			if isShield(card):
@@ -1173,6 +1175,20 @@ def align():
 				cardorder[2].append(card)
 			else: ##collect all creatures
 				cardorder[0].append(card)
+	
+
+	temp = []
+	bigCards = []
+	#notify("CardOrderzero is {}".format(cardorder[0]))
+	for card in cardorder[0]:
+		#notify("{} Size is {}".format(card, card.size))
+		if card.size =="wide" or card.size =="tall":
+			#notify("BIG CARD!!! {}".format(card))
+			bigCards.append(card)
+		else:
+			temp.append(card)
+	cardorder[0] = temp
+	#remove all big cards from normall aligned ones
 	xpos = 80
 	ypos = 5 + 10*(max([len(evolveDict[x]) for x in evolveDict]) if len(evolveDict) > 0 else 1)
 	for cardtype in cardorder:
@@ -1195,6 +1211,16 @@ def align():
 			count += 1
 			Card(evolvedCard).moveToTable(x, y - 10*count*playerside)
 			Card(evolvedCard).sendToBack()
+	#for landscape or large cards
+	xpos=10
+	ypos=5 + 10*(max([len(evolveDict[x]) for x in evolveDict]) if len(evolveDict) > 0 else 1)
+	for c in bigCards:
+		xpos += max(c.width,c.height)+10
+		x = -1*sideflip * xpos
+		y = ypos
+		if c.position != (x,y):
+			c.moveToTable(x,y)
+		
 
 def clear(card, x = 0, y = 0):
 	mute()
