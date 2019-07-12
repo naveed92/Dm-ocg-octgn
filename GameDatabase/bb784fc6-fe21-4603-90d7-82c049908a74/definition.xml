@@ -45,7 +45,7 @@
 		<property name="Number" type="String" ignoreText="False" />
 		<size name = "normal" back="cards/back.jpg" front="cards/front.jpg" width="63" height="88" cornerRadius="3"/>
 		<size name = "wide" back="cards/back.jpg" front="cards/front.jpg" width="88" height="63" cornerRadius="3"/>
-		<size name = "tall" back="cards/back.jpg" front="cards/front.jpg" width="88" height="189" cornerRadius="9"/>
+		<size name = "tall" back="cards/back.jpg" front="cards/front.jpg" width="88" height="189" cornerRadius="3"/>
 
 	</card>
 
