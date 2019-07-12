@@ -44,7 +44,7 @@
 			<property name="Number" value="㊙2d" />
 		</card>
 
-		<card name="Heart Burn, Battle General Galaxy Fortress" id="627ca3a6-298c-4b78-900e-7b9a1785db83">
+		<card name="Heart Burn, Battle General Galaxy Fortress" id="627ca3a6-298c-4b78-900e-7b9a1785db83" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 5" />
@@ -55,7 +55,7 @@
 			<property name="Rarity" value="Double Victory" />
 			<property name="Number" value="VV1a" />
 
-		<alternate name="GuyNEXT, Super Battle Victory Dragon" type="awakening">
+		<alternate name="GuyNEXT, Super Battle Victory Dragon" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 10" />
@@ -68,7 +68,7 @@
 		</alternate>
 		</card>
 		
-		<card name="Endless Heaven, True Holy Church" id="a97bcfbe-274e-4f94-bfa3-3c54d533b179">
+		<card name="Endless Heaven, True Holy Church" id="a97bcfbe-274e-4f94-bfa3-3c54d533b179" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value=" 5" />
@@ -79,7 +79,7 @@
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1a" />
 
-		<alternate name="Neverend, True Destiny King" type="awakening">
+		<alternate name="Neverend, True Destiny King" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value=" 10" />
@@ -152,7 +152,7 @@
 			<property name="Number" value="3" />
 		</card>
 
-		<card name="Judaiou, Jurassic Jungle" id="5c568b4b-b57b-4352-8c7d-69e6b7cf93c8">
+		<card name="Judaiou, Jurassic Jungle" id="5c568b4b-b57b-4352-8c7d-69e6b7cf93c8" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value=" 5" />
@@ -163,7 +163,7 @@
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4a" />
 
-		<alternate name="Sauzaurupio, Terror Ancient King" type="awakening">
+		<alternate name="Sauzaurupio, Terror Ancient King" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value=" 8" />
@@ -224,7 +224,7 @@
 			<property name="Number" value="8" />
 		</card>
 
-		<card name="Bluenika, Dragon Soul Fortress" id="6eb8d8ba-8164-4e19-b351-9f34fadf9024">
+		<card name="Bluenika, Dragon Soul Fortress" id="6eb8d8ba-8164-4e19-b351-9f34fadf9024" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value=" 3" />
@@ -235,7 +235,7 @@
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="9a" />
 
-		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening">
+		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value=" 50" />
@@ -272,7 +272,7 @@
 			<property name="Number" value="11" />
 		</card>
 
-		<card name="Blacko, Dragon Soul Palace" id="658e5454-84b1-4c1e-b8a0-54446007340d">
+		<card name="Blacko, Dragon Soul Palace" id="658e5454-84b1-4c1e-b8a0-54446007340d" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value=" 3" />
@@ -283,7 +283,7 @@
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="12a" />
 
-		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening">
+		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value=" 50" />
