@@ -20,7 +20,7 @@
 		</pack>
 	</packaging>
 	<cards>
-		<card name="Evidegoras, Dragon Sonic Aircraft Carrier" id="7a6c0c4f-c696-49ab-9237-cc2924921ff6">
+		<card name="Evidegoras, Dragon Sonic Aircraft Carrier" id="7a6c0c4f-c696-49ab-9237-cc2924921ff6" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value=" 4" />
@@ -31,7 +31,7 @@
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1a" />
 
-		<alternate name="Q.E.D. Plus, Final Dragon Logic" type="awakening">
+		<alternate name="Q.E.D. Plus, Final Dragon Logic" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value=" 7" />
@@ -152,7 +152,7 @@
 			<property name="Number" value="3" />
 		</card>
 
-		<card name="Tenshukaku, Dragon King Keep ~Fighting Spirit Mode~" id="382f408a-0b08-4627-ae2a-ef7990d83428">
+		<card name="Tenshukaku, Dragon King Keep ~Fighting Spirit Mode~" id="382f408a-0b08-4627-ae2a-ef7990d83428" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 3" />
@@ -163,7 +163,7 @@
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4a" />
 
-		<alternate name="Gaishukaku, Passion Dragon" type="awakening">
+		<alternate name="Gaishukaku, Passion Dragon" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value=" 6" />
@@ -211,7 +211,7 @@
 			<property name="Number" value="7" />
 		</card>
 
-		<card name="Zodiac, Floating Hymn" id="111359ba-6aed-4380-af0c-4d3047292f3d">
+		<card name="Zodiac, Floating Hymn" id="111359ba-6aed-4380-af0c-4d3047292f3d" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value=" 3" />
@@ -222,7 +222,7 @@
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="8a" />
 
-		<alternate name="Hallelujah Zodia, Adoration Dragon Elemental" type="awakening">
+		<alternate name="Hallelujah Zodia, Adoration Dragon Elemental" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value=" 6" />
@@ -295,7 +295,7 @@
 			<property name="Number" value="13" />
 		</card>
 
-		<card name="Demon Wolf, Soul Eating Moonlight Castle" id="15eebf9a-3e75-491f-b5e5-be3a9f8c1fe6">
+		<card name="Demon Wolf, Soul Eating Moonlight Castle" id="15eebf9a-3e75-491f-b5e5-be3a9f8c1fe6" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value=" 3" />
@@ -306,7 +306,7 @@
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="14a" />
 
-		<alternate name="Minagorosseo, Wolf Demon Dragon" type="awakening">
+		<alternate name="Minagorosseo, Wolf Demon Dragon" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value=" 6" />
@@ -354,7 +354,7 @@
 			<property name="Number" value="17" />
 		</card>
 		
-		<card name="Euru=Bucca, Mystery Gathering Ruins" id="ac609b7d-7f83-47ac-a4e6-ae7b62d7a736">
+		<card name="Euru=Bucca, Mystery Gathering Ruins" id="ac609b7d-7f83-47ac-a4e6-ae7b62d7a736" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="" />
@@ -365,7 +365,7 @@
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="18a" />
 		
-		<alternate name="Rejiru=Euru=Bucca, Mystery Ruinskind" type="awakening">
+		<alternate name="Rejiru=Euru=Bucca, Mystery Ruinskind" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="" />
