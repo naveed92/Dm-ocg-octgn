@@ -573,7 +573,7 @@ def clonedDiscard():
 	cardList = [card for card in targetPlayer.hand]
 	
 	count = 1
-	for player in playerList:
+	for player in currentPlayers:
 		for card in player.piles["Graveyard"]:
 			if re.search(card.Name,"Cloned Nightmare"):
 				count += 1
@@ -756,48 +756,37 @@ def search(group, count = 1, TypeFilter = "ALL" , CivFilter = "ALL", RaceFilter 
 
 def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targetOwn = False):
 	mute()
+	if powerFilter == 'ALL':	powerFilter = float('inf')
+	if targetOwn:
+		cardList = [card for card in table if isCreature(card) and int(card.Power.strip(' +')) <= powerFilter]
+	else:
+		cardList = [card for card in table if isCreature(card) and not card.owner==me and int(card.Power.strip(' +')) <= powerFilter]
+	if tapFilter != 'ALL':
+		if tapFilter == 'Untap':
+			cardList = [card for card in cardList if card.orientation == Rot0]
+		if tapFilter == 'Tap':
+			cardList = [card for card in cardList if card.orientation == Rot90]
+	if civFilter != "ALL":
+		cardList = [card for card in cardList if re.search(civFilter,card.Civilization)]
+	if len(cardList)==0:
+		whisper("No valid targets on the table.")
+		return	
 	
-	targets = [c for c in table if c.targetedBy == me and isCreature(target)]
-	
+	targets = [c for c in table if c.targetedBy == me and isCreature(c)]
 	if len(targets) != count:
 		whisper("Wrong number of targets!")
 		return True	#return true activates the cardStack/waiting for targets mechanism
-	if powerFilter == 'ALL':
-		powerFilter = float('inf')
+	killList = []
 	for i in range(0, count):
-		if targetOwn:
-			cardList = [card for card in table if isCreature(card) and int(card.Power.strip(' +')) <= powerFilter]
+		if(targets[i] in cardList):
+			choice = targets[i]
+			killList.append(choice)
 		else:
-			cardList = [card for card in table if isCreature(card) and not card.owner==me and int(card.Power.strip(' +')) <= powerFilter]
-		if tapFilter != 'ALL':
-			if tapFilter == 'Untap':
-				cardList = [card for card in cardList if card.orientation == Rot0]
-			if tapFilter == 'Tap':
-				cardList = [card for card in cardList if card.orientation == Rot90]
-		if civFilter != "ALL":
-			cardList = [card for card in cardList if re.search(civFilter,card.Civilization)]
-		if len(cardList)==0:
-			whisper("No valid targets on the table.")
-			return	
-		
-		
-		if len(targets) == 0: # if no card is targetted, do it the old fasioned way of popbox
-			whisper("No card targetted...showing a list of valid targets.")
-			choice = askCard2(cardList, 'Choose a Creature to destroy')
-			notify("Hint: You may select targets(Shift + Click) before using the effect.")
-		else:
-			if(targets[i] in cardList):
-				choice = targets[i]
-			else:
-				whisper("Invalid target(s)! Waiting for targets...")
-				return True
-		if type(choice) is not Card:
-			whisper("Action cancelled! Waiting for targets...")
-			return
-		if choice.owner == me:
-			destroy(choice)
-		else:
-			remoteCall(choice.owner,"destroy",choice)
+			whisper("Invalid target(s)! Waiting for targets...")
+			return True
+	
+	for card in killList:
+		remoteCall(card.owner,"destroy",card)
 
 def destroyAll(group, condition = False, powerFilter = 'ALL', civFilter = "ALL", AllExceptFiltered = False):
 	mute()
@@ -864,7 +853,7 @@ def burnShieldKill(count = 1, targetOwnSh = False, powerFilter = 'ALL', killCoun
 		if powerFilter == 'ALL': powerFilter = float('inf')
 		validKillTargets = [c for c in table if isCreature(c) and int(c.Power.strip(' +')) <= powerFilter]
 		if not targetOwnCr:
-			validKillTargets = [c for c in validKillTargets if not card.owner==me]
+			validKillTargets = [c for c in validKillTargets if not c.owner==me]
 			targetCr = [c for c in targetCr if not c.owner==me]
 		if killCount=="ALL":
 			targetCr = validKillTargets
@@ -887,7 +876,7 @@ def burnShieldKill(count = 1, targetOwnSh = False, powerFilter = 'ALL', killCoun
 		return
 	
 	if len(targetSh) != count or len(targetCr) != killCount:
-		whisper("Invalid shields and/or creatures targetted.")
+		whisper("Invalid shields and/or creatures targeted.")
 		return True	# =>will wait for target
 	
 	for shield in targetSh:
@@ -926,42 +915,38 @@ def sacrifice(power = float('inf'), count = 1):
 	
 def bounce(count = 1, opponentOnly = False, toDeckTop = False):
 	mute()
+	if opponentOnly:
+		cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type) and card.owner != me]
+	else:	
+		cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
+	if len(cardList) < 1:
+		whisper("No valid targets on the table.")
+		return
+	
 	targets = [c for c in table if c.targetedBy == me]
-	if len(targets) > 0 and len(targets) != count:
-		whisper("Wrong number of targets! Waiting for targets...")
+	if len(targets) != count:
+		whisper("Wrong number of targets!")
 		return True
+	bounceList=[]
 	for i in range(0,count):
-		if opponentOnly:
-			cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type) and card.owner != me]
-		else:	
-			cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
-		if len(cardList) < 1:
-			whisper("No valid targets on the table.")
-			return
-
-		if len(targets) == 0: # if no card is targetted, do it the old fasioned way of popbox
-			whisper("No card targetted...showing a list of valid targets.")
-			choice = askCard2(cardList, 'Choose a Creature to return')
-			notify("Hint: You may select targets(Shift + Click) before using the effect.")
+		if(targets[i] in cardList):
+			choice = targets[i]
+			bounceList.append(choice)
 		else:
-			if(targets[i] in cardList):
-				choice = targets[i]
-			else:
-				whisper("Wrong target(s)!")
-				return
-		if type(choice) is not Card:
-			whisper("Action cancelled. Waiting for targets...")
+			whisper("Wrong target(s)!")
 			return True
+	
+	for card in bounceList:
 		if toDeckTop:
-			remoteCall(choice.owner,"toDeckTop",choice)
+			remoteCall(choice.owner,"toDeck",choice)
 		else:
 			remoteCall(choice.owner,"toHand",choice)
 
 	
 def bounceAndDiscard(bcount = 1, opponentOnly = True, randomDiscard=True):
 	mute()
-	bounce(bcount, opponentOnly)
-	targetDiscard(randomDiscard)
+	if not bounce(bcount, opponentOnly):
+		targetDiscard(randomDiscard)
 	
 def gear(str):		
 	mute()
@@ -1048,9 +1033,9 @@ def semiReset():
 			cardsInGrave = [c for c in player.piles['Graveyard']]
 			if cardsInHand or cardsInGrave:
 				for card in cardsInHand: 
-					remoteCall(player, 'toDeckTop', card) 
+					remoteCall(player, 'toDeck', card) 
 				for card in cardsInGrave: 
-					remoteCall(player, 'toDeckTop', card)
+					remoteCall(player, 'toDeck', card)
 			remoteCall(player,'shuffle', player.deck)
 			remoteCall(player,'draw', [player.deck, False, 5])
 
@@ -1507,7 +1492,6 @@ def randomDiscard(group, x = 0, y = 0):
 	if len(group) == 0: return
 	card = group.random()
 	toDiscard(card, notifymute = True)
-	rnd(1,10)
 	notify("{} randomly discards {}.".format(me, card))
 
 def mana(group, count = 1, conditional = False, tapped = False):
