@@ -9,6 +9,7 @@ playerside = None
 sideflip = None
 diesides = 20
 shieldMarker = ('Shield', 'a4ba770e-3a38-4494-b729-ef5c89f561b7')
+playStack = []
 
 # Start of Automation code
 
@@ -36,6 +37,7 @@ cardScripts = {
 				'Chaos Worm': { 'onPlay': {  'kill': [] }},
 				'Chief De Baula, Machine King of Mystic Light': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Spell"'] }},
 				'Cobalt Hulcus, Aqua Savage': { 'onPlay': { 'draw': ['me.Deck', 'True'] }},
+				'Corile': { 'onPlay': { 'bounce': ['1', 'True', 'True'] }},				
 				'Craze Valkyrie, the Drastic': { 'onPlay': { 'tapCreature': ['2'] }},
 				'Crimson Maru, the Untamed Flame': { 'onPlay': {  'kill': ['4000'] }},
 				'Cyber N World': { 'onPlay': {  'semiReset': [] }},
@@ -56,6 +58,7 @@ cardScripts = {
 				'Fortress Shell': { 'onPlay': {  'destroyMana': ['2'] }},
 				'Forbos, Sanctum Guardian Q': { 'onPlay': {  'search': ['me.Deck', '1', '"Spell"'] }},
 				'Funky Wizard': { 'onPlay': {  'draw': ['me.Deck', 'True'] }},
+				'Gajirabute, Vile Centurion': { 'onPlay': { 'burnShield': ['1'] }},
 				'Galek, the Shadow Warrior': { 'onPlay': { 'targetDiscard': ['True'] }},
 				'Gardner, the Invoked': { 'onPlay': { 'gear': ['"mana"'] }},
 				'Gigargon': { 'onPlay': {  'search': ['me.piles["Graveyard"]', '2', '"Creature"'] }},
@@ -146,7 +149,7 @@ cardScripts = {
 									  'onMetaMorph': { 'kill': ['6000'] }},
 				'Chains of Sacrifice': { 'onPlay': { 'kill': ['"ALL"','"ALL"','"ALL"','2'], 'sacrifice': [] }},
 				'Clone Factory': { 'onPlay': {  'fromMana': ['2'] }},
-				'Cloned Nightmare': { 'onPlay': {  'targetDiscard': ['True'] }},
+				'Cloned Nightmare': { 'onPlay': {  'clonedDiscard': [] }},
 				'Corpse Charger': { 'onPlay': {  'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
 				'Crimson Hammer': { 'onPlay': { 'kill': ['2000'] }},
 				'Cyber Brain': { 'onPlay': { 'draw': ['me.Deck', 'False', '3'] }},
@@ -266,6 +269,8 @@ cardScripts = {
 				'Vacuum Ray': { 'onPlay': { 'tapCreature': [] }},
 				'Valiant Spark': { 'onPlay': {  'tapCreature': [] },
 									'onMetamorph': { 'tapCreature': ['1','True'] }},
+									
+				'Volcanic Arrows': { 'onPlay': { 'burnShield': ['3', 'True'] }},				
 				'Volcano Charger': { 'onPlay': { 'kill': ['2000'] }},
 				'Wave Rifle': { 'onPlay': { 'gear': ["bounce"] }},
 				'White Knight Spark': { 'onPlay': { 'tapCreature': ['1','True'] }},
@@ -273,7 +278,7 @@ cardScripts = {
 				'XENOM, the Reaper Fortress': { 'onPlay': {  'targetDiscard': ['True'] }},
 				'Zombie Carnival': { 'onPlay': { 'fromGrave': [] }},
 				'Zombie Cyclone': { 'onPlay': {  'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
-		# ON BANISH EFFECTS
+		# ON DESTROY EFFECTS
 				'Akashic First, Electro-Dragon': { 'onDestroy': { 'toHand': ['card'] }},
 				'Akashic Second, Electro-Spirit': { 'onPlay': { 'draw': ['me.Deck', 'True'] }, 'onDestroy': { 'toMana': ['card'] }},
 				'Aqua Agent': { 'onDestroy': { 'toHand': ['card'] }},
@@ -315,6 +320,7 @@ cardScripts = {
 
 def endTurn(args, x=0, y=0):
 	mute()
+	clearPlayStack()
 	nextPlayer = args.player
 	if nextPlayer == None or "":
 		#normally passed without green button
@@ -339,14 +345,20 @@ def resetGame():
 	mute()
 	me.setGlobalVariable("shieldCount", "0")
 	
-
+def onTarget(args):
+	#do a check here if last target is removed just return WIP
+	if playStack:
+		card = playStack.pop()
+		toPlay(card)
 #########intermediate functions#########
 
 def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1):  #askCard function was changed. So using the same name but with the new functionality
+	#this is for showing a dialog box with the cards in the incoming list. Careful, all cards will be visible, even if they're facedown.
 	dlg = cardDlg(list)
 	dlg.title= title
 	
 	if numberToTake == 0:
+		#if this dialog is opened without any card to take, that means it's for rearranging cards.
 		dlg.min, dlg.max = 0,0
 		dlg.text = "Card Order(drag to rearrange):"
 		dlg.show()
@@ -358,19 +370,18 @@ def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1): 
 	return result[0]
 
 def askYN(text="Proceed?", c1="Yes", c2= "No"):
+	#this asks a simple Y N question, but Yes or No can be replaced by other words. Returns 1 if yes, 2 for No and 0 if the box is closed
 	choiceList = [c1, c2]
 	colorsList = ['#FF0000', '#FF0000']
 	choice = askChoice(text, choiceList, colorsList)
 	return choice
 
 def removeIfEvo(card):		
-	"""
-	Will remove passed card from the list of tracked evos/baits
-	returns a list of bait cards if evo was removed
-	return enmpty list if not found or bait was removed
-	"""
+	#Will remove passed card from the list of tracked evos/baits
+	#returns a list of bait cards if evo was removed
+	#returns empty list if not found or bait was removed
+	
 	evolveDict = eval(me.getGlobalVariable('evolution'))
-	#notify("EvolveDict is {}".format(evolveDict))
 	resultList = []
 	for evo in evolveDict.keys():
 			if evo == card._id:
@@ -389,6 +400,8 @@ def removeIfEvo(card):
 	return resultList
 	
 def antiDiscard(card, sourcePlayer):
+	#sourcePlayer = the player trying play the discarding effect, not the target player
+	#le anti-discard check. Still WIP.
 	return False
 	if card in antiDiscardDict:
 		#do shit
@@ -396,6 +409,13 @@ def antiDiscard(card, sourcePlayer):
 	else:
 		return False
 
+def waitForTarget():
+	return
+	
+def clearPlayStack(): #clears any pending plays for a card that's waiting to choose targets etc
+	if playStack:
+		card = playStack.pop()
+		notify("Waiting for target for {} cancelled.".format(card.Name))
 ################ Functions used in the Automation dictionaries.####################
 
 def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", noEvo = True): #Temporary Fix for not allowing Evolutions
@@ -419,6 +439,7 @@ def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter =
 		toPlay(choice)
 
 def drama(shuffle = True, type = 'creature', targetZone = 'battlezone', failZone = 'mana', conditional = True):
+	#drama = getting creatures from top of deck for free
 	mute()
 	if shuffle:
 		me.Deck.shuffle()
@@ -512,11 +533,12 @@ def targetDiscard(randomDiscard = False, targetZone = 'grave', count = 1):
 		remoteCall(targetPlayer,'toShields',cardChoice) 
 	elif targetZone == 'grave':
 		#do anti-discard check here
-		if not remoteCall(targetPlayer, 'antiDiscard', cardChoice, me):
+		if not remoteCall(targetPlayer, 'antiDiscard', [cardChoice, me]):
+			#anti discard will return false if no antiDiscard is available. Remotecalling because...idk might do some things in antiDiscard later. 
+			#Maybe change it to normal call later, and remoteCall from only inside anti-disc.
+			#still WIP
 			remoteCall(targetPlayer,'toDiscard',cardChoice)
-		else:
-			return
-	
+
 def discardAll():
 	mute()
 	currentPlayers = getPlayers()
@@ -532,7 +554,32 @@ def discardAll():
 	cardList = [card for card in targetPlayer.hand]
 	for card in cardList:
 		remoteCall(targetPlayer, 'toDiscard', card)
-		
+	
+def clonedDiscard():
+	mute()
+	currentPlayers = getPlayers()
+	playerList = []
+	for player in currentPlayers:
+		playerList.append(player.name)
+	choicePlayer = askChoice("Pick a player:", playerList)
+	if choicePlayer < 1: return
+	targetPlayer = currentPlayers[choicePlayer-1]
+	cardList = [card for card in targetPlayer.hand]
+	
+	count = 1
+	for player in playerList:
+		for card in player.piles["Graveyard"]:
+			if re.search(card.Name,"Cloned Nightmare"):
+				count += 1
+	notify("Cloned Nightmares in graves:{}".format(count-1))
+	
+	if remoteCall(targetPlayer, 'antiDiscard', ['GENERALCHECK', me]):
+		return
+	
+	for i in range(0,count):
+		remoteCall(targetPlayer,'randomDiscard',targetPlayer.hand)
+			#do some anti-discard inside dat randomdisc function
+
 def fromMana(count = 1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", show = True, toGrave = False, ApplyToAllPlayers = False):
 	mute()
 	if ApplyToAllPlayers == True:
@@ -560,6 +607,7 @@ def fromMana(count = 1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL
 			else: remoteCall(player,"toHand",[choice, show])
 
 def killAndSearch(play = False, singleSearch = False):
+	#looks like this is only used for Transmogrify
 	mute()
 	cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
 	if len(cardList)==0: return	
@@ -702,12 +750,12 @@ def search(group, count = 1, TypeFilter = "ALL" , CivFilter = "ALL", RaceFilter 
 
 def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targetOwn = False):
 	mute()
-	targets = [c for c in table if c.target	and c.targetedBy == me]
-	##notify("Targets: {}".format(len(targets)))
+	
+	targets = [c for c in table if c.targetedBy == me]
 	
 	if len(targets) > 0 and len(targets) != count:
-		whisper("Wrong number of targets!")
-		return
+		whisper("Wrong number of targets! Waiting for targets...")
+		return True
 	if powerFilter == 'ALL':
 		powerFilter = float('inf')
 	for i in range(0, count):
@@ -723,6 +771,7 @@ def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targe
 		if civFilter != "ALL":
 			cardList = [card for card in cardList if re.search(civFilter,card.Civilization)]
 		if len(cardList)==0:
+			whisper("No valid targets on the table.")
 			return	
 		
 		
@@ -734,9 +783,10 @@ def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targe
 			if(targets[i] in cardList):
 				choice = targets[i]
 			else:
-				whisper("Wrong target(s)!")
-				return
+				whisper("Invalid target(s)! Waiting for targets...")
+				return True
 		if type(choice) is not Card:
+			whisper("Action cancelled! Waiting for targets...")
 			return
 		if choice.owner == me:
 			destroy(choice)
@@ -793,20 +843,43 @@ def destroyMana(count = 1):
 			return		
 		remoteCall(choice.owner,"destroy",choice)
 
-def destroyShield(owner = True):
-	### USe targets here otherwise the shields show face up
+def burnShield(count = 1, targetOwn = False):
 	mute()
-	if owner == True:
-			cardList = [card for card in table if isShield(card) and not card.owner==me]
-	else:
-			cardList = [card for card in table if isShield(card) and card.owner==me]
-	if len(cardList)==0:
-			return
-	choice = askCard2(cardList, 'Choose a shield to send to graveyard')
-	if type(choice) is not Card:
-			return		
-	remoteCall(choice.owner,"destroy",[choice,True])
+	targets = [c for c in table if c.targetedBy == me]
+	
+	myShields = len([c for c in table if isShield(c) and c.owner==me])
+	oppShields = len([c for c in table if isShield(c) and c.owner!=me])
+
+	if targetOwn and myShields<count:
+		count = myShields
+	
+	if not targetOwn and oppShields<count:
+		count = oppShields
+	
+	if count==0: #No shields left to burn
+		whisper("No shields left.")
+		return
+	
+	if len(targets) != count:
+		whisper("Please target correct number of shields. Waiting for target...")
+		return True
+	
+	shieldsToBurn = []
+	for card in targets:
+		if not isShield(card):
+			whisper("Please target shield(s)! Waiting for target...")
+			return True
 		
+		if (targetOwn and card.owner == me) or (not targetOwn and card.owner != me):
+			shieldsToBurn.append(card)
+		else:
+			whisper("Wrong player's shields targetted! Waiting for targets...")
+			return True
+	
+	for shield in shieldsToBurn:
+		remoteCall(shield.owner,"destroy",[shield,True])
+
+
 def fromDeck():
 	mute()
 	notify("{} looks at their Deck.".format(me))
@@ -836,18 +909,19 @@ def sacrifice(power = float('inf'), count = 1):
 			return
 		destroy(choice)
 	
-def bounce(count = 1, opponentOnly = False):
+def bounce(count = 1, opponentOnly = False, toDeckTop = False):
 	mute()
-	targets = [c for c in table if c.target	and c.targetedBy == me]
-	if len(targets) != count:
-		whisper("Wrong number of targets!")
-		return
+	targets = [c for c in table if c.targetedBy == me]
+	if len(targets) > 0 and len(targets) != count:
+		whisper("Wrong number of targets! Waiting for targets...")
+		return True
 	for i in range(0,count):
 		if opponentOnly:
 			cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type) and card.owner != me]
 		else:	
 			cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
 		if len(cardList) < 1:
+			whisper("No valid targets on the table.")
 			return
 
 		if len(targets) == 0: # if no card is targetted, do it the old fasioned way of popbox
@@ -861,10 +935,10 @@ def bounce(count = 1, opponentOnly = False):
 				whisper("Wrong target(s)!")
 				return
 		if type(choice) is not Card:
-			whisper("Action cancelled.")
-			return
-		if choice.owner==me:
-			toHand(choice)
+			whisper("Action cancelled. Waiting for targets...")
+			return True
+		if toDeckTop:
+			remoteCall(choice.owner,"toDeckTop",choice)
 		else:
 			remoteCall(choice.owner,"toHand",choice)
 
@@ -1039,6 +1113,7 @@ def toHyperspatial(card, x = 0, y = 0, notifymute = False):
 
 def moveCards(args):
 	mute()
+	clearPlayStack()  #clear the playstack if ANY CARD moved from table
 	player = args.player
 	
 	fromGroup = args.fromGroups[0]
@@ -1080,35 +1155,35 @@ def moveCards(args):
 			
 def isCreature(card):
 	mute()
-	if card in table and card.isFaceUp and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type):
+	if card in table and not isShield(card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type):
 		return True
 	else:
 		return False
 
 def isGod(card):
 	mute()
-	if card in table and card.isFaceUp and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type) and re.search("God", card.Race):
+	if card in table and not isShield(card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type) and re.search("God", card.Race):
 		return True
 	else:
 		return False
 
 def isGear(card):
 	mute()
-	if card in table and card.isFaceUp and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Cross Gear", card.Type):
+	if card in table and not isShield(card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Cross Gear", card.Type):
 		return True
 	else:
 		return False
 
 def isFortress(card):
 	mute()
-	if card in table and card.isFaceUp and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Fortress", card.Type) and not re.search("Dragheart", card.Type):
+	if card in table and not isShield(card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Fortress", card.Type) and not re.search("Dragheart", card.Type):
 		return True
 	else:
 		return False
 
 def isMana(card):
 	mute()
-	if card in table and card.isFaceUp and not card.orientation == Rot90 and not card.orientation == Rot0:
+	if card in table and not isShield(card) and not card.orientation == Rot90 and not card.orientation == Rot0:
 		return True
 	else:
 		return False
@@ -1117,8 +1192,10 @@ def isShield(card):
 	mute()
 	if card in table and not card.isFaceUp:
 		return True
-	else:
-		return False
+	elif card.markers[shieldMarker]>0:
+		return True
+	
+	return False
 
 def isPsychic(card):
 	mute()
@@ -1228,6 +1305,7 @@ def clear(card, x = 0, y = 0):
 
 def setup(group, x = 0, y = 0):
 	mute()
+	clearPlayStack()
 	
 	cardsInTable = [c for c in table if c.controller == me and c.owner == me and not isPsychic(c)]
 	cardsInHand = [c for c in me.hand if not isPsychic(c)]
@@ -1282,6 +1360,7 @@ def rollDie(group, x = 0, y = 0):
 
 def untapAll(group=table, x = 0, y = 0):
 	mute()
+	clearPlayStack()
 	for card in group:
 		if not card.owner == me:
 			continue
@@ -1293,6 +1372,7 @@ def untapAll(group=table, x = 0, y = 0):
 	
 def tap(card, x = 0, y = 0):
 	mute()
+	clearPlayStack()
 	card.orientation ^= Rot90
 	if card.orientation & Rot90 == Rot90:
 		notify('{} taps {}.'.format(me, card))
@@ -1483,9 +1563,12 @@ def toMana(card, x = 0, y = 0, notifymute = False, checkEvo = True, alignCheck =
 		baitList = removeIfEvo(card)
 		for baitCard in baitList:
 			toMana(baitCard, checkEvo = False, alignCheck = False)
+	if isShield(card):
+		card.moveTo(me.hand) #in case it is charged from shields
 	card.moveToTable(0,0)
 	card.orientation = Rot180
-	if re.search("/", card.Civilization):
+	
+	if re.search("/", card.Civilization):	#multi civ card
 		card.orientation = Rot270
 	if alignCheck:
 		align()
@@ -1523,10 +1606,10 @@ def toShields(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEv
 		
 def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffects = False):
 	mute()
+	clearPlayStack()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
 	if re.search("Evolution", card.Type):
 		targets = [c for c in table
 					if c.controller == me
-					and c.targetedBy
 					and c.targetedBy == me]
 		targets = [c for c in targets
 					if isCreature(c)
@@ -1548,7 +1631,7 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 			evolveDict[card._id] = targetList
 			me.setGlobalVariable("evolution", str(evolveDict))
 			evolveText = ", evolving {}".format(", ".join([c.name for c in targets]))
-	if card.group == table:
+	if isMana(card) or isShield(card):
 		card.moveTo(me.hand)
 	card.moveToTable(0,0)
 	if shieldMarker in card.markers:
@@ -1557,17 +1640,24 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 	if notifymute == False:
 		notify("{} plays {}{}.".format(me, card, evolveText))
 	
+	playStack.append(card) #This card is being played right now, push into playStack
+	
 	if not ignoreEffects:
 		if metamorph() and cardScripts.get(card.name,{}).get('onMetamorph',{}):
 				functionDict = cardScripts.get(card.name).get('onMetamorph')
 				for function in functionDict:
 					argList = functionDict.get(function)
 					eval(function)(*[eval(arg) for arg in argList])
+
 		elif cardScripts.get(card.name,{}).get('onPlay',{}):
 			functionDict = cardScripts.get(card.name).get('onPlay')
 			for function in functionDict:
 				argList = functionDict.get(function)
-				eval(function)(*[eval(arg) for arg in argList])
+				waitForTgt = eval(function)(*[eval(arg) for arg in argList])
+				#any on-play function/effect returning true => Wait for target- waitForTarget() does not thing currenty, onTarget function triggers the playStack
+				if waitForTgt:
+					waitForTarget()
+					return
 			
 	if card.Type == "Spell":
 		if re.search("Charger", card.name) and re.search("Charger", card.rules):
@@ -1576,7 +1666,8 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 		else:
 			rnd(1,100)
 			card.moveTo(card.owner.piles['Graveyard'])
-			
+	
+	playStack.pop() #card finished playing, pop from playstack
 	####### check some effect-stack here for other play resolving(not implemented yet) #############
 	
 def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEvo = True):
@@ -1618,8 +1709,7 @@ def toHand(card, show = True, x = 0, y = 0, alignCheck = True, checkEvo = True):
 		#if you show first then move to hand 'card' won't show card name to the owner in the notify message
 		card.moveTo(card.owner.hand)
 		notify("{} moved {} to hand from {}.".format(me, card, src.name))
-	
-	
+
 	if checkEvo:
 		baitList = removeIfEvo(card)
 		for baitCard in baitList:
@@ -1628,23 +1718,17 @@ def toHand(card, show = True, x = 0, y = 0, alignCheck = True, checkEvo = True):
 	if alignCheck:
 		align()
 
-def toDeckTop(card, x = 0, y = 0):
-	mute()
-	toDeck(card)
-
 def toDeckBottom(card, x = 0, y = 0):
 	mute()
 	toDeck(card, bottom = True)
 
 def toDeck(card, bottom = False):
 	mute()
-	
 	if isPsychic(card):
 		toHyperspatial(card)
 		return
 	cardList = removeIfEvo(card) #baits
-	if len(cardList) == 0:
-		cardList = [card]
+	cardList.append(card) #top card as well
 	while len(cardList) > 0:
 		if len(cardList) == 1:
 			choice = 1
