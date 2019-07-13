@@ -9,7 +9,7 @@ playerside = None
 sideflip = None
 diesides = 20
 shieldMarker = ('Shield', 'a4ba770e-3a38-4494-b729-ef5c89f561b7')
-playStack = []
+waitingCard = [] #Cards waiting for targets. Please replace this with FUNCTIONS waiting for targets later. If a card calls 2 functions both will happen again otherwise
 
 # Start of Automation code
 
@@ -58,7 +58,7 @@ cardScripts = {
 				'Fortress Shell': { 'onPlay': {  'destroyMana': ['2'] }},
 				'Forbos, Sanctum Guardian Q': { 'onPlay': {  'search': ['me.Deck', '1', '"Spell"'] }},
 				'Funky Wizard': { 'onPlay': {  'draw': ['me.Deck', 'True'] }},
-				'Gajirabute, Vile Centurion': { 'onPlay': { 'burnShield': ['1'] }},
+				'Gajirabute, Vile Centurion': { 'onPlay': { 'burnShieldKill': ['1'] }},
 				'Galek, the Shadow Warrior': { 'onPlay': { 'targetDiscard': ['True'] }},
 				'Gardner, the Invoked': { 'onPlay': { 'gear': ['"mana"'] }},
 				'Gigargon': { 'onPlay': {  'search': ['me.piles["Graveyard"]', '2', '"Creature"'] }},
@@ -245,6 +245,7 @@ cardScripts = {
 				'Screw Rocket': { 'onPlay': { 'gear': ['"kill"'] }},
 				'Seventh Tower': { 'onPlay': { 'mana': ['me.Deck'] },
 									'onMetamorph': { 'mana': ['me.Deck','3'] }},
+				'Searing Wave': { 'onPlay': { 'burnShieldKill': ['1', 'True', '3000', '"ALL"', 'False'] }},				
 				'Solar Grace': { 'onPlay': { 'tapCreature': [] }},
 				'Solar Ray': { 'onPlay': { 'tapCreature': [] }},
 				'Solar Trap': { 'onPlay': { 'tapCreature': [] }},
@@ -269,8 +270,7 @@ cardScripts = {
 				'Vacuum Ray': { 'onPlay': { 'tapCreature': [] }},
 				'Valiant Spark': { 'onPlay': {  'tapCreature': [] },
 									'onMetamorph': { 'tapCreature': ['1','True'] }},
-									
-				'Volcanic Arrows': { 'onPlay': { 'burnShield': ['3', 'True'] }},				
+				'Volcanic Arrows': { 'onPlay': { 'burnShieldKill': ['1', 'True', '6000', '1', 'False'] }},				
 				'Volcano Charger': { 'onPlay': { 'kill': ['2000'] }},
 				'Wave Rifle': { 'onPlay': { 'gear': ["bounce"] }},
 				'White Knight Spark': { 'onPlay': { 'tapCreature': ['1','True'] }},
@@ -278,7 +278,7 @@ cardScripts = {
 				'XENOM, the Reaper Fortress': { 'onPlay': {  'targetDiscard': ['True'] }},
 				'Zombie Carnival': { 'onPlay': { 'fromGrave': [] }},
 				'Zombie Cyclone': { 'onPlay': {  'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
-		# ON DESTROY EFFECTS
+		# ON DESTROY EFFECTS, these have a bug for some reason
 				'Akashic First, Electro-Dragon': { 'onDestroy': { 'toHand': ['card'] }},
 				'Akashic Second, Electro-Spirit': { 'onPlay': { 'draw': ['me.Deck', 'True'] }, 'onDestroy': { 'toMana': ['card'] }},
 				'Aqua Agent': { 'onDestroy': { 'toHand': ['card'] }},
@@ -320,7 +320,7 @@ cardScripts = {
 
 def endTurn(args, x=0, y=0):
 	mute()
-	clearPlayStack()
+	clearWaitingCard()
 	nextPlayer = args.player
 	if nextPlayer == None or "":
 		#normally passed without green button
@@ -346,10 +346,13 @@ def resetGame():
 	me.setGlobalVariable("shieldCount", "0")
 	
 def onTarget(args):
-	#do a check here if last target is removed just return WIP
-	if playStack:
-		card = playStack.pop()
+	numberOfTargets = len([c for c in table if c.targetedBy==me])
+	if numberOfTargets==0:
+		return
+	if waitingCard:
+		card = waitingCard.pop()
 		toPlay(card)
+		
 #########intermediate functions#########
 
 def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1):  #askCard function was changed. So using the same name but with the new functionality
@@ -410,12 +413,15 @@ def antiDiscard(card, sourcePlayer):
 		return False
 
 def waitForTarget():
+	whisper("Waiting for targets. Please (re)target...")
+	whisper("[Esc to cancel]")
 	return
 	
-def clearPlayStack(): #clears any pending plays for a card that's waiting to choose targets etc
-	if playStack:
-		card = playStack.pop()
+def clearWaitingCard(): #clears any pending plays for a card that's waiting to choose targets etc
+	if waitingCard:
+		card = waitingCard.pop()
 		notify("Waiting for target for {} cancelled.".format(card.Name))
+
 ################ Functions used in the Automation dictionaries.####################
 
 def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", noEvo = True): #Temporary Fix for not allowing Evolutions
@@ -751,11 +757,11 @@ def search(group, count = 1, TypeFilter = "ALL" , CivFilter = "ALL", RaceFilter 
 def kill(powerFilter = 'ALL', tapFilter='ALL', civFilter='ALL', count = 1, targetOwn = False):
 	mute()
 	
-	targets = [c for c in table if c.targetedBy == me]
+	targets = [c for c in table if c.targetedBy == me and isCreature(target)]
 	
-	if len(targets) > 0 and len(targets) != count:
-		whisper("Wrong number of targets! Waiting for targets...")
-		return True
+	if len(targets) != count:
+		whisper("Wrong number of targets!")
+		return True	#return true activates the cardStack/waiting for targets mechanism
 	if powerFilter == 'ALL':
 		powerFilter = float('inf')
 	for i in range(0, count):
@@ -843,42 +849,51 @@ def destroyMana(count = 1):
 			return		
 		remoteCall(choice.owner,"destroy",choice)
 
-def burnShield(count = 1, targetOwn = False):
+def burnShieldKill(count = 1, targetOwnSh = False, powerFilter = 'ALL', killCount = 0, targetOwnCr = False):#Mainly for destroying shields. Kill is optional.
 	mute()
 	targets = [c for c in table if c.targetedBy == me]
-	
+	targetSh = []
+	targetCr = []
+	for c in targets:
+		if isShield(c):
+			targetSh.append(c)
+		elif isCreature(c):
+			targetCr.append(c)
+				
+	if killCount=="ALL" or killCount>0:
+		if powerFilter == 'ALL': powerFilter = float('inf')
+		validKillTargets = [c for c in table if isCreature(c) and int(c.Power.strip(' +')) <= powerFilter]
+		if not targetOwnCr:
+			validKillTargets = [c for c in validKillTargets if not card.owner==me]
+			targetCr = [c for c in targetCr if not c.owner==me]
+		if killCount=="ALL":
+			targetCr = validKillTargets
+			killCount = len(targetCr)
+		else:
+			killCount = min(killCount, len(validKillTargets))
+
 	myShields = len([c for c in table if isShield(c) and c.owner==me])
 	oppShields = len([c for c in table if isShield(c) and c.owner!=me])
 
-	if targetOwn and myShields<count:
-		count = myShields
+	if targetOwnSh:
+		targetSh = [c for c in targetSh if c.owner==me]
+		count = min(count,myShields)
+	else:
+		targetSh = [c for c in targetSh if c.owner!=me]
+		count = min(count,oppShields)
 	
-	if not targetOwn and oppShields<count:
-		count = oppShields
-	
-	if count==0: #No shields left to burn
-		whisper("No shields left.")
+	if count==0 and killCount==0: #No shields left to burn, nothing to kill
+		whisper("No valid targets.")
 		return
 	
-	if len(targets) != count:
-		whisper("Please target correct number of shields. Waiting for target...")
-		return True
+	if len(targetSh) != count or len(targetCr) != killCount:
+		whisper("Invalid shields and/or creatures targetted.")
+		return True	# =>will wait for target
 	
-	shieldsToBurn = []
-	for card in targets:
-		if not isShield(card):
-			whisper("Please target shield(s)! Waiting for target...")
-			return True
-		
-		if (targetOwn and card.owner == me) or (not targetOwn and card.owner != me):
-			shieldsToBurn.append(card)
-		else:
-			whisper("Wrong player's shields targetted! Waiting for targets...")
-			return True
-	
-	for shield in shieldsToBurn:
+	for shield in targetSh:
 		remoteCall(shield.owner,"destroy",[shield,True])
-
+	for card in targetCr:
+		remoteCall(card.owner,"destroy",card)
 
 def fromDeck():
 	mute()
@@ -1113,7 +1128,7 @@ def toHyperspatial(card, x = 0, y = 0, notifymute = False):
 
 def moveCards(args):
 	mute()
-	clearPlayStack()  #clear the playstack if ANY CARD moved from table
+	clearWaitingCard()  #clear the waitingCard if ANY CARD moved from table
 	player = args.player
 	
 	fromGroup = args.fromGroups[0]
@@ -1299,13 +1314,15 @@ def align():
 			c.moveToTable(x,y)
 		
 
-def clear(card, x = 0, y = 0):
+def clear(group, x = 0, y = 0):
 	mute()
-	card.target(False)
+	clearWaitingCard()
+	for card in group:
+		card.target(False)
 
 def setup(group, x = 0, y = 0):
 	mute()
-	clearPlayStack()
+	clearWaitingCard()
 	
 	cardsInTable = [c for c in table if c.controller == me and c.owner == me and not isPsychic(c)]
 	cardsInHand = [c for c in me.hand if not isPsychic(c)]
@@ -1360,7 +1377,7 @@ def rollDie(group, x = 0, y = 0):
 
 def untapAll(group=table, x = 0, y = 0):
 	mute()
-	clearPlayStack()
+	clearWaitingCard()
 	for card in group:
 		if not card.owner == me:
 			continue
@@ -1372,7 +1389,7 @@ def untapAll(group=table, x = 0, y = 0):
 	
 def tap(card, x = 0, y = 0):
 	mute()
-	clearPlayStack()
+	clearWaitingCard()
 	card.orientation ^= Rot90
 	if card.orientation & Rot90 == Rot90:
 		notify('{} taps {}.'.format(me, card))
@@ -1606,7 +1623,7 @@ def toShields(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEv
 		
 def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffects = False):
 	mute()
-	clearPlayStack()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
+	clearWaitingCard()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
 	if re.search("Evolution", card.Type):
 		targets = [c for c in table
 					if c.controller == me
@@ -1640,7 +1657,7 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 	if notifymute == False:
 		notify("{} plays {}{}.".format(me, card, evolveText))
 	
-	playStack.append(card) #This card is being played right now, push into playStack
+	waitingCard.append(card) #This card is being played right now, push into waitingCard
 	
 	if not ignoreEffects:
 		if metamorph() and cardScripts.get(card.name,{}).get('onMetamorph',{}):
@@ -1654,7 +1671,7 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 			for function in functionDict:
 				argList = functionDict.get(function)
 				waitForTgt = eval(function)(*[eval(arg) for arg in argList])
-				#any on-play function/effect returning true => Wait for target- waitForTarget() does not thing currenty, onTarget function triggers the playStack
+				#any on-play function/effect returning true => Wait for target- waitForTarget() does not thing currenty, onTarget function triggers the waitingCard
 				if waitForTgt:
 					waitForTarget()
 					return
@@ -1667,7 +1684,7 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 			rnd(1,100)
 			card.moveTo(card.owner.piles['Graveyard'])
 	
-	playStack.pop() #card finished playing, pop from playstack
+	waitingCard.pop() #card finished playing, pop from waitingCard
 	####### check some effect-stack here for other play resolving(not implemented yet) #############
 	
 def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEvo = True):
