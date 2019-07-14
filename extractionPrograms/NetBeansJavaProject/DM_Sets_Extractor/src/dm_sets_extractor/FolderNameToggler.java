@@ -3,7 +3,8 @@ package dm_sets_extractor;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
+//Toggle the repo folder names b/w set name and set ID
+//WARNING: This will NOT work if you the folder open or a file inside it open in any program
 public class FolderNameToggler {
 
     public static void main(String args[]) throws Exception {
@@ -54,7 +55,7 @@ public class FolderNameToggler {
                 } else {
                     System.out.println("wtf image Folder already exists!");
                 }
-
+                
                 
             }
 
