@@ -183,7 +183,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more light cards in your mana zone, this creature gets 'shield trigger'.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and add it to its owner's shields face down.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more light cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and add it to its owner's shields face down.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="5" />
 		</card>
@@ -219,7 +219,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more water cards in your mana zone, this creature gets 'shield trigger'.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and return it to its owner's hand.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more water cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and return it to its owner's hand.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="7" />
 		</card>
@@ -267,7 +267,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more darkness cards in your mana zone, this creature gets 'shield trigger'.&#xd;&#xa; When you put this creature into the battle zone, each of your opponent's creatures gets -2000 power. (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more darkness cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, each of your opponent's creatures gets -2000 power. (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="11" />
 		</card>
@@ -291,7 +291,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more fire cards in your mana zone, this creature gets 'shield trigger'.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and put it into its owner's graveyard.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more fire cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and put it into its owner's graveyard.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="13" />
 		</card>
@@ -351,7 +351,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more nature cards in your mana zone, this creature gets 'shield trigger'.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards in the battle zone that costs 5 or less and put it into it's owner mana zone.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more nature cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards in the battle zone that costs 5 or less and put it into it's owner mana zone.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="17" />
 		</card>
@@ -471,7 +471,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Choose one of your opponent's creatures in the battle zone. That creature gets -6000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Recycle" />
+			<property name="Rules" value="Choose one of your opponent's creatures in the battle zone. That creature gets -6000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Recycle [Darkness]6 (You may pay 6 mana to cast this spell from your graveyard. After you cast, put this spell on the bottom of your deck.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="26" />
 		</card>
@@ -535,19 +535,7 @@
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="31" />
 		</card>
-
-		<card name="Holy Land Rebirth" id="3c699498-f6ee-4073-8904-bd2577bc82c0">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value="5" />
-			<property name="Type" value="Spell" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Put all cards in your graveyard into your mana zone tapped." />
-			<property name="Rarity" value="Uncommon" />
-			<property name="Number" value="32" />
-		</card>
-
+		
 		<card name="Adventuo, Adventurous Wings" id="1e1eeea0-eb4b-498f-a0df-bb5d78c05dcf">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
@@ -567,7 +555,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Choose one of your opponent's creatures in the battle zone and tap it.&#xd;&#xa;Recycle" />
+			<property name="Rules" value="Choose one of your opponent's creatures in the battle zone and tap it.&#xd;&#xa; Recycle [Light]3 (You may pay 3 mana to cast this spell from your graveyard. After you cast, put this spell on the bottom of your deck.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="34" />
 		</card>
@@ -591,7 +579,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Liquid People Sen" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="{SHIELD TRIGGER}" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;{BLOCKER}" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="36" />
 		</card>
@@ -620,18 +608,6 @@
 			<property name="Number" value="38" />
 		</card>
 
-		<card name="Emergency Typhoon" id="2a4dc0c7-0602-4c21-96ab-4b3d9342cb54">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value="2" />
-			<property name="Type" value="Spell" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="{SHIELD TRIGGER} &#xd;&#xa; Draw up to 2 cards. Then discard a card from your hand." />
-			<property name="Rarity" value="Common" />
-			<property name="Number" value="39" />
-		</card>
-
 		<card name="Hulcus Draw, Continuous Chant" id="be7b1ad9-f958-40af-a201-0d090f0de32c">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
@@ -639,7 +615,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Draw a card.&#xd;&#xa;Recycle" />
+			<property name="Rules" value="Draw a card.&#xd;&#xa; Recycle-[Water]3 (You may pay 3 mana to cast this spell from your graveyard. After you cast, put this spell on the bottom of your deck.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="40" />
 		</card>
@@ -747,7 +723,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Destroy one of your opponent's creatures that has 'blocker'. &#xd;&#xa;Recycle" />
+			<property name="Rules" value="Destroy one of your opponent's creatures that has 'blocker'. &#xd;&#xa; Recycle-[Fire]2 (You may pay 2 mana to cast this spell from your graveyard. After you cast, put this spell on the bottom of your deck.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="49" />
 		</card>
@@ -795,7 +771,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Put the top 2 cards of your deck into your mana zone.&#xd;&#xa;Recycle" />
+			<property name="Rules" value="Put the top 2 cards of your deck into your mana zone.&#xd;&#xa; Recycle - [Nature]8 (You may pay 8 mana to cast this spell from your graveyard. After you cast, put this spell on the bottom of your deck.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="53" />
 		</card>
