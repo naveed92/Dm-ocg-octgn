@@ -1607,7 +1607,7 @@ def toShields(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEv
 		
 def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffects = False):
 	mute()
-	clearWaitingCard()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
+	#clearWaitingCard()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
 	if re.search("Evolution", card.Type):
 		targets = [c for c in table
 					if c.controller == me
@@ -1664,9 +1664,11 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 		if re.search("Charger", card.name) and re.search("Charger", card.rules):
 			rnd(1,100)
 			toMana(card)
+			align()
 		else:
 			rnd(1,100)
 			card.moveTo(card.owner.piles['Graveyard'])
+			align()
 	
 	waitingCard.pop() #card finished playing, pop from waitingCard
 	####### check some effect-stack here for other play resolving(not implemented yet) #############
