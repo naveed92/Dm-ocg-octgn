@@ -450,17 +450,6 @@
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="99" />
 		</card>
-		<card name="Blazing Tiger, Crimson Lord" id="2c86e11d-7ee2-480c-9a10-4fb092d7057f">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="7" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Flame Monster/Samurai" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; When you put this creature into the battle zone, destroy all your opponent&quot;s creatures that have power 2000 or less. " />
-			<property name="Power" value="2000" />
-			<property name="Rarity" value="Rare" />
-			<property name="Number" value="15" />
-		</card>
 		<card name="Vorse Red Fire Dragon" id="e025cee0-d509-470c-87fe-f9ac9a3e8c9c">
 			<property name="Format" value="Set17, Set35, OCG" />
 			<property name="Civilization" value="Fire" />
@@ -1806,6 +1795,18 @@
 		</card>
 		
 		<card name="Super Dragon Machine Dolzark" id="b78076a1-eecf-4cc1-9bbc-009b90930edf">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire/Nature" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon/Earth Dragon" />
+			<property name="Rules" value="(This creature is put into your manazone tapped) &#xd;&#xa;Double Breaker. &#xd;&#xa;Whenever one of your other creatures that has 'Dragon' in it's race attacks, you may choose one of your opponent's creatures in the battlezone that has power 5000 or less and put it into his mana zone." />
+			<property name="Power" value="7000" />
+			<property name="Rarity" value="Super Rare" />
+			<property name="Number" value="P0/Y3" />
+		</card>
+		
+		<card name="Super Dragon Machine Dolzark" id="de4c01ce-5f8c-4332-8953-dbb2c9d18ab2">
 			<property name="Format" value="TCG, Set17, Set35, OCG" />
 			<property name="Civilization" value="Fire/Nature" />
 			<property name="Cost" value="6" />
