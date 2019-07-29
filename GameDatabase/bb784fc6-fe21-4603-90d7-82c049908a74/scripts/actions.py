@@ -115,7 +115,7 @@ cardScripts = {
 				'Self-Destructing Gil Poser': { 'onPlay': { 'suicide': ['"Self-Destructing Gil Poser"', 'kill', '2000'] }},
 				'Sir Navaal, Thunder Mecha Knight': { 'onPlay': { 'fromMana': ['1','"Spell"'] }},
 				'Sir Virginia, Mystic Light Insect': { 'onPlay': {  'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
-                'Skysword, the Savage Vizier': { 'onPlay': {  'skysword': ['me.Deck'] }},
+                'Skysword, the Savage Vizier': { 'onPlay': {  'mana': ['me.Deck', '1', 'False', 'False', 'shields', '[me.Deck]'] }},
 				'Solidskin Fish': { 'onPlay': { 'fromMana': [] }},
 				'Spiritual Star Dragon': { 'onPlay': { 'fromDeck': [] }},
 				'Splash Zebrafish': { 'onPlay': { 'fromMana': [] }},
@@ -169,7 +169,7 @@ cardScripts = {
 				'Energy Stream': { 'onPlay': { 'draw': ['me.Deck', 'False', '2'] }},
 				'Eureka Charger': { 'onPlay': { 'draw': ['me.Deck'] }},
 				'Eureka Program': { 'onPlay': { 'eurekaProgram': ['True'] }},
-                'Faerie Crystal': { 'onPlay': { 'mana': ['me.Deck'] }},
+                'Faerie Crystal': { 'onPlay': { 'mana': ['me.Deck','1', 'False', 'False', '"ManaIfCiv"', '["Zero"]'] }},
 				'Faerie Life': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Faerie Miracle': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Faerie Shower': { 'onPlay': { 'lookAtTopCards': ['2','"card"','"hand"','"mana"', 'False'] }},
@@ -179,6 +179,7 @@ cardScripts = {
 				'Flood Valve': { 'onPlay': { 'fromMana': [] }},
 				'Gardening Drive': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Gatling Cyclone': { 'onPlay': {  'kill': ['2000'] }},
+				'Geo Bronze Magic': {'onPlay': {'mana':['me.Deck','1', 'False', 'False', '"DrawIfCiv"', '["Fire", "Light"]']}},
 				'Ghost Clutch': { 'onPlay': { 'targetDiscard': ['True'] }},
 				'Ghost Touch': { 'onPlay': { 'targetDiscard': ['True'] }},
 				'Goren Cannon': { 'onPlay': { 'kill': ['3000'] }},
@@ -198,7 +199,7 @@ cardScripts = {
 				'Hyperspatial Faerie Hole': { 'onPlay': { 'mana': ['me.Deck'] }},
 				'Hyperspatial Revive Hole': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},
 				'Infernal Smash': { 'onPlay': { 'kill': [] }},
-				'Intense Vacuuming Twist': { 'onPlay': { 'lookAtTopCards': ['5'] }},				
+				'Intense Vacuuming Twist': { 'onPlay': { 'lookAtTopCards': ['5', '"card"', '"hand"', '"bottom"', 'True', '"Bounce"','["Fire","Nature"]']}},
 				'Invincible Abyss': { 'onPlay': { 'destroyAll': ['[card for card in table if card.owner != me]', 'True'] }},
 				'Invincible Aura': { 'onPlay': { 'shields': ['me.Deck', '3', 'True'] }},
 				'Invincible Technology': { 'onPlay': { 'search': ['me.Deck','len(me.Deck)'] }},
@@ -231,7 +232,7 @@ cardScripts = {
 				'Phantom Dragon\'s Flame': { 'onPlay': {  'kill': ['2000'] }},
 				'Phantasm Clutch': { 'onPlay': { 'kill': ['"ALL"','"Tap"'] }},
 				'Pixie Cocoon': { 'onPlay': { 'fromMana': ['1', '"Creature"'], 'toMana': ['card'] }},
-				'Pixie Life': { 'onPlay': { 'mana': ['me.Deck'] }},
+				'Pixie Life': { 'onPlay': {'mana': ['me.Deck', '1', 'False', 'False', 'fromMana', '[1, "ALL", "Zero"]']}},
 				'Primal Scream':  { 'onPlay': { 'mill': ['me.Deck', '4', 'True'], 'search': ['me.piles["Graveyard"]', '1', '"Creature"'] }},				
 				'Punish Hold': { 'onPlay': { 'tapCreature': ['2'] }},
 				'Purgatory Force': { 'onPlay': { 'search': ['me.piles["Graveyard"]', '2', '"Creature"'] }},
@@ -480,7 +481,7 @@ def drama(shuffle = True, type = 'creature', targetZone = 'battlezone', failZone
 		notify("{} puts {} back on top of deck".format(me, card))
 		card.isFaceUp = False
 	
-def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bottom', reveal = True):
+def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bottom', reveal = True, specialaction = 'NONE', specialaction_civs=[] ):
 	mute()
 	notify("{} looks at the top {} cards of their deck".format(me,num))
 	cardList = [card for card in me.Deck.top(num)]
@@ -509,6 +510,11 @@ def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bot
 			else:
 				card.moveToBottom(me.Deck)
 				notify("{} moved a card to the bottom of their deck.".format(me))
+	if specialaction == "Bounce":
+		for civs in specialaction_civs:
+			if re.search(civs, card.properties['Civilization']):
+				bounce()
+				return
 	
 def targetDiscard(randomDiscard = False, targetZone = 'grave', count = 1):
 	mute()
@@ -1494,7 +1500,7 @@ def randomDiscard(group, x = 0, y = 0):
 	toDiscard(card, notifymute = True)
 	notify("{} randomly discards {}.".format(me, card))
 
-def mana(group, count = 1, conditional = False, tapped = False):
+def mana(group, count = 1, conditional = False, tapped = False, postAction = "NONE", postArgs=[]):
 	mute()
 	if conditional:
 		choiceList = ['Yes', 'No']
@@ -1509,18 +1515,29 @@ def mana(group, count = 1, conditional = False, tapped = False):
 		if tapped and card.orientation & Rot90 != Rot90:
 					card.orientation ^= Rot90
 		notify("{} charges {} from top of {} as mana.".format(me, card.name, group.name))
-		
-def skysword(group, count = 1, x = 0, y = 0):
-	mute()
-	for i in range(0,count):
-		if len(group) == 0: return
-		card = group[0]
-		toMana(card, notifymute = True)
-		notify("{} charges top card of {} as mana.".format(me, group.name))
-	for i in range(0,count):
-		card = group[0]
-		toShields(card, notifymute = True)
-		notify("{} places top card of {} as shield.".format(me, group.name))
+	
+	doPostAction(card, postAction, postArgs)
+
+def doPostAction(card, postAction, postArgs): 
+	#does something more in the effect, might be based on what the first card was; eg: Geo Bronze Magic or simple stuff like Skysword(shield comes after mana)
+	#implement BounceIfCiv for Intense Vacuuming Twist? Maybe make a whole different function for ifCiv or ifRace just to evaluate the conditon based on args
+	#For example, if there is "IfCiv" in postAction, check args for the civ, if there's "ifRace"(eg Eco Aini) etc. -> This can be done in a separate function instead of here
+	if postAction=="NONE":
+		return
+	if postAction=="DrawIfCiv": #eg Geo Bronze Magic
+		for civs in postArgs:
+			if re.search(civs, card.properties['Civilization']):
+				draw(me.Deck, True)
+				break
+		return
+	if postAction=="ManaIfCiv": #eg Faerie Crystal
+		for civs in postArgs:
+			if re.search(civs, card.properties['Civilization']):
+				mana(me.Deck)
+				break
+		return
+
+	postAction(*postArgs) 	#simple eval of a function without any condition, eg. Skysword	
 
 def massMana(group, conditional = False, x=0, y=0):
 		mute()
