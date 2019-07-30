@@ -773,6 +773,18 @@
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="37" />
 		</card>
+		
+		<card name="Flameburn Dragon" id="bd13d634-13a2-4918-a05b-ab23103c71a9">
+			<property name="Format" value="Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="6" />
+			<property name="Type" value="Creature" />
+			<property name="Race" value="Armored Dragon" />
+			<property name="Rules" value="When you put this creature into the battle zone, destroy one of your opponent's creature that has power 4000 or less." />
+			<property name="Power" value="5000" />
+			<property name="Rarity" value="Common" />
+			<property name="Number" value="37" />
+		</card>
 
 		<card name="Cassiopeia Story, Holy Emperor" id="beef5856-ea82-4e73-8010-7557c888f72b">
 			<property name="Format" value="Set35, OCG" />
