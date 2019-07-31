@@ -20,30 +20,6 @@
 		</pack>
 	</packaging>
 	<cards>
-		<card name="Metal Avenger Revenge, Nu Dragon Edge" id="441874e7-73f2-4a27-8156-80c9086d7d16">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value="7" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Crystal Command Dragon/Liquid People Sen/Draguner" />
-			<property name="Power" value="6000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less or a water dragheart that costs 5 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa; When you put this creature into the battle zone, you may draw a card.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Secret Rare" />
-			<property name="Number" value="㊙1d" />
-		</card>
-
-		<card name="Hellborof, Supreme Dragon Edge" id="5af06d78-f673-4907-91d1-14a1c1fabb64">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value="7" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Demon Command Dragon/Funky Knightmare/Draguner" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less or a darkness dragheart that costs 5 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa; When you put this creature into the battle zone, you may put the top 2 cards of your deck into your graveyard.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Secret Rare" />
-			<property name="Number" value="㊙2d" />
-		</card>
-
 		<card name="Heart Burn, Battle General Galaxy Fortress" id="627ca3a6-298c-4b78-900e-7b9a1785db83" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
@@ -375,7 +351,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Strike Back&#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack players." />
+			<property name="Rules" value=" Strike Back—Light (When a light card is put into your hand from your shield zone, you may discard that card. If you do, summon this creature for no cost.)&#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack players." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="19" />
 		</card>
@@ -435,7 +411,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Dark Knightmare" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="Strike Back" />
+			<property name="Rules" value="Strike Back — Darkness (When a darkness card is put into your hand from your shield zone, you may discard that card. If you do, summon this creature for no cost.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="25" />
 		</card>
@@ -459,7 +435,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human Baku" />
 			<property name="Power" value="1000" />
-			<property name="Rules" value="Strike Back" />
+			<property name="Rules" value="Strike Back—Fire (When a fire card is put into your hand from your shield zone, you may discard that card. If you do, summon this creature for no cost.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="28" />
 		</card>
