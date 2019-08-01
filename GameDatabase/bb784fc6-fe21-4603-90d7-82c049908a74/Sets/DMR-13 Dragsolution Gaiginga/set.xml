@@ -438,7 +438,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Sympathy&#xd;&#xa; Destroy all your Liquid People. Then reveal cards from the top of your deck until you reveal the same number of non-evolution Crystal Command Dragon for each of your destroyed Liquid People. Put all revealed Crystal Command Dragons from the revealed cards into the battle zone, then shuffle your deck." />
+			<property name="Rules" value="Sympathy: Liquid People(This spell costs 1 less to cast for each of your Liquid People creatures in the battle zone)&#xd;&#xa; Destroy all your Liquid People. Reveal cards from the top of your deck until you reveal the same number of non-evolution Crystal Command Dragon and put them into the battle zone. Then shuffle your deck." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="20" />
 		</card>
