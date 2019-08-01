@@ -188,7 +188,7 @@ cardScripts = {
 	'Goren Cannon': {'onPlay': ['kill(3000)']},
 	'Goromaru Communication': {'onPlay': ['search(me.Deck, 1, "Creature")']},
 	'Hell Chariot': {'onPlay': ['kill("ALL","Untap")']},
-	'Hide and Seek': {'onPlay': ['bounceAndDiscard()']},
+	'Hide and Seek': {'onPlay': ['bounce(1, True, condition = \'not re.search("Evolution", card.Type)\')', 'targetDiscard(True)']},
 	'Hogan Blaster': {'onPlay': ['drama(True, "creature or spell", "battlezone", "top")']},
 	'Holy Awe': {'onPlay': ['tapCreature(1,True)']},
 	'Hopeless Vortex': {'onPlay': ['kill()']},
@@ -231,7 +231,7 @@ cardScripts = {
 	'Mystic Dreamscape': {'onPlay': ['fromMana(3)']},
 	'Mystic Inscription': {'onPlay': ['shields(me.Deck)']},
 	'Natural Snare': {'onPlay': ['sendToMana()']},
-	'Persistent Prison of Gaia': {'onPlay': ['bounceAndDiscard()']},
+	'Persistent Prison of Gaia': {'onPlay': ['bounce(1, True, condition = \'not re.search("Evolution", card.Type)\')', 'targetDiscard(True)']},
 	'Phantom Dragon\'s Flame': {'onPlay': [' kill(2000)']},
 	'Phantasm Clutch': {'onPlay': ['kill("ALL","Tap")']},
 	'Pixie Cocoon': {'onPlay': ['fromMana(1, "Creature")', 'toMana(card)']},
@@ -407,6 +407,16 @@ def removeIfEvo(card):
 				break
 	me.setGlobalVariable('evolution', str(evolveDict))
 	return resultList
+
+def isBait(card):	#check if card is under and evo(needs to be ignored by most things) This is really inefficient, maybe make a func to get all baits once
+	result = False
+	evolveDict = eval(me.getGlobalVariable('evolution'))
+	for evo in evolveDict.keys():
+		baitList = evolveDict[evo]
+		if card._id in baitList:
+			result = True
+			break
+	return result
 	
 def antiDiscard(card, sourcePlayer):
 	#sourcePlayer = the player trying play the discarding effect, not the target player
@@ -924,12 +934,12 @@ def sacrifice(power = float('inf'), count = 1):
 			return
 		destroy(choice)
 	
-def bounce(count = 1, opponentOnly = False, toDeckTop = False):
+def bounce(count = 1, opponentOnly = False, toDeckTop = False, condition = 'True'):
 	mute()
 	if opponentOnly:
-		cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type) and card.owner != me]
-	else:	
-		cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
+		cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type) and card.owner != me and not isBait(card) and eval(condition)]
+	else:
+		cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type) and not isBait(card) and eval(condition)]
 	if len(cardList) < 1:
 		whisper("No valid targets on the table.")
 		return
@@ -952,12 +962,6 @@ def bounce(count = 1, opponentOnly = False, toDeckTop = False):
 			remoteCall(choice.owner,"toDeck",choice)
 		else:
 			remoteCall(choice.owner,"toHand",choice)
-
-	
-def bounceAndDiscard(bcount = 1, opponentOnly = True, randomDiscard=True):
-	mute()
-	if not bounce(bcount, opponentOnly):
-		targetDiscard(randomDiscard)
 	
 def gear(str):		
 	mute()
