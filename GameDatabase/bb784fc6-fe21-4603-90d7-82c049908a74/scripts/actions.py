@@ -1485,8 +1485,15 @@ def destroy(card, dest = False, ignoreEffects=False, x = 0, y = 0):
 		shieldCard = card
 		cardsInHandWithStrikeBackAbility = [card for card in me.hand if re.search("Strike Back", card.rules)]
 		if len(cardsInHandWithStrikeBackAbility) > 0:
-			cardsInHandWithStrikeBackAbilityThatCanBeUsed = [card for card in cardsInHandWithStrikeBackAbility if re.search(card.Civilization, shieldCard.Civilization) or (re.search("Super Strike Back", card.rules) and manaArmsCheck())]
-			
+			cardsInHandWithStrikeBackAbilityThatCanBeUsed = []
+			for card in cardsInHandWithStrikeBackAbility:
+				if re.search("Super Strike Back", card.rules): #special case for Deadbrachio
+					if manaArmsCheck():
+						cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
+				elif re.search("Strike Back—Hunter", card.rules) and re.search("Hunter", shieldCard.R): #special case for Aqua Advisor
+				
+				elif re.search("Strike Back", card.rules) and re.search(card.Civilization, shieldCard.Civilization):
+					cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
 			if len(cardsInHandWithStrikeBackAbilityThatCanBeUsed) > 0:
 				if confirm("Activate Strike Back by sending {} to the graveyard?\n\n{}".format(shieldCard.Name, shieldCard.Rules)):
 					choice = askCard2(cardsInHandWithStrikeBackAbilityThatCanBeUsed, 'Choose Strike Back to activate')
