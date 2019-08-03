@@ -10,7 +10,8 @@ sideflip = None
 diesides = 20
 shieldMarker = ('Shield', 'a4ba770e-3a38-4494-b729-ef5c89f561b7')
 waitingCard = [] #Cards waiting for targets. Please replace this with FUNCTIONS waiting for targets later. If a card calls 2 functions both will happen again otherwise
-
+waitingCard1 = []
+functionlistglobal = []
 # Start of Automation code
 
 cardScripts = {
@@ -352,14 +353,55 @@ def resetGame():
 	me.setGlobalVariable("shieldCount", "0")
 	
 def onTarget(args):
+	global functionlistglobal
 	numberOfTargets = len([c for c in table if c.targetedBy==me])
 	if numberOfTargets==0:
 		return
-	if waitingCard:
-		card = waitingCard.pop()
-		toPlay(card)
-		
+	if waitingCard1:
+		funct = waitingCard1.pop()
+		evaluatetargetfunction(funct)
+		if waitingCard:
+			endingspellcard(waitingCard[0])
 #########intermediate functions#########
+
+
+
+
+############################################################ would have to change this alot according to cascading functions, but for now this works.#########
+
+'''
+we can add more funcations here with conditions if need be in future, specially for cards with nested functions
+ e.g. death gate and intense vacuuming twist. Since these cards only take 1 card as target, additional check here is not required
+ for multiple targets of nested function cards, different checks will be required here.
+ This will be the main body for handling them.
+'''
+def evaluatetargetfunction(funct):
+	global functionlistglobal
+	waitForTgt = eval(funct)
+	if not waitForTgt:
+		if len(functionlistglobal) > 0:
+			if funct in functionlistglobal:
+				i = functionlistglobal.index(funct)
+				functionlistglobal = functionlistglobal[i + 1:]
+			evaluateotherfunctions()
+	if waitForTgt:
+		waitingCard1.append(funct)
+		waitForTarget()
+		return
+	return
+
+def evaluateotherfunctions():
+	global functionlistglobal
+	for functions in functionlistglobal:
+		waitForTgt = eval(functions)
+		if waitForTgt:
+			waitingCard1.append(functions)
+			waitForTarget()
+			return
+	return
+###########################################################################################################################################################################
+
+
 
 def askCard2(list, title="Select a card", buttonText="Select", numberToTake=1):  #askCard function was changed. So using the same name but with the new functionality
 	#this is for showing a dialog box with the cards in the incoming list. Careful, all cards will be visible, even if they're facedown.
@@ -455,7 +497,6 @@ def manaArmsCheck(civ='ALL5', num=0):
 		manaCards = [card for card in table if isMana(card) and card.owner==me and re.search(civ, card.Civilization)]
 		if len(manaCards)>=num:
 			return True
-
 ################ Functions used in the Automation dictionaries.####################
 
 def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", noEvo = True): #Temporary Fix for not allowing Evolutions
@@ -520,13 +561,15 @@ def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bot
 	cardList = [card for card in me.Deck.top(num)]
 	choice = askCard2(cardList, 'Choose a card to put into {}'.format(targetZone))
 	if type(choice) is Card:
+		if not 'NONE' in specialaction:
+			card_for_special_action = choice
 		if cardType == 'card' or re.search(cardType, choice.Type):
 			#use switch instead, when more zones are added here
 			if targetZone == 'mana':
 				toMana(choice)
 			else:
 				#to hand is default rn
-				toHand(choice, show = reveal)	
+				toHand(choice, show = reveal)
 		else:
 			notify("Please select a {}! Action cancelled.".format(cardType))
 			return
@@ -545,8 +588,15 @@ def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone = 'bot
 				notify("{} moved a card to the bottom of their deck.".format(me))
 	if specialaction == "BOUNCE":
 		for civs in specialaction_civs:
-			if re.search(civs, card.properties['Civilization']):
-				bounce()
+			if re.search(civs, card_for_special_action.properties['Civilization']):
+				whisper(card_for_special_action.properties['Civilization'])
+				whisper(functionlistglobal[0])
+				res = [x for x in functionlistglobal if re.search('lookAtTopCards', x)]
+				functionlistglobal.remove(res[0])
+				check = bounce()
+				if check:
+					waitingCard1.append('bounce()')
+					waitForTarget()
 				return
 	
 def targetDiscard(randomDiscard = False, targetZone = 'grave', count = 1):
@@ -630,7 +680,7 @@ def fromMana(count = 1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL
 	if ApplyToAllPlayers == True:
 		playerList = players
 	else:
-		playerList = [players[0]] #players[0] is the player calling this function, me
+		playerList = [players[0]]
 	for player in playerList:
 		for i in range(0,count):
 			if TypeFilter != "ALL":
@@ -961,26 +1011,29 @@ def bounce(count = 1, opponentOnly = False, toDeckTop = False, condition = 'True
 	if len(cardList) < 1:
 		whisper("No valid targets on the table.")
 		return
-	
+
+	#forcing octgn to go to targets function and wait
 	targets = [c for c in table if c.targetedBy == me]
 	if len(targets) != count:
-		whisper("Wrong number of targets!")
 		return True
+
 	bounceList=[]
 	for i in range(0,count):
 		if(targets[i] in cardList):
 			choice = targets[i]
 			bounceList.append(choice)
+			whisper("{}.".format(choice))
 		else:
 			whisper("Wrong target(s)!")
 			return True
 	
 	for card in bounceList:
 		if toDeckTop:
-			remoteCall(choice.owner,"toDeck",choice)
+			remoteCall(card.owner,"toDeck",card)
 		else:
-			remoteCall(choice.owner,"toHand",choice)
-	
+			remoteCall(card.owner,"toHand",card)
+
+
 def gear(str):		
 	mute()
 	if str == 'kill':
@@ -1531,10 +1584,12 @@ def randomDiscard(group, x = 0, y = 0):
 	toDiscard(card, notifymute = True)
 	notify("{} randomly discards {}.".format(me, card))
 
-def mana(group, count = 1, conditional = False, tapped = False, postAction = "NONE", postArgs=[], postCondition='True'):
+def mana(group, count = 1, conditional = False, tapped = False, postAction = "NONE", postArgs=[]):
 	mute()
 	if conditional:
-		choice = askYN("Charge top {} cards as mana?".format(count))
+		choiceList = ['Yes', 'No']
+		colorsList = ['#FF0000', '#FF0000']
+		choice = askChoice("Charge top {} cards as mana?".format(count), choiceList, colorsList)
 		if choice == 0 or choice == 2:
 			return 
 	for i in range(0,count):
@@ -1543,11 +1598,12 @@ def mana(group, count = 1, conditional = False, tapped = False, postAction = "NO
 		toMana(card, notifymute = True)
 		if tapped and card.orientation & Rot90 != Rot90:
 					card.orientation ^= Rot90
-		notify("{} charges {} from top of {} as mana.".format(me, card, group.name))
-	doPostAction(card, postAction, postArgs, postCondition)
+		notify("{} charges {} from top of {} as mana.".format(me, card.name, group.name))
+	
+	doPostAction(card, postAction, postArgs)
 
-def doPostAction(card, postAction, postArgs, postCondition): 
-	#does something more in the effect, might be based on what the first card was; eg: Geo Bronze Magic, Faerie Crystal, Faerie Miracle
+def doPostAction(card, postAction, postArgs): 
+	#does something more in the effect, might be based on what the first card was; eg: Geo Bronze Magic or simple stuff like Skysword(shield comes after mana)
 	#implement BounceIfCiv for Intense Vacuuming Twist? Maybe make a whole different function for ifCiv or ifRace just to evaluate the conditon based on args
 	#For example, if there is "IfCiv" in postAction, check args for the civ, if there's "ifRace"(eg Eco Aini) etc. -> This can be done in a separate function instead of here
 	if postAction=="NONE":
@@ -1564,8 +1620,8 @@ def doPostAction(card, postAction, postArgs, postCondition):
 				mana(me.Deck)
 				break
 		return
-	if eval(postCondition):
-		eval(postAction)	#simple eval of a function, if postCondition is satisfied(is true by default)
+
+	postAction(*postArgs) 	#simple eval of a function without any condition, eg. Skysword	
 
 def massMana(group, conditional = False, x=0, y=0):
 		mute()
@@ -1652,7 +1708,10 @@ def toShields(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEv
 		
 def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffects = False):
 	mute()
+	whisper("{}".format(card))
+	global functionlistglobal
 	#clearWaitingCard()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
+
 	if re.search("Evolution", card.Type):
 		targets = [c for c in table
 					if c.controller == me
@@ -1695,26 +1754,30 @@ def toPlay(card, x = 0, y = 0, notifymute = False, evolveText = '', ignoreEffect
 					eval(function)
 
 		elif cardScripts.get(card.name,{}).get('onPlay',[]):
-			functionlist = cardScripts.get(card.name).get('onPlay')
-			for function in functionlist:
+			functionlistglobal = cardScripts.get(card.name).get('onPlay')
+			for function in functionlistglobal:
 				waitForTgt = eval(function)
 				#any on-play function/effect returning true => Wait for target- waitForTarget() does not thing currenty, onTarget function triggers the waitingCard
 				if waitForTgt:
+					waitingCard1.append(function)
 					waitForTarget()
 					return
-			
+
+	endingspellcard(card)
+
+def endingspellcard(card):
 	if card.Type == "Spell":
 		if re.search("Charger", card.name) and re.search("Charger", card.rules):
-			rnd(1,100)
+			rnd(1, 100)
 			toMana(card)
 			align()
 		else:
-			rnd(1,100)
+			rnd(1, 100)
 			card.moveTo(card.owner.piles['Graveyard'])
 			align()
-	
-	waitingCard.pop() #card finished playing, pop from waitingCard
-	####### check some effect-stack here for other play resolving(not implemented yet) #############
+
+	waitingCard.pop()  # card finished playing, pop from waitingCard
+####### check some effect-stack here for other play resolving(not implemented yet) ############
 	
 def toDiscard(card, x = 0, y = 0, notifymute = False, alignCheck = True, checkEvo = True):
 	mute()
