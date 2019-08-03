@@ -1490,8 +1490,8 @@ def destroy(card, dest = False, ignoreEffects=False, x = 0, y = 0):
 				if re.search("Super Strike Back", card.rules): #special case for Deadbrachio
 					if manaArmsCheck():
 						cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
-				elif re.search("Strike Back—Hunter", card.rules) and re.search("Hunter", shieldCard.R): #special case for Aqua Advisor
-				
+				elif re.search("Strike Back.*Hunter", card.rules) and re.search("Hunter", shieldCard.Race): #special case for Aqua Advisor
+						cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
 				elif re.search("Strike Back", card.rules) and re.search(card.Civilization, shieldCard.Civilization):
 					cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
 			if len(cardsInHandWithStrikeBackAbilityThatCanBeUsed) > 0:
