@@ -680,7 +680,7 @@ def fromMana(count = 1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL
 	if ApplyToAllPlayers == True:
 		playerList = players
 	else:
-		playerList = [players[0]]
+		playerList = [players[0]] #players[0] is the player calling this function, me
 	for player in playerList:
 		for i in range(0,count):
 			if TypeFilter != "ALL":
@@ -1584,12 +1584,10 @@ def randomDiscard(group, x = 0, y = 0):
 	toDiscard(card, notifymute = True)
 	notify("{} randomly discards {}.".format(me, card))
 
-def mana(group, count = 1, conditional = False, tapped = False, postAction = "NONE", postArgs=[]):
+def mana(group, count = 1, conditional = False, tapped = False, postAction = "NONE", postArgs=[], postCondition='True'):
 	mute()
 	if conditional:
-		choiceList = ['Yes', 'No']
-		colorsList = ['#FF0000', '#FF0000']
-		choice = askChoice("Charge top {} cards as mana?".format(count), choiceList, colorsList)
+		choice = askYN("Charge top {} cards as mana?".format(count))
 		if choice == 0 or choice == 2:
 			return 
 	for i in range(0,count):
@@ -1598,11 +1596,10 @@ def mana(group, count = 1, conditional = False, tapped = False, postAction = "NO
 		toMana(card, notifymute = True)
 		if tapped and card.orientation & Rot90 != Rot90:
 					card.orientation ^= Rot90
-		notify("{} charges {} from top of {} as mana.".format(me, card.name, group.name))
-	
+		notify("{} charges {} from top of {} as mana.".format(me, card, group.name))
 	doPostAction(card, postAction, postArgs)
 
-def doPostAction(card, postAction, postArgs): 
+def doPostAction(card, postAction, postArgs, postCondition):  
 	#does something more in the effect, might be based on what the first card was; eg: Geo Bronze Magic or simple stuff like Skysword(shield comes after mana)
 	#implement BounceIfCiv for Intense Vacuuming Twist? Maybe make a whole different function for ifCiv or ifRace just to evaluate the conditon based on args
 	#For example, if there is "IfCiv" in postAction, check args for the civ, if there's "ifRace"(eg Eco Aini) etc. -> This can be done in a separate function instead of here
@@ -1620,8 +1617,8 @@ def doPostAction(card, postAction, postArgs):
 				mana(me.Deck)
 				break
 		return
-
-	postAction(*postArgs) 	#simple eval of a function without any condition, eg. Skysword	
+	if eval(postCondition): # eg. Faerie Miracle
+		eval(postAction)	#simple eval of a function, if postCondition is satisfied(is true by default)
 
 def massMana(group, conditional = False, x=0, y=0):
 		mute()
