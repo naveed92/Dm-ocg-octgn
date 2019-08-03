@@ -490,7 +490,6 @@ def manaArmsCheck(civ='ALL5', num=0):
 				if not flags[i] and re.search(civList[i], card.Civilization):
 					flags[i] = True
 			if flags[0] and flags[1] and flags[2] and flags[3] and flags[4]:
-				notify("{} has all 5 civilizations in mana.".format(me))
 				return True
 		return False
 	else:
