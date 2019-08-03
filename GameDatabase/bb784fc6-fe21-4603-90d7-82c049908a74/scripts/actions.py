@@ -174,7 +174,7 @@ cardScripts = {
 	'Eureka Program': {'onPlay': ['eurekaProgram(True)']},
 	'Faerie Crystal': {'onPlay': ['mana(me.Deck, postAction="ManaIfCiv", postArgs=["Zero"] )']},
 	'Faerie Life': {'onPlay': ['mana(me.Deck)']},
-	'Faerie Miracle': {'onPlay': ['mana(me.Deck, postAction="mana(me.Deck)", postCondition="manaArms()")']},
+	'Faerie Miracle': {'onPlay': ['mana(me.Deck, postAction="mana(me.Deck)", postCondition="manaArmsCheck()")']},
 	'Faerie Shower': {'onPlay': ['lookAtTopCards(2,"card","hand","mana", False)']},
 	'Flame-Absorbing Palm': {'onPlay': ['kill(2000)']},
 	'Fire Crystal Bomb': {'onPlay': ['kill(5000)']},
@@ -438,7 +438,7 @@ def clearWaitingCard(): #clears any pending plays for a card that's waiting to c
 		card = waitingCard.pop()
 		notify("Waiting for target for {} cancelled.".format(card.Name))
 
-def manaArms(civ='ALL5', num=0):
+def manaArmsCheck(civ='ALL5', num=0):
 	if civ == 'ALL5': #check if you have all 5 civs in mana zone
 		manaCards = [card for card in table if isMana(card) and card.owner==me]
 		civList = ["Fire", "Nature", "Water", "Light", "Darkness"]
@@ -1432,7 +1432,8 @@ def destroy(card, dest = False, ignoreEffects=False, x = 0, y = 0):
 		shieldCard = card
 		cardsInHandWithStrikeBackAbility = [card for card in me.hand if re.search("Strike Back", card.rules)]
 		if len(cardsInHandWithStrikeBackAbility) > 0:
-			cardsInHandWithStrikeBackAbilityThatCanBeUsed = [card for card in cardsInHandWithStrikeBackAbility if re.search(card.Civilization, shieldCard.Civilization)]
+			cardsInHandWithStrikeBackAbilityThatCanBeUsed = [card for card in cardsInHandWithStrikeBackAbility if re.search(card.Civilization, shieldCard.Civilization) or (re.search("Super Strike Back", card.rules) and manaArmsCheck())]
+			
 			if len(cardsInHandWithStrikeBackAbilityThatCanBeUsed) > 0:
 				if confirm("Activate Strike Back by sending {} to the graveyard?\n\n{}".format(shieldCard.Name, shieldCard.Rules)):
 					choice = askCard2(cardsInHandWithStrikeBackAbilityThatCanBeUsed, 'Choose Strike Back to activate')
