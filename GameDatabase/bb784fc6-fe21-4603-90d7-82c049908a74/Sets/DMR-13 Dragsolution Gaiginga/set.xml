@@ -462,7 +462,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Choose one of your opponent's untapped creatures in the battle zone and return it to its owner's hand. &#xd;&#xa;Mana Arms" />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Choose one of your opponent's untapped creatures in the battle zone and return it to its owner's hand. &#xd;&#xa;Mana Arms 5: If you have 5 or more water cards in your mana zone, you may choose a creature in the battle zone and return it to its owner's hand." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="22" />
 		</card>

@@ -175,7 +175,7 @@ cardScripts = {
 	'Eureka Program': {'onPlay': ['eurekaProgram(True)']},
 	'Faerie Crystal': {'onPlay': ['mana(me.Deck, postAction="ManaIfCiv", postArgs=["Zero"] )']},
 	'Faerie Life': {'onPlay': ['mana(me.Deck)']},
-	'Faerie Miracle': {'onPlay': ['mana(me.Deck)']},
+	'Faerie Miracle': {'onPlay': ['mana(me.Deck, postAction="mana(me.Deck)", postCondition="manaArmsCheck()")']},
 	'Faerie Shower': {'onPlay': ['lookAtTopCards(2,"card","hand","mana", False)']},
 	'Flame-Absorbing Palm': {'onPlay': ['kill(2000)']},
 	'Fire Crystal Bomb': {'onPlay': ['kill(5000)']},
@@ -480,6 +480,23 @@ def clearWaitingCard(): #clears any pending plays for a card that's waiting to c
 		card = waitingCard.pop()
 		notify("Waiting for target for {} cancelled.".format(card.Name))
 
+def manaArmsCheck(civ='ALL5', num=0):
+	if civ == 'ALL5': #check if you have all 5 civs in mana zone
+		manaCards = [card for card in table if isMana(card) and card.owner==me]
+		civList = ["Fire", "Nature", "Water", "Light", "Darkness"]
+		flags = [False, False, False, False, False]	#one flag for each corresponding civ
+		for card in manaCards:
+			for i in range(0,5):
+				if not flags[i] and re.search(civList[i], card.Civilization):
+					flags[i] = True
+			if flags[0] and flags[1] and flags[2] and flags[3] and flags[4]:
+				notify("{} has all 5 civilizations in mana.".format(me))
+				return True
+		return False
+	else:
+		manaCards = [card for card in table if isMana(card) and card.owner==me and re.search(civ, card.Civilization)]
+		if len(manaCards)>=num:
+			return True
 ################ Functions used in the Automation dictionaries.####################
 
 def SummonFromGrave(count=1, TypeFilter = "ALL", CivFilter = "ALL", RaceFilter = "ALL", noEvo = True): #Temporary Fix for not allowing Evolutions
@@ -1468,7 +1485,8 @@ def destroy(card, dest = False, ignoreEffects=False, x = 0, y = 0):
 		shieldCard = card
 		cardsInHandWithStrikeBackAbility = [card for card in me.hand if re.search("Strike Back", card.rules)]
 		if len(cardsInHandWithStrikeBackAbility) > 0:
-			cardsInHandWithStrikeBackAbilityThatCanBeUsed = [card for card in cardsInHandWithStrikeBackAbility if re.search(card.Civilization, shieldCard.Civilization)]
+			cardsInHandWithStrikeBackAbilityThatCanBeUsed = [card for card in cardsInHandWithStrikeBackAbility if re.search(card.Civilization, shieldCard.Civilization) or (re.search("Super Strike Back", card.rules) and manaArmsCheck())]
+			
 			if len(cardsInHandWithStrikeBackAbilityThatCanBeUsed) > 0:
 				if confirm("Activate Strike Back by sending {} to the graveyard?\n\n{}".format(shieldCard.Name, shieldCard.Rules)):
 					choice = askCard2(cardsInHandWithStrikeBackAbilityThatCanBeUsed, 'Choose Strike Back to activate')
