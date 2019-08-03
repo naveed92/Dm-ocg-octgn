@@ -1604,7 +1604,7 @@ def mana(group, count = 1, conditional = False, tapped = False, postAction = "NO
 		if tapped and card.orientation & Rot90 != Rot90:
 					card.orientation ^= Rot90
 		notify("{} charges {} from top of {} as mana.".format(me, card, group.name))
-	doPostAction(card, postAction, postArgs)
+	doPostAction(card, postAction, postArgs, postCondition)
 
 def doPostAction(card, postAction, postArgs, postCondition):  
 	#does something more in the effect, might be based on what the first card was; eg: Geo Bronze Magic or simple stuff like Skysword(shield comes after mana)
