@@ -1280,30 +1280,6 @@
 			<property name="Number" value="36" />
 		</card>
 
-		<card name="Wagahai Cat, Spirit of Destiny" id="875a93b4-7a0d-4ac8-9b93-74e8321be986">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value="6" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command" />
-			<property name="Power" value="5500" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa;This creature can't attack players.&#xd;&#xa;When you put this creature into the battle zone, you may add a non-evolution Angel Command in the battle zone to your shields face down. If you do, your opponent adds one of his Commands into his shield zone face down." />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="37" />
-		</card>
-
-		<card name="Kibbate Cat, Heaven's Gate Elemental" id="3a721814-78b1-4610-af72-67e018e0bbff">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value="4" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command/Unnoise" />
-			<property name="Power" value="4000" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa;This creature can't attack players.&#xd;&#xa;When you put this creature into the battle zone, look at the top 4 cards of your deck. You may take a card that has 'Heaven's' in its name from your deck, show that card to your opponent, and put it into your hand. Then put the rest on the bottom of your deck in any order." />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="38" />
-		</card>
-
 		<card name="Super Necrodragon Hakaishi Hakai" id="db6c449f-7df2-48f8-931c-5014774be808">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-16(Promos), DMX and DMD" id="fc107d6b-5c22-46fa-af13-2d2b6fcc50f4" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="DMR-16(Promos), DMX and DMD Dragon Saga" id="fc107d6b-5c22-46fa-af13-2d2b6fcc50f4" gameId="bb784fc6-fe21-4603-90d7-82c049908a74" gameVersion="3.0.0.0" version="2.0.0.0">
 	<packaging>
 		<pack name="Booster" id="4947a92c-1253-4f24-aead-00d59e50d8bd">
 			<options>

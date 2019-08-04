@@ -20,41 +20,6 @@
 		</pack>
 	</packaging>
 	<cards>
-		<card name="Heaven's Rosia, True Dragon Edge" id="7f09803f-a4f1-47e0-86bd-a96fee205a8a">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light" />
-			<property name="Cost" value="7" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command Dragon/Justice Wing/Draguner" />
-			<property name="Power" value="5500" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less or a light dragheart that costs 5 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa;Mana Arms 5: If you have 5 or more light cards in your mana zone, each of your Light creatures in the battle zone gets 'shield saver'." />
-			<property name="Rarity" value="Secret Rare" />
-			<property name="Number" value="㊙1d" />
-		</card>
-
-		<card name="Glenmalt 'Blade', King Dragon Edge" id="dc315788-63a4-4ccf-bd59-7f4e652cafd1">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="9" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Gaial Command Dragon/Human Baku/Draguner" />
-			<property name="Power" value="9000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put up to 2 fortresses that cost 3 or less or a Fire dragheart that costs 5 or less from your hyperspatial zone into the battle zone.&#xd;&#xa;Speed attacker&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Secret Rare" />
-			<property name="Number" value="㊙2d" />
-		</card>
-
-		<card name="Sasoris Rage, Terror Dragon Edge" id="b8f562c6-f7d9-4b92-b321-944a86d101de">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Nature" />
-			<property name="Cost" value="8" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Jurassic Command Dragon/Beast Folk Go/Draguner" />
-			<property name="Power" value="11000" />
-			<property name="Rules" value="Guardman&#xd;&#xa; When you put this creature into the battle zone, put a dragheart that costs 3 or less or a nature dragheart that costs 5 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa; When you put this creature into the battle zone, you may put the top card of your deck into your mana zone.&#xd;&#xa;Double breaker" />
-			<property name="Rarity" value="Secret Rare" />
-			<property name="Number" value="㊙3d" />
-		</card>
 
 		<card name="MaltNEXT, Super Battle Dragon Edge" id="2f5f8e6a-e6b6-4397-aa55-44d4d9f547e8">
 			<property name="Format" value="OCG" />

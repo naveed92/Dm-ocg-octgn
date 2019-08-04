@@ -3869,17 +3869,6 @@ abilities) and becomes one creature. When the linked creature leaves the battle 
 			<property name="Number" value="110" />
 		</card>
 
-		<card name="Supernova Neptune Shutrom" id="a6743a1a-3108-40ab-b031-6352c13a8ef2">
-			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water" />
-			<property name="Cost" value="7" />
-			<property name="Type" value="Evolution Creature" />
-			<property name="Race" value="Phoenix" />
-			<property name="Rules" value="Evolution GV - Grand Devil, Demon Command, and/or Angel Command&#xd;&#xa;Meteorburn - When this creature attacks, you may send a card under this creature to the Graveyard. If so, your opponent put all of their creatures on top of their deck in any order.&#xd;&#xa;Triple Breaker" />
-			<property name="Power" value="13000" />
-			<property name="Rarity" value="Super Rare" />
-			<property name="Number" value="S2" />
-		</card>
 		<card name="Jumasol, Bloodcurdling Fuuma" id="3031bc7a-6d8d-4a8c-992e-896599f1015d">
 			<property name="Format" value="Set35, OCG" />
 			<property name="Civilization" value="Darkness" />
