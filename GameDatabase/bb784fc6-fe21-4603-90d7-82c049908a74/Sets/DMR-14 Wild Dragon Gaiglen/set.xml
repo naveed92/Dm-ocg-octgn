@@ -27,7 +27,7 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="At the start of your turn, you may draw a card. &#xd;&#xa; Dragsolution: When you draw a card, if its the fifth card you drew that turn, you may flip this card to the dragheart creature side and untap it. (At the start of your game, draghearts are put into your hyperspatial zone. If it leaves the battle zone, return it there.)" />
+			<property name="Rules" value="At the start of your turn, you may draw a card. &#xd;&#xa; Dragsolution: When you draw a card, if its the fifth card you drew that turn, you may flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1a" />
 
@@ -51,7 +51,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon/Human Baku/Draguner" />
 			<property name="Power" value="11000+" />
-			<property name="Rules" value="Speed attacker&#xd;&#xa; Mana Arms 9: Whenever this creature attacks, if you have 9 or more fire cards in your mana zone, untap this creature, and this creature gets +3000 power until the end of the turn. &#xd;&#xa;Double breaker&#xd;&#xa; Whenever your opponent chooses this creature, destroy all your opponent's creatures that have power equal to or less than it." />
+			<property name="Rules" value="Speed attacker&#xd;&#xa; Mana Arms 9: When this creature attacks, if you have 9 or more fire cards in your mana zone, untap it, and it gets +3000 power until the end of the turn.&#xd;&#xa; When your opponent chooses this creature, destroy all your opponent's creatures that have power equal to or less than it. &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V2" />
 		</card>
@@ -63,7 +63,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon " />
 			<property name="Power" value="7500" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa; Whenever one of your Dragons attacks or blocks, you may add the top card of your deck to your shields face down. &#xd;&#xa;Double breaker&#xd;&#xa; When your opponent would choose a creature in the battle zone by the effect of a non-Light spell, he can't choose this one." />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature cant be chosen by non light spells &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S1" />
 		</card>
@@ -87,7 +87,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value="When you put this creature into the battle zone or whenever this creature attacks, you may return a darkness creature from your graveyard to your hand. If you do, destroy one of your opponent's creatures. &#xd;&#xa;Triple breaker&#xd;&#xa; When this creature would leave the battle zone, if you have no other creatures in the battle zone, you may discard 2 creatures from your hand instead." />
+			<property name="Rules" value="When you put this creature in battle zone or when it attacks, you may return a darkness creature from your graveyard to hand. If you do,destroy one of your opponent's creatures. &#xd;&#xa; When this creature  leaves the battle zone,if you have no other creatures in battle zone,you may discard 2 creatures from your hand instead.&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S3" />
 		</card>
@@ -147,7 +147,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Demon Command Dragon/Shinobi" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value="At the start of your opponent's turn, choose one of your opponent's creatures. That creature must attack this turn if able. &#xd;&#xa; When one of your opponent's creatures attack, if it's the first attack that turn, you may put a Funky Knightmare from your hand that costs 6 or less into the battle zone. If you do, destroy that Funky Knightmare at the end of the turn.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="At the start of your opponent's turn, choose one of your opponent's creatures. That creature must attack this turn if able. &#xd;&#xa; When one of your opponent's creatures attack, if it's the first attack that turn, you may put a Funky Knightmare from your hand that costs 6 or less in battle zone. If you do, destroy it at the end of the turn.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="3" />
 		</card>
@@ -159,7 +159,7 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your fire creatures battles, that creature gets +2000 power until the end of the turn. &#xd;&#xa;Dragsolution: At the start of your turn, if you have 2 or more fire creatures in the battle zone, flip this card to the dragheart creature side and untap it. (At the start of the game, draghearts are put into your hyperspatial zone. If it leaves the battle zone, return it there.)" />
+			<property name="Rules" value="When one of your fire creatures battles, it gets +2000 power until the end of the turn. &#xd;&#xa;Dragsolution: At the start of your turn, if you have 2 or more fire creatures in the battle zone, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="4a" />
 
@@ -218,7 +218,7 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Each of your Light creatures in the battle zone gets +1000 power. Dragsolution: At the start of your turn, if you have 2 or more Light creatures in the battle zone, flip this card to the dragheart creature side and untap it. (At the start of the game, draghearts are put into your hyperspatial zone. If it leaves the battle zone, return it there.)" />
+			<property name="Rules" value="Each of your Light creatures in the battle zone gets +1000 power. Dragsolution: At the start of your turn, if you have 2 or more Light creatures in the battle zone, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="8a" />
 
@@ -242,7 +242,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Liquid People Sen /Draguner " />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a water dragheart that costs 4 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) &#xd;&#xa; When you put this creature into the battle zone, you may choose one of your opponent's creatures that costs 6 or less in the battle zone and return it to its owner's hand." />
+			<property name="Rules" value="When you put this creature into the battle zone, put a water dragheart that costs 4 or less from your hyperspatial zone into the battle zone. &#xd;&#xa; When you put this creature into the battle zone, you may choose one of your opponent's creatures that costs 6 or less in the battle zone and return it to its owner's hand." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="9" />
 		</card>
@@ -302,7 +302,7 @@
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Each of your Darkness creatures in the battle zone gets 'slayer'. (When a creature that has 'slayer' battles, after the battle, destroy your opponent's creature.) Dragsolution: At the start of your turn, if you have 2 or more Darkness creatures in the battle zone, flip this card to the dragheart creature side and untap it. (At the start of your game, draghearts are put into your hyperspatial zone. If it leaves the battle zone, return it there.)" />
+			<property name="Rules" value="Each of your Darkness creatures in the battle zone gets 'slayer'. &#xd;&#xa;Dragsolution: At the start of your turn, if you have 2 or more Darkness creatures in the battle zone, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="14a" />
 
@@ -313,7 +313,7 @@
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="Each of your creatures in the battle zone gets 'slayer'. (When a creature that has 'slayer' battles, after the battle, destroy your opponent's creature.) &#xd;&#xa; At the start of your opponent's turn, your opponent chooses one of his creatures that can attack. That creature must attack that turn if able." />
+			<property name="Rules" value="Each of your creatures in the battle zone gets 'slayer'. &#xd;&#xa; At the start of your opponent's turn, your opponent chooses one of his creatures that can attack. That creature must attack that turn if able." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="14b" />
 		</alternate>
@@ -357,18 +357,18 @@
 		<card name="Euru=Bucca, Mystery Gathering Ruins" id="ac609b7d-7f83-47ac-a4e6-ae7b62d7a736" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
-			<property name="Cost" value="" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value="Your nature creatures may cost 1 less to summon. They can't cost less than 1.&#xd;&#xa;Dragsolution: At the start of your turn, if you have 2 or more Nature creatures in the battle zone, flip this card to the dragheart creature side and untap it. (At the start of your game, draghearts are put into your hyperspatial zone. If it leaves the battle zone, return it there.)" />
+			<property name="Rules" value="Your nature creatures may cost 1 less to summon. They can't cost less than 1.&#xd;&#xa;Dragsolution: At the start of your turn, if you have 2 or more Nature creatures in the battle zone, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="18a" />
 		
 		<alternate name="Rejiru=Euru=Bucca, Mystery Ruinskind" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
-			<property name="Cost" value="" />
+			<property name="Cost" value="6" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="5000" />
@@ -769,7 +769,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Gravity Zero- If you have a fire Draguner in the battle zone, you may cast this spell for no cost.&#xd;&#xa; Choose one of your creatures in the battle zone. That creature gets 'speed attacker' and the Gaial Command Dragon race until the end of the turn.  (A creature that has 'speed attacker' doesn't get summoning sickness.) " />
+			<property name="Rules" value="Gravity Zero- If you have a fire Draguner in the battle zone, you may cast this spell for no cost.&#xd;&#xa; Choose one of your creatures in the battle zone.It gets 'speed attacker' and the Gaial Command Dragon race until the end of the turn. " />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="51" />
 		</card>
