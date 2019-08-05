@@ -1608,7 +1608,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Destroy one of your opponent's creatures that has power 3000 or less. &#xd;&#xa;Mana Arms|spell|5|fire|destroy one of your opponent's creatures that has power 6000 or less." />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; Destroy one of your opponent's creatures that has power 3000 or less. &#xd;&#xa;Mana Arms 5: Fire - Destroy one of your opponent's creatures that has power 6000 or less." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
