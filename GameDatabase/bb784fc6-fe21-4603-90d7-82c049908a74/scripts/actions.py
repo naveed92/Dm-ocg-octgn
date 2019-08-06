@@ -538,10 +538,7 @@ def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana
 		success = re.search("Creature", card.Type) or re.search("Spell", card.Type)
 	if success:
 		if conditional:
-			choiceList = ['Yes', 'No']
-			colorsList = ['#FF0000', '#FF0000']
-			choice = askChoice("Put {} into {}?\n\n {}".format(card.Name, targetZone, card.Rules), choiceList,
-							   colorsList)
+			choice = askYN("Put {} into {}?\n\n {}".format(card.Name, targetZone, card.Rules))
 			# more conditions for non-bz?
 			if choice == 1:
 				toPlay(card)
@@ -1815,7 +1812,6 @@ def toShields(card, x=0, y=0, notifymute=False, alignCheck=True, checkEvo=True):
 
 def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False):
 	mute()
-	whisper("{}".format(card))
 	global functionnumber
 	global functionlistglobal
 	# clearWaitingCard()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
@@ -1864,7 +1860,6 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 
 		elif cardScripts.get(card.name, {}).get('onPlay', []):
 			functionlist = functionlistglobal = cardScripts.get(card.name).get('onPlay')
-			whisper('i came here and got function {}'.format(functionlistglobal[0]))
 			functionnumber = len(functionlistglobal)
 			evaluateotherfunctions()
 
