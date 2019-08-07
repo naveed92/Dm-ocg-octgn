@@ -329,12 +329,12 @@ cardScripts = {
 	'Worm Gowarski, Masked Insect': {'onDestroy': ['targetDiscard(True)']},
 
 	# ON SHIELD TRIGGER CHECKS - condtion for a card to be shield trigger(functions used here should ALWAYS return a boolean)
-	'Awesome! Hot Spring Gallows' : {'onTrigger': ['manaArmsCheck("Water", 3)']}
-	'Soul Garde, Storage Dragon Elemental': {'onTrigger': ['manaArmsCheck("Light", 5)']}
-	'Sg Spagelia, Dragment Symbol': {'onTrigger': ['manaArmsCheck("Water", 5)']}
-	'Zanjides, Tragedy Demon Dragon': {'onTrigger': ['manaArmsCheck("Darkness", 5)']}
-	'Mettagils, Passion Dragon': {'onTrigger': ['manaArmsCheck("Fire", 5)']}
-	'Traptops, Green Trap Toxickind': {'onTrigger': ['manaArmsCheck("Nature", 5)']}
+	'Awesome! Hot Spring Gallows' : {'onTrigger': ['manaArmsCheck("Water", 3)']},
+	'Soul Garde, Storage Dragon Elemental': {'onTrigger': ['manaArmsCheck("Light", 5)']},
+	'Sg Spagelia, Dragment Symbol': {'onTrigger': ['manaArmsCheck("Water", 5)']},
+	'Zanjides, Tragedy Demon Dragon': {'onTrigger': ['manaArmsCheck("Darkness", 5)']},
+	'Mettagils, Passion Dragon': {'onTrigger': ['manaArmsCheck("Fire", 5)']},
+	'Traptops, Green Trap Toxickind': {'onTrigger': ['manaArmsCheck("Nature", 5)']},
 }
 
 
@@ -1564,12 +1564,14 @@ def destroy(card, dest=False, ignoreEffects=False, x=0, y=0):
 		card.peek()
 		rnd(1, 10)
 		#check conditonal trigger for cards like Awesome! Hot Spring Gallows or Traptops
-		trigFunctions = cardScripts.get(card.name).get('onTrigger')
 		conditionalTrigger = True
-		if trigFunctions:
-			conditionalTrigger = eval(trigFunctions[0]) #will need to be changed to a for loop if there are multiple conditions
-
-		if conditonalTrigger and re.search("{SHIELD TRIGGER}", card.Rules):
+		if cardScripts.get(card.Name, {}).get('onTrigger'):
+			trigFunctions = cardScripts.get(card.Name).get('onTrigger')
+			notify("On trig list is".format(trigFunctions[0]))
+			for function in trigFunctions:
+				conditionalTrigger = conditionalTrigger and eval(trigFunctions[0])
+		else:
+		if conditionalTrigger and re.search("{SHIELD TRIGGER}", card.Rules):
 			if confirm("Activate Shield Trigger for {}?\n\n{}".format(card.Name, card.Rules)):
 				rnd(1, 10)
 				notify("{} uses {}'s Shield Trigger.".format(me, card.Name))
@@ -1584,9 +1586,9 @@ def destroy(card, dest=False, ignoreEffects=False, x=0, y=0):
 				if re.search("Super Strike Back", card.rules):  # special case for Deadbrachio
 					if manaArmsCheck():
 						cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
-				elif re.search("Strike Back.*Hunter", card.rules) and re.search("Hunter",
-																				shieldCard.Race):  # special case for Aqua Advisor
-					cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
+				elif re.search("Strike Back.*Hunter", card.rules):
+					if re.search("Hunter", shieldCard.Race):  # special case for Aqua Advisor
+						cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
 				elif re.search("Strike Back", card.rules) and re.search(card.Civilization, shieldCard.Civilization):
 					cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
 			if len(cardsInHandWithStrikeBackAbilityThatCanBeUsed) > 0:

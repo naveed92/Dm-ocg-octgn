@@ -148,7 +148,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more light cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and add it to its owner's shields face down.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more light cards in your mana zone, this creature gets {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and add it to its owner's shields face down.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="5" />
 		</card>
@@ -184,7 +184,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more water cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and return it to its owner's hand.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more water cards in your mana zone, this creature gets {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and return it to its owner's hand.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="7" />
 		</card>
@@ -232,7 +232,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more darkness cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, each of your opponent's creatures gets -2000 power. (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more darkness cards in your mana zone, this creature gets {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, each of your opponent's creatures gets -2000 power. (A creature that has power 0 or less is destroyed.) &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="11" />
 		</card>
@@ -256,7 +256,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more fire cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and put it into its owner's graveyard.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more fire cards in your mana zone, this creature gets {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards that costs 5 or less in the battle zone and put it into its owner's graveyard.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="13" />
 		</card>
@@ -316,7 +316,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more nature cards in your mana zone, this creature {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards in the battle zone that costs 5 or less and put it into it's owner mana zone.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 5: When this creature is put into your hand from your shields, if you have 5 or more nature cards in your mana zone, this creature gets {SHIELD TRIGGER}.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's non-evolution cards in the battle zone that costs 5 or less and put it into it's owner mana zone.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="17" />
 		</card>
