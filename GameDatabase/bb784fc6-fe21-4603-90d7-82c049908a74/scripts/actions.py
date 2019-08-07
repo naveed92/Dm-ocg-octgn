@@ -915,15 +915,12 @@ def destroyAll(group, condition=False, powerFilter='ALL', civFilter="ALL", AllEx
 		cardList = [card for card in group if isCreature(card) and int(card.Power.strip(' +')) <= powerFilter]
 	else:
 		if AllExceptFiltered:
-			cardList = [card for card in group if
-						isCreature(card) and int(card.Power.strip(' +')) <= powerFilter and not re.search(civFilter,
-																										  card.properties[
-																											  'Civilization'])]
+			cardList = [card for card in group if isCreature(card) and int(card.Power.strip(' +')) <= powerFilter 
+			and not re.search(civFilter, card.properties['Civilization'])]
 		else:
 			cardList = [card for card in group if
-						isCreature(card) and int(card.Power.strip(' +')) <= powerFilter and re.search(civFilter,
-																									  card.properties[
-																										  'Civilization'])]
+						isCreature(card) and int(card.Power.strip(' +')) <= powerFilter 
+						and re.search(civFilter, card.properties['Civilization'])]
 	if len(cardList) == 0:
 		return
 	for card in cardList:
@@ -948,8 +945,8 @@ def destroyAll(group, condition=False, powerFilter='ALL', civFilter="ALL", AllEx
 
 			toDiscard(cardToBeSaved)
 			card = cardToBeSaved  # fix for onDestroy effect, as toDiscard somehow changes card
-			if cardScripts.get(card.name, {}).get('onDestroy', {}):
-				functionDict = cardScripts.get(card.name).get('onDestroy')
+			if cardScripts.get(card.Name, {}).get('onDestroy', {}):
+				functionDict = cardScripts.get(card.Name).get('onDestroy')
 				for function in functionDict:
 					eval(function)
 		else:
@@ -1011,7 +1008,7 @@ def burnShieldKill(count=1, targetOwnSh=False, powerFilter='ALL', killCount=0,
 		return True  # =>will wait for target
 
 	for shield in targetSh:
-		remoteCall(shield.owner, "destroy", [shield, True])
+		remoteCall(shield.owner, "destroy", [shield, 0, 0, True])
 	for card in targetCr:
 		remoteCall(card.owner, "destroy", card)
 
@@ -1350,17 +1347,15 @@ def isMana(card):
 	mute()
 	if card in table and not isShield(card) and not card.orientation == Rot90 and not card.orientation == Rot0:
 		return True
-	else:
-		return False
+	return False
 
 
 def isShield(card):
 	mute()
 	if card in table and not card.isFaceUp:
 		return True
-	elif card.markers[shieldMarker] > 0:
+	elif card in table and card.markers[shieldMarker] > 0:
 		return True
-
 	return False
 
 
@@ -1556,7 +1551,7 @@ def tap(card, x=0, y=0):
 		notify('{} untaps {}.'.format(me, card))
 
 
-def destroy(card, dest=False, ignoreEffects=False, x=0, y=0):
+def destroy(card, x=0, y=0, dest=False, ignoreEffects=False):
 	mute()
 	if isShield(card):
 		if dest == True:
@@ -1621,10 +1616,9 @@ def destroy(card, dest=False, ignoreEffects=False, x=0, y=0):
 					return
 		toDiscard(cardToBeSaved)  # this function is CHANGING card for some reason, hence the on destroy bug.
 		card = cardToBeSaved  # fixed?
-
 		################# ON  DESTROY BUG HERE  PLS FIX ##############
-		if cardScripts.get(card.name, {}).get('onDestroy', {}):
-			functionList = cardScripts.get(card.name).get('onDestroy')
+		if cardScripts.get(card.Name, {}).get('onDestroy', {}):
+			functionList = cardScripts.get(card.Name).get('onDestroy')
 			for function in functionList:
 				eval(function)
 
