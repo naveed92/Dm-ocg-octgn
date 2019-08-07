@@ -96,6 +96,7 @@ cardScripts = {
 	'Moors, the Dirty Digger Puppet': {'onPlay': [' search(me.piles["Graveyard"])']},
 	'Muramasa\'s Socket': {'onPlay': [' kill(1000)']},
 	'Murian': {'onPlay': ['suicide("Murian", draw, me.Deck)']},
+	'Nam=Daeddo, Bronze Style': {'onPlay': ['mana(me.Deck, preCondition=manaArmsCheck("Nature",3))']},
 	'Niofa, Horned Protector': {'onPlay': ['search(me.Deck, 1, "ALL", "Nature")']},
 	'Ochappi, Pure Hearted Faerie': {'onPlay': ['fromGrave()']},
 	'Pakurio': {'onPlay': [' targetDiscard(False,"shields")']},
@@ -1570,7 +1571,6 @@ def destroy(card, dest=False, ignoreEffects=False, x=0, y=0):
 			notify("On trig list is".format(trigFunctions[0]))
 			for function in trigFunctions:
 				conditionalTrigger = conditionalTrigger and eval(trigFunctions[0])
-		else:
 		if conditionalTrigger and re.search("{SHIELD TRIGGER}", card.Rules):
 			if confirm("Activate Shield Trigger for {}?\n\n{}".format(card.Name, card.Rules)):
 				rnd(1, 10)
@@ -1698,9 +1698,11 @@ def randomDiscard(group, x=0, y=0):
 	notify("{} randomly discards {}.".format(me, card))
 
 
-def mana(group, count=1, conditional=False, tapped=False, postAction="NONE", postArgs=[], postCondition='True'):
+def mana(group, count=1, ask=False, tapped=False, postAction="NONE", postArgs=[], postCondition='True', preCondition=True):
 	mute()
-	if conditional:
+	if not preCondition:
+		return
+	if ask:
 		choice = askYN("Charge top {} cards as mana?".format(count))
 		if choice == 0 or choice == 2:
 			return
