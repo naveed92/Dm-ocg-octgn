@@ -490,6 +490,7 @@ def clearWaitingCard():  # clears any pending plays for a card that's waiting to
 def manaArmsCheck(civ='ALL5', num=0):
 	if civ == 'ALL5':  # check if you have all 5 civs in mana zone
 		manaCards = [card for card in table if isMana(card) and card.owner == me]
+		civList = ["Fire", "Nature", "Water", "Light", "Darkness"]
 		flags = [False] * 5  # one flag for each corresponding civ [False, False, False, False, False]
 		for card in manaCards:
 			for i in range(0, 5):
@@ -498,14 +499,13 @@ def manaArmsCheck(civ='ALL5', num=0):
 			if flags[0] and flags[1] and flags[2] and flags[3] and flags[4]:
 				return True
 		return False
-	elif civ in civList:
+	else:
 		manaCards = [card for card in table if isMana(card) and card.owner == me and re.search(civ, card.Civilization)]
 		if len(manaCards) >= num:
 			return True
-	else: #Not civ based? Race based then
-		manaCards = [card for card in table if isMana(card) and card.owner == me and re.search(civ, card.Civilization)]
-		if len(manaCards) >= num:
-			return True
+
+def ifRaceInBattleZone(race):
+	cardList = [card for card in table if card.owner == me and isCreature(card) and not isBait(card)]
 
 ################ Functions used in the Automation dictionaries.####################
 
@@ -721,7 +721,7 @@ def fromMana(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL", show=
 def killAndSearch(play=False, singleSearch=False):
 	# looks like this is only used for Transmogrify
 	mute()
-	cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)]
+	cardList = [card for card in table if isCreature(card) and re.search("Creature", card.Type)] #wtfffffffffff is this why 2 redundant conditions
 	if len(cardList) == 0: return
 	choice = askCard2(cardList, 'Choose a Creature to destroy')
 	if type(choice) is not Card: return
@@ -1056,11 +1056,11 @@ def bounce(count=1, opponentOnly=False, toDeckTop=False, condition='True', check
 			return
 	if opponentOnly:
 		cardList = [card for card in table if
-					isCreature(card) and re.search("Creature", card.Type) and card.owner != me and not isBait(
+					isCreature(card) and card.owner != me and not isBait(
 						card) and eval(condition)]
 	else:
 		cardList = [card for card in table if
-					isCreature(card) and re.search("Creature", card.Type) and not isBait(card) and eval(condition)]
+					isCreature(card) and not isBait(card) and eval(condition)]
 	if len(cardList) < 1:
 		whisper("No valid targets on the table.")
 		return
@@ -1310,8 +1310,7 @@ def moveCards(args):
 def isCreature(card):
 	mute()
 	if card in table and not isShield(
-			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature",
-																									  card.Type):
+			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type):
 		return True
 	else:
 		return False
@@ -1320,8 +1319,7 @@ def isCreature(card):
 def isGod(card):
 	mute()
 	if card in table and not isShield(
-			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature",
-																									  card.Type) and re.search(
+			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type) and re.search(
 			"God", card.Race):
 		return True
 	else:
@@ -1331,8 +1329,7 @@ def isGod(card):
 def isGear(card):
 	mute()
 	if card in table and not isShield(
-			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Cross Gear",
-																									  card.Type):
+			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Cross Gear", card.Type):
 		return True
 	else:
 		return False
@@ -1341,8 +1338,7 @@ def isGear(card):
 def isFortress(card):
 	mute()
 	if card in table and not isShield(
-			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Fortress",
-																									  card.Type) and not re.search(
+			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Fortress", card.Type) and not re.search(
 			"Dragheart", card.Type):
 		return True
 	else:
@@ -1611,10 +1607,8 @@ def destroy(card, dest=False, ignoreEffects=False, x=0, y=0):
 	else:
 		cardToBeSaved = card
 		possibleSavers = [card for card in table if
-						  cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",
-																										card.rules) and (
-									  re.search(cardToBeSaved.properties['Race'], card.rules) or re.search(
-								  "Saver: All Races", card.rules))]
+						  cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",card.rules) 
+						  and (re.search(cardToBeSaved.properties['Race'], card.rules) or re.search("Saver: All Races", card.rules))]
 		if len(possibleSavers) > 0:
 			if confirm("Prevent {}'s destruction by using a Saver on your side of the field?\n\n".format(
 					cardToBeSaved.Name)):
