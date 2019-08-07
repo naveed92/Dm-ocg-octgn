@@ -287,10 +287,11 @@ cardScripts = {
 	'XENOM, the Reaper Fortress': {'onPlay': [' targetDiscard(True)']},
 	'Zombie Carnival': {'onPlay': ['fromGrave()']},
 	'Zombie Cyclone': {'onPlay': [' search(me.piles["Graveyard"], 1, "Creature")']},
-	# ON DESTROY EFFECTS, these have a bug for some reason
+	# ON DESTROY EFFECTS
 
 	'Akashic First, Electro-Dragon': {'onDestroy': ['toHand(card)']},
-	'Akashic Second, Electro-Spirit': {'onPlay': ['draw(me.Deck, True)'], 'onDestroy': ['toMana(card)']},
+	'Akashic Second, Electro-Spirit': {'onPlay': ['draw(me.Deck, True)'],
+										'onDestroy': ['toMana(card)']},
 	'Aqua Agent': {'onDestroy': ['toHand(card)']},
 	'Aqua Knight': {'onDestroy': ['toHand(card)']},
 	'Aqua Ranger': {'onDestroy': ['toHand(card)']},
@@ -326,6 +327,14 @@ cardScripts = {
 	'Stubborn Jasper': {'onDestroy': ['toHand(card)']},
 	'Red-Eye Scorpion': {'onDestroy': ['toMana(card)']},
 	'Worm Gowarski, Masked Insect': {'onDestroy': ['targetDiscard(True)']},
+
+	# ON SHIELD TRIGGER CHECKS - condtion for a card to be shield trigger(functions used here should ALWAYS return a boolean)
+	'Awesome! Hot Spring Gallows' : {'onTrigger': ['manaArmsCheck("Water", 3)']}
+	'Soul Garde, Storage Dragon Elemental': {'onTrigger': ['manaArmsCheck("Light", 5)']}
+	'Sg Spagelia, Dragment Symbol': {'onTrigger': ['manaArmsCheck("Water", 5)']}
+	'Zanjides, Tragedy Demon Dragon': {'onTrigger': ['manaArmsCheck("Darkness", 5)']}
+	'Mettagils, Passion Dragon': {'onTrigger': ['manaArmsCheck("Fire", 5)']}
+	'Traptops, Green Trap Toxickind': {'onTrigger': ['manaArmsCheck("Nature", 5)']}
 }
 
 
@@ -481,8 +490,7 @@ def clearWaitingCard():  # clears any pending plays for a card that's waiting to
 def manaArmsCheck(civ='ALL5', num=0):
 	if civ == 'ALL5':  # check if you have all 5 civs in mana zone
 		manaCards = [card for card in table if isMana(card) and card.owner == me]
-		civList = ["Fire", "Nature", "Water", "Light", "Darkness"]
-		flags = [False, False, False, False, False]  # one flag for each corresponding civ
+		flags = [False] * 5  # one flag for each corresponding civ [False, False, False, False, False]
 		for card in manaCards:
 			for i in range(0, 5):
 				if not flags[i] and re.search(civList[i], card.Civilization):
@@ -490,7 +498,11 @@ def manaArmsCheck(civ='ALL5', num=0):
 			if flags[0] and flags[1] and flags[2] and flags[3] and flags[4]:
 				return True
 		return False
-	else:
+	elif civ in civList:
+		manaCards = [card for card in table if isMana(card) and card.owner == me and re.search(civ, card.Civilization)]
+		if len(manaCards) >= num:
+			return True
+	else: #Not civ based? Race based then
 		manaCards = [card for card in table if isMana(card) and card.owner == me and re.search(civ, card.Civilization)]
 		if len(manaCards) >= num:
 			return True
@@ -1555,7 +1567,13 @@ def destroy(card, dest=False, ignoreEffects=False, x=0, y=0):
 			return
 		card.peek()
 		rnd(1, 10)
-		if re.search("{SHIELD TRIGGER}", card.Rules):
+		#check conditonal trigger for cards like Awesome! Hot Spring Gallows or Traptops
+		trigFunctions = cardScripts.get(card.name).get('onTrigger')
+		conditionalTrigger = True
+		if trigFunctions:
+			conditionalTrigger = eval(trigFunctions[0]) #will need to be changed to a for loop if there are multiple conditions
+
+		if conditonalTrigger and re.search("{SHIELD TRIGGER}", card.Rules):
 			if confirm("Activate Shield Trigger for {}?\n\n{}".format(card.Name, card.Rules)):
 				rnd(1, 10)
 				notify("{} uses {}'s Shield Trigger.".format(me, card.Name))
@@ -1962,7 +1980,6 @@ def toHand(card, show=True, x=0, y=0, alignCheck=True, checkEvo=True):
 
 	if alignCheck:
 		align()
-
 
 def toDeckBottom(card, x=0, y=0):
 	mute()
