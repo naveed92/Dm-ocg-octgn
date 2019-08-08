@@ -1237,8 +1237,7 @@ def flip(card, x=0, y=0):
 		elif card.alternate is forms[2]:
 			card.alternate = forms[0]
 			notify("{}'s {} reverts to {}.".format(me, old, card))
-		# align()
-		# no align for now as these cards have diff. sizes
+		align()
 		return
 
 	else:
@@ -1421,16 +1420,13 @@ def align():
 
 	temp = []
 	bigCards = []
-	# notify("CardOrderzero is {}".format(cardorder[0]))
 	for card in cardorder[0]:
-		# notify("{} Size is {}".format(card, card.size))
-		if card.size == "wide" or card.size == "tall":
-			# notify("BIG CARD!!! {}".format(card))
+		if card.size == "tall":
 			bigCards.append(card)
 		else:
 			temp.append(card)
 	cardorder[0] = temp
-	# remove all big cards from normall aligned ones
+	# remove all big cards from normal aligned ones
 	xpos = 80
 	ypos = 5 + 10 * (max([len(evolveDict[x]) for x in evolveDict]) if len(evolveDict) > 0 else 1)
 	for cardtype in cardorder:
@@ -1454,14 +1450,19 @@ def align():
 			Card(evolvedCard).moveToTable(x, y - 10 * count * playerside)
 			Card(evolvedCard).sendToBack()
 	# for landscape or large cards
-	xpos = 10
+	xpos = 15
+	if playerside==1:
+		xpos -= 93
 	ypos = 5 + 10 * (max([len(evolveDict[x]) for x in evolveDict]) if len(evolveDict) > 0 else 1)
 	for c in bigCards:
-		xpos += max(c.width, c.height) + 10
+		if playerside==1:
+			xpos += max(c.width, c.height) + 10
 		x = -1 * sideflip * xpos
-		y = ypos
+		y = playerside * ypos + (c.height/2 * playerside - c.height/2)
 		if c.position != (x, y):
 			c.moveToTable(x, y)
+		if playerside==-1:
+			xpos += max(c.width, c.height) + 10
 
 
 def clear(group, x=0, y=0):
