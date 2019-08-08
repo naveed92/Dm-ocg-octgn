@@ -1,9 +1,8 @@
-DMR Episode 2 Banlist
-(As of June 22, 2013. Valid for DMR Episode 2 JP format)
+DMR Dragon Saga Banlist
+(As of June 15, 2015. Valid for DMR-16 Dragon Saga JP format)
 
 Source:
 http://duelmasters.wikia.com/wiki/User:BlitzerRyuusei/Hall_of_Fame_timeline
-http://duelmasters.wikia.com/wiki/User:BlitzerRyuusei/List_of_Reasons_for_why_cards_are_Currently_Banned 
 
 Maximum deck size: 40
 
@@ -19,12 +18,11 @@ Miraculous Snare
 Infinity Dragon
 Pacific Champion
 Uberdragon Bajula
-Bajula's Soul
+Bajula’s Soul
 Miraculous Plague
 Mist Rias, Thunder Guardian
 Inferno Sign
 Perfect Galaxy, Spirit of Immortality
-Amaterasu, Founder of the Blue Wolves
 Paradise Aroma
 Romanesk, the Dragon Wizard
 Spiral Gate
@@ -46,7 +44,6 @@ Bolbalzak Ex
 Geo Baribari Miranda
 Surprise Illusion
 Seventh Tower
-The Door of Miracle and Mystery
 Aqua Melge
 Come On Pippi
 Hogan Blaster
@@ -62,6 +59,13 @@ Kiryu Jilves, Gaia's Roar
 Mystery Hippo
 Onimaru "Head", Victory Rush
 Rolan, the Oracle
+(new restrictions in Dragon Saga:)
+Hyperspatial Green White Hole
+Mystery Cube
+Deis Magician, Ranger of Gaia
+Upheaval
+Eureka Program
+Violent Dragon Alarm
 
 Banned:
 Bombazar, Dragon of Destiny
@@ -72,7 +76,7 @@ Hell Slash
 Slash Charger
 Soulswap
 Dark Hydra, Evil Planet Lord
-Judgement of the Flame's Spear and the Water's Blade
+Judgement of the Flame’s Spear and the Water’s Blade
 Aqua Patrol
 Cursed Totem
 Inferno Gate
@@ -80,12 +84,15 @@ Soul Advantage
 King Alcadeias, Holy Gaia
 Aquan
 Cyber Brain
-Crest of Mother
 Emperor Chirico
+Crest of Mother
 Mad Romanoff, the Wicked God
 Hyperspatial Vice Hole
 Door of Miracle and Mystery
+(new bans in Dragon Saga:)
+Amaterasu, Founder of the Blue Wolves
 
 Combo Ban:
 [these cannot be in the same deck + hyperspatial zone]
+
 Codename Sorge >> Jin, the Ogre Blade ~Crimson Rage~
