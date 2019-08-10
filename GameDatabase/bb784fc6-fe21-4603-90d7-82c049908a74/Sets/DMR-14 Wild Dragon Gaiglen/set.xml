@@ -63,7 +63,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon " />
 			<property name="Power" value="7500" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature cant be chosen by non light spells &#xd;&#xa;Double breaker" />
+			<property name="Rules" value="{BLOCKER}  Double breaker&#xd;&#xa;Whenever one of your Dragons attacks or blocks, you may add the top card of your deck to your shields face down.&#xd;&#xa; This creature cant be chosen by non light spells." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S1" />
 		</card>

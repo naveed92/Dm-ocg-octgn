@@ -9,10 +9,9 @@ playerside = None
 sideflip = None
 diesides = 20
 shieldMarker = ('Shield', 'a4ba770e-3a38-4494-b729-ef5c89f561b7')
-waitingCard = []  # Cards waiting for targets. Please replace this with FUNCTIONS waiting for targets later. If a card calls 2 functions both will happen again otherwise
-waitingCard1 = []
-waitingCard2 = []
-functionlistglobal = []
+waitingFunct = []  # Functions waiting for targets. Please replace this with FUNCTIONS waiting for targets later. If a card calls 2 functions both will happen again otherwise
+evaluateNextFunction = True #For conditional evaluation of one function after the other, currently only implemented for bounce() in IVT
+alreadyEvaluating = False
 # Start of Automation code
 
 cardScripts = {
@@ -191,8 +190,7 @@ cardScripts = {
 	'Goren Cannon': {'onPlay': ['kill(3000)']},
 	'Goromaru Communication': {'onPlay': ['search(me.Deck, 1, "Creature")']},
 	'Hell Chariot': {'onPlay': ['kill("ALL","Untap")']},
-	'Hide and Seek': {
-		'onPlay': ['bounce(1, True, condition = \'not re.search("Evolution", card.Type)\')', 'targetDiscard(True)']},
+	'Hide and Seek': {'onPlay': ['bounce(1, True, condition = \'not re.search("Evolution", card.Type)\')', 'targetDiscard(True)']},
 	'Hogan Blaster': {'onPlay': ['drama(True, "creature or spell", "battlezone", "top")']},
 	'Holy Awe': {'onPlay': ['tapCreature(1,True)']},
 	'Hopeless Vortex': {'onPlay': ['kill()']},
@@ -206,8 +204,7 @@ cardScripts = {
 	'Hyperspatial Faerie Hole': {'onPlay': ['mana(me.Deck)']},
 	'Hyperspatial Revive Hole': {'onPlay': ['search(me.piles["Graveyard"], 1, "Creature")']},
 	'Infernal Smash': {'onPlay': ['kill()']},
-	'Intense Vacuuming Twist': {
-		'onPlay': ['lookAtTopCards(5, "card", "hand", "bottom", True, "BOUNCE", ["Fire", "Nature"])', 'bounce(1,False, False, "True", True)']},
+	'Intense Vacuuming Twist': {'onPlay': ['lookAtTopCards(5, "card", "hand", "bottom", True, "BOUNCE", ["Fire", "Nature"])', 'bounce(conditionalFromLastFunction=True)']},
 	'Invincible Abyss': {'onPlay': ['destroyAll([card for card in table if card.owner != me], True)']},
 	'Invincible Aura': {'onPlay': ['shields(me.Deck, 3, True)']},
 	'Invincible Technology': {'onPlay': ['search(me.Deck,len(me.Deck)']},
@@ -343,7 +340,7 @@ cardScripts = {
 
 def endTurn(args, x=0, y=0):
 	mute()
-	clearWaitingCard()
+	clearWaitingFuncts()
 	nextPlayer = args.player
 	if nextPlayer == None or "":
 		# normally passed without green button
@@ -372,16 +369,11 @@ def resetGame():
 
 
 def onTarget(args):
-	global functionlistglobal
 	numberOfTargets = len([c for c in table if c.targetedBy == me])
 	if numberOfTargets == 0:
 		return
-	if waitingCard1:
-		waitingCard1.pop()
-		evaluateotherfunctions()
-		if waitingCard:
-			card = waitingCard.pop()
-			endoffunctionality(card)
+	if waitingFunct:
+		evaluateWaitingFunctions()
 
 
 ############################################################ would have to change this alot according to cascading functions, but for now this works.#########
@@ -479,14 +471,26 @@ def antiDiscard(card, sourcePlayer):
 def waitForTarget():
 	whisper("Waiting for targets. Please (re)target...")
 	whisper("[Esc to cancel]")
+	#now wait for user to target - event trigger will run def onTarget
 	return
 
+def evaluateWaitingFunctions():
+	while len(waitingFunct)>0:
+			waitingForTarget = eval(waitingFunct[0])
+			if waitingForTarget:
+				waitForTarget()
+				break #stop evaluating further functions, will start again when target is triggered
+			else:
+				#notify("DEBUG: Function deQueued: "+waitingFunct[0])
+				del waitingFunct[0] #deQueue
+				#notify("DEBUG: Waiting list is now: "+str(waitingFunct))
 
-def clearWaitingCard():  # clears any pending plays for a card that's waiting to choose targets etc
-	if waitingCard:
-		card = waitingCard.pop()
-		notify("Waiting for target for {} cancelled.".format(card.Name))
-
+def clearWaitingFuncts():  # clears any pending plays for a card that's waiting to choose targets etc
+	if waitingFunct:
+		for funct in waitingFunct:
+			del waitingFunct[0]
+		evaluateNextFunction = True #this should always be True, unless you're waiting for the next function to evaluate
+		notify("Waiting for target cancelled.")
 
 def manaArmsCheck(civ='ALL5', num=0):
 	if civ == 'ALL5':  # check if you have all 5 civs in mana zone
@@ -536,7 +540,7 @@ def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL"
 
 
 def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana', conditional=True):
-	# drama = getting creatures from top of deck for free
+	# drama = getting creatures from top of deck for free, eg. Mystery Cube, Balga Raiser, Hogan Blaster
 	mute()
 	if shuffle:
 		me.Deck.shuffle()
@@ -552,11 +556,13 @@ def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana
 	if success:
 		if conditional:
 			choice = askYN("Put {} into {}?\n\n {}".format(card.Name, targetZone, card.Rules))
-			# more conditions for non-bz?
+			# more conditions for non-bz to be added?
 			if choice == 1:
 				toPlay(card)
 				played = True
 				return
+			elif choice == 0: #player closes the window
+				failzone = 'backOnTop'
 		else:
 			toPlay(card)
 			played = True
@@ -603,8 +609,8 @@ def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone='botto
 			notify("{} moved a card to the bottom of their deck.".format(me))
 	if specialaction == "BOUNCE":
 		for civs in specialaction_civs:
-			if re.search(civs, card_for_special_action.properties['Civilization']):
-				waitingCard2.append(card_for_special_action.properties['Civilization'])
+			if not re.search(civs, card_for_special_action.properties['Civilization']):
+				evaluateNextFunction = False
 
 
 
@@ -1047,15 +1053,16 @@ def sacrifice(power=float('inf'), count=1):
 		destroy(choice)
 
 
-def bounce(count=1, opponentOnly=False, toDeckTop=False, condition='True', check_bounce = False):
+def bounce(count=1, opponentOnly=False, toDeckTop=False, condition='True', conditionalFromLastFunction=False):
 	mute()
-	if check_bounce == True:
-		if not waitingCard2:
+	global evaluateNextFunction
+	if conditionalFromLastFunction: #for example in case of Intense Vacuuming Twist
+		if not evaluateNextFunction:
+			evaluateNextFunction = True
 			return
 	if opponentOnly:
 		cardList = [card for card in table if
-					isCreature(card) and card.owner != me and not isBait(
-						card) and eval(condition)]
+					isCreature(card) and card.owner != me and not isBait(card) and eval(condition)]
 	else:
 		cardList = [card for card in table if
 					isCreature(card) and not isBait(card) and eval(condition)]
@@ -1083,8 +1090,6 @@ def bounce(count=1, opponentOnly=False, toDeckTop=False, condition='True', check
 			remoteCall(card.owner, "toDeck", card)
 		else:
 			remoteCall(card.owner, "toHand", card)
-	if waitingCard2:
-		waitingCard2.pop()
 
 def gear(str):
 	mute()
@@ -1264,7 +1269,7 @@ def toHyperspatial(card, x=0, y=0, notifymute=False):
 
 def moveCards(args):
 	mute()
-	clearWaitingCard()  # clear the waitingCard if ANY CARD moved from table
+	clearWaitingFuncts()  # clear the waitingCard if ANY CARD moved
 	player = args.player
 
 	fromGroup = args.fromGroups[0]
@@ -1467,14 +1472,14 @@ def align():
 
 def clear(group, x=0, y=0):
 	mute()
-	clearWaitingCard()
+	clearWaitingFuncts()
 	for card in group:
 		card.target(False)
 
 
 def setup(group, x=0, y=0):
 	mute()
-	clearWaitingCard()
+	clearWaitingFuncts()
 
 	cardsInTable = [c for c in table if c.controller == me and c.owner == me and not isPsychic(c)]
 	cardsInHand = [c for c in me.hand if not isPsychic(c)]
@@ -1531,7 +1536,7 @@ def rollDie(group, x=0, y=0):
 
 def untapAll(group=table, x=0, y=0):
 	mute()
-	clearWaitingCard()
+	clearWaitingFuncts()
 	for card in group:
 		if not card.owner == me:
 			continue
@@ -1544,7 +1549,7 @@ def untapAll(group=table, x=0, y=0):
 
 def tap(card, x=0, y=0):
 	mute()
-	clearWaitingCard()
+	clearWaitingFuncts()
 	card.orientation ^= Rot90
 	if card.orientation & Rot90 == Rot90:
 		notify('{} taps {}.'.format(me, card))
@@ -1560,7 +1565,7 @@ def destroy(card, x=0, y=0, dest=False, ignoreEffects=False):
 			return
 		card.peek()
 		rnd(1, 10)
-		#check conditonal trigger for cards like Awesome! Hot Spring Gallows or Traptops
+		#check conditional trigger for cards like Awesome! Hot Spring Gallows or Traptops
 		conditionalTrigger = True
 		if cardScripts.get(card.Name, {}).get('onTrigger'):
 			trigFunctions = cardScripts.get(card.Name).get('onTrigger')
@@ -1823,9 +1828,10 @@ def toShields(card, x=0, y=0, notifymute=False, alignCheck=True, checkEvo=True):
 
 def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False):
 	mute()
-	global functionnumber
-	global functionlistglobal
-	# clearWaitingCard()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
+	global alreadyEvaluating
+	#notify("DEBUG: AlreadyEvaluating is "+str(alreadyEvaluating))
+	if card.group == card.owner.hand:
+		clearWaitingFuncts()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
 
 	if re.search("Evolution", card.Type):
 		targets = [c for c in table
@@ -1861,19 +1867,22 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 	if notifymute == False:
 		notify("{} plays {}{}.".format(me, card, evolveText))
 
-	waitingCard.append(card)  # This card is being played right now, push into waitingCard
-
 	if not ignoreEffects:
 		if metamorph() and cardScripts.get(card.name, {}).get('onMetamorph', []):
 			functionlist = cardScripts.get(card.name).get('onMetamorph')
 			for function in functionlist:
-				eval(function)
+				waitingFunct.append(function)  # This fuction will be queued. RN it's waiting.
 
 		elif cardScripts.get(card.name, {}).get('onPlay', []):
-			functionlist = functionlistglobal = cardScripts.get(card.name).get('onPlay')
-			functionnumber = len(functionlistglobal)
-			evaluateotherfunctions()
-
+			functionList = cardScripts.get(card.name).get('onPlay')
+			for function in functionList:
+				waitingFunct.append(function) # This fuction will be queued. RN it's waiting.
+				notify("DEBUG: Function added to waiting list: "+str(function))
+		if not alreadyEvaluating: #this check is needed when a card is played with another card, for example Hogan Blaster
+			alreadyEvaluating = True
+			evaluateWaitingFunctions() #evaluate all the waiting functions. This thing stop evaluation if a function returns true(ie. its waiting for target)
+			alreadyEvaluating = False #evaluation is done (or waiting?).
+		
 	if card.Type == "Spell":
 		if re.search("Charger", card.name) and re.search("Charger", card.rules):
 			rnd(1, 100)
@@ -1883,9 +1892,6 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 			rnd(1, 100)
 			card.moveTo(card.owner.piles['Graveyard'])
 			align()
-
-	waitingCard.pop()  # card finished playing, pop from waitingCard
-
 
 	####### check some effect-stack here for other play resolving(not implemented yet) ############
 
