@@ -1877,7 +1877,7 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 			functionList = cardScripts.get(card.name).get('onPlay')
 			for function in functionList:
 				waitingFunct.append(function) # This fuction will be queued. RN it's waiting.
-				notify("DEBUG: Function added to waiting list: "+str(function))
+				#notify("DEBUG: Function added to waiting list: "+str(function))
 		if not alreadyEvaluating: #this check is needed when a card is played with another card, for example Hogan Blaster
 			alreadyEvaluating = True
 			evaluateWaitingFunctions() #evaluate all the waiting functions. This thing stop evaluation if a function returns true(ie. its waiting for target)
