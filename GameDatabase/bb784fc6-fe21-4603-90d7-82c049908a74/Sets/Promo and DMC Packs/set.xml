@@ -4228,6 +4228,18 @@ abilities) and becomes one creature. When the linked creature leaves the battle 
 			<property name="Rarity" value="Very Rare" />
 			<property name="Number" value="10" />
 		</card>
+		
+		<card name="Furious Onslaught" id="006d63ab-f038-455d-ae0b-254778f51814">
+			<property name="Format" value="TCG, Set17, Set35, OCG" />
+			<property name="Civilization" value="Fire" />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Spell" />
+			<property name="Race" value="" />
+			<property name="Rules" value="Until the end of the turn, each of your Dragonoids in the battle zone is an Armored Dragon in addition to its other races, gets +4000 power, and has &quot;Double breaker (This creature breaks 2 shields).&quot;" />
+			<property name="Power" value="" />
+			<property name="Rarity" value="Rare" />
+			<property name="Number" value="17" />
+		</card>
 
 		<card name="Spear Lupia" id="af541901-7cd1-487a-9864-8d861e550355">
 			<property name="Format" value="Set35, OCG" />
