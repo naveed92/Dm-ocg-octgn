@@ -1201,7 +1201,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; This creature can't attack." />
+			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="79" />
 		</card>

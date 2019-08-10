@@ -591,7 +591,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Justice Wing" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature can't attack players.&#xd;&#xa;Escape" />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature can't attack players.&#xd;&#xa;Escape(When this creature would be destroyed, you may add a card from your shield zone to your hand instead. You can't use its 'shield trigger' ability." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="36" />
 		</card>
