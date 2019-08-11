@@ -296,18 +296,6 @@
 			<property name="Number" value="14" />
 		</card>
 
-		<card name="Linkwood's Soul Burning" id="74cfeccc-8195-42f3-be0e-e98165e90a1d">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="6" />
-			<property name="Type" value="Spell" />
-			<property name="Race" value="" />
-			<property name="Power" value="" />
-			<property name="Rules" value="Gravity Zero-If you have 3 or more Dragons in the battle zone, you may cast this spell for no cost.&#xd;&#xa; Each of your creatures in the battle zone gets +3000 power and breaks an additional shield until the end of the turn.&#xd;&#xa; Whenever one of your creatures is blocked this turn, untap that creature." />
-			<property name="Rarity" value="Rare" />
-			<property name="Number" value="15" />
-		</card>
-
 		<card name="Bell the Elemental" id="4fca99d2-cfde-48a0-8c17-2af72774975c">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
