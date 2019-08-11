@@ -514,7 +514,7 @@ def ifRaceInBattleZone(race):
 
 ################ Functions used in the Automation dictionaries.####################
 
-def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL",noEvo=True):  # Temporary Fix for not allowing Evolutions
+def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL",noEvo=True):  # noEvo -> Temporary Fix for not allowing Evolutions
 	mute()
 	for i in range(0, count):
 		if TypeFilter != "ALL" and noEvo:
@@ -539,10 +539,10 @@ def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL"
 		toPlay(choice)
 
 
-def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana', conditional=True):
+def drama(shuffleFirst=True, type='creature', targetZone='battlezone', failZone='mana', conditional=True):
 	# drama = getting creatures from top of deck for free, eg. Mystery Cube, Balga Raiser, Hogan Blaster
 	mute()
-	if shuffle:
+	if shuffleFirst:
 		me.Deck.shuffle()
 		notify("{} shuffles their deck.".format(me))
 	card = me.Deck.top()
@@ -895,7 +895,7 @@ def kill(powerFilter='ALL', tapFilter='ALL', civFilter='ALL', count=1, targetOwn
 
 	targets = [c for c in table if c.targetedBy == me and isCreature(c)]
 	if len(targets) != count:
-		whisper("Wrong number of targets!")
+		#whisper("Wrong number of targets!")
 		return True  # return true activates the cardStack/waiting for targets mechanism
 	killList = []
 	for i in range(0, count):
@@ -933,10 +933,8 @@ def destroyAll(group, condition=False, powerFilter='ALL', civFilter="ALL", AllEx
 		cardToBeSaved = card
 		if cardToBeSaved.owner == me:
 			possibleSavers = [card for card in table if
-							  cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",
-																											card.rules) and (
-										  re.search(cardToBeSaved.properties['Race'], card.rules) or re.search(
-									  "Saver: All Races", card.rules))]
+							  cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",card.rules) and not isBait(card)
+							  and (re.search(cardToBeSaved.properties['Race'], card.rules) or re.search("Saver: All Races", card.rules))]
 			if len(possibleSavers) > 0:
 				if confirm("Prevent {}'s destruction by using a Saver on your side of the field?\n\n".format(
 						cardToBeSaved.Name)):
