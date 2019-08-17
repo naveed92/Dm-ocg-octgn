@@ -368,7 +368,7 @@ def resetGame():
 	me.setGlobalVariable("shieldCount", "0")
 
 
-def onTarget(args):
+def onTarget(args): #this is triggered by OCTGN events when any card is targeted or untargeted. Used to continue evaluating functions that are waiting for target
 	numberOfTargets = len([c for c in table if c.targetedBy == me])
 	if numberOfTargets == 0:
 		return
@@ -376,28 +376,10 @@ def onTarget(args):
 		evaluateWaitingFunctions()
 
 
-############################################################ would have to change this alot according to cascading functions, but for now this works.#########
+############################################ Misc utility functions ####################################################################################
 
-'''
-we can add more funcations here with conditions if need be in future, specially for cards with nested functions
- e.g. death gate and intense vacuuming twist. Since these cards only take 1 card as target, additional check here is not required
- for multiple targets of nested function cards, different checks will be required here.
- This will be the main body for handling them.
-'''
-
-
-def evaluatetargetfunction(funct):
-	global functionlistglobal
-	waitForTgt = eval(funct)
-	if waitForTgt:
-		waitingCard2.append(funct)
-		waitForTarget()
-
-
-###########################################################################################################################################################################
-
-
-def askCard2(list, title="Select a card", buttonText="Select",numberToTake=1):  # askCard function was changed. So using the same name but with the new functionality# this is for showing a dialog box with the cards in the incoming list. Careful, all cards will be visible, even if they're facedown.
+def askCard2(list, title="Select a card", buttonText="Select",numberToTake=1):  # askCard function was changed. So using the same name but with the new functionality
+#this is for showing a dialog box with the cards in the incoming list. Careful, all cards will be visible, even if they're facedown.
 	dlg = cardDlg(list)
 	dlg.title = title
 
@@ -413,14 +395,12 @@ def askCard2(list, title="Select a card", buttonText="Select",numberToTake=1):  
 		return None
 	return result[0]
 
-
 def askYN(text="Proceed?", c1="Yes", c2="No"):
 	# this asks a simple Y N question, but Yes or No can be replaced by other words. Returns 1 if yes, 2 for No and 0 if the box is closed
 	choiceList = [c1, c2]
 	colorsList = ['#FF0000', '#FF0000']
 	choice = askChoice(text, choiceList, colorsList)
 	return choice
-
 
 def removeIfEvo(card):
 	# Will remove passed card from the list of tracked evos/baits
@@ -445,18 +425,6 @@ def removeIfEvo(card):
 	me.setGlobalVariable('evolution', str(evolveDict))
 	return resultList
 
-
-def isBait(card):  # check if card is under and evo(needs to be ignored by most things) This is really inefficient, maybe make a func to get all baits once
-	result = False
-	evolveDict = eval(me.getGlobalVariable('evolution'))
-	for evo in evolveDict.keys():
-		baitList = evolveDict[evo]
-		if card._id in baitList:
-			result = True
-			break
-	return result
-
-
 def antiDiscard(card, sourcePlayer):
 	# sourcePlayer = the player trying play the discarding effect, not the target player
 	# le anti-discard check. Still WIP.
@@ -476,21 +444,31 @@ def waitForTarget():
 
 def evaluateWaitingFunctions():
 	while len(waitingFunct)>0:
-			waitingForTarget = eval(waitingFunct[0])
+			waitingForTarget = eval(waitingFunct[0][1]) #stored in the form [card, function]
 			if waitingForTarget:
 				waitForTarget()
 				break #stop evaluating further functions, will start again when target is triggered
 			else:
-				#notify("DEBUG: Function deQueued: "+waitingFunct[0])
+				#notify("DEBUG: card, function deQueued: "+waitingFunct[0])
+				cardBeingPlayed = waitingFunct[0][0]
 				del waitingFunct[0] #deQueue
+				if len(waitingFunct)==0:
+					endOfFunctionality(cardBeingPlayed)
+				elif cardBeingPlayed != waitingFunct[0][0]: #the next card is a different one
+					endOfFunctionality(cardBeingPlayed)
 				#notify("DEBUG: Waiting list is now: "+str(waitingFunct))
 
 def clearWaitingFuncts():  # clears any pending plays for a card that's waiting to choose targets etc
+	global alreadyEvaluating
 	if waitingFunct:
 		for funct in waitingFunct:
+			cardBeingPlayed = waitingFunct[0][0]
 			del waitingFunct[0]
-		evaluateNextFunction = True #this should always be True, unless you're waiting for the next function to evaluate
-		notify("Waiting for target cancelled.")
+			notify("Waiting for target/effect for {} cancelled.".format(cardBeingPlayed))
+			if not isSpellInBZ(cardBeingPlayed):
+				endOfFunctionality(cardBeingPlayed)		
+	alreadyEvaluating = False
+	evaluateNextFunction = True #this should always be True, unless you're waiting for the next function to evaluate
 
 def manaArmsCheck(civ='ALL5', num=0):
 	if civ == 'ALL5':  # check if you have all 5 civs in mana zone
@@ -512,9 +490,67 @@ def manaArmsCheck(civ='ALL5', num=0):
 def ifRaceInBattleZone(race):
 	cardList = [card for card in table if card.owner == me and isCreature(card) and not isBait(card)]
 
+################ Quick card attribute checks ####################
+
+def isCreature(card):
+	mute()
+	if card in table and not isShield(card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type):
+		return True
+	#by default python functions will return None, which is more or less the same as False
+
+def isSpellInBZ(card):
+	mute()
+	if card in table and not isShield(card) and not isMana(card) and re.search("Spell", card.Type):
+		return True
+
+def isGod(card):
+	mute()
+	if isCreature(card) and re.search("God", card.Race):
+		return True
+
+def isGear(card):
+	mute()
+	if card in table and not isShield(card) and not isMana(card) and re.search("Cross Gear", card.Type):
+		return True
+
+def isFortress(card):
+	mute()
+	if card in table and not isShield(card) and not isMana(card) and re.search("Fortress", card.Type) and not re.search("Dragheart", card.Type):
+		return True
+
+def isMana(card):
+	mute()
+	if card in table and not isShield(card) and not card.orientation == Rot90 and not card.orientation == Rot0:
+		return True
+
+def isShield(card):
+	mute()
+	if card in table and not card.isFaceUp:
+		return True
+	elif card in table and card.markers[shieldMarker] > 0:
+		return True
+
+def isPsychic(card):
+	mute()
+	if re.search("Psychic", card.Type) or re.search("Dragheart", card.Type):
+		return True
+
+def isBait(card):  # check if card is under and evo(needs to be ignored by most things) This is (probably)inefficient, maybe make a func to get all baits once
+	evolveDict = eval(me.getGlobalVariable('evolution'))
+	for evo in evolveDict.keys():
+		baitList = evolveDict[evo]
+		if card._id in baitList:
+			return True
+
+def metamorph():
+	mute()
+	cardList = [card for card in table if isMana(card) and card.owner == me]
+	if len(cardList) >= 7:
+		return True
+
 ################ Functions used in the Automation dictionaries.####################
 
-def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL",noEvo=True):  # noEvo -> Temporary Fix for not allowing Evolutions
+def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL",noEvo=True):  # Temporary Fix for not allowing Evolutions
 	mute()
 	for i in range(0, count):
 		if TypeFilter != "ALL" and noEvo:
@@ -539,10 +575,10 @@ def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL"
 		toPlay(choice)
 
 
-def drama(shuffleFirst=True, type='creature', targetZone='battlezone', failZone='mana', conditional=True):
+def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana', conditional=True):
 	# drama = getting creatures from top of deck for free, eg. Mystery Cube, Balga Raiser, Hogan Blaster
 	mute()
-	if shuffleFirst:
+	if shuffle:
 		me.Deck.shuffle()
 		notify("{} shuffles their deck.".format(me))
 	card = me.Deck.top()
@@ -629,13 +665,10 @@ def targetDiscard(randomDiscard=False, targetZone='grave', count=1):
 		remoteCall(targetPlayer, 'randomDiscard', targetPlayer.hand)
 		return
 
-	cardChoice = cardDlg(cardList)
-	cardChoice.title = 'Choose a Card to discard'
-	cardChoice.text = "{}'s hand".format(targetPlayer)
-	cardChoice = cardChoice.show()[0]
+	cardChoice = askCard2(cardList, "Choose a card to discard")
 
 	if type(cardChoice) is not Card:
-		notify("{} - Error".format(type(cardChoice)))
+		notify("Discard cancelled.")
 		return
 
 	if targetZone == 'shields':
@@ -895,7 +928,7 @@ def kill(powerFilter='ALL', tapFilter='ALL', civFilter='ALL', count=1, targetOwn
 
 	targets = [c for c in table if c.targetedBy == me and isCreature(c)]
 	if len(targets) != count:
-		#whisper("Wrong number of targets!")
+		whisper("Wrong number of targets!")
 		return True  # return true activates the cardStack/waiting for targets mechanism
 	killList = []
 	for i in range(0, count):
@@ -933,8 +966,10 @@ def destroyAll(group, condition=False, powerFilter='ALL', civFilter="ALL", AllEx
 		cardToBeSaved = card
 		if cardToBeSaved.owner == me:
 			possibleSavers = [card for card in table if
-							  cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",card.rules) and not isBait(card)
-							  and (re.search(cardToBeSaved.properties['Race'], card.rules) or re.search("Saver: All Races", card.rules))]
+							  cardToBeSaved != card and isCreature(card) and card.owner == me and re.search("Saver",
+																											card.rules) and (
+										  re.search(cardToBeSaved.properties['Race'], card.rules) or re.search(
+									  "Saver: All Races", card.rules))]
 			if len(possibleSavers) > 0:
 				if confirm("Prevent {}'s destruction by using a Saver on your side of the field?\n\n".format(
 						cardToBeSaved.Name)):
@@ -1265,7 +1300,7 @@ def toHyperspatial(card, x=0, y=0, notifymute=False):
 			notify("{}'s {} returns to the Hyperspatial Zone.".format(me, card))
 
 
-def moveCards(args):
+def moveCards(args): #this is triggered every time a card is moved
 	mute()
 	clearWaitingFuncts()  # clear the waitingCard if ANY CARD moved
 	player = args.player
@@ -1305,77 +1340,6 @@ def moveCards(args):
 					evolveDict[evo] = evolvedList
 		if evolveDict != eval(me.getGlobalVariable("evolution")):
 			me.setGlobalVariable("evolution", str(evolveDict))
-
-
-def isCreature(card):
-	mute()
-	if card in table and not isShield(
-			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type):
-		return True
-	else:
-		return False
-
-
-def isGod(card):
-	mute()
-	if card in table and not isShield(
-			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Creature", card.Type) and re.search(
-			"God", card.Race):
-		return True
-	else:
-		return False
-
-
-def isGear(card):
-	mute()
-	if card in table and not isShield(
-			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Cross Gear", card.Type):
-		return True
-	else:
-		return False
-
-
-def isFortress(card):
-	mute()
-	if card in table and not isShield(
-			card) and not card.orientation == Rot180 and not card.orientation == Rot270 and re.search("Fortress", card.Type) and not re.search(
-			"Dragheart", card.Type):
-		return True
-	else:
-		return False
-
-
-def isMana(card):
-	mute()
-	if card in table and not isShield(card) and not card.orientation == Rot90 and not card.orientation == Rot0:
-		return True
-	return False
-
-
-def isShield(card):
-	mute()
-	if card in table and not card.isFaceUp:
-		return True
-	elif card in table and card.markers[shieldMarker] > 0:
-		return True
-	return False
-
-
-def isPsychic(card):
-	mute()
-	if re.search("Psychic", card.Type) or re.search("Dragheart", card.Type):
-		return True
-	else:
-		return False
-
-
-def metamorph():
-	mute()
-	cardList = [card for card in table if isMana(card) and card.owner == me]
-	if len(cardList) < 7:
-		return False
-	else:
-		return True
 
 
 def align():
@@ -1826,10 +1790,10 @@ def toShields(card, x=0, y=0, notifymute=False, alignCheck=True, checkEvo=True):
 
 def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False):
 	mute()
-	global alreadyEvaluating
+	global alreadyEvaluating #is true when already evaluating some functions of the last card played, or when continuing after wait for Target
 	#notify("DEBUG: AlreadyEvaluating is "+str(alreadyEvaluating))
 	if card.group == card.owner.hand:
-		clearWaitingFuncts()  ## remove this later when we have effect stacking, for now this just ensures that waiting for targers is cancelled when a new card is played.
+		clearWaitingFuncts() # this ensures that waiting for targers is cancelled when a new card is played from hand(not when through a function).
 
 	if re.search("Evolution", card.Type):
 		targets = [c for c in table
@@ -1862,25 +1826,31 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 	if shieldMarker in card.markers:
 		card.markers[shieldMarker] = 0
 	align()
-	if notifymute == False:
+	if notifymute == False or not alreadyEvaluating:
 		notify("{} plays {}{}.".format(me, card, evolveText))
-
+	
 	if not ignoreEffects:
+		functionList = []
 		if metamorph() and cardScripts.get(card.name, {}).get('onMetamorph', []):
-			functionlist = cardScripts.get(card.name).get('onMetamorph')
-			for function in functionlist:
-				waitingFunct.append(function)  # This fuction will be queued. RN it's waiting.
-
+			functionList = cardScripts.get(card.name).get('onMetamorph')
+			notify("Metamorph for {} activated!".format(card))
 		elif cardScripts.get(card.name, {}).get('onPlay', []):
 			functionList = cardScripts.get(card.name).get('onPlay')
-			for function in functionList:
-				waitingFunct.append(function) # This fuction will be queued. RN it's waiting.
-				#notify("DEBUG: Function added to waiting list: "+str(function))
+
+		for function in functionList:
+			waitingFunct.append([card, function])  # This fuction will be queued(along with the card that called it). RN it's waiting.
+			#notify("DEBUG: Function added to waiting list: "+str(function))
 		if not alreadyEvaluating: #this check is needed when a card is played with another card, for example Hogan Blaster
 			alreadyEvaluating = True
 			evaluateWaitingFunctions() #evaluate all the waiting functions. This thing stop evaluation if a function returns true(ie. its waiting for target)
-			alreadyEvaluating = False #evaluation is done (or waiting?).
-		
+			alreadyEvaluating = False #evaluation is done (or waiting, but the card has finished).
+	if not waitingFunct: #Don't put card in grave if it's waiting for some effect.
+		#BUG: This check will always be reached first by a spell without any automation being played with Hogan Blaster. And since HB is still in waitingFunct...the spell never goes to grave automatically
+		#Soulution: Instead of this simple chcek make an intermediate function that checks if this card is in waitingFunct. If not, then do endOfFunctionality.
+		endOfFunctionality(card)
+
+
+def endOfFunctionality(card):
 	if card.Type == "Spell":
 		if re.search("Charger", card.name) and re.search("Charger", card.rules):
 			rnd(1, 100)
@@ -1891,39 +1861,6 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 			card.moveTo(card.owner.piles['Graveyard'])
 			align()
 
-	####### check some effect-stack here for other play resolving(not implemented yet) ############
-
-
-def evaluateotherfunctions():
-	global functionnumber
-	global functionlistglobal
-	if functionnumber == 0:
-		return
-	else:
-		waitForTgt = eval(functionlistglobal[len(functionlistglobal) - functionnumber])
-		if waitForTgt:
-			waitingCard1.append(functionlistglobal[len(functionlistglobal) - functionnumber])
-			waitForTarget()
-		else:
-			functionnumber = functionnumber - 1
-			evaluateotherfunctions()
-
-
-def endoffunctionality(card):
-	if card.Type == "Spell":
-		if re.search("Charger", card.name) and re.search("Charger", card.rules):
-			rnd(1, 100)
-			toMana(card)
-			align()
-		else:
-			rnd(1, 100)
-			card.moveTo(card.owner.piles['Graveyard'])
-			align()
-
-	waitingCard.pop()  # card finished playing, pop from waitingCard
-
-
-####### check some effect-stack here for other play resolving(not implemented yet) ############
 
 def toDiscard(card, x=0, y=0, notifymute=False, alignCheck=True, checkEvo=True):
 	mute()
