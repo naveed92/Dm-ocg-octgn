@@ -1745,18 +1745,6 @@
 			<property name="Number" value="None" />
 		</card>
 
-		<card name="Glenmalt 'Head', Dimension Dragon Edge" id="8abeb3d8-258b-4dc5-addf-78743145d6f6">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="7" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Gaial Command Dragon/Human Baku/Draguner" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="Speed attacker Double breaker&#xd;&#xa; Mana Arms 7: When this creature attacks, if you have 7 or more fire cards in your mana zone, choose one:► Put a non-weapon card that costs 6 or less from your hyperspatial zone to battle zone.:► While this creature is not equipped with a weapon,equip it with weapon that costs 6 or less from your hyperspatial zone" />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
-
 		<card name="Bolshack, Shobu Castle" id="5c6f3039-0972-4bea-80b4-b3fc19f014c3" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
