@@ -395,11 +395,10 @@ def askCard2(list, title="Select a card", buttonText="Select",numberToTake=1):  
 		return None
 	return result[0]
 
-def askYN(text="Proceed?", c1="Yes", c2="No"):
+def askYN(text="Proceed?", choices=["Yes", "No"], colorsList = ['#FF0000', '#FF0000', '#FF0000']):
 	# this asks a simple Y N question, but Yes or No can be replaced by other words. Returns 1 if yes, 2 for No and 0 if the box is closed
-	choiceList = [c1, c2]
-	colorsList = ['#FF0000', '#FF0000']
-	choice = askChoice(text, choiceList, colorsList)
+	
+	choice = askChoice(text, choices, colorsList)
 	return choice
 
 def removeIfEvo(card):
@@ -1057,12 +1056,10 @@ def fromDeck():
 	notify("{} looks at their Deck.".format(me))
 	me.Deck.lookAt(-1)
 
-
 def fromGrave():
 	mute()
 	notify("{} looks at their Graveyard.".format(me))
 	me.piles['Graveyard'].lookAt(-1)
-
 
 def lookAtCards(count=1, isTop=True):
 	mute()
@@ -1070,7 +1067,6 @@ def lookAtCards(count=1, isTop=True):
 		notify("{} looks at {} cards from bottom of their deck.".format(me, count))
 	notify("{} looks at {} cards from top of their deck.".format(me, count))
 	me.Deck.lookAt(count, isTop)
-
 
 def sacrifice(power=float('inf'), count=1):
 	mute()
@@ -1103,10 +1099,9 @@ def bounce(count=1, opponentOnly=False, toDeckTop=False, condition='True', condi
 		whisper("No valid targets on the table.")
 		return
 
-	# forcing octgn to go to targets function and wait
 	targets = [c for c in table if c.targetedBy == me]
 	if len(targets) != count:
-		return True
+		return True #forcing octgn to go to targets function and wait
 
 	bounceList = []
 	for i in range(0, count):
@@ -1116,7 +1111,7 @@ def bounce(count=1, opponentOnly=False, toDeckTop=False, condition='True', condi
 			whisper("{}.".format(choice))
 		else:
 			whisper("Wrong target(s)!")
-			return True
+			return True #true return forces wait. The same function is called again when targets change.
 
 	for card in bounceList:
 		if toDeckTop:
@@ -1233,8 +1228,7 @@ def suicide(name, action, arg):
 	choice = askChoice("Destroy the card to activate effect?", choiceList, colorsList)
 	if choice == 0 or choice == 2:
 		return
-	cardList = [card for card in table if isCreature(card) and card.owner == me and re.search("Creature", card.type)]
-	cardList = [card for card in cardList if card.name == name]
+	cardList = [card for card in table if card.name == name and card.owner == me and isCreature(card) ]
 	toDiscard(cardList[-1])
 	action(arg)
 
@@ -1535,12 +1529,17 @@ def destroy(card, x=0, y=0, dest=False, ignoreEffects=False):
 			for function in trigFunctions:
 				conditionalTrigger = conditionalTrigger and eval(trigFunctions[0])
 		if conditionalTrigger and re.search("{SHIELD TRIGGER}", card.Rules):
-			if confirm("Activate Shield Trigger for {}?\n\n{}".format(card.Name, card.Rules)):
+			choice = askYN("Activate Shield Trigger for {}?\n\n{}".format(card.Name, card.Rules), ["Yes", "No", "Wait"])
+			if choice==1:
 				rnd(1, 10)
 				notify("{} uses {}'s Shield Trigger.".format(me, card.Name))
 				card.isFaceUp = True
 				toPlay(card, notifymute=True)
 				return
+			elif choice==3 or choice==0:
+				notify("{} peeks at shield#{}".format(me, card.markers[shieldMarker]))
+				return
+
 		shieldCard = card
 		cardsInHandWithStrikeBackAbility = [card for card in me.hand if re.search("Strike Back", card.rules)]
 		if len(cardsInHandWithStrikeBackAbility) > 0:
