@@ -71,7 +71,7 @@
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Evolution Creature" />
-			<property name="Race" value="Demon Command Dragon " />
+			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="9000+" />
 			<property name="Rules" value="Evolution—Put on one of your Darkness commands.&#xd;&#xa; When you put this creature into the battle zone, destroy all other creatures.&#xd;&#xa;Double breaker&#xd;&#xa; If you have no other creatures in the battle zone, this creature gets +5000 power and has 'triple breaker'." />
 			<property name="Rarity" value="Promotional" />
@@ -241,7 +241,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value="Each of your Light cards put into your hand from your shields gets 'shield trigger'.&#xd;&#xa; While you have no shields, this creature has 'blocker'.&#xd;&#xa;Triple breaker&#xd;&#xa; When this creature would leave the battle zone, you may have your opponent choose one of your shields instead. If you do, put that shield into your hand.  (You can use the 'shield trigger' ability of that shield.) " />
+			<property name="Rules" value="Each of your Light cards put into your hand from your shields gets 'shield trigger'.&#xd;&#xa; While you have no shields, this creature has 'blocker'.&#xd;&#xa;Triple breaker&#xd;&#xa; When this creature would leave the battle zone, you may have your opponent choose one of your shields instead. If you do, put that shield into your hand.  (You can use the 'shield trigger' ability of that shield.)" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="V1" />
 		</card>
@@ -305,7 +305,7 @@
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Demon Command Dragon " />
+			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="Whenever one of your opponent's creatures is destroyed, shuffle your deck. Then reveal the top card of your deck. If it's a non-evolution Dragon, put it into the battle zone. If it's not, your opponent chooses and discards a card from his hand.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
@@ -315,7 +315,7 @@
 		<card name="Joan Mizell, Revolution Spear" id="35a3bcbb-0866-4c11-b770-1cf575a3c6c9">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 2" />
+			<property name="Cost" value="2" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -326,9 +326,9 @@
 			<alternate name="D'Arc-en-Ciel, Holy Spear Dragon Elemental" type="awakening">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
-				<property name="Cost" value=" 5" />
+				<property name="Cost" value="5" />
 				<property name="Type" value="Dragheart Creature" />
-				<property name="Race" value="Angel Command Dragon " />
+				<property name="Race" value="Angel Command Dragon" />
 				<property name="Power" value="5500" />
 				<property name="Rules" value="{BLOCKER}&#xd;&#xa; Whenever this creature attacks or blocks or leaves the battle zone, you may choose one of your opponent's creatures and tap it." />
 				<property name="Rarity" value="Promotional" />
@@ -340,7 +340,7 @@
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Crystal Command Dragon " />
+			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="When you put this creature into the battle zone, search your deck. From among it, you may take a water spell that costs 4 or less, shuffle your deck and cast that spell for no cost.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
@@ -351,7 +351,7 @@
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Demon Command Dragon " />
+			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="8000" />
 			<property name="Rules" value="Whenever this creature attacks, discard a card from your opponent's hand at random. Then you may put a darkness creature that costs less than the discarded card from your graveyard into the battle zone.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
@@ -362,7 +362,7 @@
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Evolution Creature" />
-			<property name="Race" value="Gaial Command Dragon " />
+			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="9000" />
 			<property name="Rules" value="Evolution—Put on one of your fire Dragons.&#xd;&#xa; Whenever your opponent chooses this creature, he chooses 3 cards in his mana zone and puts the rest into his graveyard.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
@@ -373,7 +373,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Evolution Creature" />
-			<property name="Race" value="Jurassic Command Dragon " />
+			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="9000" />
 			<property name="Rules" value="Evolution—Put on one of your nature Dragons.&#xd;&#xa; When you put this creature into the battle zone or whenever this creature attacks, you may put the top 2 cards of your deck into your mana zone.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
@@ -384,7 +384,7 @@
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command Dragon " />
+			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="4000" />
 			<property name="Rules" value="{SHIELD TRIGGER}&#xd;&#xa; When you put this creature into the battle zone, for each of your Dragons in the battle zone, you may choose one of your opponent's creatures in the battle zone and tap it." />
 			<property name="Rarity" value="Rare" />
@@ -395,7 +395,7 @@
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Crystal Command Dragon " />
+			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="Whenever your opponent draws cards, you may draw the same number of cards.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
@@ -406,7 +406,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Jurassic Command Dragon " />
+			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="5000" />
 			<property name="Rules" value="When you put this creature into the battle zone, choose one of your creatures in the battle zone and put it into your mana zone. Then, your opponent chooses one of his creatures in the battle zone and puts it into his mana zone." />
 			<property name="Rarity" value="Uncommon" />
@@ -417,7 +417,7 @@
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command Dragon " />
+			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="4500" />
 			<property name="Rules" value="Each of your other Dragons in the battle zone gets +4000 power." />
 			<property name="Rarity" value="Common" />
@@ -439,7 +439,7 @@
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Demon Command Dragon " />
+			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="5000" />
 			<property name="Rules" value="When you put this creature into the battle zone, you may destroy one of your creatures. If you do, draw a card.&#xd;&#xa;Slayer" />
 			<property name="Rarity" value="Common" />
@@ -450,7 +450,7 @@
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Gaial Command Dragon " />
+			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="5000" />
 			<property name="Rules" value="Each of your other dragons in the battle zone can attack untapped creatures." />
 			<property name="Rarity" value="Common" />
@@ -472,7 +472,7 @@
 		<card name="Batorai Edge, Blazing Sword" id="3ba04e3c-d9d6-460e-9f5a-1923149b7927">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -483,7 +483,7 @@
 			<alternate name="Batorai Keep, Blazing Castle" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Fire" />
-				<property name="Cost" value=" 5" />
+				<property name="Cost" value="5" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -495,7 +495,7 @@
 			<alternate name="Batorai Bushin, Blazing Deluxe" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Fire" />
-				<property name="Cost" value=" 8" />
+				<property name="Cost" value="8" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Gaial Command Dragon" />
 				<property name="Power" value="12000" />
@@ -520,18 +520,18 @@
 		<card name="Javeleon, Beast Lance" id="5d6306ea-bd1b-4a35-927c-42d1b00825fe">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 4" />
+			<property name="Cost" value="4" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this would be destroyed, you may add a shield to your hand instead.  (You can't use the 'shield trigger' ability of that shield.) &#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or less shields, you may flip this card to the dragheart fortress side. " />
+			<property name="Rules" value="Whenever a creature equipped with this would be destroyed, you may add a shield to your hand instead.  (You can't use the 'shield trigger' ability of that shield.) &#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or less shields, you may flip this card to the dragheart fortress side." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="6a/50" />
 
 			<alternate name="Leosaiyu, Beast Cathedral" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
-				<property name="Cost" value=" 7" />
+				<property name="Cost" value="7" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -543,7 +543,7 @@
 			<alternate name="Leo the World, Zenith Heavenly Saint" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
-				<property name="Cost" value=" 10" />
+				<property name="Cost" value="10" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Angel Command Dragon" />
 				<property name="Power" value="13500" />
@@ -560,7 +560,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="5500" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa; When you put this creature into the battle zone, you may choose one of your shields and add it to your hand. Then you may add a card from your hand to your shields face down.  (You may use 'shield trigger' ability of a shield added put into your hand in this way.) " />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa; When you put this creature into the battle zone, you may choose one of your shields and add it to your hand. Then you may add a card from your hand to your shields face down.  (You may use 'shield trigger' ability of a shield added put into your hand in this way.)" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="7/50" />
 		</card>
@@ -568,19 +568,19 @@
 		<card name="Hellfuezu, Purgatory Blade" id="5df25f5b-494c-4510-b216-46b07ceffd5a">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 4" />
-			<property name="Type" value="Dragheart Weapon " />
+			<property name="Cost" value="4" />
+			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, choose one of your opponent's creatures. That creature gets -6000 power until the end of the turn.&#xd;&#xa; Dragsolution—At the end of your turn, if one of your opponent's creatures was destroyed, you may flip this card to the dragheart fortress side. " />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, choose one of your opponent's creatures. That creature gets -6000 power until the end of the turn.&#xd;&#xa; Dragsolution—At the end of your turn, if one of your opponent's creatures was destroyed, you may flip this card to the dragheart fortress side." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="11a/50" />
 
 			<alternate name="Hell Crime, Purgatory Palace" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Darkness" />
-				<property name="Cost" value=" 7" />
-				<property name="Type" value="Dragheart Fortress " />
+				<property name="Cost" value="7" />
+				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
 				<property name="Rules" value="Whenever one of your darkness creatures attacks, you may destroy one of your other creatures. If you do, choose one of your opponent's creatures. That creature gets -6000 power until the end of the turn.&#xd;&#xa; Dragsolution—When one of your opponent's creatures is destroyed, you may flip this card to the dragheart creature side and untap it." />
@@ -591,7 +591,7 @@
 			<alternate name="Hellsekai, Great Massacre" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Darkness" />
-				<property name="Cost" value=" 10" />
+				<property name="Cost" value="10" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Demon Command Dragon" />
 				<property name="Power" value="12000" />
@@ -616,18 +616,18 @@
 		<card name="Boaroaxe, Evil Tomahawk" id="127c6445-3f27-4954-9379-c233191bfe7b">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 4" />
+			<property name="Cost" value="4" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="When you put this dragheart into the battle zone or whenever a creature equipped with this attacks, you may put a nature creature that costs 5 or less from your mana zone into the battle zone.&#xd;&#xa; Dragsolution: At the end of your turn, if the total cost of your creatures in the battle zone is 20 or more, you may flip this card to the dragheart fortress side. " />
+			<property name="Rules" value="When you put this dragheart into the battle zone or whenever a creature equipped with this attacks, you may put a nature creature that costs 5 or less from your mana zone into the battle zone.&#xd;&#xa; Dragsolution: At the end of your turn, if the total cost of your creatures in the battle zone is 20 or more, you may flip this card to the dragheart fortress side." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="16a/50" />
 
 			<alternate name="Boaropagos, Evil Emperor Ruins" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Nature" />
-				<property name="Cost" value=" 7" />
+				<property name="Cost" value="7" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -639,7 +639,7 @@
 			<alternate name="Verokiboaros, Ga Ga Ga" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Nature" />
-				<property name="Cost" value=" 10" />
+				<property name="Cost" value="10" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Jurassic Command Dragon" />
 				<property name="Power" value="15000" />
@@ -664,18 +664,18 @@
 		<card name="Ravuerite, Sun Spear" id="970ea3f7-a54a-4c84-8b9f-0a6a752161a0">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 2" />
+			<property name="Cost" value="2" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, you may put a creature that costs 3 or less from your hand into the battle zone.&#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or more creatures in the battle zone, you may flip this card to the dragheart fortress side. " />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, you may put a creature that costs 3 or less from your hand into the battle zone.&#xd;&#xa; Dragsolution—At the end of your turn, if you have 3 or more creatures in the battle zone, you may flip this card to the dragheart fortress side." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="21a/50" />
 
 			<alternate name="Blanc Noir, White Nights Church" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
-				<property name="Cost" value=" 4" />
+				<property name="Cost" value="4" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -687,7 +687,7 @@
 			<alternate name="Soleil Noir, Solar Eclipse Dragon Elemental" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Light" />
-				<property name="Cost" value=" 7" />
+				<property name="Cost" value="7" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Angel Command Dragon" />
 				<property name="Power" value="7000" />
@@ -712,18 +712,18 @@
 		<card name="Fanbai, Dragon Flower Fan" id="27abd686-fa79-42c4-9a7a-718fd692de7a">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, your opponent puts the top card of his deck into his graveyard. If it's a spell, you may cast it for no cost. If you do, put it into its owner's graveyard after casting it.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has 5 or more cards in his graveyard, you may flip this card to the dragheart fortress side. " />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, your opponent puts the top card of his deck into his graveyard. If it's a spell, you may cast it for no cost. If you do, put it into its owner's graveyard after casting it.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has 5 or more cards in his graveyard, you may flip this card to the dragheart fortress side." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="26a/50" />
 
 			<alternate name="Tonnanshape, Dragon Pulse Sky Ship" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Water" />
-				<property name="Cost" value=" 5" />
+				<property name="Cost" value="5" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -735,7 +735,7 @@
 			<alternate name="Daisushidora, Nitrous Sky Ship" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Water" />
-				<property name="Cost" value=" 8" />
+				<property name="Cost" value="8" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Crystal Command Dragon" />
 				<property name="Power" value="11000" />
@@ -760,18 +760,18 @@
 		<card name="Dragment Launcher, Three-Dimensional Weapon" id="80a49516-8b7e-4d1b-b209-b0d8ddb2aab3">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 2" />
+			<property name="Cost" value="2" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever the creature equipped with this attacks, you may draw a card. &#xd;&#xa; Dragsolution—At the end of your turn, if the creature equipped with this is tapped, you may flip this card to the dragheart fortress side. " />
+			<property name="Rules" value="Whenever the creature equipped with this attacks, you may draw a card. &#xd;&#xa; Dragsolution—At the end of your turn, if the creature equipped with this is tapped, you may flip this card to the dragheart fortress side." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="31a/50" />
 
 			<alternate name="Eucleidesu, Dragment Fighter" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Water" />
-				<property name="Cost" value=" 4" />
+				<property name="Cost" value="4" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -783,7 +783,7 @@
 			<alternate name="Ad Euclid, Dragment Symbol" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Water" />
-				<property name="Cost" value=" 7" />
+				<property name="Cost" value="7" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Crystal Command Dragon" />
 				<property name="Power" value="7000" />
@@ -808,18 +808,18 @@
 		<card name="Migawari, Nightmare Manji" id="520a8fc5-ca2c-41bb-b3bf-57c1de47b32e">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 2" />
+			<property name="Cost" value="2" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Dragsolution—When a creature equipped with this would be destroyed, flip this to the dragheart fortress side instead. " />
+			<property name="Rules" value="Dragsolution—When a creature equipped with this would be destroyed, flip this to the dragheart fortress side instead." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="36a/50" />
 
 			<alternate name="Karakurigaeshi, Ninja Mansion" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Darkness" />
-				<property name="Cost" value=" 4" />
+				<property name="Cost" value="4" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -831,7 +831,7 @@
 			<alternate name="Utsusemihenge, Blame Demon Dragon" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Darkness" />
-				<property name="Cost" value=" 7" />
+				<property name="Cost" value="7" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Demon Command Dragon" />
 				<property name="Power" value="7000" />
@@ -856,18 +856,18 @@
 		<card name="Meriken Hulk, Blooded Nail" id="d55c84ae-ddb5-4bdd-9830-1294ab140078">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 2" />
+			<property name="Cost" value="2" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever a creature equipped with this attacks, destroy one of your opponent's creatures that has power 2000 or less.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has less creatures in the battle zone than you do, flip this card to the dragheart fortress side. " />
+			<property name="Rules" value="Whenever a creature equipped with this attacks, destroy one of your opponent's creatures that has power 2000 or less.&#xd;&#xa; Dragsolution—At the end of your turn, if your opponent has less creatures in the battle zone than you do, flip this card to the dragheart fortress side." />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="41a/50" />
 
 			<alternate name="Bulk Arena, Passionate Duel Castle" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Fire" />
-				<property name="Cost" value=" 4" />
+				<property name="Cost" value="4" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -879,7 +879,7 @@
 			<alternate name="Valkyrie Mega Macho, Passionate Dragon" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Fire" />
-				<property name="Cost" value=" 7" />
+				<property name="Cost" value="7" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Gaial Command Dragon" />
 				<property name="Power" value="7000" />
@@ -904,7 +904,7 @@
 		<card name="Jurapil, Egg Hammer" id="cc4bba52-7705-4b1c-9b1c-22a4540b4e39">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 2" />
+			<property name="Cost" value="2" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -915,7 +915,7 @@
 			<alternate name="Le=Piraju, Birth Mystery" type="awakening" size="wide">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Nature" />
-				<property name="Cost" value=" 4" />
+				<property name="Cost" value="4" />
 				<property name="Type" value="Dragheart Fortress" />
 				<property name="Race" value="" />
 				<property name="Power" value="" />
@@ -927,7 +927,7 @@
 			<alternate name="Juran Kuruga, Growthkind" type="awakening2" size="tall">
 				<property name="Format" value="OCG" />
 				<property name="Civilization" value="Nature" />
-				<property name="Cost" value=" 7" />
+				<property name="Cost" value="7" />
 				<property name="Type" value="Dragheart Creature" />
 				<property name="Race" value="Jurassic Command Dragon" />
 				<property name="Power" value="9000" />
@@ -942,7 +942,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Jurassic Command Dragon " />
+			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="4000" />
 			<property name="Rules" value="When this creature would be discarded by one of your opponent's spell effect or creature ability, you may put it into the battle zone instead.&#xd;&#xa; When you put this creature into the battle zone, choose one of your opponent's cards that cost 4 or less in the battle zone and put it to its owner's mana zone." />
 			<property name="Rarity" value="Super Rare" />
@@ -1064,7 +1064,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="14000+" />
-			<property name="Rules" value="When you put this creature into the battle zone, you may draw a card for each civilization in your mana zone.&#xd;&#xa; This creature gets +2000 power for each civilization in your mana zone.&#xd;&#xa;Triple breaker&#xd;&#xa; If you have all civilizations in your mana zone, this creature gets 'world breaker'.  (A creature that has 'world breaker' breaks all your opponent's shields.) " />
+			<property name="Rules" value="When you put this creature into the battle zone, you may draw a card for each civilization in your mana zone.&#xd;&#xa; This creature gets +2000 power for each civilization in your mana zone.&#xd;&#xa;Triple breaker&#xd;&#xa; If you have all civilizations in your mana zone, this creature gets 'world breaker'.  (A creature that has 'world breaker' breaks all your opponent's shields.)" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S45/???" />
 		</card>
@@ -1282,7 +1282,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value=" Mana Arms 7: When you put this creature into the battle zone, if you have 7 or more fire cards in your mana zone, you may put a non-evolution fire creature from your hand other than Gaimusou, Angry Hero into the battle zone. It gets 'speed attacker' and returns to your hand at the end of the turn.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 7: When you put this creature into the battle zone, if you have 7 or more fire cards in your mana zone, you may put a non-evolution fire creature from your hand other than Gaimusou, Angry Hero into the battle zone. It gets 'speed attacker' and returns to your hand at the end of the turn.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -1311,10 +1311,10 @@
 			<property name="Number" value="None" />
 		</card>
 
-		<card name="Gaial, Leader Dragon Sword " id="c5b2c100-645d-4071-8962-272dc6d65698">
+		<card name="Gaial, Leader Dragon Sword" id="c5b2c100-645d-4071-8962-272dc6d65698">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 4" />
+			<property name="Cost" value="4" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -1354,7 +1354,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value=" Mana Arms 7: When you put this creature into the battle zone, if you have 7 or more darkness cards in your mana zone, put a non-evolution darkness creature other than Urami Hades, Curse Hero from your graveyard into the battle zone.s&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="Mana Arms 7: When you put this creature into the battle zone, if you have 7 or more darkness cards in your mana zone, put a non-evolution darkness creature other than Urami Hades, Curse Hero from your graveyard into the battle zone.s&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -1383,10 +1383,10 @@
 			<property name="Number" value="None" />
 		</card>
 
-		<card name="Diabolos Double Zeta, Temporal Demon Dragon " id="e31ae37a-cdea-412f-a7d0-e5d638057786">
+		<card name="Diabolos Double Zeta, Temporal Demon Dragon" id="e31ae37a-cdea-412f-a7d0-e5d638057786">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 10" />
+			<property name="Cost" value="10" />
 			<property name="Type" value="Psychic Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="9000" />
@@ -1407,10 +1407,10 @@
 				</alternate>
 		</card>
 
-		<card name="Diabolos, Prison Dragon Blade " id="d1a1487e-0c6d-4410-b60a-4546f819fea3">
+		<card name="Diabolos, Prison Dragon Blade" id="d1a1487e-0c6d-4410-b60a-4546f819fea3">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 4" />
+			<property name="Cost" value="4" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -1462,7 +1462,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human Baku" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value=" Mana Arms 3: When you put this creature into the battle zone, if you have 3 or more fire cards in your mana zone, you may discard a card from your hand. If you do, draw 2 cards." />
+			<property name="Rules" value="Mana Arms 3: When you put this creature into the battle zone, if you have 3 or more fire cards in your mana zone, you may discard a card from your hand. If you do, draw 2 cards." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -1470,11 +1470,11 @@
 		<card name="Forefront Double Cross Shogunate" id="b68aa7d9-650c-41fc-99f5-3e881aa2678e" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Whenever one of your fire Dragons attacks, destroy one of your opponent's creatures that has 'blocker'.&#xd;&#xa; Dragsolution: When one of your fire creatures attacks, if it's the second fire creature that attacked this turn, flip this card to the dragheart creature side and untap it. " />
+			<property name="Rules" value="Whenever one of your fire Dragons attacks, destroy one of your opponent's creatures that has 'blocker'.&#xd;&#xa; Dragsolution: When one of your fire creatures attacks, if it's the second fire creature that attacked this turn, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 			
@@ -1494,7 +1494,7 @@
 		<card name="Gaiohburn, Head General Sword" id="8a433d05-dcfb-46e8-971f-97e7723fde7b">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -1534,7 +1534,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human Baku" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, you may destroy this creature. If you do, choose one of the following.:► Put the top card of your deck into your mana zone.:► Destroy one of your opponent's creatures that has power 2000 power or less." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, you may destroy this creature. If you do, choose one of the following.:► Put the top card of your deck into your mana zone.:► Destroy one of your opponent's creatures that has power 2000 power or less." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />
 		</card>
@@ -1580,7 +1580,7 @@
 		<card name="Protoheart, Galaxy Sword" id="7b87f095-4796-45e5-8779-dc55451c18d9">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 4" />
+			<property name="Cost" value="4" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -1676,7 +1676,7 @@
 		<card name="Great Galaxy, Giant Castle" id="2aa9006a-8e32-4358-9daf-57872d87cf05" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 4" />
+			<property name="Cost" value="4" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -1745,22 +1745,10 @@
 			<property name="Number" value="None" />
 		</card>
 
-		<card name="Glenmalt 'Head', Dimension Dragon Edge" id="8abeb3d8-258b-4dc5-addf-78743145d6f6">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="7" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Gaial Command Dragon/Human Baku/Draguner" />
-			<property name="Power" value="7000" />
-			<property name="Rules" value="Speed attacker Double breaker&#xd;&#xa; Mana Arms 7: When this creature attacks, if you have 7 or more fire cards in your mana zone, choose one:► Put a non-weapon card that costs 6 or less from your hyperspatial zone to battle zone.:► While this creature is not equipped with a weapon,equip it with weapon that costs 6 or less from your hyperspatial zone" />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
-
 		<card name="Bolshack, Shobu Castle" id="5c6f3039-0972-4bea-80b4-b3fc19f014c3" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 6" />
+			<property name="Cost" value="6" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -1784,7 +1772,7 @@
 		<card name="Proto Gigaheart, Invincible Sword" id="57984c2a-31c0-4582-8294-11b7806b0c7a">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 2" />
+			<property name="Cost" value="2" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />

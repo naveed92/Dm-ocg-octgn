@@ -1549,12 +1549,38 @@ def untapAll(group=table, x=0, y=0):
 
 def tap(card, x=0, y=0):
 	mute()
-	clearWaitingFuncts()
 	card.orientation ^= Rot90
 	if card.orientation & Rot90 == Rot90:
 		notify('{} taps {}.'.format(me, card))
 	else:
 		notify('{} untaps {}.'.format(me, card))
+
+def tapMultiple(cards, x=0, y=0): #batchExecuted for multiple cards tapped at once(manually)
+	mute()
+	clearWaitingFuncts()
+	mana = [card for card in cards if isMana(card)]
+	creatures = [card for card in cards if isCreature(card)]
+	tappedMana = 0
+	for card in creatures:
+		card.orientation ^= Rot90
+		notify('{} taps {}.'.format(me, card)) if card.orientation & Rot90 == Rot90 else notify('{} untaps {}.'.format(me, card))
+			
+	for card in mana:
+		card.orientation ^= Rot90
+		if card.orientation & Rot90 == Rot90:
+			tappedMana+=1
+	untappedMana = len(mana) - tappedMana
+
+	if len(mana)==1:
+		notify('{} taps {} in mana.'.format(me, mana[0])) if mana[0].orientation & Rot90 == Rot90 else notify('{} untaps {} in mana.'.format(me,  mana[0]))
+			
+	elif len(mana)>1:
+		if tappedMana>0 and untappedMana>0:
+			notify('{} taps mana {} and untaps {} mana.'.format(me, tappedMana, untappedMana))
+		elif tappedMana>0:
+			notify('{} taps {} mana.'.format(me, tappedMana))
+		else:
+			notify('{} untaps {} mana.'.format(me, untappedMana))
 
 
 def destroy(card, x=0, y=0, dest=False, ignoreEffects=False):

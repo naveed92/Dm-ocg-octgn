@@ -66,7 +66,7 @@
 		</card>
 		<card name="Perfect Earth, Planetary Dragon" id="c2a212ff-22ee-4d17-b7fc-cf8c90c2afe9">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire" />
+			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="World Dragon" />
