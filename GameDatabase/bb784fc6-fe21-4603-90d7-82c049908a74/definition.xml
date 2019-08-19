@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		id="bb784fc6-fe21-4603-90d7-82c049908a74" 
-		version="1.0.7.5"
+		version="1.0.7.4"
 		octgnVersion="3.3.132.0" 
 		scriptVersion="3.1.0.2" 
 		name="Duel Masters" 
@@ -56,7 +56,7 @@
 		<groupaction menu="Set Up Battlezone" execute="setup" />
 		<groupaction menu="End Turn" shortcut="ctrl+E" execute="endTurn" />
 		<groupaction menu="Clear Targets/Arrows" shortcut="esc" execute="clear" />
-		<cardaction menu="Tap / Untap" default="True" shortcut="ctrl+G" batchExecute="tapMultiple" />
+		<cardaction menu="Tap / Untap" default="True" shortcut="ctrl+G" execute="tap" />
 		<cardaction menu="Play Card" execute="toPlay" />
 		<cardaction menu="Destroy Card / Break Shield" shortcut="del" execute="destroy" />
 		<cardaction menu="Set as Shield" shortcut="ctrl+H" execute="toShields" />
