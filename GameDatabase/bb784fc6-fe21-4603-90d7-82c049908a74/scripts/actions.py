@@ -340,7 +340,6 @@ cardScripts = {
 
 def endTurn(args, x=0, y=0):
 	mute()
-	clearWaitingFuncts()
 	nextPlayer = args.player
 	if nextPlayer == None or "":
 		# normally passed without green button
@@ -1505,7 +1504,6 @@ def untapAll(group=table, x=0, y=0):
 
 def tap(card, x=0, y=0):
 	mute()
-	clearWaitingFuncts()
 	card.orientation ^= Rot90
 	if card.orientation & Rot90 == Rot90:
 		notify('{} taps {}.'.format(me, card))
