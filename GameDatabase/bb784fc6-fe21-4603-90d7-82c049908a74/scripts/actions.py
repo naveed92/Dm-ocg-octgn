@@ -70,8 +70,7 @@ cardScripts = {
 	'Gylus, Larval Lord': {'onPlay': ['targetDiscard(True)']},
 	'Gyulcas, Sage of the East Wind': {'onPlay': [' search(me.Deck, 1, "Cross Gear")']},
 	'Hawkeye Lunatron': {'onPlay': ['search(me.Deck, 1, "ALL", "ALL", "ALL", False)']},
-	'Honenbe, Skeletal Guardian': {
-		'onPlay': ['mill(me.Deck, 3, True)', 'search(me.piles["Graveyard"], 1, "Creature")']},
+	'Honenbe, Skeletal Guardian': {'onPlay': ['mill(me.Deck, 3, True)', 'search(me.piles["Graveyard"], 1, "Creature")']},
 	'Hormone, Maxim Bronze': {'onPlay': ['mana(me.Deck)']},
 	'Hot Spring Crimson Meow': {'onPlay': ['draw(me.Deck, True)']},
 	'Hulk Crawler': {'onPlay': ['draw(me.Deck, True)']},
@@ -90,6 +89,7 @@ cardScripts = {
 	'Locomotiver': {'onPlay': ['targetDiscard(True)']},
 	'Magris, Vizier of Magnetism': {'onPlay': ['draw(me.Deck, True)']},
 	'Masked Horror, Shadow of Scorn': {'onPlay': ['targetDiscard(True)']},
+	'Metal Avenger Solid, Dragon Edge': {'onPlay': ['bounce(opponentOnly=True, condition="int(card.Cost)<=6")','fromHyperspatial("Water and 4", "Dragheart")']},
 	'Meteosaur': {'onPlay': ['kill(2000)']},
 	'Miele, Vizier of Lightning': {'onPlay': ['tapCreature()']},
 	'Moors, the Dirty Digger Puppet': {'onPlay': [' search(me.piles["Graveyard"])']},
@@ -114,6 +114,7 @@ cardScripts = {
 	'Rumbling Terahorn': {'onPlay': ['search(me.Deck, 1, "Creature")']},
 	'Ryokudou, the Principle Defender': {'onPlay': ['mana(me.Deck,2)', 'fromMana()']},
 	'Sarvarti, Thunder Spirit Knight': {'onPlay': ['search(me.piles["Graveyard"], 1, "Spell")']},
+	'Sasoris, Dragon Edge': {'onPlay': ['fromHyperspatial("2 or Nature and 4", "Dragheart")']},
 	'Scissor Scarab': {'onPlay': ['search(1,"ALL","ALL","Giant Insect")']},
 	'Shtra': {'onPlay': [' fromMana(1, "ALL", "ALL", "ALL", True, False, True)']},
 	'Self-Destructing Gil Poser': {'onPlay': ['suicide("Self-Destructing Gil Poser", kill, 2000)']},
@@ -201,7 +202,7 @@ cardScripts = {
 	'Hyperspatial Vice Hole': {'onPlay': [' targetDiscard()']},
 	'Hyperspatial Shiny Hole': {'onPlay': ['tapCreature()']},
 	'Hyperspatial Energy Hole': {'onPlay': ['draw(me.Deck, False, 1)']},
-	'Hyperspatial Faerie Hole': {'onPlay': ['mana(me.Deck)']},
+	'Hyperspatial Faerie Hole': {'onPlay': ['mana(me.Deck)', 'fromHyperspatial("5 or Nature and 7")']},
 	'Hyperspatial Revive Hole': {'onPlay': ['search(me.piles["Graveyard"], 1, "Creature")']},
 	'Infernal Smash': {'onPlay': ['kill()']},
 	'Intense Vacuuming Twist': {'onPlay': ['lookAtTopCards(5, "card", "hand", "bottom", True, "BOUNCE", ["Fire", "Nature"])', 'bounce(conditionalFromLastFunction=True)']},
@@ -340,6 +341,7 @@ cardScripts = {
 
 def endTurn(args, x=0, y=0):
 	mute()
+	clearWaitingFuncts()
 	nextPlayer = args.player
 	if nextPlayer == None or "":
 		# normally passed without green button
@@ -443,18 +445,18 @@ def waitForTarget():
 def evaluateWaitingFunctions():
 	while len(waitingFunct)>0:
 			waitingForTarget = eval(waitingFunct[0][1]) #stored in the form [card, function]
+			update()
 			if waitingForTarget:
 				waitForTarget()
 				break #stop evaluating further functions, will start again when target is triggered
 			else:
-				#notify("DEBUG: card, function deQueued: "+waitingFunct[0])
+				#notify("DEBUG: card, function deQueued:{},{} ".format(waitingFunct[0][0], waitingFunct[0][1]))
 				cardBeingPlayed = waitingFunct[0][0]
 				del waitingFunct[0] #deQueue
 				if len(waitingFunct)==0:
 					endOfFunctionality(cardBeingPlayed)
 				elif cardBeingPlayed != waitingFunct[0][0]: #the next card is a different one
 					endOfFunctionality(cardBeingPlayed)
-				#notify("DEBUG: Waiting list is now: "+str(waitingFunct))
 
 def clearWaitingFuncts():  # clears any pending plays for a card that's waiting to choose targets etc
 	global alreadyEvaluating
@@ -567,8 +569,7 @@ def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL"
 		else:
 			cardsInGroup_CivTypeandRace_Filtered = [card for card in cardsInGroup_CivandType_Filtered]
 		if len(cardsInGroup_CivTypeandRace_Filtered) == 0: return
-		choice = askCard2(cardsInGroup_CivTypeandRace_Filtered, 'Choose a Card  to Summon from the Graveyard',
-						  'Graveyard')
+		choice = askCard2(cardsInGroup_CivTypeandRace_Filtered, 'Choose a Card  to Summon from the Graveyard','Graveyard')
 		if type(choice) is not Card: break
 		toPlay(choice)
 
@@ -1114,9 +1115,10 @@ def bounce(count=1, opponentOnly=False, toDeckTop=False, condition='True', condi
 
 	for card in bounceList:
 		if toDeckTop:
-			remoteCall(card.owner, "toDeck", card)
+			toDeck(card) if card.owner==me else remoteCall(card.owner, "toDeck", card)
 		else:
-			remoteCall(card.owner, "toHand", card)
+			toHand(card) if card.owner==me else remoteCall(card.owner, "toHand", card)
+		
 
 def gear(str):
 	mute()
@@ -1231,6 +1233,26 @@ def suicide(name, action, arg):
 	toDiscard(cardList[-1])
 	action(arg)
 
+def fromHyperspatial(cardCondition="True", cardType="Psychic Creature", preCondition=True):
+	mute()
+	condList = cardCondition.split()
+	cardCondition = ""
+	for word in condList:
+		if word == "and" or word=="or":
+			cardCondition += word + " "
+		elif word.isdigit():
+			cardCondition += "int(card.Cost)<="+word+" "
+		else:
+			cardCondition += "re.search('"+word+"', card.Civilization) "
+	whisper("DEBUG: cardCondition is "+cardCondition)
+	
+	if not preCondition:
+		return
+	validSummons = [card for card in me.Hyperspatial if re.search(cardType, card.Type) and eval(cardCondition)]
+	choice = askCard2(validSummons, "Select a card to put into the battlezone", numberToTake=1)
+	if type(choice) is Card:
+		toPlay(choice)
+		
 
 # End of Automation Code
 
@@ -1293,46 +1315,70 @@ def toHyperspatial(card, x=0, y=0, notifymute=False):
 			notify("{}'s {} returns to the Hyperspatial Zone.".format(me, card))
 
 
-def moveCards(args): #this is triggered every time a card is moved
+def moveCards(args): #this is triggered every time a card is dragged by mouse
 	mute()
 	clearWaitingFuncts()  # clear the waitingCard if ANY CARD moved
-	player = args.player
-
-	fromGroup = args.fromGroups[0]
-	toGroup = args.toGroups[0]
-	## Old vars are: player, card, fromGroup, toGroup, oldIndex, index, oldX, oldY, x, y, highlights, markers, faceup
+	player = args.cards[0].controller
+	if player != me:  ##Ignore if you're not the one who did this
+		return
 	for card in args.cards:
-		if player != me:  ##Ignore for cards you don't control
-			return
-		##When a player moves top card of deck to bottom of deck
-		if fromGroup == me.Deck and toGroup == me.Deck:
-			if card == me.Deck.bottom():
-				notify("{} moves a card in their deck to bottom".format(me))
-			elif card == me.Deck.top():
-				notify("{} moves a card in their deck to top".format(me))
+		index = args.cards.index(card)
+		fromGroup = card.group
+		toGroup = args.toGroups[index]
+		wasVisible = (card.group == table and card.isFaceUp or card.group.visibility == "all")
+		
+		#setting the name of where the card is before moving
+		fromGroupName = fromGroup.name.lower()
+		if card == me.Deck.bottom():
+			fromGroupName = "bottom of deck"
+		if card == me.Deck.top():			
+			fromGroupName = "top of deck"
+		if fromGroupName == "table":
+			if isMana(card):
+				fromGroupName = "mana zone"
+			elif isShield(card):
+				fromGroupName = "shield zone"
 			else:
-				notify("{} moves a card around in their deck".format(me))
-			return
+				fromGroupName = "battle zone"
 
-		## This updates the evolution dictionary in the event one of the cards involved in an evolution leaves the battlezone.
-		if table not in args.fromGroups:  ## we only want cases where a card is being moved from table to another group
-			##notify("Ignored")
-			return
-		evolveDict = eval(me.getGlobalVariable("evolution"))
-		for evo in evolveDict.keys():
-			if Card(evo) not in table:
-				del evolveDict[evo]
-			else:
-				evolvedList = evolveDict[evo]
-				for evolvedCard in evolvedList:
-					if Card(evolvedCard) not in table:
-						evolvedList.remove(evolvedCard)
-				if len(evolvedList) == 0:
-					del evolveDict[evo]
-				else:
-					evolveDict[evo] = evolvedList
-		if evolveDict != eval(me.getGlobalVariable("evolution")):
-			me.setGlobalVariable("evolution", str(evolveDict))
+		#actually moving the card(since this event has now been overridden in the game definition.xml, we have to do it manually)
+		if toGroup == table:
+			card.moveToTable(args.xs[index], args.ys[index])
+			card.isFaceUp = args.faceups[index]
+		else:
+			card.moveTo(toGroup, args.indexs[index])
+			if fromGroup == table:
+				removeIfEvo(card)
+			## This updates the evolution dictionary in the event one of the cards involved in an evolution leaves the battlezone.
+		#setting the name of where the card went
+		toGroupName = toGroup.name.lower()
+		if card == me.Deck.bottom():
+			toGroupName = "bottom of deck"
+		if card == me.Deck.top():			
+			toGroupName = "top of deck"
+		if toGroupName == "table":
+			toGroupName = "battle zone"
+
+		###### NOTIFICATIONS FOR MOVING CARDS ######
+		if fromGroupName == "top of deck" and toGroup == me.hand:	#card was moved from top of deck to hand
+			notify("{} draws a card.".format(me))
+			continue
+		
+		if toGroupName == "deck" and fromGroupName == "deck": #card was moved around in the deck(not from/to top or bottom)
+			notify("{} moves a card around in their deck.".format(me))
+			continue
+		
+		if fromGroupName == toGroupName: #the card was moved around in the same zone.(Except deck)
+			continue	#skip displaying notifications
+		
+		isVisible = (card.group == table and card.isFaceUp or card.group.visibility == "all")
+		if(not isVisible and wasVisible):
+			notify("{} moves {} from {} to {}.".format(me, card.Name, fromGroupName, toGroupName))
+		else:
+			notify("{} moves {} from {} to {}.".format(me, card, fromGroupName, toGroupName))
+
+
+			
 
 
 def align():
@@ -1497,20 +1543,21 @@ def untapAll(group=table, x=0, y=0):
 			continue
 		if card.orientation == Rot90:
 			card.orientation = Rot0
-		if card.orientation == Rot270:
+		elif card.orientation == Rot270:
 			card.orientation = Rot180
 	notify("{} untaps all their cards.".format(me))
 
 
 def tap(card, x=0, y=0):
 	mute()
+	clearWaitingFuncts()
 	card.orientation ^= Rot90
 	if card.orientation & Rot90 == Rot90:
 		notify('{} taps {}.'.format(me, card))
 	else:
 		notify('{} untaps {}.'.format(me, card))
 
-def tapMultiple(cards, x=0, y=0): #batchExecuted for multiple cards tapped at once(manually)
+def tapMultiple(cards, x=0, y=0): #batchExecuted for multiple cards tapped/untapped at once
 	mute()
 	clearWaitingFuncts()
 	mana = [card for card in cards if isMana(card)]
@@ -1834,8 +1881,7 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 			return
 		else:
 			targetList = [c._id for c in targets]
-			evolveDict = eval(
-				me.getGlobalVariable("evolution"))  ##evolveDict tracks all cards 'underneath' the evolution creature
+			evolveDict = eval(me.getGlobalVariable("evolution"))  ##evolveDict tracks all cards 'underneath' the evolution creature
 			for evolveTarget in targets:  ##check to see if the evolution targets are also evolution creatures
 				if evolveTarget._id in evolveDict:  ##if the card already has its own cards underneath it
 					if isCreature(evolveTarget):
@@ -1867,7 +1913,8 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 		if not alreadyEvaluating: #this check is needed when a card is played with another card, for example Hogan Blaster
 			alreadyEvaluating = True
 			evaluateWaitingFunctions() #evaluate all the waiting functions. This thing stop evaluation if a function returns true(ie. its waiting for target)
-			alreadyEvaluating = False #evaluation is done (or waiting, but the card has finished).
+			if not waitingFunct:
+				alreadyEvaluating = False #evaluation is done 
 	if not waitingFunct: #Don't put card in grave if it's waiting for some effect.
 		#BUG: This check will always be reached first by a spell without any automation being played with Hogan Blaster. And since HB is still in waitingFunct...the spell never goes to grave automatically
 		#Soulution: Instead of this simple chcek make an intermediate function that checks if this card is in waitingFunct. If not, then do endOfFunctionality.

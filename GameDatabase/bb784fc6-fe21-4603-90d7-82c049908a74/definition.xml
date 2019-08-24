@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		id="bb784fc6-fe21-4603-90d7-82c049908a74" 
-		version="1.0.7.5"
+		version="1.0.7.4"
 		octgnVersion="3.3.132.0" 
 		scriptVersion="3.1.0.2" 
 		name="Duel Masters" 
@@ -19,7 +19,7 @@
 	
 	<events>
 		<event name="OnGameStarted" action="resetGame" />
-		<event name="OnCardsMoved" action="moveCards" />
+		<event name="OverrideCardsMoved" action="moveCards" />
 		<event name="OverrideTurnPassed" action="endTurn" />
 		<event name="OnCardTargeted" action="onTarget" />
 	</events>
