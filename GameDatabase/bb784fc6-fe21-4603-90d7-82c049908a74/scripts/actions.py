@@ -1244,7 +1244,7 @@ def fromHyperspatial(cardCondition="True", cardType="Psychic Creature", preCondi
 			cardCondition += "int(card.Cost)<="+word+" "
 		else:
 			cardCondition += "re.search('"+word+"', card.Civilization) "
-	whisper("DEBUG: cardCondition is "+cardCondition)
+	#whisper("DEBUG: cardCondition is "+cardCondition)
 	
 	if not preCondition:
 		return
