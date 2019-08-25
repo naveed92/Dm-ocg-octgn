@@ -23,7 +23,7 @@
 		<card name="Heart Burn, Battle General Galaxy Fortress" id="627ca3a6-298c-4b78-900e-7b9a1785db83" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -34,7 +34,7 @@
 		<alternate name="GuyNEXT, Super Battle Victory Dragon" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 10" />
+			<property name="Cost" value="10" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="17000" />
@@ -47,7 +47,7 @@
 		<card name="Endless Heaven, True Holy Church" id="a97bcfbe-274e-4f94-bfa3-3c54d533b179" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -58,7 +58,7 @@
 		<alternate name="Neverend, True Destiny King" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 10" />
+			<property name="Cost" value="10" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="14500" />
@@ -87,7 +87,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="Double breaker&#xd;&#xa; Whenever you cast a spell, you may draw a card.&#xd;&#xa; Each of your spells gets 'Strike Back: Same Civilization'.  (Whenever a shield is put into your hand, you may discard it. If you do, cast a spell that has the same civilization as that shield from your hand for no cost.) " />
+			<property name="Rules" value="Double breaker&#xd;&#xa; Whenever you cast a spell, you may draw a card.&#xd;&#xa; Each of your spells gets 'Strike Back: Same Civilization'.  (Whenever a shield is put into your hand, you may discard it. If you do, cast a spell that has the same civilization as that shield from your hand for no cost.)" />
 			<property name="Rarity" value="Super Rare" />
 			<property name="Number" value="S2" />
 		</card>
@@ -121,7 +121,7 @@
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Evolution Creature" />
-			<property name="Race" value="Mega Command Dragon " />
+			<property name="Race" value="Mega Command Dragon" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="Evolution—Put on one of your fire creatures.&#xd;&#xa;Double breaker&#xd;&#xa; Whenever this creature attacks, after the attack, you may tap one of your other fire creatures. If you do, untap this creature." />
 			<property name="Rarity" value="Very Rare" />
@@ -131,7 +131,7 @@
 		<card name="Judaiou, Jurassic Jungle" id="5c568b4b-b57b-4352-8c7d-69e6b7cf93c8" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -142,7 +142,7 @@
 		<alternate name="Sauzaurupio, Terror Ancient King" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 8" />
+			<property name="Cost" value="8" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="18000" />
@@ -203,7 +203,7 @@
 		<card name="Bluenika, Dragon Soul Fortress" id="6eb8d8ba-8164-4e19-b351-9f34fadf9024" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -214,7 +214,7 @@
 		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
-			<property name="Cost" value=" 50" />
+			<property name="Cost" value="50" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="World Command Dragon" />
 			<property name="Power" value="50000" />
@@ -251,7 +251,7 @@
 		<card name="Blacko, Dragon Soul Palace" id="658e5454-84b1-4c1e-b8a0-54446007340d" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -262,7 +262,7 @@
 		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
-			<property name="Cost" value=" 50" />
+			<property name="Cost" value="50" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="World Command Dragon" />
 			<property name="Power" value="50000" />
@@ -339,7 +339,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value=" Strike Back—Light (When a light card is put into your hand from your shield zone, you may discard that card. If you do, summon this creature for no cost.)&#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack players." />
+			<property name="Rules" value="Strike Back—Light (When a light card is put into your hand from your shield zone, you may discard that card. If you do, summon this creature for no cost.)&#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack players." />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="19" />
 		</card>
@@ -613,7 +613,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Jurassic Command Dragon " />
+			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="5000" />
 			<property name="Rules" value="When you put this creature into the battle zone, put the top card of your deck into your mana zone." />
 			<property name="Rarity" value="Common" />

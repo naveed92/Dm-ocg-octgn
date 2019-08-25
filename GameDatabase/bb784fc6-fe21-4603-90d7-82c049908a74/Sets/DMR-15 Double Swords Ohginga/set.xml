@@ -34,7 +34,7 @@
 		<alternate name="Ohginga, Strongest Passion" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 11" />
+			<property name="Cost" value="11" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="15000" />
@@ -47,7 +47,7 @@
 		<card name="Heaven's Heaven, Heavenly Justice" id="71295175-6a3d-40f9-8e51-7b70ebc7726a" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -58,7 +58,7 @@
 		<alternate name="Neverlast, Destiny Adoration" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 9" />
+			<property name="Cost" value="9" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="14500" />
@@ -71,7 +71,7 @@
 		<card name="Niga=Abushumu, Invasive Mystery" id="de0c3318-b546-4f7f-9689-be018934ab85" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -82,7 +82,7 @@
 		<alternate name="Niga=Vermut, Evil King" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
-			<property name="Cost" value=" 11" />
+			<property name="Cost" value="11" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="18000" />
@@ -315,7 +315,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="One of your opponent's creatures in the battle zone gets -1000 power for each of your Dragons in your mana zone until the end of the turn.  (A creature that has power 0 or less is destroyed.) " />
+			<property name="Rules" value="One of your opponent's creatures in the battle zone gets -1000 power for each of your Dragons in your mana zone until the end of the turn.  (A creature that has power 0 or less is destroyed.)" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="14" />
 		</card>
@@ -323,7 +323,7 @@
 		<card name="Gaial Horn, Iron-slashing Sword" id="b8b86efa-3015-430a-8e24-423a28eeaac6">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 2" />
+			<property name="Cost" value="2" />
 			<property name="Type" value="Dragheart Weapon" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -334,7 +334,7 @@
 		<alternate name="Zantetsu Big Horn, Passion Dragon" type="awakening">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="4000+" />
@@ -399,7 +399,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Each of your Command Dragons in the battle zone gets 'blocker'.  (Whenever one of your opponent's creatures attacks, you may tap a creature that has 'blocker' to stop the attack. Then the 2 creatures battle.) " />
+			<property name="Rules" value="Each of your Command Dragons in the battle zone gets 'blocker'.  (Whenever one of your opponent's creatures attacks, you may tap a creature that has 'blocker' to stop the attack. Then the 2 creatures battle.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="20" />
 		</card>
@@ -483,7 +483,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Each of your creatures in the battle zone gets 'slayer' until the end of the turn.  (Whenever a creature that has 'slayer' battles, destroy the opponent's creature after the battle.) " />
+			<property name="Rules" value="Each of your creatures in the battle zone gets 'slayer' until the end of the turn.  (Whenever a creature that has 'slayer' battles, destroy the opponent's creature after the battle.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="27" />
 		</card>
@@ -565,7 +565,7 @@
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="4" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command Dragon " />
+			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="5000" />
 			<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature can't attack players. &#xd;&#xa; Whenever this creature blocks, choose one of your opponent's creatures in the battle zone and tap it." />
 			<property name="Rarity" value="Common" />
@@ -613,7 +613,7 @@
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Crystal Command Dragon " />
+			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="5000" />
 			<property name="Rules" value="Each of your Command Dragons in the battle zone can't be blocked." />
 			<property name="Rarity" value="Common" />
@@ -673,9 +673,9 @@
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value="4" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Demon Command Dragon " />
+			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="4000" />
-			<property name="Rules" value="Each of your Command Dragons in the battle zone gets 'slayer'.  (Whenever a creature that has 'slayer' battles, destroy the other creature after the battle.) " />
+			<property name="Rules" value="Each of your Command Dragons in the battle zone gets 'slayer'.  (Whenever a creature that has 'slayer' battles, destroy the other creature after the battle.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="43" />
 		</card>
@@ -687,7 +687,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Funky Knightmare" />
 			<property name="Power" value="3000" />
-			<property name="Rules" value="When this creature is destroyed, choose one of your opponent's creatures in the battle zone. That creature gets -3000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.) " />
+			<property name="Rules" value="When this creature is destroyed, choose one of your opponent's creatures in the battle zone. That creature gets -3000 power until the end of the turn.  (A creature that has power 0 or less is destroyed.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="44" />
 		</card>
@@ -733,9 +733,9 @@
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Gaial Command Dragon " />
+			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="Each of your Command Dragons in the battle zone gets 'speed attacker'.  (A creature that has 'speed attacker' doesn't get summoning sickness.) " />
+			<property name="Rules" value="Each of your Command Dragons in the battle zone gets 'speed attacker'.  (A creature that has 'speed attacker' doesn't get summoning sickness.)" />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="48" />
 		</card>
