@@ -34,7 +34,7 @@
 		<alternate name="Q.E.D. Plus, Final Dragon Logic" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 7" />
+			<property name="Cost" value="7" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="11000" />
