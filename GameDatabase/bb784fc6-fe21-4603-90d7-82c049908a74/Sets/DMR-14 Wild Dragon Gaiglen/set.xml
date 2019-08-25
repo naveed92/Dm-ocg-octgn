@@ -360,7 +360,7 @@
 			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
-			<property name="Power" value="0" />
+			<property name="Power" value="" />
 			<property name="Rules" value="Your nature creatures may cost 1 less to summon. They can't cost less than 1.&#xd;&#xa;Dragsolution: At the start of your turn, if you have 2 or more Nature creatures in the battle zone, flip this card to the dragheart creature side and untap it." />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="18a" />
