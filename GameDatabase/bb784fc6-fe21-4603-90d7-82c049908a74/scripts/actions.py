@@ -178,7 +178,7 @@ cardScripts = {
 	'Faerie Crystal': {'onPlay': ['mana(me.Deck, postAction="ManaIfCiv", postArgs=["Zero"] )']},
 	'Faerie Life': {'onPlay': ['mana(me.Deck)']},
 	'Faerie Miracle': {'onPlay': ['mana(me.Deck, postAction="mana(me.Deck)", postCondition="manaArmsCheck()")']},
-	'Faerie Shower': {'onPlay': ['lookAtTopCards(2,"card","hand","mana", False)']},
+	'Faerie Shower': {'onPlay': ['lookAtTopCards(2,"True","hand","mana", False)']},
 	'Flame-Absorbing Palm': {'onPlay': ['kill(2000)']},
 	'Fire Crystal Bomb': {'onPlay': ['kill(5000)']},
 	'Flame Lance Trap': {'onPlay': ['kill(5000)']},
@@ -205,7 +205,7 @@ cardScripts = {
 	'Hyperspatial Faerie Hole': {'onPlay': ['mana(me.Deck)', 'fromHyperspatial("5 or Nature and 7")']},
 	'Hyperspatial Revive Hole': {'onPlay': ['search(me.piles["Graveyard"], 1, "Creature")']},
 	'Infernal Smash': {'onPlay': ['kill()']},
-	'Intense Vacuuming Twist': {'onPlay': ['lookAtTopCards(5, "card", "hand", "bottom", True, "BOUNCE", ["Fire", "Nature"])', 'bounce(conditionalFromLastFunction=True)']},
+	'Intense Vacuuming Twist': {'onPlay': ['lookAtTopCards(5, "True", "hand", "bottom", True, "BOUNCE", ["Fire", "Nature"])', 'bounce(conditionalFromLastFunction=True)']},
 	'Invincible Abyss': {'onPlay': ['destroyAll([card for card in table if card.owner != me], True)']},
 	'Invincible Aura': {'onPlay': ['shields(me.Deck, 3, True)']},
 	'Invincible Technology': {'onPlay': ['search(me.Deck,len(me.Deck)']},
@@ -273,6 +273,7 @@ cardScripts = {
 	'Timeless Garden': {'onPlay': ['mana(me.Deck)']},
 	'Tornado Flame': {'onPlay': [' kill(4000)']},
 	'Transmogrify': {'onPlay': ['killAndSearch(True)']},
+	'Treasure Map':  {'onPlay': ['lookAtTopCards(5, "Creature and Nature")']},
 	'Triple Brain': {'onPlay': ['draw(me.Deck, False, 3)']},
 	'Ultimate Force': {'onPlay': [' mana(me.Deck, 2)']},
 	'Vacuum Ray': {'onPlay': ['tapCreature()']},
@@ -460,6 +461,7 @@ def evaluateWaitingFunctions():
 
 def clearWaitingFuncts():  # clears any pending plays for a card that's waiting to choose targets etc
 	global alreadyEvaluating
+	global evaluateNextFunction
 	if waitingFunct:
 		for funct in waitingFunct:
 			cardBeingPlayed = waitingFunct[0][0]
@@ -473,6 +475,8 @@ def clearWaitingFuncts():  # clears any pending plays for a card that's waiting 
 def manaArmsCheck(civ='ALL5', num=0):
 	if civ == 'ALL5':  # check if you have all 5 civs in mana zone
 		manaCards = [card for card in table if isMana(card) and card.owner == me]
+		if len(manaCards)<num:
+			return False
 		civList = ["Fire", "Nature", "Water", "Light", "Darkness"]
 		flags = [False] * 5  # one flag for each corresponding civ [False, False, False, False, False]
 		for card in manaCards:
@@ -490,6 +494,29 @@ def manaArmsCheck(civ='ALL5', num=0):
 def ifRaceInBattleZone(race):
 	cardList = [card for card in table if card.owner == me and isCreature(card) and not isBait(card)]
 
+def convertCondition(condition, cardToCheck="card"): #intermediate function to convert a simple string to evaluable condition, both in string form
+	#for example - "Nature and 5" is converted to "re.search('Nature', card.Civilization) and int(card.cost)<=5"
+	# card. can be replaced by whatever string is mentioned, eg. if the arg cardToCheck is "choice" condition generated will be "int(choice.cost)<=5"
+	#very rudimentary for now, but can be expanded later to VASTLY simplify all function conditions that check for specific card attrbutes
+	condList = condition.split()
+	condition = ""
+	for word in condList:
+		if word == "and" or word=="or" or word=="not" or word=="True" or word=="False":
+			condition += word + " "
+		elif word.isdigit():
+			condition += "int(card.Cost)<="+word+" "
+		elif word=="Fire" or word=="Nature" or word=="Water" or word=="Light" or word=="Darkness" or word=="Zero":
+			condition += "re.search('"+word+"', card.Civilization) "
+		else:
+			condition += "re.search('"+word+"', card.Type) " #for now everything else will be searched in card type. Add power here later also...maybe.
+		#also need to add checks for < and > for cost and power, when power is added later
+
+	if cardToCheck!="card":
+		cardToCheck=cardToCheck+"."
+		condition = condition.replace("card.", cardToCheck)
+	#whisper("DEBUG: converted condition is "+condition)
+	return condition
+	
 ################ Quick card attribute checks ####################
 
 def isCreature(card):
@@ -611,15 +638,16 @@ def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana
 		card.isFaceUp = False
 
 
-def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone='bottom', reveal=True, specialaction='NONE', specialaction_civs = []):
+def lookAtTopCards(num, cardCondition="True", targetZone='hand', remainingZone='bottom', reveal=True, specialaction='NONE', specialaction_civs = []):
 	mute()
+	global evaluateNextFunction
 	notify("{} looks at the top {} cards of their deck".format(me, num))
 	cardList = [card for card in me.Deck.top(num)]
 	choice = askCard2(cardList, 'Choose a card to put into {}'.format(targetZone))
 	if type(choice) is Card:
 		if not 'NONE' in specialaction:
 			card_for_special_action = choice
-		if cardType == 'card' or re.search(cardType, choice.Type):
+		if eval(convertCondition(cardCondition, "choice")):
 			# use switch instead, when more zones are added here
 			if targetZone == 'mana':
 				toMana(choice)
@@ -627,7 +655,7 @@ def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone='botto
 				# to hand is default rn
 				toHand(choice, show=reveal)
 		else:
-			notify("Please select a {}! Action cancelled.".format(cardType))
+			notify("Please select a card that is a {}! Action cancelled.".format(cardCondition))
 			return
 	else:
 		notify("Nothing selected! Action cancelled.")
@@ -642,9 +670,9 @@ def lookAtTopCards(num, cardType='card', targetZone='hand', remainingZone='botto
 		else:
 			card.moveToBottom(me.Deck)
 			notify("{} moved a card to the bottom of their deck.".format(me))
-	if specialaction == "BOUNCE":
+	if specialaction != "NONE":
 		for civs in specialaction_civs:
-			if not re.search(civs, card_for_special_action.properties['Civilization']):
+			if not re.search(civs, card_for_special_action.Civilization):
 				evaluateNextFunction = False
 
 
@@ -1235,17 +1263,7 @@ def suicide(name, action, arg):
 
 def fromHyperspatial(cardCondition="True", cardType="Psychic Creature", preCondition=True):
 	mute()
-	condList = cardCondition.split()
-	cardCondition = ""
-	for word in condList:
-		if word == "and" or word=="or":
-			cardCondition += word + " "
-		elif word.isdigit():
-			cardCondition += "int(card.Cost)<="+word+" "
-		else:
-			cardCondition += "re.search('"+word+"', card.Civilization) "
-	#whisper("DEBUG: cardCondition is "+cardCondition)
-	
+	cardCondition = convertCondition(cardCondition)
 	if not preCondition:
 		return
 	validSummons = [card for card in me.Hyperspatial if re.search(cardType, card.Type) and eval(cardCondition)]
@@ -1368,7 +1386,7 @@ def moveCards(args): #this is triggered every time a card is dragged by mouse
 			notify("{} moves a card around in their deck.".format(me))
 			continue
 		
-		if fromGroupName == toGroupName: #the card was moved around in the same zone.(Except deck)
+		if fromGroupName == toGroupName or fromGroup == table and toGroup == table: #the card was moved around in the same zone.(Except deck)
 			continue	#skip displaying notifications
 		
 		isVisible = (card.group == table and card.isFaceUp or card.group.visibility == "all")
@@ -1618,7 +1636,7 @@ def destroy(card, x=0, y=0, dest=False, ignoreEffects=False):
 			cardsInHandWithStrikeBackAbilityThatCanBeUsed = []
 			for card in cardsInHandWithStrikeBackAbility:
 				if re.search("Super Strike Back", card.rules):  # special case for Deadbrachio
-					if manaArmsCheck():
+					if manaArmsCheck("ALL5", 5):
 						cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
 				elif re.search("Strike Back.*Hunter", card.rules):
 					if re.search("Hunter", shieldCard.Race):  # special case for Aqua Advisor
@@ -1626,8 +1644,7 @@ def destroy(card, x=0, y=0, dest=False, ignoreEffects=False):
 				elif re.search("Strike Back", card.rules) and re.search(card.Civilization, shieldCard.Civilization):
 					cardsInHandWithStrikeBackAbilityThatCanBeUsed.append(card)
 			if len(cardsInHandWithStrikeBackAbilityThatCanBeUsed) > 0:
-				if confirm("Activate Strike Back by sending {} to the graveyard?\n\n{}".format(shieldCard.Name,
-																							   shieldCard.Rules)):
+				if confirm("Activate Strike Back by sending {} to the graveyard?\n\n{}".format(shieldCard.Name, shieldCard.Rules)):
 					choice = askCard2(cardsInHandWithStrikeBackAbilityThatCanBeUsed, 'Choose Strike Back to activate')
 					if type(choice) is Card:
 						shieldCard.isFaceUp = True
@@ -1751,7 +1768,7 @@ def mana(group, count=1, ask=False, tapped=False, postAction="NONE", postArgs=[]
 
 def doPostAction(card, postAction, postArgs, postCondition):
 	# does something more in the effect, might be based on what the first card was; eg: Geo Bronze Magic or simple stuff like Skysword(shield comes after mana)
-	# implement BounceIfCiv for Intense Vacuuming Twist? Maybe make a whole different function for ifCiv or ifRace just to evaluate the conditon based on args
+	# implement BounceIfCiv for Intense Vacuuming Twist? Maybe make a whole different function for ifCiv or ifRace just to evaluate the condition based on args
 	# For example, if there is "IfCiv" in postAction, check args for the civ, if there's "ifRace"(eg Eco Aini) etc. -> This can be done in a separate function instead of here
 	if postAction == "NONE":
 		return
@@ -1906,7 +1923,10 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 			notify("Metamorph for {} activated!".format(card))
 		elif cardScripts.get(card.name, {}).get('onPlay', []):
 			functionList = cardScripts.get(card.name).get('onPlay')
-
+		
+		if(not functionList): #no on-play automation is present
+			endOfFunctionality(card)
+		
 		for function in functionList:
 			waitingFunct.append([card, function])  # This fuction will be queued(along with the card that called it). RN it's waiting.
 			#notify("DEBUG: Function added to waiting list: "+str(function))
@@ -1915,9 +1935,7 @@ def toPlay(card, x=0, y=0, notifymute=False, evolveText='', ignoreEffects=False)
 			evaluateWaitingFunctions() #evaluate all the waiting functions. This thing stop evaluation if a function returns true(ie. its waiting for target)
 			if not waitingFunct:
 				alreadyEvaluating = False #evaluation is done 
-	if not waitingFunct: #Don't put card in grave if it's waiting for some effect.
-		#BUG: This check will always be reached first by a spell without any automation being played with Hogan Blaster. And since HB is still in waitingFunct...the spell never goes to grave automatically
-		#Soulution: Instead of this simple chcek make an intermediate function that checks if this card is in waitingFunct. If not, then do endOfFunctionality.
+	else:
 		endOfFunctionality(card)
 
 
