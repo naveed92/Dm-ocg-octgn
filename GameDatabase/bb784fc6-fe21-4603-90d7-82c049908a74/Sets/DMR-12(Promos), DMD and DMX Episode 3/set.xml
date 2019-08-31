@@ -32,7 +32,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="3000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever you would draw a card, you may draw 2 cards and discard a card from your hand instead." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever you would draw a card, you may draw 2 cards and discard a card from your hand instead." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -43,7 +43,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="3000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever you would draw a card, you may draw 2 cards and discard a card from your hand instead." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever you would draw a card, you may draw 2 cards and discard a card from your hand instead." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -87,7 +87,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value=" Speed attacker   Double breaker&#xd;&#xa; Whenever this creature attacks, put the top card of your deck into your graveyard. If it's a spell, you may cast it for no cost. &#xd;&#xa; While this creature is in your deck, if you have a Cebu Aquman Jr. in the battle zone, this creature gets the light civilization." />
+			<property name="Rules" value="Speed attacker   Double breaker&#xd;&#xa; Whenever this creature attacks, put the top card of your deck into your graveyard. If it's a spell, you may cast it for no cost. &#xd;&#xa; While this creature is in your deck, if you have a Cebu Aquman Jr. in the battle zone, this creature gets the light civilization." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -120,7 +120,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.)&#xd;&#xa;When you put this creature into the battle zone, destroy any number of your opponent's creatures that have 'blocker'. Then you may draw a card. &#xd;&#xa; You can't put other exile creatures that have 'Crimson' in their name into the battle zone.&#xd;&#xa;Triple breaker" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.)&#xd;&#xa;When you put this creature into the battle zone, destroy any number of your opponent's creatures that have 'blocker'. Then you may draw a card. &#xd;&#xa; You can't put other exile creatures that have 'Crimson' in their name into the battle zone.&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -197,7 +197,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="12000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; This creature costs 1 less to summon for each of your creatures in your mana zone. It can't cost less than 2. &#xd;&#xa;Speed attacker&#xd;&#xa;Triple breaker" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; This creature costs 1 less to summon for each of your creatures in your mana zone. It can't cost less than 2. &#xd;&#xa;Speed attacker&#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -219,7 +219,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova OMG/Oracle" />
 			<property name="Power" value="5000+" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever this creature attacks, you may put a God Nova OMG that costs 5 or less from your hand into the battle zone.&#xd;&#xa;Center God Link" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; Whenever this creature attacks, you may put a God Nova OMG that costs 5 or less from your hand into the battle zone.&#xd;&#xa;Center God Link" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -241,7 +241,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, you may destroy one of your other creatures. If you do, search your deck. You may take an exile creatures from your deck, show that exile creature to your opponent and put it into your hand. If you searched your deck, shuffle it.&#xd;&#xa; You can't put other exile creatures that have 'Katsbhudon, Stand By Me' in their name into the battle zone.&#xd;&#xa; Double breaker" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, you may destroy one of your other creatures. If you do, search your deck. You may take an exile creatures from your deck, show that exile creature to your opponent and put it into your hand. If you searched your deck, shuffle it.&#xd;&#xa; You can't put other exile creatures that have 'Katsbhudon, Stand By Me' in their name into the battle zone.&#xd;&#xa; Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -307,7 +307,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova OMG/Oracle" />
 			<property name="Power" value="12000+" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; For each of your linked gods, this creature costs 2 less to summon. It can't cost less than 2.&#xd;&#xa; When you summon this creature into the battle zone, choose up to 3 cards from your graveyard or hand and add them to your shields face down.&#xd;&#xa;Triple breaker&#xd;&#xa;Center God Link" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; For each of your linked gods, this creature costs 2 less to summon. It can't cost less than 2.&#xd;&#xa; When you summon this creature into the battle zone, choose up to 3 cards from your graveyard or hand and add them to your shields face down.&#xd;&#xa;Triple breaker&#xd;&#xa;Center God Link" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -318,7 +318,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova OMG/Demon Command" />
 			<property name="Power" value="7000+" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, destroy one of your opponent's creatures. Then, you may choose one of your opponent's creatures in the battle zone and tap it.&#xd;&#xa;Double breaker&#xd;&#xa; Right God Link" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, destroy one of your opponent's creatures. Then, you may choose one of your opponent's creatures in the battle zone and tap it.&#xd;&#xa;Double breaker&#xd;&#xa; Right God Link" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -329,7 +329,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="God Nova OMG/Angel Command" />
 			<property name="Power" value="6000+" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Cards that have the God Nova OMG race put into your hand from your shields get 'shield trigger'.&#xd;&#xa;Double breaker&#xd;&#xa; Left God Link&#xd;&#xa; While this creature is linked, this creature breaks an additional shield." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; Cards that have the God Nova OMG race put into your hand from your shields get 'shield trigger'.&#xd;&#xa;Double breaker&#xd;&#xa; Left God Link&#xd;&#xa; While this creature is linked, this creature breaks an additional shield." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -340,7 +340,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle" />
 			<property name="Power" value="3000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack players.&#xd;&#xa; Your God Nova OMG each cost 1 less to summon. They can't cost less than 1." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack players.&#xd;&#xa; Your God Nova OMG each cost 1 less to summon. They can't cost less than 1." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -461,7 +461,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When this creature would be put into your graveyard from anywhere, if you have a water card and a fire card in your mana zone, return this creature to your hand instead." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; When this creature would be put into your graveyard from anywhere, if you have a water card and a fire card in your mana zone, return this creature to your hand instead." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -472,7 +472,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oraclion" />
 			<property name="Power" value="9000+" />
-			<property name="Rules" value="Speed attacker   Power attacker +3000  Triple breaker&#xd;&#xa; Whenever this creature breaks one of your opponent's shields, your opponent reveals that shield instead of adding it to his hand. Among them, your opponent puts all of his cards that have 'shield trigger' into his hand and the rest into his graveyard.  (Your opponent can use the 'shield trigger' ability of those shields.) " />
+			<property name="Rules" value="Speed attacker   Power attacker +3000  Triple breaker&#xd;&#xa; Whenever this creature breaks one of your opponent's shields, your opponent reveals that shield instead of adding it to his hand. Among them, your opponent puts all of his cards that have 'shield trigger' into his hand and the rest into his graveyard.  (Your opponent can use the 'shield trigger' ability of those shields.)" />
 			<property name="Rarity" value="Victory Rare" />
 			<property name="Number" value="None" />		
 		</card>
@@ -527,7 +527,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="9000" />
-			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Double breaker&#xd;&#xa; Whenever your opponent would choose a creature in the battle zone, if you have a card that has 'shield go' face up in your shields, he can't choose this one. &#xd;&#xa; Whenever your shields would break, if it's a card that has 'Shield Go' you may put one of your other shields into your hand instead.  (You can use the 'shield trigger' ability of that shield.) " />
+			<property name="Rules" value="{BLOCKER}&#xd;&#xa;Double breaker&#xd;&#xa; Whenever your opponent would choose a creature in the battle zone, if you have a card that has 'shield go' face up in your shields, he can't choose this one. &#xd;&#xa; Whenever your shields would break, if it's a card that has 'Shield Go' you may put one of your other shields into your hand instead.  (You can use the 'shield trigger' ability of that shield.)" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -549,7 +549,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, choose 6 cards from your mana zone and put the rest into your graveyard. Then, your opponent chooses 6 of his cards from his mana zone and puts the rest into his graveyard. &#xd;&#xa; Your opponent puts cards into his mana zone tapped. &#xd;&#xa;Double breaker" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, choose 6 cards from your mana zone and put the rest into your graveyard. Then, your opponent chooses 6 of his cards from his mana zone and puts the rest into his graveyard. &#xd;&#xa; Your opponent puts cards into his mana zone tapped. &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -560,7 +560,7 @@
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="13000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; Evolution—Put on one of your Outrage. &#xd;&#xa; When you put this creature into the battle zone, you may choose a non-evolution Outrage creature in your mana zone that costs the same as or less than the number of cards in your mana zone and put it into the battle zone. &#xd;&#xa;Triple breaker" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; Evolution—Put on one of your Outrage. &#xd;&#xa; When you put this creature into the battle zone, you may choose a non-evolution Outrage creature in your mana zone that costs the same as or less than the number of cards in your mana zone and put it into the battle zone. &#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -571,7 +571,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="8000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature or another Outrage into the battle zone, you may choose one of your opponent's creatures in the battle zone. If you do, those 2 creatures battle. &#xd;&#xa; Whenever your Outrages win a battle, you may draw a card. &#xd;&#xa;Double breaker" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature or another Outrage into the battle zone, you may choose one of your opponent's creatures in the battle zone. If you do, those 2 creatures battle. &#xd;&#xa; Whenever your Outrages win a battle, you may draw a card. &#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -602,7 +602,7 @@
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Outrage " />
+			<property name="Race" value="Outrage" />
 			<property name="Power" value="1000+" />
 			<property name="Rules" value="If you have 5 shields or more, this creature gets +5000 power and 'double breaker'.&#xd;&#xa;" />
 			<property name="Rarity" value="Promotional" />
@@ -635,7 +635,7 @@
 			<property name="Civilization" value="Fire" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Outrage " />
+			<property name="Race" value="Outrage" />
 			<property name="Power" value="7000" />
 			<property name="Rules" value="When this creature would leave the battle zone, put the top card of your deck into your graveyard. If that card is an Outrage, this creature stays in the battle zone instead.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
@@ -659,7 +659,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value=" Speed attacker&#xd;&#xa;Thrilling Three: Outrage(When you put this creature into the battle zone, reveal the top 3 cards of your deck. For each Outrage revealed, use the following ability once. Then put the revealed cards on the bottom of your deck in any order.) :► This turn, this creature breaks an additional shield." />
+			<property name="Rules" value="Speed attacker&#xd;&#xa;Thrilling Three: Outrage(When you put this creature into the battle zone, reveal the top 3 cards of your deck. For each Outrage revealed, use the following ability once. Then put the revealed cards on the bottom of your deck in any order.) :► This turn, this creature breaks an additional shield." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -712,7 +712,7 @@
 			<property name="Civilization" value="Darkness" />
 			<property name="Cost" value="9" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Outrage " />
+			<property name="Race" value="Outrage" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="This creature costs 1 less to summon for each creature in your graveyard. However, it can't cost less than 1.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Promotional" />
@@ -769,7 +769,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Destroy all your opponent's creatures that have power 3000 or less. Then, you may draw a card for each creature destroyed." />
+			<property name="Rules" value="(This spell is put into your mana zone tapped.) &#xd;&#xa; Destroy all your opponent's creatures that have power 3000 or less. Then, you may draw a card for each creature destroyed." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -978,7 +978,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="6000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) " />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.)" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1011,7 +1011,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle" />
 			<property name="Power" value="2000" />
-			<property name="Rules" value="  At the end of your turn, you may destroy one of your other tapped creatures. If you do, choose one.:► Search your deck. You may take a colorless creature that costs 7 or less from your deck and put it in the battlezone. Then shuffle your deck.:► You may put a colorless creature that costs 7 or less from your hand into the battle zone." />
+			<property name="Rules" value="At the end of your turn, you may destroy one of your other tapped creatures. If you do, choose one.:► Search your deck. You may take a colorless creature that costs 7 or less from your deck and put it in the battlezone. Then shuffle your deck.:► You may put a colorless creature that costs 7 or less from your hand into the battle zone." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1044,7 +1044,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle" />
 			<property name="Power" value="3000+" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack players. &#xd;&#xa; Whenever this creature blocks, it gets +2000 power." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa;{BLOCKER}&#xd;&#xa; This creature can't attack players. &#xd;&#xa; Whenever this creature blocks, it gets +2000 power." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1055,7 +1055,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa; Destroy one of your opponent's non-colorless creatures.&#xd;&#xa; Tap one of your creatures in the battle zone." />
+			<property name="Rules" value="(This spell is put into your mana zone tapped.) &#xd;&#xa; Destroy one of your opponent's non-colorless creatures.&#xd;&#xa; Tap one of your creatures in the battle zone." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1132,7 +1132,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa; Choose one of your opponent's creatures in the battle zone that has power 6000 or more and return it to its owner's hand. Then, destroy one of your opponent's creatures that has power 6000 or less." />
+			<property name="Rules" value="(This spell is put into your mana zone tapped.) &#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa; Choose one of your opponent's creatures in the battle zone that has power 6000 or more and return it to its owner's hand. Then, destroy one of your opponent's creatures that has power 6000 or less." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1143,7 +1143,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage" />
 			<property name="Power" value="1000" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, put the top 2 cards of your deck into your mana zone tapped. Then, return a card from your mana zone to your hand." />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, put the top 2 cards of your deck into your mana zone tapped. Then, return a card from your mana zone to your hand." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1231,7 +1231,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="0" />
-			<property name="Rules" value=" (This spell is put into your mana zone tapped.) &#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa; Destroy one of your opponent's untapped creatures.&#xd;&#xa; Tap all your opponent's creatures in the battle zone." />
+			<property name="Rules" value="(This spell is put into your mana zone tapped.) &#xd;&#xa;{SHIELD TRIGGER}&#xd;&#xa; Destroy one of your opponent's untapped creatures.&#xd;&#xa; Tap all your opponent's creatures in the battle zone." />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>
@@ -1297,7 +1297,7 @@
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />
 			<property name="Power" value="2000+" />
-			<property name="Rules" value=" (This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, or whenever this creature attacks, you may put the top card of your deck into your mana zone.&#xd;&#xa;Doron Go- Outlaw &#xd;&#xa; You can't put other exile creatures that have 'Outlaw' in their name into the battle zone.&#xd;&#xa;Power attacker +3000" />
+			<property name="Rules" value="(This creature is put into your mana zone tapped.) &#xd;&#xa; When you put this creature into the battle zone, or whenever this creature attacks, you may put the top card of your deck into your mana zone.&#xd;&#xa;Doron Go- Outlaw &#xd;&#xa; You can't put other exile creatures that have 'Outlaw' in their name into the battle zone.&#xd;&#xa;Power attacker +3000" />
 			<property name="Rarity" value="Promotional" />
 			<property name="Number" value="None" />		
 		</card>

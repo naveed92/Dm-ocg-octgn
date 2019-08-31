@@ -36,7 +36,7 @@
 		<card name="Welcome Hell, Supreme Devil King Palace" id="dead84bb-e0b8-4e77-b407-8347d35b97e6" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -47,7 +47,7 @@
 		<alternate name="Deathgoros, Supreme Devil Corrupt King" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 10" />
+			<property name="Cost" value="10" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="13000" />
@@ -84,7 +84,7 @@
 		<card name="Evidestein, Ultra Dragment Fortress" id="57e378ec-8e05-4c89-9cd8-85007a06494e" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 5" />
+			<property name="Cost" value="5" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -95,7 +95,7 @@
 		<alternate name="Q-END, Nu Dragment-King" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 8" />
+			<property name="Cost" value="8" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="11000" />
@@ -156,7 +156,7 @@
 		<card name="Whitey, Dragon Soul Church" id="939a58b0-7102-43da-8e8d-7c0ac3399408" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -167,7 +167,7 @@
 		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
-			<property name="Cost" value=" 50" />
+			<property name="Cost" value="50" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="World Command Dragon" />
 			<property name="Power" value="50000" />
@@ -264,7 +264,7 @@
 		<card name="Reddull, Dragon Soul Castle" id="b4bd465f-66e5-497e-97e2-dc994cf85341" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -275,7 +275,7 @@
 		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
-			<property name="Cost" value=" 50" />
+			<property name="Cost" value="50" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="World Command Dragon" />
 			<property name="Power" value="50000" />
@@ -324,7 +324,7 @@
 		<card name="Greene, Dragon Soul Ruins" id="45ca9d65-e474-44f8-bfcd-d2c6f40f512b" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Nature" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -335,7 +335,7 @@
 		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
-			<property name="Cost" value=" 50" />
+			<property name="Cost" value="50" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="World Command Dragon" />
 			<property name="Power" value="50000" />
@@ -482,7 +482,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Jurassic Command Dragon " />
+			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="4000+" />
 			<property name="Rules" value="Guardman&#xd;&#xa; For each of your Fortresses in the battle zone, this creature gets +4000 power and breaks an additional shield." />
 			<property name="Rarity" value="Uncommon" />
@@ -698,7 +698,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Snow Faerie Kaze " />
+			<property name="Race" value="Snow Faerie Kaze" />
 			<property name="Power" value="5000" />
 			<property name="Rules" value="Mana Arms 3: If you have 3 or more nature cards in your mana zone, this creature costs 5 less to summon." />
 			<property name="Rarity" value="Common" />

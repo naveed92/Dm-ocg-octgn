@@ -23,7 +23,7 @@
 		<card name="Evidegoras, Dragon Sonic Aircraft Carrier" id="7a6c0c4f-c696-49ab-9237-cc2924921ff6" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 4" />
+			<property name="Cost" value="4" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -34,7 +34,7 @@
 		<alternate name="Q.E.D. Plus, Final Dragon Logic" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Water" />
-			<property name="Cost" value=" 7" />
+			<property name="Cost" value="7" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="11000" />
@@ -61,7 +61,7 @@
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command Dragon " />
+			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="7500" />
 			<property name="Rules" value="{BLOCKER}  Double breaker&#xd;&#xa;Whenever one of your Dragons attacks or blocks, you may add the top card of your deck to your shields face down.&#xd;&#xa; This creature cant be chosen by non light spells." />
 			<property name="Rarity" value="Super Rare" />
@@ -109,7 +109,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="9" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Jurassic Command Dragon " />
+			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="12000" />
 			<property name="Rules" value="When you put this creature into the battle zone, look at the top 5 cards of your deck. You may choose a light creature, water creature, darkness creature, fire creature and nature creature that costs 7 or less and put them into the battle zone. Then, put the rest on the bottom of your deck in any order. &#xd;&#xa;Triple breaker" />
 			<property name="Rarity" value="Super Rare" />
@@ -121,7 +121,7 @@
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command Dragon " />
+			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="Double breaker&#xd;&#xa; When this creature or another of your creatures is destroyed, you look at the top 2 cards of your deck. From among them, you may put a non-evolution creature that costs 3 or less into the battle zone. Put the rest on the bottom of your deck in any order." />
 			<property name="Rarity" value="Very Rare" />
@@ -133,7 +133,7 @@
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Crystal Command Dragon " />
+			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="8000" />
 			<property name="Rules" value="Whenever your opponent draws a card, you may draw 2 cards.&#xd;&#xa; When you would draw the last card of your deck, put any number of spells from your graveyard on the top of your deck in any order instead, then draw a card.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Very Rare" />
@@ -155,7 +155,7 @@
 		<card name="Tenshukaku, Dragon King Keep ~Fighting Spirit Mode~" id="382f408a-0b08-4627-ae2a-ef7990d83428" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -166,7 +166,7 @@
 		<alternate name="Gaishukaku, Passion Dragon" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Fire" />
-			<property name="Cost" value=" 6" />
+			<property name="Cost" value="6" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Gaial Command Dragon" />
 			<property name="Power" value="7000" />
@@ -180,7 +180,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Jurassic Command Dragon " />
+			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="When you put this creature into the battle zone, if you have another Dragon in the battle zone, put the top card of your deck into your mana zone. If you don't have another Dragon in the battle zone, put this creature into your mana zone.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Very Rare" />
@@ -214,7 +214,7 @@
 		<card name="Zodiac, Floating Hymn" id="111359ba-6aed-4380-af0c-4d3047292f3d" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -225,7 +225,7 @@
 		<alternate name="Hallelujah Zodia, Adoration Dragon Elemental" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
-			<property name="Cost" value=" 6" />
+			<property name="Cost" value="6" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="5000+" />
@@ -240,7 +240,7 @@
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Liquid People Sen /Draguner " />
+			<property name="Race" value="Liquid People Sen /Draguner" />
 			<property name="Power" value="2000" />
 			<property name="Rules" value="When you put this creature into the battle zone, put a water dragheart that costs 4 or less from your hyperspatial zone into the battle zone. &#xd;&#xa; When you put this creature into the battle zone, you may choose one of your opponent's creatures that costs 6 or less in the battle zone and return it to its owner's hand." />
 			<property name="Rarity" value="Rare" />
@@ -252,7 +252,7 @@
 			<property name="Civilization" value="Water" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Crystal Command Dragon " />
+			<property name="Race" value="Crystal Command Dragon" />
 			<property name="Power" value="4000" />
 			<property name="Rules" value="Whenever this creature attacks, you may draw a card. If it's a water spell, you may show it to your opponent and untap this creature." />
 			<property name="Rarity" value="Rare" />
@@ -298,7 +298,7 @@
 		<card name="Demon Wolf, Soul Eating Moonlight Castle" id="15eebf9a-3e75-491f-b5e5-be3a9f8c1fe6" size="wide">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 3" />
+			<property name="Cost" value="3" />
 			<property name="Type" value="Dragheart Fortress" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
@@ -309,7 +309,7 @@
 		<alternate name="Minagorosseo, Wolf Demon Dragon" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Darkness" />
-			<property name="Cost" value=" 6" />
+			<property name="Cost" value="6" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="Demon Command Dragon" />
 			<property name="Power" value="5000" />
@@ -347,7 +347,7 @@
 			<property name="Civilization" value="Nature" />
 			<property name="Cost" value="4" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Jurassic Command Dragon " />
+			<property name="Race" value="Jurassic Command Dragon" />
 			<property name="Power" value="3000+" />
 			<property name="Rules" value="This creature can't be blocked by creatures that have less power than it.&#xd;&#xa;Mana Arms 5: If you have 5 or more nature cards in your mana zone, this creature gets +7000 power and 'double breaker'." />
 			<property name="Rarity" value="Rare" />
@@ -397,7 +397,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Justice Wing/Draguner" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a  dragheart that costs 3 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) " />
+			<property name="Rules" value="When you put this creature into the battle zone, put a  dragheart that costs 3 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="20" />
 		</card>
@@ -457,7 +457,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Funky Knightmare/Draguner" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a  dragheart that costs 3 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) " />
+			<property name="Rules" value="When you put this creature into the battle zone, put a  dragheart that costs 3 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="25" />
 		</card>
@@ -493,7 +493,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Human Baku/Draguner" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) " />
+			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="28" />
 		</card>
@@ -541,7 +541,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Beast Folk Go/Draguner" />
 			<property name="Power" value="5000" />
-			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.) " />
+			<property name="Rules" value="When you put this creature into the battle zone, put a dragheart that costs 3 or less from your hyperspatial zone into the battle zone.  (If it's a weapon, equip it to this creature.)" />
 			<property name="Rarity" value="Uncommon" />
 			<property name="Number" value="32" />
 		</card>
@@ -563,7 +563,7 @@
 			<property name="Civilization" value="Light" />
 			<property name="Cost" value="4" />
 			<property name="Type" value="Creature" />
-			<property name="Race" value="Angel Command Dragon " />
+			<property name="Race" value="Angel Command Dragon" />
 			<property name="Power" value="6000" />
 			<property name="Rules" value="{BLOCKER}&#xd;&#xa; This creature can't attack players." />
 			<property name="Rarity" value="Common" />
@@ -769,7 +769,7 @@
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
 			<property name="Power" value="" />
-			<property name="Rules" value="Gravity Zero- If you have a fire Draguner in the battle zone, you may cast this spell for no cost.&#xd;&#xa; Choose one of your creatures in the battle zone.It gets 'speed attacker' and the Gaial Command Dragon race until the end of the turn. " />
+			<property name="Rules" value="Gravity Zero- If you have a fire Draguner in the battle zone, you may cast this spell for no cost.&#xd;&#xa; Choose one of your creatures in the battle zone.It gets 'speed attacker' and the Gaial Command Dragon race until the end of the turn." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="51" />
 		</card>
