@@ -378,7 +378,7 @@ def onTarget(args): #this is triggered by OCTGN events when any card is targeted
 		evaluateWaitingFunctions()
 
 
-############################################ Misc utility functions ####################################################################################
+############################################ Misc utility functions - PLEASE use these to make automations easy ####################################################################################
 
 def askCard2(list, title="Select a card", buttonText="Select",numberToTake=1):  # askCard function was changed. So using the same name but with the new functionality
 #this is for showing a dialog box with the cards in the incoming list. Careful, all cards will be visible, even if they're facedown.
@@ -440,10 +440,10 @@ def antiDiscard(card, sourcePlayer):
 def waitForTarget():
 	whisper("Waiting for targets. Please (re)target...")
 	whisper("[Esc to cancel]")
-	#now wait for user to target - event trigger will run def onTarget
+	#now wait for user to target - event trigger will run this function -> def onTarget
 	return
 
-def evaluateWaitingFunctions():
+def evaluateWaitingFunctions(): #this is the core that evaluates on-play functions/functions that are waiting
 	while len(waitingFunct)>0:
 			waitingForTarget = eval(waitingFunct[0][1]) #stored in the form [card, function]
 			update()
@@ -459,7 +459,7 @@ def evaluateWaitingFunctions():
 				elif cardBeingPlayed != waitingFunct[0][0]: #the next card is a different one
 					endOfFunctionality(cardBeingPlayed)
 
-def clearWaitingFuncts():  # clears any pending plays for a card that's waiting to choose targets etc
+def clearWaitingFuncts():  #clears any pending plays for a card that's waiting to choose targets etc. It will obliterate the list waitingFunct and reset related variables
 	global alreadyEvaluating
 	global evaluateNextFunction
 	if waitingFunct:
@@ -472,7 +472,7 @@ def clearWaitingFuncts():  # clears any pending plays for a card that's waiting 
 	alreadyEvaluating = False
 	evaluateNextFunction = True #this should always be True, unless you're waiting for the next function to evaluate
 
-def manaArmsCheck(civ='ALL5', num=0):
+def manaArmsCheck(civ='ALL5', num=0): #quick check for conditions like "if you have all 5 civs in mana" or "if you have 5 more more water cards in mana"
 	if civ == 'ALL5':  # check if you have all 5 civs in mana zone
 		manaCards = [card for card in table if isMana(card) and card.owner == me]
 		if len(manaCards)<num:
@@ -497,7 +497,7 @@ def ifRaceInBattleZone(race):
 def convertCondition(condition, cardToCheck="card"): #intermediate function to convert a simple string to evaluable condition, both in string form
 	#for example - "Nature and 5" is converted to "re.search('Nature', card.Civilization) and int(card.cost)<=5"
 	# card. can be replaced by whatever string is mentioned, eg. if the arg cardToCheck is "choice" condition generated will be "int(choice.cost)<=5"
-	#very rudimentary for now, but can be expanded later to VASTLY simplify all function conditions that check for specific card attrbutes
+	#very rudimentary for now, but can be expanded later to VASTLY simplify all function conditions that check for specific card attributes
 	condList = condition.split()
 	condition = ""
 	for word in condList:
@@ -602,7 +602,7 @@ def SummonFromGrave(count=1, TypeFilter="ALL", CivFilter="ALL", RaceFilter="ALL"
 
 
 def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana', conditional=True):
-	# drama = getting creatures from top of deck for free, eg. Mystery Cube, Balga Raiser, Hogan Blaster
+	# drama = getting creatures from top of deck for free, eg. Mystery Cube, Hogan Blaster, Balga Raiser(this one is not automated yet...)
 	mute()
 	if shuffle:
 		me.Deck.shuffle()
@@ -674,7 +674,6 @@ def lookAtTopCards(num, cardCondition="True", targetZone='hand', remainingZone='
 		for civs in specialaction_civs:
 			if not re.search(civs, card_for_special_action.Civilization):
 				evaluateNextFunction = False
-
 
 
 def targetDiscard(randomDiscard=False, targetZone='grave', count=1):
