@@ -1003,7 +1003,7 @@ def kill(powerFilter='ALL', tapFilter='ALL', civFilter='ALL', count=1, targetOwn
 def destroyAll(group, condition=False, powerFilter='ALL', civFilter="ALL", AllExceptFiltered=False):
 	mute()
 	
-	if condition == False or askYN("Are you sure you want to continue?") != 1:
+	if condition == False or askYN("Are you sure you want to continue?", ["DO IT!", "Destroy Manually"]) != 1:
 		return
 		
 	if powerFilter == 'ALL':
