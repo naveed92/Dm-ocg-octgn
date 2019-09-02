@@ -26,6 +26,7 @@ cardScripts = {
 	'Aqua Hulk': {'onPlay': ['draw(me.Deck, True)']},
 	'Aqua Sniper': {'onPlay': ['bounce(2)']},
 	'Aqua Surfer': {'onPlay': ['bounce()']},
+	'Aquan': {'onPlay':['revealAndTake(5, may=True)']},
 	'Armored Decimator Valkaizer': {'onPlay': ['kill(4000)']},
 	'Artisan Picora': {'onPlay': ['fromMana(1,"ALL","ALL","ALL",False,True)']},
 	'Astral Warper': {'onPlay': ['draw(me.Deck, True, 3)']},
@@ -36,6 +37,7 @@ cardScripts = {
 	'Bronze-Arm Tribe': {'onPlay': ['mana()']},
 	'Bronze Chain Sickle': {'onPlay': ['mana()']},
 	'Buinbe, Airspace Guardian': {'onPlay': ['draw(me.Deck, True)']},
+	'Cebu Aquman Jr.': {'onPlay':['revealAndTake(3, may=True)']},
 	'Chaos Worm': {'onPlay': ['kill()']},
 	'Chief De Baula, Machine King of Mystic Light': {'onPlay': ['search(me.piles["Graveyard"], 1, "Spell")']},
 	'Cobalt Hulcus, Aqua Savage': {'onPlay': ['draw(me.Deck, True)']},
@@ -143,6 +145,7 @@ cardScripts = {
 
 	'Abduction Charger': {'onPlay': ['bounce(2)']},
 	'Apocalypse Day': {'onPlay': ['destroyAll(table, len([card for card in table if isCreature(card)])>5)']},
+	'Aquan Jr.\'s Delivery':{'onPlay':['revealAndTake(3)']},
 	'Big Beast Cannon': {'onPlay': ['kill(7000)']},
 	'Blizzard of Spears': {'onPlay': ['destroyAll(table, True, 4000)']},
 	'Bomber Doll': {'onPlay': ['kill(2000)']},
@@ -154,6 +157,7 @@ cardScripts = {
 	'Cannonball Sling': {'onPlay': ['kill(2000)'],
 						 'onMetaMorph': ['kill(6000)']},
 	'Chains of Sacrifice': {'onPlay': ['kill("ALL","ALL","ALL",2)', 'sacrifice()']},
+	'Child Festival of Faerie Fire':  {'onPlay': ['lookAtTopCards(2,"True","mana","bottom", putTapped=True)']},
 	'Clone Factory': {'onPlay': ['fromMana(2)']},
 	'Cloned Nightmare': {'onPlay': ['clonedDiscard()']},
 	'Corpse Charger': {'onPlay': ['search(me.piles["Graveyard"], 1, "Creature")']},
@@ -226,6 +230,7 @@ cardScripts = {
 	'Magic Shot - Soul Catcher': {'onPlay': ['search(me.piles["Graveyard"], 1, "Creature")']},
 	'Magic Shot - Sword Launcher': {'onPlay': ['kill(3000)']},
 	'Mana Bonanza': {'onPlay': ['massMana(me.Deck, False)']},
+	'Mendelssohn': {'onPlay':['revealAndTake(2, "Dragon", "toMana(card, tapped=True)")']},
 	'Miraculous Rebirth': {'onPlay': ['kill(5000)', 'fromDeck()']},
 	'Miraculous Snare': {'onPlay': ['sendToShields()']},
 	'Moonlight Flash': {'onPlay': ['tapCreature(2)']},
@@ -506,6 +511,7 @@ def convertCondition(condition, cardToCheck="card"): #intermediate function to c
 	#very rudimentary for now, but can be expanded later to VASTLY simplify all function conditions that check for specific card attributes
 	condList = condition.split()
 	condition = ""
+	typeList = ["Creature", "Spell", "Evolution", "Gear", "Psychic", "Dragheart"] #add more later(fortress/dragheart fortress can cause issues) but this is sufficient for now
 	for word in condList:
 		if word == "and" or word=="or" or word=="not" or word=="True" or word=="False":
 			condition += word + " "
@@ -513,13 +519,16 @@ def convertCondition(condition, cardToCheck="card"): #intermediate function to c
 			condition += "int(card.Cost)<="+word+" "
 		elif word=="Fire" or word=="Nature" or word=="Water" or word=="Light" or word=="Darkness" or word=="Zero":
 			condition += "re.search('"+word+"', card.Civilization) "
+		elif word in typeList:
+			condition += "re.search('"+word+"', card.Type) " 
 		else:
-			condition += "re.search('"+word+"', card.Type) " #for now everything else will be searched in card type. Add power here later also...maybe.
+			condition += "re.search('"+word+"', card.Race) " #for now everything else will be searched in card race. Add power here later also...maybe.
 		#also need to add checks for < and > for cost and power, when power is added later
 
 	if cardToCheck!="card":
 		cardToCheck=cardToCheck+"."
 		condition = condition.replace("card.", cardToCheck)
+	condition = condition.replace("_", " ") #for things like Command_Dragon, Fire_Bird, Human_Baku etc
 	#whisper("DEBUG: converted condition is "+condition)
 	return condition
 	
@@ -630,7 +639,7 @@ def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana
 				played = True
 				return
 			elif choice == 0: #player closes the window
-				failzone = 'backOnTop'
+				failZone = 'backOnTop'
 		else:
 			toPlay(card)
 			played = True
@@ -644,7 +653,7 @@ def drama(shuffle=True, type='creature', targetZone='battlezone', failZone='mana
 		card.isFaceUp = False
 
 
-def lookAtTopCards(num, cardCondition="True", targetZone='hand', remainingZone='bottom', reveal=True, specialaction='NONE', specialaction_civs = []):
+def lookAtTopCards(num, cardCondition="True", targetZone='hand', remainingZone='bottom', reveal=True, specialaction='NONE', specialaction_civs = [], putTapped=False):
 	mute()
 	global evaluateNextFunction
 	notify("{} looks at the top {} cards of their deck".format(me, num))
@@ -653,10 +662,9 @@ def lookAtTopCards(num, cardCondition="True", targetZone='hand', remainingZone='
 	if type(choice) is Card:
 		if not 'NONE' in specialaction:
 			card_for_special_action = choice
-		if eval(convertCondition(cardCondition, "choice")):
-			# use switch instead, when more zones are added here
+		if eval(convertCondition(cardCondition, "choice")): #This won't work if all choices are invalid eg. 5 spells with Lifeplan Charger, PLS FIX
 			if targetZone == 'mana':
-				toMana(choice)
+				toMana(choice, tapped=putTapped)
 			else:
 				# to hand is default rn
 				toHand(choice, show=reveal)
@@ -679,6 +687,25 @@ def lookAtTopCards(num, cardCondition="True", targetZone='hand', remainingZone='
 	if specialaction != "NONE" and not card_for_special_action.Civilization in specialaction_civs:
 			evaluateNextFunction = False
 
+
+def revealAndTake(num=3, takeCondition="Light or Darkness", targetZone="toHand(card)", failZone="toDiscard(card)", may=False): 
+	#reveals top num cards of deck and puts in targetzone/failzone based on some conditon
+	if may and askYN("Reveal top {} cards for {}'s ability?".format(num, table[-1].name)) != 1:
+		return
+
+	if len(me.Deck)<num:
+		num=len(me.Deck)
+	
+	takeCondition = convertCondition(takeCondition)
+	for i in range(num):
+		card=me.Deck[0]
+		card.isFaceUp = True
+		update()
+		if eval(takeCondition):
+			eval(targetZone)
+		else:
+			eval(failZone)
+	
 
 def targetDiscard(randomDiscard=False, targetZone='grave', count=1):
 	mute()
@@ -1801,7 +1828,7 @@ def shields(group, count=1, conditional=False, x=0, y=0):
 		notify("{} sets top card of {} as shield.".format(me, group.name))
 
 
-def toMana(card, x=0, y=0, notifymute=False, checkEvo=True, alignCheck=True):
+def toMana(card, x=0, y=0, notifymute=False, checkEvo=True, alignCheck=True, tapped=False):
 	mute()
 	if isMana(card):
 		whisper("This is already mana")
@@ -1809,22 +1836,27 @@ def toMana(card, x=0, y=0, notifymute=False, checkEvo=True, alignCheck=True):
 	if isPsychic(card):
 		toHyperspatial(card)
 		return
-	##notify("Removing from tracked evos if its bait or an evolved creature")
-	if checkEvo:
+	
+	fromGroupName = card.group.name.lower()
+	if(fromGroupName=="table"): 
+		fromGroupName = "battle zone"
+	#notify("DEBUG: In toMana, removing from tracked evos if its bait or an evolved creature")
+	if checkEvo and card.group==table:
 		baitList = removeIfEvo(card)
 		for baitCard in baitList:
 			toMana(baitCard, checkEvo=False, alignCheck=False)
 	if isShield(card):
-		card.moveTo(me.hand)  # in case it is charged from shields
+		fromGroupName = "shields"
+		card.moveTo(me.hand)  # in case it is charged from shields, this removes the shield markers and flip
 	card.moveToTable(0, 0)
 	card.orientation = Rot180
 
-	if re.search("/", card.Civilization):  # multi civ card
+	if tapped or re.search("/", card.Civilization):  # multi civ card
 		card.orientation = Rot270
 	if alignCheck:
 		align()
 	if notifymute == False:
-		notify("{} charges {} as mana.".format(me, card))
+		notify("{} charges {} from {} as mana.".format(me, card, fromGroupName))
 
 
 def toShields(card, x=0, y=0, notifymute=False, alignCheck=True, checkEvo=True):
@@ -1959,24 +1991,25 @@ def toDiscard(card, x=0, y=0, notifymute=False, alignCheck=True, checkEvo=True):
 			notify("{} discards {} from {}.".format(me, card, src.name))
 
 
-def toHand(card, show=True, x=0, y=0, alignCheck=True, checkEvo=True):
+def toHand(card, show=True, x=0, y=0, alignCheck=True, checkEvo=True, notifymute = False):
 	mute()
 	src = card.group
 	if isPsychic(card):
 		toHyperspatial(card)
 		return
-	if show:
-		card.isFaceUp = True
-		# need to use just card instead of card.Name for link to card
-		# but it won't show as card name if card is not visible to a player, so turning it face up first
-		notify("{} moved {} to hand from {}.".format(me, card, src.name))
-		# card.isFaceUp = False
-		card.moveTo(card.owner.hand)
-	else:
-		# here, move the card to hand first so it will only show card link to only the player who can see the hand
-		# if you show first then move to hand 'card' won't show card name to the owner in the notify message
-		card.moveTo(card.owner.hand)
-		notify("{} moved {} to hand from {}.".format(me, card, src.name))
+	if not notifymute:
+		if show:
+			card.isFaceUp = True
+			# need to use just card instead of card.Name for link to card
+			# but it won't show as card name if card is not visible to a player, so turning it face up first
+			notify("{} moved {} to hand from {}.".format(me, card, src.name))
+			# card.isFaceUp = False
+			card.moveTo(card.owner.hand)
+		else:
+			# here, move the card to hand first so it will only show card link to only the player who can see the hand
+			# if you show first then move to hand 'card' won't show card name to the owner in the notify message
+			card.moveTo(card.owner.hand)
+			notify("{} moved {} to hand from {}.".format(me, card, src.name))
 
 	if checkEvo:
 		baitList = removeIfEvo(card)
