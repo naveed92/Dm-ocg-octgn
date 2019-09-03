@@ -79,7 +79,7 @@
 		</card>
 		<card name="Diabolos Zeta, Temporal Ruler" id="958f72e9-4635-4a77-914a-f29804064c16">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light/Water/Fire/Darkness/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="10" />
 			<property name="Type" value="Psychic Creature" />
 			<property name="Race" value="World Command" />
@@ -90,7 +90,7 @@
 
 			<alternate name="Devil Diabolos Zeta, Evil Awakened" type="awakening">
 			<property name="Format" value="OCG" />
-				<property name="Civilization" value="Light/Water/Fire/Darkness/Nature" />
+				<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 				<property name="Cost" value="20" />
 				<property name="Type" value="Psychic Creature" />
 				<property name="Race" value="World Command" />

@@ -55,7 +55,7 @@
 		</card>
 		<card name="Miracle Rumba" id="6e7e2192-22d1-46dc-b9e1-2ff0e22bfcb8">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="World Bird" />
@@ -66,7 +66,7 @@
 		</card>
 		<card name="Perfect Earth, Planetary Dragon" id="c2a212ff-22ee-4d17-b7fc-cf8c90c2afe9">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="World Dragon" />
@@ -264,7 +264,7 @@
 		</card>
 		<card name="Spectryte, Crystal Gaia" id="45c28b31-5ec7-46b1-8000-25c5eee621a0">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Spirit Quartz/Lost Crusader" />
@@ -275,7 +275,7 @@
 		</card>
 		<card name="Zephys, Gaia's Godly General" id="7859dec5-0fcb-449f-82f3-87098af2d42f">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Lost Crusader" />
@@ -286,7 +286,7 @@
 		</card>
 		<card name="Last Violence" id="818e63d0-96ba-4059-b1a6-4543b7b58d8c">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
@@ -671,7 +671,7 @@
 		</card>
 		<card name="Five Dimensional Rhodolite" id="8d7579db-28c3-4f01-8ddd-25a0702a7ab2">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Spirit Quartz" />

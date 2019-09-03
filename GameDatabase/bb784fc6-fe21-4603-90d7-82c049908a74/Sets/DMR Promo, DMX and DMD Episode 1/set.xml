@@ -18,7 +18,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Dead Sea Dragon" id="94f1e5ac-7f34-4356-a8a7-f70e84b3f2a1">
-			<property name="Civilization" value="Water/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Water/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Rainbow Command Dragon/Alien" />
@@ -406,7 +406,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Shachihoko GOLDEN Dragon" type="awakening">
-				<property name="Civilization" value="Light/Darkness/Fire" />
+				<property name="Civilization" value="Fire/Light/Darkness" />
 				<property name="Cost" value="39" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="King Command Dragon/Alien" />
@@ -429,7 +429,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Shachihoko GOLDEN Dragon" type="awakening">
-				<property name="Civilization" value="Light/Darkness/Fire" />
+				<property name="Civilization" value="Fire/Light/Darkness" />
 				<property name="Cost" value="39" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="King Command Dragon/Alien" />
@@ -452,7 +452,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Shachihoko GOLDEN Dragon" type="awakening">
-				<property name="Civilization" value="Light/Darkness/Fire" />
+				<property name="Civilization" value="Fire/Light/Darkness" />
 				<property name="Cost" value="39" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="King Command Dragon/Alien" />
@@ -1068,7 +1068,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Captivating Dancing Alien" type="awakening">
-				<property name="Civilization" value="Light/Water/Darkness/Fire " />
+				<property name="Civilization" value="Fire/Water/Light/Darkness " />
 				<property name="Cost" value="20" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="Alien" />
@@ -1091,7 +1091,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Captivating Dancing Alien" type="awakening">
-				<property name="Civilization" value="Light/Water/Darkness/Fire " />
+				<property name="Civilization" value="Fire/Water/Light/Darkness " />
 				<property name="Cost" value="20" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="Alien" />
@@ -1629,7 +1629,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Shachihoko GOLDEN Dragon" id="101fb0f1-f04a-4b61-8588-c7382d59eb81">
-			<property name="Civilization" value="Light/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Light/Darkness" />
 			<property name="Cost" value="39" />
 			<property name="Type" value="Psychic Super Creature" />
 			<property name="Race" value="King Command Dragon/Alien" />
@@ -1662,7 +1662,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Captivating Dancing Alien" id="6b3223ec-da98-4023-941c-687c5024af8a">
-			<property name="Civilization" value="Light/Water/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Water/Light/Darkness" />
 			<property name="Cost" value="20" />
 			<property name="Type" value="Psychic Super Creature" />
 			<property name="Race" value="Alien" />

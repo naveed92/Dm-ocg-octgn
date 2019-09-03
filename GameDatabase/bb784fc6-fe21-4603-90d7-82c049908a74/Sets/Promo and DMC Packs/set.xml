@@ -1628,7 +1628,7 @@
 
 		<card name="Bari Bari Miracle" id="79a3d574-549c-48f3-adb5-d590171321f1">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="World Bird" />
@@ -2817,7 +2817,7 @@
 
 		<card name="Ultra Miracluppi" id="be1c1447-0004-4e2e-a741-dfb47cf7e6f5">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Fire/Darkness/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="9" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="World Bird" />
@@ -2829,7 +2829,7 @@
 
 		<card name="Greatest Earth, Planetary Dragon" id="5741304d-89b2-4ed1-a481-4a794210ef7c">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Fire/Darkness/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="World dragon" />

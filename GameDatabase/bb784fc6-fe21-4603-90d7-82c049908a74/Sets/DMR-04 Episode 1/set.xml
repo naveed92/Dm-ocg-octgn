@@ -36,7 +36,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Gallows Hellish Dragon, Brink of Despair" type="awakening">
-				<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+				<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 				<property name="Cost" value="30" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="Rainbow Command Dragon/Alien" />
@@ -48,7 +48,7 @@
 			</alternate>
 		</card>
 		<card name="Ryusei Kaiser, the Victorious" id="e006fa5d-3939-4881-8506-6669cadbe6d8">
-			<property name="Civilization" value="Water/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Water/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Psychic Creature" />
 			<property name="Race" value="Red Command Dragon/Hunter" />
@@ -59,7 +59,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Gaial Ore Dragon, the Vainglory" type="awakening">
-				<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+				<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 				<property name="Cost" value="30" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="Rainbow Command Dragon/Hunter" />
@@ -71,7 +71,7 @@
 			</alternate>
 		</card>
 		<card name="Gaial Kaiser, the Victorious" id="ee04c2e4-7bad-4abf-9d90-86a4293eb0ee">
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Psychic Creature" />
 			<property name="Race" value="Red Command Dragon/Hunter" />
@@ -82,7 +82,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Gaial Ore Dragon, the Vainglory" type="awakening">
-				<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+				<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 				<property name="Cost" value="30" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="Rainbow Command Dragon/Hunter" />
@@ -105,7 +105,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Infinite Orchestra of Love" id="299eedd2-0933-4be5-9cd8-90b53df7e715">
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Alien" />
@@ -138,7 +138,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Destruction Destroyer, Infinite King" id="efd81d49-04c9-4673-8de8-bb010a3844a2">
-			<property name="Civilization" value="Light/Water/Fire" />
+			<property name="Civilization" value="Water/Fire/Light" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Angel Command/Cyber Command/Flame Command" />
@@ -149,7 +149,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Codename Snake" id="e032ae77-77f6-4ea5-a4e4-fe3b8054fa25">
-			<property name="Civilization" value="Water/Darkness/Nature" />
+			<property name="Civilization" value="Water/Nature/Darkness" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Unknown" />
@@ -160,7 +160,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Gaial Baby" id="388713b0-5679-4292-8b76-4b217effdb20">
-			<property name="Civilization" value="Water/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Red Command Dragon/Hunter" />
@@ -259,7 +259,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Ribbideis Saburo" id="f1ad56c4-4eab-4a0f-a1e5-926007d41486">
-			<property name="Civilization" value="Light/Water/Darkness" />
+			<property name="Civilization" value="Water/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Gel Fish/Alien" />
@@ -270,7 +270,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Deis Orthrus, Brave Beast King" id="05ed7376-0533-417d-8736-3ae43c541542">
-			<property name="Civilization" value="Light/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Gao Monster/Alien" />
@@ -281,7 +281,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Deis Al Maaz, Guardian of Flight" id="6a9451d1-ca1e-4387-a327-9c46b1320fcc">
-			<property name="Civilization" value="Light/Water/Nature" />
+			<property name="Civilization" value="Water/Nature/Light" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Guardian/Alien" />
@@ -292,7 +292,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Perfect Fragrance! Top Mushroom" id="8defa428-92cc-4190-af61-70732d40af74">
-			<property name="Civilization" value="Light/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Light" />
 			<property name="Cost" value="4" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Wild Veggies/Alien" />
@@ -303,7 +303,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Deis Gajira, Champion of Chaos" id="f406b5c4-71fb-4408-8a65-7df6011eda31">
-			<property name="Civilization" value="Water/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Water/Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Demon Command/Alien" />
@@ -314,7 +314,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Necromancer Inferno Kaiser" id="de900799-75fe-4fb3-8433-83f4e790de4f">
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Rainbow Command Dragon/Alien" />
@@ -325,7 +325,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Super Move! Absolute Despair!!" id="d82d535b-65c8-43bb-a011-12986cd8b1d2">
-			<property name="Civilization" value="Water/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Water/Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
@@ -479,7 +479,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Power of Our Friendship!" id="b4519125-7ae8-44e4-8417-0232c215321a">
-			<property name="Civilization" value="Light/Water/Nature" />
+			<property name="Civilization" value="Water/Nature/Light" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
@@ -633,7 +633,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Clap, Defender of Hope" id="7d66778d-0564-481c-8bb5-f6f7123f233d">
-			<property name="Civilization" value="Light/Water/Fire" />
+			<property name="Civilization" value="Fire/Water/Light" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Fire Bird/Alien/Hunter" />
@@ -644,7 +644,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Intense World! Shachihoko Kaiser" id="6d9f8db7-e41f-47c7-871c-7edc5cb04613">
-			<property name="Civilization" value="Light/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Light/Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Psychic Creature" />
 			<property name="Race" value="Rainbow Command Dragon/Alien" />
@@ -655,7 +655,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Gallows Hellish Dragon, Brink of Despair" type="awakening">
-				<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+				<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 				<property name="Cost" value="30" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="Rainbow Command Dragon/Alien" />
@@ -667,7 +667,7 @@
 			</alternate>
 		</card>
 		<card name="Rhapsody, Defender of Hope" id="6ec61285-a60c-4422-b4de-fc6c968463c3">
-			<property name="Civilization" value="Light/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Light/Darkness" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Initiate/Alien/Hunter" />
@@ -678,7 +678,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Prin Prin, the Victorious" id="6962ab6f-ed02-465c-9ed8-ba1fb97ea97a">
-			<property name="Civilization" value="Light/Water/Nature" />
+			<property name="Civilization" value="Water/Nature/Light" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Psychic Creature" />
 			<property name="Race" value="Hunter/Alien" />
@@ -689,7 +689,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Gaial Ore Dragon, the Vainglory" type="awakening">
-				<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+				<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 				<property name="Cost" value="30" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="Rainbow Command Dragon/Hunter" />
@@ -701,7 +701,7 @@
 			</alternate>
 		</card>
 		<card name="Funk, Defender of Hope" id="d1f69a5d-13d8-4385-8238-3ba6bb409ef6">
-			<property name="Civilization" value="Light/Darkness/Nature" />
+			<property name="Civilization" value="Nature/Light/Darkness" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Dark Lord/Hunter/Alien" />
@@ -712,7 +712,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Silva, Defender of Hope" id="d9e2eed9-c961-4875-b629-67816b602246">
-			<property name="Civilization" value="Water/Darkness/Nature" />
+			<property name="Civilization" value="Water/Nature/Darkness" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Beast Folk/Alien/Hunter" />
@@ -723,7 +723,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Pepper, Defender of Hope" id="90e04904-deba-40fc-85d3-d9f58687907f">
-			<property name="Civilization" value="Water/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Cyber Lord/Alien/Hunter" />
@@ -734,7 +734,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Intense Sumo! Thrust Wrestler" id="e4bc7c12-5f87-490f-b0d4-1cf2d335966c">
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Psychic Creature" />
 			<property name="Race" value="Flame Command/Alien" />
@@ -745,7 +745,7 @@
 			<property name="Format" value="OCG" />
 
 			<alternate name="Gallows Hellish Dragon, Brink of Despair" type="awakening">
-				<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+				<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 				<property name="Cost" value="30" />
 				<property name="Type" value="Psychic Super Creature" />
 				<property name="Race" value="Rainbow Command Dragon/Alien" />
@@ -757,7 +757,7 @@
 			</alternate>
 		</card>
 		<card name="Gallows Hellish Dragon, Brink of Despair" id="8c3e12de-8d5c-4baf-bb59-b7bfeeccbf1e">
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="30" />
 			<property name="Type" value="Psychic Super Creature" />
 			<property name="Race" value="Rainbow Command Dragon/Alien" />
@@ -768,7 +768,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Gaial Ore Dragon, the Vainglory" id="0b9906cc-37c8-4762-bdc4-135ff693af3c">
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="30" />
 			<property name="Type" value="Psychic Super Creature" />
 			<property name="Race" value="Rainbow Command Dragon/Hunter" />

@@ -566,7 +566,7 @@
 		</card>
 		<card name="Codeless Sorge Thirteen" id="4afccedc-fb5e-453f-868b-60baeb33a1d9">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Water/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Outrage MAX" />

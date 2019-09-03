@@ -166,7 +166,7 @@
 		
 		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="50" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="World Command Dragon" />
@@ -274,7 +274,7 @@
 		
 		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="50" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="World Command Dragon" />
@@ -334,7 +334,7 @@
 
 		<alternate name="All Over The World, Supreme True Dragon Soul" type="awakening" size="normal">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light/Water/Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature/Light/Darkness" />
 			<property name="Cost" value="50" />
 			<property name="Type" value="Dragheart Creature" />
 			<property name="Race" value="World Command Dragon" />

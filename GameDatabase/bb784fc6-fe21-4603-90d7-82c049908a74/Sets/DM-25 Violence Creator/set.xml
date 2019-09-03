@@ -33,7 +33,7 @@
 		</card>
 		<card name="Jose Wilbert, Gaia's Justice" id="41c7545f-1bc8-4650-8995-cd4074b599db">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Fire" />
+			<property name="Civilization" value="Fire/Water/Light" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Lost Crusader" />
@@ -44,7 +44,7 @@
 		</card>
 		<card name="Soul Reaping Sardonyx" id="d61940e8-5cbb-453f-a866-c9e160b68d32">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Light/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Spirit Quartz" />
@@ -55,7 +55,7 @@
 		</card>
 		<card name="Romanesk, the Dragon Wizard" id="db3a1efc-0419-4102-b486-4360a3e44f67">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Light" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Apollonia Dragon/Armored Dragon/Earth Dragon" />
@@ -66,7 +66,7 @@
 		</card>
 		<card name="Violence Thunder, Extreme Dragon Wizard" id="a560fea7-7914-4952-a8a6-7e850b6ca6c9">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Water/Darkness" />
 			<property name="Cost" value="10" />
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Poseidia Dragon/Zombie Dragon/Armored Dragon" />
@@ -88,7 +88,7 @@
 		</card>
 		<card name="Kingdom Geolg, Super Gaia" id="1ff7bdbe-3737-404e-a10e-71a21518ef71">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness" />
+			<property name="Civilization" value="Water/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Lost Crusader" />
@@ -99,7 +99,7 @@
 		</card>
 		<card name="Fullmetal Lemon, Brave King Mecha" id="59fefd96-e699-4f78-b3c7-208eb2b647d4">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Nature" />
+			<property name="Civilization" value="Water/Nature/Light" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Great Mecha King/Wild Veggies" />
@@ -110,7 +110,7 @@
 		</card>
 		<card name="Sir Albides, Noble Deathknight" id="277bf0c0-40cb-4ef1-9a21-03877b0d3a3e">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Darkness/Nature" />
+			<property name="Civilization" value="Nature/Light/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Dark Lord/Arc Seraphim" />
@@ -121,7 +121,7 @@
 		</card>
 		<card name="Girimegis, Demonic Strike Armor" id="a5df17cc-48af-4117-bbcc-093ac5e1306f">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water/Darkness/Nature" />
+			<property name="Civilization" value="Water/Nature/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Earth Eater/Demon Command/Vehicle Bee" />
@@ -385,7 +385,7 @@
 		</card>
 		<card name="Olaswan, Knight of Gaia" id="ed19e644-3089-4a28-8106-31b9308feafb">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness" />
+			<property name="Civilization" value="Water/Light/Darkness" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Lost Crusader" />
@@ -396,7 +396,7 @@
 		</card>
 		<card name="Bull Phalion, Spirit King Mecha" id="fb7f8818-9f00-437e-90fc-ee8abe0ada67">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Nature" />
+			<property name="Civilization" value="Water/Nature/Light" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Arc Seraphim/Great Mecha King/Grand Devil" />
@@ -407,7 +407,7 @@
 		</card>
 		<card name="Quick Drawing Argonite" id="ebdd3ca4-9428-42ed-8650-3be165299d49">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Light" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Spirit Quartz" />
@@ -418,7 +418,7 @@
 		</card>
 		<card name="Tragic Iolite" id="0564189e-c805-4109-9095-99390ee51111">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Water/Darkness" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Spirit Quartz" />
@@ -429,7 +429,7 @@
 		</card>
 		<card name="Lost Secrets of Gaia" id="e8236f0f-affa-4681-985e-c6cd248fdd40">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
@@ -440,7 +440,7 @@
 		</card>
 		<card name="Kiryu Jilves, Gaia's Roar" id="dc9fc620-a1f1-4dbc-ba4d-274eb972fc91">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Lost Crusader" />
