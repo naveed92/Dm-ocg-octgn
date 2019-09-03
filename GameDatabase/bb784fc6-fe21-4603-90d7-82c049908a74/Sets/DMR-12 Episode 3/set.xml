@@ -154,7 +154,7 @@
 
 		<card name="Robin Michaelan Global, Friends Power" id="3553ddf6-850d-46c1-8fe9-a697995f7b0f">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light/Water/Nature" />
+			<property name="Civilization" value="Water/Nature/Light" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Exile Creature" />
 			<property name="Race" value="Outrage MAX" />

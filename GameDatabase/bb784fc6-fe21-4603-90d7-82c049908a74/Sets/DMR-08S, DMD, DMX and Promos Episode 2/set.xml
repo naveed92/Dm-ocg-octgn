@@ -393,7 +393,7 @@
 
 		<card name="Codeking Mozart" id="16138bf2-c7ab-4a6f-a116-61309a626c81">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="11" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="King Command Dragon/Unknown" />
@@ -1522,7 +1522,7 @@
 
 		<card name="Ballcadeia NEX, Lord of Demon Dragons" id="00ca58a1-2420-41e2-920d-b2958f6b623f">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Light/Darkness" />
 			<property name="Cost" value="15" />
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Angel Command/Demon Command/Armored Dragon" />
@@ -2312,7 +2312,7 @@
 		</card>
 		<card name="VAN Beat, Battlefield Pianist" id="47fc2454-f259-48db-94d2-dc073066758a">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="9" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="King Command Dragon/Pianist" />

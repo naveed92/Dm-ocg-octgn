@@ -36,7 +36,7 @@
 			<property name="Format" value="OCG" />
 
 		    <alternate name="Gallows Devil Dragon, Dead Sea Dragon" type="awakening">
-			    <property name="Civilization" value="Water/Darkness/Fire" />
+			    <property name="Civilization" value="Fire/Water/Darkness" />
 			    <property name="Cost" value="24" />
 			    <property name="Type" value="Psychic Super Creature" />
 			    <property name="Race" value="Devil Command Dragon/Alien" />
@@ -820,7 +820,7 @@
 			<property name="Format" value="OCG" />
 
 		    <alternate name="Gallows Devil Dragon, Dead Sea Dragon" type="awakening">
-			    <property name="Civilization" value="Water/Darkness/Fire" />
+			    <property name="Civilization" value="Fire/Water/Darkness" />
 			    <property name="Cost" value="24" />
 			    <property name="Type" value="Psychic Super Creature" />
 			    <property name="Race" value="Devil Command Dragon/Alien" />
@@ -910,7 +910,7 @@
 			<property name="Format" value="OCG" />
 
 		    <alternate name="Gallows Devil Dragon, Dead Sea Dragon" type="awakening">
-			    <property name="Civilization" value="Water/Darkness/Fire" />
+			    <property name="Civilization" value="Fire/Water/Darkness" />
 			    <property name="Cost" value="24" />
 			    <property name="Type" value="Psychic Super Creature" />
 			    <property name="Race" value="Devil Command Dragon/Alien" />
@@ -1586,7 +1586,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 	    <card name="Gallows Devil Dragon, Dead Sea Dragon" id="002bc095-8b2e-4475-ba23-d175de9712c0">
-		    <property name="Civilization" value="Water/Darkness/Fire" />
+		    <property name="Civilization" value="Fire/Water/Darkness" />
 		    <property name="Cost" value="24" />
 		    <property name="Type" value="Psychic Super Creature" />
 		    <property name="Race" value="Devil Command Dragon/Alien" />

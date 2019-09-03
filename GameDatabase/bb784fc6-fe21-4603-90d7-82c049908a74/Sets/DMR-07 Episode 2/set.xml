@@ -126,7 +126,7 @@
 
 		<card name="Codeking Wilhelm" id="4bf2fe90-4120-40ae-8e26-88e75dd01b6f">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="9" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="King Command Dragon/Unknown" />
@@ -354,7 +354,7 @@
 
 		<card name="Funk Clap Rhapsody of Hope" id="8566c2ff-f9b1-4b4b-a665-f663d8675034">
 			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Light/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Light/Darkness" />
 			<property name="Cost" value="7" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Angel Command/Armored Dragon/Demon Command" />

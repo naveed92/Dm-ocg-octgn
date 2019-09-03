@@ -125,7 +125,7 @@
 			<property name="Format" value="OCG" />
 
 		    <alternate name="Unryu Deis Izu, Great Yokozuna" type="awakening">
-			    <property name="Civilization" value="Darkness/Fire/Nature" />
+			    <property name="Civilization" value="Fire/Nature/Darkness" />
 			    <property name="Cost" value="20" />
 			    <property name="Type" value="Psychic Super Creature" />
 			    <property name="Race" value="Sumo Wrestler Command Dragon/Alien" />
@@ -346,7 +346,7 @@
 			<property name="Format" value="OCG" />
 			</card>
 		<card name="Hyperspatial Gotsusan Hole" id="521fee1b-6fc5-4c7b-8ca6-556851a0cfa1">
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
@@ -357,7 +357,7 @@
 			<property name="Format" value="OCG" />
 			</card>
 		<card name="Hyperspatial Gotsusan Hole" id="4eed0fb4-714b-4939-b7ac-eec377aa05d5">
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
@@ -445,7 +445,7 @@
 			<property name="Format" value="OCG" />
 
 		    <alternate name="Unryu Deis Izu, Great Yokozuna" type="awakening">
-			    <property name="Civilization" value="Darkness/Fire/Nature" />
+			    <property name="Civilization" value="Fire/Nature/Darkness" />
 			    <property name="Cost" value="20" />
 			    <property name="Type" value="Psychic Super Creature" />
 			    <property name="Race" value="Sumo Wrestler Command Dragon/Alien" />
@@ -490,7 +490,7 @@
 			<property name="Format" value="OCG" />
 
 		    <alternate name="Unryu Deis Izu, Great Yokozuna" type="awakening">
-			    <property name="Civilization" value="Darkness/Fire/Nature" />
+			    <property name="Civilization" value="Fire/Nature/Darkness" />
 			    <property name="Cost" value="20" />
 			    <property name="Type" value="Psychic Super Creature" />
 			    <property name="Race" value="Sumo Wrestler Command Dragon/Alien" />
@@ -832,7 +832,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 	    <card name="Unryu Deis Izu, Great Yokozuna" id="4e26f628-fbe2-4f7d-ae51-a70d238cd80f">
-		    <property name="Civilization" value="Darkness/Fire/Nature" />
+		    <property name="Civilization" value="Fire/Nature/Darkness" />
 		    <property name="Cost" value="20" />
 		    <property name="Type" value="Psychic Super Creature" />
 		    <property name="Race" value="Sumo Wrestler Command Dragon/Alien" />

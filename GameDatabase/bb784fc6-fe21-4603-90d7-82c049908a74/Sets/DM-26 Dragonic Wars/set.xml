@@ -68,7 +68,7 @@ creatures with 12000 power or less." />
 		</card>
 		<card name="Kirin Legacy, the Twin Meteor" id="95532e89-7b06-49fd-96c1-9bb71e74413e">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Phoenix" />
@@ -127,7 +127,7 @@ abilities) and becomes one creature. When the linked creature leaves the battle 
 		</card>
 		<card name="Paradox, Gaia's Abyss" id="b65d9c25-8be2-4049-8568-d64347a1e3f9">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water/Darkness/Nature" />
+			<property name="Civilization" value="Water/Nature/Darkness" />
 			<property name="Cost" value="4" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Lost Crusader" />
@@ -256,7 +256,7 @@ god's characteristics (power and abilities) and becomes one creature. When the l
 		</card>
 		<card name="Mist Gias, Gaia's Swordcerer" id="6a47d2c0-847d-45bb-8315-b3a3bde19677">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness" />
+			<property name="Civilization" value="Water/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Lost Crusader" />
@@ -267,7 +267,7 @@ god's characteristics (power and abilities) and becomes one creature. When the l
 		</card>
 		<card name="Hundred Eyes, Secret Spirit Treasure" id="25bcaccd-f584-4d88-8275-16ce1bd7ede7">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Darkness/Nature" />
+			<property name="Civilization" value="Nature/Light/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Arc Seraphim/Pandora Box" />
@@ -278,7 +278,7 @@ god's characteristics (power and abilities) and becomes one creature. When the l
 		</card>
 		<card name="Daikazan, Brave King Totem" id="4ada02da-c8fc-4c4d-8b88-a7aafdee5e08">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Light" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Great Mecha King/Human/Mystery Totem" />
@@ -289,7 +289,7 @@ god's characteristics (power and abilities) and becomes one creature. When the l
 		</card>
 		<card name="Rocaperissors, Gaia's Magician" id="41b4e17f-5a51-4e68-8078-ba6cf0f975dc">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water/Fire/Darkness" />
+			<property name="Civilization" value="Fire/Water/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Lost Crusader" />
@@ -302,7 +302,7 @@ hand." />
 		</card>
 		<card name="Albatross, Spirit Wing Treasure" id="c432a5a0-63d9-4f11-bf60-6f1c6ca26cf5">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Pandora Box/Xeno Parts/Beast Folk" />
@@ -446,7 +446,7 @@ following [OD] ability).&#xd;&#xa;[OD]: When this creature is put into the battl
 		</card>
 		<card name="Turquoise Kraken, Holy Machine" id="5434afb8-90ce-40fe-b6be-c7837c178286">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Darkness" />
+			<property name="Civilization" value="Water/Light/Darkness" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Guardian/Merfolk/Tyranno Drake" />
@@ -457,7 +457,7 @@ following [OD] ability).&#xd;&#xa;[OD]: When this creature is put into the battl
 		</card>
 		<card name="Nyokitaris, Viral Tree Spirit" id="e77a6cb5-f3f0-43bc-b1b4-ea2208153562">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Light/Water/Nature" />
+			<property name="Civilization" value="Water/Nature/Light" />
 			<property name="Cost" value="6" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Great Mecha King/Cyber Virus/Mystery Totem" />
@@ -470,7 +470,7 @@ deck." />
 		</card>
 		<card name="Persistent Prison of Gaia" id="f7c1dc2b-45bd-4283-b3ea-dbb2614c4374">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Water/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Water/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Spell" />
 			<property name="Race" value="" />
@@ -481,7 +481,7 @@ deck." />
 		</card>
 		<card name="Torierre, Armament Fairy" id="a2272baa-3ad6-418a-9743-f80184fd07d7">
 			<property name="Format" value="Set35, OCG" />
-			<property name="Civilization" value="Darkness/Fire/Nature" />
+			<property name="Civilization" value="Fire/Nature/Darkness" />
 			<property name="Cost" value="3" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Tyranno Drake/Xeno Parts/Snow Faerie" />

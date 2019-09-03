@@ -92,7 +92,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Codename Sorge" id="256a0362-2a95-44e7-bbcc-843ed32ef4ce">
-			<property name="Civilization" value="Water/Fire/Nature" />
+			<property name="Civilization" value="Fire/Water/Nature" />
 			<property name="Cost" value="8" />
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Unknown" />
@@ -147,7 +147,7 @@
 			<property name="Format" value="OCG" />
 		</card>
 		<card name="Unified Shachihoko Kaiser" id="0293a746-1471-44dd-8b54-25ff5c0b85d8">
-			<property name="Civilization" value="Light/Darkness/Fire" />
+			<property name="Civilization" value="Fire/Light/Darkness" />
 			<property name="Cost" value="5" />
 			<property name="Type" value="Evolution Creature" />
 			<property name="Race" value="Rainbow Command Dragon/Alien" />
