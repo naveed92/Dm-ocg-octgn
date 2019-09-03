@@ -19,7 +19,7 @@
 	
 	<events>
 		<event name="OnGameStarted" action="resetGame" />
-		<event name="OnCardsMoved" action="moveCards" />
+		<event name="OverrideCardsMoved" action="moveCards" />
 		<event name="OverrideTurnPassed" action="endTurn" />
 		<event name="OnCardTargeted" action="onTarget" />
 	</events>

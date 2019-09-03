@@ -287,7 +287,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle/Dreammate	" />
 			<property name="Power" value="7000" />
-			<property name="Rules" value="When you put this creature into the battle zone, search your deck. You may take a Tooltip from your deck and put it into the battle zone. Then shuffle your deck.&#xd;&#xa;Double breaker" />
+			<property name="Rules" value="When you put this creature into the battle zone, search your deck. You may take a Cobble, Familia's Bonds from your deck and put it into the battle zone. Then shuffle your deck.&#xd;&#xa;Double breaker" />
 			<property name="Rarity" value="Rare" />
 			<property name="Number" value="15" />
 		</card>
@@ -695,7 +695,7 @@
 			<property name="Type" value="Creature" />
 			<property name="Race" value="Oracle/Dreammate " />
 			<property name="Power" value="3000+" />
-			<property name="Rules" value="If you have a Tooltip in the battle zone, this creature gets +3000 power and 'Double breaker'." />
+			<property name="Rules" value="If you have a Dekaburu, Izanai's Bonds in the battle zone, this creature gets +3000 power and 'Double breaker'." />
 			<property name="Rarity" value="Common" />
 			<property name="Number" value="49" />
 		</card>

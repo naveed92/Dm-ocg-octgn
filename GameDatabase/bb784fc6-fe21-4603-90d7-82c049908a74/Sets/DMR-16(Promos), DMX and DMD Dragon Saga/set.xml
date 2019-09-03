@@ -1697,18 +1697,6 @@
 			</alternate>
 		</card>
 
-		<card name="Macallan Fine, Explosive Roar" id="2e2ffe3d-9a65-403e-a218-2083bebc812b">
-			<property name="Format" value="OCG" />
-			<property name="Civilization" value="Fire" />
-			<property name="Cost" value="4" />
-			<property name="Type" value="Creature" />
-			<property name="Race" value="Human Baku" />
-			<property name="Power" value="4000" />
-			<property name="Rules" value="Speed attacker&#xd;&#xa; Mana Arms 5: If you have 5 or more fire cards in your mana zone, each of your creatures in the battle zone gets 'speed attacker'." />
-			<property name="Rarity" value="Promotional" />
-			<property name="Number" value="None" />
-		</card>
-
 		<card name="Alphadios, Lord of Spirits" id="e99e3cbb-ab76-4c74-b9e0-4e85d2c4d0e0">
 			<property name="Format" value="OCG" />
 			<property name="Civilization" value="Light" />
