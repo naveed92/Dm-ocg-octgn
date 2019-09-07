@@ -77,6 +77,7 @@ cardScripts = {
 	'Hot Spring Crimson Meow': {'onPlay': ['draw(me.Deck, True)']},
 	'Hulk Crawler': {'onPlay': ['draw(me.Deck, True)']},
 	'Hurlosaur': {'onPlay': ['kill(1000)']},
+	'Imen=Bugo, Dragon Edge': {'onPlay': ['fromHyperspatial("Nature and 4", "Dragheart")']},
 	'Iron Arm Tribe': {'onPlay': ['mana()']},
 	'Izana Keeza': {'onPlay': ['kill(2000)']},
 	'Jasmine, Mist Faerie': {'onPlay': ['suicide("Jasmine, Mist Faerie", mana, me.Deck)']},
@@ -92,6 +93,7 @@ cardScripts = {
 	'Magris, Vizier of Magnetism': {'onPlay': ['draw(me.Deck, True)']},
 	'Masked Horror, Shadow of Scorn': {'onPlay': ['targetDiscard(True)']},
 	'Metal Avenger Solid, Dragon Edge': {'onPlay': ['bounce(opponentOnly=True, condition="int(card.Cost)<=6")','fromHyperspatial("Water and 4", "Dragheart")']},
+	'Metal Avenger, Dragon Edge': {'onPlay': ['fromHyperspatial("Water and 4 or 2", "Dragheart")']},
 	'Meteosaur': {'onPlay': ['kill(2000)']},
 	'Miele, Vizier of Lightning': {'onPlay': ['tapCreature()']},
 	'Moors, the Dirty Digger Puppet': {'onPlay': ['search(me.piles["Graveyard"])']},
@@ -199,15 +201,18 @@ cardScripts = {
 	'Hogan Blaster': {'onPlay': ['drama(True, "creature or spell", "battlezone", "top")']},
 	'Holy Awe': {'onPlay': ['tapCreature(1,True)']},
 	'Hopeless Vortex': {'onPlay': ['kill()']},
-	'Hyperspatial Storm Hole': {'onPlay': ['kill(5000)']},
-	'Hyperspatial Bolshack Hole': {'onPlay': ['kill(5000)']},
-	'Hyperspatial Kutt Hole': {'onPlay': ['kill(5000)']},
-	'Hyperspatial Guard Hole': {'onPlay': ['sendToShields()']},
-	'Hyperspatial Vice Hole': {'onPlay': ['targetDiscard()']},
-	'Hyperspatial Shiny Hole': {'onPlay': ['tapCreature()']},
-	'Hyperspatial Energy Hole': {'onPlay': ['draw(me.Deck, False, 1)']},
+	'Hyperspatial Bolshack Hole': {'onPlay': ['kill(5000)', 'fromHyperspatial("5 or Fire and 7")']},
+	'Hyperspatial Emperor Hole': {'onPlay': ['fromHyperspatial("Darkness and 9")']},
+	'Hyperspatial Energy Hole': {'onPlay': ['draw(me.Deck, False, 1)', 'fromHyperspatial("5 or Water and 7")']},
 	'Hyperspatial Faerie Hole': {'onPlay': ['mana()', 'fromHyperspatial("5 or Nature and 7")']},
-	'Hyperspatial Revive Hole': {'onPlay': ['search(me.piles["Graveyard"], 1, "Creature")']},
+	'Hyperspatial Guard Hole': {'onPlay': ['sendToShields()', 'fromHyperspatial("Command and 10 and ( Light or Darkness )")']},
+	'Hyperspatial Kutt Hole': {'onPlay': ['kill(5000)', 'fromHyperspatial("2 or 4 and Nature or 4 and Fire")']},
+	'Hyperspatial Revive Hole': {'onPlay': ['search(me.piles["Graveyard"], 1, "Creature")', 'fromHyperspatial("5 or Darkness and 7")']},
+	'Hyperspatial Shiny Hole': {'onPlay': ['tapCreature()', 'fromHyperspatial("5 or Light and 7")']},
+	'Hyperspatial Shooting Hole': {'onPlay': ['fromHyperspatial("Fire and 9")']},
+	'Hyperspatial Storm Hole': {'onPlay': ['kill(5000)', 'fromHyperspatial("Fire and 10")']},
+	'Hyperspatial Surprise Hole': {'onPlay': ['kill(5000)', 'fromHyperspatial("2 or 4 and Water or 4 and Light")']},
+	'Hyperspatial Vice Hole': {'onPlay': ['targetDiscard()']},
 	'Infernal Smash': {'onPlay': ['kill()']},
 	'Intense Vacuuming Twist': {'onPlay': ['lookAtTopCards(5, "True", "hand", "bottom", True, "BOUNCE", ["Fire", "Nature"])', 'bounce()']},
 	'Invincible Abyss': {'onPlay': ['destroyAll([card for card in table if card.owner != me], True)']},
@@ -513,7 +518,7 @@ def convertCondition(condition, cardToCheck="card"): #intermediate function to c
 	condition = ""
 	typeList = ["Creature", "Spell", "Evolution", "Gear", "Psychic", "Dragheart"] #add more later(fortress/dragheart fortress can cause issues) but this is sufficient for now
 	for word in condList:
-		if word == "and" or word=="or" or word=="not" or word=="True" or word=="False":
+		if word == "and" or word=="or" or word=="not" or word=="True" or word=="False" or word=="(" or word == ")":
 			condition += word + " "
 		elif word.isdigit():
 			condition += "int(card.Cost)<="+word+" "
