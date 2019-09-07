@@ -38,6 +38,18 @@
 		<block type="overlay" id="waterNatureS" src="proxy/frames/waterNatureS.png"><location x="0" y="0" />	</block>
 		<block type="overlay" id="waterNatureC" src="proxy/frames/waterNatureC.png"><location x="0" y="0" />	</block>
 
+		<block type="overlay" id="allBase" src="proxy/frames/new/allBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fldBase" src="proxy/frames/new/fldBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fndBase" src="proxy/frames/new/fndBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fnlBase" src="proxy/frames/new/fnlBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwdBase" src="proxy/frames/new/fwdBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwlBase" src="proxy/frames/new/fwlBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwnBase" src="proxy/frames/new/fwnBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="nldBase" src="proxy/frames/new/nldBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wldBase" src="proxy/frames/new/wldBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wndBase" src="proxy/frames/new/wndBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wnlBase" src="proxy/frames/new/wnlBase.png"><location x="0" y="0" />	</block>
+		
 		<block type="overlay" id="allC" src="proxy/frames/new/allC.png"><location x="0" y="0" />	</block>
 		<block type="overlay" id="fldC" src="proxy/frames/new/fldC.png"><location x="0" y="0" />	</block>
 		<block type="overlay" id="fndC" src="proxy/frames/new/fndC.png"><location x="0" y="0" />	</block>
@@ -49,6 +61,18 @@
 		<block type="overlay" id="wldC" src="proxy/frames/new/wldC.png"><location x="0" y="0" />	</block>
 		<block type="overlay" id="wndC" src="proxy/frames/new/wndC.png"><location x="0" y="0" />	</block>
 		<block type="overlay" id="wnlC" src="proxy/frames/new/wnlC.png"><location x="0" y="0" />	</block>
+		
+		<block type="overlay" id="allS" src="proxy/frames/new/allS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fldS" src="proxy/frames/new/fldS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fndS" src="proxy/frames/new/fndS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fnlS" src="proxy/frames/new/fnlS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwdS" src="proxy/frames/new/fwdS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwlS" src="proxy/frames/new/fwlS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwnS" src="proxy/frames/new/fwnS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="nldS" src="proxy/frames/new/nldS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wldS" src="proxy/frames/new/wldS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wndS" src="proxy/frames/new/wndS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wnlS" src="proxy/frames/new/wnlS.png"><location x="0" y="0" />	</block>
 
 		<block type="overlay" id="evo" src="proxy/evo.png">				<location x="0" y="0" />	</block>
 		<block type="overlay" id="sTrig" src="proxy/shTrigger.png">		<location x="0" y="0" />	</block>
@@ -350,6 +374,17 @@
 					<case value="Water/Nature"> <link block="waterNatureC" /> </case>
 					<case value="Nature/Water"> <link block="waterNatureC" /> </case>
 					
+					<case value = "Fire/Light/Darkness"> <link block="fldBase"> <link block="fldC"> </case>
+					<case value = "Fire/Nature/Darkness"> <link block="fndBase"> <link block="fndC"> </case>
+					<case value = "Fire/Nature/Light"> <link block="fnlBase"> <link block="fnlC"> </case>
+					<case value = "Fire/Water/Darkness"> <link block="fwdBase"> <link block="fwdC"> </case>
+					<case value = "Fire/Water/Light"> <link block="fwlBase"> <link block="fwlC"> </case>
+					<case value = "Fire/Water/Nature"> <link block="fwnBase"> <link block="fwnC"> </case>
+					<case value = "Nature/Light/Darkness"> <link block="nldBase"> <link block="nldC"> </case>
+					<case value = "Water/Light/Darkness"> <link block="wldBase"> <link block="wldC"> </case>
+					<case value = "Water/Nature/Darkness"> <link block="wndBase"> <link block="wndC"> </case>
+					<case value = "Water/Nature/Light"> <link block="wnlBase"> <link block="wnlC"> </case>
+					
 					<default> <link block="lightC" /> </default>
 				</switch>
 			</conditional>
@@ -405,13 +440,11 @@
 					<link block="zerotitle"><property name="Name" /></link>
 					<link block="zerorace"><property name="Race" /></link>
 					<link block="zerocost"><property name="Cost" /></link>
-
 				</if>
 				<else>
 					<link block="title"><property name="Name" /></link>
 					<link block="race"><property name="Race" /></link>
 					<link block="cost"><property name="Cost" /></link>
-
 				</else>
 			</conditional>
 			<link block="typeC"><property name="Type" /></link>
@@ -440,7 +473,6 @@
 					<case value="Nature"> <link block="natureS" /> </case>
 					<case value="Darkness"> <link block="darkS" /> </case>
 					<case value="Zero"> <link block="zeroS" /> </case>
-
 					
 					<case value="Darkness/Fire"> <link block="fireDarkS" /> </case>
 					<case value="Fire/Darkness"> <link block="fireDarkS" /> </case>
@@ -457,7 +489,6 @@
 					<case value="Darkness/Water"> <link block="waterDarkS" /> </case>
 					<case value="Water/Darkness"> <link block="waterDarkS" /> </case>
 
-					
 					<case value="Darkness/Nature"> <link block="darkNatureS" /> </case>
 					<case value="Nature/Darkness"> <link block="darkNatureS" /> </case>
 					
@@ -472,6 +503,17 @@
 					
 					<case value="Water/Nature"> <link block="waterNatureS" /> </case>
 					<case value="Nature/Water"> <link block="waterNatureS" /> </case>
+					
+					<case value = "Fire/Light/Darkness"> <link block="fldBase"> <link block="fldS"> </case>
+					<case value = "Fire/Nature/Darkness"> <link block="fndBase"> <link block="fndS"> </case>
+					<case value = "Fire/Nature/Light"> <link block="fnlBase"> <link block="fnlS"> </case>
+					<case value = "Fire/Water/Darkness"> <link block="fwdBase"> <link block="fwdS"> </case>
+					<case value = "Fire/Water/Light"> <link block="fwlBase"> <link block="fwlS"> </case>
+					<case value = "Fire/Water/Nature"> <link block="fwnBase"> <link block="fwnS"> </case>
+					<case value = "Nature/Light/Darkness"> <link block="nldBase"> <link block="nldS"> </case>
+					<case value = "Water/Light/Darkness"> <link block="wldBase"> <link block="wldS"> </case>
+					<case value = "Water/Nature/Darkness"> <link block="wndBase"> <link block="wndS"> </case>
+					<case value = "Water/Nature/Light"> <link block="wnlBase"> <link block="wnlS"> </case>
 				
 					<default> <link block="lightS" /> </default>
 				</switch>

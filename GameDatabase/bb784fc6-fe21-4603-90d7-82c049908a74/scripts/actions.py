@@ -130,6 +130,7 @@ cardScripts = {
 	'Splash Zebrafish': {'onPlay': ['fromMana()']},
 	'Syforce, Aurora Elemental': {'onPlay': ['fromMana(1,"Spell")']},
 	'Terradragon Zalberg': {'onPlay': ['destroyMana(2)']},
+	'The=Deadman, Dragon Edge': {'onPlay': ['fromHyperspatial("Nature and 5", "Dragheart")']},
 	'Thorny Mandra': {'onPlay': ['fromGrave()']},
 	'Thrash Crawler': {'onPlay': ['fromMana()']},
 	'Titan Giant': {'onPlay': ['mana (me.Deck, 2, True)']},
