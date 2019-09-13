@@ -1,65 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <templates>
 	<blocks>
-		<block type="overlay" id="lightC" src="proxy/frames/lightC.png">    <location x="0" y="0" />    </block>
-		<block type="overlay" id="waterC" src="proxy/frames/waterC.png">    <location x="0" y="0" />    </block>
-		<block type="overlay" id="darkC" src="proxy/frames/darkC.png">      <location x="0" y="0" />    </block>
-		<block type="overlay" id="fireC" src="proxy/frames/fireC.png">      <location x="0" y="0" />    </block>
-		<block type="overlay" id="natureC" src="proxy/frames/natureC.png">  <location x="0" y="0" />    </block>			
-        <block type="overlay" id="zeroC" src="proxy/frames/zeroC.png">      <location x="0" y="0" />    </block>	
-	
-		<block type="overlay" id="lightS" src="proxy/frames/lightS.png">    <location x="0" y="0" />    </block>
-		<block type="overlay" id="waterS" src="proxy/frames/waterS.png">    <location x="0" y="0" />    </block>
-		<block type="overlay" id="darkS" src="proxy/frames/darkS.png">      <location x="0" y="0" />    </block>
-		<block type="overlay" id="fireS" src="proxy/frames/fireS.png">      <location x="0" y="0" />	</block>
-        <block type="overlay" id="fireS_HSP" src="proxy/frames/fireS_HSP.png"> <location x="0" y="0" /> </block>
-		<block type="overlay" id="natureS" src="proxy/frames/natureS.png">  <location x="0" y="0" />    </block>
-        <block type="overlay" id="zeroS" src="proxy/frames/zeroS.png">      <location x="0" y="0" />    </block>
-    
-		<block type="overlay" id="fireDarkS" src="proxy/frames/fireDarkS.png">      <location x="0" y="0" />    </block>	
-		<block type="overlay" id="fireDarkC" src="proxy/frames/fireDarkC.png">      <location x="0" y="0" />    </block>
-		<block type="overlay" id="fireNatureS" src="proxy/frames/fireNatureS.png">  <location x="0" y="0" />    </block>	
-		<block type="overlay" id="fireNatureC" src="proxy/frames/fireNatureC.png">  <location x="0" y="0" />    </block>
-		<block type="overlay" id="lightWaterS" src="proxy/frames/lightWaterS.png">  <location x="0" y="0" />    </block>	
-		<block type="overlay" id="lightWaterC" src="proxy/frames/lightWaterC.png">  <location x="0" y="0" />    </block>
-		<block type="overlay" id="lightNatureS" src="proxy/frames/lightNatureS.png"><location x="0" y="0" />    </block>	
+		<block type="overlay" id="lightC" src="proxy/frames/lightC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="waterC" src="proxy/frames/waterC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="darkC" src="proxy/frames/darkC.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="fireC" src="proxy/frames/fireC.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="natureC" src="proxy/frames/natureC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="zeroC" src="proxy/frames/zeroC.png">		<location x="0" y="0" />	</block>
+
+		<block type="overlay" id="lightS" src="proxy/frames/lightS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="waterS" src="proxy/frames/waterS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="darkS" src="proxy/frames/darkS.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="fireS" src="proxy/frames/fireS.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="fireS_HSP" src="proxy/frames/fireS_HSP.png"> <location x="0" y="0" /> </block>
+		<block type="overlay" id="natureS" src="proxy/frames/natureS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="zeroS" src="proxy/frames/zeroS.png">		<location x="0" y="0" />	</block>
+
+		<block type="overlay" id="fireDarkS" src="proxy/frames/fireDarkS.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="fireDarkC" src="proxy/frames/fireDarkC.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="fireNatureS" src="proxy/frames/fireNatureS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="fireNatureC" src="proxy/frames/fireNatureC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="lightWaterS" src="proxy/frames/lightWaterS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="lightWaterC" src="proxy/frames/lightWaterC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="lightNatureS" src="proxy/frames/lightNatureS.png"><location x="0" y="0" />	</block>
 		<block type="overlay" id="lightNatureC" src="proxy/frames/lightNatureC.png"><location x="0" y="0" />	</block>
-		<block type="overlay" id="waterDarkS" src="proxy/frames/waterDarkS.png">    <location x="0" y="0" />    </block>	
-		<block type="overlay" id="waterDarkC" src="proxy/frames/waterDarkC.png">    <location x="0" y="0" />	</block>
+		<block type="overlay" id="waterDarkS" src="proxy/frames/waterDarkS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="waterDarkC" src="proxy/frames/waterDarkC.png">	<location x="0" y="0" />	</block>
+
+		<block type="overlay" id="darkNatureS" src="proxy/frames/darkNatureS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="darkNatureC" src="proxy/frames/darkNatureC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="lightDarkS" src="proxy/frames/lightDarkS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="lightDarkC" src="proxy/frames/lightDarkC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="lightFireS" src="proxy/frames/lightFireS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="lightFireC" src="proxy/frames/lightFireC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="waterFireS" src="proxy/frames/waterFireS.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="waterFireC" src="proxy/frames/waterFireC.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="waterNatureS" src="proxy/frames/waterNatureS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="waterNatureC" src="proxy/frames/waterNatureC.png"><location x="0" y="0" />	</block>
+
+		<block type="overlay" id="allBase" src="proxy/frames/new/allBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fldBase" src="proxy/frames/new/fldBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fndBase" src="proxy/frames/new/fndBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fnlBase" src="proxy/frames/new/fnlBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwdBase" src="proxy/frames/new/fwdBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwlBase" src="proxy/frames/new/fwlBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwnBase" src="proxy/frames/new/fwnBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="nldBase" src="proxy/frames/new/nldBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wldBase" src="proxy/frames/new/wldBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wndBase" src="proxy/frames/new/wndBase.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wnlBase" src="proxy/frames/new/wnlBase.png"><location x="0" y="0" />	</block>
 		
-		<block type="overlay" id="darkNatureS" src="proxy/frames/darkNatureS.png">  <location x="0" y="0" />    </block>	
-		<block type="overlay" id="darkNatureC" src="proxy/frames/darkNatureC.png">  <location x="0" y="0" />	</block>
-		<block type="overlay" id="lightDarkS" src="proxy/frames/lightDarkS.png">    <location x="0" y="0" />    </block>	
-		<block type="overlay" id="lightDarkC" src="proxy/frames/lightDarkC.png">    <location x="0" y="0" />	</block>
-		<block type="overlay" id="lightFireS" src="proxy/frames/lightFireS.png">    <location x="0" y="0" />    </block>	
-		<block type="overlay" id="lightFireC" src="proxy/frames/lightFireC.png">    <location x="0" y="0" />	</block>		
-		<block type="overlay" id="waterFireS" src="proxy/frames/waterFireS.png">    <location x="0" y="0" />    </block>	
-		<block type="overlay" id="waterFireC" src="proxy/frames/waterFireC.png">    <location x="0" y="0" />	</block>		
-		<block type="overlay" id="waterNatureS" src="proxy/frames/waterNatureS.png"><location x="0" y="0" />    </block>	
-		<block type="overlay" id="waterNatureC" src="proxy/frames/waterNatureC.png"><location x="0" y="0" />	</block>		
-		<block type="overlay" id="evo" src="proxy/evo.png"><location x="0" y="0" /></block>
-        
-        <block type="overlay" id="sTrig" src="proxy/shTrigger.png">     <location x="0" y="0" />    </block>
-        <block type="overlay" id="blocker" src="proxy/blocker.png">     <location x="0" y="0" />    </block>
-		<block type="overlay" id="exile" src="proxy/exile.png">         <location x="0" y="0" />    </block>
-		<block type="overlay" id="leftGod" src="proxy/leftGod.png">     <location x="0" y="0" />    </block>
-        <block type="overlay" id="rightGod" src="proxy/rightGod.png">   <location x="0" y="0" />    </block>
-		<block type="overlay" id="centerGod" src="proxy/centerGod.png"> <location x="0" y="0" />    </block>
+		<block type="overlay" id="allC" src="proxy/frames/new/allC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fldC" src="proxy/frames/new/fldC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fndC" src="proxy/frames/new/fndC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fnlC" src="proxy/frames/new/fnlC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwdC" src="proxy/frames/new/fwdC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwlC" src="proxy/frames/new/fwlC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwnC" src="proxy/frames/new/fwnC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="nldC" src="proxy/frames/new/nldC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wldC" src="proxy/frames/new/wldC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wndC" src="proxy/frames/new/wndC.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wnlC" src="proxy/frames/new/wnlC.png"><location x="0" y="0" />	</block>
 		
-        <block type="overlay" id="vicLight" src="proxy/vicLight.png">   <location x="0" y="0" />    </block>
-		<block type="overlay" id="vicWater" src="proxy/vicWater.png">   <location x="0" y="0" />    </block>
-		<block type="overlay" id="vicDark" src="proxy/vicDark.png">     <location x="0" y="0" />    </block>
-		<block type="overlay" id="vicFire" src="proxy/vicFire.png">     <location x="0" y="0" />    </block>
-		<block type="overlay" id="vicNature" src="proxy/vicNature.png"> <location x="0" y="0" />    </block>			
-        <block type="overlay" id="vicZero" src="proxy/vicZero.png">     <location x="0" y="0" />    </block>	
-        
-        <block type="text" id="title">
-			<location x="70" y="20" />    
+		<block type="overlay" id="allS" src="proxy/frames/new/allS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fldS" src="proxy/frames/new/fldS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fndS" src="proxy/frames/new/fndS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fnlS" src="proxy/frames/new/fnlS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwdS" src="proxy/frames/new/fwdS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwlS" src="proxy/frames/new/fwlS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="fwnS" src="proxy/frames/new/fwnS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="nldS" src="proxy/frames/new/nldS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wldS" src="proxy/frames/new/wldS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wndS" src="proxy/frames/new/wndS.png"><location x="0" y="0" />	</block>
+		<block type="overlay" id="wnlS" src="proxy/frames/new/wnlS.png"><location x="0" y="0" />	</block>
+
+		<block type="overlay" id="evo" src="proxy/evo.png">				<location x="0" y="0" />	</block>
+		<block type="overlay" id="sTrig" src="proxy/shTrigger.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="blocker" src="proxy/blocker.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="exile" src="proxy/exile.png">			<location x="0" y="0" />	</block>
+		<block type="overlay" id="leftGod" src="proxy/leftGod.png">		<location x="0" y="0" />	</block>
+		<block type="overlay" id="rightGod" src="proxy/rightGod.png">	<location x="0" y="0" />	</block>
+		<block type="overlay" id="centerGod" src="proxy/centerGod.png">	<location x="0" y="0" />	</block>
+
+		<block type="overlay" id="vicLight" src="proxy/vicLight.png">   <location x="0" y="0" />	</block>
+		<block type="overlay" id="vicWater" src="proxy/vicWater.png">   <location x="0" y="0" />	</block>
+		<block type="overlay" id="vicDark" src="proxy/vicDark.png">	 <location x="0" y="0" />	</block>
+		<block type="overlay" id="vicFire" src="proxy/vicFire.png">	 <location x="0" y="0" />	</block>
+		<block type="overlay" id="vicNature" src="proxy/vicNature.png"> <location x="0" y="0" />	</block>
+		<block type="overlay" id="vicZero" src="proxy/vicZero.png">	 <location x="0" y="0" />	</block>	
+
+		<block type="text" id="title">
+			<location x="70" y="20" />	
 			<text color="#000000" size="32" font="./fonts/perceval.ttf"/>
 			<border color="#FFFFFF" size="2" />
 			<wordwrap height="48" width="310" align="center" shrinktofit="True" valign="center" />
-        </block>
-        <block type="text" id="zerotitle">
+		</block>
+		<block type="text" id="zerotitle">
 			<location x="70" y="20" />
 			<text color="#FFFFFF" size="32" font="./fonts/perceval.ttf"/>
 			<border color="#000000" size="2" />
@@ -71,7 +107,7 @@
 			<border color="#000000" size="2" />
 			<wordwrap height="38" width="70" align="center" shrinktofit="False" valign="center" />
 		</block>
-        <block type="text" id="zerocost">
+		<block type="text" id="zerocost">
 			<location x="4" y="25" />
 			<text color="#000000" size="38" font="./fonts/armadaCondensed.ttf"/>
 			<border color="#FFFFFF" size="2" />
@@ -83,7 +119,7 @@
 			<border color="#FFFFFF" size="1" />
 			<wordwrap height="18" width="320" align="center" shrinktofit="False" valign="center"/>
 		</block>
-        <block type="text" id="zerorace">
+		<block type="text" id="zerorace">
 			<location x="68" y="58" />
 			<text color="#FFFFFF" size="12" font="./fonts/armada.ttf"/>
 			<border color="#000000" size="1" />
@@ -122,10 +158,10 @@
 	</blocks>
 	
 	<!-- /////////// Gotta make a whole copy for victory creature/victory evolution creature CUZ YOU CAN'T NEST CONDITIONS (WHYYYY)//// -->
-    <template src="proxy/blank.png">
-        <matches>
+	<template src="proxy/blank.png">
+		<matches>
 			<match name="Type" value="Creature"/>
-            <match name="Rarity" value="Victory Rare"/>
+			<match name="Rarity" value="Victory Rare"/>
 		</matches>
 		
 		<overlayblocks>
@@ -173,7 +209,7 @@
 					<case value="Water/Nature"> <link block="waterNatureC" /> <link block="vicZero"/> </case>
 					<case value="Nature/Water"> <link block="waterNatureC" /> <link block="vicZero"/> </case>
 					<!-- multiciv cases are here for now but using white V-->
-                    
+					
 					<default> <link block="zeroC" /> </default>
 				</switch>
 			</conditional>
@@ -183,14 +219,14 @@
 					<link block="evo" />
   				</if>
 			</conditional>  
-            
-             <conditional>
+			
+			 <conditional>
 				<if property="Rules" contains="{SHIELD TRIGGER}">
 					<link block="sTrig" />
   				</if>
 			</conditional>
-            
-            <conditional>
+			
+			<conditional>
 				<if property="Rules" contains="{BLOCKER}">
 					<link block="blocker" />
   				</if>
@@ -216,30 +252,30 @@
   				</if>
 			</conditional>
 		</overlayblocks>
-        
+		
 		<textblocks>
 			<conditional>
-                <if property="Civilization" value="Zero">	
-                    <link block="zerotitle"><property name="Name" /></link>
-                    <link block="zerorace"><property name="Race" /></link>
-                    <link block="zerocost"><property name="Cost" /></link>
-                </if>
-                <else>
-                    <link block="title"><property name="Name" /></link>
-                    <link block="race"><property name="Race" /></link>
-                    <link block="cost"><property name="Cost" /></link>
-                </else>
-            </conditional>
+				<if property="Civilization" value="Zero">	
+					<link block="zerotitle"><property name="Name" /></link>
+					<link block="zerorace"><property name="Race" /></link>
+					<link block="zerocost"><property name="Cost" /></link>
+				</if>
+				<else>
+					<link block="title"><property name="Name" /></link>
+					<link block="race"><property name="Race" /></link>
+					<link block="cost"><property name="Cost" /></link>
+				</else>
+			</conditional>
 			<link block="typeC"><property name="Type" /></link>
 			<link block="rules"><property name="Rules" /></link>
 			<link block="power"><property name="Power" /></link>
 		</textblocks>
 	</template>
-    <!-- Evo victory creature -->
-    <template src="proxy/blank.png">
-        <matches>
+	<!-- Evo victory creature -->
+	<template src="proxy/blank.png">
+		<matches>
 			<match name="Type" value="Evolution Creature"/>
-            <match name="Rarity" value="Victory Rare"/>
+			<match name="Rarity" value="Victory Rare"/>
 		</matches>
 		
 		<overlayblocks>
@@ -261,32 +297,32 @@
 				</switch>
 			</conditional>
 				<link block="evo" />		
-        
-            <conditional>
-                    <if property="Rules" contains="{BLOCKER}">
-                        <link block="blocker" />
-                    </if>
-            </conditional>
-        </overlayblocks>
+		
+			<conditional>
+					<if property="Rules" contains="{BLOCKER}">
+						<link block="blocker" />
+					</if>
+			</conditional>
+		</overlayblocks>
 		<textblocks>
 			<conditional>
-                <if property="Civilization" value="Zero">	
-                    <link block="zerotitle"><property name="Name" /></link>
-                    <link block="zerorace"><property name="Race" /></link>
-                    <link block="zerocost"><property name="Cost" /></link>
-                </if>
-                <else>
-                    <link block="title"><property name="Name" /></link>
-                    <link block="race"><property name="Race" /></link>
-                    <link block="cost"><property name="Cost" /></link>
-                </else>
-            </conditional>
+				<if property="Civilization" value="Zero">	
+					<link block="zerotitle"><property name="Name" /></link>
+					<link block="zerorace"><property name="Race" /></link>
+					<link block="zerocost"><property name="Cost" /></link>
+				</if>
+				<else>
+					<link block="title"><property name="Name" /></link>
+					<link block="race"><property name="Race" /></link>
+					<link block="cost"><property name="Cost" /></link>
+				</else>
+			</conditional>
 			<link block="typeC"><property name="Type" /></link>
 			<link block="rules"><property name="Rules" /></link>
 			<link block="power"><property name="Power" /></link>
 		</textblocks>
 	</template>
-    <!-- ////////////////////////////creature, also the default template to revert to when nothing matches/////////////////////////////////////// -->
+	<!-- ////////////////////////////creature, also the default template to revert to when nothing matches/////////////////////////////////////// -->
 	<template src="proxy/blank.png" default="True" >
 		<matches>
 			<match name="Type" value="Creature"/>
@@ -338,6 +374,17 @@
 					<case value="Water/Nature"> <link block="waterNatureC" /> </case>
 					<case value="Nature/Water"> <link block="waterNatureC" /> </case>
 					
+					<case value = "Fire/Light/Darkness"> <link block="fldBase"> <link block="fldC"> </case>
+					<case value = "Fire/Nature/Darkness"> <link block="fndBase"> <link block="fndC"> </case>
+					<case value = "Fire/Nature/Light"> <link block="fnlBase"> <link block="fnlC"> </case>
+					<case value = "Fire/Water/Darkness"> <link block="fwdBase"> <link block="fwdC"> </case>
+					<case value = "Fire/Water/Light"> <link block="fwlBase"> <link block="fwlC"> </case>
+					<case value = "Fire/Water/Nature"> <link block="fwnBase"> <link block="fwnC"> </case>
+					<case value = "Nature/Light/Darkness"> <link block="nldBase"> <link block="nldC"> </case>
+					<case value = "Water/Light/Darkness"> <link block="wldBase"> <link block="wldC"> </case>
+					<case value = "Water/Nature/Darkness"> <link block="wndBase"> <link block="wndC"> </case>
+					<case value = "Water/Nature/Light"> <link block="wnlBase"> <link block="wnlC"> </case>
+					
 					<default> <link block="lightC" /> </default>
 				</switch>
 			</conditional>
@@ -347,13 +394,13 @@
 					<link block="evo" />
   				</if>
 			</conditional>
-            
-            <conditional>
+			
+			<conditional>
 				<if property="Rules" contains="{SHIELD TRIGGER}">
 					<link block="sTrig" />
   				</if>
 			</conditional>
-            <conditional>
+			<conditional>
 				<if property="Rules" contains="{BLOCKER}">
 					<link block="blocker" />
   				</if>
@@ -389,19 +436,17 @@
 		
 		<textblocks>
 			<conditional>
-                <if property="Civilization" value="Zero">	
-                    <link block="zerotitle"><property name="Name" /></link>
-                    <link block="zerorace"><property name="Race" /></link>
-                    <link block="zerocost"><property name="Cost" /></link>
-
-                </if>
-                <else>
-                    <link block="title"><property name="Name" /></link>
-                    <link block="race"><property name="Race" /></link>
-                    <link block="cost"><property name="Cost" /></link>
-
-                </else>
-            </conditional>
+				<if property="Civilization" value="Zero">	
+					<link block="zerotitle"><property name="Name" /></link>
+					<link block="zerorace"><property name="Race" /></link>
+					<link block="zerocost"><property name="Cost" /></link>
+				</if>
+				<else>
+					<link block="title"><property name="Name" /></link>
+					<link block="race"><property name="Race" /></link>
+					<link block="cost"><property name="Cost" /></link>
+				</else>
+			</conditional>
 			<link block="typeC"><property name="Type" /></link>
 			<link block="rules"><property name="Rules" /></link>
 			<link block="power"><property name="Power" /></link>
@@ -427,8 +472,7 @@
 					<case value="Water"> <link block="waterS" /> </case>
 					<case value="Nature"> <link block="natureS" /> </case>
 					<case value="Darkness"> <link block="darkS" /> </case>
-                    <case value="Zero"> <link block="zeroS" /> </case>
-
+					<case value="Zero"> <link block="zeroS" /> </case>
 					
 					<case value="Darkness/Fire"> <link block="fireDarkS" /> </case>
 					<case value="Fire/Darkness"> <link block="fireDarkS" /> </case>
@@ -445,7 +489,6 @@
 					<case value="Darkness/Water"> <link block="waterDarkS" /> </case>
 					<case value="Water/Darkness"> <link block="waterDarkS" /> </case>
 
-					
 					<case value="Darkness/Nature"> <link block="darkNatureS" /> </case>
 					<case value="Nature/Darkness"> <link block="darkNatureS" /> </case>
 					
@@ -460,12 +503,23 @@
 					
 					<case value="Water/Nature"> <link block="waterNatureS" /> </case>
 					<case value="Nature/Water"> <link block="waterNatureS" /> </case>
+					
+					<case value = "Fire/Light/Darkness"> <link block="fldBase"> <link block="fldS"> </case>
+					<case value = "Fire/Nature/Darkness"> <link block="fndBase"> <link block="fndS"> </case>
+					<case value = "Fire/Nature/Light"> <link block="fnlBase"> <link block="fnlS"> </case>
+					<case value = "Fire/Water/Darkness"> <link block="fwdBase"> <link block="fwdS"> </case>
+					<case value = "Fire/Water/Light"> <link block="fwlBase"> <link block="fwlS"> </case>
+					<case value = "Fire/Water/Nature"> <link block="fwnBase"> <link block="fwnS"> </case>
+					<case value = "Nature/Light/Darkness"> <link block="nldBase"> <link block="nldS"> </case>
+					<case value = "Water/Light/Darkness"> <link block="wldBase"> <link block="wldS"> </case>
+					<case value = "Water/Nature/Darkness"> <link block="wndBase"> <link block="wndS"> </case>
+					<case value = "Water/Nature/Light"> <link block="wnlBase"> <link block="wnlS"> </case>
 				
 					<default> <link block="lightS" /> </default>
 				</switch>
 			</conditional>	
-            
-            <conditional>
+			
+			<conditional>
 				<if property="Rules" contains="{SHIELD TRIGGER}">
 					<link block="sTrig" />
   				</if>
@@ -475,23 +529,23 @@
 		
 		<textblocks>
 			<conditional>
-                <if property="Civilization" value="Zero">	
-                    <link block="zerotitle"><property name="Name" /></link>
-                    <link block="zerorace"><property name="Race" /></link>
-                    <link block="zerocost"><property name="Cost" /></link>
+				<if property="Civilization" value="Zero">	
+					<link block="zerotitle"><property name="Name" /></link>
+					<link block="zerorace"><property name="Race" /></link>
+					<link block="zerocost"><property name="Cost" /></link>
 
-                </if>
-                <else>
-                    <link block="title"><property name="Name" /></link>
-                    <link block="race"><property name="Race" /></link>
-                    <link block="cost"><property name="Cost" /></link>
+				</if>
+				<else>
+					<link block="title"><property name="Name" /></link>
+					<link block="race"><property name="Race" /></link>
+					<link block="cost"><property name="Cost" /></link>
 
-                </else>
-            </conditional>			
+				</else>
+			</conditional>			
 			<link block="typeS"><property name="Type" /></link>
 			<link block="rules"><property name="Rules" /></link>
 		</textblocks>
 	</template>
-    
+	
 	
 </templates>
