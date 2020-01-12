@@ -23,7 +23,7 @@ def extractSet(setName = "kek"):
 	html = html[i:j]
 
 	lines = html.split("\n")
-	cardCount = 0
+	cardCount = 1
 
 	for line in lines:
 		i = line.find("[[")
@@ -35,7 +35,7 @@ def extractSet(setName = "kek"):
 			print(str(cardCount) + " Card is: "+ cardName)
 			cardCount+= 1
 
-			print(extractCardData(cardName))
+			extractCardData(cardName, setName)
 
 
 extractSet(temp)

@@ -1,10 +1,12 @@
 import urllib.request
 import urllib.parse
+import uuid
 
 
-temp = "Smith, Breaking Right"
+temp = "Redzone, Roaring Invasion"
+temp2 = "DMR-17_Burning_Dogiragon!!"
 
-def extractCardData(cardName):
+def extractCardData(cardName, setName=""):
 	cardNameURL = urllib.parse.quote(cardName)
 	with urllib.request.urlopen('https://duelmasters.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles='+cardNameURL) as response:
 		html1 = response.read().decode('utf-8')
@@ -18,10 +20,10 @@ def extractCardData(cardName):
 		j = html.find('[[Category:')
 	html = html[i:j]
 
-	print("Point 1, HTML is :\n"+html)
+	#print("Point 1, HTML is :\n"+html)
 
 	##### Getting all the data #######
-	#image can be gotten through query, check the other program with Yomi
+	#Note to self - image can be gotten through query, check the other program with Yomi
 	name = cardName.replace("_", " ")
 
 	cost = getAttribute("cost", html)
@@ -39,32 +41,74 @@ def extractCardData(cardName):
 
 	power = getAttribute("power", html)
 	if power is None:
-		print("No power found. Assigning 0.")
-		power = "0"
+		print("No power found. Assigning empty string.")
+		power = ""
+
+	type = getAttribute("type", html)
+	if type is None:
+		print("No type found. Assigning empty string.")
+		type = ""
+
+	effText = parseEffect(html)
+	if effText == "":
+		print("WARNING: Effect text not found! Vanilla card?")
+	else:
+		print("effect text is:\n"+effText)
+
+	rarity = ""
+	setNum = ""
+
+	if setName == "":
+		print("No set given. Assigning promo rarity")
+		rarity = "Promo"
+		setNum = "None"
+	else:
+		found = 0
+		for i in range(1,100):
+			setStr = "set"+ str(i)
+			j = html.find(setStr)
+			if j != -1:
+				setNameToCheck = getAttribute(setStr, html).strip(" \n|")
+				setNameToCheck = setNameToCheck.replace(" ","_")
+				print(setStr+" name is:"+setNameToCheck+" and set to match against is: "+setName)
+				if(setName == setNameToCheck):
+					print("Set match found!! Assigning rarity")
+					rarity = getAttribute("R"+str(i), html).strip(" \n|")
+					setNum = getAttribute("setnum"+str(i), html).strip(" \n|")
+					setNumList = setNum.split(", ")
+					setNum = setNumList[0].strip(" ,")
+					print("Assigning set number :"+setNum)
+					found = 1
+					break
+			if found == 0:
+				print("ERROR! No set found! Can't assign rarity and set number!")
+	id = uuid4()
+	
 
 
-	return(html)
+
+	return html
 
 def getAttribute(attr, html):
 	i = html.lower().find(attr.lower()+" = ")
 	if i < 0:
-		print("ERROR FINDING "+attr)
 		return
 	i += len(attr)+3
 	j = html.find("\n", i)
 	result = html[i:j] # got 'em
 	print(attr+" is: " + result)
 
-	return result
+	return result.strip()
 
 
 def parseEffect(cardData):
 	i = cardData.find('effect = ')
 	if i == -1:
-		print("No effect! Vanilla card?")
 		return ""
-	effect = cardData[(i+9):-1]
-	print("Effect is :"+effect)
+	j = cardData.find('ocgeffect = ')
+	effect = cardData[(i+9):j]
+	effect = effect.strip("\n |")
+	#print("Effect is :"+effect)
 
 	effect = urllib.parse.quote(effect)
 
@@ -102,22 +146,20 @@ def clean(text):
 		else:
 			if char == '>':
 				inTag = False
-		
+
+	result = result.replace('&#160;', '')
+	result = result.replace('■', '>')
+	result = result.replace('—', ' - ')
+	result = result.replace(" \n", "\n")
+	result = result.replace('\n', '&#xd;&#xa;')
+	result = result.replace('> ', '')
+	result = result.replace(".)", ")")
+	result = result.replace(" (", "(")
+	result = result.replace("\"", "\'")
+
 	return result
 
 
 
 
-result = extractCardData(temp)
-#print(result)
-effText = parseEffect(result)
-effText = effText.replace('&#160;', '')
-effText = effText.replace('■', '>')
-effText = effText.replace('—', ' - ')
-effText = effText.replace(" \n", "\n" )
-effText = effText.replace('\n', '&#xd;&#xa;')
-effText = effText.replace('> ', '')
-effText = effText.replace(".)", ")")
-effText = effText.replace(" (", "(")
-effText = effText.replace("\"", "\'")
-print(effText)
+#result = extractCardData(temp, temp2)
