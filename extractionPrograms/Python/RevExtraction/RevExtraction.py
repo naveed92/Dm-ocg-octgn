@@ -32,7 +32,7 @@ def extractSet(setName = "kek"):
 		if i > 0 and j > 0:
 			i = i + 2
 			cardName = line[i:j].replace(" ", "_")
-			print(str(cardCount) + " Card is: "+ cardName)
+			print("\n"+str(cardCount) + " Card is: "+ cardName)
 			cardCount+= 1
 
 			extractCardData(cardName, setName)

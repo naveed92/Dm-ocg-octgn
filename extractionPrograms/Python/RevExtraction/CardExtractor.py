@@ -70,20 +70,22 @@ def extractCardData(cardName, setName=""):
 			if j != -1:
 				setNameToCheck = getAttribute(setStr, html).strip(" \n|")
 				setNameToCheck = setNameToCheck.replace(" ","_")
-				print(setStr+" name is:"+setNameToCheck+" and set to match against is: "+setName)
+				#print(setStr+" name is:"+setNameToCheck+" and set to match against is: "+setName)
 				if(setName == setNameToCheck):
 					print("Set match found!! Assigning rarity")
-					rarity = getAttribute("R"+str(i), html).strip(" \n|")
+					rarity = getAttribute(" R"+str(i), html).strip(" \n|")
 					setNum = getAttribute("setnum"+str(i), html).strip(" \n|")
 					setNumList = setNum.split(", ")
 					setNum = setNumList[0].strip(" ,")
 					print("Assigning set number :"+setNum)
+					if i > 1:
+						print("INFO: Possible reprint.")
 					found = 1
 					break
-			if found == 0:
-				print("ERROR! No set found! Can't assign rarity and set number!")
-	id = uuid4()
-	
+		if found == 0:
+			print("ERROR! No set found! Can't assign rarity and set number!")
+	id = uuid.uuid4()
+
 
 
 
