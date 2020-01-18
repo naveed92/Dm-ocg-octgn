@@ -3,7 +3,7 @@ import urllib.parse
 import uuid
 
 
-temp = "Redzone, Roaring Invasion"
+temp = "Barrier of Revolution"
 temp2 = "DMR-17_Burning_Dogiragon!!"
 
 def extractCardData(cardName, setName=""):
@@ -29,6 +29,7 @@ def extractCardData(cardName, setName=""):
 	cost = getAttribute("cost", html)
 	if cost is None:
 		print("ERROR: No cost found!")
+		return "ERROR NO COST FOUND ON CARD " + cardName
 
 	civ = getAttribute("civilization", html)
 	if civ is None:
@@ -37,7 +38,8 @@ def extractCardData(cardName, setName=""):
 
 	race = getAttribute("race", html)
 	if race is None:
-		print("No race found. Not a creature?")
+		print("No race found. Not a creature? Card type is: "+type)
+		race = ""
 
 	power = getAttribute("power", html)
 	if power is None:
@@ -52,8 +54,8 @@ def extractCardData(cardName, setName=""):
 	effText = parseEffect(html)
 	if effText == "":
 		print("WARNING: Effect text not found! Vanilla card?")
-	else:
-		print("effect text is:\n"+effText)
+	# else:
+	# 	print("effect text is:\n"+effText)
 
 	rarity = ""
 	setNum = ""
@@ -70,10 +72,10 @@ def extractCardData(cardName, setName=""):
 			if j != -1:
 				setNameToCheck = getAttribute(setStr, html).strip(" \n|")
 				setNameToCheck = setNameToCheck.replace(" ","_")
-				#print(setStr+" name is:"+setNameToCheck+" and set to match against is: "+setName)
+				# print(setStr+" name is:"+setNameToCheck+" and set to match against is: "+setName)
 				if(setName == setNameToCheck):
-					print("Set match found!! Assigning rarity")
 					rarity = getAttribute(" R"+str(i), html).strip(" \n|")
+					print("Set match found!! Assigning rarity: "+rarity)
 					setNum = getAttribute("setnum"+str(i), html).strip(" \n|")
 					setNumList = setNum.split(", ")
 					setNum = setNumList[0].strip(" ,")
@@ -84,12 +86,28 @@ def extractCardData(cardName, setName=""):
 					break
 		if found == 0:
 			print("ERROR! No set found! Can't assign rarity and set number!")
-	id = uuid.uuid4()
+	cardID = str(uuid.uuid4())
 
+	cardName = cardName.replace("\"", "\'").replace("_", " ")
+	cardXML = "\t\t<card name=\""+cardName+"\" id=\""+cardID+"\">\n"
 
+	if "Dragheart Fortress" in type or "Field" or " Aura" in type:
+		cardXML = cardXML.replace(">\n", "size=\"wide\">\n")
 
+	cardXML = cardXML + makeXMLLine("Format", "OCG")
+	cardXML = cardXML + makeXMLLine("Civilization", civ)
+	cardXML = cardXML + makeXMLLine("Cost", cost)
+	cardXML = cardXML + makeXMLLine("Type", type)
+	cardXML = cardXML + makeXMLLine("Race", race)
+	cardXML = cardXML + makeXMLLine("Power", power)
+	cardXML = cardXML + makeXMLLine("Rules", effText)
+	cardXML = cardXML + makeXMLLine("Rarity", rarity)
+	cardXML = cardXML + makeXMLLine("Number", setNum)
 
-	return html
+	cardXML = cardXML + "\t\t</card>"
+
+	#add condition for alternate and alternate2, and size
+	return cardXML
 
 def getAttribute(attr, html):
 	i = html.lower().find(attr.lower()+" = ")
@@ -98,7 +116,7 @@ def getAttribute(attr, html):
 	i += len(attr)+3
 	j = html.find("\n", i)
 	result = html[i:j] # got 'em
-	print(attr+" is: " + result)
+	# print(attr+" is: " + result)
 
 	return result.strip()
 
@@ -162,6 +180,9 @@ def clean(text):
 	return result
 
 
+def makeXMLLine(property, value):
+	return "\t\t\t<property name=\""+property+"\" value=\""+value+"\" />\n"
 
 
-#result = extractCardData(temp, temp2)
+# result = extractCardData(temp, temp2)
+# print(result)

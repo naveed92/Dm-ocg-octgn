@@ -1,6 +1,8 @@
 from CardExtractor import *
+import uuid
 
 temp = "DMR-17_Burning_Dogiragon!!"
+
 
 def extractSet(setName = "kek"):
 
@@ -24,6 +26,7 @@ def extractSet(setName = "kek"):
 
 	lines = html.split("\n")
 	cardCount = 1
+	cardXML = ""
 
 	for line in lines:
 		i = line.find("[[")
@@ -35,7 +38,33 @@ def extractSet(setName = "kek"):
 			print("\n"+str(cardCount) + " Card is: "+ cardName)
 			cardCount+= 1
 
-			extractCardData(cardName, setName)
+			cardXML = cardXML + extractCardData(cardName, setName)
+
+	return cardXML
 
 
-extractSet(temp)
+def createSetXML(setName):
+	setTemplateFile = open("SetTemplate.txt", "r")
+	setXML = setTemplateFile.read()
+
+	setNameTemp =  setName.replace("_", " ").replace("\"", "\'")         # double quotes in xml will cause problems
+	setXML = setXML.replace("SET_NAME_REPLACE", setNameTemp)
+
+	setXML = setXML.replace("SET_ID_REPLACE", str(uuid.uuid4()))
+	setXML = setXML.replace("BOOSTER_ID_REPLACE", str(uuid.uuid4()))
+
+	cardXML = extractSet(setName)
+	setXML = setXML.replace("CARDS_REPLACE", cardXML)
+	print("Set xml is:\n"+setXML)
+
+	setFile = open("setData_"+setName[0:6]+".xml", "w")
+	setFile.write(setXML)
+	setFile.close()
+
+
+
+
+
+
+createSetXML(temp)
+# extractSet(temp)
