@@ -20,6 +20,6 @@
 		</pack>
 	</packaging>
 	<cards>
-		CARDS_REPLACE
+CARDS_REPLACE
 	</cards>
 </set>

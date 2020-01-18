@@ -104,7 +104,7 @@ def extractCardData(cardName, setName=""):
 	cardXML = cardXML + makeXMLLine("Rarity", rarity)
 	cardXML = cardXML + makeXMLLine("Number", setNum)
 
-	cardXML = cardXML + "\t\t</card>"
+	cardXML = cardXML + "\t\t</card>\n"
 
 	#add condition for alternate and alternate2, and size
 	return cardXML
