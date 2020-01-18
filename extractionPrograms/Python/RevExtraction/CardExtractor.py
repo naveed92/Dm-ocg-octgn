@@ -36,11 +36,6 @@ def extractCardData(cardName, setName=""):
 		print("WARNING: No civ found! Assigning Zero.")
 		civ = "Zero"
 
-	race = getAttribute("race", html)
-	if race is None:
-		print("No race found. Not a creature? Card type is: "+type)
-		race = ""
-
 	power = getAttribute("power", html)
 	if power is None:
 		print("No power found. Assigning empty string.")
@@ -50,6 +45,11 @@ def extractCardData(cardName, setName=""):
 	if type is None:
 		print("No type found. Assigning empty string.")
 		type = ""
+
+	race = getAttribute("race", html)
+	if race is None:
+		print("No race found. Not a creature? Card type is: " + type)
+		race = ""
 
 	effText = parseEffect(html)
 	if effText == "":
