@@ -107,6 +107,9 @@ def extractCardData(cardName, setName=""):
 	cardXML = cardXML + "\t\t</card>\n"
 
 	#add condition for alternate and alternate2, and size
+
+	saveImage(name, cardID, setName)
+
 	return cardXML
 
 def getAttribute(attr, html):
@@ -139,6 +142,7 @@ def parseEffect(cardData):
 	html = str(html1)
 	html = clean(html)
 	return html
+
 
 def clean(text):
 	result = ""
@@ -184,5 +188,24 @@ def makeXMLLine(property, value):
 	return "\t\t\t<property name=\""+property+"\" value=\""+value+"\" />\n"
 
 
-# result = extractCardData(temp, temp2)
-# print(result)
+def saveImage(cardName, cardID, setName):
+
+	dirName = setName[0:6] + "-Images"
+	cardName = urllib.parse.quote(cardName)
+	with urllib.request.urlopen('https://duelmasters.fandom.com/api.php?action=imageserving&format=php&wisTitle='+cardName) as response:
+		html1 = response.read().decode('utf-8')
+	output = str(html1)
+
+	i = output.find("http")
+	if i == 0:
+		print("ERROR, NO IMAGE RETURNED")
+		return
+	j = output.find("\"", i)
+
+	imgURL = output[i:j]
+	print("Image URL is: "+imgURL)
+
+	urllib.request.urlretrieve(imgURL, dirName+"/"+cardID+".jpg")
+
+
+#result = extractCardData(temp, temp2)

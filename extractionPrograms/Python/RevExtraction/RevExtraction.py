@@ -1,5 +1,6 @@
 from CardExtractor import *
 import uuid
+import os
 
 temp = "DMR-17_Burning_Dogiragon!!"
 
@@ -27,6 +28,15 @@ def extractSet(setName = "kek"):
 	lines = html.split("\n")
 	cardCount = 1
 	cardXML = ""
+
+	###################### Make images folder for set #####################
+
+	dirName = setName[0:6]+"-Images"
+	try:
+		os.mkdir(dirName)
+		print("Directory ", dirName, " Created ")
+	except FileExistsError:
+		print("Directory ", dirName, " already exists")
 
 	for line in lines:
 		i = line.find("[[")
