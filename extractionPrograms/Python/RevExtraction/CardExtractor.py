@@ -1,10 +1,13 @@
 import urllib.request
 import urllib.parse
 import uuid
+from PIL import Image
 
+######## Testing/Debugging Vars#####
+temp = "Terror Pit"
+temp2 = "DMX-20_Deck_Ultimate_Perfection!!_Due-Max_160_~Revolution_&_Invasion~"
 
-temp = "Barrier of Revolution"
-temp2 = "DMR-17_Burning_Dogiragon!!"
+###################################
 
 def extractCardData(cardName, setName=""):
 	cardNameURL = urllib.parse.quote(cardName)
@@ -68,11 +71,18 @@ def extractCardData(cardName, setName=""):
 		found = 0
 		for i in range(1,100):
 			setStr = "set"+ str(i)
+
 			j = html.find(setStr)
 			if j != -1:
-				setNameToCheck = getAttribute(setStr, html).strip(" \n|")
+				setNameToCheck = getAttribute(setStr, html)
+
+				if setNameToCheck is None:
+					print("WARNING: Rarity problem!!")
+					continue
+
+				setNameToCheck = setNameToCheck.strip(" \n|")
 				setNameToCheck = setNameToCheck.replace(" ","_")
-				# print(setStr+" name is:"+setNameToCheck+" and set to match against is: "+setName)
+				#print(setStr+" name is:"+setNameToCheck+" and set to match against is: "+setName)
 				if(setName == setNameToCheck):
 					rarity = getAttribute(" R"+str(i), html).strip(" \n|")
 					print("Set match found!! Assigning rarity: "+rarity)
@@ -190,22 +200,27 @@ def makeXMLLine(property, value):
 
 def saveImage(cardName, cardID, setName):
 
-	dirName = setName[0:6] + "-Images"
-	cardName = urllib.parse.quote(cardName)
-	with urllib.request.urlopen('https://duelmasters.fandom.com/api.php?action=imageserving&format=php&wisTitle='+cardName) as response:
-		html1 = response.read().decode('utf-8')
-	output = str(html1)
+	try:
 
-	i = output.find("http")
-	if i == 0:
-		print("ERROR, NO IMAGE RETURNED")
-		return
-	j = output.find("\"", i)
+		dirName = setName[0:6] + "-Images"
+		cardName = urllib.parse.quote(cardName)
+		with urllib.request.urlopen('https://duelmasters.fandom.com/api.php?action=imageserving&format=php&wisTitle='+cardName) as response:
+			html1 = response.read().decode('utf-8')
+		output = str(html1)
 
-	imgURL = output[i:j]
-	print("Image URL is: "+imgURL)
+		i = output.find("http")
+		if i == 0:
+			print("ERROR, NO IMAGE RETURNED")
+			return
+		j = output.find("\"", i)
 
-	urllib.request.urlretrieve(imgURL, dirName+"/"+cardID+".jpg")
+		imgURL = output[i:j]
+		print("Image URL is: "+imgURL)
+
+		urllib.request.urlretrieve(imgURL, dirName+"/"+cardID+".jpg")
+
+	except:
+		print("IMAGE ERROR!!!")
 
 
-#result = extractCardData(temp, temp2)
+#print(extractCardData(temp, temp2))

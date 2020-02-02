@@ -2,8 +2,8 @@ from CardExtractor import *
 import uuid
 import os
 
-temp = "DMR-17_Burning_Dogiragon!!"
-
+temp = "DMX-22_Super_Black_Box_Pack"
+cardLimit = 1000
 
 def extractSet(setName = "kek"):
 
@@ -12,6 +12,9 @@ def extractSet(setName = "kek"):
 		html = response.read().decode('utf-8')
 
 	i = html.find("==Contents==")
+	if(i == -1):
+		print("==Contents== not found. Looking for Contents== now")
+		i = html.find("Contents==")
 	j = -1
 
 	endingKeywords = ["==Cycles==", "==Contents sorted by Civilizations==", "==Gallery==",  "==Trivia=="]
@@ -24,6 +27,7 @@ def extractSet(setName = "kek"):
 		print("WARNING: No contents ending keyword found in set data, processing everything after ==Contents==")
 
 	html = html[i:j]
+	html = html.replace("<br>", "\n") #sometimes a and b sides are on the same line, separated by <br>
 
 	lines = html.split("\n")
 	cardCount = 1
@@ -48,7 +52,14 @@ def extractSet(setName = "kek"):
 			print("\n"+str(cardCount) + " Card is: "+ cardName)
 			cardCount+= 1
 
-			cardXML = cardXML + extractCardData(cardName, setName)
+			try:
+				cardXML = cardXML + extractCardData(cardName, setName)
+			except:
+				cardXML = cardXML + "\n ERROR EXTRACTING DATA FROM CARD "+cardName+" \n"
+
+		cardLimit -= 1
+		if cardLimit < 0:
+			break
 
 	return cardXML
 
@@ -63,11 +74,11 @@ def createSetXML(setName):
 	setXML = setXML.replace("SET_ID_REPLACE", str(uuid.uuid4()))
 	setXML = setXML.replace("BOOSTER_ID_REPLACE", str(uuid.uuid4()))
 
-	cardXML = extractSet(setName)
+	cardXML = extractSet(setName, cardLimit)
 	setXML = setXML.replace("CARDS_REPLACE", cardXML)
 	print("Set xml is:\n"+setXML)
 
-	setFile = open("setData_"+setName[0:6]+".xml", "w")
+	setFile = open("setData_" + setName[0:6] + ".xml", 'w', encoding='utf-8')
 	setFile.write(setXML)
 	setFile.close()
 
