@@ -3,8 +3,9 @@ import urllib.parse
 import uuid
 
 ######## Testing/Debugging Vars#####
-temp = "Terror Pit"
-temp2 = "DMX-20_Deck_Ultimate_Perfection!!_Due-Max_160_~Revolution_&_Invasion~"
+temp = "Flaming_Meracchi"
+temp2 = "DMR-17_Burning_Dogiragon!!"
+extractImages = True
 
 ###################################
 
@@ -52,6 +53,17 @@ def extractCardData(cardName, setName=""):
 	if race is None:
 		print("No race found. Not a creature? Card type is: " + type)
 		race = ""
+	#GET ALL THE RACES
+	i = 2
+	while True:
+		nextRace = getAttribute("race"+str(i), html)
+		if nextRace is None:
+			break
+		else:
+			race = race + "/" + nextRace
+			i = i+1
+
+
 
 	effText = parseEffect(html)
 	if effText == "":
@@ -100,8 +112,8 @@ def extractCardData(cardName, setName=""):
 	cardName = cardName.replace("\"", "\'").replace("_", " ")
 	cardXML = "\t\t<card name=\""+cardName+"\" id=\""+cardID+"\">\n"
 
-	if "Dragheart Fortress" in type or "Field" or " Aura" in type:
-		cardXML = cardXML.replace(">\n", "size=\"wide\">\n")
+	if "Dragheart Fortress" in type or "Field" in type or " Aura" in type:
+		cardXML = cardXML.replace(">\n", " size=\"wide\">\n")
 
 	cardXML = cardXML + makeXMLLine("Format", "OCG")
 	cardXML = cardXML + makeXMLLine("Civilization", civ)
@@ -117,7 +129,8 @@ def extractCardData(cardName, setName=""):
 
 	#add condition for alternate and alternate2, and size
 
-	saveImage(name, cardID, setName)
+	if extractImages:
+		saveImage(name, cardID, setName)
 
 	return cardXML
 

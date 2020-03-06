@@ -2,7 +2,7 @@ from CardExtractor import *
 import uuid
 import os
 
-temp = "DMX-22_Super_Black_Box_Pack"
+temp = "DMR-17_Burning_Dogiragon!!"
 cardLimit = 1000
 
 def extractSet(setName = "kek", cardLimit=1000):
