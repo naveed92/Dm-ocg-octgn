@@ -5,7 +5,7 @@ import os
 temp = "DMX-22_Super_Black_Box_Pack"
 cardLimit = 1000
 
-def extractSet(setName = "kek"):
+def extractSet(setName = "kek", cardLimit=1000):
 
 	setQuery = 'https://duelmasters.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=php&titles=' + setName
 	with urllib.request.urlopen(setQuery) as response:

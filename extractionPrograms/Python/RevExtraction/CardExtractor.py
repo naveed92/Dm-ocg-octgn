@@ -1,7 +1,6 @@
 import urllib.request
 import urllib.parse
 import uuid
-from PIL import Image
 
 ######## Testing/Debugging Vars#####
 temp = "Terror Pit"
